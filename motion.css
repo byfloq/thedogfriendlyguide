@@ -1,0 +1,49 @@
+@media (max-width:760px){
+  :root{--ease-out:cubic-bezier(.22,1,.36,1);--ease-soft:cubic-bezier(.4,0,.2,1)}
+  body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+  .site-header,.guide-header{transition:background-color .3s var(--ease-soft),box-shadow .3s var(--ease-soft)}
+  .menu-toggle{width:44px;height:44px;align-items:center;justify-content:center;gap:6px;margin-right:-10px;touch-action:manipulation}
+  .menu-toggle i{transition:transform .35s var(--ease-out),opacity .2s ease;transform-origin:center}
+  .menu-toggle[aria-expanded="true"] i:first-of-type{transform:translateY(3.5px) rotate(45deg)}
+  .menu-toggle[aria-expanded="true"] i:last-of-type{transform:translateY(-3.5px) rotate(-45deg)}
+  .mobile-menu{opacity:0;visibility:hidden;transform:translateY(-18px);transition:transform .48s var(--ease-out),opacity .28s ease,visibility 0s linear .48s}
+  .mobile-menu.open{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+  .mobile-menu a{opacity:0;transform:translateY(14px);transition:opacity .32s ease,transform .45s var(--ease-out),background-color .2s ease;padding-left:.15rem}
+  .mobile-menu.open a{opacity:1;transform:none}
+  .mobile-menu.open a:nth-child(1){transition-delay:.05s}.mobile-menu.open a:nth-child(2){transition-delay:.09s}.mobile-menu.open a:nth-child(3){transition-delay:.13s}.mobile-menu.open a:nth-child(4){transition-delay:.17s}.mobile-menu.open a:nth-child(5){transition-delay:.21s}
+  .mobile-menu a:active{background:#eee7de}
+  .hero>img,.guide-hero>.crop{animation:hero-settle 1.05s var(--ease-out) both}
+  .hero-copy,.guide-hero>div:last-child{animation:hero-copy-in .8s .12s var(--ease-out) both}
+  .button,.outline-button,.pill,.signup-form button,.bio-links a,.filters button,.place-list article>button,.map-shell button{transition:transform .18s var(--ease-out),opacity .18s ease,background-color .18s ease;touch-action:manipulation}
+  .button:active,.outline-button:active,.signup-form button:active,.bio-links a:active,.filters button:active,.place-list article>button:active,.map-shell button:active{transform:scale(.97);opacity:.82}
+  .city-card .crop,.journal-lead .crop,.journal-list .crop,.polaroid .crop,.place-list article>.crop,.bio-avatar{transition:transform .55s var(--ease-out),filter .35s ease}
+  .city-card:active .crop,.journal-lead:active .crop,.journal-list a:active .crop,.bio-links a:active{transform:scale(.985)}
+  .motion-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .75s var(--ease-out)}
+  .motion-reveal.is-visible{opacity:1;transform:none}
+  .motion-reveal[data-motion="soft"]{transform:translateY(14px)}
+  .motion-reveal[data-motion="scale"]{transform:translateY(10px) scale(.985)}
+  .motion-reveal[data-motion="scale"].is-visible{transform:none}
+  .polaroid.motion-reveal{opacity:0}
+  .polaroid.p1.motion-reveal{transform:translateY(20px) rotate(-7deg)}
+  .polaroid.p2.motion-reveal{transform:translateY(26px) rotate(0deg)}
+  .polaroid.p3.motion-reveal{transform:translateY(20px) rotate(9deg)}
+  .polaroid.p1.motion-reveal.is-visible{transform:rotate(-4deg)}
+  .polaroid.p2.motion-reveal.is-visible{transform:rotate(2deg)}
+  .polaroid.p3.motion-reveal.is-visible{transform:rotate(6deg)}
+  .bio-card{animation:bio-enter .7s var(--ease-out) both}
+  .bio-links a{opacity:0;transform:translateY(10px);animation:link-in .5s var(--ease-out) forwards}
+  .bio-links a:nth-child(1){animation-delay:.12s}.bio-links a:nth-child(2){animation-delay:.17s}.bio-links a:nth-child(3){animation-delay:.22s}.bio-links a:nth-child(4){animation-delay:.27s}.bio-links a:nth-child(5){animation-delay:.32s}.bio-links a:nth-child(6){animation-delay:.37s}
+  .filters{scrollbar-width:none;scroll-snap-type:x proximity}.filters::-webkit-scrollbar{display:none}.filters button{scroll-snap-align:start}
+  .place-list article{transition:opacity .7s ease,transform .75s var(--ease-out)}
+  .map-art span{animation:pin-in .5s var(--ease-out) both}.map-art span:nth-of-type(2){animation-delay:.06s}.map-art span:nth-of-type(3){animation-delay:.12s}.map-art span:nth-of-type(4){animation-delay:.18s}.map-art span:nth-of-type(5){animation-delay:.24s}.map-art span:nth-of-type(6){animation-delay:.3s}
+}
+@keyframes hero-settle{from{opacity:.72;transform:scale(1.035)}to{opacity:1;transform:scale(1)}}
+@keyframes hero-copy-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes bio-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes link-in{to{opacity:1;transform:none}}
+@keyframes pin-in{from{opacity:0;transform:translate(-50%,-50%) scale(.55)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .motion-reveal,.motion-reveal.is-visible{opacity:1!important;transform:none!important}
+}
