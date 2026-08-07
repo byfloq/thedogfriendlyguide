@@ -1,19 +1,4 @@
-const categoryLinks = document.querySelectorAll('.category-card[data-filter]');
-const cards = document.querySelectorAll('.place-card');
-const showAll = document.getElementById('showAll');
-
-categoryLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    const filter = link.dataset.filter;
-    if (filter === 'events') return;
-    cards.forEach(card => {
-      const categories = card.dataset.category.split(' ');
-      card.classList.toggle('hidden', !categories.includes(filter));
-    });
-    showAll.textContent = 'Show all';
-  });
-});
-
-showAll.addEventListener('click', () => {
-  cards.forEach(card => card.classList.remove('hidden'));
-});
+const toggle=document.querySelector('.menu-toggle');const menu=document.querySelector('.mobile-menu');
+toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));menu.classList.toggle('open',!open);document.body.classList.toggle('menu-open',!open)});
+menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{toggle.setAttribute('aria-expanded','false');menu.classList.remove('open');document.body.classList.remove('menu-open')}));
+document.querySelector('.signup-form').addEventListener('submit',event=>{event.preventDefault();const email=event.currentTarget.email;const note=event.currentTarget.querySelector('.form-note');if(!email.checkValidity()){note.textContent='Please enter a valid email address.';email.focus();return}note.textContent='Thank you — you’re on the list.';event.currentTarget.reset()});
