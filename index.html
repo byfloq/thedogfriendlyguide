@@ -1,87 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A considered guide to beautiful places for dogs and their humans.">
-  <meta name="theme-color" content="#f1ede3">
-  <title>The Dog Friendly Guide</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="The Dog Friendly Guide, home">The Dog Friendly Guide</a>
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#cities">Cities</a><a href="#guide">Guides</a><a href="#journal">Journal</a><a href="#about">About</a><a href="#coco">Coco Was There</a>
-    </nav>
-    <a class="header-cta" href="#cities">Barcelona guide <span aria-hidden="true">↗</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"><span>Menu</span><i></i><i></i></button>
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-      <a href="#cities">Explore the guide</a><a href="#cities">Barcelona guide</a><a href="#journal">Journal</a><a href="#coco">Coco Was There</a><a href="#social">Instagram</a>
-    </nav>
-  </header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Curated dog-friendly places, city guides and real moments."><meta name="theme-color" content="#f3eee5"><title>The Dog Friendly Guide</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><script defer src="script.js"></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><a class="wordmark" href="index.html">The Dog<br>Friendly Guide</a><nav class="desktop-nav" aria-label="Primary"><a href="#cities">Cities</a><a href="paris-guide.html">Guides</a><a href="#journal">Journal</a><a href="#about">About</a><a href="#coco">Coco Was There</a></nav><a class="pill" href="paris-guide.html">Paris guide</a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"><span>Menu</span><i></i><i></i></button><nav class="mobile-menu" id="mobile-menu"><a href="#cities">Cities</a><a href="paris-guide.html">Paris guide</a><a href="#journal">Journal</a><a href="#coco">Coco Was There</a><a href="link-in-bio.html">Link in bio</a></nav></header>
+<main id="main">
+<section class="hero" id="top"><img src="assets/barcelona-cafe.jpg" alt="A dog relaxing outside a beautiful Mediterranean café"><div class="shade"></div><div class="hero-copy"><h1>Beautiful places.<br>Dog friendly.<br>Curated for you.</h1><p>We find the places worth visiting,<br>so you can enjoy them together.</p><a class="button light-button" href="paris-guide.html">Explore Paris guide</a></div><span class="coco-stamp">Coco was<br>here · Paris</span></section>
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/barcelona-cafe.jpg" alt="A dog resting on the terrace of a sunlit Mediterranean café">
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="eyebrow light">The Barcelona Edition · 01</p>
-        <h1 id="hero-title">Beautiful places.<br>Dog friendly.<br><em>Curated for you.</em></h1>
-        <a class="text-link light" href="#cities">Explore the Barcelona guide <span>→</span></a>
-      </div>
-      <p class="hero-note">A considered guide for dogs<br>and the people who love them.</p>
-    </section>
+<section class="home-section city-section" id="cities"><div class="section-title"><h2>Explore by city</h2><a href="paris-guide.html">View all</a></div><div class="city-cards">
+<a class="city-card" href="paris-guide.html"><div class="crop city-paris"></div><h3>Paris</h3><p>The Guide</p></a>
+<a class="city-card" href="maps-paris.html"><div class="crop city-copenhagen"></div><h3>Copenhagen</h3><p>The Guide</p></a>
+<a class="city-card" href="maps-paris.html"><div class="crop city-barcelona"></div><h3>Barcelona</h3><p>The Guide</p></a>
+<a class="city-card" href="maps-paris.html"><div class="crop city-london"></div><h3>London</h3><p>The Guide</p></a>
+</div></section>
 
-    <section class="intro" id="guide">
-      <p class="section-index">01 / The Guide</p>
-      <p class="intro-kicker">Good taste. Good dogs.</p>
-      <h2>We find the places worth leaving the house for.</h2>
-      <p class="intro-copy">Independent cafés, quietly brilliant restaurants, thoughtful stays and beautiful corners of the city—visited, considered and chosen with dogs in mind.</p>
-    </section>
+<section class="coco-section" id="coco"><div class="coco-text"><h2>Coco Was There</h2><p>Real moments. Real places.<br>Through Coco’s eyes.</p><a class="outline-button" href="link-in-bio.html">See more moments</a></div><div class="polaroids"><figure class="polaroid p1"><div class="crop coco-1"></div></figure><figure class="polaroid p2"><div class="crop coco-2"></div></figure><figure class="polaroid p3"><div class="crop coco-3"></div></figure><span class="round-stamp">Coco was here<br>✤</span></div></section>
 
-    <section class="cities section-rule" id="cities" aria-labelledby="cities-title">
-      <div class="section-head"><p class="section-index">02 / City Editions</p><h2 id="cities-title">Explore by city</h2><p>Our growing collection of dog-friendly cities.</p></div>
-      <div class="city-list">
-        <a class="city featured" href="#" aria-label="Explore Barcelona"><span class="city-no">01</span><span class="city-name">Barcelona</span><span class="city-meta">Now exploring · 84 places</span><span class="arrow">↗</span></a>
-        <a class="city" href="#newsletter"><span class="city-no">02</span><span class="city-name">Paris</span><span class="city-meta">Coming soon</span><span class="arrow">↗</span></a>
-        <a class="city" href="#newsletter"><span class="city-no">03</span><span class="city-name">Copenhagen</span><span class="city-meta">Coming soon</span><span class="arrow">↗</span></a>
-        <a class="city" href="#newsletter"><span class="city-no">04</span><span class="city-name">London</span><span class="city-meta">Coming soon</span><span class="arrow">↗</span></a>
-      </div>
-    </section>
+<section class="home-section journal-section" id="journal"><div class="section-title"><h2>Latest from the Journal</h2><a href="#journal">View all</a></div><div class="journal-grid"><a class="journal-lead" href="#"><div class="crop journal-main"></div><h3>A slow Sunday with Coco</h3><p>Paris · May 18, 2026</p></a><div class="journal-list"><a href="#"><div class="crop story-1"></div><span><h3>A quiet café where dogs are always welcome</h3><small>May 12, 2026</small></span></a><a href="#"><div class="crop story-2"></div><span><h3>Our Copenhagen weekend with Coco</h3><small>May 5, 2026</small></span></a><a href="#"><div class="crop story-3"></div><span><h3>Travelling to Barcelona with your dog</h3><small>April 28, 2026</small></span></a></div></div></section>
 
-    <section class="journal section-rule" id="journal" aria-labelledby="journal-title">
-      <div class="section-head inline"><div><p class="section-index">03 / Field Notes</p><h2 id="journal-title">Latest from<br><em>the Journal</em></h2></div><a class="text-link" href="#journal">View all stories <span>→</span></a></div>
-      <div class="stories">
-        <article class="lead-story"><a href="#"><div class="photo photo-main" role="img" aria-label="Sunlight and a café table on a Barcelona terrace"></div><p class="eyebrow">Barcelona · Neighbourhood guide</p><h3>A slow Sunday in Sant Antoni</h3><p>Morning coffee, long lunches and the streets we return to with Coco.</p></a></article>
-        <div class="story-stack">
-          <article><a href="#"><div class="photo photo-detail" role="img" aria-label="A quiet Mediterranean café detail"></div><div><p class="eyebrow">The Edit · Coffee</p><h3>Five beautiful cafés that always make room</h3><p class="date">6 min read</p></div></a></article>
-          <article><a href="#"><div class="photo photo-stay" role="img" aria-label="Warm stone arcade in Barcelona"></div><div><p class="eyebrow">Stay · Costa Brava</p><h3>A small hotel made for long weekends</h3><p class="date">4 min read</p></div></a></article>
-          <article><a href="#"><div class="photo photo-walk" role="img" aria-label="A leafy Barcelona pavement in morning light"></div><div><p class="eyebrow">Walk · Montjuïc</p><h3>Our favourite golden-hour route</h3><p class="date">3 min read</p></div></a></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="coco" id="coco" aria-labelledby="coco-title">
-      <div class="coco-image"><img src="assets/coco-was-there.jpg" alt="Coco relaxing beside a café chair"><span>Personally approved</span></div>
-      <div class="coco-copy"><p class="section-index">04 / Coco Was There</p><h2 id="coco-title">Real moments.<br><em>Real places.</em></h2><p>Not a rating. Not a checklist. Just the places where the welcome felt genuine, the water bowl arrived without asking and nobody minded a little fur.</p><p class="signature">Coco</p><a class="text-link" href="#">See Coco’s favourites <span>→</span></a></div>
-    </section>
-
-    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
-      <p class="section-index">A note from the city</p><h2 id="newsletter-title">One beautiful place,<br><em>every other Sunday.</em></h2><p>Quiet recommendations, new discoveries and dog-friendly city notes. No noise.</p>
-      <form class="signup-form" novalidate><label class="sr-only" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="Your email address" required><button type="submit">Join the list <span>→</span></button><p class="form-note" aria-live="polite"></p></form>
-    </section>
-  </main>
-
-  <footer id="about">
-    <div class="footer-top"><a class="footer-mark" href="#top">The Dog<br>Friendly Guide</a><p>Beautiful places for dogs<br>&amp; their humans.</p></div>
-    <div class="footer-grid"><div><p class="eyebrow">Explore</p><a href="#cities">Barcelona</a><a href="#cities">Cities</a><a href="#guide">The Guide</a></div><div><p class="eyebrow">Stories</p><a href="#journal">Journal</a><a href="#coco">Coco Was There</a><a href="#">Walks by Flōq</a></div><div id="social"><p class="eyebrow">Follow</p><a href="https://www.instagram.com/" rel="noopener">Instagram ↗</a><a href="mailto:hello@thedogfriendlyguide.com">Contact</a></div></div>
-    <div class="footer-bottom"><span>© 2026 The Dog Friendly Guide</span><span>Made with care in Barcelona · A Flōq project</span><a href="#">Privacy</a></div>
-  </footer>
-</body>
-</html>
+<section class="newsletter" id="newsletter"><div class="newsletter-photo crop"></div><div><h2>Let’s stay in touch</h2><p>Real moments. Real places and updates.<br>Straight to your inbox.</p></div><form class="signup-form" novalidate><label class="sr-only" for="email">Your email</label><input id="email" name="email" type="email" placeholder="Your email" required><button>Subscribe</button><p class="form-note" aria-live="polite"></p></form></section>
+</main>
+<footer id="about"><a class="wordmark" href="#top">The Dog<br>Friendly Guide</a><p>One life. Lived together.</p><nav><a href="#about">About</a><a href="mailto:hello@thedogfriendlyguide.com">Contact</a><a href="#">Submissions</a></nav><nav><a href="https://instagram.com/">Instagram ↗</a><a href="link-in-bio.html">Link in bio</a></nav></footer>
+<section class="values"><div><b>◎</b><p><strong>Curated, not crowded</strong>Only places we truly love and visit with Coco.</p></div><div><b>♧</b><p><strong>Beauty in the details</strong>Aesthetic, welcoming places where dogs are genuinely loved.</p></div><div><b>♡</b><p><strong>Saved for you</strong>Easily save our guides on Google Maps and take them everywhere.</p></div></section>
+</body></html>
