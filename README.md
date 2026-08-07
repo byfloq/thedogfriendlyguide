@@ -10,3 +10,4 @@ Static GitHub Pages homepage. Upload the contents of this folder to the root of 
 - `assets/` — local photography used by the page
 
 The newsletter form currently confirms submissions in the browser. Connect it to your preferred email platform when ready.
+Website updated August 2026.
