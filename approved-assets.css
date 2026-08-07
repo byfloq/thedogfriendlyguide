@@ -1,4 +1,4 @@
-/* Approved visual assets from the signed-off draft */
+/* Approved visual treatment — high-resolution image sources */
 .brand-mark{background:url('assets/approved-logo.webp') center/contain no-repeat;flex:0 0 auto}
 .brand-mark svg{display:none}
 .coco-seal,.round-stamp{background:url('assets/approved-logo.webp') center/contain no-repeat!important;border:0!important;box-shadow:none!important;transform:none!important}
@@ -6,16 +6,19 @@
 .coco-seal{width:82px!important;height:82px!important;right:3.6vw!important;bottom:2.6rem!important}
 .round-stamp{width:78px!important;height:78px!important;right:-.2rem!important;top:-1.2rem!important;background-color:transparent!important}
 .crop{filter:none;background-repeat:no-repeat!important;background-size:cover!important;background-position:center!important}
-.city-berlin{background-image:url('assets/city_berlin.jpg')!important}
-.city-paris{background-image:url('assets/city_paris.jpg')!important}
-.city-london{background-image:url('assets/city_london.jpg')!important}
-.city-copenhagen{background-image:url('assets/city_copenhagen.jpg')!important}
-.journal-main{background-image:url('assets/journal_main.jpg')!important}
-.story-1{background-image:url('assets/story1.jpg')!important}
-.story-2{background-image:url('assets/story2.jpg')!important}
-.story-3{background-image:url('assets/story3.jpg')!important}
-.coco-1{background-image:url('assets/coco1.jpg')!important}
-.coco-2{background-image:url('assets/coco2.jpg')!important}
-.coco-3{background-image:url('assets/coco3.jpg')!important}
-.newsletter-photo{background-image:url('assets/newsletter.jpg')!important}
+/* High-resolution editorial city photography. These replace the tiny draft crops that were being stretched on desktop. */
+.city-berlin{background-image:url('https://unsplash.com/photos/yEGamTFXep4/download?force=true&w=1600')!important;background-position:center!important}
+.city-paris{background-image:url('https://unsplash.com/photos/X-a801w2Q6s/download?force=true&w=1600')!important;background-position:center!important}
+.city-london{background-image:url('https://unsplash.com/photos/PyHrr8nZXvs/download?force=true&w=1600')!important;background-position:center!important}
+.city-copenhagen{background-image:url('https://unsplash.com/photos/iC2FHfd3TuM/download?force=true&w=1600')!important;background-position:center!important}
+/* Journal — use large sources so the lead image stays crisp at desktop width. */
+.journal-main{background-image:url('https://unsplash.com/photos/hP-x4172FfM/download?force=true&w=1800')!important;background-position:center!important}
+.story-1{background-image:url('https://unsplash.com/photos/X-a801w2Q6s/download?force=true&w=1000')!important;background-position:center!important}
+.story-2{background-image:url('https://unsplash.com/photos/iC2FHfd3TuM/download?force=true&w=1000')!important;background-position:center!important}
+.story-3{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:center!important}
+/* Coco section — retain the approved warm photography family without enlarging the old 100px draft crops. */
+.coco-1{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:72% center!important}
+.coco-2{background-image:url('assets/coco-was-there.jpg')!important;background-position:center!important}
+.coco-3{background-image:url('https://unsplash.com/photos/hP-x4172FfM/download?force=true&w=1200')!important;background-position:center!important}
+.newsletter-photo{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:18% center!important}
 @media(max-width:760px){.round-stamp{width:62px!important;height:62px!important}}
