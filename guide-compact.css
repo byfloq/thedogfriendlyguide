@@ -1,12 +1,28 @@
-/* More refined, compact place cards */
-.cg-main{width:min(980px,calc(100% - 40px))!important;padding:42px 0 66px!important}
-.place-grid{gap:14px!important}
-.place-card{grid-template-columns:145px minmax(0,1fr)!important;min-height:172px!important}
-.place-thumb{min-height:172px!important}
-.place-content{padding:17px 16px!important}
-.place-content h3{font-size:21px!important}
-.place-content .desc{font-size:12px!important;line-height:1.42!important;margin-bottom:14px!important}
-.place-actions a,.place-actions button{min-height:34px!important;padding:8px 6px!important;font-size:7px!important}
-.berlin-guide-page .place-card-featured{grid-template-columns:minmax(260px,.85fr) minmax(360px,1.15fr)!important;width:min(940px,100%)!important;min-height:350px!important}
-.berlin-guide-page .place-card-featured .place-thumb{min-height:350px!important}
-@media(max-width:760px){.cg-main{width:calc(100% - 28px)!important;padding:30px 0 48px!important}.place-card{grid-template-columns:96px minmax(0,1fr)!important;min-height:145px!important}.place-thumb{min-height:145px!important}.place-content{padding:14px 12px!important}.place-content h3{font-size:18px!important}.place-content .desc{font-size:11px!important}.berlin-guide-page .place-card-featured{display:grid!important;grid-template-columns:110px minmax(0,1fr)!important;min-height:180px!important}.berlin-guide-page .place-card-featured .place-thumb{min-height:180px!important}}
+/* Compact guide cards with complete, readable content */
+.cg-main{width:min(1040px,calc(100% - 40px))!important;padding:42px 0 66px!important}
+.place-grid{gap:18px!important}
+.place-card,.place-content,.place-heading,.place-heading>div{min-width:0!important}
+.place-content{overflow:visible!important}
+.place-content .desc,.place-details span{white-space:normal!important;overflow-wrap:anywhere!important}
+.place-actions{width:100%!important}
+.place-actions a,.place-actions button{white-space:normal!important;line-height:1.25!important;text-wrap:balance!important}
+/* Berlin's richer cards use a compact image-over-copy composition. */
+.berlin-guide-page .place-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;align-items:start!important}
+.berlin-guide-page .place-card-featured{display:grid!important;grid-template-columns:1fr!important;width:100%!important;min-width:0!important;min-height:0!important;align-self:start!important}
+.berlin-guide-page .place-card-featured .place-thumb{min-height:255px!important;aspect-ratio:16/10!important}
+.berlin-guide-page .place-card-featured .place-content{min-height:315px!important;padding:24px 24px 22px!important;justify-content:flex-start!important}
+.berlin-guide-page .place-heading{gap:12px!important}
+.berlin-guide-page .place-card-featured h3{font-size:clamp(30px,2.7vw,39px)!important;line-height:1.02!important}
+.berlin-guide-page .place-status{padding:7px 9px!important;font-size:7px!important}
+.berlin-guide-page .place-card-featured .desc{max-width:none!important;margin:16px 0 15px!important;font-size:14px!important;line-height:1.45!important}
+.berlin-guide-page .place-details{gap:8px 16px!important;margin-bottom:18px!important;padding-top:13px!important;font-size:8px!important}
+.berlin-guide-page .place-actions{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important;margin-top:auto!important}
+.berlin-guide-page .place-actions a,.berlin-guide-page .place-actions button{min-width:0!important;min-height:42px!important;padding:7px 5px!important;font-size:7px!important}
+/* Standard guide cards */
+.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:145px minmax(0,1fr)!important;min-height:172px!important}
+.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:172px!important}
+.city-guide-page:not(.berlin-guide-page) .place-content{padding:17px 16px!important}
+.city-guide-page:not(.berlin-guide-page) .place-content h3{font-size:21px!important}
+.city-guide-page:not(.berlin-guide-page) .place-content .desc{font-size:12px!important;line-height:1.42!important;margin-bottom:14px!important}
+@media(max-width:980px){.berlin-guide-page .place-grid{grid-template-columns:1fr!important}.berlin-guide-page .place-card-featured{grid-template-columns:minmax(250px,.82fr) minmax(0,1.18fr)!important}.berlin-guide-page .place-card-featured .place-thumb{min-height:330px!important;aspect-ratio:auto!important}.berlin-guide-page .place-card-featured .place-content{min-height:330px!important}}
+@media(max-width:620px){.cg-main{width:calc(100% - 28px)!important;padding:30px 0 48px!important}.berlin-guide-page .place-card-featured{grid-template-columns:1fr!important}.berlin-guide-page .place-card-featured .place-thumb{min-height:230px!important;aspect-ratio:4/3!important}.berlin-guide-page .place-card-featured .place-content{min-height:0!important;padding:22px 18px 18px!important}.berlin-guide-page .place-heading{display:block!important}.berlin-guide-page .place-status{margin-top:12px!important}.berlin-guide-page .place-actions{grid-template-columns:1fr 1fr!important}.berlin-guide-page .place-actions .favourite{grid-column:1/-1!important}.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:96px minmax(0,1fr)!important;min-height:145px!important}.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:145px!important}.city-guide-page:not(.berlin-guide-page) .place-content{padding:14px 12px!important}.city-guide-page:not(.berlin-guide-page) .place-content h3{font-size:18px!important}}
