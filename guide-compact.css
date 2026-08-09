@@ -34,3 +34,6 @@
 .area-filters button{flex:0 0 auto!important;padding-inline:18px!important;white-space:nowrap!important}
 .area-filters button.active{color:var(--ink)!important}
 @media(max-width:760px){.area-filters{justify-content:flex-start!important;padding-inline:16px!important}.area-filters .filter-label{margin-right:12px;font-size:7px}.area-filters button{padding-inline:13px!important}}
+
+/* Keep Berlin's layout override from defeating filter visibility. */
+.berlin-guide-page .place-card-featured.hidden{display:none!important}
