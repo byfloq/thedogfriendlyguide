@@ -37,3 +37,31 @@
 
 /* Keep Berlin's layout override from defeating filter visibility. */
 .berlin-guide-page .place-card-featured.hidden{display:none!important}
+
+
+/* Larger editorial photography on standard recommendation cards */
+.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:minmax(210px,42%) minmax(0,1fr)!important;min-height:255px!important}
+.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:255px!important}
+.city-guide-page:not(.berlin-guide-page) .place-content{padding:24px 22px!important}
+@media(max-width:760px){.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:minmax(155px,40%) minmax(0,1fr)!important;min-height:220px!important}.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:220px!important}}
+@media(max-width:520px){.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:1fr!important}.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:245px!important;aspect-ratio:4/3}.city-guide-page:not(.berlin-guide-page) .place-content{padding:20px 17px!important}}
+
+/* Shared city discovery: Editor's Pick + Collections */
+.guide-discovery{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:clamp(30px,5vw,70px);margin:0 0 58px;padding:0 0 58px;border-bottom:1px solid var(--line)}
+.discovery-eyebrow{margin:0 0 18px;font:500 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.editors-card{display:grid;grid-template-columns:minmax(210px,.9fr) minmax(0,1.1fr);min-height:340px;background:#eee8dc;border-radius:24px;overflow:hidden}
+.editors-image,.collection-image{background-image:var(--thumb);background-size:cover;background-position:center}
+.editors-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,4vw,50px)}
+.editors-copy h2{margin:0 0 6px;font:400 clamp(30px,3.6vw,52px)/1.02 var(--serif)}
+.editors-meta{margin:0 0 25px!important;color:var(--muted);font:500 10px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+.editors-copy>p:not(.editors-meta){margin:0 0 30px;font:400 15px/1.7 var(--serif)}
+.editors-copy a{width:max-content;color:var(--ink);font:500 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid;padding-bottom:7px}
+.editors-copy a span{margin-left:16px;font-size:18px}
+.collection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.collection-card{display:flex;min-width:0;flex-direction:column;align-items:stretch;padding:0;color:inherit;text-align:left;background:none;border:0;cursor:pointer}
+.collection-image{display:block;aspect-ratio:3/4;margin-bottom:14px;border-radius:18px}
+.collection-card strong{font:400 clamp(19px,2vw,27px)/1.05 var(--serif)}
+.collection-card small{margin-top:7px;color:var(--muted);font:500 8px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.collection-card:hover .collection-image{filter:brightness(.93)}
+@media(max-width:900px){.guide-discovery{grid-template-columns:1fr}.editors-card{min-height:320px}.collection-grid{gap:18px}}
+@media(max-width:620px){.guide-discovery{margin-bottom:40px;padding-bottom:40px}.editors-card{grid-template-columns:1fr;border-radius:18px}.editors-image{min-height:260px}.editors-copy{padding:26px 22px 30px}.collection-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.collection-card{flex:0 0 72%;scroll-snap-align:start}.collection-image{border-radius:14px}.discovery-eyebrow{font-size:9px}}
