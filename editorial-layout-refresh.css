@@ -1,10 +1,10 @@
 /* Section hierarchy and header refinement */
 .site-header .brand-mark{width:60.48px!important;height:60.48px!important;flex:0 0 60.48px!important}
 .site-header .brand-lockup{gap:14px!important}
-.section-title h2,.floq-objects-copy .eyebrow,.coco-text .eyebrow{font:500 10px/1.2 var(--sans)!important;text-transform:uppercase!important;letter-spacing:.13em!important}
+.better-together>div:first-child>.eyebrow,.section-title h2,.floq-objects-copy .eyebrow,.coco-text .eyebrow{font:500 15px/1.2 var(--sans)!important;text-transform:uppercase!important;letter-spacing:.16em!important}
 .coco-section{align-items:start!important}
 .coco-text{padding-top:.25rem!important;align-self:start!important}
 .coco-text .eyebrow{margin:0 0 1.3rem!important}
 .coco-text h2{font:400 clamp(30px,3.1vw,48px)/1.08 var(--serif)!important;text-transform:none!important;letter-spacing:0!important;margin:0 0 .85rem!important}
 .coco-text>p:not(.eyebrow){font:400 15px/1.5 var(--serif)!important;margin:0 0 1.7rem!important}
-@media(max-width:760px){.site-header .brand-mark{width:51.84px!important;height:51.84px!important;flex-basis:51.84px!important}.site-header .brand-lockup{gap:10px!important}.coco-text{padding-top:0!important}.coco-text h2{font-size:30px!important}}
+@media(max-width:760px){.better-together>div:first-child>.eyebrow,.section-title h2,.floq-objects-copy .eyebrow,.coco-text .eyebrow{font-size:13px!important}.site-header .brand-mark{width:51.84px!important;height:51.84px!important;flex-basis:51.84px!important}.site-header .brand-lockup{gap:10px!important}.coco-text{padding-top:0!important}.coco-text h2{font-size:30px!important}}
