@@ -15,4 +15,8 @@
     item.dataset.votes=String(Number(item.dataset.votes)+(voted?-1:1));button.setAttribute('aria-pressed',String(!voted));button.classList.toggle('voted',!voted);button.firstChild.textContent=voted?'♡ ':'♥ ';button.querySelector('span').textContent=item.dataset.votes;rankVisible();
   }));
   document.querySelectorAll('.circle-poll-option').forEach(button=>button.addEventListener('click',()=>document.querySelectorAll('.circle-poll-option').forEach(item=>item.classList.toggle('chosen',item===button))));
+  const modal=document.querySelector('.circle-modal');const openButton=document.querySelector('.circle-new-idea');const closeButton=document.querySelector('.circle-modal-close');const form=document.querySelector('.circle-idea-form');
+  function closeModal(){modal.hidden=true;openButton.focus()}
+  openButton.addEventListener('click',()=>{modal.hidden=false;modal.querySelector('input').focus()});closeButton.addEventListener('click',closeModal);modal.addEventListener('click',event=>{if(event.target===modal)closeModal()});document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!modal.hidden)closeModal()});
+  form.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(form);const subject=encodeURIComponent('The Circle — New community idea');const body=encodeURIComponent(`Name: ${data.get('name')}\nEmail: ${data.get('email')}\nCategory: ${data.get('category')}\n\nIdea:\n${data.get('idea')}`);window.location.href=`mailto:byfloq@gmail.com?subject=${subject}&body=${body}`});
 })();
