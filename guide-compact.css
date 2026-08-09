@@ -1,0 +1,7 @@
+/* More refined, compact place cards */
+.place-list{max-width:820px!important;padding:1.25rem 4vw 5rem!important}
+.place-list article{grid-template-columns:130px minmax(0,1fr) auto!important;gap:1.25rem!important;padding:1rem 0!important}
+.place-list article>.crop{aspect-ratio:1.35!important}
+.place-list h2{font-size:20px!important;line-height:1.15!important}
+.place-list p{font-size:11px!important;line-height:1.45!important;margin:.45rem 0!important}
+@media(max-width:760px){.place-list{padding-top:.75rem!important}.place-list article{grid-template-columns:88px minmax(0,1fr) auto!important;gap:.75rem!important;padding:.85rem 0!important}.place-list h2{font-size:15px!important}.place-list p{font-size:9px!important;margin:.3rem 0!important}}
