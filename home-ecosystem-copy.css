@@ -10,5 +10,5 @@
   .ecosystem-section-title .ecosystem-copy h3{font-size:36px}
   .ecosystem-section-title .ecosystem-copy p{font-size:15px}
   .ecosystem-section-title>a{display:inline-block;margin-top:1.15rem}
-  .hero-copy>p{max-width:88vw}
+  .hero-copy{right:1.15rem;width:auto}\n  .hero-copy>p{max-width:100%}
 }
