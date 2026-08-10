@@ -13,3 +13,6 @@
 #cities .all-cities-cta{margin-top:clamp(44px,5vw,72px)}
 @media(max-width:920px){#cities .featured-city-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:34px 20px!important}#cities .featured-city-cards .city-card,#cities .featured-city-cards .city-card:nth-child(-n+2){grid-column:span 1}#cities .featured-city-cards .city-card .crop,#cities .featured-city-cards .city-card:nth-child(-n+2) .crop{aspect-ratio:4/5!important}}
 @media(max-width:600px){#cities{overflow:hidden}#cities .featured-city-cards{display:flex!important;gap:14px!important;overflow-x:auto;padding:0 7vw 14px 0;scroll-snap-type:x mandatory;scrollbar-width:none}#cities .featured-city-cards::-webkit-scrollbar{display:none}#cities .featured-city-cards .city-card{flex:0 0 78vw;scroll-snap-align:start}#cities .featured-city-cards .city-card:first-child{flex-basis:84vw}#cities .featured-city-cards .city-card .crop,#cities .featured-city-cards .city-card:nth-child(-n+2) .crop{aspect-ratio:4/5!important}#cities .featured-city-cards .city-card h3::after{opacity:1;transform:none}}
+
+/* Homepage curation: two featured guides plus four standard guides */
+#cities .featured-city-cards .city-card:nth-child(n+7){display:none!important}
