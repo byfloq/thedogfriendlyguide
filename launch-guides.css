@@ -1,4 +1,4 @@
-.country-filters{display:flex;gap:8px;margin:0 0 18px;padding-bottom:10px;overflow-x:auto;scrollbar-width:none}
+.cities-brand.brand-lockup{display:flex;align-items:center;gap:.55rem;font-size:inherit;letter-spacing:normal}.cities-brand .brand-mark{width:42px;height:42px;display:inline-flex;flex:0 0 auto}.cities-brand .brand-mark svg{width:100%;height:100%}.cities-brand .brand-copy{display:flex;flex-direction:column;gap:3px}.cities-brand .wordmark{font:500 9px/1.08 var(--sans);letter-spacing:.12em;text-transform:uppercase}.cities-brand .by-floq-text{font:500 7px/1 var(--sans);letter-spacing:.16em}.country-filters{display:flex;gap:8px;margin:0 0 18px;padding-bottom:10px;overflow-x:auto;scrollbar-width:none}
 .country-filters::-webkit-scrollbar{display:none}
 .country-filters button{flex:0 0 auto;padding:11px 16px;border:1px solid var(--rule);border-radius:999px;background:transparent;color:var(--ink);font:500 10px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
 .country-filters button:hover,.country-filters button.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
@@ -8,4 +8,4 @@
 .cities-directory a[hidden]{display:none}
 .cities-directory small{font:400 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 @media(max-width:900px){.cities-directory a{grid-template-columns:52px 1fr auto}.cities-directory small{display:none}}
-@media(max-width:600px){.country-filters{margin-right:-20px;padding-right:20px}.cities-directory a{grid-template-columns:38px 1fr}.cities-directory small{display:block;grid-column:2;font-size:9px;margin-top:-12px}.cities-directory em{display:none}}
+@media(max-width:600px){.cities-brand .brand-mark{width:36px;height:36px}.cities-brand .wordmark{font-size:8px}.cities-brand .by-floq-text{font-size:6px}.country-filters{margin-right:-20px;padding-right:20px}.cities-directory a{grid-template-columns:38px 1fr}.cities-directory small{display:block;grid-column:2;font-size:9px;margin-top:-12px}.cities-directory em{display:none}}
