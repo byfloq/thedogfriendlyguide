@@ -102,7 +102,9 @@
   const tagRow = document.createElement('section');
   tagRow.className = 'guide-tags';
   section.after(tagRow);
-  tagRow.append(typeFilters, areaFilters);
+  const typeFilters = document.querySelector('.type-filters');
+  const areaFilters = document.querySelector('.area-filters');
+  if (typeFilters && areaFilters) tagRow.append(typeFilters, areaFilters);
 
   let current = 0;
   const slides = [...section.querySelectorAll('.editors-image')];

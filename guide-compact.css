@@ -49,7 +49,7 @@
 
 /* Shared city discovery: Editor's Pick + filters */
 .guide-discovery{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:clamp(30px,5vw,70px);margin:0 0 34px;padding:0 0 34px;border-bottom:1px solid var(--line)}
-.discovery-eyebrow{margin:0 0 18px;font:500 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.discovery-eyebrow{margin:0 0 22px;font:400 clamp(34px,4vw,58px)/1 var(--serif);letter-spacing:0;text-transform:none}
 .editors-card{display:grid;grid-template-columns:minmax(210px,.92fr) minmax(0,1.08fr);min-height:340px;background:#eee8dc;border-radius:24px;overflow:hidden}
 .editors-image,.collection-image{background-image:var(--thumb);background-size:cover;background-position:center}
 .city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position,center)}
