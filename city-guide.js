@@ -60,8 +60,6 @@
   const main = document.querySelector('.cg-main');
   const grid = document.querySelector('.place-grid');
   const cards = [...document.querySelectorAll('.place-card')];
-  const filters = [...document.querySelectorAll('.area-filters button')]
-    .filter(button => button.dataset.filter && button.dataset.filter !== 'all');
   if (!main || !grid || !cards.length) return;
 
   const editor = cards[0];
@@ -76,10 +74,6 @@
     ? gallery.map(url => `--thumb:url('${url.replace(/['"]/g, '')}')`)
     : [editorStyle];
 
-  const collectionCards = filters.slice(0, 3).map(filter =>
-    cards.find(card => card.dataset.area === filter.dataset.filter) || cards[0]
-  );
-  const names = ['Slow mornings', 'Coffee & treats', 'Terraces & walks'];
   const section = document.createElement('section');
   section.className = 'guide-discovery';
   section.innerHTML = `
@@ -99,14 +93,6 @@
         </div>
         <div class="editors-copy"><h2>${title}</h2><p class="editors-meta">${meta}</p><p>${desc}</p><a href="${link}" target="_blank" rel="noopener">View place <span>→</span></a></div>
       </article>
-    </div>
-    <div class="guide-collections">
-      <p class="discovery-eyebrow">Collections</p>
-      <div class="collection-grid">${filters.slice(0, 3).map((filter, index) => {
-        const card = collectionCards[index];
-        const style = card.querySelector('.place-thumb')?.getAttribute('style') || editorStyle;
-        return `<button type="button" class="collection-card" data-collection-filter="${filter.dataset.filter}"><span class="collection-image" style="${style}"></span><strong>${names[index]}</strong><small>Explore ${filter.textContent.trim()}</small></button>`;
-      }).join('')}</div>
     </div>`;
   main.insertBefore(section, main.firstChild);
 
@@ -121,11 +107,4 @@
   section.querySelector('.gallery-prev')?.addEventListener('click', () => show(current - 1));
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
-  section.querySelectorAll('[data-collection-filter]').forEach(button => button.addEventListener('click', () => {
-    const target = document.querySelector(`.area-filters button[data-filter="${button.dataset.collectionFilter}"]`);
-    if (target) {
-      target.click();
-      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }));
 })();
