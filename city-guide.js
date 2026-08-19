@@ -96,6 +96,14 @@
     </div>`;
   main.insertBefore(section, main.firstChild);
 
+  const introTitle = main.querySelector('.cg-intro h2');
+  if (introTitle) introTitle.remove();
+
+  const tagRow = document.createElement('section');
+  tagRow.className = 'guide-tags';
+  section.after(tagRow);
+  tagRow.append(typeFilters, areaFilters);
+
   let current = 0;
   const slides = [...section.querySelectorAll('.editors-image')];
   const dots = [...section.querySelectorAll('.gallery-dots button')];

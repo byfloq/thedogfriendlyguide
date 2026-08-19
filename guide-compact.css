@@ -47,28 +47,33 @@
 @media(max-width:760px){.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:minmax(155px,40%) minmax(0,1fr)!important;min-height:220px!important}.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:220px!important}}
 @media(max-width:520px){.city-guide-page:not(.berlin-guide-page) .place-card{grid-template-columns:1fr!important}.city-guide-page:not(.berlin-guide-page) .place-thumb{min-height:245px!important;aspect-ratio:4/3}.city-guide-page:not(.berlin-guide-page) .place-content{padding:20px 17px!important}}
 
-/* Shared city discovery: Editor's Pick + Collections */
-.guide-discovery{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:clamp(30px,5vw,70px);margin:0 0 58px;padding:0 0 58px;border-bottom:1px solid var(--line)}
+/* Shared city discovery: Editor's Pick + filters */
+.guide-discovery{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:clamp(30px,5vw,70px);margin:0 0 34px;padding:0 0 34px;border-bottom:1px solid var(--line)}
 .discovery-eyebrow{margin:0 0 18px;font:500 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase}
-.editors-card{display:grid;grid-template-columns:minmax(210px,.9fr) minmax(0,1.1fr);min-height:340px;background:#eee8dc;border-radius:24px;overflow:hidden}
+.editors-card{display:grid;grid-template-columns:minmax(210px,.92fr) minmax(0,1.08fr);min-height:340px;background:#eee8dc;border-radius:24px;overflow:hidden}
 .editors-image,.collection-image{background-image:var(--thumb);background-size:cover;background-position:center}
 .city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position,center)}
 @media(max-width:520px){.city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position-mobile,var(--thumb-position,center))}}
 .place-number{display:none!important}
 .editors-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,4vw,50px)}
-.editors-copy h2{margin:0 0 6px;font:400 clamp(30px,3.6vw,52px)/1.02 var(--serif)}
+.editors-copy h2{margin:0 0 10px;font:400 clamp(38px,4.6vw,64px)/.98 var(--serif);letter-spacing:-.02em}
 .editors-meta{margin:0 0 25px!important;color:var(--muted);font:500 10px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase}
 .editors-copy>p:not(.editors-meta){margin:0 0 30px;font:400 15px/1.7 var(--serif)}
 .editors-copy a{width:max-content;color:var(--ink);font:500 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid;padding-bottom:7px}
 .editors-copy a span{margin-left:16px;font-size:18px}
+.guide-tags{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 48px}
+.guide-tags .cg-filters{flex:1 1 360px;min-width:0;border-radius:999px;background:#f6f0e8}
+.guide-tags .filter-label{margin-right:18px}
+.guide-tags .area-filters,.guide-tags .type-filters{padding-inline:18px!important}
+.guide-tags .area-filters button,.guide-tags .type-filters button{padding-inline:14px!important}
 .collection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .collection-card{display:flex;min-width:0;flex-direction:column;align-items:stretch;padding:0;color:inherit;text-align:left;background:none;border:0;cursor:pointer}
 .collection-image{display:block;aspect-ratio:3/4;margin-bottom:14px;border-radius:18px}
 .collection-card strong{font:400 clamp(19px,2vw,27px)/1.05 var(--serif)}
 .collection-card small{margin-top:7px;color:var(--muted);font:500 8px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase}
 .collection-card:hover .collection-image{filter:brightness(.93)}
-@media(max-width:900px){.guide-discovery{grid-template-columns:1fr}.editors-card{min-height:320px}.collection-grid{gap:18px}}
-@media(max-width:620px){.guide-discovery{margin-bottom:40px;padding-bottom:40px}.editors-card{grid-template-columns:1fr;border-radius:18px}.editors-image{min-height:260px}.editors-copy{padding:26px 22px 30px}.collection-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.collection-card{flex:0 0 72%;scroll-snap-align:start}.collection-image{border-radius:14px}.discovery-eyebrow{font-size:9px}}
+@media(max-width:900px){.guide-discovery{grid-template-columns:1fr}.editors-card{min-height:320px}.collection-grid{gap:18px}.guide-tags{margin-bottom:40px}}
+@media(max-width:620px){.guide-discovery{margin-bottom:32px;padding-bottom:32px}.editors-card{grid-template-columns:1fr;border-radius:18px}.editors-image{min-height:260px}.editors-copy{padding:26px 22px 30px}.collection-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.collection-card{flex:0 0 72%;scroll-snap-align:start}.collection-image{border-radius:14px}.discovery-eyebrow{font-size:9px}.guide-tags{gap:10px;margin-bottom:32px}.guide-tags .cg-filters{flex-basis:100%}.guide-tags .filter-label{margin-right:12px}}
 
 
 /* Editor's Pick stacked above Collections */
@@ -89,6 +94,6 @@
 @media(max-width:760px){.editors-card{grid-template-columns:1fr!important;min-height:0!important}.editors-gallery{min-height:360px}.collection-grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory}.collection-card{flex:0 0 78%}.collection-image{aspect-ratio:4/3!important}}
 @media(max-width:480px){.editors-gallery{min-height:285px}.gallery-arrow{width:36px;height:36px}.gallery-prev{left:12px}.gallery-next{right:12px}}
 
-.editors-pick{width:min(920px,100%);margin-inline:auto}.editors-card{min-height:410px!important}.editors-copy{padding:clamp(28px,4vw,44px)!important}.editors-copy h2{font-size:clamp(32px,3.5vw,48px)!important}@media(max-width:760px){.editors-pick{width:100%}.editors-card{min-height:0!important}}
+.editors-pick{width:min(980px,100%);margin-inline:auto}.editors-card{min-height:440px!important}.editors-copy{padding:clamp(28px,4vw,48px)!important}.editors-copy h2{font-size:clamp(40px,4.4vw,62px)!important;line-height:.95!important}@media(max-width:760px){.editors-pick{width:100%}.editors-card{min-height:0!important}}
 .city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position,center)}
 @media(max-width:520px){.city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position-mobile,var(--thumb-position,center))}}
