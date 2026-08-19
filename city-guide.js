@@ -1,26 +1,66 @@
-document.querySelectorAll('.cg-filters button').forEach(btn => btn.addEventListener('click', () => {
-  document.querySelectorAll('.cg-filters button').forEach(b => {
-    b.classList.remove('active');
-    b.setAttribute('aria-pressed', 'false');
+(() => {
+  const cards = [...document.querySelectorAll('.place-card')];
+  const areaFilters = document.querySelector('.area-filters');
+  if (!cards.length || !areaFilters) return;
+
+  const categoryAliases = {
+    cafe: 'cafe', cafes: 'cafe', restaurant: 'restaurant', restaurants: 'restaurant',
+    hotel: 'hotel', hotels: 'hotel', grooming: 'grooming', 'dog-grooming': 'grooming',
+    shop: 'shop', shops: 'shop', 'dog-shop': 'shop'
+  };
+  const categoryLabels = [
+    ['cafe', 'Cafés'], ['restaurant', 'Restaurants'], ['hotel', 'Hotels'],
+    ['grooming', 'Dog Grooming'], ['shop', 'Dog Shops']
+  ];
+
+  cards.forEach(card => {
+    card.dataset.category = categoryAliases[card.dataset.category] || card.dataset.category;
   });
-  btn.classList.add('active');
-  btn.setAttribute('aria-pressed', 'true');
-  const filter = btn.dataset.filter;
-  let shown = 0;
-  document.querySelectorAll('.place-card').forEach(card => {
-    const visible = filter === 'all' || card.dataset.area === filter || card.dataset.category === filter;
-    card.classList.toggle('hidden', !visible);
-    if (visible) shown++;
-  });
-  const empty = document.querySelector('.empty-state');
-  if (empty) empty.style.display = shown ? 'none' : 'block';
-}));
+  const available = new Set(cards.map(card => card.dataset.category));
+  const typeFilters = document.createElement('nav');
+  typeFilters.className = 'cg-filters type-filters';
+  typeFilters.setAttribute('aria-label', 'Filter places by type');
+  typeFilters.innerHTML = `<span class="filter-label">Type of place</span>
+    <button class="active" data-filter="all" aria-pressed="true">All</button>
+    ${categoryLabels.filter(([value]) => available.has(value)).map(([value, label]) =>
+      `<button data-filter="${value}" aria-pressed="false">${label}</button>`
+    ).join('')}`;
+  areaFilters.before(typeFilters);
+
+  const selected = { type: 'all', area: 'all' };
+  const applyFilters = () => {
+    let shown = 0;
+    cards.forEach(card => {
+      const visible = (selected.type === 'all' || card.dataset.category === selected.type)
+        && (selected.area === 'all' || card.dataset.area === selected.area);
+      card.classList.toggle('hidden', !visible);
+      if (visible) shown++;
+    });
+    const empty = document.querySelector('.empty-state');
+    if (empty) empty.style.display = shown ? 'none' : 'block';
+  };
+
+  const bindGroup = (group, key) => {
+    group.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+      group.querySelectorAll('button').forEach(item => {
+        item.classList.remove('active');
+        item.setAttribute('aria-pressed', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
+      selected[key] = button.dataset.filter;
+      applyFilters();
+    }));
+  };
+  bindGroup(typeFilters, 'type');
+  bindGroup(areaFilters, 'area');
+})();
 
 (() => {
   const main = document.querySelector('.cg-main');
   const grid = document.querySelector('.place-grid');
   const cards = [...document.querySelectorAll('.place-card')];
-  const filters = [...document.querySelectorAll('.cg-filters button')]
+  const filters = [...document.querySelectorAll('.area-filters button')]
     .filter(button => button.dataset.filter && button.dataset.filter !== 'all');
   if (!main || !grid || !cards.length) return;
 
@@ -82,7 +122,7 @@ document.querySelectorAll('.cg-filters button').forEach(btn => btn.addEventListe
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
   section.querySelectorAll('[data-collection-filter]').forEach(button => button.addEventListener('click', () => {
-    const target = document.querySelector(`.cg-filters button[data-filter="${button.dataset.collectionFilter}"]`);
+    const target = document.querySelector(`.area-filters button[data-filter="${button.dataset.collectionFilter}"]`);
     if (target) {
       target.click();
       grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
