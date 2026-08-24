@@ -4,28 +4,98 @@
 
   const approvedPlaces = [
     {
-      title: 'Clove Coffee Shop', meta: 'Specialty coffee · Montmartre', area: 'montmartre', key: 'clove-coffee-shop',
+      title: 'Clove Coffee Shop', meta: 'Specialty coffee · Montmartre', area: 'montmartre', key: 'clove-coffee-shop', category: 'cafe',
       description: 'A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.',
       instagram: 'https://www.instagram.com/clovecoffeeshop/', maps: 'Clove Coffee Shop 14 Rue Chappe 75018 Paris',
       images: ['assets/places/clove-coffee-hq.jpg', 'assets/places/clove-iced-tea-hq.jpg', 'assets/places/clove-friends-hq.jpg']
     },
     {
-      title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe',
+      title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-drink-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg', 'assets/places/mardi-space-hq.jpg']
+      images: ['assets/places/mardi-space-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg']
     },
     {
-      title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris',
+      title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
       description: 'A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates—and a warm welcome for dogs.',
       instagram: 'https://www.instagram.com/niwa_paris_/', maps: 'Niwa 56 Rue Vaneau 75007 Paris',
       images: ['assets/places/niwa-detail-hq.jpg', 'assets/places/niwa-space-hq.jpg', 'assets/places/niwa-bread-hq.jpg']
     },
     {
-      title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe',
+      title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe', category: 'cafe',
       description: 'A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.',
       instagram: 'https://www.instagram.com/parispartisancafe/', maps: 'Partisan Cafe 36 Rue de Turbigo 75003 Paris',
       images: ['assets/places/partisan-space-hq.jpg', 'assets/places/partisan-affogato-hq.jpg', 'assets/places/partisan-community-hq.jpg']
+    },
+    {
+      title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
+      description: 'A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.',
+      instagram: 'https://www.instagram.com/barkersandbrothers/', maps: 'Barkers and Brothers 46 Rue Berthe 75018 Paris', images: ['assets/places/barkers-brothers.jpg']
+    },
+    {
+      title: "Gino's Paris", meta: 'Boutique, grooming & daycare · Latin Quarter', area: 'latin-quarter', key: 'ginos-paris', category: 'shop',
+      description: 'A polished canine concept store combining premium accessories, gentle grooming and daycare in the heart of the Latin Quarter.',
+      instagram: 'https://www.instagram.com/ginos.paris/', maps: "Gino's Paris 7 Rue de la Montagne Sainte-Geneviève 75005 Paris", images: ['assets/places/ginos-paris.jpg']
+    },
+    {
+      title: 'Animal Particulier', meta: 'Independent pet shop · Montmartre', area: 'montmartre', key: 'animal-particulier', category: 'shop',
+      description: 'An independent Montmartre address for distinctive accessories, clothing and small-batch finds for dogs and cats.',
+      instagram: 'https://www.instagram.com/animal_particulier/', maps: 'Animal Particulier 11 Square de Clignancourt 75018 Paris', images: ['assets/places/animal-particulier.jpg']
+    },
+    {
+      title: 'Casa del Doggo', meta: 'Dog bakery & concept store · Auteuil', area: 'auteuil', key: 'casa-del-doggo', category: 'shop',
+      description: 'A joyful dog-first bakery with handmade treats, a colourful shop and a self-service dog wash designed for time together.',
+      instagram: 'https://www.instagram.com/casadeldoggobakery/', maps: 'Casa del Doggo 13 Rue Pierre Guérin 75016 Paris', images: ['assets/places/casa-del-doggo.jpg']
+    },
+    {
+      title: 'Le Bone Appart', meta: 'Dog café & boutique · Le Marais', area: 'le-marais', key: 'le-bone-appart', category: 'shop',
+      description: 'A dog café and boutique beside Place des Vosges, made for coffee, canine pâtisseries and playful Parisian accessories.',
+      instagram: 'https://www.instagram.com/leboneappart/', maps: 'Le Bone Appart 9 Rue de Birague 75004 Paris', images: ['assets/places/le-bone-appart.jpg']
+    },
+    {
+      title: 'Two Tails', meta: 'Pet boutique · Grenelle', area: 'grenelle', key: 'two-tails', category: 'shop',
+      description: 'A friendly neighbourhood boutique with a broad, carefully selected world of food, care and everyday essentials for dogs and cats.',
+      instagram: 'https://www.instagram.com/twotails_fr/', maps: 'Two Tails 199 Rue de Grenelle 75007 Paris', images: ['assets/places/two-tails.jpg']
+    },
+    {
+      title: 'Petsochic', meta: 'Boutique & spa · Saint-Germain', area: 'saint-germain', key: 'petsochic', category: 'shop',
+      description: 'A refined Left Bank boutique and grooming spa bringing together French-made accessories, personalisation and attentive care.',
+      instagram: 'https://www.instagram.com/petsochic/', maps: 'Petsochic 16 Rue Dauphine 75006 Paris', images: ['assets/places/petsochic.jpg']
+    },
+    {
+      title: 'Moustaches', meta: 'Pet concept store · Le Marais', area: 'le-marais', key: 'moustaches-paris', category: 'shop',
+      description: 'A long-standing Marais pet concept store with useful essentials, playful gifts and design-minded accessories under one roof.',
+      instagram: 'https://www.instagram.com/moustachesparis/', maps: 'Moustaches 32 Rue des Archives 75004 Paris', images: ['assets/places/moustaches-paris.jpg']
+    },
+    {
+      title: 'Pantoufle', meta: 'Restaurant & wine bar · Buttes-Chaumont', area: 'buttes-chaumont', key: 'pantoufle-paris', category: 'restaurant',
+      description: 'A relaxed wine bar and restaurant hosting rotating chef residencies, with expressive seasonal plates and an intimate neighbourhood mood.',
+      instagram: 'https://www.instagram.com/pantoufle.paris/', maps: 'Pantoufle 5 Rue de Chaumont 75019 Paris', images: ['assets/places/pantoufle-paris.jpg']
+    },
+    {
+      title: 'Griffon', meta: 'Café, restaurant & bar · Le Marais', area: 'le-marais', key: 'griffon-paris', category: 'restaurant',
+      description: 'A characterful Marais hideaway for coffee, fresh food and natural wine, with collected interiors and a leafy secret terrace.',
+      instagram: 'https://www.instagram.com/griffon.paris/', maps: 'Griffon 55 bis Rue des Francs-Bourgeois 75004 Paris', images: ['assets/places/griffon-paris.jpg']
+    },
+    {
+      title: 'Coloré', meta: 'French-Japanese restaurant · Montmartre', area: 'montmartre', key: 'colore-paris', category: 'restaurant',
+      description: 'A quietly creative Montmartre restaurant where seasonal French produce meets delicate Japanese influences and natural wine.',
+      instagram: 'https://www.instagram.com/colore.paris/', maps: 'Coloré 20 Rue du Ruisseau 75018 Paris', images: ['assets/places/colore-paris.jpg']
+    },
+    {
+      title: 'Tekés', meta: 'Vegetable-led restaurant · Étienne Marcel', area: 'etienne-marcel', key: 'tekes-paris', category: 'restaurant',
+      description: 'A vibrant open-kitchen restaurant centred on vegetables, fire and Jerusalem-inspired flavours in the heart of the 2nd arrondissement.',
+      instagram: 'https://www.instagram.com/tekes_paris/', maps: 'Tekés 4 bis Rue Saint-Sauveur 75002 Paris', images: ['assets/places/tekes-paris.webp']
+    },
+    {
+      title: 'Maison Mère', meta: 'Boutique hotel · Cadet', area: 'cadet', key: 'maison-mere', category: 'hotel',
+      description: 'A characterful four-star maison with art-filled rooms and a residential spirit, welcoming small dogs up to 10 kg in selected rooms.',
+      instagram: 'https://www.instagram.com/maisonmere.lovers/', maps: 'Maison Mère 7 Rue Mayran 75009 Paris', images: ['assets/places/maison-mere.jpg']
+    },
+    {
+      title: 'Kimpton St Honoré Paris', meta: 'Luxury hotel · Opéra', area: 'opera', key: 'kimpton-st-honore', category: 'hotel',
+      description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy—every size and breed is welcome at no extra charge.',
+      instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg']
     }
   ];
 
@@ -33,7 +103,7 @@
   approvedPlaces.forEach(place => {
     const article = document.createElement('article');
     article.className = 'place-card';
-    article.dataset.category = 'cafe';
+    article.dataset.category = place.category;
     article.dataset.area = place.area;
     article.dataset.gallery = place.images.join('|');
     article.innerHTML = `<div class="place-thumb" style="--thumb:url('${place.images[0]}')"></div>
@@ -46,7 +116,11 @@
   });
 
   const areaFilters = document.querySelector('.area-filters');
-  [['belleville', 'Belleville'], ['vaneau', 'Vaneau']].forEach(([value, label]) => {
+  [
+    ['belleville', 'Belleville'], ['vaneau', 'Vaneau'], ['latin-quarter', 'Latin Quarter'],
+    ['auteuil', 'Auteuil'], ['grenelle', 'Grenelle'], ['saint-germain', 'Saint-Germain'],
+    ['buttes-chaumont', 'Buttes-Chaumont'], ['cadet', 'Cadet'], ['opera', 'Opéra']
+  ].forEach(([value, label]) => {
     if (!areaFilters || areaFilters.querySelector(`[data-filter="${value}"]`)) return;
     areaFilters.insertAdjacentHTML('beforeend', `<button data-filter="${value}" aria-pressed="false">${label}</button>`);
   });
@@ -175,7 +249,7 @@
               `<button type="button" aria-label="Show photo ${index + 1}" aria-pressed="${index === 0}"></button>`
             ).join('')}</div>` : ''}
         </div>
-        <div class="editors-copy"><h2>${title}</h2><p class="editors-meta">${meta}</p><p>${desc}</p><a href="${link}" target="_blank" rel="noopener">View place <span>→</span></a></div>
+        <div class="editors-copy"><span class="editors-badge">Guide favourite</span><h2>${title}</h2><p class="editors-meta">${meta}</p><p>${desc}</p><a href="${link}" target="_blank" rel="noopener">View place <span>→</span></a></div>
       </article>
     </div>`;
   main.insertBefore(section, main.firstChild);
