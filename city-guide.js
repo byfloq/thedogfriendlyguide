@@ -63,6 +63,17 @@
   if (!main || !grid || !cards.length) return;
 
   const editor = cards[0];
+  const merlo = cards.find(card => card.querySelector('h3')?.textContent?.trim() === 'Merlo Café');
+  if (merlo) {
+    merlo.dataset.gallery = [
+      'assets/places/merlo-storefront-hq.jpg',
+      'assets/places/merlo-coffee-cake-hq.jpg',
+      'assets/places/merlo-dog-snow-hq.jpg'
+    ].join('|');
+    merlo.querySelector('.place-thumb')?.style.setProperty('--thumb', "url('assets/places/merlo-storefront-hq.jpg')");
+    const merloDescription = merlo.querySelector('.desc');
+    if (merloDescription) merloDescription.textContent = 'Behind its deep-red Rue de Turenne façade, Merlo is a quietly polished Marais coffee stop for espresso, matcha and cake, with warm wood, fresh flowers and two pavement stools made for watching Paris go by.';
+  }
   const title = editor.querySelector('h3')?.textContent?.trim() || 'A local favourite';
   if (title === 'Simple Coffee') {
     editor.dataset.gallery = [
@@ -125,4 +136,30 @@
   section.querySelector('.gallery-prev')?.addEventListener('click', () => show(current - 1));
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
+
+  cards.filter(card => card !== editor && card.dataset.gallery).forEach(card => {
+    const thumb = card.querySelector('.place-thumb');
+    const placeTitle = card.querySelector('h3')?.textContent?.trim() || 'Place';
+    const images = card.dataset.gallery.split('|').map(value => value.trim()).filter(Boolean);
+    if (!thumb || images.length < 2) return;
+
+    thumb.classList.add('place-card-gallery');
+    thumb.insertAdjacentHTML('beforeend', `
+      <button class="card-gallery-arrow card-gallery-prev" type="button" aria-label="Previous ${placeTitle} photo">←</button>
+      <button class="card-gallery-arrow card-gallery-next" type="button" aria-label="Next ${placeTitle} photo">→</button>
+      <div class="card-gallery-dots">${images.map((_, index) =>
+        `<button type="button" aria-label="Show ${placeTitle} photo ${index + 1}" aria-pressed="${index === 0}"></button>`
+      ).join('')}</div>`);
+
+    let cardIndex = 0;
+    const cardDots = [...thumb.querySelectorAll('.card-gallery-dots button')];
+    const showCardImage = index => {
+      cardIndex = (index + images.length) % images.length;
+      thumb.style.setProperty('--thumb', `url('${images[cardIndex].replace(/['"]/g, '')}')`);
+      cardDots.forEach((dot, dotIndex) => dot.setAttribute('aria-pressed', String(dotIndex === cardIndex)));
+    };
+    thumb.querySelector('.card-gallery-prev')?.addEventListener('click', () => showCardImage(cardIndex - 1));
+    thumb.querySelector('.card-gallery-next')?.addEventListener('click', () => showCardImage(cardIndex + 1));
+    cardDots.forEach((dot, index) => dot.addEventListener('click', () => showCardImage(index)));
+  });
 })();
