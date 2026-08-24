@@ -63,14 +63,23 @@
   if (!main || !grid || !cards.length) return;
 
   const editor = cards[0];
+  const cardGalleries = {
+    'Merlo Café': ['assets/places/merlo-storefront-hq.jpg', 'assets/places/merlo-coffee-cake-hq.jpg', 'assets/places/merlo-dog-snow-hq.jpg'],
+    'Grave Café': ['assets/places/grave-cafe.jpg', 'assets/places/grave-interior-hq.jpg', 'assets/places/grave-peach-cake-hq.jpg'],
+    'Bønne': ['assets/places/bonne.webp', 'assets/places/bonne-atmosphere-hq.jpg', 'assets/places/bonne-brunch-hq.jpg'],
+    'Cuvée Noire': ['assets/places/cuv-e-noire.webp', 'assets/places/cuvee-drinks-hq.jpg', 'assets/places/cuvee-afternoon-hq.jpg'],
+    'Sevenly Heart': ['assets/places/sevenly-heart.webp', 'assets/places/sevenly-space-hq.jpg', 'assets/places/sevenly-cake-hq.jpg'],
+    'Nami Coffee': ['assets/places/nami-coffee.webp', 'assets/places/nami-atmosphere-hq.jpg', 'assets/places/nami-interior-hq.jpg']
+  };
+  cards.forEach(card => {
+    const placeTitle = card.querySelector('h3')?.textContent?.trim();
+    const images = cardGalleries[placeTitle];
+    if (!images) return;
+    card.dataset.gallery = images.join('|');
+    card.querySelector('.place-thumb')?.style.setProperty('--thumb', `url('${images[0]}')`);
+  });
   const merlo = cards.find(card => card.querySelector('h3')?.textContent?.trim() === 'Merlo Café');
   if (merlo) {
-    merlo.dataset.gallery = [
-      'assets/places/merlo-storefront-hq.jpg',
-      'assets/places/merlo-coffee-cake-hq.jpg',
-      'assets/places/merlo-dog-snow-hq.jpg'
-    ].join('|');
-    merlo.querySelector('.place-thumb')?.style.setProperty('--thumb', "url('assets/places/merlo-storefront-hq.jpg')");
     const merloDescription = merlo.querySelector('.desc');
     if (merloDescription) merloDescription.textContent = 'Behind its deep-red Rue de Turenne façade, Merlo is a quietly polished Marais coffee stop for espresso, matcha and cake, with warm wood, fresh flowers and two pavement stools made for watching Paris go by.';
   }
