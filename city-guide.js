@@ -137,7 +137,7 @@
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
 
-  cards.filter(card => card !== editor && card.dataset.gallery).forEach(card => {
+  cards.filter(card => card.dataset.gallery).forEach(card => {
     const thumb = card.querySelector('.place-thumb');
     const placeTitle = card.querySelector('h3')?.textContent?.trim() || 'Place';
     const images = card.dataset.gallery.split('|').map(value => value.trim()).filter(Boolean);
