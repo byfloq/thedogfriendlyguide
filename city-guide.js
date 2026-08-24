@@ -66,11 +66,11 @@
   const title = editor.querySelector('h3')?.textContent?.trim() || 'A local favourite';
   if (title === 'Simple Coffee') {
     editor.dataset.gallery = [
-      'assets/places/simple-coffee-instagram.jpg',
-      'assets/places/simple-coffee-2.jpg',
-      'assets/places/simple-coffee-3.jpg'
+      'assets/places/simple-coffee-instagram-hq.jpg',
+      'assets/places/simple-coffee-2-hq.jpg',
+      'assets/places/simple-coffee-3-hq.jpg'
     ].join('|');
-    editor.querySelector('.place-thumb')?.style.setProperty('--thumb', "url('assets/places/simple-coffee-instagram.jpg')");
+    editor.querySelector('.place-thumb')?.style.setProperty('--thumb', "url('assets/places/simple-coffee-instagram-hq.jpg')");
   }
   const meta = editor.querySelector('.place-category')?.textContent?.trim() || 'Editor selected';
   const desc = editor.querySelector('.desc')?.textContent?.trim() || 'A thoughtful, dog-friendly place selected by our editors.';
