@@ -115,15 +115,53 @@
     grid.insertBefore(article, emptyState);
   });
 
-  const areaFilters = document.querySelector('.area-filters');
-  [
-    ['belleville', 'Belleville'], ['vaneau', 'Vaneau'], ['latin-quarter', 'Latin Quarter'],
-    ['auteuil', 'Auteuil'], ['grenelle', 'Grenelle'], ['saint-germain', 'Saint-Germain'],
-    ['buttes-chaumont', 'Buttes-Chaumont'], ['cadet', 'Cadet'], ['opera', 'Opéra']
-  ].forEach(([value, label]) => {
-    if (!areaFilters || areaFilters.querySelector(`[data-filter="${value}"]`)) return;
-    areaFilters.insertAdjacentHTML('beforeend', `<button data-filter="${value}" aria-pressed="false">${label}</button>`);
+  const arrondissementByPlace = {
+    'Simple Coffee': ['arr-18', 'Café · 18th arrondissement · Montmartre'],
+    'Merlo Café': ['arr-3', 'Café · 3rd arrondissement · Le Marais'],
+    'Grave Café': ['arr-3', 'Café · 3rd arrondissement · Haut-Marais'],
+    'Bønne': ['arr-18', 'Café · 18th arrondissement · Montmartre'],
+    'Cuvée Noire': ['arr-9', 'Specialty coffee · 9th arrondissement · Saint-Lazare'],
+    'Sevenly Heart': ['arr-3', 'Coffee & brunch · 3rd arrondissement · Le Marais'],
+    'Nami Coffee': ['arr-2', 'Specialty coffee & bakery · 2nd arrondissement · Étienne Marcel'],
+    'Clove Coffee Shop': ['arr-18', 'Specialty coffee · 18th arrondissement · Montmartre'],
+    'Mardi': ['arr-19', 'Coffee & baked goods · 19th arrondissement · Belleville'],
+    'Niwa': ['arr-7', 'Bakery & café · 7th arrondissement · Vaneau'],
+    'Partisan Café': ['arr-3', 'Café & roastery · 3rd arrondissement · Arts et Métiers'],
+    'Barkers + Brothers': ['arr-18', 'Dog shop & café · 18th arrondissement · Montmartre'],
+    "Gino's Paris": ['arr-5', 'Boutique, grooming & daycare · 5th arrondissement · Latin Quarter'],
+    'Animal Particulier': ['arr-18', 'Independent pet shop · 18th arrondissement · Montmartre'],
+    'Casa del Doggo': ['arr-16', 'Dog bakery & concept store · 16th arrondissement · Auteuil'],
+    'Le Bone Appart': ['arr-4', 'Dog café & boutique · 4th arrondissement · Le Marais'],
+    'Two Tails': ['arr-7', 'Pet boutique · 7th arrondissement · Grenelle'],
+    'Petsochic': ['arr-6', 'Boutique & spa · 6th arrondissement · Saint-Germain'],
+    'Moustaches': ['arr-4', 'Pet concept store · 4th arrondissement · Le Marais'],
+    'Pantoufle': ['arr-19', 'Restaurant & wine bar · 19th arrondissement · Buttes-Chaumont'],
+    'Griffon': ['arr-4', 'Café, restaurant & bar · 4th arrondissement · Le Marais'],
+    'Coloré': ['arr-18', 'French-Japanese restaurant · 18th arrondissement · Montmartre'],
+    'Tekés': ['arr-2', 'Vegetable-led restaurant · 2nd arrondissement · Étienne Marcel'],
+    'Maison Mère': ['arr-9', 'Boutique hotel · 9th arrondissement · Cadet'],
+    'Kimpton St Honoré Paris': ['arr-2', 'Luxury hotel · 2nd arrondissement · Opéra']
+  };
+
+  grid.querySelectorAll('.place-card').forEach(card => {
+    const place = arrondissementByPlace[card.querySelector('h3')?.textContent?.trim()];
+    if (!place) return;
+    card.dataset.area = place[0];
+    const meta = card.querySelector('.place-category');
+    if (meta) meta.textContent = place[1];
   });
+
+  const areaFilters = document.querySelector('.area-filters');
+  if (areaFilters) {
+    areaFilters.setAttribute('aria-label', 'Filter places by arrondissement');
+    areaFilters.innerHTML = `<span class="filter-label">Explore by arrondissement</span>
+      <button class="active" data-filter="all" aria-pressed="true">All</button>
+      ${[
+        ['arr-2', '2nd'], ['arr-3', '3rd'], ['arr-4', '4th'], ['arr-5', '5th'],
+        ['arr-6', '6th'], ['arr-7', '7th'], ['arr-9', '9th'], ['arr-16', '16th'],
+        ['arr-18', '18th'], ['arr-19', '19th']
+      ].map(([value, label]) => `<button data-filter="${value}" aria-pressed="false" aria-label="${label} arrondissement">${label}</button>`).join('')}`;
+  }
   const count = document.querySelector('.cg-intro p');
   if (count) count.textContent = `${grid.querySelectorAll('.place-card').length} recommendations`;
 })();
