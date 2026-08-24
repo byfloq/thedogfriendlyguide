@@ -110,8 +110,9 @@
 .guide-tags{display:grid;gap:0;width:min(980px,100%);margin:0 auto 48px;padding:8px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .guide-tags .cg-filters{display:flex;flex-wrap:wrap;align-items:center;gap:0!important;height:auto;min-width:0;padding:18px 8px!important;overflow:visible!important;border:0;border-radius:0;background:transparent!important}
 .guide-tags .cg-filters+.cg-filters{border-top:1px solid rgba(222,212,199,.7)}
-.guide-tags .filter-label{flex:0 0 150px;margin:0;padding-left:8px;color:var(--muted);font:500 9px/1.2 var(--sans);letter-spacing:.15em;text-transform:uppercase}
+.guide-tags .filter-label{flex:0 0 150px;margin:0 18px 0 0;padding-left:8px;color:var(--muted);font:500 9px/1.2 var(--sans);letter-spacing:.15em;text-transform:uppercase}
+.guide-tags .area-filters .filter-label{flex-basis:220px}
 .guide-tags .cg-filters button{min-height:36px;margin:0 7px 6px 0;padding:10px 15px!important;border:1px solid var(--rule);border-radius:999px;background:rgba(255,255,255,.55);color:var(--muted);font:500 9px/1 var(--sans);letter-spacing:.11em;text-transform:uppercase;transition:background .2s ease,border-color .2s ease,color .2s ease}
 .guide-tags .cg-filters button:hover{border-color:var(--ink);color:var(--ink)}
 .guide-tags .cg-filters button.active{border-color:var(--ink);background:var(--ink);color:var(--paper)!important}
-@media(max-width:700px){.discovery-eyebrow{font-size:clamp(32px,10vw,46px)}.guide-tags{margin-bottom:34px;padding:4px 0}.guide-tags .cg-filters{padding:16px 0!important;overflow:hidden!important}.guide-tags .filter-label{flex-basis:100%;margin-bottom:12px;padding-left:2px;font-size:8px}.guide-tags .cg-filters button{min-height:34px;margin:0 5px 6px 0;padding:9px 12px!important;font-size:8px}}
+@media(max-width:700px){.discovery-eyebrow{font-size:clamp(32px,10vw,46px)}.guide-tags{margin-bottom:34px;padding:4px 0}.guide-tags .cg-filters{padding:16px 0!important;overflow:hidden!important}.guide-tags .filter-label,.guide-tags .area-filters .filter-label{flex-basis:100%;margin:0 0 12px;padding-left:2px;font-size:8px}.guide-tags .cg-filters button{min-height:34px;margin:0 5px 6px 0;padding:9px 12px!important;font-size:8px}}

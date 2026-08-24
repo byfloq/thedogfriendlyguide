@@ -30,72 +30,72 @@
     {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
       description: 'A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.',
-      instagram: 'https://www.instagram.com/barkersandbrothers/', maps: 'Barkers and Brothers 46 Rue Berthe 75018 Paris', images: ['assets/places/barkers-brothers.jpg']
+      instagram: 'https://www.instagram.com/barkersandbrothers/', maps: 'Barkers and Brothers 46 Rue Berthe 75018 Paris', images: ['assets/places/barkers-brothers.jpg', 'assets/places/barkers-brothers-2.jpg', 'assets/places/barkers-brothers-3.jpg']
     },
     {
       title: "Gino's Paris", meta: 'Boutique, grooming & daycare · Latin Quarter', area: 'latin-quarter', key: 'ginos-paris', category: 'shop',
       description: 'A polished canine concept store combining premium accessories, gentle grooming and daycare in the heart of the Latin Quarter.',
-      instagram: 'https://www.instagram.com/ginos.paris/', maps: "Gino's Paris 7 Rue de la Montagne Sainte-Geneviève 75005 Paris", images: ['assets/places/ginos-paris.jpg']
+      instagram: 'https://www.instagram.com/ginos.paris/', maps: "Gino's Paris 7 Rue de la Montagne Sainte-Geneviève 75005 Paris", images: ['assets/places/ginos-paris.jpg', 'assets/places/ginos-paris-2.jpg', 'assets/places/ginos-paris-3.jpg']
     },
     {
       title: 'Animal Particulier', meta: 'Independent pet shop · Montmartre', area: 'montmartre', key: 'animal-particulier', category: 'shop',
       description: 'An independent Montmartre address for distinctive accessories, clothing and small-batch finds for dogs and cats.',
-      instagram: 'https://www.instagram.com/animal_particulier/', maps: 'Animal Particulier 11 Square de Clignancourt 75018 Paris', images: ['assets/places/animal-particulier.jpg']
+      instagram: 'https://www.instagram.com/animal_particulier/', maps: 'Animal Particulier 11 Square de Clignancourt 75018 Paris', images: ['assets/places/animal-particulier.jpg', 'assets/places/animal-particulier-2.jpg', 'assets/places/animal-particulier-3.jpg']
     },
     {
       title: 'Casa del Doggo', meta: 'Dog bakery & concept store · Auteuil', area: 'auteuil', key: 'casa-del-doggo', category: 'shop',
       description: 'A joyful dog-first bakery with handmade treats, a colourful shop and a self-service dog wash designed for time together.',
-      instagram: 'https://www.instagram.com/casadeldoggobakery/', maps: 'Casa del Doggo 13 Rue Pierre Guérin 75016 Paris', images: ['assets/places/casa-del-doggo.jpg']
+      instagram: 'https://www.instagram.com/casadeldoggobakery/', maps: 'Casa del Doggo 13 Rue Pierre Guérin 75016 Paris', images: ['assets/places/casa-del-doggo.jpg', 'assets/places/casa-del-doggo-2.jpg', 'assets/places/casa-del-doggo-3.jpg']
     },
     {
       title: 'Le Bone Appart', meta: 'Dog café & boutique · Le Marais', area: 'le-marais', key: 'le-bone-appart', category: 'shop',
       description: 'A dog café and boutique beside Place des Vosges, made for coffee, canine pâtisseries and playful Parisian accessories.',
-      instagram: 'https://www.instagram.com/leboneappart/', maps: 'Le Bone Appart 9 Rue de Birague 75004 Paris', images: ['assets/places/le-bone-appart.jpg']
+      instagram: 'https://www.instagram.com/leboneappart/', maps: 'Le Bone Appart 9 Rue de Birague 75004 Paris', images: ['assets/places/le-bone-appart.jpg', 'assets/places/le-bone-appart-2.jpg', 'assets/places/le-bone-appart-3.jpg']
     },
     {
       title: 'Two Tails', meta: 'Pet boutique · Grenelle', area: 'grenelle', key: 'two-tails', category: 'shop',
       description: 'A friendly neighbourhood boutique with a broad, carefully selected world of food, care and everyday essentials for dogs and cats.',
-      instagram: 'https://www.instagram.com/twotails_fr/', maps: 'Two Tails 199 Rue de Grenelle 75007 Paris', images: ['assets/places/two-tails.jpg']
+      instagram: 'https://www.instagram.com/twotails_fr/', maps: 'Two Tails 199 Rue de Grenelle 75007 Paris', images: ['assets/places/two-tails.jpg', 'assets/places/two-tails-2.jpg', 'assets/places/two-tails-3.jpg']
     },
     {
       title: 'Petsochic', meta: 'Boutique & spa · Saint-Germain', area: 'saint-germain', key: 'petsochic', category: 'shop',
       description: 'A refined Left Bank boutique and grooming spa bringing together French-made accessories, personalisation and attentive care.',
-      instagram: 'https://www.instagram.com/petsochic/', maps: 'Petsochic 16 Rue Dauphine 75006 Paris', images: ['assets/places/petsochic.jpg']
+      instagram: 'https://www.instagram.com/petsochic/', maps: 'Petsochic 16 Rue Dauphine 75006 Paris', images: ['assets/places/petsochic.jpg', 'assets/places/petsochic-2.jpg', 'assets/places/petsochic-3.jpg']
     },
     {
       title: 'Moustaches', meta: 'Pet concept store · Le Marais', area: 'le-marais', key: 'moustaches-paris', category: 'shop',
       description: 'A long-standing Marais pet concept store with useful essentials, playful gifts and design-minded accessories under one roof.',
-      instagram: 'https://www.instagram.com/moustachesparis/', maps: 'Moustaches 32 Rue des Archives 75004 Paris', images: ['assets/places/moustaches-paris.jpg']
+      instagram: 'https://www.instagram.com/moustachesparis/', maps: 'Moustaches 32 Rue des Archives 75004 Paris', images: ['assets/places/moustaches-paris-3.jpg', 'assets/places/moustaches-paris-2.jpg', 'assets/places/moustaches-paris.jpg']
     },
     {
       title: 'Pantoufle', meta: 'Restaurant & wine bar · Buttes-Chaumont', area: 'buttes-chaumont', key: 'pantoufle-paris', category: 'restaurant',
       description: 'A relaxed wine bar and restaurant hosting rotating chef residencies, with expressive seasonal plates and an intimate neighbourhood mood.',
-      instagram: 'https://www.instagram.com/pantoufle.paris/', maps: 'Pantoufle 5 Rue de Chaumont 75019 Paris', images: ['assets/places/pantoufle-paris.jpg']
+      instagram: 'https://www.instagram.com/pantoufle.paris/', maps: 'Pantoufle 5 Rue de Chaumont 75019 Paris', images: ['assets/places/pantoufle-paris.jpg', 'assets/places/pantoufle-paris-2.jpg', 'assets/places/pantoufle-paris-3.jpg']
     },
     {
       title: 'Griffon', meta: 'Café, restaurant & bar · Le Marais', area: 'le-marais', key: 'griffon-paris', category: 'restaurant',
       description: 'A characterful Marais hideaway for coffee, fresh food and natural wine, with collected interiors and a leafy secret terrace.',
-      instagram: 'https://www.instagram.com/griffon.paris/', maps: 'Griffon 55 bis Rue des Francs-Bourgeois 75004 Paris', images: ['assets/places/griffon-paris.jpg']
+      instagram: 'https://www.instagram.com/griffon.paris/', maps: 'Griffon 55 bis Rue des Francs-Bourgeois 75004 Paris', images: ['assets/places/griffon-paris-2.jpg', 'assets/places/griffon-paris.jpg', 'assets/places/griffon-paris-3.jpg']
     },
     {
       title: 'Coloré', meta: 'French-Japanese restaurant · Montmartre', area: 'montmartre', key: 'colore-paris', category: 'restaurant',
       description: 'A quietly creative Montmartre restaurant where seasonal French produce meets delicate Japanese influences and natural wine.',
-      instagram: 'https://www.instagram.com/colore.paris/', maps: 'Coloré 20 Rue du Ruisseau 75018 Paris', images: ['assets/places/colore-paris.jpg']
+      instagram: 'https://www.instagram.com/colore.paris/', maps: 'Coloré 20 Rue du Ruisseau 75018 Paris', images: ['assets/places/colore-paris.jpg', 'assets/places/colore-paris-2.jpg', 'assets/places/colore-paris-3.jpg']
     },
     {
       title: 'Tekés', meta: 'Vegetable-led restaurant · Étienne Marcel', area: 'etienne-marcel', key: 'tekes-paris', category: 'restaurant',
       description: 'A vibrant open-kitchen restaurant centred on vegetables, fire and Jerusalem-inspired flavours in the heart of the 2nd arrondissement.',
-      instagram: 'https://www.instagram.com/tekes_paris/', maps: 'Tekés 4 bis Rue Saint-Sauveur 75002 Paris', images: ['assets/places/tekes-paris.webp']
+      instagram: 'https://www.instagram.com/tekes_paris/', maps: 'Tekés 4 bis Rue Saint-Sauveur 75002 Paris', images: ['assets/places/tekes-paris.webp', 'assets/places/tekes-paris-2.webp', 'assets/places/tekes-paris-3.webp']
     },
     {
       title: 'Maison Mère', meta: 'Boutique hotel · Cadet', area: 'cadet', key: 'maison-mere', category: 'hotel',
       description: 'A characterful four-star maison with art-filled rooms and a residential spirit, welcoming small dogs up to 10 kg in selected rooms.',
-      instagram: 'https://www.instagram.com/maisonmere.lovers/', maps: 'Maison Mère 7 Rue Mayran 75009 Paris', images: ['assets/places/maison-mere.jpg']
+      instagram: 'https://www.instagram.com/maisonmere.lovers/', maps: 'Maison Mère 7 Rue Mayran 75009 Paris', images: ['assets/places/maison-mere.jpg', 'assets/places/maison-mere-2.jpg', 'assets/places/maison-mere-3.jpg']
     },
     {
       title: 'Kimpton St Honoré Paris', meta: 'Luxury hotel · Opéra', area: 'opera', key: 'kimpton-st-honore', category: 'hotel',
       description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy—every size and breed is welcome at no extra charge.',
-      instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg']
+      instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg', 'assets/places/kimpton-st-honore-2.jpg', 'assets/places/kimpton-st-honore-3.jpg']
     }
   ];
 
@@ -237,7 +237,7 @@
     'Bønne': ['assets/places/bonne.webp', 'assets/places/bonne-atmosphere-hq.jpg', 'assets/places/bonne-brunch-hq.jpg'],
     'Cuvée Noire': ['assets/places/cuv-e-noire.webp', 'assets/places/cuvee-drinks-hq.jpg', 'assets/places/cuvee-afternoon-hq.jpg'],
     'Sevenly Heart': ['assets/places/sevenly-heart.webp', 'assets/places/sevenly-space-hq.jpg', 'assets/places/sevenly-cake-hq.jpg'],
-    'Nami Coffee': ['assets/places/nami-coffee.webp', 'assets/places/nami-atmosphere-hq.jpg', 'assets/places/nami-interior-hq.jpg']
+    'Nami Coffee': ['assets/places/nami-coffee-new.jpg', 'assets/places/nami-coffee-2.jpg', 'assets/places/nami-coffee-3.jpg']
   };
   cards.forEach(card => {
     const placeTitle = card.querySelector('h3')?.textContent?.trim();
