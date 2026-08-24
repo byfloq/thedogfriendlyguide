@@ -1,4 +1,60 @@
 (() => {
+  const grid = document.querySelector('.place-grid');
+  if (!grid || !document.body.classList.contains('city-guide-page') || !location.pathname.endsWith('paris-guide.html')) return;
+
+  const approvedPlaces = [
+    {
+      title: 'Clove Coffee Shop', meta: 'Specialty coffee · Montmartre', area: 'montmartre', key: 'clove-coffee-shop',
+      description: 'A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.',
+      instagram: 'https://www.instagram.com/clovecoffeeshop/', maps: 'Clove Coffee Shop 14 Rue Chappe 75018 Paris',
+      images: ['assets/places/clove-coffee-hq.jpg', 'assets/places/clove-iced-tea-hq.jpg', 'assets/places/clove-friends-hq.jpg']
+    },
+    {
+      title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe',
+      description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
+      instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
+      images: ['assets/places/mardi-drink-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg', 'assets/places/mardi-space-hq.jpg']
+    },
+    {
+      title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris',
+      description: 'A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates—and a warm welcome for dogs.',
+      instagram: 'https://www.instagram.com/niwa_paris_/', maps: 'Niwa 56 Rue Vaneau 75007 Paris',
+      images: ['assets/places/niwa-detail-hq.jpg', 'assets/places/niwa-space-hq.jpg', 'assets/places/niwa-bread-hq.jpg']
+    },
+    {
+      title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe',
+      description: 'A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.',
+      instagram: 'https://www.instagram.com/parispartisancafe/', maps: 'Partisan Cafe 36 Rue de Turbigo 75003 Paris',
+      images: ['assets/places/partisan-space-hq.jpg', 'assets/places/partisan-affogato-hq.jpg', 'assets/places/partisan-community-hq.jpg']
+    }
+  ];
+
+  const emptyState = grid.querySelector('.empty-state');
+  approvedPlaces.forEach(place => {
+    const article = document.createElement('article');
+    article.className = 'place-card';
+    article.dataset.category = 'cafe';
+    article.dataset.area = place.area;
+    article.dataset.gallery = place.images.join('|');
+    article.innerHTML = `<div class="place-thumb" style="--thumb:url('${place.images[0]}')"></div>
+      <div class="place-content"><h3>${place.title}</h3><p class="place-category">${place.meta}</p>
+      <p class="desc">${place.description}</p><div class="place-actions">
+      <a class="primary" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.maps)}" target="_blank" rel="noopener">Get Directions →</a>
+      <a href="${place.instagram}" target="_blank" rel="noopener">View on Instagram</a>
+      <button class="favourite" data-place="${place.key}" type="button">♡ Add to Favourites</button></div></div>`;
+    grid.insertBefore(article, emptyState);
+  });
+
+  const areaFilters = document.querySelector('.area-filters');
+  [['belleville', 'Belleville'], ['vaneau', 'Vaneau']].forEach(([value, label]) => {
+    if (!areaFilters || areaFilters.querySelector(`[data-filter="${value}"]`)) return;
+    areaFilters.insertAdjacentHTML('beforeend', `<button data-filter="${value}" aria-pressed="false">${label}</button>`);
+  });
+  const count = document.querySelector('.cg-intro p');
+  if (count) count.textContent = `${grid.querySelectorAll('.place-card').length} recommendations`;
+})();
+
+(() => {
   const cards = [...document.querySelectorAll('.place-card')];
   const areaFilters = document.querySelector('.area-filters');
   if (!cards.length || !areaFilters) return;
