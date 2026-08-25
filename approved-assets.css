@@ -1,4 +1,4 @@
-/* Approved visual treatment — high-resolution image sources */
+/* Approved visual treatment - high-resolution image sources */
 .brand-mark{background:url('assets/approved-logo.webp') center/contain no-repeat;flex:0 0 auto}
 .brand-mark svg{display:none}
 .coco-seal,.round-stamp{background:url('assets/approved-logo.webp') center/contain no-repeat!important;border:0!important;box-shadow:none!important;transform:none!important}
@@ -11,12 +11,12 @@
 .city-paris{background-image:url('https://unsplash.com/photos/X-a801w2Q6s/download?force=true&w=1600')!important;background-position:center!important}
 .city-london{background-image:url('https://unsplash.com/photos/PyHrr8nZXvs/download?force=true&w=1600')!important;background-position:center!important}
 .city-copenhagen{background-image:url('https://unsplash.com/photos/iC2FHfd3TuM/download?force=true&w=1600')!important;background-position:center!important}
-/* Journal — use large sources so the lead image stays crisp at desktop width. */
+/* Journal - use large sources so the lead image stays crisp at desktop width. */
 .journal-main{background-image:url('https://unsplash.com/photos/hP-x4172FfM/download?force=true&w=1800')!important;background-position:center!important}
 .story-1{background-image:url('https://unsplash.com/photos/X-a801w2Q6s/download?force=true&w=1000')!important;background-position:center!important}
 .story-2{background-image:url('https://unsplash.com/photos/iC2FHfd3TuM/download?force=true&w=1000')!important;background-position:center!important}
 .story-3{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:center!important}
-/* Coco section — retain the approved warm photography family without enlarging the old 100px draft crops. */
+/* Coco section - retain the approved warm photography family without enlarging the old 100px draft crops. */
 .coco-1{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:72% center!important}
 .coco-2{background-image:url('assets/coco-was-there.jpg')!important;background-position:center!important}
 .coco-3{background-image:url('https://unsplash.com/photos/hP-x4172FfM/download?force=true&w=1200')!important;background-position:center!important}

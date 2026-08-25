@@ -17,7 +17,7 @@
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
-      description: 'A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates—and a warm welcome for dogs.',
+      description: 'A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates - and a warm welcome for dogs.',
       instagram: 'https://www.instagram.com/niwa_paris_/', maps: 'Niwa 56 Rue Vaneau 75007 Paris',
       images: ['assets/places/niwa-detail-hq.jpg', 'assets/places/niwa-space-hq.jpg', 'assets/places/niwa-bread-hq.jpg']
     },
@@ -94,7 +94,7 @@
     },
     {
       title: 'Kimpton St Honoré Paris', meta: 'Luxury hotel · Opéra', area: 'opera', key: 'kimpton-st-honore', category: 'hotel',
-      description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy—every size and breed is welcome at no extra charge.',
+      description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy - every size and breed is welcome at no extra charge.',
       instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg', 'assets/places/kimpton-st-honore-2.jpg', 'assets/places/kimpton-st-honore-3.jpg']
     }
   ];
@@ -278,7 +278,7 @@
       <article class="editors-card">
         <div class="editors-gallery">
           <div class="editors-slides">${slideStyles.map((style, index) =>
-            `<div class="editors-image${index === 0 ? ' active' : ''}" style="${style}" role="img" aria-label="${title.replace(/"/g, '&quot;')} — photo ${index + 1}"></div>`
+            `<div class="editors-image${index === 0 ? ' active' : ''}" style="${style}" role="img" aria-label="${title.replace(/"/g, '&quot;')} - photo ${index + 1}"></div>`
           ).join('')}</div>
           ${slideStyles.length > 1 ? `
             <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous photo">←</button>
