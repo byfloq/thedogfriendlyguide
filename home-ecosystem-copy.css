@@ -1,3 +1,5 @@
+@import url("mvp-launch.css?v=1");
+
 .ecosystem-section-title{align-items:flex-start;gap:2rem}
 .ecosystem-section-title .ecosystem-copy{max-width:760px}
 .ecosystem-section-title .ecosystem-copy h2{margin:0 0 1.15rem}
