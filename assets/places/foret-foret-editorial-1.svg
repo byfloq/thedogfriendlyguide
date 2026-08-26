@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+  <rect width="1200" height="1500" fill="#d8d0c4"/>
+  <rect x="105" y="105" width="990" height="1290" fill="#eee8df" stroke="#25211d" stroke-width="3"/>
+  <circle cx="600" cy="535" r="250" fill="#596451"/>
+  <text x="600" y="1010" text-anchor="middle" fill="#25211d" font-family="Georgia,serif" font-size="106">Forêt Forêt</text>
+  <text x="600" y="1090" text-anchor="middle" fill="#6f695f" font-family="Arial,sans-serif" font-size="28" letter-spacing="9">PARIS · LE MARAIS</text>
+</svg>

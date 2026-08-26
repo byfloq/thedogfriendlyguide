@@ -34,6 +34,12 @@
       images: ['assets/places/tanat-victoria-interior.jpg', 'assets/places/tanat-victoria-coffee.jpg', 'assets/places/tanat-victoria-espresso.jpg']
     },
     {
+      title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
+      description: 'A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.',
+      instagram: 'https://www.instagram.com/foretforet_paris/', maps: 'Forêt Forêt 64 Rue des Tournelles 75003 Paris',
+      images: ['assets/places/foret-foret-editorial-1.svg', 'assets/places/foret-foret-editorial-2.svg', 'assets/places/foret-foret-editorial-3.svg']
+    },
+    {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
       description: 'A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.',
       instagram: 'https://www.instagram.com/barkersandbrothers/', maps: 'Barkers and Brothers 46 Rue Berthe 75018 Paris', images: ['assets/places/barkers-brothers.jpg', 'assets/places/barkers-brothers-2.jpg', 'assets/places/barkers-brothers-3.jpg']
@@ -134,6 +140,7 @@
     'Niwa': ['arr-7', 'Bakery & café · 7th arrondissement · Vaneau'],
     'Partisan Café': ['arr-3', 'Café & roastery · 3rd arrondissement · Arts et Métiers'],
     'Tanat Victoria': ['arr-1', 'Specialty coffee · 1st arrondissement · Châtelet'],
+    'Forêt Forêt': ['arr-3', 'Specialty coffee & tea · 3rd arrondissement · Le Marais'],
     'Barkers + Brothers': ['arr-18', 'Dog shop & café · 18th arrondissement · Montmartre'],
     "Gino's Paris": ['arr-5', 'Boutique, grooming & daycare · 5th arrondissement · Latin Quarter'],
     'Animal Particulier': ['arr-18', 'Independent pet shop · 18th arrondissement · Montmartre'],

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+  <rect width="1200" height="1500" fill="#7f9b8d"/>
+  <circle cx="600" cy="590" r="290" fill="#f1dfc5"/>
+  <text x="600" y="555" text-anchor="middle" fill="#25211d" font-family="Georgia,serif" font-size="84">Pet friendly.</text>
+  <text x="600" y="665" text-anchor="middle" fill="#25211d" font-family="Georgia,serif" font-size="45">Café resident included.</text>
+  <text x="600" y="1120" text-anchor="middle" fill="#f1dfc5" font-family="Arial,sans-serif" font-size="27" letter-spacing="9">M.A.M.I. CAFÉ</text>
+</svg>

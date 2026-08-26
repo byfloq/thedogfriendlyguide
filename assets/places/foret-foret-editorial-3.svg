@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+  <rect width="1200" height="1500" fill="#c6b7a5"/>
+  <circle cx="600" cy="590" r="290" fill="#eee8df"/>
+  <text x="600" y="555" text-anchor="middle" fill="#25211d" font-family="Georgia,serif" font-size="82">Dogs welcome.</text>
+  <text x="600" y="660" text-anchor="middle" fill="#25211d" font-family="Georgia,serif" font-size="45">Calm, sociable visits.</text>
+  <text x="600" y="1120" text-anchor="middle" fill="#25211d" font-family="Arial,sans-serif" font-size="27" letter-spacing="9">FORÊT FORÊT</text>
+</svg>

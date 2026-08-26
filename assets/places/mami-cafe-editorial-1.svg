@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+  <rect width="1200" height="1500" fill="#c35f48"/>
+  <rect x="105" y="105" width="990" height="1290" fill="#f1dfc5" stroke="#25211d" stroke-width="3"/>
+  <circle cx="600" cy="530" r="245" fill="#c35f48"/>
+  <text x="600" y="1000" text-anchor="middle" fill="#25211d" font-family="Georgia,serif" font-size="102">M.A.M.I. Café</text>
+  <text x="600" y="1080" text-anchor="middle" fill="#6f695f" font-family="Arial,sans-serif" font-size="28" letter-spacing="8">BARCELONA · BORN</text>
+</svg>
