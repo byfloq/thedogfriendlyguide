@@ -37,7 +37,7 @@
       title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
       description: 'A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.',
       instagram: 'https://www.instagram.com/foretforet_paris/', maps: 'Forêt Forêt 64 Rue des Tournelles 75003 Paris',
-      images: ['assets/places/foret-foret-editorial-1.svg', 'assets/places/foret-foret-editorial-2.svg', 'assets/places/foret-foret-editorial-3.svg']
+      images: ['assets/places/foret-foret-interior.webp', 'assets/places/foret-foret-coffee.jpg', 'assets/places/foret-foret-dog.jpg']
     },
     {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
