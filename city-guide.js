@@ -28,6 +28,12 @@
       images: ['assets/places/partisan-space-hq.jpg', 'assets/places/partisan-affogato-hq.jpg', 'assets/places/partisan-community-hq.jpg']
     },
     {
+      title: 'Tanat Victoria', meta: 'Specialty coffee · Châtelet', area: 'chatelet', key: 'tanat-victoria', category: 'cafe',
+      description: 'Tanat’s clean-lined Victoria coffee shop near Châtelet pairs precisely roasted specialty coffee with the warmest dog welcome in the group, according to its team.',
+      instagram: 'https://www.instagram.com/tanat.coffee/', maps: 'Tanat Victoria Châtelet Paris',
+      images: ['assets/places/tanat-victoria-interior.jpg', 'assets/places/tanat-victoria-coffee.jpg', 'assets/places/tanat-victoria-espresso.jpg']
+    },
+    {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
       description: 'A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.',
       instagram: 'https://www.instagram.com/barkersandbrothers/', maps: 'Barkers and Brothers 46 Rue Berthe 75018 Paris', images: ['assets/places/barkers-brothers.jpg', 'assets/places/barkers-brothers-2.jpg', 'assets/places/barkers-brothers-3.jpg']
@@ -127,6 +133,7 @@
     'Mardi': ['arr-19', 'Coffee & baked goods · 19th arrondissement · Belleville'],
     'Niwa': ['arr-7', 'Bakery & café · 7th arrondissement · Vaneau'],
     'Partisan Café': ['arr-3', 'Café & roastery · 3rd arrondissement · Arts et Métiers'],
+    'Tanat Victoria': ['arr-1', 'Specialty coffee · 1st arrondissement · Châtelet'],
     'Barkers + Brothers': ['arr-18', 'Dog shop & café · 18th arrondissement · Montmartre'],
     "Gino's Paris": ['arr-5', 'Boutique, grooming & daycare · 5th arrondissement · Latin Quarter'],
     'Animal Particulier': ['arr-18', 'Independent pet shop · 18th arrondissement · Montmartre'],
@@ -157,7 +164,7 @@
     areaFilters.innerHTML = `<span class="filter-label">Explore by arrondissement</span>
       <button class="active" data-filter="all" aria-pressed="true">All</button>
       ${[
-        ['arr-2', '2nd'], ['arr-3', '3rd'], ['arr-4', '4th'], ['arr-5', '5th'],
+        ['arr-1', '1st'], ['arr-2', '2nd'], ['arr-3', '3rd'], ['arr-4', '4th'], ['arr-5', '5th'],
         ['arr-6', '6th'], ['arr-7', '7th'], ['arr-9', '9th'], ['arr-16', '16th'],
         ['arr-18', '18th'], ['arr-19', '19th']
       ].map(([value, label]) => `<button data-filter="${value}" aria-pressed="false" aria-label="${label} arrondissement">${label}</button>`).join('')}`;
