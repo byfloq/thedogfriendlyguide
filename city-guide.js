@@ -13,31 +13,31 @@
       title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-space-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg']
+      images: ['assets/places/mardi-space-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg', 'assets/places/mardi-facade.jpg']
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
       description: 'A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates - and a warm welcome for dogs.',
       instagram: 'https://www.instagram.com/niwa_paris_/', maps: 'Niwa 56 Rue Vaneau 75007 Paris',
-      images: ['assets/places/niwa-detail-hq.jpg', 'assets/places/niwa-space-hq.jpg', 'assets/places/niwa-bread-hq.jpg']
+      images: ['assets/places/niwa-soft-serve.jpg', 'assets/places/niwa-space-hq.jpg', 'assets/places/niwa-bread-hq.jpg']
     },
     {
       title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe', category: 'cafe',
       description: 'A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.',
       instagram: 'https://www.instagram.com/parispartisancafe/', maps: 'Partisan Cafe 36 Rue de Turbigo 75003 Paris',
-      images: ['assets/places/partisan-space-hq.jpg', 'assets/places/partisan-affogato-hq.jpg', 'assets/places/partisan-community-hq.jpg']
+      images: ['assets/places/partisan-machine.jpg', 'assets/places/partisan-community-hq.jpg', 'assets/places/partisan-affogato-hq.jpg']
     },
     {
       title: 'Tanat Victoria', meta: 'Specialty coffee · Châtelet', area: 'chatelet', key: 'tanat-victoria', category: 'cafe',
       description: 'Tanat’s clean-lined Victoria coffee shop near Châtelet pairs precisely roasted specialty coffee with the warmest dog welcome in the group, according to its team.',
       instagram: 'https://www.instagram.com/tanat.coffee/', maps: 'Tanat Victoria Châtelet Paris',
-      images: ['assets/places/tanat-victoria-interior.jpg', 'assets/places/tanat-victoria-coffee.jpg', 'assets/places/tanat-victoria-espresso.jpg']
+      images: ['assets/places/tanat-victoria-interior.jpg', 'assets/places/tanat-victoria-detail.jpg', 'assets/places/tanat-victoria-espresso.jpg']
     },
     {
       title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
       description: 'A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.',
       instagram: 'https://www.instagram.com/foretforet_paris/', maps: 'Forêt Forêt 64 Rue des Tournelles 75003 Paris',
-      images: ['assets/places/foret-foret-interior.webp', 'assets/places/foret-foret-coffee.jpg', 'assets/places/foret-foret-dog.jpg']
+      images: ['assets/places/foret-foret-dog-space.jpg', 'assets/places/foret-foret-pour-over.jpg', 'assets/places/foret-foret-architecture.jpg']
     },
     {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
@@ -202,14 +202,15 @@
   const typeFilters = document.createElement('nav');
   typeFilters.className = 'cg-filters type-filters';
   typeFilters.setAttribute('aria-label', 'Filter places by type');
+  const cafesFirst = location.pathname.endsWith('paris-guide.html');
   typeFilters.innerHTML = `<span class="filter-label">Type of place</span>
-    <button class="active" data-filter="all" aria-pressed="true">All</button>
+    <button class="${cafesFirst ? '' : 'active'}" data-filter="all" aria-pressed="${cafesFirst ? 'false' : 'true'}">All</button>
     ${categoryLabels.filter(([value]) => available.has(value)).map(([value, label]) =>
-      `<button data-filter="${value}" aria-pressed="false">${label}</button>`
+      `<button class="${cafesFirst && value === 'cafe' ? 'active' : ''}" data-filter="${value}" aria-pressed="${cafesFirst && value === 'cafe' ? 'true' : 'false'}">${label}</button>`
     ).join('')}`;
   areaFilters.before(typeFilters);
 
-  const selected = { type: 'all', area: 'all' };
+  const selected = { type: cafesFirst ? 'cafe' : 'all', area: 'all' };
   const applyFilters = () => {
     let shown = 0;
     cards.forEach(card => {
@@ -220,6 +221,8 @@
     });
     const empty = document.querySelector('.empty-state');
     if (empty) empty.style.display = shown ? 'none' : 'block';
+    const count = document.querySelector('.cg-intro p');
+    if (count) count.textContent = `${shown} ${shown === 1 ? 'recommendation' : 'recommendations'}`;
   };
 
   const bindGroup = (group, key) => {
@@ -236,6 +239,7 @@
   };
   bindGroup(typeFilters, 'type');
   bindGroup(areaFilters, 'area');
+  applyFilters();
 })();
 
 (() => {
@@ -247,7 +251,7 @@
   const editor = cards[0];
   const cardGalleries = {
     'Merlo Café': ['assets/places/merlo-storefront-hq.jpg', 'assets/places/merlo-coffee-cake-hq.jpg', 'assets/places/merlo-dog-snow-hq.jpg'],
-    'Grave Café': ['assets/places/grave-cafe.jpg', 'assets/places/grave-interior-hq.jpg', 'assets/places/grave-peach-cake-hq.jpg'],
+    'Grave Café': ['assets/places/grave-cafe.jpg', 'assets/places/grave-regular-dogs.jpg', 'assets/places/grave-peach-cake-hq.jpg'],
     'Bønne': ['assets/places/bonne.webp', 'assets/places/bonne-atmosphere-hq.jpg', 'assets/places/bonne-brunch-hq.jpg'],
     'Cuvée Noire': ['assets/places/cuv-e-noire.webp', 'assets/places/cuvee-drinks-hq.jpg', 'assets/places/cuvee-afternoon-hq.jpg'],
     'Sevenly Heart': ['assets/places/sevenly-heart.webp', 'assets/places/sevenly-space-hq.jpg', 'assets/places/sevenly-cake-hq.jpg'],
