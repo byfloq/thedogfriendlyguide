@@ -1,4 +1,7 @@
 (() => {
+  // Canonical cross-project catalogue: paris-places.json.
+  // Keep it aligned whenever a Paris recommendation changes so the Flōq app
+  // and the website consume the same complete list.
   const grid = document.querySelector('.place-grid');
   if (!grid || !document.body.classList.contains('city-guide-page') || !location.pathname.endsWith('paris-guide.html')) return;
 

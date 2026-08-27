@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "city": "Paris",
+  "country": "France",
+  "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
+  "lastUpdated": "2026-08-27",
+  "placeCount": 27,
+  "places": [
+    {
+      "key": "simple-coffee",
+      "name": "Simple Coffee",
+      "category": "cafes",
+      "area": "montmartre",
+      "meta": "Café · 78 Rue des Martyrs",
+      "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
+      "instagram": "https://www.instagram.com/simple.coffeeparis/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simple%20Coffee%2078%20Rue%20des%20Martyrs%20Paris%20France",
+      "images": [
+        "assets/places/simple-coffee-instagram-hq.jpg",
+        "assets/places/simple-coffee-2-hq.jpg",
+        "assets/places/simple-coffee-3-hq.jpg"
+      ]
+    },
+    {
+      "key": "merlo-cafe",
+      "name": "Merlo Café",
+      "category": "cafes",
+      "area": "le-marais",
+      "meta": "Café · Le Marais",
+      "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
+      "instagram": "https://www.instagram.com/merlocafe_/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Merlo%20Cafe%20Le%20Marais%20Paris%20France",
+      "images": [
+        "assets/places/merlo-storefront-hq.jpg",
+        "assets/places/merlo-coffee-cake-hq.jpg",
+        "assets/places/merlo-dog-snow-hq.jpg"
+      ]
+    },
+    {
+      "key": "grave-cafe",
+      "name": "Grave Café",
+      "category": "cafes",
+      "area": "le-marais",
+      "meta": "Café · Le Marais",
+      "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
+      "instagram": "https://www.instagram.com/grave.cafe/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grave%20Cafe%20Le%20Marais%20Paris%20France",
+      "images": [
+        "assets/places/grave-cafe.jpg",
+        "assets/places/grave-regular-dogs.jpg",
+        "assets/places/grave-peach-cake-hq.jpg"
+      ]
+    },
+    {
+      "key": "bonne",
+      "name": "Bønne",
+      "category": "cafes",
+      "area": "montmartre",
+      "meta": "Café · Montmartre",
+      "description": "A quiet neighbourhood coffee stop on Rue Labat with a pared-back atmosphere made for slow Montmartre mornings.",
+      "instagram": "https://www.instagram.com/bonne.montmartre/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%B8nne%2056%20Rue%20Labat%2075018%20Paris",
+      "images": [
+        "assets/places/bonne.webp",
+        "assets/places/bonne-atmosphere-hq.jpg",
+        "assets/places/bonne-brunch-hq.jpg"
+      ]
+    },
+    {
+      "key": "cuvee-noire",
+      "name": "Cuvée Noire",
+      "category": "cafes",
+      "area": "saint-lazare",
+      "meta": "Specialty coffee · Saint-Lazare",
+      "description": "A compact Paris coffee station known for carefully sourced espresso, ceremonial matcha and playful signature drinks.",
+      "instagram": "https://www.instagram.com/cuveenoire/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cuvee%20Noire%2096%20Rue%20Saint-Lazare%2075009%20Paris",
+      "images": [
+        "assets/places/cuv-e-noire.webp",
+        "assets/places/cuvee-drinks-hq.jpg",
+        "assets/places/cuvee-afternoon-hq.jpg"
+      ]
+    },
+    {
+      "key": "sevenly-heart",
+      "name": "Sevenly Heart",
+      "category": "cafes",
+      "area": "le-marais",
+      "meta": "Coffee & brunch · Le Marais",
+      "description": "A sculptural, design-led café spanning coffee, brunch and cocktails in the heart of the Marais.",
+      "instagram": "https://www.instagram.com/sevenlyheart/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sevenly%20Heart%2055%20Rue%20des%20Archives%2075003%20Paris",
+      "images": [
+        "assets/places/sevenly-heart.webp",
+        "assets/places/sevenly-space-hq.jpg",
+        "assets/places/sevenly-cake-hq.jpg"
+      ]
+    },
+    {
+      "key": "nami-coffee",
+      "name": "Nami Coffee",
+      "category": "cafe",
+      "area": "etienne-marcel",
+      "meta": "SPECIALTY COFFEE · BAKERY · ÉTIENNE MARCEL",
+      "description": "A warm two-level specialty coffee shop with house-made cakes and distinctive signature drinks.",
+      "instagram": "https://www.instagram.com/nami.coffee/?hl=es",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nami%20Coffee%20145%20rue%20Saint-Denis%20Paris",
+      "images": [
+        "assets/places/nami-coffee-new.jpg",
+        "assets/places/nami-coffee-2.jpg",
+        "assets/places/nami-coffee-3.jpg"
+      ]
+    },
+    {
+      "key": "clove-coffee-shop",
+      "name": "Clove Coffee Shop",
+      "category": "cafe",
+      "area": "montmartre",
+      "meta": "Specialty coffee · Montmartre",
+      "description": "A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.",
+      "instagram": "https://www.instagram.com/clovecoffeeshop/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clove%20Coffee%20Shop%2014%20Rue%20Chappe%2075018%20Paris",
+      "images": [
+        "assets/places/clove-coffee-hq.jpg",
+        "assets/places/clove-iced-tea-hq.jpg",
+        "assets/places/clove-friends-hq.jpg"
+      ]
+    },
+    {
+      "key": "mardi-cafe",
+      "name": "Mardi",
+      "category": "cafe",
+      "area": "belleville",
+      "meta": "Coffee & baked goods · Belleville",
+      "description": "A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.",
+      "instagram": "https://www.instagram.com/mardicafeparis/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
+      "images": [
+        "assets/places/mardi-space-hq.jpg",
+        "assets/places/mardi-baked-goods-hq.jpg",
+        "assets/places/mardi-facade.jpg"
+      ]
+    },
+    {
+      "key": "niwa-paris",
+      "name": "Niwa",
+      "category": "cafe",
+      "area": "vaneau",
+      "meta": "Bakery & café · Vaneau",
+      "description": "A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates - and a warm welcome for dogs.",
+      "instagram": "https://www.instagram.com/niwa_paris_/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Niwa%2056%20Rue%20Vaneau%2075007%20Paris",
+      "images": [
+        "assets/places/niwa-soft-serve.jpg",
+        "assets/places/niwa-space-hq.jpg",
+        "assets/places/niwa-bread-hq.jpg"
+      ]
+    },
+    {
+      "key": "partisan-cafe",
+      "name": "Partisan Café",
+      "category": "cafe",
+      "area": "etienne-marcel",
+      "meta": "Café & roastery · Étienne Marcel",
+      "description": "A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.",
+      "instagram": "https://www.instagram.com/parispartisancafe/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Partisan%20Cafe%2036%20Rue%20de%20Turbigo%2075003%20Paris",
+      "images": [
+        "assets/places/partisan-machine.jpg",
+        "assets/places/partisan-community-hq.jpg",
+        "assets/places/partisan-affogato-hq.jpg"
+      ]
+    },
+    {
+      "key": "tanat-victoria",
+      "name": "Tanat Victoria",
+      "category": "cafe",
+      "area": "chatelet",
+      "meta": "Specialty coffee · Châtelet",
+      "description": "Tanat’s clean-lined Victoria coffee shop near Châtelet pairs precisely roasted specialty coffee with the warmest dog welcome in the group, according to its team.",
+      "instagram": "https://www.instagram.com/tanat.coffee/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanat%20Victoria%20Ch%C3%A2telet%20Paris",
+      "images": [
+        "assets/places/tanat-victoria-interior.jpg",
+        "assets/places/tanat-victoria-detail.jpg",
+        "assets/places/tanat-victoria-espresso.jpg"
+      ]
+    },
+    {
+      "key": "foret-foret",
+      "name": "Forêt Forêt",
+      "category": "cafe",
+      "area": "le-marais",
+      "meta": "Specialty coffee & tea · Le Marais",
+      "description": "A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.",
+      "instagram": "https://www.instagram.com/foretforet_paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=For%C3%AAt%20For%C3%AAt%2064%20Rue%20des%20Tournelles%2075003%20Paris",
+      "images": [
+        "assets/places/foret-foret-dog-space.jpg",
+        "assets/places/foret-foret-pour-over.jpg",
+        "assets/places/foret-foret-architecture.jpg"
+      ]
+    },
+    {
+      "key": "barkers-brothers",
+      "name": "Barkers + Brothers",
+      "category": "shop",
+      "area": "montmartre",
+      "meta": "Dog shop & café · Montmartre",
+      "description": "A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.",
+      "instagram": "https://www.instagram.com/barkersandbrothers/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barkers%20and%20Brothers%2046%20Rue%20Berthe%2075018%20Paris",
+      "images": [
+        "assets/places/barkers-brothers.jpg",
+        "assets/places/barkers-brothers-2.jpg",
+        "assets/places/barkers-brothers-3.jpg"
+      ]
+    },
+    {
+      "key": "ginos-paris",
+      "name": "Gino's Paris",
+      "category": "shop",
+      "area": "latin-quarter",
+      "meta": "Boutique, grooming & daycare · Latin Quarter",
+      "description": "A polished canine concept store combining premium accessories, gentle grooming and daycare in the heart of the Latin Quarter.",
+      "instagram": "https://www.instagram.com/ginos.paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gino's%20Paris%207%20Rue%20de%20la%20Montagne%20Sainte-Genevi%C3%A8ve%2075005%20Paris",
+      "images": [
+        "assets/places/ginos-paris.jpg",
+        "assets/places/ginos-paris-2.jpg",
+        "assets/places/ginos-paris-3.jpg"
+      ]
+    },
+    {
+      "key": "animal-particulier",
+      "name": "Animal Particulier",
+      "category": "shop",
+      "area": "montmartre",
+      "meta": "Independent pet shop · Montmartre",
+      "description": "An independent Montmartre address for distinctive accessories, clothing and small-batch finds for dogs and cats.",
+      "instagram": "https://www.instagram.com/animal_particulier/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Animal%20Particulier%2011%20Square%20de%20Clignancourt%2075018%20Paris",
+      "images": [
+        "assets/places/animal-particulier.jpg",
+        "assets/places/animal-particulier-2.jpg",
+        "assets/places/animal-particulier-3.jpg"
+      ]
+    },
+    {
+      "key": "casa-del-doggo",
+      "name": "Casa del Doggo",
+      "category": "shop",
+      "area": "auteuil",
+      "meta": "Dog bakery & concept store · Auteuil",
+      "description": "A joyful dog-first bakery with handmade treats, a colourful shop and a self-service dog wash designed for time together.",
+      "instagram": "https://www.instagram.com/casadeldoggobakery/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20del%20Doggo%2013%20Rue%20Pierre%20Gu%C3%A9rin%2075016%20Paris",
+      "images": [
+        "assets/places/casa-del-doggo.jpg",
+        "assets/places/casa-del-doggo-2.jpg",
+        "assets/places/casa-del-doggo-3.jpg"
+      ]
+    },
+    {
+      "key": "le-bone-appart",
+      "name": "Le Bone Appart",
+      "category": "shop",
+      "area": "le-marais",
+      "meta": "Dog café & boutique · Le Marais",
+      "description": "A dog café and boutique beside Place des Vosges, made for coffee, canine pâtisseries and playful Parisian accessories.",
+      "instagram": "https://www.instagram.com/leboneappart/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bone%20Appart%209%20Rue%20de%20Birague%2075004%20Paris",
+      "images": [
+        "assets/places/le-bone-appart.jpg",
+        "assets/places/le-bone-appart-2.jpg",
+        "assets/places/le-bone-appart-3.jpg"
+      ]
+    },
+    {
+      "key": "two-tails",
+      "name": "Two Tails",
+      "category": "shop",
+      "area": "grenelle",
+      "meta": "Pet boutique · Grenelle",
+      "description": "A friendly neighbourhood boutique with a broad, carefully selected world of food, care and everyday essentials for dogs and cats.",
+      "instagram": "https://www.instagram.com/twotails_fr/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Tails%20199%20Rue%20de%20Grenelle%2075007%20Paris",
+      "images": [
+        "assets/places/two-tails.jpg",
+        "assets/places/two-tails-2.jpg",
+        "assets/places/two-tails-3.jpg"
+      ]
+    },
+    {
+      "key": "petsochic",
+      "name": "Petsochic",
+      "category": "shop",
+      "area": "saint-germain",
+      "meta": "Boutique & spa · Saint-Germain",
+      "description": "A refined Left Bank boutique and grooming spa bringing together French-made accessories, personalisation and attentive care.",
+      "instagram": "https://www.instagram.com/petsochic/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Petsochic%2016%20Rue%20Dauphine%2075006%20Paris",
+      "images": [
+        "assets/places/petsochic.jpg",
+        "assets/places/petsochic-2.jpg",
+        "assets/places/petsochic-3.jpg"
+      ]
+    },
+    {
+      "key": "moustaches-paris",
+      "name": "Moustaches",
+      "category": "shop",
+      "area": "le-marais",
+      "meta": "Pet concept store · Le Marais",
+      "description": "A long-standing Marais pet concept store with useful essentials, playful gifts and design-minded accessories under one roof.",
+      "instagram": "https://www.instagram.com/moustachesparis/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Moustaches%2032%20Rue%20des%20Archives%2075004%20Paris",
+      "images": [
+        "assets/places/moustaches-paris-3.jpg",
+        "assets/places/moustaches-paris-2.jpg",
+        "assets/places/moustaches-paris.jpg"
+      ]
+    },
+    {
+      "key": "pantoufle-paris",
+      "name": "Pantoufle",
+      "category": "restaurant",
+      "area": "buttes-chaumont",
+      "meta": "Restaurant & wine bar · Buttes-Chaumont",
+      "description": "A relaxed wine bar and restaurant hosting rotating chef residencies, with expressive seasonal plates and an intimate neighbourhood mood.",
+      "instagram": "https://www.instagram.com/pantoufle.paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pantoufle%205%20Rue%20de%20Chaumont%2075019%20Paris",
+      "images": [
+        "assets/places/pantoufle-paris.jpg",
+        "assets/places/pantoufle-paris-2.jpg",
+        "assets/places/pantoufle-paris-3.jpg"
+      ]
+    },
+    {
+      "key": "griffon-paris",
+      "name": "Griffon",
+      "category": "restaurant",
+      "area": "le-marais",
+      "meta": "Café, restaurant & bar · Le Marais",
+      "description": "A characterful Marais hideaway for coffee, fresh food and natural wine, with collected interiors and a leafy secret terrace.",
+      "instagram": "https://www.instagram.com/griffon.paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Griffon%2055%20bis%20Rue%20des%20Francs-Bourgeois%2075004%20Paris",
+      "images": [
+        "assets/places/griffon-paris-2.jpg",
+        "assets/places/griffon-paris.jpg",
+        "assets/places/griffon-paris-3.jpg"
+      ]
+    },
+    {
+      "key": "colore-paris",
+      "name": "Coloré",
+      "category": "restaurant",
+      "area": "montmartre",
+      "meta": "French-Japanese restaurant · Montmartre",
+      "description": "A quietly creative Montmartre restaurant where seasonal French produce meets delicate Japanese influences and natural wine.",
+      "instagram": "https://www.instagram.com/colore.paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Color%C3%A9%2020%20Rue%20du%20Ruisseau%2075018%20Paris",
+      "images": [
+        "assets/places/colore-paris.jpg",
+        "assets/places/colore-paris-2.jpg",
+        "assets/places/colore-paris-3.jpg"
+      ]
+    },
+    {
+      "key": "tekes-paris",
+      "name": "Tekés",
+      "category": "restaurant",
+      "area": "etienne-marcel",
+      "meta": "Vegetable-led restaurant · Étienne Marcel",
+      "description": "A vibrant open-kitchen restaurant centred on vegetables, fire and Jerusalem-inspired flavours in the heart of the 2nd arrondissement.",
+      "instagram": "https://www.instagram.com/tekes_paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tek%C3%A9s%204%20bis%20Rue%20Saint-Sauveur%2075002%20Paris",
+      "images": [
+        "assets/places/tekes-paris.webp",
+        "assets/places/tekes-paris-2.webp",
+        "assets/places/tekes-paris-3.webp"
+      ]
+    },
+    {
+      "key": "maison-mere",
+      "name": "Maison Mère",
+      "category": "hotel",
+      "area": "cadet",
+      "meta": "Boutique hotel · Cadet",
+      "description": "A characterful four-star maison with art-filled rooms and a residential spirit, welcoming small dogs up to 10 kg in selected rooms.",
+      "instagram": "https://www.instagram.com/maisonmere.lovers/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison%20M%C3%A8re%207%20Rue%20Mayran%2075009%20Paris",
+      "images": [
+        "assets/places/maison-mere.jpg",
+        "assets/places/maison-mere-2.jpg",
+        "assets/places/maison-mere-3.jpg"
+      ]
+    },
+    {
+      "key": "kimpton-st-honore",
+      "name": "Kimpton St Honoré Paris",
+      "category": "hotel",
+      "area": "opera",
+      "meta": "Luxury hotel · Opéra",
+      "description": "An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy - every size and breed is welcome at no extra charge.",
+      "instagram": "https://www.instagram.com/kimptonsthonore/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kimpton%20St%20Honor%C3%A9%20Paris%2027-29%20Boulevard%20des%20Capucines%2075002%20Paris",
+      "images": [
+        "assets/places/kimpton-st-honore.jpg",
+        "assets/places/kimpton-st-honore-2.jpg",
+        "assets/places/kimpton-st-honore-3.jpg"
+      ]
+    }
+  ]
+}
+
