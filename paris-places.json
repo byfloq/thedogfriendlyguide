@@ -3,8 +3,37 @@
   "city": "Paris",
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
-  "lastUpdated": "2026-08-27",
+  "lastUpdated": "2026-08-29",
   "placeCount": 27,
+  "openingHours": {
+    "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
+    "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
+    "grave-cafe": "Mon-Fri 08:30-18:00 · Sat-Sun 09:30-18:00",
+    "bonne": "Tue-Fri 08:30-17:00 · Sat-Sun 09:30-17:00 · Mon closed",
+    "cuvee-noire": "Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00",
+    "sevenly-heart": "Mon-Fri 09:30-20:00 · Sat-Sun 10:00-20:00",
+    "nami-coffee": "Mon-Fri 08:30-18:00 · Sat 10:00-19:00 · Sun 10:00-18:00",
+    "clove-coffee-shop": "Mon-Tue, Thu-Sun 09:00-16:00 · Wed closed",
+    "mardi-cafe": "Mon-Fri 08:30-17:00 · Sat-Sun 10:00-17:30",
+    "niwa-paris": "Mon-Fri 08:00-17:30 · Sat-Sun 08:30-17:30",
+    "partisan-cafe": "Mon-Fri 08:30-18:00 · Sat-Sun 09:00-18:30",
+    "tanat-victoria": "Mon-Fri 08:00-18:00 · Sat 09:00-19:00 · Sun 10:00-18:00",
+    "foret-foret": "Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00",
+    "barkers-brothers": "Tue-Sat 09:00-19:00 · Sun 10:00-16:00 · Mon closed",
+    "ginos-paris": "Mon-Sat 10:00-19:00 · Sun closed",
+    "animal-particulier": "Tue-Sat 11:00-19:00 · Sun-Mon closed",
+    "casa-del-doggo": "Wed-Sat 10:00-12:00 & 13:00-19:00 · Sun 10:00-16:00 · Mon-Tue closed",
+    "le-bone-appart": "Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00",
+    "two-tails": "Mon-Sat 09:30-19:30 · Sun 09:30-13:30",
+    "petsochic": "Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed",
+    "moustaches-paris": "Mon-Sat 10:30-19:30 · Sun 12:00-19:00",
+    "pantoufle-paris": "Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed",
+    "griffon-paris": "Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed",
+    "colore-paris": "Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00",
+    "tekes-paris": "Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00",
+    "maison-mere": "Open 24 hours",
+    "kimpton-st-honore": "Open 24 hours"
+  },
   "places": [
     {
       "key": "simple-coffee",
@@ -413,4 +442,3 @@
     }
   ]
 }
-

@@ -160,12 +160,50 @@
     'Kimpton St Honoré Paris': ['arr-2', 'Luxury hotel · 2nd arrondissement · Opéra']
   };
 
+  const openingHoursByPlace = {
+    'Simple Coffee': 'Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed',
+    'Merlo Café': 'Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30',
+    'Grave Café': 'Mon-Fri 08:30-18:00 · Sat-Sun 09:30-18:00',
+    'Bønne': 'Tue-Fri 08:30-17:00 · Sat-Sun 09:30-17:00 · Mon closed',
+    'Cuvée Noire': 'Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00',
+    'Sevenly Heart': 'Mon-Fri 09:30-20:00 · Sat-Sun 10:00-20:00',
+    'Nami Coffee': 'Mon-Fri 08:30-18:00 · Sat 10:00-19:00 · Sun 10:00-18:00',
+    'Clove Coffee Shop': 'Mon-Tue, Thu-Sun 09:00-16:00 · Wed closed',
+    'Mardi': 'Mon-Fri 08:30-17:00 · Sat-Sun 10:00-17:30',
+    'Niwa': 'Mon-Fri 08:00-17:30 · Sat-Sun 08:30-17:30',
+    'Partisan Café': 'Mon-Fri 08:30-18:00 · Sat-Sun 09:00-18:30',
+    'Tanat Victoria': 'Mon-Fri 08:00-18:00 · Sat 09:00-19:00 · Sun 10:00-18:00',
+    'Forêt Forêt': 'Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00',
+    'Barkers + Brothers': 'Tue-Sat 09:00-19:00 · Sun 10:00-16:00 · Mon closed',
+    "Gino's Paris": 'Mon-Sat 10:00-19:00 · Sun closed',
+    'Animal Particulier': 'Tue-Sat 11:00-19:00 · Sun-Mon closed',
+    'Casa del Doggo': 'Wed-Sat 10:00-12:00 & 13:00-19:00 · Sun 10:00-16:00 · Mon-Tue closed',
+    'Le Bone Appart': 'Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00',
+    'Two Tails': 'Mon-Sat 09:30-19:30 · Sun 09:30-13:30',
+    'Petsochic': 'Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed',
+    'Moustaches': 'Mon-Sat 10:30-19:30 · Sun 12:00-19:00',
+    'Pantoufle': 'Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed',
+    'Griffon': 'Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed',
+    'Coloré': 'Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00',
+    'Tekés': 'Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00',
+    'Maison Mère': 'Open 24 hours',
+    'Kimpton St Honoré Paris': 'Open 24 hours'
+  };
+
   grid.querySelectorAll('.place-card').forEach(card => {
     const place = arrondissementByPlace[card.querySelector('h3')?.textContent?.trim()];
     if (!place) return;
     card.dataset.area = place[0];
     const meta = card.querySelector('.place-category');
     if (meta) meta.textContent = place[1];
+    const title = card.querySelector('h3')?.textContent?.trim();
+    const hours = openingHoursByPlace[title];
+    if (hours && !card.querySelector('.place-hours')) {
+      const hoursLine = document.createElement('p');
+      hoursLine.className = 'place-hours';
+      hoursLine.innerHTML = `<span>Opening hours</span>${hours}`;
+      card.querySelector('.desc')?.insertAdjacentElement('afterend', hoursLine);
+    }
   });
 
   const areaFilters = document.querySelector('.area-filters');

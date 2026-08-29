@@ -124,3 +124,7 @@
 .guide-tags .cg-filters button:hover{border-color:var(--ink);color:var(--ink)}
 .guide-tags .cg-filters button.active{border-color:var(--ink);background:var(--ink);color:var(--paper)!important}
 @media(max-width:700px){.discovery-eyebrow{font-size:clamp(32px,10vw,46px)}.guide-tags{margin-bottom:34px;padding:4px 0}.guide-tags .cg-filters{padding:16px 0!important;overflow:hidden!important}.guide-tags .filter-label,.guide-tags .area-filters .filter-label{flex-basis:100%;margin:0 0 12px;padding-left:2px;font-size:8px}.guide-tags .cg-filters button{min-height:34px;margin:0 5px 6px 0;padding:9px 12px!important;font-size:8px}}
+
+.paris-guide-page .place-hours,.city-guide-page .place-hours{margin:0 0 18px;color:var(--muted);font:400 10px/1.45 var(--sans);letter-spacing:.01em}
+.city-guide-page .place-hours span{display:block;margin-bottom:4px;color:var(--ink);font:500 8px/1.2 var(--sans);letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:700px){.city-guide-page .place-hours{margin-bottom:14px;font-size:9px}.city-guide-page .place-hours span{font-size:7px}}
