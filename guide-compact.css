@@ -55,7 +55,7 @@
 .editors-image,.collection-image{background-image:var(--thumb);background-size:cover;background-position:center}
 .city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position,center)}
 @media(max-width:520px){.city-guide-page:not(.berlin-guide-page) .place-thumb{background-position:var(--thumb-position-mobile,var(--thumb-position,center))}}
-.place-card-gallery{position:relative;overflow:hidden;transition:background-image .2s ease}
+.place-card-gallery{position:relative;overflow:hidden}
 .card-gallery-arrow{position:absolute;z-index:2;top:50%;width:32px;height:32px;transform:translateY(-50%);border:1px solid rgba(255,255,255,.75);border-radius:50%;background:rgba(32,27,22,.42);color:#fff;cursor:pointer;backdrop-filter:blur(4px)}
 .card-gallery-prev{left:10px}.card-gallery-next{right:10px}
 .card-gallery-dots{position:absolute;z-index:2;left:0;right:0;bottom:11px;display:flex;justify-content:center;gap:7px}

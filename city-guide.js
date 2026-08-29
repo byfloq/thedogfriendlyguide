@@ -111,6 +111,11 @@
       title: 'Kimpton St Honoré Paris', meta: 'Luxury hotel · Opéra', area: 'opera', key: 'kimpton-st-honore', category: 'hotel',
       description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy - every size and breed is welcome at no extra charge.',
       instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg', 'assets/places/kimpton-st-honore-2.jpg', 'assets/places/kimpton-st-honore-3.jpg']
+    },
+    {
+      title: 'The Hoxton, Paris', meta: 'Boutique hotel · Sentier', area: 'sentier', key: 'hoxton-paris', category: 'hotel',
+      description: 'A lively 18th-century hôtel particulier in Sentier with characterful rooms and a dog-friendly stay for one pup up to 20 kg, at no extra charge.',
+      instagram: 'https://www.instagram.com/thehoxtonhotel/', maps: 'The Hoxton Paris 30-32 Rue du Sentier 75002 Paris', images: ['assets/places/hoxton-paris-lobby.jpg', 'assets/places/hoxton-paris-room.jpg', 'assets/places/hoxton-paris-terrace.jpg']
     }
   ];
 
@@ -157,7 +162,8 @@
     'Coloré': ['arr-18', 'French-Japanese restaurant · 18th arrondissement · Montmartre'],
     'Tekés': ['arr-2', 'Vegetable-led restaurant · 2nd arrondissement · Étienne Marcel'],
     'Maison Mère': ['arr-9', 'Boutique hotel · 9th arrondissement · Cadet'],
-    'Kimpton St Honoré Paris': ['arr-2', 'Luxury hotel · 2nd arrondissement · Opéra']
+    'Kimpton St Honoré Paris': ['arr-2', 'Luxury hotel · 2nd arrondissement · Opéra'],
+    'The Hoxton, Paris': ['arr-2', 'Boutique hotel · 2nd arrondissement · Sentier']
   };
 
   const openingHoursByPlace = {
@@ -187,7 +193,8 @@
     'Coloré': 'Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00',
     'Tekés': 'Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00',
     'Maison Mère': 'Open 24 hours',
-    'Kimpton St Honoré Paris': 'Open 24 hours'
+    'Kimpton St Honoré Paris': 'Open 24 hours',
+    'The Hoxton, Paris': 'Open 24 hours'
   };
 
   grid.querySelectorAll('.place-card').forEach(card => {

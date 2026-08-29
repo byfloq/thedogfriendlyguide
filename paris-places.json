@@ -4,7 +4,7 @@
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
   "lastUpdated": "2026-08-29",
-  "placeCount": 27,
+  "placeCount": 28,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
@@ -32,7 +32,8 @@
     "colore-paris": "Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00",
     "tekes-paris": "Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00",
     "maison-mere": "Open 24 hours",
-    "kimpton-st-honore": "Open 24 hours"
+    "kimpton-st-honore": "Open 24 hours",
+    "hoxton-paris": "Open 24 hours"
   },
   "places": [
     {
@@ -438,6 +439,21 @@
         "assets/places/kimpton-st-honore.jpg",
         "assets/places/kimpton-st-honore-2.jpg",
         "assets/places/kimpton-st-honore-3.jpg"
+      ]
+    },
+    {
+      "key": "hoxton-paris",
+      "name": "The Hoxton, Paris",
+      "category": "hotel",
+      "area": "sentier",
+      "meta": "Boutique hotel · Sentier",
+      "description": "A lively 18th-century hôtel particulier in Sentier with characterful rooms and a dog-friendly stay for one pup up to 20 kg, at no extra charge.",
+      "instagram": "https://www.instagram.com/thehoxtonhotel/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Hoxton%20Paris%2030-32%20Rue%20du%20Sentier%2075002%20Paris",
+      "images": [
+        "assets/places/hoxton-paris-lobby.jpg",
+        "assets/places/hoxton-paris-room.jpg",
+        "assets/places/hoxton-paris-terrace.jpg"
       ]
     }
   ]
