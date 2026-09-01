@@ -39,6 +39,7 @@
     {
       "key": "simple-coffee",
       "name": "Simple Coffee",
+      "arrondissement": 18,
       "category": "cafes",
       "area": "montmartre",
       "meta": "Café · 78 Rue des Martyrs",
@@ -55,6 +56,7 @@
     {
       "key": "merlo-cafe",
       "name": "Merlo Café",
+      "arrondissement": 3,
       "category": "cafes",
       "area": "le-marais",
       "meta": "Café · Le Marais",
@@ -71,6 +73,7 @@
     {
       "key": "grave-cafe",
       "name": "Grave Café",
+      "arrondissement": 3,
       "category": "cafes",
       "area": "le-marais",
       "meta": "Café · Le Marais",
@@ -87,6 +90,7 @@
     {
       "key": "bonne",
       "name": "Bønne",
+      "arrondissement": 18,
       "category": "cafes",
       "area": "montmartre",
       "meta": "Café · Montmartre",
@@ -103,6 +107,7 @@
     {
       "key": "cuvee-noire",
       "name": "Cuvée Noire",
+      "arrondissement": 9,
       "category": "cafes",
       "area": "saint-lazare",
       "meta": "Specialty coffee · Saint-Lazare",
@@ -119,6 +124,7 @@
     {
       "key": "sevenly-heart",
       "name": "Sevenly Heart",
+      "arrondissement": 3,
       "category": "cafes",
       "area": "le-marais",
       "meta": "Coffee & brunch · Le Marais",
@@ -135,6 +141,7 @@
     {
       "key": "nami-coffee",
       "name": "Nami Coffee",
+      "arrondissement": 2,
       "category": "cafe",
       "area": "etienne-marcel",
       "meta": "SPECIALTY COFFEE · BAKERY · ÉTIENNE MARCEL",
@@ -151,6 +158,7 @@
     {
       "key": "clove-coffee-shop",
       "name": "Clove Coffee Shop",
+      "arrondissement": 18,
       "category": "cafe",
       "area": "montmartre",
       "meta": "Specialty coffee · Montmartre",
@@ -167,6 +175,7 @@
     {
       "key": "mardi-cafe",
       "name": "Mardi",
+      "arrondissement": 19,
       "category": "cafe",
       "area": "belleville",
       "meta": "Coffee & baked goods · Belleville",
@@ -183,6 +192,7 @@
     {
       "key": "niwa-paris",
       "name": "Niwa",
+      "arrondissement": 7,
       "category": "cafe",
       "area": "vaneau",
       "meta": "Bakery & café · Vaneau",
@@ -199,6 +209,7 @@
     {
       "key": "partisan-cafe",
       "name": "Partisan Café",
+      "arrondissement": 3,
       "category": "cafe",
       "area": "etienne-marcel",
       "meta": "Café & roastery · Étienne Marcel",
@@ -215,6 +226,7 @@
     {
       "key": "tanat-victoria",
       "name": "Tanat Victoria",
+      "arrondissement": 1,
       "category": "cafe",
       "area": "chatelet",
       "meta": "Specialty coffee · Châtelet",
@@ -231,6 +243,7 @@
     {
       "key": "foret-foret",
       "name": "Forêt Forêt",
+      "arrondissement": 3,
       "category": "cafe",
       "area": "le-marais",
       "meta": "Specialty coffee & tea · Le Marais",
@@ -247,6 +260,7 @@
     {
       "key": "barkers-brothers",
       "name": "Barkers + Brothers",
+      "arrondissement": 18,
       "category": "shop",
       "area": "montmartre",
       "meta": "Dog shop & café · Montmartre",
@@ -263,6 +277,7 @@
     {
       "key": "ginos-paris",
       "name": "Gino's Paris",
+      "arrondissement": 5,
       "category": "shop",
       "area": "latin-quarter",
       "meta": "Boutique, grooming & daycare · Latin Quarter",
@@ -279,6 +294,7 @@
     {
       "key": "animal-particulier",
       "name": "Animal Particulier",
+      "arrondissement": 18,
       "category": "shop",
       "area": "montmartre",
       "meta": "Independent pet shop · Montmartre",
@@ -295,6 +311,7 @@
     {
       "key": "casa-del-doggo",
       "name": "Casa del Doggo",
+      "arrondissement": 16,
       "category": "shop",
       "area": "auteuil",
       "meta": "Dog bakery & concept store · Auteuil",
@@ -311,6 +328,7 @@
     {
       "key": "le-bone-appart",
       "name": "Le Bone Appart",
+      "arrondissement": 4,
       "category": "shop",
       "area": "le-marais",
       "meta": "Dog café & boutique · Le Marais",
@@ -327,6 +345,7 @@
     {
       "key": "two-tails",
       "name": "Two Tails",
+      "arrondissement": 7,
       "category": "shop",
       "area": "grenelle",
       "meta": "Pet boutique · Grenelle",
@@ -343,6 +362,7 @@
     {
       "key": "petsochic",
       "name": "Petsochic",
+      "arrondissement": 6,
       "category": "shop",
       "area": "saint-germain",
       "meta": "Boutique & spa · Saint-Germain",
@@ -359,6 +379,7 @@
     {
       "key": "moustaches-paris",
       "name": "Moustaches",
+      "arrondissement": 4,
       "category": "shop",
       "area": "le-marais",
       "meta": "Pet concept store · Le Marais",
@@ -375,6 +396,7 @@
     {
       "key": "pantoufle-paris",
       "name": "Pantoufle",
+      "arrondissement": 19,
       "category": "restaurant",
       "area": "buttes-chaumont",
       "meta": "Restaurant & wine bar · Buttes-Chaumont",
@@ -391,6 +413,7 @@
     {
       "key": "griffon-paris",
       "name": "Griffon",
+      "arrondissement": 4,
       "category": "restaurant",
       "area": "le-marais",
       "meta": "Café, restaurant & bar · Le Marais",
@@ -407,6 +430,7 @@
     {
       "key": "colore-paris",
       "name": "Coloré",
+      "arrondissement": 18,
       "category": "restaurant",
       "area": "montmartre",
       "meta": "French-Japanese restaurant · Montmartre",
@@ -423,6 +447,7 @@
     {
       "key": "tekes-paris",
       "name": "Tekés",
+      "arrondissement": 2,
       "category": "restaurant",
       "area": "etienne-marcel",
       "meta": "Vegetable-led restaurant · Étienne Marcel",
@@ -439,6 +464,7 @@
     {
       "key": "maison-mere",
       "name": "Maison Mère",
+      "arrondissement": 9,
       "category": "hotel",
       "area": "cadet",
       "meta": "Boutique hotel · Cadet",
@@ -455,6 +481,7 @@
     {
       "key": "kimpton-st-honore",
       "name": "Kimpton St Honoré Paris",
+      "arrondissement": 2,
       "category": "hotel",
       "area": "opera",
       "meta": "Luxury hotel · Opéra",
@@ -471,6 +498,7 @@
     {
       "key": "hoxton-paris",
       "name": "The Hoxton, Paris",
+      "arrondissement": 2,
       "category": "hotel",
       "area": "sentier",
       "meta": "Boutique hotel · Sentier",

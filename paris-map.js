@@ -13,6 +13,9 @@
   let selectedKey = null;
   let userLocation = null;
   let scrollTimer;
+  let activeCategory = 'all';
+  let activeDistrict = 'all';
+  let districtBadgeMarker = null;
 
   const normaliseCategory = category => category === 'cafes' ? 'cafe' : category;
   const escapeHTML = value => String(value || '').replace(/[&<>'"]/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
@@ -29,6 +32,10 @@
     return 6371 * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
   };
   const formatDistance = kilometres => kilometres < 1 ? `${Math.round(kilometres * 1000)} m away` : `${kilometres.toFixed(1)} km away`;
+  const ordinal = number => {
+    const suffix = number === 1 ? 'st' : number === 2 ? 'nd' : number === 3 ? 'rd' : 'th';
+    return `${number}${suffix}`;
+  };
   const cardFor = place => {
     const category = normaliseCategory(place.category);
     const distance = userLocation ? `<span class="card-distance">${formatDistance(distanceBetween(userLocation, place.coordinates))}</span>` : '';
@@ -51,7 +58,28 @@
     if (!visiblePlaces.length) return;
     const bounds = new maplibregl.LngLatBounds();
     visiblePlaces.forEach(place => bounds.extend(place.coordinates));
-    map.fitBounds(bounds, { padding: { top: 120, right: 65, bottom: 235, left: 65 }, maxZoom: 13.2, duration: 650 });
+    const mobile = window.innerWidth <= 700;
+    map.fitBounds(bounds, { padding: { top: mobile ? 190 : 155, right: mobile ? 42 : 65, bottom: mobile ? 220 : 245, left: mobile ? 42 : 65 }, maxZoom: activeDistrict === 'all' ? 13.2 : 14.5, duration: 650 });
+  };
+
+  const updateDistrictHighlight = () => {
+    if (!map.getSource('district-highlight')) return;
+    districtBadgeMarker?.remove();
+    districtBadgeMarker = null;
+    if (activeDistrict === 'all' || !visiblePlaces.length) {
+      map.getSource('district-highlight').setData({ type: 'FeatureCollection', features: [] });
+      return;
+    }
+    const districtPlaces = places.filter(place => String(place.arrondissement) === activeDistrict);
+    const center = districtPlaces.reduce((total, place) => [total[0] + place.coordinates[0], total[1] + place.coordinates[1]], [0, 0]).map(value => value / districtPlaces.length);
+    map.getSource('district-highlight').setData({
+      type: 'FeatureCollection',
+      features: [{ type: 'Feature', geometry: { type: 'Point', coordinates: center }, properties: { label: `${ordinal(Number(activeDistrict))} ARRONDISSEMENT` } }]
+    });
+    const badge = document.createElement('div');
+    badge.className = 'district-map-badge';
+    badge.innerHTML = `<strong>${ordinal(Number(activeDistrict))}</strong><span>arrondissement</span>`;
+    districtBadgeMarker = new maplibregl.Marker({ element: badge, anchor: 'center', offset: [0, -72] }).setLngLat(center).addTo(map);
   };
 
   const selectPlace = (key, options = {}) => {
@@ -75,11 +103,14 @@
     if (options.pan !== false) map.easeTo({ center: place.coordinates, zoom: Math.max(map.getZoom(), 14.4), padding: { bottom: 180 }, duration: 650 });
   };
 
-  const render = category => {
-    visiblePlaces = category === 'all' ? places : places.filter(place => normaliseCategory(place.category) === category);
+  const render = () => {
+    visiblePlaces = places.filter(place =>
+      (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) &&
+      (activeDistrict === 'all' || String(place.arrondissement) === activeDistrict)
+    );
     markers.forEach(entry => entry.marker.remove());
     markers.clear();
-    rail.innerHTML = visiblePlaces.map(cardFor).join('');
+    rail.innerHTML = visiblePlaces.length ? visiblePlaces.map(cardFor).join('') : '<div class="map-empty">No places match both filters. Try another category or arrondissement.</div>';
     count.textContent = visiblePlaces.length;
     visiblePlaces.forEach(place => {
       const markerElement = document.createElement('button');
@@ -102,9 +133,25 @@
     selectedKey = null;
     rail.classList.remove('has-selection');
     window.setTimeout(() => {
+      updateDistrictHighlight();
       fitVisiblePlaces();
       if (visiblePlaces[0]) selectPlace(visiblePlaces[0].key, { pan: false, scroll: false });
     }, 50);
+  };
+
+  const buildDistrictFilters = () => {
+    const districtFilters = document.getElementById('district-filters');
+    const districts = [...new Set(places.map(place => place.arrondissement))].sort((a, b) => a - b);
+    districtFilters.innerHTML = `<button class="active" data-district="all" aria-pressed="true">All districts</button>${districts.map(district => `<button data-district="${district}" aria-pressed="false">${ordinal(district)} arr.</button>`).join('')}`;
+    districtFilters.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+      activeDistrict = button.dataset.district;
+      districtFilters.querySelectorAll('button').forEach(item => {
+        const active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      render();
+    }));
   };
 
   const updateDistances = coordinates => {
@@ -122,10 +169,11 @@
 
   const initialise = async () => {
     try {
-      const response = await fetch('paris-places.json');
+      const response = await fetch('paris-places.json?v=3');
       if (!response.ok) throw new Error('Catalogue unavailable');
       const catalogue = await response.json();
       places = catalogue.places.filter(place => Array.isArray(place.coordinates)).map(place => ({ ...place, openingHours: catalogue.openingHours[place.key] }));
+      buildDistrictFilters();
       map = new maplibregl.Map({
         container: mapElement,
         style: 'https://tiles.openfreemap.org/styles/positron',
@@ -140,11 +188,17 @@
       map.addControl(geolocate, 'top-right');
       geolocate.on('geolocate', event => { updateDistances([event.coords.longitude, event.coords.latitude]); showStatus('Your location is now shown on the map.'); });
       geolocate.on('error', () => showStatus('We could not access your location. Please check your browser permission.'));
-      map.on('load', () => render('all'));
+      map.on('load', () => {
+        map.addSource('district-highlight', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+        map.addLayer({ id: 'district-glow', type: 'circle', source: 'district-highlight', paint: { 'circle-radius': 72, 'circle-color': '#a76344', 'circle-opacity': .12, 'circle-stroke-color': '#a76344', 'circle-stroke-width': 2, 'circle-stroke-opacity': .48 } });
+        map.addLayer({ id: 'district-label', type: 'symbol', source: 'district-highlight', layout: { 'text-field': ['get', 'label'], 'text-size': 14, 'text-letter-spacing': .13, 'text-allow-overlap': true }, paint: { 'text-color': '#7b3f2d', 'text-halo-color': '#f7f2e9', 'text-halo-width': 4 } });
+        render();
+      });
       document.querySelector('.locate-button').addEventListener('click', () => geolocate.trigger());
-      document.querySelectorAll('.map-filters button').forEach(button => button.addEventListener('click', () => {
-        document.querySelectorAll('.map-filters button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); });
-        render(button.dataset.category);
+      document.querySelectorAll('.category-filters button').forEach(button => button.addEventListener('click', () => {
+        activeCategory = button.dataset.category;
+        document.querySelectorAll('.category-filters button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); });
+        render();
       }));
       rail.addEventListener('scroll', () => {
         window.clearTimeout(scrollTimer);
@@ -156,6 +210,7 @@
         }, 120);
       }, { passive: true });
     } catch (error) {
+      console.error('Paris map initialization failed', error);
       mapElement.innerHTML = '<div style="padding:40px;font-family:DM Sans,sans-serif">The Paris map could not be loaded. Please try again shortly.</div>';
     }
   };
