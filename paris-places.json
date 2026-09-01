@@ -3,8 +3,8 @@
   "city": "Paris",
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
-  "lastUpdated": "2026-08-29",
-  "placeCount": 28,
+  "lastUpdated": "2026-09-01",
+  "placeCount": 41,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
@@ -33,7 +33,20 @@
     "tekes-paris": "Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00",
     "maison-mere": "Open 24 hours",
     "kimpton-st-honore": "Open 24 hours",
-    "hoxton-paris": "Open 24 hours"
+    "hoxton-paris": "Open 24 hours",
+    "mesa-paris": "Open daily for breakfast, lunch and dinner",
+    "white-coffee-marais": "Open daily",
+    "cafe-papeterie": "Check Instagram for current hours",
+    "noir-montmartre": "Open daily",
+    "daark-paris": "Mon-Fri 09:00-18:00 · Sat-Sun 10:00-19:00",
+    "broken-arm-cafeteria": "Tue-Sat 09:00-17:00 · Sun-Mon closed",
+    "parisien-tete-de-chien": "Check Instagram for current hours",
+    "cayu-canides-club": "Wed-Sun · Check Instagram for daily hours",
+    "vivide-paris": "Dinner Tue-Sat · Sun-Mon closed",
+    "season-paris": "Open daily · Walk-ins only",
+    "jaja-paris": "Open daily for lunch and dinner",
+    "hotel-suzie-blue": "Open 24 hours",
+    "hoy-paris": "Open 24 hours"
   },
   "places": [
     {
@@ -511,6 +524,123 @@
         "assets/places/hoxton-paris-room.jpg",
         "assets/places/hoxton-paris-terrace.jpg"
       ]
+    },
+    {
+      "key": "mesa-paris", "name": "Mesa", "arrondissement": 9, "category": "cafe", "area": "montmartre",
+      "meta": "Plant-based café & restaurant · Rue des Martyrs",
+      "description": "A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.",
+      "instagram": "https://www.instagram.com/mesa.paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mesa%2068%20Rue%20des%20Martyrs%2075009%20Paris",
+      "coordinates": [2.3401281, 48.8811485],
+      "images": ["assets/places/mesa-paris-1.jpg", "assets/places/mesa-paris-2.jpg", "assets/places/mesa-paris-3.jpg"]
+    },
+    {
+      "key": "white-coffee-marais", "name": "WHITE Coffee", "arrondissement": 4, "category": "cafe", "area": "le-marais",
+      "meta": "Specialty coffee & matcha · Le Marais",
+      "description": "A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.",
+      "instagram": "https://www.instagram.com/drink.white/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
+      "coordinates": [2.3570133, 48.8567636],
+      "images": ["assets/places/white-coffee-1.jpg", "assets/places/white-coffee-2.jpg", "assets/places/white-coffee-3.jpg"]
+    },
+    {
+      "key": "cafe-papeterie", "name": "Café Papeterie", "arrondissement": 2, "category": "cafe", "area": "vivienne",
+      "meta": "Neighbourhood café · Place des Petits-Pères",
+      "description": "A compact new café beside Place des Petits-Pères, bringing a simple coffee pause to the calm streets behind the Bourse.",
+      "instagram": "https://www.instagram.com/cafepapeterie/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Papeterie%204%20Rue%20des%20Petits%20Peres%2075002%20Paris",
+      "coordinates": [2.3403539, 48.866149],
+      "images": ["assets/places/cafe-papeterie-1.jpg", "assets/places/cafe-papeterie-2.jpg", "assets/places/cafe-papeterie-3.jpg"]
+    },
+    {
+      "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",
+      "meta": "Coffee shop & roastery · Montmartre",
+      "description": "One of NOIR's design-led Paris coffee shops, serving house-roasted beans from a compact address just below Sacré-Cœur.",
+      "instagram": "https://www.instagram.com/noir_coffeeshop/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NOIR%20Coffee%206%20Rue%20des%20Trois%20Freres%2075018%20Paris",
+      "coordinates": [2.3415783, 48.8838812],
+      "images": ["assets/places/noir-coffee-1.jpg", "assets/places/noir-coffee-2.jpg", "assets/places/noir-coffee-3.jpg"]
+    },
+    {
+      "key": "daark-paris", "name": "Daark", "arrondissement": 3, "category": "cafe", "area": "le-marais",
+      "meta": "Curated coffee corner · Le Marais",
+      "description": "A fashion-minded coffee corner on Rue de Turenne where a restrained interior frames carefully made drinks and small details.",
+      "instagram": "https://www.instagram.com/daark.paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Daark%2050%20Rue%20de%20Turenne%2075003%20Paris",
+      "coordinates": [2.3645956, 48.8582831],
+      "images": ["assets/places/daark-paris-1.jpg", "assets/places/daark-paris-2.jpg", "assets/places/daark-paris-3.jpg"]
+    },
+    {
+      "key": "broken-arm-cafeteria", "name": "The Broken Arm Cafeteria", "arrondissement": 3, "category": "cafe", "area": "le-marais",
+      "meta": "Cafeteria · Haut-Marais",
+      "description": "The relaxed café counterpart to The Broken Arm, pairing considered breakfasts and lunches with a leafy Square du Temple setting.",
+      "instagram": "https://www.instagram.com/thebrokenarmcafeteria/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Broken%20Arm%20Cafeteria%2012%20Rue%20Perree%2075003%20Paris",
+      "coordinates": [2.3615166, 48.8646421],
+      "images": ["assets/places/broken-arm-1.jpg", "assets/places/broken-arm-2.jpg", "assets/places/broken-arm-3.jpg"]
+    },
+    {
+      "key": "parisien-tete-de-chien", "name": "Parisien Tête de Chien", "arrondissement": 17, "category": "shop", "area": "batignolles",
+      "meta": "Dog-friendly café, shop & yoga studio · Batignolles",
+      "description": "A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.",
+      "instagram": "https://www.instagram.com/parisien_tete_de_chien/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parisien%20Tete%20de%20Chien%2019%20Rue%20des%20Moines%2075017%20Paris",
+      "coordinates": [2.3190036, 48.8885334],
+      "images": ["assets/places/parisien-tete-de-chien-1.jpg", "assets/places/parisien-tete-de-chien-2.jpg", "assets/places/parisien-tete-de-chien-3.jpg"]
+    },
+    {
+      "key": "cayu-canides-club", "name": "CAYU Canidés Club", "arrondissement": 19, "category": "shop", "area": "buttes-chaumont",
+      "meta": "Independent dog shop · Buttes-Chaumont",
+      "description": "A Paris-designed dog shop on Rue Bouret, bringing together thoughtful accessories, an independent label and a community-minded club spirit.",
+      "instagram": "https://www.instagram.com/cayu.canidesclub/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CAYU%20Canides%20Club%2028%20Rue%20Bouret%2075019%20Paris",
+      "coordinates": [2.3743721, 48.88157],
+      "images": ["assets/places/cayu-1.jpg", "assets/places/cayu-2.jpg", "assets/places/cayu-3.jpg"]
+    },
+    {
+      "key": "vivide-paris", "name": "Vivide", "arrondissement": 18, "category": "restaurant", "area": "montmartre",
+      "meta": "Plant-based restaurant · Montmartre",
+      "description": "A produce-driven, plant-based dinner restaurant near Abbesses, shaped around expressive seasonal plates and an intimate evening mood.",
+      "instagram": "https://www.instagram.com/vivide_paris/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vivide%203%20Rue%20Dancourt%2075018%20Paris",
+      "coordinates": [2.3417766, 48.8828675],
+      "images": ["assets/places/vivide-1.jpg", "assets/places/vivide-2.jpg", "assets/places/vivide-3.jpg"]
+    },
+    {
+      "key": "season-paris", "name": "Season Paris", "arrondissement": 3, "category": "restaurant", "area": "le-marais",
+      "meta": "All-day restaurant · Haut-Marais",
+      "description": "A lively all-day Marais address for colourful breakfast plates, generous lunches and the polished comfort-food style Season has served since 2015.",
+      "instagram": "https://www.instagram.com/seasonparis/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Season%201%20Rue%20Charles-Francois%20Dupuis%2075003%20Paris",
+      "coordinates": [2.3628352, 48.8651695],
+      "images": ["assets/places/season-paris-1.jpg", "assets/places/season-paris-2.jpg", "assets/places/season-paris-3.jpg"]
+    },
+    {
+      "key": "jaja-paris", "name": "Jaja", "arrondissement": 4, "category": "restaurant", "area": "le-marais",
+      "meta": "Restaurant & wine · Le Marais",
+      "description": "A hidden Marais courtyard restaurant serving convivial seasonal cooking and characterful wines from lunch through dinner every day.",
+      "instagram": "https://www.instagram.com/jaja.resto/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jaja%203%20Rue%20Sainte-Croix%20de%20la%20Bretonnerie%2075004%20Paris",
+      "coordinates": [2.3573508, 48.8576496],
+      "images": ["assets/places/jaja-1.jpg", "assets/places/jaja-2.jpg", "assets/places/jaja-3.jpg"]
+    },
+    {
+      "key": "hotel-suzie-blue", "name": "Hôtel Suzie Blue", "arrondissement": 3, "category": "hotel", "area": "le-marais",
+      "meta": "Hotel & coffee shop · Le Marais",
+      "description": "A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.",
+      "instagram": "https://www.instagram.com/hotelsuzieblue/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suzie%20Blue%204%20Rue%20de%20Saintonge%2075003%20Paris",
+      "coordinates": [2.3618319, 48.8608882],
+      "images": ["assets/places/hotel-suzie-blue-1.jpg", "assets/places/hotel-suzie-blue-2.jpg", "assets/places/hotel-suzie-blue-3.jpg"]
+    },
+    {
+      "key": "hoy-paris", "name": "HOY Paris", "arrondissement": 9, "category": "hotel", "area": "montmartre",
+      "meta": "Wellness hotel · Rue des Martyrs",
+      "description": "A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.",
+      "instagram": "https://www.instagram.com/hoyparis/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HOY%20Paris%2068%20Rue%20des%20Martyrs%2075009%20Paris",
+      "coordinates": [2.3401281, 48.8811485],
+      "images": ["assets/places/hoy-paris-1.jpg", "assets/places/hoy-paris-2.jpg", "assets/places/hoy-paris-3.jpg"]
     }
   ]
 }

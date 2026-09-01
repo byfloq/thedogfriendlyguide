@@ -116,6 +116,58 @@
       title: 'The Hoxton, Paris', meta: 'Boutique hotel · Sentier', area: 'sentier', key: 'hoxton-paris', category: 'hotel',
       description: 'A lively 18th-century hôtel particulier in Sentier with characterful rooms and a dog-friendly stay for one pup up to 20 kg, at no extra charge.',
       instagram: 'https://www.instagram.com/thehoxtonhotel/', maps: 'The Hoxton Paris 30-32 Rue du Sentier 75002 Paris', images: ['assets/places/hoxton-paris-lobby.jpg', 'assets/places/hoxton-paris-room.jpg', 'assets/places/hoxton-paris-terrace.jpg']
+    },
+    {
+      title: 'Mesa', meta: 'Plant-based café & restaurant · Rue des Martyrs', area: 'montmartre', key: 'mesa-paris', category: 'cafe',
+      description: 'A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.', instagram: 'https://www.instagram.com/mesa.paris/', maps: 'Mesa 68 Rue des Martyrs 75009 Paris', images: ['assets/places/mesa-paris-1.jpg', 'assets/places/mesa-paris-2.jpg', 'assets/places/mesa-paris-3.jpg']
+    },
+    {
+      title: 'WHITE Coffee', meta: 'Specialty coffee & matcha · Le Marais', area: 'le-marais', key: 'white-coffee-marais', category: 'cafe',
+      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-coffee-1.jpg', 'assets/places/white-coffee-2.jpg', 'assets/places/white-coffee-3.jpg']
+    },
+    {
+      title: 'Café Papeterie', meta: 'Neighbourhood café · Place des Petits-Pères', area: 'vivienne', key: 'cafe-papeterie', category: 'cafe',
+      description: 'A compact new café beside Place des Petits-Pères, bringing a simple coffee pause to the calm streets behind the Bourse.', instagram: 'https://www.instagram.com/cafepapeterie/', maps: 'Cafe Papeterie 4 Rue des Petits Peres 75002 Paris', images: ['assets/places/cafe-papeterie-1.jpg', 'assets/places/cafe-papeterie-2.jpg', 'assets/places/cafe-papeterie-3.jpg']
+    },
+    {
+      title: 'NOIR Coffee Shop', meta: 'Coffee shop & roastery · Montmartre', area: 'montmartre', key: 'noir-montmartre', category: 'cafe',
+      description: 'One of NOIR\'s design-led Paris coffee shops, serving house-roasted beans from a compact address just below Sacré-Cœur.', instagram: 'https://www.instagram.com/noir_coffeeshop/', maps: 'NOIR Coffee 6 Rue des Trois Freres 75018 Paris', images: ['assets/places/noir-coffee-1.jpg', 'assets/places/noir-coffee-2.jpg', 'assets/places/noir-coffee-3.jpg']
+    },
+    {
+      title: 'Daark', meta: 'Curated coffee corner · Le Marais', area: 'le-marais', key: 'daark-paris', category: 'cafe',
+      description: 'A fashion-minded coffee corner on Rue de Turenne where a restrained interior frames carefully made drinks and small details.', instagram: 'https://www.instagram.com/daark.paris/', maps: 'Daark 50 Rue de Turenne 75003 Paris', images: ['assets/places/daark-paris-1.jpg', 'assets/places/daark-paris-2.jpg', 'assets/places/daark-paris-3.jpg']
+    },
+    {
+      title: 'The Broken Arm Cafeteria', meta: 'Cafeteria · Haut-Marais', area: 'le-marais', key: 'broken-arm-cafeteria', category: 'cafe',
+      description: 'The relaxed café counterpart to The Broken Arm, pairing considered breakfasts and lunches with a leafy Square du Temple setting.', instagram: 'https://www.instagram.com/thebrokenarmcafeteria/', maps: 'The Broken Arm Cafeteria 12 Rue Perree 75003 Paris', images: ['assets/places/broken-arm-1.jpg', 'assets/places/broken-arm-2.jpg', 'assets/places/broken-arm-3.jpg']
+    },
+    {
+      title: 'Parisien Tête de Chien', meta: 'Dog-friendly café, shop & yoga studio · Batignolles', area: 'batignolles', key: 'parisien-tete-de-chien', category: 'shop',
+      description: 'A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.', instagram: 'https://www.instagram.com/parisien_tete_de_chien/', maps: 'Parisien Tete de Chien 19 Rue des Moines 75017 Paris', images: ['assets/places/parisien-tete-de-chien-1.jpg', 'assets/places/parisien-tete-de-chien-2.jpg', 'assets/places/parisien-tete-de-chien-3.jpg']
+    },
+    {
+      title: 'CAYU Canidés Club', meta: 'Independent dog shop · Buttes-Chaumont', area: 'buttes-chaumont', key: 'cayu-canides-club', category: 'shop',
+      description: 'A Paris-designed dog shop on Rue Bouret, bringing together thoughtful accessories, an independent label and a community-minded club spirit.', instagram: 'https://www.instagram.com/cayu.canidesclub/', maps: 'CAYU Canides Club 28 Rue Bouret 75019 Paris', images: ['assets/places/cayu-1.jpg', 'assets/places/cayu-2.jpg', 'assets/places/cayu-3.jpg']
+    },
+    {
+      title: 'Vivide', meta: 'Plant-based restaurant · Montmartre', area: 'montmartre', key: 'vivide-paris', category: 'restaurant',
+      description: 'A produce-driven, plant-based dinner restaurant near Abbesses, shaped around expressive seasonal plates and an intimate evening mood.', instagram: 'https://www.instagram.com/vivide_paris/', maps: 'Vivide 3 Rue Dancourt 75018 Paris', images: ['assets/places/vivide-1.jpg', 'assets/places/vivide-2.jpg', 'assets/places/vivide-3.jpg']
+    },
+    {
+      title: 'Season Paris', meta: 'All-day restaurant · Haut-Marais', area: 'le-marais', key: 'season-paris', category: 'restaurant',
+      description: 'A lively all-day Marais address for colourful breakfast plates, generous lunches and the polished comfort-food style Season has served since 2015.', instagram: 'https://www.instagram.com/seasonparis/', maps: 'Season 1 Rue Charles-Francois Dupuis 75003 Paris', images: ['assets/places/season-paris-1.jpg', 'assets/places/season-paris-2.jpg', 'assets/places/season-paris-3.jpg']
+    },
+    {
+      title: 'Jaja', meta: 'Restaurant & wine · Le Marais', area: 'le-marais', key: 'jaja-paris', category: 'restaurant',
+      description: 'A hidden Marais courtyard restaurant serving convivial seasonal cooking and characterful wines from lunch through dinner every day.', instagram: 'https://www.instagram.com/jaja.resto/', maps: 'Jaja 3 Rue Sainte-Croix de la Bretonnerie 75004 Paris', images: ['assets/places/jaja-1.jpg', 'assets/places/jaja-2.jpg', 'assets/places/jaja-3.jpg']
+    },
+    {
+      title: 'Hôtel Suzie Blue', meta: 'Hotel & coffee shop · Le Marais', area: 'le-marais', key: 'hotel-suzie-blue', category: 'hotel',
+      description: 'A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.', instagram: 'https://www.instagram.com/hotelsuzieblue/', maps: 'Hotel Suzie Blue 4 Rue de Saintonge 75003 Paris', images: ['assets/places/hotel-suzie-blue-1.jpg', 'assets/places/hotel-suzie-blue-2.jpg', 'assets/places/hotel-suzie-blue-3.jpg']
+    },
+    {
+      title: 'HOY Paris', meta: 'Wellness hotel · Rue des Martyrs', area: 'montmartre', key: 'hoy-paris', category: 'hotel',
+      description: 'A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.', instagram: 'https://www.instagram.com/hoyparis/', maps: 'HOY Paris 68 Rue des Martyrs 75009 Paris', images: ['assets/places/hoy-paris-1.jpg', 'assets/places/hoy-paris-2.jpg', 'assets/places/hoy-paris-3.jpg']
     }
   ];
 
@@ -163,7 +215,20 @@
     'Tekés': ['arr-2', 'Vegetable-led restaurant · 2nd arrondissement · Étienne Marcel'],
     'Maison Mère': ['arr-9', 'Boutique hotel · 9th arrondissement · Cadet'],
     'Kimpton St Honoré Paris': ['arr-2', 'Luxury hotel · 2nd arrondissement · Opéra'],
-    'The Hoxton, Paris': ['arr-2', 'Boutique hotel · 2nd arrondissement · Sentier']
+    'The Hoxton, Paris': ['arr-2', 'Boutique hotel · 2nd arrondissement · Sentier'],
+    'Mesa': ['arr-9', 'Plant-based café & restaurant · 9th arrondissement · Rue des Martyrs'],
+    'WHITE Coffee': ['arr-4', 'Specialty coffee & matcha · 4th arrondissement · Le Marais'],
+    'Café Papeterie': ['arr-2', 'Neighbourhood café · 2nd arrondissement · Vivienne'],
+    'NOIR Coffee Shop': ['arr-18', 'Coffee shop & roastery · 18th arrondissement · Montmartre'],
+    'Daark': ['arr-3', 'Curated coffee corner · 3rd arrondissement · Le Marais'],
+    'The Broken Arm Cafeteria': ['arr-3', 'Cafeteria · 3rd arrondissement · Haut-Marais'],
+    'Parisien Tête de Chien': ['arr-17', 'Dog-friendly café, shop & yoga studio · 17th arrondissement · Batignolles'],
+    'CAYU Canidés Club': ['arr-19', 'Independent dog shop · 19th arrondissement · Buttes-Chaumont'],
+    'Vivide': ['arr-18', 'Plant-based restaurant · 18th arrondissement · Montmartre'],
+    'Season Paris': ['arr-3', 'All-day restaurant · 3rd arrondissement · Haut-Marais'],
+    'Jaja': ['arr-4', 'Restaurant & wine · 4th arrondissement · Le Marais'],
+    'Hôtel Suzie Blue': ['arr-3', 'Hotel & coffee shop · 3rd arrondissement · Le Marais'],
+    'HOY Paris': ['arr-9', 'Wellness hotel · 9th arrondissement · Rue des Martyrs']
   };
 
   const openingHoursByPlace = {
@@ -194,7 +259,20 @@
     'Tekés': 'Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00',
     'Maison Mère': 'Open 24 hours',
     'Kimpton St Honoré Paris': 'Open 24 hours',
-    'The Hoxton, Paris': 'Open 24 hours'
+    'The Hoxton, Paris': 'Open 24 hours',
+    'Mesa': 'Open daily for breakfast, lunch and dinner',
+    'WHITE Coffee': 'Open daily',
+    'Café Papeterie': 'Check Instagram for current hours',
+    'NOIR Coffee Shop': 'Open daily',
+    'Daark': 'Mon-Fri 09:00-18:00 · Sat-Sun 10:00-19:00',
+    'The Broken Arm Cafeteria': 'Tue-Sat 09:00-17:00 · Sun-Mon closed',
+    'Parisien Tête de Chien': 'Check Instagram for current hours',
+    'CAYU Canidés Club': 'Wed-Sun · Check Instagram for daily hours',
+    'Vivide': 'Dinner Tue-Sat · Sun-Mon closed',
+    'Season Paris': 'Open daily · Walk-ins only',
+    'Jaja': 'Open daily for lunch and dinner',
+    'Hôtel Suzie Blue': 'Open 24 hours',
+    'HOY Paris': 'Open 24 hours'
   };
 
   grid.querySelectorAll('.place-card').forEach(card => {
@@ -221,7 +299,7 @@
       ${[
         ['arr-1', '1st'], ['arr-2', '2nd'], ['arr-3', '3rd'], ['arr-4', '4th'], ['arr-5', '5th'],
         ['arr-6', '6th'], ['arr-7', '7th'], ['arr-9', '9th'], ['arr-16', '16th'],
-        ['arr-18', '18th'], ['arr-19', '19th']
+        ['arr-17', '17th'], ['arr-18', '18th'], ['arr-19', '19th']
       ].map(([value, label]) => `<button data-filter="${value}" aria-pressed="false" aria-label="${label} arrondissement">${label}</button>`).join('')}`;
   }
   const count = document.querySelector('.cg-intro p');

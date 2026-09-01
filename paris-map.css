@@ -28,6 +28,9 @@
 .map-marker.active{border:0;box-shadow:none}
 .map-marker.active .marker-shape{width:48px;height:48px;border-width:4px;box-shadow:0 0 0 8px rgba(247,242,233,.92),0 0 0 11px var(--ink),0 9px 22px rgba(33,30,26,.48)}
 .map-marker.active .marker-shape>span{font-size:15px}
+.map-marker .marker-shape>span{width:17px;height:17px;display:grid;place-items:center}
+.map-marker .marker-shape svg{width:17px;height:17px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.map-marker.active .marker-shape>span,.map-marker.active .marker-shape svg{width:21px;height:21px}
 .map-marker.active:after{left:42px;bottom:37px;transform:none;transform-origin:center}
 @media(max-width:700px){.map-marker.active .marker-shape{width:44px;height:44px}.map-marker.active:after{left:38px;bottom:33px}}
 
