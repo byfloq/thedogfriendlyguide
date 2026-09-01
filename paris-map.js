@@ -32,7 +32,7 @@
   const cardFor = place => {
     const category = normaliseCategory(place.category);
     const distance = userLocation ? `<span class="card-distance">${formatDistance(distanceBetween(userLocation, place.coordinates))}</span>` : '';
-    return `<article class="map-card" data-key="${escapeHTML(place.key)}" tabindex="0" aria-label="Show ${escapeHTML(place.name)} on the map">
+    return `<article class="map-card" data-key="${escapeHTML(place.key)}" data-category="${category}" tabindex="0" aria-label="Show ${escapeHTML(place.name)} on the map">
       <img class="map-card-image" src="${escapeHTML(place.images[0])}" alt="${escapeHTML(place.name)} in Paris">
       <div class="map-card-copy">
         <p class="map-card-kicker"><i class="dot ${category}"></i>${categoryNames[category]} ${distance}</p>
@@ -58,8 +58,19 @@
     const place = visiblePlaces.find(item => item.key === key);
     if (!place) return;
     selectedKey = key;
-    markers.forEach((entry, markerKey) => entry.element.classList.toggle('active', markerKey === key));
-    rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key));
+    rail.classList.add('has-selection');
+    markers.forEach((entry, markerKey) => {
+      const active = markerKey === key;
+      entry.element.classList.toggle('active', active);
+      entry.element.classList.toggle('is-muted', !active);
+      entry.element.setAttribute('aria-pressed', active ? 'true' : 'false');
+      entry.element.style.zIndex = active ? '10' : '1';
+    });
+    rail.querySelectorAll('.map-card').forEach(card => {
+      const active = card.dataset.key === key;
+      card.classList.toggle('active', active);
+      card.setAttribute('aria-current', active ? 'true' : 'false');
+    });
     if (options.scroll !== false) rail.querySelector(`[data-key="${CSS.escape(key)}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     if (options.pan !== false) map.easeTo({ center: place.coordinates, zoom: Math.max(map.getZoom(), 14.4), padding: { bottom: 180 }, duration: 650 });
   };
@@ -75,9 +86,11 @@
       const category = normaliseCategory(place.category);
       markerElement.className = 'map-marker';
       markerElement.dataset.category = category;
+      markerElement.dataset.name = place.name;
       markerElement.type = 'button';
       markerElement.setAttribute('aria-label', `Show ${place.name}`);
-      markerElement.innerHTML = `<span>${categoryIcons[category]}</span>`;
+      markerElement.setAttribute('aria-pressed', 'false');
+      markerElement.innerHTML = `<span class="marker-shape"><span>${categoryIcons[category]}</span></span>`;
       markerElement.addEventListener('click', () => selectPlace(place.key));
       const marker = new maplibregl.Marker({ element: markerElement, anchor: 'bottom' }).setLngLat(place.coordinates).addTo(map);
       markers.set(place.key, { marker, element: markerElement });
@@ -87,7 +100,11 @@
       card.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') selectPlace(card.dataset.key, { scroll: false }); });
     });
     selectedKey = null;
-    window.setTimeout(fitVisiblePlaces, 50);
+    rail.classList.remove('has-selection');
+    window.setTimeout(() => {
+      fitVisiblePlaces();
+      if (visiblePlaces[0]) selectPlace(visiblePlaces[0].key, { pan: false, scroll: false });
+    }, 50);
   };
 
   const updateDistances = coordinates => {
