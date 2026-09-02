@@ -194,6 +194,20 @@
       geolocate.on('geolocate', event => { updateDistances([event.coords.longitude, event.coords.latitude]); showStatus('Your location is now shown on the map.'); });
       geolocate.on('error', () => showStatus('We could not access your location. Please check your browser permission.'));
       map.on('load', () => {
+        map.addSource('paris-boundary', { type: 'geojson', data: 'paris-boundary.geojson' });
+        map.addLayer({
+          id: 'paris-boundary-fill',
+          type: 'fill',
+          source: 'paris-boundary',
+          paint: { 'fill-color': '#f7f2e9', 'fill-opacity': .12 }
+        });
+        map.addLayer({
+          id: 'paris-boundary-line',
+          type: 'line',
+          source: 'paris-boundary',
+          layout: { 'line-cap': 'round', 'line-join': 'round' },
+          paint: { 'line-color': '#514b45', 'line-width': 2, 'line-opacity': .8, 'line-dasharray': [1.2, 2.2] }
+        });
         map.addSource('district-highlight', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
         map.addLayer({ id: 'district-glow', type: 'circle', source: 'district-highlight', paint: { 'circle-radius': 72, 'circle-color': '#a76344', 'circle-opacity': .12, 'circle-stroke-color': '#a76344', 'circle-stroke-width': 2, 'circle-stroke-opacity': .48 } });
         map.addLayer({ id: 'district-label', type: 'symbol', source: 'district-highlight', layout: { 'text-field': ['get', 'label'], 'text-size': 14, 'text-letter-spacing': .13, 'text-allow-overlap': true }, paint: { 'text-color': '#7b3f2d', 'text-halo-color': '#f7f2e9', 'text-halo-width': 4 } });

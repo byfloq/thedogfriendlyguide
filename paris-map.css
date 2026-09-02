@@ -53,3 +53,55 @@
 .map-empty{pointer-events:auto;flex:0 0 min(420px,calc(100vw - 38px));padding:28px;background:#fbf8f2;border:1px solid var(--rule);font:400 16px/1.45 var(--serif)}
 @media(max-width:700px){.map-filter-stack{max-width:100%;gap:7px}.map-top-panel{right:10px}.district-filters button{padding:9px 11px}.locate-button{top:91px}.maplibregl-ctrl-top-right{top:135px}.map-results{padding-top:40px}.map-card{height:164px;grid-template-columns:116px 1fr}.map-card-copy{padding:14px 13px 12px}.map-card-kicker{padding-right:92px}.map-card-actions{padding-top:7px}.map-card-actions a{min-width:0;padding:8px}.map-card.active:after{top:8px;right:8px}}
 .district-map-badge{display:flex;align-items:baseline;gap:7px;padding:9px 12px;background:var(--cafe);color:#fff;border:3px solid var(--paper);box-shadow:0 5px 18px rgba(33,30,26,.28);white-space:nowrap;pointer-events:none}.district-map-badge strong{font:400 20px/1 var(--serif)}.district-map-badge span{font:500 8px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}@media(max-width:700px){.district-map-badge{padding:7px 9px}.district-map-badge strong{font-size:17px}.district-map-badge span{font-size:7px}}
+
+/* Cleaner map treatment inspired by travel-search maps while retaining the guide's palette. */
+.map-header{height:64px;background:rgba(250,248,244,.98);box-shadow:0 1px 0 rgba(33,30,26,.1)}
+.map-shell{height:calc(100% - 64px)}
+.map-top-panel{top:14px;left:14px;right:58px}
+.map-filter-stack{gap:7px}
+.map-filters{gap:6px}
+.map-filters button,.locate-button{border-color:rgba(33,30,26,.14);background:#fff;padding:10px 14px;box-shadow:0 2px 9px rgba(33,30,26,.09);font-size:8px}
+.map-filters button.active{background:var(--ink);border-color:var(--ink)}
+.district-filters button{background:rgba(255,255,255,.94);box-shadow:0 2px 8px rgba(33,30,26,.07)}
+.district-filters button.active{background:#fff;color:var(--ink);border:1.5px solid var(--ink);box-shadow:0 2px 10px rgba(33,30,26,.13)}
+.maplibregl-ctrl-top-right{top:57px;right:10px}
+.maplibregl-ctrl-group{border-radius:12px!important;overflow:hidden;background:#fff!important;box-shadow:0 2px 12px rgba(33,30,26,.14)!important}
+.map-results{padding-top:40px;background:linear-gradient(to bottom,transparent,rgba(247,242,233,.4) 55%,rgba(247,242,233,.8))}
+.map-results-head{margin-bottom:7px;text-shadow:0 1px 6px #fff}
+.place-rail{gap:10px;padding-top:9px;padding-bottom:5px}
+.place-rail.has-selection .map-card:not(.active){opacity:.8;filter:saturate(.82)}
+.map-card{flex-basis:min(376px,calc(100vw - 38px));height:148px;grid-template-columns:128px 1fr;border:1px solid rgba(33,30,26,.13);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 5px 18px rgba(33,30,26,.14);scroll-snap-align:center}
+.map-card-copy{padding:14px 15px 12px;background:#fff}
+.map-card h2{font-size:21px;margin-bottom:4px}
+.map-card-kicker{margin-bottom:5px;padding-right:0}
+.map-card-hours{margin-top:5px}
+.map-card-actions{padding-top:6px}
+.map-card-actions a{border-radius:7px;padding:7px 9px;background:#fff}
+.map-card.active{border:2px solid var(--ink);transform:translateY(-4px);box-shadow:0 12px 27px rgba(33,30,26,.22)}
+.map-card.active:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--ink);z-index:2}
+.map-card.active:after{display:none}
+.map-card.active[data-category="cafe"]:before{background:var(--cafe)}
+.map-card.active[data-category="restaurant"]:before{background:var(--restaurant)}
+.map-card.active[data-category="shop"]:before{background:var(--shop)}
+.map-card.active[data-category="hotel"]:before{background:var(--hotel)}
+.map-marker,.map-marker[data-category]{width:36px;height:36px;border-radius:50%;background:#fff;box-shadow:0 2px 9px rgba(33,30,26,.28);display:grid;place-items:center;transition:transform .18s,opacity .18s,box-shadow .18s}
+.map-marker .marker-shape{width:36px;height:36px;border:2px solid #fff;border-radius:50%;background:#fff!important;box-shadow:inset 0 0 0 1px rgba(33,30,26,.12);transform:none}
+.map-marker .marker-shape>span{transform:none}
+.map-marker[data-category="cafe"] .marker-shape>span{color:var(--cafe)}
+.map-marker[data-category="restaurant"] .marker-shape>span{color:var(--restaurant)}
+.map-marker[data-category="shop"] .marker-shape>span{color:var(--shop)}
+.map-marker[data-category="hotel"] .marker-shape>span{color:var(--hotel)}
+.map-marker.is-muted{transform:scale(.9);opacity:.58;filter:none}
+.map-marker.active{width:48px;height:48px;border-radius:50%;transform:none;box-shadow:0 0 0 3px #fff,0 0 0 6px var(--ink),0 7px 18px rgba(33,30,26,.35)}
+.map-marker.active .marker-shape{width:48px;height:48px;border-radius:50%;border:0;box-shadow:none;background:var(--ink)!important}
+.map-marker.active .marker-shape>span{color:#fff}
+.map-marker.active[data-category="cafe"]{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--cafe),0 7px 18px rgba(33,30,26,.35)}
+.map-marker.active[data-category="restaurant"]{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--restaurant),0 7px 18px rgba(33,30,26,.35)}
+.map-marker.active[data-category="shop"]{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--shop),0 7px 18px rgba(33,30,26,.35)}
+.map-marker.active[data-category="hotel"]{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--hotel),0 7px 18px rgba(33,30,26,.35)}
+.map-marker.active[data-category="cafe"] .marker-shape{background:var(--cafe)!important}
+.map-marker.active[data-category="restaurant"] .marker-shape{background:var(--restaurant)!important}
+.map-marker.active[data-category="shop"] .marker-shape{background:var(--shop)!important}
+.map-marker.active[data-category="hotel"] .marker-shape{background:var(--hotel)!important}
+.map-marker.active:after{left:54px;bottom:14px;border-radius:8px;padding:7px 9px;background:#fff;color:var(--ink);box-shadow:0 2px 10px rgba(33,30,26,.2)}
+@media(max-width:700px){.map-header{height:58px}.map-shell{height:calc(100% - 58px)}.map-top-panel{top:10px}.maplibregl-ctrl-top-right{top:128px}.map-card{height:146px;grid-template-columns:112px 1fr;border-radius:12px}.map-card-copy{padding:12px}.map-marker.active:after{display:none}}
