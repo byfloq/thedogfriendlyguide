@@ -8,7 +8,7 @@
     cafe: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h11v5.5A4.5 4.5 0 0 1 11.5 18h-2A4.5 4.5 0 0 1 5 13.5V8Zm11 2h1.5a2.5 2.5 0 0 1 0 5H16M7 5.5c0-1 1-1 1-2M11 5.5c0-1 1-1 1-2M4 20h14"/></svg>',
     restaurant: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7M4.5 3v4.5A2.5 2.5 0 0 0 7 10a2.5 2.5 0 0 0 2.5-2.5V3M7 10v11M15 3v18M15 3c3 2 4.5 5.5 2.5 9H15"/></svg>',
     shop: '<svg class="paw-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="8.4" r="2"/><circle cx="10.2" cy="5.7" r="2"/><circle cx="14.2" cy="5.7" r="2"/><circle cx="17.7" cy="8.6" r="2"/><path d="M12.1 10.4c-3.2 0-6.1 3.1-6.1 5.9 0 2 1.5 3.2 3.4 3.2 1 0 1.8-.5 2.7-.5.9 0 1.7.5 2.7.5 1.9 0 3.4-1.2 3.4-3.2 0-2.8-2.9-5.9-6.1-5.9Z"/></svg>',
-    hotel: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V6M20 20v-7H4v7M7 13V9h5a4 4 0 0 1 4 4M4 17h16M4 20v1M20 20v1"/></svg>'
+    hotel: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5h14v16M3 21h18M8 9h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/></svg>'
   };
   let map;
   let geolocate;
