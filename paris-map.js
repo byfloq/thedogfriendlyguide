@@ -67,7 +67,7 @@
     map.fitBounds(bounds, { padding: { top: mobile ? 190 : 155, right: mobile ? 42 : 65, bottom: mobile ? 220 : 245, left: mobile ? 42 : 65 }, maxZoom: activeDistrict === 'all' ? 13.2 : 14.5, duration: 650 });
   };
 
-  const updateDistrictHighlight = () => {
+  const updateDistrictHighlight = async () => {
     if (!map.getSource('district-highlight')) return;
     districtBadgeMarker?.remove();
     districtBadgeMarker = null;
@@ -77,10 +77,16 @@
     }
     const districtPlaces = places.filter(place => String(place.arrondissement) === activeDistrict);
     const center = districtPlaces.reduce((total, place) => [total[0] + place.coordinates[0], total[1] + place.coordinates[1]], [0, 0]).map(value => value / districtPlaces.length);
-    map.getSource('district-highlight').setData({
-      type: 'FeatureCollection',
-      features: [{ type: 'Feature', geometry: { type: 'Point', coordinates: center }, properties: { label: `${ordinal(Number(activeDistrict))} ARRONDISSEMENT` } }]
-    });
+    try {
+      const districtNumber = String(activeDistrict).padStart(2, '0');
+      const response = await fetch(`paris-arrondissements/arr-${districtNumber}.geojson`);
+      if (!response.ok) throw new Error('Arrondissement boundary unavailable');
+      if (activeDistrict !== String(Number(districtNumber))) return;
+      map.getSource('district-highlight').setData(await response.json());
+    } catch (error) {
+      console.error('Could not load arrondissement boundary', error);
+      map.getSource('district-highlight').setData({ type: 'FeatureCollection', features: [] });
+    }
     const badge = document.createElement('div');
     badge.className = 'district-map-badge';
     badge.innerHTML = `<strong>${ordinal(Number(activeDistrict))}</strong><span>arrondissement</span>`;
@@ -206,11 +212,11 @@
           type: 'line',
           source: 'paris-boundary',
           layout: { 'line-cap': 'round', 'line-join': 'round' },
-          paint: { 'line-color': '#514b45', 'line-width': 2, 'line-opacity': .8, 'line-dasharray': [1.2, 2.2] }
+          paint: { 'line-color': '#332f2b', 'line-width': 3, 'line-opacity': .95, 'line-dasharray': [1.4, 1.7] }
         });
         map.addSource('district-highlight', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-        map.addLayer({ id: 'district-glow', type: 'circle', source: 'district-highlight', paint: { 'circle-radius': 72, 'circle-color': '#a76344', 'circle-opacity': .12, 'circle-stroke-color': '#a76344', 'circle-stroke-width': 2, 'circle-stroke-opacity': .48 } });
-        map.addLayer({ id: 'district-label', type: 'symbol', source: 'district-highlight', layout: { 'text-field': ['get', 'label'], 'text-size': 14, 'text-letter-spacing': .13, 'text-allow-overlap': true }, paint: { 'text-color': '#7b3f2d', 'text-halo-color': '#f7f2e9', 'text-halo-width': 4 } });
+        map.addLayer({ id: 'district-fill', type: 'fill', source: 'district-highlight', paint: { 'fill-color': '#a76344', 'fill-opacity': .16 } });
+        map.addLayer({ id: 'district-outline', type: 'line', source: 'district-highlight', layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#7b3f2d', 'line-width': 4, 'line-opacity': 1, 'line-dasharray': [1.3, 1.5] } });
         render();
       });
       document.querySelector('.locate-button').addEventListener('click', () => geolocate.trigger());
