@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Compare the Google Maps version of our 42 curated dog-friendly places in Paris.">
+  <title>Paris Map - Google comparison · The Dog Friendly Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="paris-map.css?v=8">
+  <link rel="stylesheet" href="paris-map-google.css?v=1">
+</head>
+<body>
+  <header class="map-header">
+    <a class="map-brand" href="index.html">The Dog<br>Friendly Guide</a>
+    <div class="map-title"><span>Google comparison</span><strong>Paris</strong></div>
+    <a class="map-close" href="paris-map.html" aria-label="Back to the current Paris map">×</a>
+  </header>
+  <main class="map-shell">
+    <div id="paris-map" role="application" aria-label="Google map of dog-friendly places in Paris"></div>
+    <div class="google-map-setup" id="google-map-setup" hidden>
+      <strong>Google Maps preview is ready</strong>
+      <span>Add the restricted Google Maps API key to activate the comparison map.</span>
+    </div>
+    <div class="map-top-panel">
+      <div class="map-filter-stack">
+        <div class="map-filters category-filters" role="group" aria-label="Filter places by category">
+          <button class="active" data-category="all" aria-pressed="true">All <span>42</span></button>
+          <button data-category="cafe" aria-pressed="false"><i class="dot cafe"></i>Cafés</button>
+          <button data-category="restaurant" aria-pressed="false"><i class="dot restaurant"></i>Restaurants</button>
+          <button data-category="shop" aria-pressed="false"><i class="dot shop"></i>Dog shops</button>
+          <button data-category="hotel" aria-pressed="false"><i class="dot hotel"></i>Hotels</button>
+        </div>
+        <div class="map-filters district-filters" id="district-filters" role="group" aria-label="Filter places by arrondissement"></div>
+      </div>
+      <button class="locate-button" type="button" aria-label="Show my current location"><span>◎</span> Near me</button>
+    </div>
+    <section class="map-results" aria-label="Paris recommendations">
+      <div class="map-results-head"><p><span id="visible-count">42</span> curated places</p><span>Swipe to explore</span></div>
+      <div class="place-rail" id="place-rail" tabindex="0"></div>
+    </section>
+    <div class="map-status" id="map-status" role="status" aria-live="polite"></div>
+  </main>
+  <script src="google-maps-config.js"></script>
+  <script src="paris-map-google.js?v=1"></script>
+</body>
+</html>

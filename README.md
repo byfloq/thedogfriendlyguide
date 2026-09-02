@@ -8,6 +8,7 @@ Static multi-page GitHub Pages website. Upload the contents of this folder to th
 - `link-in-bio.html` — Instagram link-in-bio page
 - `paris-guide.html` — editorial Paris city guide
 - `paris-places.json` — canonical machine-readable catalogue for the Paris website and Flōq app
+- `paris-map-google.html` — parallel Google Maps comparison; add a browser-restricted key in `google-maps-config.js` to activate it
 - `maps-paris.html` — saved-map collection experience
 - `styles.css` — responsive desktop/mobile design
 - `script.js` — mobile menu and newsletter form feedback

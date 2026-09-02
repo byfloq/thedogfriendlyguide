@@ -1,0 +1,12 @@
+.google-map-setup{position:absolute;z-index:30;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:min(430px,calc(100% - 36px));padding:28px;background:#fff;border:1px solid var(--rule);border-radius:16px;box-shadow:0 16px 50px rgba(33,30,26,.2);text-align:center}
+.google-map-setup strong{display:block;font:400 25px/1.2 var(--serif);margin-bottom:9px}.google-map-setup span{font:400 12px/1.5 var(--sans);color:var(--muted)}
+.gm-style .gm-style-iw-c{border-radius:12px!important}.gm-style .gm-style-iw-d{font-family:var(--sans)}
+.google-marker{position:absolute;transform:translate(-50%,-100%);border:0;background:transparent;padding:0;cursor:pointer;z-index:1}
+.google-marker .marker-shape{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid #fff;box-shadow:0 2px 9px rgba(33,30,26,.28),inset 0 0 0 1px rgba(33,30,26,.12);transition:width .18s,height .18s,transform .18s,box-shadow .18s}
+.google-marker .marker-shape span{width:17px;height:17px;display:grid;place-items:center}.google-marker svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.google-marker svg.paw-icon{fill:currentColor;stroke:none}
+.google-marker[data-category="cafe"]{color:var(--cafe)}.google-marker[data-category="restaurant"]{color:var(--restaurant)}.google-marker[data-category="shop"]{color:var(--shop)}.google-marker[data-category="hotel"]{color:var(--hotel)}
+.google-marker.is-muted{opacity:.58}.google-marker.active{z-index:10}.google-marker.active .marker-shape{width:48px;height:48px;color:#fff;background:var(--ink);box-shadow:0 0 0 3px #fff,0 0 0 6px currentColor,0 7px 18px rgba(33,30,26,.35)}
+.google-marker.active[data-category="cafe"] .marker-shape{background:var(--cafe)}.google-marker.active[data-category="restaurant"] .marker-shape{background:var(--restaurant)}.google-marker.active[data-category="shop"] .marker-shape{background:var(--shop)}.google-marker.active[data-category="hotel"] .marker-shape{background:var(--hotel)}
+.google-marker.active .marker-shape span,.google-marker.active svg{width:21px;height:21px}
+.google-marker-label{display:none;position:absolute;left:56px;top:9px;min-width:max-content;padding:7px 9px;border-radius:8px;background:#fff;color:var(--ink);font:500 9px/1 var(--sans);letter-spacing:.04em;box-shadow:0 2px 10px rgba(33,30,26,.2)}.google-marker.active .google-marker-label{display:block}
+@media(max-width:700px){.google-marker.active .google-marker-label{display:none}}
