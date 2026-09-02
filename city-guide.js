@@ -162,6 +162,10 @@
       description: 'A hidden Marais courtyard restaurant serving convivial seasonal cooking and characterful wines from lunch through dinner every day.', instagram: 'https://www.instagram.com/jaja.resto/', maps: 'Jaja 3 Rue Sainte-Croix de la Bretonnerie 75004 Paris', images: ['assets/places/jaja-1.jpg', 'assets/places/jaja-2.jpg', 'assets/places/jaja-3.jpg']
     },
     {
+      title: 'Café Charlot', meta: 'Parisian bistro · Haut-Marais', area: 'le-marais', key: 'cafe-charlot-paris', category: 'restaurant',
+      description: 'A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.', instagram: 'https://www.instagram.com/cafecharlotparis/', maps: 'Cafe Charlot 38 Rue de Bretagne 75003 Paris', images: ['assets/places/cafe-charlot-1.jpg', 'assets/places/cafe-charlot-2.jpg', 'assets/places/cafe-charlot-3.jpg']
+    },
+    {
       title: 'Hôtel Suzie Blue', meta: 'Hotel & coffee shop · Le Marais', area: 'le-marais', key: 'hotel-suzie-blue', category: 'hotel',
       description: 'A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.', instagram: 'https://www.instagram.com/hotelsuzieblue/', maps: 'Hotel Suzie Blue 4 Rue de Saintonge 75003 Paris', images: ['assets/places/hotel-suzie-blue-1.jpg', 'assets/places/hotel-suzie-blue-2.jpg', 'assets/places/hotel-suzie-blue-3.jpg']
     },
@@ -227,6 +231,7 @@
     'Vivide': ['arr-18', 'Plant-based restaurant · 18th arrondissement · Montmartre'],
     'Season Paris': ['arr-3', 'All-day restaurant · 3rd arrondissement · Haut-Marais'],
     'Jaja': ['arr-4', 'Restaurant & wine · 4th arrondissement · Le Marais'],
+    'Café Charlot': ['arr-3', 'Parisian bistro · 3rd arrondissement · Haut-Marais'],
     'Hôtel Suzie Blue': ['arr-3', 'Hotel & coffee shop · 3rd arrondissement · Le Marais'],
     'HOY Paris': ['arr-9', 'Wellness hotel · 9th arrondissement · Rue des Martyrs']
   };

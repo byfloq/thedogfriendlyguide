@@ -3,8 +3,8 @@
   "city": "Paris",
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
-  "lastUpdated": "2026-09-01",
-  "placeCount": 41,
+  "lastUpdated": "2026-09-02",
+  "placeCount": 42,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
@@ -45,6 +45,7 @@
     "vivide-paris": "Dinner Tue-Sat · Sun-Mon closed",
     "season-paris": "Open daily · Walk-ins only",
     "jaja-paris": "Open daily for lunch and dinner",
+    "cafe-charlot-paris": "Daily 07:00-02:00",
     "hotel-suzie-blue": "Open 24 hours",
     "hoy-paris": "Open 24 hours"
   },
@@ -623,6 +624,15 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jaja%203%20Rue%20Sainte-Croix%20de%20la%20Bretonnerie%2075004%20Paris",
       "coordinates": [2.3573508, 48.8576496],
       "images": ["assets/places/jaja-1.jpg", "assets/places/jaja-2.jpg", "assets/places/jaja-3.jpg"]
+    },
+    {
+      "key": "cafe-charlot-paris", "name": "Café Charlot", "arrondissement": 3, "category": "restaurant", "area": "le-marais",
+      "meta": "Parisian bistro · Haut-Marais",
+      "description": "A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.",
+      "instagram": "https://www.instagram.com/cafecharlotparis/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Charlot%2038%20Rue%20de%20Bretagne%2075003%20Paris",
+      "coordinates": [2.362468, 48.863056],
+      "images": ["assets/places/cafe-charlot-1.jpg", "assets/places/cafe-charlot-2.jpg", "assets/places/cafe-charlot-3.jpg"]
     },
     {
       "key": "hotel-suzie-blue", "name": "Hôtel Suzie Blue", "arrondissement": 3, "category": "hotel", "area": "le-marais",

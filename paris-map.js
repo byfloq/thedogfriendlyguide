@@ -174,7 +174,7 @@
 
   const initialise = async () => {
     try {
-      const response = await fetch('paris-places.json?v=4');
+      const response = await fetch('paris-places.json?v=5');
       if (!response.ok) throw new Error('Catalogue unavailable');
       const catalogue = await response.json();
       places = catalogue.places.filter(place => Array.isArray(place.coordinates)).map(place => ({ ...place, openingHours: catalogue.openingHours[place.key] }));
