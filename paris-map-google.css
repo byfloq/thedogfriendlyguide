@@ -1,12 +1,23 @@
 .google-map-setup{position:absolute;z-index:30;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:min(430px,calc(100% - 36px));padding:28px;background:#fff;border:1px solid var(--rule);border-radius:16px;box-shadow:0 16px 50px rgba(33,30,26,.2);text-align:center}
 .google-map-setup strong{display:block;font:400 25px/1.2 var(--serif);margin-bottom:9px}.google-map-setup span{font:400 12px/1.5 var(--sans);color:var(--muted)}
 .gm-style .gm-style-iw-c{border-radius:12px!important}.gm-style .gm-style-iw-d{font-family:var(--sans)}
-.google-marker{position:absolute;transform:translate(-50%,-100%);border:0;background:transparent;padding:0;cursor:pointer;z-index:1}
-.google-marker .marker-shape{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid #fff;box-shadow:0 2px 9px rgba(33,30,26,.28),inset 0 0 0 1px rgba(33,30,26,.12);transition:width .18s,height .18s,transform .18s,box-shadow .18s}
-.google-marker .marker-shape span{width:17px;height:17px;display:grid;place-items:center}.google-marker svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.google-marker svg.paw-icon{fill:currentColor;stroke:none}
+.google-marker{position:absolute;transform:translate(-50%,-100%);border:0;background:transparent;padding:0;cursor:pointer;z-index:1;opacity:1;transition:opacity .18s,filter .18s}
+.google-marker .marker-shape{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid rgba(33,30,26,.36);box-shadow:0 3px 10px rgba(33,30,26,.3);transition:width .18s,height .18s,transform .18s,box-shadow .18s,background .18s}
+.google-marker .marker-shape span{width:21px;height:21px;display:grid;place-items:center}.google-marker svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.google-marker svg.paw-icon{fill:currentColor;stroke:none}
 .google-marker[data-category="cafe"]{color:var(--cafe)}.google-marker[data-category="restaurant"]{color:var(--restaurant)}.google-marker[data-category="shop"]{color:var(--shop)}.google-marker[data-category="hotel"]{color:var(--hotel)}
-.google-marker.is-muted{opacity:.58}.google-marker.active{z-index:10}.google-marker.active .marker-shape{width:48px;height:48px;color:#fff;background:var(--ink);box-shadow:0 0 0 3px #fff,0 0 0 6px currentColor,0 7px 18px rgba(33,30,26,.35)}
+.google-marker.is-muted{opacity:.82;filter:saturate(.75)}.google-marker.active{z-index:20;opacity:1;filter:none}.google-marker.active .marker-shape{width:56px;height:56px;color:#fff;background:var(--ink);border-color:var(--ink);box-shadow:0 0 0 4px #fff,0 0 0 7px var(--ink),0 9px 24px rgba(33,30,26,.4);transform:translateY(-2px)}
 .google-marker.active[data-category="cafe"] .marker-shape{background:var(--cafe)}.google-marker.active[data-category="restaurant"] .marker-shape{background:var(--restaurant)}.google-marker.active[data-category="shop"] .marker-shape{background:var(--shop)}.google-marker.active[data-category="hotel"] .marker-shape{background:var(--hotel)}
-.google-marker.active .marker-shape span,.google-marker.active svg{width:21px;height:21px}
-.google-marker-label{display:none;position:absolute;left:56px;top:9px;min-width:max-content;padding:7px 9px;border-radius:8px;background:#fff;color:var(--ink);font:500 9px/1 var(--sans);letter-spacing:.04em;box-shadow:0 2px 10px rgba(33,30,26,.2)}.google-marker.active .google-marker-label{display:block}
+.google-marker.active .marker-shape span,.google-marker.active svg{width:25px;height:25px}
+.google-marker-label{display:none;position:absolute;left:68px;top:11px;min-width:max-content;padding:10px 13px;border-radius:999px;background:var(--ink);color:#fff;font:500 10px/1 var(--sans);letter-spacing:.02em;box-shadow:0 4px 14px rgba(33,30,26,.3)}.google-marker.active .google-marker-label{display:block}
+
+/* Google comparison selection: one unmistakable pin-card pair. */
+.map-results{padding-bottom:max(26px,env(safe-area-inset-bottom));background:linear-gradient(to bottom,transparent 0,rgba(247,242,233,.45) 34%,rgba(247,242,233,.92) 100%)}
+.place-rail{gap:14px;padding-top:16px;padding-bottom:8px}
+.place-rail.has-selection .map-card:not(.active){opacity:.72;filter:saturate(.72);transform:scale(.97)}
+.map-card{height:158px;border-color:rgba(33,30,26,.18);box-shadow:0 6px 20px rgba(33,30,26,.16);transition:transform .2s,opacity .2s,filter .2s,box-shadow .2s,border-color .2s}
+.map-card.active,.map-card.active[data-category]{border:3px solid var(--ink)!important;transform:translateY(-8px);box-shadow:0 18px 40px rgba(33,30,26,.3);opacity:1;filter:none;z-index:3}
+.map-card.active:before{height:0}
+.map-card.active:after{display:block;content:"Selected";position:absolute;top:10px;right:10px;padding:7px 10px;border-radius:999px;background:var(--ink);color:#fff;font:500 7px/1 var(--sans);letter-spacing:.11em;text-transform:uppercase;z-index:4}
+.map-card.active .map-card-kicker{padding-right:76px}
+@media(max-width:700px){.google-marker .marker-shape{width:40px;height:40px}.google-marker .marker-shape span,.google-marker svg{width:19px;height:19px}.google-marker.active .marker-shape{width:50px;height:50px}.map-results{padding-bottom:max(20px,env(safe-area-inset-bottom))}.map-card{height:150px}.map-card.active{transform:translateY(-6px)}.map-card.active:after{padding:6px 8px}}
 @media(max-width:700px){.google-marker.active .google-marker-label{display:none}}

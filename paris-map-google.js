@@ -12,13 +12,19 @@
     hotel: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5h14v16M3 21h18M8 9h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/></svg>'
   };
   const neutralStyle = [
-    { featureType: 'poi.business', stylers: [{ visibility: 'off' }] },
+    { featureType: 'poi', stylers: [{ visibility: 'off' }] },
     { featureType: 'transit', stylers: [{ visibility: 'off' }] },
-    { featureType: 'landscape', stylers: [{ color: '#f4f2ee' }] },
+    { featureType: 'landscape', stylers: [{ color: '#f5f3ef' }] },
+    { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#d4d0ca' }] },
+    { featureType: 'administrative', elementType: 'labels.text.fill', stylers: [{ color: '#69645e' }] },
     { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
-    { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#77716b' }] },
-    { featureType: 'water', stylers: [{ color: '#dce9eb' }] },
-    { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#dfead7' }] }
+    { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#e7e3dd' }] },
+    { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#8a847d' }] },
+    { featureType: 'road.highway', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
+    { featureType: 'water', stylers: [{ color: '#dfe9e9' }] },
+    { featureType: 'poi.park', stylers: [{ visibility: 'on' }] },
+    { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e3ebdc' }] },
+    { featureType: 'poi.park', elementType: 'labels', stylers: [{ visibility: 'off' }] }
   ];
   let map;
   let places = [];
