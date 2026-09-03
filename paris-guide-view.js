@@ -16,10 +16,5 @@
   };
 
   buttons.forEach(button => button.addEventListener('click', () => show(button.dataset.guideView)));
-  document.querySelector('[data-open-map]')?.addEventListener('click', event => {
-    event.preventDefault();
-    show('map');
-    document.getElementById('guide-views')?.scrollIntoView({behavior:'smooth'});
-  });
   show(location.hash === '#map' ? 'map' : 'list');
 })();
