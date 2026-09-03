@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A curated dog-friendly itinerary through Paris by The Dog Friendly Guide.">
+  <title>Paris Plan - The Dog Friendly Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="paris-plan.css?v=1">
+</head>
+<body class="plan-page">
+  <header class="plans-header">
+    <a class="plans-brand" href="index.html">The Dog<br>Friendly Guide</a>
+    <div class="plans-header-center"><span>Curated plan</span><strong>Paris</strong></div>
+    <a class="plans-close" href="paris-plans.html" aria-label="Close">×</a>
+  </header>
+  <main class="plan-shell">
+    <section class="plan-map-panel" aria-label="Route overview">
+      <div class="plan-map" id="plan-map"></div>
+      <div class="plan-map-message" id="plan-map-message" hidden>Map preview is available on the published website.</div>
+      <div class="plan-map-summary"><strong id="plan-map-title">Paris plan</strong><span id="plan-map-meta"></span></div>
+    </section>
+    <section class="plan-detail">
+      <div class="plan-intro">
+        <p class="eyebrow">A plan for both of you</p>
+        <h1 id="plan-title">Paris, thoughtfully planned.</h1>
+        <p class="lead" id="plan-lead"></p>
+        <p id="plan-character"></p>
+        <div class="plan-facts" id="plan-facts"></div>
+        <div class="plan-actions">
+          <a id="view-google-route" href="#" target="_blank" rel="noopener">Open route in Google Maps</a>
+          <button class="secondary" id="share-plan" type="button">Share this plan</button>
+          <a class="secondary" href="paris-guide.html">Explore all places</a>
+        </div>
+      </div>
+      <div class="itinerary-head"><h2>The itinerary.</h2><p>Walking times are approximate.</p></div>
+      <ol class="plan-timeline" id="plan-timeline"></ol>
+      <aside class="plan-note"><strong>Before you go</strong>Opening times and dog policies can change. Check with each place before travelling, especially on public holidays.</aside>
+    </section>
+  </main>
+  <script>window.TDFG_GOOGLE_MAPS_API_KEY = '';</script>
+  <script src="paris-plan.js?v=1"></script>
+</body>
+</html>
