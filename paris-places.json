@@ -4,7 +4,7 @@
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
   "lastUpdated": "2026-09-03",
-  "placeCount": 41,
+  "placeCount": 40,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
@@ -25,7 +25,6 @@
     "le-bone-appart": "Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00",
     "two-tails": "Mon-Sat 09:30-19:30 · Sun 09:30-13:30",
     "petsochic": "Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed",
-    "moustaches-paris": "Mon-Sat 10:30-19:30 · Sun 12:00-19:00",
     "pantoufle-paris": "Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed",
     "griffon-paris": "Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed",
     "colore-paris": "Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00",
@@ -370,23 +369,6 @@
         "assets/places/petsochic.jpg",
         "assets/places/petsochic-2.jpg",
         "assets/places/petsochic-3.jpg"
-      ]
-    },
-    {
-      "key": "moustaches-paris",
-      "name": "Moustaches",
-      "arrondissement": 4,
-      "category": "shop",
-      "area": "le-marais",
-      "meta": "Pet concept store · Le Marais",
-      "description": "A long-standing Marais pet concept store with useful essentials, playful gifts and design-minded accessories under one roof.",
-      "instagram": "https://www.instagram.com/moustachesparis/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Moustaches%2032%20Rue%20des%20Archives%2075004%20Paris",
-      "coordinates": [2.35561, 48.8586529],
-      "images": [
-        "assets/places/moustaches-paris-3.jpg",
-        "assets/places/moustaches-paris-2.jpg",
-        "assets/places/moustaches-paris.jpg"
       ]
     },
     {

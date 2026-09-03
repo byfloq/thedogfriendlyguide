@@ -78,11 +78,6 @@
       instagram: 'https://www.instagram.com/petsochic/', maps: 'Petsochic 16 Rue Dauphine 75006 Paris', images: ['assets/places/petsochic.jpg', 'assets/places/petsochic-2.jpg', 'assets/places/petsochic-3.jpg']
     },
     {
-      title: 'Moustaches', meta: 'Pet concept store · Le Marais', area: 'le-marais', key: 'moustaches-paris', category: 'shop',
-      description: 'A long-standing Marais pet concept store with useful essentials, playful gifts and design-minded accessories under one roof.',
-      instagram: 'https://www.instagram.com/moustachesparis/', maps: 'Moustaches 32 Rue des Archives 75004 Paris', images: ['assets/places/moustaches-paris-3.jpg', 'assets/places/moustaches-paris-2.jpg', 'assets/places/moustaches-paris.jpg']
-    },
-    {
       title: 'Pantoufle', meta: 'Restaurant & wine bar · Buttes-Chaumont', area: 'buttes-chaumont', key: 'pantoufle-paris', category: 'restaurant',
       description: 'A relaxed wine bar and restaurant hosting rotating chef residencies, with expressive seasonal plates and an intimate neighbourhood mood.',
       instagram: 'https://www.instagram.com/pantoufle.paris/', maps: 'Pantoufle 5 Rue de Chaumont 75019 Paris', images: ['assets/places/pantoufle-paris.jpg', 'assets/places/pantoufle-paris-2.jpg', 'assets/places/pantoufle-paris-3.jpg']
@@ -212,7 +207,6 @@
     'Le Bone Appart': ['arr-4', 'Dog café & boutique · 4th arrondissement · Le Marais'],
     'Two Tails': ['arr-7', 'Pet boutique · 7th arrondissement · Grenelle'],
     'Petsochic': ['arr-6', 'Boutique & spa · 6th arrondissement · Saint-Germain'],
-    'Moustaches': ['arr-4', 'Pet concept store · 4th arrondissement · Le Marais'],
     'Pantoufle': ['arr-19', 'Restaurant & wine bar · 19th arrondissement · Buttes-Chaumont'],
     'Griffon': ['arr-4', 'Café, restaurant & bar · 4th arrondissement · Le Marais'],
     'Coloré': ['arr-18', 'French-Japanese restaurant · 18th arrondissement · Montmartre'],
@@ -256,7 +250,6 @@
     'Le Bone Appart': 'Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00',
     'Two Tails': 'Mon-Sat 09:30-19:30 · Sun 09:30-13:30',
     'Petsochic': 'Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed',
-    'Moustaches': 'Mon-Sat 10:30-19:30 · Sun 12:00-19:00',
     'Pantoufle': 'Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed',
     'Griffon': 'Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed',
     'Coloré': 'Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00',

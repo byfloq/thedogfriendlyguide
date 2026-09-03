@@ -31,11 +31,10 @@
       "intro": "A compact route through the quieter edges of Le Marais, moving from coffee to dog-focused shops and an easy early dinner.",
       "cover": "assets/guides/le-marais-dog.png",
       "tone": "plum",
-      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "moustaches-paris", "le-bone-appart", "jaja-paris"],
+      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "le-bone-appart", "jaja-paris"],
       "stopNotes": [
         "Start with a carefully made coffee before heading east.",
         "Pause at this design-led cafeteria while it is still open for the afternoon.",
-        "Browse a long-established Paris pet concept store.",
         "Continue to a dog café and boutique made around life together.",
         "Close the afternoon with an early table in the heart of Le Marais."
       ]
@@ -70,7 +69,7 @@
       "intro": "A relaxed Sunday around Saint-Germain, designed for wandering slowly between coffee, quiet streets and a generous lunch.",
       "cover": "assets/guides/all-places-dog.png",
       "tone": "terracotta",
-      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "season-paris", "moustaches-paris", "jaja-paris"],
+      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "season-paris", "petsochic", "jaja-paris"],
       "stopNotes": [
         "Start slowly with coffee and something baked.",
         "Walk the quieter streets while the neighbourhood is still calm.",
