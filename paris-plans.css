@@ -23,3 +23,17 @@
 .journal-section{background:#eee4d7}
 .coco-section{background:var(--paper)}
 .better-together{background:#eee4d7}
+
+/* Give Coco's story the same generous vertical presence as adjacent chapters. */
+.coco-section{
+  min-height:clamp(650px,48vw,760px);
+  padding-top:clamp(6.5rem,8vw,9rem);
+  padding-bottom:clamp(6.5rem,8vw,9rem);
+}
+@media(max-width:760px){
+  .coco-section{
+    min-height:auto;
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+}
