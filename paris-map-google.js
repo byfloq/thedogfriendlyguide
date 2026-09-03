@@ -22,17 +22,20 @@
   const neutralStyle = [
     { featureType: 'poi', stylers: [{ visibility: 'off' }] },
     { featureType: 'transit', stylers: [{ visibility: 'off' }] },
-    { featureType: 'landscape', stylers: [{ color: '#f5f3ef' }] },
+    { featureType: 'landscape', stylers: [{ color: '#f7f4ef' }] },
     { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#d4d0ca' }] },
     { featureType: 'administrative', elementType: 'labels.text.fill', stylers: [{ color: '#69645e' }] },
     { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
     { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#e7e3dd' }] },
     { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#8a847d' }] },
     { featureType: 'road.highway', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
-    { featureType: 'water', stylers: [{ color: '#dfe9e9' }] },
+    { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#c9e7ec' }] },
+    { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#6a9da6' }] },
     { featureType: 'poi.park', stylers: [{ visibility: 'on' }] },
-    { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e3ebdc' }] },
-    { featureType: 'poi.park', elementType: 'labels', stylers: [{ visibility: 'off' }] }
+    { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#d5edc6' }] },
+    { featureType: 'poi.park', elementType: 'labels', stylers: [{ visibility: 'on' }] },
+    { featureType: 'poi.park', elementType: 'labels.text.fill', stylers: [{ color: '#67914f' }] },
+    { featureType: 'poi.park', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] }
   ];
   let map;
   let places = [];
