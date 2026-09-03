@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-labelledby="title description">
+  <title id="title">Photography coming soon</title>
+  <desc id="description">A warm editorial illustration of a coffee cup, a notebook and a small paw print.</desc>
+  <rect width="1200" height="1600" fill="#eee2d5"/>
+  <path d="M0 0h1200v520L0 850Z" fill="#e0d1c0"/>
+  <circle cx="935" cy="320" r="260" fill="#d8dfd1"/>
+  <path d="M148 1040h904" stroke="#c8ad96" stroke-width="4"/>
+  <g fill="none" stroke="#8f553d" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M342 532h365v300c0 119-82 204-182 204s-183-85-183-204Z" fill="#f8f3eb" stroke-width="16"/>
+    <path d="M707 606h55c101 0 132 153 42 209-26 16-58 22-97 18" stroke-width="16"/>
+    <path d="M404 604c77 37 164 38 242 0" stroke-width="10"/>
+    <path d="M459 454c-34-55 42-74 5-132M572 454c-34-55 42-74 5-132" stroke-width="13"/>
+  </g>
+  <g transform="translate(760 905) rotate(-8)">
+    <rect x="0" y="0" width="245" height="315" rx="8" fill="#69775b"/>
+    <path d="M43 72h158M43 116h158M43 160h120" stroke="#eef1e9" stroke-width="7" opacity=".7"/>
+  </g>
+  <g fill="#8b6a8c" transform="translate(180 1120) rotate(-12)">
+    <ellipse cx="100" cy="104" rx="72" ry="60"/>
+    <circle cx="35" cy="40" r="30"/>
+    <circle cx="91" cy="18" r="30"/>
+    <circle cx="148" cy="31" r="30"/>
+    <circle cx="184" cy="82" r="28"/>
+  </g>
+  <text x="600" y="1355" text-anchor="middle" fill="#211e1a" font-family="Georgia, serif" font-size="62">Photography coming soon</text>
+  <text x="600" y="1425" text-anchor="middle" fill="#766d63" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">THE DOG FRIENDLY GUIDE</text>
+</svg>

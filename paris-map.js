@@ -45,7 +45,7 @@
     const category = normaliseCategory(place.category);
     const distance = userLocation ? `<span class="card-distance">${formatDistance(distanceBetween(userLocation, place.coordinates))}</span>` : '';
     return `<article class="map-card" data-key="${escapeHTML(place.key)}" data-category="${category}" tabindex="0" aria-label="Show ${escapeHTML(place.name)} on the map">
-      <img class="map-card-image" src="${escapeHTML(place.images[0])}" alt="${escapeHTML(place.name)} in Paris">
+      <img class="map-card-image" src="${escapeHTML(place.images?.[0] || 'assets/places/photo-coming-soon-cafe.svg')}" onerror="this.onerror=null;this.src='assets/places/photo-coming-soon-cafe.svg'" alt="${escapeHTML(place.name)} in Paris">
       <div class="map-card-copy">
         <p class="map-card-kicker"><i class="dot ${category}"></i>${categoryNames[category]} ${distance}</p>
         <h2>${escapeHTML(place.name)}</h2>

@@ -551,7 +551,7 @@
       "instagram": "https://www.instagram.com/cafepapeterie/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Papeterie%204%20Rue%20des%20Petits%20Peres%2075002%20Paris",
       "coordinates": [2.3403539, 48.866149],
-      "images": ["assets/places/cafe-papeterie-1.jpg", "assets/places/cafe-papeterie-2.jpg", "assets/places/cafe-papeterie-3.jpg"]
+      "images": ["assets/places/photo-coming-soon-cafe.svg"]
     },
     {
       "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",

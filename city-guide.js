@@ -127,7 +127,7 @@
     },
     {
       title: 'Café Papeterie', meta: 'Neighbourhood café · Place des Petits-Pères', area: 'vivienne', key: 'cafe-papeterie', category: 'cafe',
-      description: 'A compact new café beside Place des Petits-Pères, bringing a simple coffee pause to the calm streets behind the Bourse.', instagram: 'https://www.instagram.com/cafepapeterie/', maps: 'Cafe Papeterie 4 Rue des Petits Peres 75002 Paris', images: ['assets/places/cafe-papeterie-1.jpg', 'assets/places/cafe-papeterie-2.jpg', 'assets/places/cafe-papeterie-3.jpg']
+      description: 'A compact new café beside Place des Petits-Pères, bringing a simple coffee pause to the calm streets behind the Bourse.', instagram: 'https://www.instagram.com/cafepapeterie/', maps: 'Cafe Papeterie 4 Rue des Petits Peres 75002 Paris', images: ['assets/places/photo-coming-soon-cafe.svg']
     },
     {
       title: 'NOIR Coffee Shop', meta: 'Coffee shop & roastery · Montmartre', area: 'montmartre', key: 'noir-montmartre', category: 'cafe',
@@ -177,12 +177,13 @@
 
   const emptyState = grid.querySelector('.empty-state');
   approvedPlaces.forEach(place => {
+    const images = place.images?.length ? place.images : ['assets/places/photo-coming-soon-cafe.svg'];
     const article = document.createElement('article');
     article.className = 'place-card';
     article.dataset.category = place.category;
     article.dataset.area = place.area;
-    article.dataset.gallery = place.images.join('|');
-    article.innerHTML = `<div class="place-thumb" style="--thumb:url('${place.images[0]}')"></div>
+    article.dataset.gallery = images.join('|');
+    article.innerHTML = `<div class="place-thumb" style="--thumb:url('${images[0]}')"></div>
       <div class="place-content"><h3>${place.title}</h3><p class="place-category">${place.meta}</p>
       <p class="desc">${place.description}</p><div class="place-actions">
       <a class="primary" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.maps)}" target="_blank" rel="noopener">Get Directions →</a>
