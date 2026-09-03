@@ -133,7 +133,7 @@
 .paris-guide-page .guide-discovery{display:none!important}
 .guide-view-switcher{position:sticky;top:0;z-index:12;display:flex;justify-content:center;gap:0;padding:18px 20px;background:rgba(238,228,215,.96);border-bottom:1px solid #d2c3b2;backdrop-filter:blur(12px)}
 .guide-view-switcher button{min-width:132px;padding:13px 24px;border:1px solid #bca58f;background:rgba(250,247,241,.72);color:#665b50;font:600 10px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.guide-view-switcher button:first-child{border-radius:999px 0 0 999px}.guide-view-switcher button:last-child{margin-left:-1px;border-radius:0 999px 999px 0}
-.guide-view-switcher button.active{position:relative;border-color:var(--terracotta);background:var(--terracotta);color:#fff}
+.guide-view-switcher button.active{position:relative;border-color:#a76344;background:#a76344;color:#fff;box-shadow:0 3px 10px rgba(92,55,38,.16)}
 .guide-map-view{height:min(760px,calc(100svh - 78px));min-height:560px;background:#eee5d9}
 .guide-map-view[hidden]{display:none}
 .guide-map-frame{display:block;width:100%;height:100%;border:0}
