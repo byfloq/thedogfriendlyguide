@@ -4,3 +4,20 @@
 .home-plan-preview{margin-top:clamp(58px,7vw,96px);padding-top:clamp(40px,5vw,70px);border-top:1px solid var(--rule)}.home-plan-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}.home-plan-head h3{margin:0;font:400 clamp(30px,3.4vw,50px)/1 var(--serif)}.home-plan-head p{max-width:480px;margin:8px 0 0;font:400 14px/1.5 var(--serif);color:var(--muted)}.home-plan-head>a{flex:0 0 auto;border-bottom:1px solid;font:500 9px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase}.home-plan-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px)}.home-plan-card{position:relative;min-height:390px;border-radius:26px;overflow:hidden;background:#312d28;color:#fff}.home-plan-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(.94)}.home-plan-card:after{content:"";position:absolute;inset:28% 0 0;background:linear-gradient(transparent,rgba(18,15,12,.85))}.home-plan-card-copy{position:absolute;z-index:1;left:24px;right:24px;bottom:25px}.home-plan-card h4{margin:0 0 12px;font:400 clamp(25px,2.5vw,38px)/1.03 var(--serif)}.home-plan-card span{display:inline-block;border:1px solid rgba(255,255,255,.65);border-radius:999px;padding:8px 11px;font:500 8px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase}
 @media(max-width:800px){.plans-header-center span{display:none}.plans-header-center strong{font-size:24px}.plans-index-head{display:block}.plans-index-head p{margin-top:14px}.plan-capsule-rail,.home-plan-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:0 12vw 14px 0;scrollbar-width:none}.plan-capsule-rail::-webkit-scrollbar,.home-plan-rail::-webkit-scrollbar{display:none}.plan-capsule{flex:0 0 78vw;min-height:500px;scroll-snap-align:start}.home-plan-card{flex:0 0 76vw;min-height:420px;scroll-snap-align:start}.home-plan-head{display:block}.home-plan-head>a{display:inline-block;margin-top:18px}}
 @media(max-width:520px){.plans-header{height:70px}.plans-brand{font-size:9px}.plans-hero{padding-top:58px}.plans-hero h1{font-size:50px}.plan-capsule{flex-basis:82vw;min-height:460px;border-radius:27px}.plans-footer{flex-direction:column;gap:12px}.home-plan-preview{margin-top:50px}.home-plan-card{flex-basis:82vw;min-height:390px}}
+/* Homepage: one Paris story with two clear ways to explore. */
+#cities .next-cities{display:none!important}
+#cities .paris-mvp-grid{grid-template-columns:1fr!important;max-width:none!important}
+#cities .paris-launch-card{width:min(100%,1280px)}
+.home-plan-preview{margin-top:clamp(34px,4vw,58px);padding-top:0;border-top:0}
+.explore-choice-block{display:grid;grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr);gap:clamp(24px,4vw,64px);align-items:end;margin-bottom:clamp(50px,6vw,78px);padding:clamp(28px,3vw,44px) 0 clamp(46px,5vw,68px);border-bottom:1px solid var(--rule)}
+.explore-choice-intro .eyebrow{margin:0 0 15px}
+.explore-choice-intro h3{margin:0;font:400 clamp(32px,3.7vw,54px)/1.03 var(--serif)}
+.explore-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.explore-choice{position:relative;min-height:190px;padding:25px 26px;border:1px solid var(--rule);border-radius:18px;background:#f7f1e9;color:var(--ink);transition:transform .25s,box-shadow .25s,border-color .25s}
+.explore-choice:first-child{background:#a76344;color:#fff;border-color:#a76344}
+.explore-choice:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(38,34,29,.12)}
+.explore-choice b{display:block;margin-bottom:13px;font:400 clamp(23px,2.2vw,33px)/1.05 var(--serif)}
+.explore-choice p{max-width:300px;margin:0!important;color:inherit!important;font:400 12px/1.5 var(--sans)!important;letter-spacing:0!important;text-transform:none!important}
+.explore-choice span{position:absolute;right:23px;bottom:21px;font:500 9px/1 var(--sans);letter-spacing:.11em;text-transform:uppercase}
+@media(max-width:800px){.explore-choice-block{grid-template-columns:1fr}}
+@media(max-width:520px){.home-plan-preview{margin-top:30px}.explore-choice-block{padding-top:15px}.explore-choice-grid{grid-template-columns:1fr}.explore-choice{min-height:165px}}
