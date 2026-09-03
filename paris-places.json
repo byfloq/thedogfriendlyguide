@@ -3,13 +3,12 @@
   "city": "Paris",
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
-  "lastUpdated": "2026-09-02",
-  "placeCount": 42,
+  "lastUpdated": "2026-09-03",
+  "placeCount": 41,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
     "grave-cafe": "Mon-Fri 08:30-18:00 · Sat-Sun 09:30-18:00",
-    "bonne": "Tue-Fri 08:30-17:00 · Sat-Sun 09:30-17:00 · Mon closed",
     "cuvee-noire": "Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00",
     "sevenly-heart": "Mon-Fri 09:30-20:00 · Sat-Sun 10:00-20:00",
     "nami-coffee": "Mon-Fri 08:30-18:00 · Sat 10:00-19:00 · Sun 10:00-18:00",
@@ -99,23 +98,6 @@
         "assets/places/grave-cafe.jpg",
         "assets/places/grave-regular-dogs.jpg",
         "assets/places/grave-peach-cake-hq.jpg"
-      ]
-    },
-    {
-      "key": "bonne",
-      "name": "Bønne",
-      "arrondissement": 18,
-      "category": "cafes",
-      "area": "montmartre",
-      "meta": "Café · Montmartre",
-      "description": "A quiet neighbourhood coffee stop on Rue Labat with a pared-back atmosphere made for slow Montmartre mornings.",
-      "instagram": "https://www.instagram.com/bonne.montmartre/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%B8nne%2056%20Rue%20Labat%2075018%20Paris",
-      "coordinates": [2.3468321, 48.8889861],
-      "images": [
-        "assets/places/bonne.webp",
-        "assets/places/bonne-atmosphere-hq.jpg",
-        "assets/places/bonne-brunch-hq.jpg"
       ]
     },
     {

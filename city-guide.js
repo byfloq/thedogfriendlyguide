@@ -196,7 +196,6 @@
     'Simple Coffee': ['arr-18', 'Café · 18th arrondissement · Montmartre'],
     'Merlo Café': ['arr-3', 'Café · 3rd arrondissement · Le Marais'],
     'Grave Café': ['arr-3', 'Café · 3rd arrondissement · Haut-Marais'],
-    'Bønne': ['arr-18', 'Café · 18th arrondissement · Montmartre'],
     'Cuvée Noire': ['arr-9', 'Specialty coffee · 9th arrondissement · Saint-Lazare'],
     'Sevenly Heart': ['arr-3', 'Coffee & brunch · 3rd arrondissement · Le Marais'],
     'Nami Coffee': ['arr-2', 'Specialty coffee & bakery · 2nd arrondissement · Étienne Marcel'],
@@ -241,7 +240,6 @@
     'Simple Coffee': 'Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed',
     'Merlo Café': 'Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30',
     'Grave Café': 'Mon-Fri 08:30-18:00 · Sat-Sun 09:30-18:00',
-    'Bønne': 'Tue-Fri 08:30-17:00 · Sat-Sun 09:30-17:00 · Mon closed',
     'Cuvée Noire': 'Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00',
     'Sevenly Heart': 'Mon-Fri 09:30-20:00 · Sat-Sun 10:00-20:00',
     'Nami Coffee': 'Mon-Fri 08:30-18:00 · Sat 10:00-19:00 · Sun 10:00-18:00',
@@ -384,7 +382,6 @@
   const cardGalleries = {
     'Merlo Café': ['assets/places/merlo-storefront-hq.jpg', 'assets/places/merlo-coffee-cake-hq.jpg', 'assets/places/merlo-dog-snow-hq.jpg'],
     'Grave Café': ['assets/places/grave-cafe.jpg', 'assets/places/grave-regular-dogs.jpg', 'assets/places/grave-peach-cake-hq.jpg'],
-    'Bønne': ['assets/places/bonne.webp', 'assets/places/bonne-atmosphere-hq.jpg', 'assets/places/bonne-brunch-hq.jpg'],
     'Cuvée Noire': ['assets/places/cuv-e-noire.webp', 'assets/places/cuvee-drinks-hq.jpg', 'assets/places/cuvee-afternoon-hq.jpg'],
     'Sevenly Heart': ['assets/places/sevenly-heart.webp', 'assets/places/sevenly-space-hq.jpg', 'assets/places/sevenly-cake-hq.jpg'],
     'Nami Coffee': ['assets/places/nami-coffee-new.jpg', 'assets/places/nami-coffee-2.jpg', 'assets/places/nami-coffee-3.jpg']

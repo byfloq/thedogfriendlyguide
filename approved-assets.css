@@ -16,9 +16,9 @@
 .story-1{background-image:url('https://unsplash.com/photos/X-a801w2Q6s/download?force=true&w=1000')!important;background-position:center!important}
 .story-2{background-image:url('https://unsplash.com/photos/iC2FHfd3TuM/download?force=true&w=1000')!important;background-position:center!important}
 .story-3{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:center!important}
-/* Coco section - retain the approved warm photography family without enlarging the old 100px draft crops. */
-.coco-1{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:72% center!important}
-.coco-2{background-image:url('assets/coco-was-there.jpg')!important;background-position:center!important}
-.coco-3{background-image:url('https://unsplash.com/photos/hP-x4172FfM/download?force=true&w=1200')!important;background-position:center!important}
+/* Coco is the red/apricot toy poodle from Better Together. */
+.coco-1{background-image:url('assets/coco/coco-paris-cafe.png')!important;background-position:center!important}
+.coco-2{background-image:url('assets/coco/coco-paris-walk.png')!important;background-position:center!important}
+.coco-3{background-image:url('assets/coco/coco-paris-window.png')!important;background-position:center!important}
 .newsletter-photo{background-image:url('assets/barcelona-cafe.jpg')!important;background-position:18% center!important}
 @media(max-width:760px){.round-stamp{width:62px!important;height:62px!important}}

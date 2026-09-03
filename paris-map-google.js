@@ -105,7 +105,7 @@
     const key = window.TDFG_GOOGLE_MAPS_API_KEY;
     if (!key) { setup.hidden = false; mapElement.classList.add('google-map-disabled'); return; }
     try {
-      const [catalogue] = await Promise.all([fetch('paris-places.json?v=6').then(response => response.json()), loadGoogle(key)]);
+      const [catalogue] = await Promise.all([fetch('paris-places.json?v=7').then(response => response.json()), loadGoogle(key)]);
       defineHTMLMarker();
       places = catalogue.places.filter(place => Array.isArray(place.coordinates)).map(place => ({ ...place, openingHours: catalogue.openingHours[place.key] }));
       buildDistrictFilters();

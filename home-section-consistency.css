@@ -1,4 +1,6 @@
 /* One editorial introduction system for the homepage's primary sections. */
+.app-section[hidden]{display:none!important}
+
 #cities,
 #journal,
 .app-section{
