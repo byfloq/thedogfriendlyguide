@@ -16,6 +16,8 @@
 .guide-preview-card:hover img{transform:translateY(-3px);filter:saturate(.92) contrast(.97)}
 .guide-preview-card h3{margin:14px 0 7px;font:400 clamp(18px,1.7vw,25px)/1.08 var(--serif)}
 .guide-preview-card p{margin:0;color:var(--muted);font:500 8px/1.45 var(--sans);letter-spacing:.09em;text-transform:uppercase}
+.guide-preview-tags{display:flex;flex-wrap:wrap;gap:7px}
+.guide-preview-tags span{display:inline-flex;align-items:center;min-height:25px;padding:6px 9px;border:1px solid var(--rule);border-radius:999px;background:rgba(250,247,241,.72);color:#5d554d;white-space:nowrap}
 @media(max-width:800px){.guide-preview-rail{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 16px}}
 @media(max-width:520px){.home-plan-preview{margin-top:24px;padding:24px 0 38px}.guide-preview-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:0 12vw 12px 0;scrollbar-width:none}.guide-preview-rail::-webkit-scrollbar{display:none}.guide-preview-card{flex:0 0 72vw;scroll-snap-align:start}.guide-preview-card h3{font-size:23px}}
 
@@ -26,14 +28,14 @@
 
 /* Give Coco's story the same generous vertical presence as adjacent chapters. */
 .coco-section{
-  min-height:clamp(650px,48vw,760px);
-  padding-top:clamp(6.5rem,8vw,9rem);
-  padding-bottom:clamp(6.5rem,8vw,9rem);
+  min-height:clamp(600px,40vw,680px);
+  padding-top:clamp(5.2rem,6vw,6.8rem);
+  padding-bottom:clamp(5.2rem,6vw,6.8rem);
 }
 @media(max-width:760px){
   .coco-section{
     min-height:auto;
-    padding-top:5rem;
-    padding-bottom:5rem;
+    padding-top:4.5rem;
+    padding-bottom:4.5rem;
   }
 }
