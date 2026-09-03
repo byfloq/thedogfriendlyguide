@@ -10,7 +10,7 @@
       "bestTime": "Friday or Saturday · Start around 09:00",
       "character": "Coffee, neighbourhood streets and a thoughtful stop for your dog.",
       "intro": "A gentle Montmartre morning with time for good coffee, a neighbourhood wander and places chosen for both of you.",
-      "cover": "assets/places/clove-friends-hq.jpg",
+      "cover": "assets/guides/montmartre-dog.png",
       "tone": "terracotta",
       "stopKeys": ["clove-coffee-shop", "simple-coffee", "animal-particulier", "colore-paris"],
       "stopNotes": [
@@ -29,7 +29,7 @@
       "bestTime": "Tuesday to Saturday · Start around 14:00",
       "character": "Specialty coffee, dog shops and an early evening table.",
       "intro": "A compact route through the quieter edges of Le Marais, moving from coffee to dog-focused shops and an easy early dinner.",
-      "cover": "assets/places/partisan-space-hq.jpg",
+      "cover": "assets/guides/le-marais-dog.png",
       "tone": "plum",
       "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "moustaches-paris", "le-bone-appart", "jaja-paris"],
       "stopNotes": [
@@ -41,24 +41,42 @@
       ]
     },
     {
-      "slug": "paris-lived-together",
-      "title": "Paris, Lived Together",
-      "shortTitle": "A Day Together",
-      "duration": "1 day",
-      "area": "Sentier to Le Marais",
-      "bestTime": "Tuesday to Saturday · Start around 09:30",
-      "character": "A full day of coffee, lunch, browsing and dinner without rushing.",
-      "intro": "One considered day through central Paris, with enough pauses to enjoy the city rather than simply collect addresses.",
-      "cover": "assets/places/nami-atmosphere-hq.jpg",
+      "slug": "golden-hour-seine",
+      "title": "A Golden Hour Along the Seine",
+      "shortTitle": "Golden Hour by the Seine",
+      "duration": "3 hours",
+      "area": "5th and 6th arrondissements",
+      "bestTime": "Thursday to Sunday · Start around 17:00",
+      "character": "A riverside walk, an unhurried pause and dinner as Paris turns golden.",
+      "intro": "A gentle late-afternoon route along the Seine, moving through the Left Bank with time to pause before an early dinner.",
+      "cover": "assets/guides/paris-day-dog.png",
       "tone": "olive",
-      "stopKeys": ["nami-coffee", "partisan-cafe", "tekes-paris", "season-paris", "moustaches-paris", "jaja-paris"],
+      "stopKeys": ["nami-coffee", "tekes-paris", "season-paris", "jaja-paris"],
       "stopNotes": [
-        "Ease into the day with specialty coffee and something house-made.",
-        "Walk towards the upper Marais for a second perspective on Paris coffee culture.",
-        "Settle in for lunch before the afternoon part of the route.",
-        "Take an unhurried pause as the route moves east through the neighbourhood.",
-        "Choose something considered for your dog in Le Marais.",
-        "Finish with dinner and let the day end at its own pace."
+        "Begin with something carefully made before walking towards the river.",
+        "Cross into the Left Bank and pause somewhere calm and design-led.",
+        "Let the longest part of the route follow the Seine at an easy pace.",
+        "Finish with an early dinner as the light softens over Paris."
+      ]
+    },
+    {
+      "slug": "sunday-saint-germain",
+      "title": "A Sunday in Saint-Germain",
+      "shortTitle": "Saint-Germain Sunday",
+      "duration": "4.5 hours",
+      "area": "6th arrondissement",
+      "bestTime": "Sunday · Start around 10:30",
+      "character": "Coffee, old streets, a garden pause and a long lunch together.",
+      "intro": "A relaxed Sunday around Saint-Germain, designed for wandering slowly between coffee, quiet streets and a generous lunch.",
+      "cover": "assets/guides/all-places-dog.png",
+      "tone": "terracotta",
+      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "season-paris", "moustaches-paris", "jaja-paris"],
+      "stopNotes": [
+        "Start slowly with coffee and something baked.",
+        "Walk the quieter streets while the neighbourhood is still calm.",
+        "Pause somewhere comfortable for both of you.",
+        "Browse one thoughtful stop chosen with your dog in mind.",
+        "End with a long, easy lunch before heading home."
       ]
     }
   ]
