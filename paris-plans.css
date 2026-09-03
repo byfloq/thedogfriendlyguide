@@ -36,3 +36,6 @@
 .place-miniature-count strong{display:block;margin-bottom:5px;font:400 26px/1 var(--serif);letter-spacing:0}
 @media(max-width:800px){.explore-choice-block{grid-template-columns:1fr}}
 @media(max-width:520px){.home-plan-preview{margin-top:24px}.explore-choice-block{padding-top:12px}.explore-choice-intro>p:last-child{font-size:13px}.explore-choice-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding:0 12vw 14px 0;scrollbar-width:none}.explore-choice-grid::-webkit-scrollbar{display:none}.explore-choice{flex:0 0 82vw;grid-template-rows:185px auto;scroll-snap-align:start}.explore-choice-copy{padding:19px 20px 21px}.explore-choice b{font-size:27px}.guide-miniature{width:41%}}
+
+/* Restore a deliberate light-sand-light rhythm below the journal. */
+.better-together{background:var(--paper)}
