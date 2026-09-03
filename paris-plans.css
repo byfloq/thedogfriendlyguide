@@ -15,7 +15,7 @@
 .guide-preview-card{display:block;min-width:0;color:var(--ink)}
 .guide-preview-card img{width:100%;aspect-ratio:1.28;object-fit:cover;filter:saturate(.78) contrast(.95);transition:transform .35s,filter .35s}
 .guide-preview-card:hover img{transform:translateY(-3px);filter:saturate(.92) contrast(.97)}
-.guide-preview-card h3{margin:14px 0 7px;font:400 clamp(18px,1.7vw,25px)/1.08 var(--serif)}
+.guide-preview-card h3{margin:14px 0 15px;font:400 clamp(18px,1.7vw,25px)/1.08 var(--serif)}
 .guide-preview-card p{margin:0;color:var(--muted);font:500 8px/1.45 var(--sans);letter-spacing:.09em;text-transform:uppercase}
 .guide-preview-tags{display:flex;flex-wrap:wrap;gap:7px}
 .guide-preview-tags span{display:inline-flex;align-items:center;min-height:29px;padding:7px 11px;border:1px solid #bba996;border-radius:999px;background:#eadfd2;color:#3f3933;font-size:9px;font-weight:600;letter-spacing:.075em;white-space:nowrap}
