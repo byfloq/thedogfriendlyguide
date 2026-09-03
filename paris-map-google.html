@@ -25,16 +25,26 @@
     </div>
     <div class="map-top-panel">
       <div class="map-filter-stack">
-        <div class="map-filters category-filters" role="group" aria-label="Filter places by category">
-          <button class="active" data-category="all" aria-pressed="true">All <span>42</span></button>
-          <button data-category="cafe" aria-pressed="false"><i class="dot cafe"></i>Cafés</button>
-          <button data-category="restaurant" aria-pressed="false"><i class="dot restaurant"></i>Restaurants</button>
-          <button data-category="shop" aria-pressed="false"><i class="dot shop"></i>Dog shops</button>
-          <button data-category="hotel" aria-pressed="false"><i class="dot hotel"></i>Hotels</button>
+        <div class="map-filter-row">
+          <span class="filter-step"><b>1</b> Area</span>
+          <div class="map-filters district-filters" id="district-filters" role="group" aria-label="First choose an arrondissement"></div>
         </div>
-        <div class="map-filters district-filters" id="district-filters" role="group" aria-label="Filter places by arrondissement"></div>
+        <div class="map-filter-row">
+          <span class="filter-step"><b>2</b> Place</span>
+          <div class="map-filters category-filters" role="group" aria-label="Then filter places by category">
+            <button class="active" data-category="all" aria-pressed="true">All <span>42</span></button>
+            <button data-category="cafe" aria-pressed="false"><i class="dot cafe"></i>Cafés</button>
+            <button data-category="restaurant" aria-pressed="false"><i class="dot restaurant"></i>Restaurants</button>
+            <button data-category="shop" aria-pressed="false"><i class="dot shop"></i>Dog shops</button>
+            <button data-category="hotel" aria-pressed="false"><i class="dot hotel"></i>Hotels</button>
+          </div>
+        </div>
       </div>
-      <button class="locate-button" type="button" aria-label="Show my current location"><span>◎</span> Near me</button>
+      <div class="map-actions">
+        <button class="map-action-button" id="invite-map" type="button">Invite a friend</button>
+        <button class="map-action-button" id="share-map" type="button">Share map</button>
+        <button class="locate-button" type="button" aria-label="Show my current location"><span>◎</span> Near me</button>
+      </div>
     </div>
     <section class="map-results" aria-label="Paris recommendations">
       <div class="map-results-head"><p><span id="visible-count">42</span> curated places</p><span>Swipe to explore</span></div>
@@ -43,6 +53,6 @@
     <div class="map-status" id="map-status" role="status" aria-live="polite"></div>
   </main>
   <script>window.TDFG_GOOGLE_MAPS_API_KEY = '';</script>
-  <script src="paris-map-google.js?v=5"></script>
+  <script src="paris-map-google.js?v=6"></script>
 </body>
 </html>
