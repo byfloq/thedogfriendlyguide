@@ -12,12 +12,12 @@
     hotel: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5h14v16M3 21h18M8 9h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/></svg>'
   };
   const landmarks = [
-    { name: 'Eiffel Tower', coordinates: [2.2945, 48.8584], icon: '<svg viewBox="0 0 24 24"><path d="M10 3h4M11 3 9 13h6L13 3M8 13h8M7 17h10M9 13 6 21m9-8 3 8M4 21h16"/></svg>' },
-    { name: 'Arc de Triomphe', coordinates: [2.2950, 48.8738], icon: '<svg viewBox="0 0 24 24"><path d="M4 21V9h16v12M7 9V6h10v3M9 21v-7a3 3 0 0 1 6 0v7M3 21h18"/></svg>' },
-    { name: 'Musée du Louvre', coordinates: [2.3376, 48.8606], icon: '<svg viewBox="0 0 24 24"><path d="m12 5 9 5H3l9-5ZM5 10v8m4-8v8m6-8v8m4-8v8M3 21h18M4 18h16"/></svg>' },
-    { name: 'Notre-Dame', coordinates: [2.3499, 48.8530], icon: '<svg viewBox="0 0 24 24"><path d="M5 21V8h4V5h6v3h4v13M9 21v-5a3 3 0 0 1 6 0v5M8 11h1m6 0h1M3 21h18"/></svg>' },
-    { name: 'Sacré-Cœur', coordinates: [2.3431, 48.8867], icon: '<svg viewBox="0 0 24 24"><path d="M4 21V12h4V9h2V6l2-3 2 3v3h2v3h4v9M9 21v-5a3 3 0 0 1 6 0v5M3 21h18"/></svg>' },
-    { name: 'Palais Garnier', coordinates: [2.3316, 48.8719], icon: '<svg viewBox="0 0 24 24"><path d="m12 4 9 5H3l9-5ZM5 9v9m4-9v9m6-9v9m4-9v9M3 21h18M4 18h16"/></svg>' }
+    { name: 'Eiffel Tower', coordinates: [2.2945, 48.8584], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path d="M14.7 2h2.6l.5 3h-1l1.5 7.1h2.1v2.4h-1.6l1.2 5.2h2.5v2.4h-2l3.8 7.9h-5.1l-1.1-3.2h-4.2L12.8 30H7.7l3.8-7.9h-2v-2.4H12l1.2-5.2h-1.6v-2.4h2.1L15.2 5h-1l.5-3Zm.1 20.1-.4 2h3.2l-.4-2h-2.4Zm.6-7.6-.5 5.2h2.2l-.5-5.2h-1.2Z"/></svg>' },
+    { name: 'Arc de Triomphe', coordinates: [2.2950, 48.8738], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path fill-rule="evenodd" d="M5 5h22v25h-7.2V19.2a3.8 3.8 0 0 0-7.6 0V30H5V5Zm2.2-3h17.6v2H7.2V2ZM3 30h26v2H3v-2Zm5-21h16v2H8V9Zm1.2 4.5h3v2h-3v-2Zm10.6 0h3v2h-3v-2Z"/></svg>' },
+    { name: 'Musée du Louvre', coordinates: [2.3376, 48.8606], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path d="M16 2 30 9v2H2V9L16 2ZM4 13h3v12H4V13Zm7 0h3v12h-3V13Zm7 0h3v12h-3V13Zm7 0h3v12h-3V13ZM2 27h28v2H2v-2Zm-2 3h32v2H0v-2Z"/></svg>' },
+    { name: 'Notre-Dame', coordinates: [2.3499, 48.8530], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path fill-rule="evenodd" d="M5 6h8v5h6V6h8v24h-7v-7a4 4 0 0 0-8 0v7H5V6Zm3-4h2v3H8V2Zm14 0h2v3h-2V2ZM9 10a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm14 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM16 14a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>' },
+    { name: 'Sacré-Cœur', coordinates: [2.3431, 48.8867], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path d="M15 2h2v3h-2V2Zm1 3c3.1 0 5.6 2.5 5.6 5.6V13h2.6c2.6 0 4.8 2.2 4.8 4.8V30h-8v-7.5a5 5 0 0 0-10 0V30H3V17.8C3 15.2 5.2 13 7.8 13h2.6v-2.4C10.4 7.5 12.9 5 16 5Zm-9 9.5V11H5v4.2l2-.7Zm20 0V11h-2v4.2l2-.7Z"/><path d="M1 30h30v2H1z"/></svg>' },
+    { name: 'Palais Garnier', coordinates: [2.3316, 48.8719], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path d="M15 1h2v3h-2V1Zm1 3 4 3H12l4-3Zm-8 7 8-4 8 4v3H8v-3Zm-3 4h22v3H5v-3Zm2 4h3v8H7v-8Zm5 0h3v8h-3v-8Zm5 0h3v8h-3v-8Zm5 0h3v8h-3v-8ZM4 28h24v2H4v-2Zm-2 2h28v2H2v-2Z"/></svg>' }
   ];
   const neutralStyle = [
     { featureType: 'poi', stylers: [{ visibility: 'off' }] },
