@@ -23,7 +23,8 @@
   const launcher=guideCards[3];
   if(!launcher)return;
   launcher.classList.add('guide-plan-maker-card');
-  launcher.innerHTML=`<button class="guide-plan-maker-launch" type="button" aria-haspopup="dialog"><span class="guide-plan-maker-image"><img src="assets/guides/all-places-dog-v2.jpg" alt="A dog resting outside a Paris café"><i>Made for you</i></span><strong>Make it your day</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful Paris plan →</small></button>`;
+  launcher.innerHTML=`<a class="guide-plan-maker-launch" href="make-your-plan.html"><span class="guide-plan-maker-image"><img src="assets/guides/all-places-dog-v2.jpg" alt="A dog resting outside a Paris café"><i>Made for you</i></span><strong>Make it your day</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful Paris plan →</small></a>`;
+  return;
 
   const plannerDialog=document.createElement('dialog');
   plannerDialog.className='make-plan-dialog';

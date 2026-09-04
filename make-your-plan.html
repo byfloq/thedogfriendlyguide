@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Create a thoughtful dog-friendly day in Paris from places curated by Flōq.">
+  <title>Make It Your Day · The Dog Friendly Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="make-your-plan-page.css?v=1">
+</head>
+<body class="plan-maker-page">
+  <header class="plan-maker-header">
+    <a class="plan-maker-brand" href="index.html">The Dog<br>Friendly Guide <small>by Flōq</small></a>
+    <div><span>The Guide · Paris</span><strong>Make it your day</strong></div>
+    <a class="plan-maker-close" href="index.html#cities" aria-label="Back to the homepage">×</a>
+  </header>
+  <main>
+    <section class="plan-maker-hero">
+      <div>
+        <p class="plan-maker-eyebrow">A plan shaped around the two of you</p>
+        <h1>Thoughtfully<br><em>yours.</em></h1>
+        <p>Choose the time, the neighbourhood and the feeling. We’ll connect places selected by Flōq into a day worth sharing.</p>
+      </div>
+      <figure><img src="assets/floq-guide-editorial-v1.jpg" alt="A stylish woman exploring Paris with her dog"><figcaption>Curated, not crowded · Paris</figcaption></figure>
+    </section>
+    <section class="planner-workspace" id="planner">
+      <div class="planner-progress" aria-label="Plan progress"><span class="active"><b>01</b> Time</span><span><b>02</b> Area</span><span><b>03</b> Mood</span><span><b>04</b> Your day</span></div>
+      <div class="planner-panel">
+        <form class="planner-form">
+          <fieldset class="planner-step" data-step="0"><legend>How much time do you have?</legend><p>Enough structure to be useful, with room to wander.</p><div class="planner-options"><label><input type="radio" name="duration" value="2.5 hours"><span><b>A couple of hours</b><small>Three considered stops</small></span></label><label><input type="radio" name="duration" value="3.5 hours" checked><span><b>Half a day</b><small>Four stops at an easy pace</small></span></label><label><input type="radio" name="duration" value="5 hours"><span><b>Most of the day</b><small>Five stops with long pauses</small></span></label></div></fieldset>
+          <fieldset class="planner-step" data-step="1" hidden><legend>Where shall we wander?</legend><p>We’ll keep your route comfortable on foot.</p><div class="planner-options"><label><input type="radio" name="area" value="montmartre" checked><span><b>Montmartre</b><small>Village streets and gentle climbs</small></span></label><label><input type="radio" name="area" value="marais"><span><b>Le Marais</b><small>Coffee, design and old Paris</small></span></label><label><input type="radio" name="area" value="leftbank"><span><b>Left Bank &amp; Seine</b><small>Bookstalls, gardens and the river</small></span></label></div></fieldset>
+          <fieldset class="planner-step" data-step="2" hidden><legend>What is the mood?</legend><p>We’ll balance your pace with places that welcome you both.</p><div class="planner-options"><label><input type="radio" name="mood" value="morning" checked><span><b>Slow &amp; relaxed</b><small>Good coffee and quiet streets</small></span></label><label><input type="radio" name="mood" value="afternoon"><span><b>Coffee &amp; browsing</b><small>Independent places and a pause</small></span></label><label><input type="radio" name="mood" value="evening"><span><b>Walk &amp; early dinner</b><small>Golden light and a table together</small></span></label></div></fieldset>
+          <div class="planner-actions"><button class="planner-back" type="button" hidden>← Back</button><button class="planner-next" type="button">Continue →</button></div>
+        </form>
+        <div class="planner-result" hidden aria-live="polite"><div class="planner-result-copy"><p class="plan-maker-eyebrow">Made for the two of you</p><h2></h2><div class="planner-tags"></div><p class="planner-intro"></p><div class="planner-result-actions"><button class="planner-save" type="button">♡ Save this plan</button><button class="planner-edit" type="button">Make a change</button></div></div><ol class="planner-route"></ol></div>
+      </div>
+    </section>
+  </main>
+  <dialog class="account-dialog">
+    <div class="account-dialog-inner">
+      <button class="account-close" type="button" aria-label="Close">×</button>
+      <p class="plan-maker-eyebrow">My Flōq</p><h2>Keep your day close.</h2><p>Sign in to keep your plans, favourite places and curated guides together—on the website and in the app.</p>
+      <button class="account-provider google" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.5-.2-2.2H12v4.3h5.4a4.6 4.6 0 0 1-2 3v2.8h3.3c1.9-1.8 2.9-4.4 2.9-7.9Z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.7-2.4l-3.3-2.8c-.9.6-2.1 1-3.4 1-2.6 0-4.9-1.8-5.7-4.2H2.9v2.9A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.3 13.6a6 6 0 0 1 0-3.2V7.5H2.9a10 10 0 0 0 0 9l3.4-2.9Z"/><path fill="#EA4335" d="M12 6.2c1.5 0 2.8.5 3.8 1.5l2.9-2.8A9.7 9.7 0 0 0 2.9 7.5l3.4 2.9C7.1 8 9.4 6.2 12 6.2Z"/></svg><span>Continue with Google</span></button>
+      <button class="account-provider apple" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.1 12.5c0-2.7 2.2-4 2.3-4.1a5 5 0 0 0-3.9-2.1c-1.7-.2-3.2 1-4.1 1-.9 0-2.2-1-3.6-1-1.8 0-3.5 1.1-4.5 2.7-1.9 3.3-.5 8.2 1.4 10.9.9 1.3 2 2.8 3.5 2.7 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.1.9 3.6.9 1.5 0 2.4-1.3 3.3-2.7 1.1-1.5 1.5-3 1.5-3.1-.1 0-3.1-1.2-3.1-5.3ZM14.4 4.5c.8-1 1.3-2.3 1.2-3.5-1.2.1-2.6.8-3.4 1.8-.7.8-1.4 2.2-1.2 3.4 1.3.1 2.6-.7 3.4-1.7Z"/></svg><span>Continue with Apple</span></button>
+      <div class="account-divider"><span>or continue with email</span></div>
+      <form class="account-email"><label for="account-email">Email address</label><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg><input id="account-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div><button type="submit">Continue with email</button></form>
+      <p class="account-fine">Account connection is being prepared for launch. Your plan is also kept privately on this device.</p><p class="account-status" aria-live="polite"></p>
+    </div>
+  </dialog>
+  <script src="make-your-plan-page.js?v=1"></script>
+</body>
+</html>
