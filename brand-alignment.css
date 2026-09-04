@@ -27,6 +27,18 @@
   background-position: 28% 62% !important;
 }
 
+.coco-1 {
+  background-image: url("/assets/coco/coco-paris-cafe-v2.jpg") !important;
+}
+
+.coco-2 {
+  background-image: url("/assets/coco/coco-paris-walk-v2.jpg") !important;
+}
+
+.coco-3 {
+  background-image: url("/assets/coco/coco-paris-window-v2.jpg") !important;
+}
+
 .coco-text .outline-button,
 .floq-objects-copy .outline-button {
   background: var(--dark) !important;
