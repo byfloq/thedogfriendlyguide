@@ -2,6 +2,38 @@
   content: url("/assets/events/better-together-community-v1.png");
 }
 
+.city-paris {
+  background-image: url("/assets/floq-guide-editorial-v1.jpg") !important;
+  background-position: center 58% !important;
+}
+
+.journal-main {
+  background-image: url("/assets/journal-slow-sunday-persona-v1.jpg") !important;
+  background-position: center 56% !important;
+}
+
+.story-1 {
+  background-image: url("/assets/journal-cafe-persona-v1.jpg") !important;
+  background-position: center !important;
+}
+
+.story-4 {
+  background-image: url("/assets/journal-curation-persona-v1.jpg") !important;
+  background-position: center !important;
+}
+
+.newsletter-photo {
+  background-image: url("/assets/floq-guide-editorial-v1.jpg") !important;
+  background-position: 28% 62% !important;
+}
+
+.coco-text .outline-button,
+.floq-objects-copy .outline-button {
+  background: var(--dark) !important;
+  border-color: var(--dark) !important;
+  color: #fff !important;
+}
+
 .newsletter > div:nth-child(2) .eyebrow {
   margin: 0 0 16px;
   color: inherit;

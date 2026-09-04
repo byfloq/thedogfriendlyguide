@@ -139,3 +139,5 @@
 .guide-map-frame{display:block;width:100%;height:100%;border:0}
 .paris-guide-page.map-view-active>.cg-filters,.paris-guide-page.map-view-active>.cg-main{display:none}
 @media(max-width:700px){.guide-view-switcher{padding:13px 16px}.guide-view-switcher button{min-width:112px;padding:12px 18px}.guide-map-view{height:calc(100svh - 62px);min-height:520px}}
+/* Keep the Flōq target audience present at the guide entry point. */
+.paris-guide-page .cg-hero{--hero:url('/assets/floq-guide-editorial-v1.jpg')!important;--hero-position:center 58%!important}
