@@ -19,10 +19,19 @@
       evening:{title:'A Golden Hour Along the Seine',places:['Nami Coffee','The riverside bookstalls','A slow Seine walk','Tekés']}
     }
   };
+  const guideCards=[...anchor.querySelectorAll('.guide-preview-card')];
+  const launcher=guideCards[3];
+  if(!launcher)return;
+  launcher.classList.add('guide-plan-maker-card');
+  launcher.innerHTML=`<button class="guide-plan-maker-launch" type="button" aria-haspopup="dialog"><span class="guide-plan-maker-image"><img src="assets/guides/all-places-dog-v2.jpg" alt="A dog resting outside a Paris café"><i>Made for you</i></span><strong>Make it your day</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful Paris plan →</small></button>`;
+
+  const plannerDialog=document.createElement('dialog');
+  plannerDialog.className='make-plan-dialog';
   const section=document.createElement('section');
   section.className='make-plan';
   section.id='make-your-plan';
   section.innerHTML=`
+    <button class="make-plan__close" type="button" aria-label="Close plan maker">×</button>
     <div class="make-plan__intro">
       <p class="make-plan__eyebrow">Make it your day</p>
       <h2>Thoughtfully yours.</h2>
@@ -50,7 +59,11 @@
       </form>
       <div class="make-plan__result" aria-live="polite"><p class="make-plan__result-label">Your Flōq plan</p><h3></h3><div class="make-plan__tags"></div><ol class="make-plan__route"></ol><div class="make-plan__result-actions"><button class="make-plan__save" type="button">♡ Save this plan</button><button class="make-plan__edit" type="button">Make a change</button></div><p class="make-plan__note">Your plan remains available on this device. Sign in when you want it with you everywhere.</p></div>
     </div>`;
-  anchor.insertAdjacentElement('afterend',section);
+  plannerDialog.appendChild(section);
+  document.body.appendChild(plannerDialog);
+  launcher.querySelector('.guide-plan-maker-launch').addEventListener('click',()=>plannerDialog.showModal());
+  section.querySelector('.make-plan__close').addEventListener('click',()=>plannerDialog.close());
+  plannerDialog.addEventListener('click',event=>{if(event.target===plannerDialog)plannerDialog.close()});
 
   const dialog=document.createElement('dialog');
   dialog.className='floq-dialog';
