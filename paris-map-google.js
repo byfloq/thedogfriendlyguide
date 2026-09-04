@@ -45,6 +45,10 @@
   let activeCategory = 'all';
   let activeDistrict = 'all';
   let userLocation = null;
+  let activeIntent = 'all';
+  let nearMeActive = false;
+  let userMarker = null;
+  let walkingCircle = null;
   let cityShapes = [];
   let districtShapes = [];
   let parisBounds = null;
@@ -58,6 +62,15 @@
   const copyMapLink = async () => { try { await navigator.clipboard.writeText(mapShareUrl()); showStatus('Map link copied.'); } catch (error) { showStatus('Copy this page address to share the map.'); } };
   const inviteFriend = async () => { const shareData = { title: 'The Dog Friendly Guide - Paris', text: 'Explore our favourite dog-friendly places in Paris with me.', url: mapShareUrl() }; if (navigator.share) { try { await navigator.share(shareData); } catch (error) { if (error.name !== 'AbortError') await copyMapLink(); } } else { await copyMapLink(); } };
   const distanceBetween = (a, b) => { const r = degrees => degrees * Math.PI / 180; const dLat = r(b[1] - a[1]); const dLng = r(b[0] - a[0]); const x = Math.sin(dLat / 2) ** 2 + Math.cos(r(a[1])) * Math.cos(r(b[1])) * Math.sin(dLng / 2) ** 2; return 6371 * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x)); };
+  const intentMatches = place => {
+    const category = normaliseCategory(place.category);
+    const words = `${place.name} ${place.meta} ${place.description}`.toLowerCase();
+    if (activeIntent === 'coffee') return category === 'cafe';
+    if (activeIntent === 'dinner') return category === 'restaurant';
+    if (activeIntent === 'quiet') return /quiet|calm|serene|relax|garden|soft|intimate|hotel/.test(words);
+    if (activeIntent === 'walk') return true;
+    return true;
+  };
   const formatDistance = km => km < 1 ? `${Math.round(km * 1000)} m away` : `${km.toFixed(1)} km away`;
   const cardFor = place => { const category = normaliseCategory(place.category); const distance = userLocation ? `<span class="card-distance">${formatDistance(distanceBetween(userLocation, place.coordinates))}</span>` : ''; const image = place.images?.[0] || 'assets/places/photo-coming-soon-cafe.svg'; return `<article class="map-card" data-key="${escapeHTML(place.key)}" data-category="${category}" tabindex="0" aria-label="Show ${escapeHTML(place.name)} on the map"><img class="map-card-image" src="${escapeHTML(image)}" onerror="this.onerror=null;this.src='assets/places/photo-coming-soon-cafe.svg'" alt="${escapeHTML(place.name)} in Paris"><div class="map-card-copy"><p class="map-card-kicker"><i class="dot ${category}"></i>${categoryNames[category]} ${distance}</p><h2>${escapeHTML(place.name)}</h2><p class="map-card-meta">${escapeHTML(place.meta)}</p><p class="map-card-hours">${escapeHTML(place.openingHours || '')}</p><div class="map-card-actions"><a class="primary" href="${escapeHTML(place.mapsUrl)}" target="_blank" rel="noopener">Directions</a><a href="${escapeHTML(place.instagram)}" target="_blank" rel="noopener">Instagram</a></div></div></article>`; };
 
@@ -98,12 +111,16 @@
   const clearSelection = () => { selectedKey = null; rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => marker.element.classList.remove('active', 'is-muted')); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } };
   const selectPlace = async (key, options = {}) => { const place = visiblePlaces.find(item => item.key === key); if (!place) return; selectedKey = key; rail.classList.add('has-selection'); document.querySelector('.map-results').classList.add('has-selection'); markers.forEach((marker, markerKey) => { marker.element.classList.toggle('active', markerKey === key); marker.element.classList.toggle('is-muted', markerKey !== key); }); rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key)); if (activeDistrict === 'all') { const districtBounds = await drawBoundary(`paris-arrondissements/arr-${String(place.arrondissement).padStart(2, '0')}.geojson`, true); if (options.pan !== false && selectedKey === key) map.fitBounds(districtBounds, { top: 145, right: 95, bottom: 245, left: 95 }); } else if (options.pan !== false) { map.panTo({ lat: place.coordinates[1], lng: place.coordinates[0] }); } };
   const updateDistrict = async () => { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; if (activeDistrict === 'all') return null; return drawBoundary(`paris-arrondissements/arr-${String(activeDistrict).padStart(2, '0')}.geojson`, true); };
-  const render = async (options = {}) => { visiblePlaces = places.filter(place => (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(place.arrondissement) === activeDistrict)); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitAll) fitParisBoundary(); };
+  const render = async (options = {}) => { visiblePlaces = places.filter(place => (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(place.arrondissement) === activeDistrict) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitAll) fitParisBoundary(); };
   const buildDistrictFilters = () => { const container = document.getElementById('district-filters'); const districts = [...new Set(places.map(place => place.arrondissement))].sort((a, b) => a - b); container.innerHTML = `<button class="active" data-district="all" aria-pressed="true">All districts</button>${districts.map(number => `<button data-district="${number}" aria-pressed="false">${ordinal(number)} arr.</button>`).join('')}`; container.querySelectorAll('button').forEach(button => button.addEventListener('click', () => { activeDistrict = button.dataset.district; container.querySelectorAll('button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render({ fitDistrict: activeDistrict !== 'all', fitAll: activeDistrict === 'all' }); })); };
   const loadGoogle = key => new Promise((resolve, reject) => { window.initTdfgGoogleMap = resolve; const script = document.createElement('script'); script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=initTdfgGoogleMap&v=weekly`; script.async = true; script.onerror = reject; document.head.append(script); });
   const initialise = async () => {
+    const nearPanel=document.createElement('section');
+    nearPanel.className='near-now';
+    nearPanel.innerHTML=`<button class="near-now__toggle" type="button" aria-expanded="false"><span>◎</span><b>Near me now</b><small>Thoughtful places within a 15-minute walk</small></button><div class="near-now__choices" hidden><button class="active" type="button" data-intent="all">Anything lovely</button><button type="button" data-intent="coffee">Coffee now</button><button type="button" data-intent="quiet">Somewhere quiet</button><button type="button" data-intent="dinner">Dinner together</button><button type="button" data-intent="walk">A walk nearby</button></div>`;
+    document.querySelector('.map-top-panel').insertAdjacentElement('beforebegin',nearPanel);
     const key = window.TDFG_GOOGLE_MAPS_API_KEY;
-    if (!key) { setup.hidden = false; mapElement.classList.add('google-map-disabled'); return; }
+    if (!key) { setup.hidden = false; mapElement.classList.add('google-map-disabled'); nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>showStatus('The live map needs to finish loading before we can find places near you.')); return; }
     try {
       const [catalogue] = await Promise.all([fetch('paris-places.json?v=8').then(response => response.json()), loadGoogle(key)]);
       defineHTMLMarker();
@@ -114,8 +131,17 @@
       landmarks.forEach(landmark => new LandmarkMarker(landmark).setMap(map));
       map.addListener('click', clearSelection);
       render({ fitAll: true });
+      const activateNearby=()=>navigator.geolocation.getCurrentPosition(position=>{
+        userLocation=[position.coords.longitude,position.coords.latitude];nearMeActive=true;
+        if(userMarker)userMarker.setMap(null);if(walkingCircle)walkingCircle.setMap(null);
+        userMarker=new google.maps.Marker({map,position:{lat:userLocation[1],lng:userLocation[0]},title:'You are here',icon:{path:google.maps.SymbolPath.CIRCLE,scale:7,fillColor:'#a76344',fillOpacity:1,strokeColor:'#fff',strokeWeight:3}});
+        walkingCircle=new google.maps.Circle({map,center:{lat:userLocation[1],lng:userLocation[0]},radius:1200,clickable:false,fillColor:'#a76344',fillOpacity:.06,strokeColor:'#a76344',strokeOpacity:.45,strokeWeight:1});
+        nearPanel.classList.add('active');nearPanel.querySelector('.near-now__toggle').setAttribute('aria-expanded','true');nearPanel.querySelector('.near-now__choices').hidden=false;render();showStatus('Showing Flōq places within about a 15-minute walk.');
+      },()=>showStatus('Share your location to see thoughtful places within a 15-minute walk.'),{enableHighAccuracy:true,timeout:10000});
+      nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>{if(!nearMeActive)activateNearby();else{nearMeActive=false;activeIntent='all';nearPanel.classList.remove('active');nearPanel.querySelector('.near-now__toggle').setAttribute('aria-expanded','false');nearPanel.querySelector('.near-now__choices').hidden=true;if(walkingCircle)walkingCircle.setMap(null);if(userMarker)userMarker.setMap(null);render({fitAll:true})}});
+      nearPanel.querySelectorAll('[data-intent]').forEach(button=>button.addEventListener('click',()=>{activeIntent=button.dataset.intent;nearPanel.querySelectorAll('[data-intent]').forEach(item=>item.classList.toggle('active',item===button));render();showStatus(visiblePlaces.length?`${visiblePlaces.length} nearby ${activeIntent==='all'?'places':activeIntent==='walk'?'ideas for your walk':activeIntent+' options'} found.`:'No exact matches nearby. Try another intention.')}));
       document.querySelectorAll('.category-filters button').forEach(button => button.addEventListener('click', () => { activeCategory = button.dataset.category; document.querySelectorAll('.category-filters button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render(); }));
-      document.querySelector('.locate-button').addEventListener('click', () => navigator.geolocation.getCurrentPosition(position => { userLocation = [position.coords.longitude, position.coords.latitude]; map.panTo({ lat: position.coords.latitude, lng: position.coords.longitude }); map.setZoom(15); render(); showStatus('Your location is now shown on the map.'); }, () => showStatus('We could not access your location. Please check your browser permission.')));
+      document.querySelector('.locate-button').addEventListener('click', activateNearby);
       document.getElementById('invite-map').addEventListener('click', inviteFriend);
       document.getElementById('share-map').addEventListener('click', copyMapLink);
     } catch (error) { console.error('Google comparison map failed', error); setup.hidden = false; setup.querySelector('span').textContent = 'The Google Maps preview could not load. Check the API key and its domain restrictions.'; }
