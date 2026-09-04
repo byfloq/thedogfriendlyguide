@@ -35,7 +35,14 @@
           <fieldset class="planner-step" data-step="2" hidden><legend>What is the mood?</legend><p>We’ll balance your pace with places that welcome you both.</p><div class="planner-options"><label><input type="radio" name="mood" value="morning" checked><span><b>Slow &amp; relaxed</b><small>Good coffee and quiet streets</small></span></label><label><input type="radio" name="mood" value="afternoon"><span><b>Coffee &amp; browsing</b><small>Independent places and a pause</small></span></label><label><input type="radio" name="mood" value="evening"><span><b>Walk &amp; early dinner</b><small>Golden light and a table together</small></span></label></div></fieldset>
           <div class="planner-actions"><button class="planner-back" type="button" hidden>← Back</button><button class="planner-next" type="button">Continue →</button></div>
         </form>
-        <div class="planner-result" hidden aria-live="polite"><div class="planner-result-copy"><p class="plan-maker-eyebrow">Made for the two of you</p><h2></h2><div class="planner-tags"></div><p class="planner-intro"></p><div class="planner-result-actions"><button class="planner-save" type="button">♡ Save this plan</button><button class="planner-edit" type="button">Make a change</button></div></div><ol class="planner-route"></ol></div>
+        <div class="planner-result" hidden aria-live="polite">
+          <aside class="custom-plan-map-panel"><div class="custom-plan-map" id="custom-plan-map"></div><p class="custom-plan-map-message" hidden>The route map will appear here when Maps is available.</p><div class="custom-plan-map-summary"><strong></strong><span></span></div></aside>
+          <section class="custom-plan-detail">
+            <div class="planner-result-copy"><p class="plan-maker-eyebrow">A plan for the two of you</p><h2></h2><p class="planner-intro"></p><div class="planner-tags"></div><div class="planner-result-actions"><a class="planner-google" target="_blank" rel="noopener">↗ Open in Google Maps</a><button class="planner-save" type="button">♡ Save this plan</button><button class="planner-edit" type="button">Make a change</button></div></div>
+            <div class="custom-itinerary-head"><div><p class="plan-maker-eyebrow">Your route</p><h3>The itinerary.</h3></div><p>Drag the cards to reorder your day.</p></div>
+            <ol class="planner-route"></ol><p class="planner-reorder-status" aria-live="polite"></p>
+          </section>
+        </div>
       </div>
     </section>
   </main>
@@ -50,6 +57,7 @@
       <p class="account-fine">Account connection is being prepared for launch. Your plan is also kept privately on this device.</p><p class="account-status" aria-live="polite"></p>
     </div>
   </dialog>
+  <script>window.TDFG_GOOGLE_MAPS_API_KEY = '';</script>
   <script src="make-your-plan-page.js?v=1"></script>
 </body>
 </html>
