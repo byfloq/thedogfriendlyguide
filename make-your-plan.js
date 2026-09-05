@@ -23,7 +23,7 @@
   const launcher=guideCards[3];
   if(!launcher)return;
   launcher.classList.add('guide-plan-maker-card');
-  launcher.innerHTML=`<a class="guide-plan-maker-launch" href="make-your-plan.html"><span class="guide-plan-maker-image"><img src="assets/make-your-plan-editorial-v1.png" alt="A Paris map with movable destination cards for creating a personal day"><i>Made for you</i></span><strong>Make it your day</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful Paris plan →</small></a>`;
+  launcher.innerHTML=`<a class="guide-plan-maker-launch" href="make-your-plan.html"><span class="guide-plan-maker-image"><img src="assets/make-your-plan-editorial-v1.png" alt="A Paris map with movable destination cards for creating a personal day"><i>Made for you</i></span><strong>Build your own plan</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful Paris plan →</small></a>`;
   return;
 
   const plannerDialog=document.createElement('dialog');
@@ -34,7 +34,7 @@
   section.innerHTML=`
     <button class="make-plan__close" type="button" aria-label="Close plan maker">×</button>
     <div class="make-plan__intro">
-      <p class="make-plan__eyebrow">Make it your day</p>
+      <p class="make-plan__eyebrow">Build your own plan</p>
       <h2>Thoughtfully yours.</h2>
       <p>Tell us what the two of you feel like doing. We’ll shape a Paris plan from places selected by Flōq—not an endless list.</p>
     </div>
