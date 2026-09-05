@@ -34,25 +34,30 @@
     ]}
   };
   const library=document.querySelector('.deck-library'),deckGrid=document.querySelector('.library-decks'),game=document.querySelector('.game'),card=document.querySelector('.swipe-card:not(.card-shadow)');
-  let active=null,index=0,flipped=false,startX=0,dragX=0,dragging=false;
-  deckGrid.innerHTML=Object.entries(decks).map(([id,d],i)=>`<a class="library-deck" href="?deck=${id}" data-deck="${id}"><div class="library-deck-image"><img src="${d.image}" alt="" loading="lazy"><span class="deck-index">0${i+1}</span></div><h2>${d.title}</h2><div class="deck-meta"><span>${d.cards.length} cards</span><span>4–6 min</span><span>Swipe & reveal</span></div></a>`).join('');
+  let active=null,index=0,flipped=false,startX=0,dragX=0,dragging=false,answers={};
+  let results={};try{results=JSON.parse(localStorage.getItem('floq:learn:results')||'{}')}catch{}
+  const socialLine=id=>results[id]?`Played by you · Best ${results[id].best}%`:'New set · Be among the first to play';
+  const renderLibrary=()=>{deckGrid.innerHTML=Object.entries(decks).map(([id,d],i)=>`<a class="library-deck" href="?deck=${id}" data-deck="${id}"><div class="library-deck-image"><img src="${d.image}" alt="" loading="lazy"><span class="deck-index">0${i+1}</span></div><h2>${d.title}</h2><div class="deck-meta"><span>${d.cards.length} cards</span><span>4–6 min</span><span>Swipe & reveal</span></div><p class="deck-social">${socialLine(id)}</p></a>`).join('')};renderLibrary();
 
   const savedIndex=id=>{try{return Math.min(Number(localStorage.getItem(`floq:learn:${id}`))||0,decks[id].cards.length-1)}catch{return 0}};
   const save=()=>{try{localStorage.setItem(`floq:learn:${active}`,String(index))}catch{}};
   const render=()=>{const d=decks[active],[question,answer]=d.cards[index];flipped=false;card.className='swipe-card';card.style.transform='';card.querySelector('.card-label').textContent=d.kicker;card.querySelector('.card-question').textContent=question;card.querySelector('.card-answer').textContent=answer;document.querySelector('.game-kicker').textContent=d.kicker;document.querySelector('.game-title').textContent=d.title;document.querySelector('.game-current').textContent=String(index+1).padStart(2,'0');document.querySelector('.game-total').textContent=String(d.cards.length).padStart(2,'0');document.querySelector('.progress-track span').style.width=`${((index+1)/d.cards.length)*100}%`;save()};
-  const openDeck=(id,push=true)=>{if(!decks[id])return;active=id;index=savedIndex(id);library.hidden=true;game.hidden=false;if(push)history.pushState({deck:id},'',`?deck=${id}`);render();window.scrollTo({top:0,behavior:'smooth'})};
-  const closeDeck=(push=true)=>{active=null;game.hidden=true;library.hidden=false;if(push)history.pushState({},'',location.pathname);window.scrollTo({top:0,behavior:'smooth'})};
+  const openDeck=(id,push=true)=>{if(!decks[id])return;active=id;index=savedIndex(id);answers={};game.classList.remove('finished');library.hidden=true;game.hidden=false;if(push)history.pushState({deck:id},'',`?deck=${id}`);render();window.scrollTo({top:0,behavior:'smooth'})};
+  const closeDeck=(push=true)=>{active=null;game.classList.remove('finished');game.hidden=true;library.hidden=false;renderLibrary();if(push)history.pushState({},'',location.pathname);window.scrollTo({top:0,behavior:'smooth'})};
   const move=direction=>{if(!active)return;card.classList.add(direction<0?'exit-left':'exit-right');setTimeout(()=>{const length=decks[active].cards.length;index=(index+direction+length)%length;render()},330)};
-  const toggle=()=>{flipped=!flipped;card.classList.toggle('flipped',flipped);card.setAttribute('aria-label',flipped?'Continue to next question':'Reveal answer')};
+  const toggle=()=>{flipped=!flipped;card.classList.toggle('flipped',flipped);card.setAttribute('aria-label',flipped?'Choose how you did':'Reveal answer')};
+  const finish=()=>{const right=Object.values(answers).filter(Boolean).length,score=Math.round(right/decks[active].cards.length*100),previous=results[active]||{best:0,plays:0};results[active]={best:Math.max(previous.best,score),plays:previous.plays+1};try{localStorage.setItem('floq:learn:results',JSON.stringify(results))}catch{}document.querySelector('.result-score').textContent=score;document.querySelector('.result-copy').textContent=score>=80?'You know this world beautifully. Share the set with someone curious.':score>=50?'A thoughtful result—and a few new things to notice on your next walk.':'Curiosity wins. You now know more than when you began.';game.classList.add('finished')};
 
   deckGrid.addEventListener('click',e=>{const link=e.target.closest('[data-deck]');if(!link)return;e.preventDefault();openDeck(link.dataset.deck)});
-  card.addEventListener('click',()=>{if(Math.abs(dragX)>8)return;if(flipped)move(1);else toggle()});
-  card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flipped?move(1):toggle()}if(e.key==='ArrowRight')move(1);if(e.key==='ArrowLeft')move(-1)});
+  card.addEventListener('click',e=>{if(e.target.closest('.answer-actions'))return;if(Math.abs(dragX)>8||flipped)return;toggle()});
+  card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!flipped){e.preventDefault();toggle()}if(e.key==='ArrowRight')move(1);if(e.key==='ArrowLeft')move(-1)});
   card.addEventListener('pointerdown',e=>{if(flipped)return;dragging=true;startX=e.clientX;dragX=0;card.setPointerCapture(e.pointerId);card.classList.add('dragging')});
   card.addEventListener('pointermove',e=>{if(!dragging)return;dragX=e.clientX-startX;card.style.transform=`translateX(${dragX}px) rotate(${dragX/28}deg)`});
   const endDrag=()=>{if(!dragging)return;dragging=false;card.classList.remove('dragging');if(Math.abs(dragX)>90)move(dragX>0?1:-1);else{card.style.transform='';dragX=0}};
   card.addEventListener('pointerup',endDrag);card.addEventListener('pointercancel',endDrag);
-  document.querySelector('.previous').addEventListener('click',()=>move(-1));document.querySelector('.next').addEventListener('click',()=>move(1));document.querySelector('.back-to-sets').addEventListener('click',()=>closeDeck());document.querySelector('.restart').addEventListener('click',()=>{index=0;render()});
+  card.querySelector('.answer-actions').addEventListener('click',e=>{const button=e.target.closest('[data-result]');if(!button)return;e.stopPropagation();answers[index]=button.dataset.result==='right';if(index===decks[active].cards.length-1)setTimeout(finish,180);else move(1)});
+  document.querySelector('.previous').addEventListener('click',()=>move(-1));document.querySelector('.next').addEventListener('click',()=>move(1));document.querySelector('.back-to-sets').addEventListener('click',()=>closeDeck());document.querySelector('.restart').addEventListener('click',()=>{index=0;answers={};game.classList.remove('finished');render()});document.querySelector('.choose-another').addEventListener('click',()=>closeDeck());
+  document.querySelector('.share-result').addEventListener('click',async()=>{const score=document.querySelector('.result-score').textContent,text=`I scored ${score}% on “${decks[active].title}” — a Play & Learn set by The Dog Friendly Guide.`;if(navigator.share){try{await navigator.share({title:'Play & Learn Paris',text,url:location.href})}catch{}}else{try{await navigator.clipboard.writeText(`${text} ${location.href}`);document.querySelector('.share-result').textContent='Link copied ✓'}catch{}}});
   addEventListener('popstate',()=>{const id=new URLSearchParams(location.search).get('deck');id&&decks[id]?openDeck(id,false):closeDeck(false)});
   const requested=new URLSearchParams(location.search).get('deck');if(requested&&decks[requested])openDeck(requested,false);
 })();

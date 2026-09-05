@@ -14,10 +14,10 @@ document.querySelectorAll('.desktop-nav a,.mobile-menu a').forEach(link=>{const 
 if(document.querySelector('.home-plan-preview')){
   const ecosystemStyles=document.createElement('link');
   ecosystemStyles.rel='stylesheet';
-  ecosystemStyles.href='/guide-ecosystem.css?v=3';
+  ecosystemStyles.href='/guide-ecosystem.css?v=4';
   document.head.appendChild(ecosystemStyles);
   const ecosystemScript=document.createElement('script');
-  ecosystemScript.src='/guide-ecosystem.js?v=2';
+  ecosystemScript.src='/guide-ecosystem.js?v=3';
   ecosystemScript.defer=true;
   document.head.appendChild(ecosystemScript);
   const plannerStyles=document.createElement('link');
