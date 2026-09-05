@@ -12,6 +12,14 @@ document.querySelectorAll('.desktop-nav a,.mobile-menu a').forEach(link=>{const 
 // Load the homepage plan-maker progressively, keeping the editorial page useful
 // even when JavaScript or the planner data is unavailable.
 if(document.querySelector('.home-plan-preview')){
+  const ecosystemStyles=document.createElement('link');
+  ecosystemStyles.rel='stylesheet';
+  ecosystemStyles.href='/guide-ecosystem.css?v=1';
+  document.head.appendChild(ecosystemStyles);
+  const ecosystemScript=document.createElement('script');
+  ecosystemScript.src='/guide-ecosystem.js?v=1';
+  ecosystemScript.defer=true;
+  document.head.appendChild(ecosystemScript);
   const plannerStyles=document.createElement('link');
   plannerStyles.rel='stylesheet';
   plannerStyles.href='/make-your-plan.css?v=2';
