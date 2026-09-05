@@ -1,1 +1,60 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Discover Paris together through city stories, useful dog knowledge and small shared challenges by Flōq."><title>Play & Learn Paris · The Dog Friendly Guide</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet"><link rel="stylesheet" href="play-and-learn.css?v=1"></head><body><header class="learn-header"><a href="/">The Dog<br>Friendly Guide <small>by Flōq</small></a><div><span>The Guide · Paris</span><strong>Play &amp; Learn</strong></div><a href="/#cities" aria-label="Back to The Guide">×</a></header><main><section class="learn-hero"><div><p class="eyebrow">Discover the city together</p><h1>Look closer.<br><em>Wander wiser.</em></h1><p>A playful companion for your Paris days—part city discovery, part dog knowledge, and always something to share.</p><a href="#discoveries">Begin with Paris ↓</a></div><figure><img src="assets/journal-slow-sunday-persona-v1.jpg" alt="A stylish woman enjoying Paris with her dog"><figcaption>For curious dogs and their people · Paris</figcaption></figure></section><section class="learn-intro" id="discoveries"><div><p class="eyebrow">Play &amp; Learn · Paris</p><h2>Small discoveries<br>for the two of you.</h2></div><div><p>Open any card when curiosity strikes. There is no score and no right order—just thoughtful things to notice, understand and try together.</p><div class="learn-filters" aria-label="Filter discoveries"><button class="active" data-filter="all">All</button><button data-filter="city">City</button><button data-filter="dog">Dog</button><button data-filter="together">Together</button></div></div></section><section class="learn-grid" aria-live="polite"></section><section class="learn-progress"><div><p class="eyebrow">Your Paris discoveries</p><h2><span>0</span> moments opened.</h2><p>Your progress stays privately on this device.</p></div><a href="/paris-guide.html">Explore curated places →</a></section></main><footer><a href="/">The Dog Friendly Guide · by Flōq</a><p>One life. Lived together.</p><a href="/#cities">Back to The Guide ↑</a></footer><script src="play-and-learn.js?v=1"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Play through thoughtful Paris and dog discoveries with Flōq.">
+  <title>Play & Learn Paris · The Dog Friendly Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="play-and-learn.css?v=2">
+  <style>[hidden]{display:none!important}</style>
+</head>
+<body>
+  <header class="learn-header">
+    <a href="/">The Dog<br>Friendly Guide <small>by Flōq</small></a>
+    <div><span>The Guide · Paris</span><strong>Play &amp; Learn</strong></div>
+    <a href="/#cities" aria-label="Close">×</a>
+  </header>
+
+  <main>
+    <section class="deck-library" aria-labelledby="library-title">
+      <div class="library-intro">
+        <p class="eyebrow">Play &amp; Learn · Paris</p>
+        <h1 id="library-title">Choose your<br><em>curiosity.</em></h1>
+        <p>Short sets of questions and discoveries to make the city—and the dog beside you—feel a little more familiar.</p>
+      </div>
+      <div class="library-decks" aria-label="Play and Learn sets"></div>
+    </section>
+
+    <section class="game" hidden aria-live="polite">
+      <div class="game-topline">
+        <button class="back-to-sets" type="button">← All sets</button>
+        <p><span class="game-current">01</span> / <span class="game-total">12</span></p>
+        <button class="restart" type="button">Restart</button>
+      </div>
+      <div class="game-heading">
+        <div><p class="eyebrow game-kicker"></p><h1 class="game-title"></h1></div>
+        <p class="game-instruction">Tap to reveal the answer.<br>Swipe or use the arrows to continue.</p>
+      </div>
+      <div class="card-stage">
+        <article class="swipe-card" tabindex="0" role="button" aria-label="Reveal answer">
+          <div class="card-face card-front"><span class="card-label"></span><h2 class="card-question"></h2><span class="reveal-cue">Tap to reveal <b>+</b></span></div>
+          <div class="card-face card-back"><span class="card-label">The answer</span><p class="card-answer"></p><span class="reveal-cue">Continue <b>→</b></span></div>
+        </article>
+        <article class="swipe-card card-shadow" aria-hidden="true"></article>
+      </div>
+      <div class="game-controls">
+        <button class="previous" type="button" aria-label="Previous card">←</button>
+        <span>Swipe to explore</span>
+        <button class="next" type="button" aria-label="Next card">→</button>
+      </div>
+      <div class="progress-track"><span></span></div>
+    </section>
+  </main>
+
+  <footer><a href="/">The Dog Friendly Guide · by Flōq</a><p>One life. Lived together.</p><a href="/#cities">Back to The Guide ↑</a></footer>
+  <script src="play-and-learn.js?v=2"></script>
+</body>
+</html>
