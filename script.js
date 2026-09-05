@@ -14,7 +14,7 @@ document.querySelectorAll('.desktop-nav a,.mobile-menu a').forEach(link=>{const 
 if(document.querySelector('.home-plan-preview')){
   const ecosystemStyles=document.createElement('link');
   ecosystemStyles.rel='stylesheet';
-  ecosystemStyles.href='/guide-ecosystem.css?v=2';
+  ecosystemStyles.href='/guide-ecosystem.css?v=3';
   document.head.appendChild(ecosystemStyles);
   const ecosystemScript=document.createElement('script');
   ecosystemScript.src='/guide-ecosystem.js?v=2';
