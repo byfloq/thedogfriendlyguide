@@ -17,7 +17,7 @@ if(document.querySelector('.home-plan-preview')){
   ecosystemStyles.href='/guide-ecosystem.css?v=4';
   document.head.appendChild(ecosystemStyles);
   const ecosystemScript=document.createElement('script');
-  ecosystemScript.src='/guide-ecosystem.js?v=4';
+  ecosystemScript.src='/guide-ecosystem.js?v=5';
   ecosystemScript.defer=true;
   document.head.appendChild(ecosystemScript);
   const plannerStyles=document.createElement('link');

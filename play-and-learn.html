@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="play-and-learn.css?v=3">
+  <link rel="stylesheet" href="play-and-learn.css?v=4">
   <style>[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -31,17 +31,17 @@
     <section class="game" hidden aria-live="polite">
       <div class="game-topline">
         <button class="back-to-sets" type="button">← All sets</button>
-        <p><span class="game-current">01</span> / <span class="game-total">12</span></p>
+        <p><span class="game-current">01</span> / <span class="game-total">06</span> · <strong class="score-live">0 right</strong></p>
         <button class="restart" type="button">Restart</button>
       </div>
       <div class="game-heading">
         <div><p class="eyebrow game-kicker"></p><h1 class="game-title"></h1></div>
-        <p class="game-instruction">Tap to reveal the answer.<br>Swipe or use the arrows to continue.</p>
+        <p class="game-instruction">Choose an answer to see if you are right.<br>Your score grows with every correct answer.</p>
       </div>
       <div class="card-stage">
-        <article class="swipe-card" tabindex="0" role="button" aria-label="Reveal answer">
-          <div class="card-face card-front"><span class="card-label"></span><h2 class="card-question"></h2><span class="reveal-cue">Tap to reveal <b>+</b></span></div>
-          <div class="card-face card-back"><span class="card-label">The answer</span><p class="card-answer"></p><div class="answer-actions"><p>How did you do?</p><button type="button" data-result="right">✓ I got it</button><button type="button" data-result="learned">I learned it</button></div></div>
+        <article class="swipe-card" tabindex="0" aria-label="Choose an answer">
+          <div class="card-face card-front"><span class="card-label"></span><h2 class="card-question"></h2><div class="card-options"></div></div>
+          <div class="card-face card-back"><span class="card-label feedback-label">Correct</span><p class="card-answer"></p><div class="answer-actions"><p class="feedback-note"></p><button type="button" class="continue-answer">Continue →</button></div></div>
         </article>
         <article class="swipe-card card-shadow" aria-hidden="true"></article>
       </div>
@@ -61,6 +61,6 @@
   </main>
 
   <footer><a href="/">The Dog Friendly Guide · by Flōq</a><p>One life. Lived together.</p><a href="/#cities">Back to The Guide ↑</a></footer>
-  <script src="play-and-learn.js?v=3"></script>
+  <script src="play-and-learn.js?v=4"></script>
 </body>
 </html>
