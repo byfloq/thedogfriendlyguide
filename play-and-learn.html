@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="play-and-learn.css?v=4">
+  <link rel="stylesheet" href="play-and-learn.css?v=5">
   <style>[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -45,12 +45,15 @@
         </article>
         <article class="swipe-card card-shadow" aria-hidden="true"></article>
       </div>
+      <div class="completion-progress" aria-live="polite">
+        <div class="completion-copy"><strong class="completion-percent">0% completed</strong><span class="completion-count">0 of 6 questions</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Set completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+      </div>
       <div class="game-controls">
         <button class="previous" type="button" aria-label="Previous card">←</button>
         <span>Swipe to explore</span>
         <button class="next" type="button" aria-label="Next card">→</button>
       </div>
-      <div class="progress-track"><span></span></div>
       <section class="game-result" hidden>
         <p class="eyebrow">Set complete</p>
         <h2><span class="result-score">0</span>% right.</h2>
@@ -61,6 +64,6 @@
   </main>
 
   <footer><a href="/">The Dog Friendly Guide · by Flōq</a><p>One life. Lived together.</p><a href="/#cities">Back to The Guide ↑</a></footer>
-  <script src="play-and-learn.js?v=4"></script>
+  <script src="play-and-learn.js?v=5"></script>
 </body>
 </html>
