@@ -10,37 +10,31 @@
       title: 'Clove Coffee Shop', meta: 'Specialty coffee · Montmartre', area: 'montmartre', key: 'clove-coffee-shop', category: 'cafe',
       description: 'A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.',
       instagram: 'https://www.instagram.com/clovecoffeeshop/', maps: 'Clove Coffee Shop 14 Rue Chappe 75018 Paris',
-      images: ['assets/places/clove-coffee-hq.jpg', 'assets/places/clove-iced-tea-hq.jpg', 'assets/places/clove-friends-hq.jpg']
+      images: ['assets/places/clove-instagram-1.jpg', 'assets/places/clove-instagram-2.jpg', 'assets/places/clove-instagram-3.jpg']
     },
     {
       title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-space-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg', 'assets/places/mardi-facade.jpg']
+      images: ['assets/places/mardi-instagram-1.jpg', 'assets/places/mardi-instagram-2.jpg', 'assets/places/mardi-instagram-3.jpg']
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
       description: 'A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates - and a warm welcome for dogs.',
       instagram: 'https://www.instagram.com/niwa_paris_/', maps: 'Niwa 56 Rue Vaneau 75007 Paris',
-      images: ['assets/places/niwa-soft-serve.jpg', 'assets/places/niwa-space-hq.jpg', 'assets/places/niwa-bread-hq.jpg']
+      images: ['assets/places/niwa-instagram-1.jpg', 'assets/places/niwa-instagram-2.jpg', 'assets/places/niwa-instagram-3.jpg']
     },
     {
       title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe', category: 'cafe',
       description: 'A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.',
       instagram: 'https://www.instagram.com/parispartisancafe/', maps: 'Partisan Cafe 36 Rue de Turbigo 75003 Paris',
-      images: ['assets/places/partisan-machine.jpg', 'assets/places/partisan-community-hq.jpg', 'assets/places/partisan-affogato-hq.jpg']
-    },
-    {
-      title: 'Tanat Victoria', meta: 'Specialty coffee · Châtelet', area: 'chatelet', key: 'tanat-victoria', category: 'cafe',
-      description: 'Tanat’s clean-lined Victoria coffee shop near Châtelet pairs precisely roasted specialty coffee with the warmest dog welcome in the group, according to its team.',
-      instagram: 'https://www.instagram.com/tanat.coffee/', maps: 'Tanat Victoria Châtelet Paris',
-      images: ['assets/places/tanat-victoria-interior.jpg', 'assets/places/tanat-victoria-detail.jpg', 'assets/places/tanat-victoria-espresso.jpg']
+      images: ['assets/places/partisan-instagram-1.jpg', 'assets/places/partisan-instagram-2.jpg', 'assets/places/partisan-instagram-3.jpg']
     },
     {
       title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
       description: 'A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.',
       instagram: 'https://www.instagram.com/foretforet_paris/', maps: 'Forêt Forêt 64 Rue des Tournelles 75003 Paris',
-      images: ['assets/places/foret-foret-dog-space.jpg', 'assets/places/foret-foret-pour-over.jpg', 'assets/places/foret-foret-architecture.jpg']
+      images: ['assets/places/foret-instagram-1.jpg', 'assets/places/foret-instagram-2.jpg', 'assets/places/foret-instagram-3.jpg']
     },
     {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
@@ -114,27 +108,15 @@
     },
     {
       title: 'Mesa', meta: 'Plant-based café & restaurant · Rue des Martyrs', area: 'montmartre', key: 'mesa-paris', category: 'cafe',
-      description: 'A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.', instagram: 'https://www.instagram.com/mesa.paris/', maps: 'Mesa 68 Rue des Martyrs 75009 Paris', images: ['assets/places/mesa-paris-1.jpg', 'assets/places/mesa-paris-2.jpg', 'assets/places/mesa-paris-3.jpg']
+      description: 'A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.', instagram: 'https://www.instagram.com/mesa.paris/', maps: 'Mesa 68 Rue des Martyrs 75009 Paris', images: ['assets/places/mesa-instagram-1.jpg', 'assets/places/mesa-instagram-2.jpg', 'assets/places/mesa-instagram-3.jpg']
     },
     {
       title: 'WHITE Coffee', meta: 'Specialty coffee & matcha · Le Marais', area: 'le-marais', key: 'white-coffee-marais', category: 'cafe',
-      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-coffee-1.jpg', 'assets/places/white-coffee-2.jpg', 'assets/places/white-coffee-3.jpg']
-    },
-    {
-      title: 'Café Papeterie', meta: 'Neighbourhood café · Place des Petits-Pères', area: 'vivienne', key: 'cafe-papeterie', category: 'cafe',
-      description: 'A compact new café beside Place des Petits-Pères, bringing a simple coffee pause to the calm streets behind the Bourse.', instagram: 'https://www.instagram.com/cafepapeterie/', maps: 'Cafe Papeterie 4 Rue des Petits Peres 75002 Paris', images: ['assets/places/photo-coming-soon-cafe.svg']
+      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-2.jpg', 'assets/places/white-instagram-3.jpg']
     },
     {
       title: 'NOIR Coffee Shop', meta: 'Coffee shop & roastery · Montmartre', area: 'montmartre', key: 'noir-montmartre', category: 'cafe',
-      description: 'One of NOIR\'s design-led Paris coffee shops, serving house-roasted beans from a compact address just below Sacré-Cœur.', instagram: 'https://www.instagram.com/noir_coffeeshop/', maps: 'NOIR Coffee 6 Rue des Trois Freres 75018 Paris', images: ['assets/places/noir-coffee-1.jpg', 'assets/places/noir-coffee-2.jpg', 'assets/places/noir-coffee-3.jpg']
-    },
-    {
-      title: 'Daark', meta: 'Curated coffee corner · Le Marais', area: 'le-marais', key: 'daark-paris', category: 'cafe',
-      description: 'A fashion-minded coffee corner on Rue de Turenne where a restrained interior frames carefully made drinks and small details.', instagram: 'https://www.instagram.com/daark.paris/', maps: 'Daark 50 Rue de Turenne 75003 Paris', images: ['assets/places/daark-paris-1.jpg', 'assets/places/daark-paris-2.jpg', 'assets/places/daark-paris-3.jpg']
-    },
-    {
-      title: 'The Broken Arm Cafeteria', meta: 'Cafeteria · Haut-Marais', area: 'le-marais', key: 'broken-arm-cafeteria', category: 'cafe',
-      description: 'The relaxed café counterpart to The Broken Arm, pairing considered breakfasts and lunches with a leafy Square du Temple setting.', instagram: 'https://www.instagram.com/thebrokenarmcafeteria/', maps: 'The Broken Arm Cafeteria 12 Rue Perree 75003 Paris', images: ['assets/places/broken-arm-1.jpg', 'assets/places/broken-arm-2.jpg', 'assets/places/broken-arm-3.jpg']
+      description: 'One of NOIR\'s design-led Paris coffee shops, serving house-roasted beans from a compact address just below Sacré-Cœur.', instagram: 'https://www.instagram.com/noir_coffeeshop/', maps: 'NOIR Coffee 6 Rue des Trois Freres 75018 Paris', images: ['assets/places/noir-instagram-1.jpg', 'assets/places/noir-instagram-2.jpg', 'assets/places/noir-instagram-3.jpg']
     },
     {
       title: 'Parisien Tête de Chien', meta: 'Dog-friendly café, shop & yoga studio · Batignolles', area: 'batignolles', key: 'parisien-tete-de-chien', category: 'shop',
@@ -198,7 +180,6 @@
     'Mardi': ['arr-19', 'Coffee & baked goods · 19th arrondissement · Belleville'],
     'Niwa': ['arr-7', 'Bakery & café · 7th arrondissement · Vaneau'],
     'Partisan Café': ['arr-3', 'Café & roastery · 3rd arrondissement · Arts et Métiers'],
-    'Tanat Victoria': ['arr-1', 'Specialty coffee · 1st arrondissement · Châtelet'],
     'Forêt Forêt': ['arr-3', 'Specialty coffee & tea · 3rd arrondissement · Le Marais'],
     'Barkers + Brothers': ['arr-18', 'Dog shop & café · 18th arrondissement · Montmartre'],
     "Gino's Paris": ['arr-5', 'Boutique, grooming & daycare · 5th arrondissement · Latin Quarter'],
@@ -216,10 +197,7 @@
     'The Hoxton, Paris': ['arr-2', 'Boutique hotel · 2nd arrondissement · Sentier'],
     'Mesa': ['arr-9', 'Plant-based café & restaurant · 9th arrondissement · Rue des Martyrs'],
     'WHITE Coffee': ['arr-4', 'Specialty coffee & matcha · 4th arrondissement · Le Marais'],
-    'Café Papeterie': ['arr-2', 'Neighbourhood café · 2nd arrondissement · Vivienne'],
     'NOIR Coffee Shop': ['arr-18', 'Coffee shop & roastery · 18th arrondissement · Montmartre'],
-    'Daark': ['arr-3', 'Curated coffee corner · 3rd arrondissement · Le Marais'],
-    'The Broken Arm Cafeteria': ['arr-3', 'Cafeteria · 3rd arrondissement · Haut-Marais'],
     'Parisien Tête de Chien': ['arr-17', 'Dog-friendly café, shop & yoga studio · 17th arrondissement · Batignolles'],
     'CAYU Canidés Club': ['arr-19', 'Independent dog shop · 19th arrondissement · Buttes-Chaumont'],
     'Vivide': ['arr-18', 'Plant-based restaurant · 18th arrondissement · Montmartre'],
@@ -241,7 +219,6 @@
     'Mardi': 'Mon-Fri 08:30-17:00 · Sat-Sun 10:00-17:30',
     'Niwa': 'Mon-Fri 08:00-17:30 · Sat-Sun 08:30-17:30',
     'Partisan Café': 'Mon-Fri 08:30-18:00 · Sat-Sun 09:00-18:30',
-    'Tanat Victoria': 'Mon-Fri 08:00-18:00 · Sat 09:00-19:00 · Sun 10:00-18:00',
     'Forêt Forêt': 'Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00',
     'Barkers + Brothers': 'Tue-Sat 09:00-19:00 · Sun 10:00-16:00 · Mon closed',
     "Gino's Paris": 'Mon-Sat 10:00-19:00 · Sun closed',
@@ -259,10 +236,7 @@
     'The Hoxton, Paris': 'Open 24 hours',
     'Mesa': 'Open daily for breakfast, lunch and dinner',
     'WHITE Coffee': 'Open daily',
-    'Café Papeterie': 'Check Instagram for current hours',
     'NOIR Coffee Shop': 'Open daily',
-    'Daark': 'Mon-Fri 09:00-18:00 · Sat-Sun 10:00-19:00',
-    'The Broken Arm Cafeteria': 'Tue-Sat 09:00-17:00 · Sun-Mon closed',
     'Parisien Tête de Chien': 'Check Instagram for current hours',
     'CAYU Canidés Club': 'Wed-Sun · Check Instagram for daily hours',
     'Vivide': 'Dinner Tue-Sat · Sun-Mon closed',

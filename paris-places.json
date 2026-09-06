@@ -3,8 +3,8 @@
   "city": "Paris",
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
-  "lastUpdated": "2026-09-03",
-  "placeCount": 40,
+  "lastUpdated": "2026-09-06",
+  "placeCount": 36,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
@@ -16,7 +16,6 @@
     "mardi-cafe": "Mon-Fri 08:30-17:00 · Sat-Sun 10:00-17:30",
     "niwa-paris": "Mon-Fri 08:00-17:30 · Sat-Sun 08:30-17:30",
     "partisan-cafe": "Mon-Fri 08:30-18:00 · Sat-Sun 09:00-18:30",
-    "tanat-victoria": "Mon-Fri 08:00-18:00 · Sat 09:00-19:00 · Sun 10:00-18:00",
     "foret-foret": "Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00",
     "barkers-brothers": "Tue-Sat 09:00-19:00 · Sun 10:00-16:00 · Mon closed",
     "ginos-paris": "Mon-Sat 10:00-19:00 · Sun closed",
@@ -34,10 +33,7 @@
     "hoxton-paris": "Open 24 hours",
     "mesa-paris": "Open daily for breakfast, lunch and dinner",
     "white-coffee-marais": "Open daily",
-    "cafe-papeterie": "Check Instagram for current hours",
     "noir-montmartre": "Open daily",
-    "daark-paris": "Mon-Fri 09:00-18:00 · Sat-Sun 10:00-19:00",
-    "broken-arm-cafeteria": "Tue-Sat 09:00-17:00 · Sun-Mon closed",
     "parisien-tete-de-chien": "Check Instagram for current hours",
     "cayu-canides-club": "Wed-Sun · Check Instagram for daily hours",
     "vivide-paris": "Dinner Tue-Sat · Sun-Mon closed",
@@ -162,9 +158,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clove%20Coffee%20Shop%2014%20Rue%20Chappe%2075018%20Paris",
       "coordinates": [2.3418277, 48.8846475],
       "images": [
-        "assets/places/clove-coffee-hq.jpg",
-        "assets/places/clove-iced-tea-hq.jpg",
-        "assets/places/clove-friends-hq.jpg"
+        "assets/places/clove-instagram-1.jpg",
+        "assets/places/clove-instagram-2.jpg",
+        "assets/places/clove-instagram-3.jpg"
       ]
     },
     {
@@ -179,9 +175,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
       "coordinates": [2.3874972, 48.8762879],
       "images": [
-        "assets/places/mardi-space-hq.jpg",
-        "assets/places/mardi-baked-goods-hq.jpg",
-        "assets/places/mardi-facade.jpg"
+        "assets/places/mardi-instagram-1.jpg",
+        "assets/places/mardi-instagram-2.jpg",
+        "assets/places/mardi-instagram-3.jpg"
       ]
     },
     {
@@ -196,9 +192,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Niwa%2056%20Rue%20Vaneau%2075007%20Paris",
       "coordinates": [2.3194106, 48.8506591],
       "images": [
-        "assets/places/niwa-soft-serve.jpg",
-        "assets/places/niwa-space-hq.jpg",
-        "assets/places/niwa-bread-hq.jpg"
+        "assets/places/niwa-instagram-1.jpg",
+        "assets/places/niwa-instagram-2.jpg",
+        "assets/places/niwa-instagram-3.jpg"
       ]
     },
     {
@@ -213,26 +209,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Partisan%20Cafe%2036%20Rue%20de%20Turbigo%2075003%20Paris",
       "coordinates": [2.3530675, 48.8646471],
       "images": [
-        "assets/places/partisan-machine.jpg",
-        "assets/places/partisan-community-hq.jpg",
-        "assets/places/partisan-affogato-hq.jpg"
-      ]
-    },
-    {
-      "key": "tanat-victoria",
-      "name": "Tanat Victoria",
-      "arrondissement": 1,
-      "category": "cafe",
-      "area": "chatelet",
-      "meta": "Specialty coffee · Châtelet",
-      "description": "Tanat’s clean-lined Victoria coffee shop near Châtelet pairs precisely roasted specialty coffee with the warmest dog welcome in the group, according to its team.",
-      "instagram": "https://www.instagram.com/tanat.coffee/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanat%20Victoria%20Ch%C3%A2telet%20Paris",
-      "coordinates": [2.3461958, 48.8582902],
-      "images": [
-        "assets/places/tanat-victoria-interior.jpg",
-        "assets/places/tanat-victoria-detail.jpg",
-        "assets/places/tanat-victoria-espresso.jpg"
+        "assets/places/partisan-instagram-1.jpg",
+        "assets/places/partisan-instagram-2.jpg",
+        "assets/places/partisan-instagram-3.jpg"
       ]
     },
     {
@@ -247,9 +226,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=For%C3%AAt%20For%C3%AAt%2064%20Rue%20des%20Tournelles%2075003%20Paris",
       "coordinates": [2.3674112, 48.8571488],
       "images": [
-        "assets/places/foret-foret-dog-space.jpg",
-        "assets/places/foret-foret-pour-over.jpg",
-        "assets/places/foret-foret-architecture.jpg"
+        "assets/places/foret-instagram-1.jpg",
+        "assets/places/foret-instagram-2.jpg",
+        "assets/places/foret-instagram-3.jpg"
       ]
     },
     {
@@ -497,7 +476,7 @@
       "instagram": "https://www.instagram.com/mesa.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mesa%2068%20Rue%20des%20Martyrs%2075009%20Paris",
       "coordinates": [2.3401281, 48.8811485],
-      "images": ["assets/places/mesa-paris-1.jpg", "assets/places/mesa-paris-2.jpg", "assets/places/mesa-paris-3.jpg"]
+      "images": ["assets/places/mesa-instagram-1.jpg", "assets/places/mesa-instagram-2.jpg", "assets/places/mesa-instagram-3.jpg"]
     },
     {
       "key": "white-coffee-marais", "name": "WHITE Coffee", "arrondissement": 4, "category": "cafe", "area": "le-marais",
@@ -506,16 +485,7 @@
       "instagram": "https://www.instagram.com/drink.white/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
       "coordinates": [2.3570133, 48.8567636],
-      "images": ["assets/places/white-coffee-1.jpg", "assets/places/white-coffee-2.jpg", "assets/places/white-coffee-3.jpg"]
-    },
-    {
-      "key": "cafe-papeterie", "name": "Café Papeterie", "arrondissement": 2, "category": "cafe", "area": "vivienne",
-      "meta": "Neighbourhood café · Place des Petits-Pères",
-      "description": "A compact new café beside Place des Petits-Pères, bringing a simple coffee pause to the calm streets behind the Bourse.",
-      "instagram": "https://www.instagram.com/cafepapeterie/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Papeterie%204%20Rue%20des%20Petits%20Peres%2075002%20Paris",
-      "coordinates": [2.3403539, 48.866149],
-      "images": ["assets/places/photo-coming-soon-cafe.svg"]
+      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg", "assets/places/white-instagram-3.jpg"]
     },
     {
       "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",
@@ -524,25 +494,7 @@
       "instagram": "https://www.instagram.com/noir_coffeeshop/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NOIR%20Coffee%206%20Rue%20des%20Trois%20Freres%2075018%20Paris",
       "coordinates": [2.3415783, 48.8838812],
-      "images": ["assets/places/noir-coffee-1.jpg", "assets/places/noir-coffee-2.jpg", "assets/places/noir-coffee-3.jpg"]
-    },
-    {
-      "key": "daark-paris", "name": "Daark", "arrondissement": 3, "category": "cafe", "area": "le-marais",
-      "meta": "Curated coffee corner · Le Marais",
-      "description": "A fashion-minded coffee corner on Rue de Turenne where a restrained interior frames carefully made drinks and small details.",
-      "instagram": "https://www.instagram.com/daark.paris/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Daark%2050%20Rue%20de%20Turenne%2075003%20Paris",
-      "coordinates": [2.3645956, 48.8582831],
-      "images": ["assets/places/daark-paris-1.jpg", "assets/places/daark-paris-2.jpg", "assets/places/daark-paris-3.jpg"]
-    },
-    {
-      "key": "broken-arm-cafeteria", "name": "The Broken Arm Cafeteria", "arrondissement": 3, "category": "cafe", "area": "le-marais",
-      "meta": "Cafeteria · Haut-Marais",
-      "description": "The relaxed café counterpart to The Broken Arm, pairing considered breakfasts and lunches with a leafy Square du Temple setting.",
-      "instagram": "https://www.instagram.com/thebrokenarmcafeteria/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Broken%20Arm%20Cafeteria%2012%20Rue%20Perree%2075003%20Paris",
-      "coordinates": [2.3615166, 48.8646421],
-      "images": ["assets/places/broken-arm-1.jpg", "assets/places/broken-arm-2.jpg", "assets/places/broken-arm-3.jpg"]
+      "images": ["assets/places/noir-instagram-1.jpg", "assets/places/noir-instagram-2.jpg", "assets/places/noir-instagram-3.jpg"]
     },
     {
       "key": "parisien-tete-de-chien", "name": "Parisien Tête de Chien", "arrondissement": 17, "category": "shop", "area": "batignolles",
