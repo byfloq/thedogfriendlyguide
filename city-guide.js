@@ -374,10 +374,10 @@
   const editor = cards[0];
   const cardGalleries = {
     'Merlo Café': ['assets/places/merlo-storefront-hq.jpg', 'assets/places/merlo-coffee-cake-hq.jpg', 'assets/places/merlo-dog-snow-hq.jpg'],
-    'Grave Café': ['assets/places/grave-cafe.jpg', 'assets/places/grave-regular-dogs.jpg', 'assets/places/grave-peach-cake-hq.jpg'],
-    'Cuvée Noire': ['assets/places/cuv-e-noire.webp', 'assets/places/cuvee-drinks-hq.jpg', 'assets/places/cuvee-afternoon-hq.jpg'],
-    'Sevenly Heart': ['assets/places/sevenly-heart.webp', 'assets/places/sevenly-space-hq.jpg', 'assets/places/sevenly-cake-hq.jpg'],
-    'Nami Coffee': ['assets/places/nami-coffee-new.jpg', 'assets/places/nami-coffee-2.jpg', 'assets/places/nami-coffee-3.jpg']
+    'Grave Café': ['assets/places/grave-instagram-1.jpg', 'assets/places/grave-instagram-2.jpg', 'assets/places/grave-instagram-3.jpg'],
+    'Cuvée Noire': ['assets/places/cuvee-exterior-new.jpg', 'assets/places/cuvee-interior-new.jpg', 'assets/places/cuvee-instagram-new.jpg'],
+    'Sevenly Heart': ['assets/places/sevenly-interior-new.jpg', 'assets/places/sevenly-cakes-new.jpg', 'assets/places/sevenly-instagram-new.jpg'],
+    'Nami Coffee': ['assets/places/nami-facade-new.jpg', 'assets/places/nami-food-new.jpg', 'assets/places/nami-robie-new.jpg']
   };
   cards.forEach(card => {
     const placeTitle = card.querySelector('h3')?.textContent?.trim();

@@ -94,9 +94,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grave%20Cafe%20Le%20Marais%20Paris%20France",
       "coordinates": [2.3563574, 48.8639862],
       "images": [
-        "assets/places/grave-cafe.jpg",
-        "assets/places/grave-regular-dogs.jpg",
-        "assets/places/grave-peach-cake-hq.jpg"
+        "assets/places/grave-instagram-1.jpg",
+        "assets/places/grave-instagram-2.jpg",
+        "assets/places/grave-instagram-3.jpg"
       ]
     },
     {
@@ -111,9 +111,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cuvee%20Noire%2096%20Rue%20Saint-Lazare%2075009%20Paris",
       "coordinates": [2.3276727, 48.8757873],
       "images": [
-        "assets/places/cuv-e-noire.webp",
-        "assets/places/cuvee-drinks-hq.jpg",
-        "assets/places/cuvee-afternoon-hq.jpg"
+        "assets/places/cuvee-exterior-new.jpg",
+        "assets/places/cuvee-interior-new.jpg",
+        "assets/places/cuvee-instagram-new.jpg"
       ]
     },
     {
@@ -128,9 +128,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sevenly%20Heart%2055%20Rue%20des%20Archives%2075003%20Paris",
       "coordinates": [2.3585344, 48.8615661],
       "images": [
-        "assets/places/sevenly-heart.webp",
-        "assets/places/sevenly-space-hq.jpg",
-        "assets/places/sevenly-cake-hq.jpg"
+        "assets/places/sevenly-interior-new.jpg",
+        "assets/places/sevenly-cakes-new.jpg",
+        "assets/places/sevenly-instagram-new.jpg"
       ]
     },
     {
@@ -145,9 +145,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nami%20Coffee%20145%20rue%20Saint-Denis%20Paris",
       "coordinates": [2.3501144, 48.8646786],
       "images": [
-        "assets/places/nami-coffee-new.jpg",
-        "assets/places/nami-coffee-2.jpg",
-        "assets/places/nami-coffee-3.jpg"
+        "assets/places/nami-facade-new.jpg",
+        "assets/places/nami-food-new.jpg",
+        "assets/places/nami-robie-new.jpg"
       ]
     },
     {
