@@ -446,20 +446,9 @@
 
     let cardIndex = 0;
     const cardDots = [...thumb.querySelectorAll('.card-gallery-dots button')];
-    const applyCardImage = imageUrl => {
-      const cleanUrl = imageUrl.replace(/['"]/g, '');
-      thumb.style.setProperty('--thumb', `url('${cleanUrl}')`);
-      const probe = new Image();
-      probe.onload = () => {
-        if (images[cardIndex] === imageUrl && probe.naturalWidth && probe.naturalHeight) {
-          thumb.style.setProperty('--photo-ratio', `${probe.naturalWidth} / ${probe.naturalHeight}`);
-        }
-      };
-      probe.src = cleanUrl;
-    };
     const showCardImage = index => {
       cardIndex = (index + images.length) % images.length;
-      applyCardImage(images[cardIndex]);
+      thumb.style.setProperty('--thumb', `url('${images[cardIndex].replace(/['"]/g, '')}')`);
       thumb.setAttribute('aria-label', `${placeTitle} — photo ${cardIndex + 1} of ${images.length}`);
       cardDots.forEach((dot, dotIndex) => dot.setAttribute('aria-pressed', String(dotIndex === cardIndex)));
     };

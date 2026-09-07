@@ -80,14 +80,17 @@
 .paris-guide-page .place-thumb{
   width:100%;
   min-height:0!important;
-  aspect-ratio:var(--photo-ratio,4/5);
+  aspect-ratio:4/5;
+  position:relative;
+  overflow:hidden;
   background-color:#e9e1d7;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:var(--thumb-position,center);
+  background-image:none!important;
 }
 .paris-guide-page .place-content{
   flex:1;
+  display:flex;
+  flex-direction:column;
+  min-height:350px;
   padding:20px 0 0!important;
 }
 .paris-guide-page .place-content h3{font-size:clamp(27px,2.35vw,36px);margin-bottom:8px}
@@ -96,20 +99,33 @@
 .paris-guide-page .place-actions{gap:7px;margin-top:auto}
 .paris-guide-page .place-actions a,.paris-guide-page .place-actions button{min-height:47px;padding:11px 7px}
 .paris-guide-page .place-card-gallery{isolation:isolate}
+.paris-guide-page .place-card-gallery::before,
 .paris-guide-page .place-card-gallery::after{
   content:"";
   position:absolute;
   inset:0;
   z-index:0;
   pointer-events:none;
+  background-image:var(--thumb);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.paris-guide-page .place-card-gallery::before{
+  inset:-18px;
+  background-size:cover;
+  filter:blur(16px);
+  opacity:.2;
+}
+.paris-guide-page .place-card-gallery::after{
+  background-size:contain;
   box-shadow:inset 0 0 0 1px rgba(34,29,24,.05);
 }
 .paris-guide-page .card-gallery-arrow,.paris-guide-page .card-gallery-dots{z-index:3}
 @media(max-width:720px){
   .paris-guide-page .place-grid{grid-template-columns:1fr!important;row-gap:52px!important}
   .paris-guide-page .place-card{grid-template-columns:1fr!important}
-  .paris-guide-page .place-thumb{aspect-ratio:var(--photo-ratio,4/5)!important;min-height:0!important}
-  .paris-guide-page .place-content{padding:19px 0 0!important}
+  .paris-guide-page .place-thumb{aspect-ratio:4/5!important;min-height:0!important}
+  .paris-guide-page .place-content{min-height:0;padding:19px 0 0!important}
   .paris-guide-page .place-actions{grid-template-columns:1fr 1fr!important}
   .paris-guide-page .place-actions .favourite{grid-column:1/-1}
 }
