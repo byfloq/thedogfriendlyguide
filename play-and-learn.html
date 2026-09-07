@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="play-and-learn.css?v=9">
+  <link rel="stylesheet" href="play-and-learn.css?v=10">
   <style>[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -44,7 +44,7 @@
       </div>
       <div class="card-stage">
         <article class="swipe-card" tabindex="0" aria-label="Choose an answer">
-          <div class="card-face card-front"><div class="card-prompt"><span class="card-label"></span><span>Choose one answer</span></div><h2 class="card-question"></h2><div class="card-options"></div><div class="choice-feedback"><p class="answer-live" aria-live="polite"></p><button type="button" class="reveal-answer" hidden>See why →</button></div></div>
+          <div class="card-face card-front"><div class="card-prompt"><span class="card-label"></span><span>Choose one answer</span></div><h2 class="card-question"></h2><div class="card-options"></div><div class="choice-feedback"><div><p class="answer-live" aria-live="polite"></p><p class="answer-explanation"></p></div><button type="button" class="continue-inline" hidden>Continue →</button></div></div>
           <div class="card-face card-back"><div class="feedback-heading"><span class="feedback-mark">✓</span><span class="card-label feedback-label">Correct</span></div><p class="card-answer"></p><div class="answer-actions"><p class="feedback-note"></p><button type="button" class="continue-answer">Continue →</button></div></div>
         </article>
         <article class="swipe-card card-shadow" aria-hidden="true"></article>
@@ -55,15 +55,17 @@
         <button class="next" type="button" aria-label="Next card">→</button>
       </div>
       <section class="game-result" hidden>
-        <p class="eyebrow">Set complete</p>
+        <div class="celebration" aria-hidden="true"></div>
+        <p class="eyebrow result-eyebrow">Set complete</p>
         <h2><span class="result-score">0</span>% right.</h2>
+        <p class="result-verdict"></p>
         <p class="result-copy"></p>
-        <div><button class="share-result" type="button">Share your result ↗</button><button class="choose-another" type="button">Choose another set</button></div>
+        <div><button class="share-result" type="button">Share your result ↗</button><button class="play-again" type="button">Play again</button><button class="choose-another" type="button">Choose another set</button></div>
       </section>
     </section>
   </main>
 
   <footer><a href="/">The Dog Friendly Guide · by Flōq</a><p>One life. Lived together.</p><a href="/#cities">Back to The Guide ↑</a></footer>
-  <script src="play-and-learn.js?v=9"></script>
+  <script src="play-and-learn.js?v=10"></script>
 </body>
 </html>
