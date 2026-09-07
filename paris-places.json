@@ -464,9 +464,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Hoxton%20Paris%2030-32%20Rue%20du%20Sentier%2075002%20Paris",
       "coordinates": [2.346506, 48.870201],
       "images": [
-        "assets/places/hoxton-paris-lobby.jpg",
-        "assets/places/hoxton-paris-room.jpg",
-        "assets/places/hoxton-paris-terrace.jpg"
+        "assets/places/hoxton-paris-instagram-1.jpg",
+        "assets/places/hoxton-paris-instagram-2.jpg",
+        "assets/places/hoxton-paris-instagram-3.jpg"
       ]
     },
     {
@@ -557,7 +557,7 @@
       "instagram": "https://www.instagram.com/hotelsuzieblue/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suzie%20Blue%204%20Rue%20de%20Saintonge%2075003%20Paris",
       "coordinates": [2.3618319, 48.8608882],
-      "images": ["assets/places/hotel-suzie-blue-1.jpg", "assets/places/hotel-suzie-blue-2.jpg", "assets/places/hotel-suzie-blue-3.jpg"]
+      "images": ["assets/places/hotel-suzie-blue-instagram-1.jpg", "assets/places/hotel-suzie-blue-instagram-2.jpg", "assets/places/hotel-suzie-blue-instagram-3.jpg"]
     },
     {
       "key": "hoy-paris", "name": "HOY Paris", "arrondissement": 9, "category": "hotel", "area": "montmartre",
@@ -566,7 +566,7 @@
       "instagram": "https://www.instagram.com/hoyparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HOY%20Paris%2068%20Rue%20des%20Martyrs%2075009%20Paris",
       "coordinates": [2.3401281, 48.8811485],
-      "images": ["assets/places/hoy-paris-1.jpg", "assets/places/hoy-paris-2.jpg", "assets/places/hoy-paris-3.jpg"]
+      "images": ["assets/places/hoy-paris-instagram-1.jpg", "assets/places/hoy-paris-instagram-2.jpg", "assets/places/hoy-paris-instagram-3.jpg"]
     }
   ]
 }

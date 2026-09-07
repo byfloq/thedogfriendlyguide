@@ -104,7 +104,7 @@
     {
       title: 'The Hoxton, Paris', meta: 'Boutique hotel · Sentier', area: 'sentier', key: 'hoxton-paris', category: 'hotel',
       description: 'A lively 18th-century hôtel particulier in Sentier with characterful rooms and a dog-friendly stay for one pup up to 20 kg, at no extra charge.',
-      instagram: 'https://www.instagram.com/thehoxtonhotel/', maps: 'The Hoxton Paris 30-32 Rue du Sentier 75002 Paris', images: ['assets/places/hoxton-paris-lobby.jpg', 'assets/places/hoxton-paris-room.jpg', 'assets/places/hoxton-paris-terrace.jpg']
+      instagram: 'https://www.instagram.com/thehoxtonhotel/', maps: 'The Hoxton Paris 30-32 Rue du Sentier 75002 Paris', images: ['assets/places/hoxton-paris-instagram-1.jpg', 'assets/places/hoxton-paris-instagram-2.jpg', 'assets/places/hoxton-paris-instagram-3.jpg']
     },
     {
       title: 'Mesa', meta: 'Plant-based café & restaurant · Rue des Martyrs', area: 'montmartre', key: 'mesa-paris', category: 'cafe',
@@ -144,11 +144,11 @@
     },
     {
       title: 'Hôtel Suzie Blue', meta: 'Hotel & coffee shop · Le Marais', area: 'le-marais', key: 'hotel-suzie-blue', category: 'hotel',
-      description: 'A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.', instagram: 'https://www.instagram.com/hotelsuzieblue/', maps: 'Hotel Suzie Blue 4 Rue de Saintonge 75003 Paris', images: ['assets/places/hotel-suzie-blue-1.jpg', 'assets/places/hotel-suzie-blue-2.jpg', 'assets/places/hotel-suzie-blue-3.jpg']
+      description: 'A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.', instagram: 'https://www.instagram.com/hotelsuzieblue/', maps: 'Hotel Suzie Blue 4 Rue de Saintonge 75003 Paris', images: ['assets/places/hotel-suzie-blue-instagram-1.jpg', 'assets/places/hotel-suzie-blue-instagram-2.jpg', 'assets/places/hotel-suzie-blue-instagram-3.jpg']
     },
     {
       title: 'HOY Paris', meta: 'Wellness hotel · Rue des Martyrs', area: 'montmartre', key: 'hoy-paris', category: 'hotel',
-      description: 'A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.', instagram: 'https://www.instagram.com/hoyparis/', maps: 'HOY Paris 68 Rue des Martyrs 75009 Paris', images: ['assets/places/hoy-paris-1.jpg', 'assets/places/hoy-paris-2.jpg', 'assets/places/hoy-paris-3.jpg']
+      description: 'A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.', instagram: 'https://www.instagram.com/hoyparis/', maps: 'HOY Paris 68 Rue des Martyrs 75009 Paris', images: ['assets/places/hoy-paris-instagram-1.jpg', 'assets/places/hoy-paris-instagram-2.jpg', 'assets/places/hoy-paris-instagram-3.jpg']
     }
   ];
 
