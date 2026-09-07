@@ -74,3 +74,11 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:34px 5vw;bord
 @keyframes celebrate{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0)}20%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) scale(1) rotate(var(--r))}}@keyframes retry-breathe{0%{opacity:0;transform:translate(-50%,-50%) scale(.65)}55%{opacity:.8;transform:translate(-50%,-50%) scale(1.08)}100%{opacity:.28;transform:translate(-50%,-50%) scale(1)}}
 @media(max-width:560px){.choice-feedback{align-items:stretch;flex-direction:column;min-height:96px}.choice-feedback>div{max-width:100%}.continue-inline{align-self:flex-end}.game-result{width:calc(100vw - 42px)}}
 @media(prefers-reduced-motion:reduce){.celebration i,.retry-spark{animation:none}.celebration{display:none!important}}
+
+/* Answer feedback must remain fully visible inside the card. */
+.card-stage:has(.swipe-card.checking){height:clamp(590px,68vh,720px)}
+.swipe-card.checking .card-face{overflow:visible}
+.swipe-card.checking .card-front .card-question{margin-top:24px;margin-bottom:18px;font-size:clamp(34px,3.7vw,50px)}
+.swipe-card.checking .choice-feedback{min-height:86px;padding-bottom:2px}
+@media(max-width:700px){.card-stage:has(.swipe-card.checking){height:680px}.swipe-card.checking .card-front .card-question{font-size:clamp(32px,9vw,44px)}}
+.game{overflow-x:hidden;overflow-y:visible}.card-stage:has(.swipe-card.checking){height:clamp(690px,78vh,820px)}.swipe-card.checking .card-face{overflow:hidden}@media(max-width:700px){.card-stage:has(.swipe-card.checking){height:760px}}

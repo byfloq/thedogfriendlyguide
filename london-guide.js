@@ -1,14 +1,10 @@
 (() => {
-  const cards = [...document.querySelectorAll('.place-card')];
-  const regions = document.querySelector('.london-region-filters');
-  const areas = document.querySelector('.london-area-filters');
-  const count = document.querySelector('.cg-intro p');
-  if (!cards.length || !regions || !areas) return;
-  const selected = { region: 'all', area: 'all' };
-  const activate = (group, active) => group.querySelectorAll('button').forEach(button => { button.classList.toggle('active', button === active); if (!button.disabled) button.setAttribute('aria-pressed', button === active ? 'true' : 'false'); });
-  const updateAreas = () => areas.querySelectorAll('[data-area]').forEach(button => { button.hidden = !(button.dataset.regionGroup === 'all' || selected.region === 'all' || button.dataset.regionGroup === selected.region); });
-  const apply = () => { let shown = 0; cards.forEach(card => { const visible = (selected.region === 'all' || card.dataset.region === selected.region) && (selected.area === 'all' || card.dataset.area === selected.area); card.classList.toggle('hidden', !visible); if (visible) shown += 1; }); const empty = document.querySelector('.empty-state'); if (empty) empty.style.display = shown ? 'none' : 'block'; if (count) count.textContent = `${shown} ${shown === 1 ? 'recommendation' : 'recommendations'}`; };
-  regions.querySelectorAll('[data-region]').forEach(button => button.addEventListener('click', () => { selected.region = button.dataset.region; selected.area = 'all'; activate(regions, button); activate(areas, areas.querySelector('[data-area="all"]')); updateAreas(); apply(); }));
-  areas.querySelectorAll('[data-area]').forEach(button => button.addEventListener('click', () => { selected.area = button.dataset.area; activate(areas, button); apply(); }));
-  updateAreas(); apply();
+  const cards=[...document.querySelectorAll('.place-card')],groups={category:document.querySelector('.london-type-filters'),region:document.querySelector('.london-region-filters'),area:document.querySelector('.london-area-filters')},count=document.querySelector('.cg-intro p'),empty=document.querySelector('.empty-state'),state={category:'all',region:'all',area:'all'};
+  const activate=(group,active)=>group.querySelectorAll('button').forEach(button=>{const on=button===active;button.classList.toggle('active',on);button.setAttribute('aria-pressed',String(on))});
+  const updateAreas=()=>groups.area.querySelectorAll('[data-area]').forEach(button=>{button.hidden=button.dataset.regionGroup!=='all'&&state.region!=='all'&&button.dataset.regionGroup!==state.region});
+  const apply=()=>{let shown=0;cards.forEach(card=>{const visible=(state.category==='all'||card.dataset.category===state.category)&&(state.region==='all'||card.dataset.region===state.region)&&(state.area==='all'||card.dataset.area===state.area);card.classList.toggle('hidden',!visible);if(visible)shown++});empty.hidden=shown>0;count.textContent=`${shown} ${shown===1?'recommendation':'recommendations'}`};
+  ['category','region','area'].forEach(key=>groups[key].querySelectorAll(`[data-${key}]`).forEach(button=>button.addEventListener('click',()=>{state[key]=button.dataset[key];activate(groups[key],button);if(key==='region'){state.area='all';activate(groups.area,groups.area.querySelector('[data-area="all"]'));updateAreas()}apply()})));
+  const map=document.querySelector('[data-view-panel="map"]'),views=[...document.querySelectorAll('[data-guide-view]')];
+  const setView=view=>{const isMap=view==='map';document.body.classList.toggle('map-view-active',isMap);map.hidden=!isMap;views.forEach(button=>{const active=button.dataset.guideView===view;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active))});history.replaceState(null,'',isMap?'#map':'#list')};
+  views.forEach(button=>button.addEventListener('click',()=>setView(button.dataset.guideView)));document.querySelector('[data-footer-map]').addEventListener('click',event=>{event.preventDefault();setView('map');scrollTo({top:document.querySelector('.guide-view-switcher').offsetTop,behavior:'smooth'})});updateAreas();apply();setView(location.hash==='#map'?'map':'list');
 })();
