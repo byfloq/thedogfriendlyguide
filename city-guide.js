@@ -10,13 +10,13 @@
       title: 'Clove Coffee Shop', meta: 'Specialty coffee · Montmartre', area: 'montmartre', key: 'clove-coffee-shop', category: 'cafe',
       description: 'A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.',
       instagram: 'https://www.instagram.com/clovecoffeeshop/', maps: 'Clove Coffee Shop 14 Rue Chappe 75018 Paris',
-      images: ['assets/places/clove-instagram-1.jpg', 'assets/places/clove-instagram-2.jpg', 'assets/places/clove-instagram-3.jpg']
+      images: ['assets/places/clove-friends-hq.jpg', 'assets/places/clove-coffee-hq.jpg', 'assets/places/clove-iced-tea-hq.jpg']
     },
     {
       title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-instagram-2.jpg', 'assets/places/mardi-instagram-3.jpg', 'assets/places/mardi-instagram-1.jpg']
+      images: ['assets/places/mardi-space-hq.jpg', 'assets/places/mardi-baked-goods-hq.jpg', 'assets/places/mardi-drink-hq.jpg']
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
@@ -28,13 +28,13 @@
       title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe', category: 'cafe',
       description: 'A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.',
       instagram: 'https://www.instagram.com/parispartisancafe/', maps: 'Partisan Cafe 36 Rue de Turbigo 75003 Paris',
-      images: ['assets/places/partisan-instagram-2.jpg', 'assets/places/partisan-instagram-1.jpg', 'assets/places/partisan-instagram-3.jpg']
+      images: ['assets/places/partisan-community-hq.jpg', 'assets/places/partisan-machine.jpg', 'assets/places/partisan-space-hq.jpg']
     },
     {
       title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
       description: 'A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.',
       instagram: 'https://www.instagram.com/foretforet_paris/', maps: 'Forêt Forêt 64 Rue des Tournelles 75003 Paris',
-      images: ['assets/places/foret-instagram-1.jpg', 'assets/places/foret-instagram-2.jpg', 'assets/places/foret-instagram-3.jpg']
+      images: ['assets/places/foret-foret-dog-space.jpg', 'assets/places/foret-foret-interior.webp', 'assets/places/foret-foret-coffee.jpg']
     },
     {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
@@ -64,7 +64,7 @@
     {
       title: 'Two Tails', meta: 'Pet boutique · Grenelle', area: 'grenelle', key: 'two-tails', category: 'shop',
       description: 'A friendly neighbourhood boutique with a broad, carefully selected world of food, care and everyday essentials for dogs and cats.',
-      instagram: 'https://www.instagram.com/twotails_fr/', maps: 'Two Tails 199 Rue de Grenelle 75007 Paris', images: ['assets/places/two-tails.jpg', 'assets/places/two-tails-2.jpg', 'assets/places/two-tails-3.jpg']
+      instagram: 'https://www.instagram.com/twotails_fr/', maps: 'Two Tails 199 Rue de Grenelle 75007 Paris', images: ['assets/places/two-tails-3.jpg', 'assets/places/two-tails-2.jpg', 'assets/places/two-tails.jpg']
     },
     {
       title: 'Petsochic', meta: 'Boutique & spa · Saint-Germain', area: 'saint-germain', key: 'petsochic', category: 'shop',
@@ -99,7 +99,7 @@
     {
       title: 'Kimpton St Honoré Paris', meta: 'Luxury hotel · Opéra', area: 'opera', key: 'kimpton-st-honore', category: 'hotel',
       description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy - every size and breed is welcome at no extra charge.',
-      instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg', 'assets/places/kimpton-st-honore-2.jpg', 'assets/places/kimpton-st-honore-3.jpg']
+      instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore-3.jpg', 'assets/places/kimpton-st-honore.jpg', 'assets/places/kimpton-st-honore-2.jpg']
     },
     {
       title: 'The Hoxton, Paris', meta: 'Boutique hotel · Sentier', area: 'sentier', key: 'hoxton-paris', category: 'hotel',
@@ -108,11 +108,11 @@
     },
     {
       title: 'Mesa', meta: 'Plant-based café & restaurant · Rue des Martyrs', area: 'montmartre', key: 'mesa-paris', category: 'cafe',
-      description: 'A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.', instagram: 'https://www.instagram.com/mesa.paris/', maps: 'Mesa 68 Rue des Martyrs 75009 Paris', images: ['assets/places/mesa-instagram-1.jpg', 'assets/places/mesa-instagram-2.jpg', 'assets/places/mesa-instagram-3.jpg']
+      description: 'A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.', instagram: 'https://www.instagram.com/mesa.paris/', maps: 'Mesa 68 Rue des Martyrs 75009 Paris', images: ['assets/places/mesa-instagram-3.jpg', 'assets/places/mesa-instagram-1.jpg', 'assets/places/mesa-instagram-2.jpg']
     },
     {
       title: 'WHITE Coffee', meta: 'Specialty coffee & matcha · Le Marais', area: 'le-marais', key: 'white-coffee-marais', category: 'cafe',
-      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-2.jpg', 'assets/places/white-instagram-3.jpg']
+      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-2.jpg', 'assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-3.jpg']
     },
     {
       title: 'NOIR Coffee Shop', meta: 'Coffee shop & roastery · Montmartre', area: 'montmartre', key: 'noir-montmartre', category: 'cafe',
@@ -120,7 +120,7 @@
     },
     {
       title: 'Parisien Tête de Chien', meta: 'Dog-friendly café, shop & yoga studio · Batignolles', area: 'batignolles', key: 'parisien-tete-de-chien', category: 'shop',
-      description: 'A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.', instagram: 'https://www.instagram.com/parisien_tete_de_chien/', maps: 'Parisien Tete de Chien 19 Rue des Moines 75017 Paris', images: ['assets/places/parisien-tete-de-chien-1.jpg', 'assets/places/parisien-tete-de-chien-2.jpg', 'assets/places/parisien-tete-de-chien-3.jpg']
+      description: 'A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.', instagram: 'https://www.instagram.com/parisien_tete_de_chien/', maps: 'Parisien Tete de Chien 19 Rue des Moines 75017 Paris', images: ['assets/places/parisien-tete-de-chien-3.jpg', 'assets/places/parisien-tete-de-chien-1.jpg', 'assets/places/parisien-tete-de-chien-2.jpg']
     },
     {
       title: 'CAYU Canidés Club', meta: 'Independent dog shop · Buttes-Chaumont', area: 'buttes-chaumont', key: 'cayu-canides-club', category: 'shop',
@@ -128,11 +128,11 @@
     },
     {
       title: 'Vivide', meta: 'Plant-based restaurant · Montmartre', area: 'montmartre', key: 'vivide-paris', category: 'restaurant',
-      description: 'A produce-driven, plant-based dinner restaurant near Abbesses, shaped around expressive seasonal plates and an intimate evening mood.', instagram: 'https://www.instagram.com/vivide_paris/', maps: 'Vivide 3 Rue Dancourt 75018 Paris', images: ['assets/places/vivide-1.jpg', 'assets/places/vivide-2.jpg', 'assets/places/vivide-3.jpg']
+      description: 'A produce-driven, plant-based dinner restaurant near Abbesses, shaped around expressive seasonal plates and an intimate evening mood.', instagram: 'https://www.instagram.com/vivide_paris/', maps: 'Vivide 3 Rue Dancourt 75018 Paris', images: ['assets/places/vivide-2.jpg', 'assets/places/vivide-1.jpg', 'assets/places/vivide-3.jpg']
     },
     {
       title: 'Season Paris', meta: 'All-day restaurant · Haut-Marais', area: 'le-marais', key: 'season-paris', category: 'restaurant',
-      description: 'A lively all-day Marais address for colourful breakfast plates, generous lunches and the polished comfort-food style Season has served since 2015.', instagram: 'https://www.instagram.com/seasonparis/', maps: 'Season 1 Rue Charles-Francois Dupuis 75003 Paris', images: ['assets/places/season-paris-1.jpg', 'assets/places/season-paris-2.jpg', 'assets/places/season-paris-3.jpg']
+      description: 'A lively all-day Marais address for colourful breakfast plates, generous lunches and the polished comfort-food style Season has served since 2015.', instagram: 'https://www.instagram.com/seasonparis/', maps: 'Season 1 Rue Charles-Francois Dupuis 75003 Paris', images: ['assets/places/season-paris-2.jpg', 'assets/places/season-paris-1.jpg', 'assets/places/season-paris-3.jpg']
     },
     {
       title: 'Jaja', meta: 'Restaurant & wine · Le Marais', area: 'le-marais', key: 'jaja-paris', category: 'restaurant',
@@ -140,11 +140,11 @@
     },
     {
       title: 'Café Charlot', meta: 'Parisian bistro · Haut-Marais', area: 'le-marais', key: 'cafe-charlot-paris', category: 'restaurant',
-      description: 'A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.', instagram: 'https://www.instagram.com/cafecharlotparis/', maps: 'Cafe Charlot 38 Rue de Bretagne 75003 Paris', images: ['assets/places/cafe-charlot-1.jpg', 'assets/places/cafe-charlot-2.jpg', 'assets/places/cafe-charlot-3.jpg']
+      description: 'A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.', instagram: 'https://www.instagram.com/cafecharlotparis/', maps: 'Cafe Charlot 38 Rue de Bretagne 75003 Paris', images: ['assets/places/cafe-charlot-2.jpg', 'assets/places/cafe-charlot-1.jpg', 'assets/places/cafe-charlot-3.jpg']
     },
     {
       title: 'Hôtel Suzie Blue', meta: 'Hotel & coffee shop · Le Marais', area: 'le-marais', key: 'hotel-suzie-blue', category: 'hotel',
-      description: 'A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.', instagram: 'https://www.instagram.com/hotelsuzieblue/', maps: 'Hotel Suzie Blue 4 Rue de Saintonge 75003 Paris', images: ['assets/places/hotel-suzie-blue-1.jpg', 'assets/places/hotel-suzie-blue-2.jpg', 'assets/places/hotel-suzie-blue-3.jpg']
+      description: 'A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.', instagram: 'https://www.instagram.com/hotelsuzieblue/', maps: 'Hotel Suzie Blue 4 Rue de Saintonge 75003 Paris', images: ['assets/places/hotel-suzie-blue-2.jpg', 'assets/places/hotel-suzie-blue-1.jpg', 'assets/places/hotel-suzie-blue-3.jpg']
     },
     {
       title: 'HOY Paris', meta: 'Wellness hotel · Rue des Martyrs', area: 'montmartre', key: 'hoy-paris', category: 'hotel',
@@ -348,7 +348,7 @@
   const editor = cards[0];
   const cardGalleries = {
     'Merlo Café': ['assets/places/merlo-storefront-hq.jpg', 'assets/places/merlo-coffee-cake-hq.jpg', 'assets/places/merlo-dog-snow-hq.jpg'],
-    'Grave Café': ['assets/places/grave-instagram-1.jpg', 'assets/places/grave-instagram-2.jpg', 'assets/places/grave-instagram-3.jpg'],
+    'Grave Café': ['assets/places/grave-regular-dogs.jpg', 'assets/places/grave-peach-cake-hq.jpg', 'assets/places/grave-interior-hq.jpg'],
     'Cuvée Noire': ['assets/places/cuvee-exterior-new.jpg', 'assets/places/cuvee-interior-new.jpg', 'assets/places/cuvee-instagram-new.jpg'],
     'Sevenly Heart': ['assets/places/sevenly-interior-new.jpg', 'assets/places/sevenly-cakes-new.jpg', 'assets/places/sevenly-instagram-new.jpg'],
     'Nami Coffee': ['assets/places/nami-facade-new.jpg', 'assets/places/nami-food-new.jpg', 'assets/places/nami-robie-new.jpg']

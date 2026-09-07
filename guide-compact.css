@@ -76,6 +76,7 @@
   border:0;
   background:transparent;
 }
+.paris-guide-page .place-card.hidden{display:none!important}
 .paris-guide-page .place-thumb{
   width:100%;
   min-height:0!important;
