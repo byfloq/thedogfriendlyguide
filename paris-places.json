@@ -22,7 +22,6 @@
     "animal-particulier": "Tue-Sat 11:00-19:00 · Sun-Mon closed",
     "casa-del-doggo": "Wed-Sat 10:00-12:00 & 13:00-19:00 · Sun 10:00-16:00 · Mon-Tue closed",
     "le-bone-appart": "Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00",
-    "two-tails": "Mon-Sat 09:30-19:30 · Sun 09:30-13:30",
     "petsochic": "Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed",
     "pantoufle-paris": "Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed",
     "griffon-paris": "Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed",
@@ -314,23 +313,6 @@
         "assets/places/le-bone-appart.jpg",
         "assets/places/le-bone-appart-2.jpg",
         "assets/places/le-bone-appart-3.jpg"
-      ]
-    },
-    {
-      "key": "two-tails",
-      "name": "Two Tails",
-      "arrondissement": 7,
-      "category": "shop",
-      "area": "grenelle",
-      "meta": "Pet boutique · Grenelle",
-      "description": "A friendly neighbourhood boutique with a broad, carefully selected world of food, care and everyday essentials for dogs and cats.",
-      "instagram": "https://www.instagram.com/twotails_fr/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Tails%20199%20Rue%20de%20Grenelle%2075007%20Paris",
-      "coordinates": [2.3028912, 48.8563345],
-      "images": [
-        "assets/places/two-tails.jpg",
-        "assets/places/two-tails-2.jpg",
-        "assets/places/two-tails-3.jpg"
       ]
     },
     {

@@ -62,11 +62,6 @@
       instagram: 'https://www.instagram.com/leboneappart/', maps: 'Le Bone Appart 9 Rue de Birague 75004 Paris', images: ['assets/places/le-bone-appart.jpg', 'assets/places/le-bone-appart-2.jpg', 'assets/places/le-bone-appart-3.jpg']
     },
     {
-      title: 'Two Tails', meta: 'Pet boutique · Grenelle', area: 'grenelle', key: 'two-tails', category: 'shop',
-      description: 'A friendly neighbourhood boutique with a broad, carefully selected world of food, care and everyday essentials for dogs and cats.',
-      instagram: 'https://www.instagram.com/twotails_fr/', maps: 'Two Tails 199 Rue de Grenelle 75007 Paris', images: ['assets/places/two-tails.jpg', 'assets/places/two-tails-2.jpg', 'assets/places/two-tails-3.jpg']
-    },
-    {
       title: 'Petsochic', meta: 'Boutique & spa · Saint-Germain', area: 'saint-germain', key: 'petsochic', category: 'shop',
       description: 'A refined Left Bank boutique and grooming spa bringing together French-made accessories, personalisation and attentive care.',
       instagram: 'https://www.instagram.com/petsochic/', maps: 'Petsochic 16 Rue Dauphine 75006 Paris', images: ['assets/places/petsochic.jpg', 'assets/places/petsochic-2.jpg', 'assets/places/petsochic-3.jpg']
@@ -186,7 +181,6 @@
     'Animal Particulier': ['arr-18', 'Independent pet shop · 18th arrondissement · Montmartre'],
     'Casa del Doggo': ['arr-16', 'Dog bakery & concept store · 16th arrondissement · Auteuil'],
     'Le Bone Appart': ['arr-4', 'Dog café & boutique · 4th arrondissement · Le Marais'],
-    'Two Tails': ['arr-7', 'Pet boutique · 7th arrondissement · Grenelle'],
     'Petsochic': ['arr-6', 'Boutique & spa · 6th arrondissement · Saint-Germain'],
     'Pantoufle': ['arr-19', 'Restaurant & wine bar · 19th arrondissement · Buttes-Chaumont'],
     'Griffon': ['arr-4', 'Café, restaurant & bar · 4th arrondissement · Le Marais'],
@@ -225,7 +219,6 @@
     'Animal Particulier': 'Tue-Sat 11:00-19:00 · Sun-Mon closed',
     'Casa del Doggo': 'Wed-Sat 10:00-12:00 & 13:00-19:00 · Sun 10:00-16:00 · Mon-Tue closed',
     'Le Bone Appart': 'Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00',
-    'Two Tails': 'Mon-Sat 09:30-19:30 · Sun 09:30-13:30',
     'Petsochic': 'Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed',
     'Pantoufle': 'Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed',
     'Griffon': 'Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed',
