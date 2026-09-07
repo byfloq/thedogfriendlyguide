@@ -16,7 +16,7 @@
       title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-instagram-1.jpg', 'assets/places/mardi-instagram-2.jpg', 'assets/places/mardi-instagram-3.jpg']
+      images: ['assets/places/mardi-instagram-2.jpg', 'assets/places/mardi-instagram-3.jpg', 'assets/places/mardi-instagram-1.jpg']
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
@@ -28,7 +28,7 @@
       title: 'Partisan Café', meta: 'Café & roastery · Étienne Marcel', area: 'etienne-marcel', key: 'partisan-cafe', category: 'cafe',
       description: 'A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.',
       instagram: 'https://www.instagram.com/parispartisancafe/', maps: 'Partisan Cafe 36 Rue de Turbigo 75003 Paris',
-      images: ['assets/places/partisan-instagram-1.jpg', 'assets/places/partisan-instagram-2.jpg', 'assets/places/partisan-instagram-3.jpg']
+      images: ['assets/places/partisan-instagram-2.jpg', 'assets/places/partisan-instagram-1.jpg', 'assets/places/partisan-instagram-3.jpg']
     },
     {
       title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
@@ -435,6 +435,8 @@
     if (!thumb || images.length < 2) return;
 
     thumb.classList.add('place-card-gallery');
+    thumb.setAttribute('role', 'img');
+    thumb.setAttribute('aria-label', `${placeTitle} — photo 1 of ${images.length}`);
     thumb.insertAdjacentHTML('beforeend', `
       <button class="card-gallery-arrow card-gallery-prev" type="button" aria-label="Previous ${placeTitle} photo">←</button>
       <button class="card-gallery-arrow card-gallery-next" type="button" aria-label="Next ${placeTitle} photo">→</button>
@@ -447,6 +449,7 @@
     const showCardImage = index => {
       cardIndex = (index + images.length) % images.length;
       thumb.style.setProperty('--thumb', `url('${images[cardIndex].replace(/['"]/g, '')}')`);
+      thumb.setAttribute('aria-label', `${placeTitle} — photo ${cardIndex + 1} of ${images.length}`);
       cardDots.forEach((dot, dotIndex) => dot.setAttribute('aria-pressed', String(dotIndex === cardIndex)));
     };
     thumb.querySelector('.card-gallery-prev')?.addEventListener('click', () => showCardImage(cardIndex - 1));

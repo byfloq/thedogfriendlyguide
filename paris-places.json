@@ -175,9 +175,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
       "coordinates": [2.3874972, 48.8762879],
       "images": [
-        "assets/places/mardi-instagram-1.jpg",
         "assets/places/mardi-instagram-2.jpg",
-        "assets/places/mardi-instagram-3.jpg"
+        "assets/places/mardi-instagram-3.jpg",
+        "assets/places/mardi-instagram-1.jpg"
       ]
     },
     {
@@ -209,8 +209,8 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Partisan%20Cafe%2036%20Rue%20de%20Turbigo%2075003%20Paris",
       "coordinates": [2.3530675, 48.8646471],
       "images": [
-        "assets/places/partisan-instagram-1.jpg",
         "assets/places/partisan-instagram-2.jpg",
+        "assets/places/partisan-instagram-1.jpg",
         "assets/places/partisan-instagram-3.jpg"
       ]
     },
