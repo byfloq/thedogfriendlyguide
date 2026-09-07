@@ -90,9 +90,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grave%20Cafe%20Le%20Marais%20Paris%20France",
       "coordinates": [2.3563574, 48.8639862],
       "images": [
-        "assets/places/grave-regular-dogs.jpg",
-        "assets/places/grave-peach-cake-hq.jpg",
-        "assets/places/grave-interior-hq.jpg"
+        "assets/places/grave-instagram-1.jpg",
+        "assets/places/grave-instagram-2.jpg",
+        "assets/places/grave-instagram-3.jpg"
       ]
     },
     {
@@ -158,9 +158,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clove%20Coffee%20Shop%2014%20Rue%20Chappe%2075018%20Paris",
       "coordinates": [2.3418277, 48.8846475],
       "images": [
-        "assets/places/clove-friends-hq.jpg",
-        "assets/places/clove-coffee-hq.jpg",
-        "assets/places/clove-iced-tea-hq.jpg"
+        "assets/places/clove-instagram-1.jpg",
+        "assets/places/clove-instagram-2.jpg",
+        "assets/places/clove-instagram-3.jpg"
       ]
     },
     {
@@ -175,9 +175,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
       "coordinates": [2.3874972, 48.8762879],
       "images": [
-        "assets/places/mardi-space-hq.jpg",
-        "assets/places/mardi-baked-goods-hq.jpg",
-        "assets/places/mardi-drink-hq.jpg"
+        "assets/places/mardi-instagram-2.jpg",
+        "assets/places/mardi-instagram-3.jpg",
+        "assets/places/mardi-instagram-1.jpg"
       ]
     },
     {
@@ -209,9 +209,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Partisan%20Cafe%2036%20Rue%20de%20Turbigo%2075003%20Paris",
       "coordinates": [2.3530675, 48.8646471],
       "images": [
-        "assets/places/partisan-community-hq.jpg",
-        "assets/places/partisan-machine.jpg",
-        "assets/places/partisan-space-hq.jpg"
+        "assets/places/partisan-instagram-2.jpg",
+        "assets/places/partisan-instagram-1.jpg",
+        "assets/places/partisan-instagram-3.jpg"
       ]
     },
     {
@@ -226,9 +226,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=For%C3%AAt%20For%C3%AAt%2064%20Rue%20des%20Tournelles%2075003%20Paris",
       "coordinates": [2.3674112, 48.8571488],
       "images": [
-        "assets/places/foret-foret-dog-space.jpg",
-        "assets/places/foret-foret-interior.webp",
-        "assets/places/foret-foret-coffee.jpg"
+        "assets/places/foret-instagram-1.jpg",
+        "assets/places/foret-instagram-2.jpg",
+        "assets/places/foret-instagram-3.jpg"
       ]
     },
     {
@@ -328,9 +328,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Tails%20199%20Rue%20de%20Grenelle%2075007%20Paris",
       "coordinates": [2.3028912, 48.8563345],
       "images": [
-        "assets/places/two-tails-3.jpg",
+        "assets/places/two-tails.jpg",
         "assets/places/two-tails-2.jpg",
-        "assets/places/two-tails.jpg"
+        "assets/places/two-tails-3.jpg"
       ]
     },
     {
@@ -447,9 +447,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kimpton%20St%20Honor%C3%A9%20Paris%2027-29%20Boulevard%20des%20Capucines%2075002%20Paris",
       "coordinates": [2.3305893, 48.870169],
       "images": [
-        "assets/places/kimpton-st-honore-3.jpg",
         "assets/places/kimpton-st-honore.jpg",
-        "assets/places/kimpton-st-honore-2.jpg"
+        "assets/places/kimpton-st-honore-2.jpg",
+        "assets/places/kimpton-st-honore-3.jpg"
       ]
     },
     {
@@ -476,7 +476,7 @@
       "instagram": "https://www.instagram.com/mesa.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mesa%2068%20Rue%20des%20Martyrs%2075009%20Paris",
       "coordinates": [2.3401281, 48.8811485],
-      "images": ["assets/places/mesa-instagram-3.jpg", "assets/places/mesa-instagram-1.jpg", "assets/places/mesa-instagram-2.jpg"]
+      "images": ["assets/places/mesa-instagram-1.jpg", "assets/places/mesa-instagram-2.jpg", "assets/places/mesa-instagram-3.jpg"]
     },
     {
       "key": "white-coffee-marais", "name": "WHITE Coffee", "arrondissement": 4, "category": "cafe", "area": "le-marais",
@@ -485,7 +485,7 @@
       "instagram": "https://www.instagram.com/drink.white/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
       "coordinates": [2.3570133, 48.8567636],
-      "images": ["assets/places/white-instagram-2.jpg", "assets/places/white-instagram-1.jpg", "assets/places/white-instagram-3.jpg"]
+      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg", "assets/places/white-instagram-3.jpg"]
     },
     {
       "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",
@@ -503,7 +503,7 @@
       "instagram": "https://www.instagram.com/parisien_tete_de_chien/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parisien%20Tete%20de%20Chien%2019%20Rue%20des%20Moines%2075017%20Paris",
       "coordinates": [2.3190036, 48.8885334],
-      "images": ["assets/places/parisien-tete-de-chien-3.jpg", "assets/places/parisien-tete-de-chien-1.jpg", "assets/places/parisien-tete-de-chien-2.jpg"]
+      "images": ["assets/places/parisien-tete-de-chien-1.jpg", "assets/places/parisien-tete-de-chien-2.jpg", "assets/places/parisien-tete-de-chien-3.jpg"]
     },
     {
       "key": "cayu-canides-club", "name": "CAYU Canidés Club", "arrondissement": 19, "category": "shop", "area": "buttes-chaumont",
@@ -521,7 +521,7 @@
       "instagram": "https://www.instagram.com/vivide_paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vivide%203%20Rue%20Dancourt%2075018%20Paris",
       "coordinates": [2.3417766, 48.8828675],
-      "images": ["assets/places/vivide-2.jpg", "assets/places/vivide-1.jpg", "assets/places/vivide-3.jpg"]
+      "images": ["assets/places/vivide-1.jpg", "assets/places/vivide-2.jpg", "assets/places/vivide-3.jpg"]
     },
     {
       "key": "season-paris", "name": "Season Paris", "arrondissement": 3, "category": "restaurant", "area": "le-marais",
@@ -530,7 +530,7 @@
       "instagram": "https://www.instagram.com/seasonparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Season%201%20Rue%20Charles-Francois%20Dupuis%2075003%20Paris",
       "coordinates": [2.3628352, 48.8651695],
-      "images": ["assets/places/season-paris-2.jpg", "assets/places/season-paris-1.jpg", "assets/places/season-paris-3.jpg"]
+      "images": ["assets/places/season-paris-1.jpg", "assets/places/season-paris-2.jpg", "assets/places/season-paris-3.jpg"]
     },
     {
       "key": "jaja-paris", "name": "Jaja", "arrondissement": 4, "category": "restaurant", "area": "le-marais",
@@ -548,7 +548,7 @@
       "instagram": "https://www.instagram.com/cafecharlotparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Charlot%2038%20Rue%20de%20Bretagne%2075003%20Paris",
       "coordinates": [2.362468, 48.863056],
-      "images": ["assets/places/cafe-charlot-2.jpg", "assets/places/cafe-charlot-1.jpg", "assets/places/cafe-charlot-3.jpg"]
+      "images": ["assets/places/cafe-charlot-1.jpg", "assets/places/cafe-charlot-2.jpg", "assets/places/cafe-charlot-3.jpg"]
     },
     {
       "key": "hotel-suzie-blue", "name": "Hôtel Suzie Blue", "arrondissement": 3, "category": "hotel", "area": "le-marais",
@@ -557,7 +557,7 @@
       "instagram": "https://www.instagram.com/hotelsuzieblue/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suzie%20Blue%204%20Rue%20de%20Saintonge%2075003%20Paris",
       "coordinates": [2.3618319, 48.8608882],
-      "images": ["assets/places/hotel-suzie-blue-2.jpg", "assets/places/hotel-suzie-blue-1.jpg", "assets/places/hotel-suzie-blue-3.jpg"]
+      "images": ["assets/places/hotel-suzie-blue-1.jpg", "assets/places/hotel-suzie-blue-2.jpg", "assets/places/hotel-suzie-blue-3.jpg"]
     },
     {
       "key": "hoy-paris", "name": "HOY Paris", "arrondissement": 9, "category": "hotel", "area": "montmartre",
