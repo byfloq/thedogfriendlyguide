@@ -97,7 +97,19 @@
 .paris-guide-page .place-category{margin-bottom:17px}
 .paris-guide-page .place-content .desc{font-size:15px;line-height:1.55;margin-bottom:22px;-webkit-line-clamp:4;line-clamp:4}
 .paris-guide-page .place-actions{gap:7px;margin-top:auto}
-.paris-guide-page .place-actions a,.paris-guide-page .place-actions button{min-height:47px;padding:11px 7px}
+.paris-guide-page .place-actions a,.paris-guide-page .place-actions button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  min-width:0;
+  min-height:52px;
+  padding:10px 8px;
+  font-size:8px;
+  line-height:1.15!important;
+  text-align:center;
+  white-space:nowrap!important;
+}
 .paris-guide-page .place-card-gallery{isolation:isolate}
 .paris-guide-page .place-card-gallery::before,
 .paris-guide-page .place-card-gallery::after{
