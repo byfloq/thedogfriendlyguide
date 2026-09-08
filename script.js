@@ -25,7 +25,7 @@ if(document.querySelector('.home-plan-preview')){
   plannerStyles.href='/make-your-plan.css?v=2';
   document.head.appendChild(plannerStyles);
   const plannerScript=document.createElement('script');
-  plannerScript.src='/make-your-plan.js?v=5';
+  plannerScript.src='/make-your-plan.js?v=6';
   plannerScript.defer=true;
   document.head.appendChild(plannerScript);
 }

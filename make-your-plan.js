@@ -22,8 +22,10 @@
   const guideCards=[...anchor.querySelectorAll('.guide-preview-card')];
   const launcher=guideCards[3];
   if(!launcher)return;
+  const isLondon=new URLSearchParams(location.search).get('city')==='london';
+  const cityName=isLondon?'London':'Paris';
   launcher.classList.add('guide-plan-maker-card');
-  launcher.innerHTML=`<a class="guide-plan-maker-launch" href="make-your-plan.html"><span class="guide-plan-maker-image"><img src="assets/make-your-plan-editorial-v1.png" alt="A Paris map with movable destination cards for creating a personal day"><i>Made for you</i></span><strong>Build your own plan</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful Paris plan →</small></a>`;
+  launcher.innerHTML=`<a class="guide-plan-maker-launch" href="make-your-plan.html?city=${cityName.toLowerCase()}"><span class="guide-plan-maker-image"><img src="assets/make-your-plan-editorial-v1.png" alt="A ${cityName} map with movable destination cards for creating a personal day"><i>Made for you</i></span><strong>Build your own plan</strong><span class="guide-preview-tags"><span>Your time</span><span>Your area</span><span>Your mood</span></span><small>Create a thoughtful ${cityName} plan →</small></a>`;
   return;
 
   const plannerDialog=document.createElement('dialog');
