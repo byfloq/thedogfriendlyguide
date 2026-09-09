@@ -12,6 +12,9 @@ document.querySelectorAll('.desktop-nav a,.mobile-menu a').forEach(link=>{const 
 // Load the homepage plan-maker progressively, keeping the editorial page useful
 // even when JavaScript or the planner data is unavailable.
 if(document.querySelector('.home-plan-preview')){
+  const cityEditionScript=document.createElement('script');
+  cityEditionScript.src='/home-city-edition.js?build=20260909-city-sync';
+  document.head.appendChild(cityEditionScript);
   let cityEnhancementsLoaded=0;
   const reapplyCityEdition=()=>{
     cityEnhancementsLoaded+=1;
