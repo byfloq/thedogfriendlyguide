@@ -40,12 +40,12 @@
   if (primary) {
     primary.href = 'london-guide.html';
     const crop = primary.querySelector('.crop');
-    if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = "background-image:url('assets/city_london_hero.jpg');background-size:cover;background-position:center 52%"; }
+    if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = "background-image:url('assets/floq-guide-editorial-london-v1.png');background-size:cover;background-position:center 54%"; }
     primary.querySelector('.launch-status').textContent = 'Curated places · London';
     primary.querySelector('h3').innerHTML = '4 curated places.<br>One considered guide.';
     primary.querySelector('p').textContent = 'Find thoughtful dog-friendly addresses across London by district and neighbourhood.';
     const preview = primary.querySelector('img');
-    if (preview) { preview.src = 'assets/places/workshop-coffee.webp'; preview.alt = 'A considered dog-friendly coffee stop in London'; }
+    if (preview) { preview.src = 'assets/london-curated-map.png'; preview.alt = 'Illustrated map of London with curated café, restaurant, hotel and dog-shop markers'; }
     primary.querySelector('.launch-link').textContent = 'Browse the London guide →';
   }
   const kicker = section.querySelector('.guide-preview-kicker');
@@ -85,6 +85,17 @@
   }
   document.querySelectorAll('.polaroids .polaroid figcaption').forEach((caption, index) => {
     caption.textContent = ['Day in London', 'Weekend in London', 'A quiet London morning'][index] || caption.textContent;
+  });
+  const londonCocoMoments = [
+    ['assets/coco/coco-london-cafe.png', 'Coco beside a café on a rainy London street'],
+    ['assets/coco/coco-london-townhouse.png', 'Coco on the steps of a Georgian London townhouse'],
+    ['assets/coco/coco-london-canal.png', 'Coco walking beside Regent’s Canal in London']
+  ];
+  document.querySelectorAll('.polaroids .polaroid img').forEach((image, index) => {
+    const moment = londonCocoMoments[index];
+    if (!moment) return;
+    image.src = moment[0];
+    image.alt = moment[1];
   });
   const circleCopy = document.querySelector('.circle-newsletter > div:nth-child(2) > p:not(.eyebrow)');
   if (circleCopy) circleCopy.textContent = 'New London guides, thoughtful places and Better Together gatherings—sent occasionally, and always worth opening.';
