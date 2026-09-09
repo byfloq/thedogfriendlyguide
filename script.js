@@ -12,6 +12,11 @@ document.querySelectorAll('.desktop-nav a,.mobile-menu a').forEach(link=>{const 
 // Load the homepage plan-maker progressively, keeping the editorial page useful
 // even when JavaScript or the planner data is unavailable.
 if(document.querySelector('.home-plan-preview')){
+  let cityEnhancementsLoaded=0;
+  const reapplyCityEdition=()=>{
+    cityEnhancementsLoaded+=1;
+    if(cityEnhancementsLoaded===2&&typeof window.applyHomeCityEdition==='function') window.applyHomeCityEdition();
+  };
   const ecosystemStyles=document.createElement('link');
   ecosystemStyles.rel='stylesheet';
   ecosystemStyles.href='/guide-ecosystem.css?v=4';
@@ -19,6 +24,7 @@ if(document.querySelector('.home-plan-preview')){
   const ecosystemScript=document.createElement('script');
   ecosystemScript.src='/guide-ecosystem.js?v=6';
   ecosystemScript.defer=true;
+  ecosystemScript.addEventListener('load',reapplyCityEdition);
   document.head.appendChild(ecosystemScript);
   const plannerStyles=document.createElement('link');
   plannerStyles.rel='stylesheet';
@@ -27,5 +33,6 @@ if(document.querySelector('.home-plan-preview')){
   const plannerScript=document.createElement('script');
   plannerScript.src='/make-your-plan.js?v=6';
   plannerScript.defer=true;
+  plannerScript.addEventListener('load',reapplyCityEdition);
   document.head.appendChild(plannerScript);
 }

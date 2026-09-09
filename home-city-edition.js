@@ -86,7 +86,10 @@
   document.querySelectorAll('.polaroids .polaroid figcaption').forEach((caption, index) => {
     caption.textContent = ['Day in London', 'Weekend in London', 'A quiet London morning'][index] || caption.textContent;
   });
+  const circleCopy = document.querySelector('.circle-newsletter > div:nth-child(2) > p:not(.eyebrow)');
+  if (circleCopy) circleCopy.textContent = 'New London guides, thoughtful places and Better Together gatherings—sent occasionally, and always worth opening.';
   };
+  window.applyHomeCityEdition = applyCityEdition;
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyCityEdition);
   else applyCityEdition();
 })();
