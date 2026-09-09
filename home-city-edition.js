@@ -11,19 +11,32 @@
   });
   const summary = picker?.querySelector('summary');
   if (summary) summary.textContent = city === 'london' ? 'London' : 'Paris';
-  if (city !== 'london') return;
+  const section = document.querySelector('#cities');
+  if (!section) return;
+  const featuredCards = section.querySelector('.featured-city-cards');
+  const secondary = section.querySelector('.home-london-card');
+  featuredCards?.classList.add('is-single-city');
+  if (secondary) secondary.hidden = true;
+  if (city !== 'london') {
+    document.title = 'The Dog Friendly Guide · Paris';
+    const description = document.querySelector('meta[name="description"]');
+    if (description) description.content = 'A curated guide to beautiful dog-friendly cafés, restaurants, hotels and shops in Paris.';
+    const intro = section.querySelector('.ecosystem-copy');
+    if (intro) {
+      intro.querySelector('h2').textContent = 'Paris, thoughtfully shared.';
+      intro.querySelector('p:last-child').textContent = 'Our Paris edit brings together beautiful dog-friendly cafés, restaurants, hotels and shops — chosen arrondissement by arrondissement for how they feel and how genuinely they welcome you both.';
+    }
+    return;
+  }
   document.title = 'The Dog Friendly Guide · London';
   const description = document.querySelector('meta[name="description"]');
   if (description) description.content = 'A curated guide to beautiful dog-friendly cafés, restaurants, hotels and shops in London.';
-  const section = document.querySelector('#cities');
-  if (!section) return;
   const intro = section.querySelector('.ecosystem-copy');
   if (intro) {
     intro.querySelector('h2').textContent = 'London, thoughtfully shared.';
     intro.querySelector('p:last-child').textContent = 'Our London edit brings together beautiful dog-friendly cafés, restaurants, hotels and shops — chosen neighbourhood by neighbourhood for how they feel and how genuinely they welcome you both.';
   }
   const primary = section.querySelector('.paris-launch-card');
-  const secondary = section.querySelector('.home-london-card');
   if (primary) {
     primary.href = 'london-guide.html';
     const crop = primary.querySelector('.crop');
@@ -35,8 +48,6 @@
     if (preview) { preview.src = 'assets/places/workshop-coffee.webp'; preview.alt = 'A considered dog-friendly coffee stop in London'; }
     primary.querySelector('.launch-link').textContent = 'Browse the London guide →';
   }
-  if (secondary) secondary.hidden = true;
-  section.querySelector('.featured-city-cards')?.classList.add('is-single-city');
   const kicker = section.querySelector('.guide-preview-kicker');
   const guideIntro = section.querySelector('.guide-preview-intro');
   const rail = section.querySelector('.guide-preview-rail');
