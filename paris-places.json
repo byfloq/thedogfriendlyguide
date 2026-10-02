@@ -3,8 +3,8 @@
   "city": "Paris",
   "country": "France",
   "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
-  "lastUpdated": "2026-09-06",
-  "placeCount": 36,
+  "lastUpdated": "2026-10-02",
+  "placeCount": 29,
   "openingHours": {
     "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
     "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
@@ -26,17 +26,11 @@
     "pantoufle-paris": "Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed",
     "griffon-paris": "Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed",
     "colore-paris": "Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00",
-    "tekes-paris": "Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00",
-    "maison-mere": "Open 24 hours",
-    "kimpton-st-honore": "Open 24 hours",
-    "hoxton-paris": "Open 24 hours",
     "mesa-paris": "Open daily for breakfast, lunch and dinner",
     "white-coffee-marais": "Open daily",
     "noir-montmartre": "Open daily",
     "parisien-tete-de-chien": "Check Instagram for current hours",
     "cayu-canides-club": "Wed-Sun · Check Instagram for daily hours",
-    "vivide-paris": "Dinner Tue-Sat · Sun-Mon closed",
-    "season-paris": "Open daily · Walk-ins only",
     "jaja-paris": "Open daily for lunch and dinner",
     "cafe-charlot-paris": "Daily 07:00-02:00",
     "hotel-suzie-blue": "Open 24 hours",
@@ -362,8 +356,8 @@
       "coordinates": [2.3572985, 48.8596119],
       "images": [
         "assets/places/griffon-paris-2.jpg",
-        "assets/places/griffon-paris.jpg",
-        "assets/places/griffon-paris-3.jpg"
+        "assets/places/griffon-dining-room.jpg",
+        "assets/places/griffon-interior-sign.jpg"
       ]
     },
     {
@@ -381,74 +375,6 @@
         "assets/places/colore-paris.jpg",
         "assets/places/colore-paris-2.jpg",
         "assets/places/colore-paris-3.jpg"
-      ]
-    },
-    {
-      "key": "tekes-paris",
-      "name": "Tekés",
-      "arrondissement": 2,
-      "category": "restaurant",
-      "area": "etienne-marcel",
-      "meta": "Vegetable-led restaurant · Étienne Marcel",
-      "description": "A vibrant open-kitchen restaurant centred on vegetables, fire and Jerusalem-inspired flavours in the heart of the 2nd arrondissement.",
-      "instagram": "https://www.instagram.com/tekes_paris/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tek%C3%A9s%204%20bis%20Rue%20Saint-Sauveur%2075002%20Paris",
-      "coordinates": [2.3496513, 48.8658949],
-      "images": [
-        "assets/places/tekes-paris.webp",
-        "assets/places/tekes-paris-2.webp",
-        "assets/places/tekes-paris-3.webp"
-      ]
-    },
-    {
-      "key": "maison-mere",
-      "name": "Maison Mère",
-      "arrondissement": 9,
-      "category": "hotel",
-      "area": "cadet",
-      "meta": "Boutique hotel · Cadet",
-      "description": "A characterful four-star maison with art-filled rooms and a residential spirit, welcoming small dogs up to 10 kg in selected rooms.",
-      "instagram": "https://www.instagram.com/maisonmere.lovers/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison%20M%C3%A8re%207%20Rue%20Mayran%2075009%20Paris",
-      "coordinates": [2.34517, 48.8771595],
-      "images": [
-        "assets/places/maison-mere.jpg",
-        "assets/places/maison-mere-2.jpg",
-        "assets/places/maison-mere-3.jpg"
-      ]
-    },
-    {
-      "key": "kimpton-st-honore",
-      "name": "Kimpton St Honoré Paris",
-      "arrondissement": 2,
-      "category": "hotel",
-      "area": "opera",
-      "meta": "Luxury hotel · Opéra",
-      "description": "An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy - every size and breed is welcome at no extra charge.",
-      "instagram": "https://www.instagram.com/kimptonsthonore/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kimpton%20St%20Honor%C3%A9%20Paris%2027-29%20Boulevard%20des%20Capucines%2075002%20Paris",
-      "coordinates": [2.3305893, 48.870169],
-      "images": [
-        "assets/places/kimpton-st-honore.jpg",
-        "assets/places/kimpton-st-honore-2.jpg",
-        "assets/places/kimpton-st-honore-3.jpg"
-      ]
-    },
-    {
-      "key": "hoxton-paris",
-      "name": "The Hoxton, Paris",
-      "arrondissement": 2,
-      "category": "hotel",
-      "area": "sentier",
-      "meta": "Boutique hotel · Sentier",
-      "description": "A lively 18th-century hôtel particulier in Sentier with characterful rooms and a dog-friendly stay for one pup up to 20 kg, at no extra charge.",
-      "instagram": "https://www.instagram.com/thehoxtonhotel/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Hoxton%20Paris%2030-32%20Rue%20du%20Sentier%2075002%20Paris",
-      "coordinates": [2.346506, 48.870201],
-      "images": [
-        "assets/places/hoxton-paris-instagram-1.jpg",
-        "assets/places/hoxton-paris-instagram-2.jpg",
-        "assets/places/hoxton-paris-instagram-3.jpg"
       ]
     },
     {
@@ -485,7 +411,7 @@
       "instagram": "https://www.instagram.com/parisien_tete_de_chien/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parisien%20Tete%20de%20Chien%2019%20Rue%20des%20Moines%2075017%20Paris",
       "coordinates": [2.3190036, 48.8885334],
-      "images": ["assets/places/parisien-tete-de-chien-1.jpg", "assets/places/parisien-tete-de-chien-2.jpg", "assets/places/parisien-tete-de-chien-3.jpg"]
+      "images": ["assets/places/parisien-colourful-interior.jpg", "assets/places/parisien-tete-de-chien-2.jpg", "assets/places/parisien-tete-de-chien-3.jpg"]
     },
     {
       "key": "cayu-canides-club", "name": "CAYU Canidés Club", "arrondissement": 19, "category": "shop", "area": "buttes-chaumont",
@@ -494,25 +420,7 @@
       "instagram": "https://www.instagram.com/cayu.canidesclub/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CAYU%20Canides%20Club%2028%20Rue%20Bouret%2075019%20Paris",
       "coordinates": [2.3743721, 48.88157],
-      "images": ["assets/places/cayu-1.jpg", "assets/places/cayu-2.jpg", "assets/places/cayu-3.jpg"]
-    },
-    {
-      "key": "vivide-paris", "name": "Vivide", "arrondissement": 18, "category": "restaurant", "area": "montmartre",
-      "meta": "Plant-based restaurant · Montmartre",
-      "description": "A produce-driven, plant-based dinner restaurant near Abbesses, shaped around expressive seasonal plates and an intimate evening mood.",
-      "instagram": "https://www.instagram.com/vivide_paris/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vivide%203%20Rue%20Dancourt%2075018%20Paris",
-      "coordinates": [2.3417766, 48.8828675],
-      "images": ["assets/places/vivide-1.jpg", "assets/places/vivide-2.jpg", "assets/places/vivide-3.jpg"]
-    },
-    {
-      "key": "season-paris", "name": "Season Paris", "arrondissement": 3, "category": "restaurant", "area": "le-marais",
-      "meta": "All-day restaurant · Haut-Marais",
-      "description": "A lively all-day Marais address for colourful breakfast plates, generous lunches and the polished comfort-food style Season has served since 2015.",
-      "instagram": "https://www.instagram.com/seasonparis/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Season%201%20Rue%20Charles-Francois%20Dupuis%2075003%20Paris",
-      "coordinates": [2.3628352, 48.8651695],
-      "images": ["assets/places/season-paris-1.jpg", "assets/places/season-paris-2.jpg", "assets/places/season-paris-3.jpg"]
+      "images": ["assets/places/cayu-knitwear-dog.jpg", "assets/places/cayu-window-accessories.jpg", "assets/places/cayu-patterned-collar.jpg"]
     },
     {
       "key": "jaja-paris", "name": "Jaja", "arrondissement": 4, "category": "restaurant", "area": "le-marais",
@@ -530,7 +438,7 @@
       "instagram": "https://www.instagram.com/cafecharlotparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Charlot%2038%20Rue%20de%20Bretagne%2075003%20Paris",
       "coordinates": [2.362468, 48.863056],
-      "images": ["assets/places/cafe-charlot-1.jpg", "assets/places/cafe-charlot-2.jpg", "assets/places/cafe-charlot-3.jpg"]
+      "images": ["assets/places/cafe-charlot-1.jpg", "assets/places/cafe-charlot-2.jpg", "assets/places/cafe-charlot-vintage-sign.jpg"]
     },
     {
       "key": "hotel-suzie-blue", "name": "Hôtel Suzie Blue", "arrondissement": 3, "category": "hotel", "area": "le-marais",
@@ -548,7 +456,7 @@
       "instagram": "https://www.instagram.com/hoyparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HOY%20Paris%2068%20Rue%20des%20Martyrs%2075009%20Paris",
       "coordinates": [2.3401281, 48.8811485],
-      "images": ["assets/places/hoy-paris-instagram-1.jpg", "assets/places/hoy-paris-instagram-2.jpg", "assets/places/hoy-paris-instagram-3.jpg"]
+      "images": ["assets/places/hoy-guest-room.jpg", "assets/places/hoy-paris-instagram-2.jpg", "assets/places/hoy-paris-instagram-3.jpg"]
     }
   ]
 }

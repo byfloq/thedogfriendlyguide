@@ -122,7 +122,7 @@
     const key = window.TDFG_GOOGLE_MAPS_API_KEY;
     if (!key) { setup.hidden = false; mapElement.classList.add('google-map-disabled'); nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>showStatus('The live map needs to finish loading before we can find places near you.')); return; }
     try {
-      const [catalogue] = await Promise.all([fetch('paris-places.json?v=10').then(response => response.json()), loadGoogle(key)]);
+      const [catalogue] = await Promise.all([fetch('paris-places.json?v=11').then(response => response.json()), loadGoogle(key)]);
       defineHTMLMarker();
       places = catalogue.places.filter(place => Array.isArray(place.coordinates)).map(place => ({ ...place, openingHours: catalogue.openingHours[place.key] }));
       buildDistrictFilters();

@@ -132,11 +132,11 @@
   background-size:contain;
   box-shadow:inset 0 0 0 1px rgba(34,29,24,.05);
 }
-/* Café originals are individually reviewed for this consistent editorial crop.
+/* Paris originals are individually reviewed for this consistent editorial crop.
    No blurred duplicate, letterboxing, stretching or hover zoom. */
-.paris-guide-page .cafe-photography::before,
-.paris-guide-page .cafe-photography::after{content:none}
-.paris-guide-page .cafe-photo{
+.paris-guide-page .editorial-photography::before,
+.paris-guide-page .editorial-photography::after{content:none}
+.paris-guide-page .editorial-photo{
   display:block;
   position:absolute;
   inset:0;

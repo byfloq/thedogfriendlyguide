@@ -2,8 +2,8 @@
   const params=new URLSearchParams(location.search);
   const slug=params.get('plan')||'slow-morning-montmartre';
   const [planData,placeData]=await Promise.all([
-    fetch('paris-plans.json?v=2').then(r=>r.json()),
-    fetch('paris-places.json?v=10').then(r=>r.json())
+    fetch('paris-plans.json?v=3').then(r=>r.json()),
+    fetch('paris-places.json?v=11').then(r=>r.json())
   ]);
   const plan=planData.plans.find(item=>item.slug===slug)||planData.plans[0];
   const placeByKey=new Map(placeData.places.map(place=>[place.key,place]));

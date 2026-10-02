@@ -74,32 +74,12 @@
     {
       title: 'Griffon', meta: 'Café, restaurant & bar · Le Marais', area: 'le-marais', key: 'griffon-paris', category: 'restaurant',
       description: 'A characterful Marais hideaway for coffee, fresh food and natural wine, with collected interiors and a leafy secret terrace.',
-      instagram: 'https://www.instagram.com/griffon.paris/', maps: 'Griffon 55 bis Rue des Francs-Bourgeois 75004 Paris', images: ['assets/places/griffon-paris-2.jpg', 'assets/places/griffon-paris.jpg', 'assets/places/griffon-paris-3.jpg']
+      instagram: 'https://www.instagram.com/griffon.paris/', maps: 'Griffon 55 bis Rue des Francs-Bourgeois 75004 Paris', images: ['assets/places/griffon-paris-2.jpg', 'assets/places/griffon-dining-room.jpg', 'assets/places/griffon-interior-sign.jpg']
     },
     {
       title: 'Coloré', meta: 'French-Japanese restaurant · Montmartre', area: 'montmartre', key: 'colore-paris', category: 'restaurant',
       description: 'A quietly creative Montmartre restaurant where seasonal French produce meets delicate Japanese influences and natural wine.',
       instagram: 'https://www.instagram.com/colore.paris/', maps: 'Coloré 20 Rue du Ruisseau 75018 Paris', images: ['assets/places/colore-paris.jpg', 'assets/places/colore-paris-2.jpg', 'assets/places/colore-paris-3.jpg']
-    },
-    {
-      title: 'Tekés', meta: 'Vegetable-led restaurant · Étienne Marcel', area: 'etienne-marcel', key: 'tekes-paris', category: 'restaurant',
-      description: 'A vibrant open-kitchen restaurant centred on vegetables, fire and Jerusalem-inspired flavours in the heart of the 2nd arrondissement.',
-      instagram: 'https://www.instagram.com/tekes_paris/', maps: 'Tekés 4 bis Rue Saint-Sauveur 75002 Paris', images: ['assets/places/tekes-paris.webp', 'assets/places/tekes-paris-2.webp', 'assets/places/tekes-paris-3.webp']
-    },
-    {
-      title: 'Maison Mère', meta: 'Boutique hotel · Cadet', area: 'cadet', key: 'maison-mere', category: 'hotel',
-      description: 'A characterful four-star maison with art-filled rooms and a residential spirit, welcoming small dogs up to 10 kg in selected rooms.',
-      instagram: 'https://www.instagram.com/maisonmere.lovers/', maps: 'Maison Mère 7 Rue Mayran 75009 Paris', images: ['assets/places/maison-mere.jpg', 'assets/places/maison-mere-2.jpg', 'assets/places/maison-mere-3.jpg']
-    },
-    {
-      title: 'Kimpton St Honoré Paris', meta: 'Luxury hotel · Opéra', area: 'opera', key: 'kimpton-st-honore', category: 'hotel',
-      description: 'An Art Deco-inspired Paris stay with a rooftop, spa and exceptionally generous pet policy - every size and breed is welcome at no extra charge.',
-      instagram: 'https://www.instagram.com/kimptonsthonore/', maps: 'Kimpton St Honoré Paris 27-29 Boulevard des Capucines 75002 Paris', images: ['assets/places/kimpton-st-honore.jpg', 'assets/places/kimpton-st-honore-2.jpg', 'assets/places/kimpton-st-honore-3.jpg']
-    },
-    {
-      title: 'The Hoxton, Paris', meta: 'Boutique hotel · Sentier', area: 'sentier', key: 'hoxton-paris', category: 'hotel',
-      description: 'A lively 18th-century hôtel particulier in Sentier with characterful rooms and a dog-friendly stay for one pup up to 20 kg, at no extra charge.',
-      instagram: 'https://www.instagram.com/thehoxtonhotel/', maps: 'The Hoxton Paris 30-32 Rue du Sentier 75002 Paris', images: ['assets/places/hoxton-paris-instagram-1.jpg', 'assets/places/hoxton-paris-instagram-2.jpg', 'assets/places/hoxton-paris-instagram-3.jpg']
     },
     {
       title: 'Mesa', meta: 'Plant-based café & restaurant · Rue des Martyrs', area: 'montmartre', key: 'mesa-paris', category: 'cafe',
@@ -115,19 +95,11 @@
     },
     {
       title: 'Parisien Tête de Chien', meta: 'Dog-friendly café, shop & yoga studio · Batignolles', area: 'batignolles', key: 'parisien-tete-de-chien', category: 'shop',
-      description: 'A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.', instagram: 'https://www.instagram.com/parisien_tete_de_chien/', maps: 'Parisien Tete de Chien 19 Rue des Moines 75017 Paris', images: ['assets/places/parisien-tete-de-chien-1.jpg', 'assets/places/parisien-tete-de-chien-2.jpg', 'assets/places/parisien-tete-de-chien-3.jpg']
+      description: 'A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.', instagram: 'https://www.instagram.com/parisien_tete_de_chien/', maps: 'Parisien Tete de Chien 19 Rue des Moines 75017 Paris', images: ['assets/places/parisien-colourful-interior.jpg', 'assets/places/parisien-tete-de-chien-2.jpg', 'assets/places/parisien-tete-de-chien-3.jpg']
     },
     {
       title: 'CAYU Canidés Club', meta: 'Independent dog shop · Buttes-Chaumont', area: 'buttes-chaumont', key: 'cayu-canides-club', category: 'shop',
-      description: 'A Paris-designed dog shop on Rue Bouret, bringing together thoughtful accessories, an independent label and a community-minded club spirit.', instagram: 'https://www.instagram.com/cayu.canidesclub/', maps: 'CAYU Canides Club 28 Rue Bouret 75019 Paris', images: ['assets/places/cayu-1.jpg', 'assets/places/cayu-2.jpg', 'assets/places/cayu-3.jpg']
-    },
-    {
-      title: 'Vivide', meta: 'Plant-based restaurant · Montmartre', area: 'montmartre', key: 'vivide-paris', category: 'restaurant',
-      description: 'A produce-driven, plant-based dinner restaurant near Abbesses, shaped around expressive seasonal plates and an intimate evening mood.', instagram: 'https://www.instagram.com/vivide_paris/', maps: 'Vivide 3 Rue Dancourt 75018 Paris', images: ['assets/places/vivide-1.jpg', 'assets/places/vivide-2.jpg', 'assets/places/vivide-3.jpg']
-    },
-    {
-      title: 'Season Paris', meta: 'All-day restaurant · Haut-Marais', area: 'le-marais', key: 'season-paris', category: 'restaurant',
-      description: 'A lively all-day Marais address for colourful breakfast plates, generous lunches and the polished comfort-food style Season has served since 2015.', instagram: 'https://www.instagram.com/seasonparis/', maps: 'Season 1 Rue Charles-Francois Dupuis 75003 Paris', images: ['assets/places/season-paris-1.jpg', 'assets/places/season-paris-2.jpg', 'assets/places/season-paris-3.jpg']
+      description: 'A Paris-designed dog shop on Rue Bouret, bringing together thoughtful accessories, an independent label and a community-minded club spirit.', instagram: 'https://www.instagram.com/cayu.canidesclub/', maps: 'CAYU Canides Club 28 Rue Bouret 75019 Paris', images: ['assets/places/cayu-knitwear-dog.jpg', 'assets/places/cayu-window-accessories.jpg', 'assets/places/cayu-patterned-collar.jpg']
     },
     {
       title: 'Jaja', meta: 'Restaurant & wine · Le Marais', area: 'le-marais', key: 'jaja-paris', category: 'restaurant',
@@ -135,7 +107,7 @@
     },
     {
       title: 'Café Charlot', meta: 'Parisian bistro · Haut-Marais', area: 'le-marais', key: 'cafe-charlot-paris', category: 'restaurant',
-      description: 'A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.', instagram: 'https://www.instagram.com/cafecharlotparis/', maps: 'Cafe Charlot 38 Rue de Bretagne 75003 Paris', images: ['assets/places/cafe-charlot-1.jpg', 'assets/places/cafe-charlot-2.jpg', 'assets/places/cafe-charlot-3.jpg']
+      description: 'A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.', instagram: 'https://www.instagram.com/cafecharlotparis/', maps: 'Cafe Charlot 38 Rue de Bretagne 75003 Paris', images: ['assets/places/cafe-charlot-1.jpg', 'assets/places/cafe-charlot-2.jpg', 'assets/places/cafe-charlot-vintage-sign.jpg']
     },
     {
       title: 'Hôtel Suzie Blue', meta: 'Hotel & coffee shop · Le Marais', area: 'le-marais', key: 'hotel-suzie-blue', category: 'hotel',
@@ -143,7 +115,7 @@
     },
     {
       title: 'HOY Paris', meta: 'Wellness hotel · Rue des Martyrs', area: 'montmartre', key: 'hoy-paris', category: 'hotel',
-      description: 'A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.', instagram: 'https://www.instagram.com/hoyparis/', maps: 'HOY Paris 68 Rue des Martyrs 75009 Paris', images: ['assets/places/hoy-paris-instagram-1.jpg', 'assets/places/hoy-paris-instagram-2.jpg', 'assets/places/hoy-paris-instagram-3.jpg']
+      description: 'A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.', instagram: 'https://www.instagram.com/hoyparis/', maps: 'HOY Paris 68 Rue des Martyrs 75009 Paris', images: ['assets/places/hoy-guest-room.jpg', 'assets/places/hoy-paris-instagram-2.jpg', 'assets/places/hoy-paris-instagram-3.jpg']
     }
   ];
 
@@ -185,17 +157,11 @@
     'Pantoufle': ['arr-19', 'Restaurant & wine bar · 19th arrondissement · Buttes-Chaumont'],
     'Griffon': ['arr-4', 'Café, restaurant & bar · 4th arrondissement · Le Marais'],
     'Coloré': ['arr-18', 'French-Japanese restaurant · 18th arrondissement · Montmartre'],
-    'Tekés': ['arr-2', 'Vegetable-led restaurant · 2nd arrondissement · Étienne Marcel'],
-    'Maison Mère': ['arr-9', 'Boutique hotel · 9th arrondissement · Cadet'],
-    'Kimpton St Honoré Paris': ['arr-2', 'Luxury hotel · 2nd arrondissement · Opéra'],
-    'The Hoxton, Paris': ['arr-2', 'Boutique hotel · 2nd arrondissement · Sentier'],
     'Mesa': ['arr-9', 'Plant-based café & restaurant · 9th arrondissement · Rue des Martyrs'],
     'WHITE Coffee': ['arr-4', 'Specialty coffee & matcha · 4th arrondissement · Le Marais'],
     'NOIR Coffee Shop': ['arr-18', 'Coffee shop & roastery · 18th arrondissement · Montmartre'],
     'Parisien Tête de Chien': ['arr-17', 'Dog-friendly café, shop & yoga studio · 17th arrondissement · Batignolles'],
     'CAYU Canidés Club': ['arr-19', 'Independent dog shop · 19th arrondissement · Buttes-Chaumont'],
-    'Vivide': ['arr-18', 'Plant-based restaurant · 18th arrondissement · Montmartre'],
-    'Season Paris': ['arr-3', 'All-day restaurant · 3rd arrondissement · Haut-Marais'],
     'Jaja': ['arr-4', 'Restaurant & wine · 4th arrondissement · Le Marais'],
     'Café Charlot': ['arr-3', 'Parisian bistro · 3rd arrondissement · Haut-Marais'],
     'Hôtel Suzie Blue': ['arr-3', 'Hotel & coffee shop · 3rd arrondissement · Le Marais'],
@@ -223,17 +189,11 @@
     'Pantoufle': 'Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed',
     'Griffon': 'Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed',
     'Coloré': 'Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00',
-    'Tekés': 'Daily 12:00-14:30 & 19:00-22:30 · Sun brunch 12:00-15:00',
-    'Maison Mère': 'Open 24 hours',
-    'Kimpton St Honoré Paris': 'Open 24 hours',
-    'The Hoxton, Paris': 'Open 24 hours',
     'Mesa': 'Open daily for breakfast, lunch and dinner',
     'WHITE Coffee': 'Open daily',
     'NOIR Coffee Shop': 'Open daily',
     'Parisien Tête de Chien': 'Check Instagram for current hours',
     'CAYU Canidés Club': 'Wed-Sun · Check Instagram for daily hours',
-    'Vivide': 'Dinner Tue-Sat · Sun-Mon closed',
-    'Season Paris': 'Open daily · Walk-ins only',
     'Jaja': 'Open daily for lunch and dinner',
     'Hôtel Suzie Blue': 'Open 24 hours',
     'HOY Paris': 'Open 24 hours'
@@ -421,8 +381,24 @@
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
 
-  // Reviewed originals: never use social-media thumbnail fragments in café cards.
-  const cafePhotoSubjects = {
+  // Reviewed originals and descriptive subjects for every Paris gallery.
+  const placePhotoSubjects = {
+    "Pantoufle": ["Seasonal greens and grated cheese on a ceramic plate", "Noodles and green vegetables in a deep ceramic bowl", "Roasted red peppers on a white plate"],
+    "Griffon": ["A seafood dish with cucumber on a dark ceramic plate", "Griffon’s dining room with chandeliers and colourful chairs", "Griffon’s illuminated sign and warm pendant lights"],
+    "Coloré": ["Lunch and wine on Coloré’s pavement tables", "Two cream-filled pastries on a dark plate", "Coffee and drinks on a pavement table viewed through the window"],
+    "Jaja": ["Sliced steak served in a metal dish", "A wine bottle beside woven bistro chairs", "Soft serve in a metal dessert cup"],
+    "Café Charlot": ["Café Charlot’s corner terrace and red awning", "A burger, fries and red wine on a bistro table", "A vintage newspaper sign inside Café Charlot"],
+    "Hôtel Suzie Blue": ["Suzie Blue’s entrance and coffee shop awning", "The colourful lounge and bookshelves at Suzie Blue", "A guest room with green bedding and red cushions"],
+    "HOY Paris": ["A light-filled guest room with a green bed and sloping ceiling", "A canopy bed with yellow cushions", "A green-tiled bathroom viewed through the bedroom doorway"],
+    "Barkers + Brothers": ["A white dog resting inside Barkers + Brothers", "A dog relaxing beside the café’s seating", "Barkers + Brothers’ open storefront"],
+    "Gino's Paris": ["Dog accessories and beds inside Gino’s boutique", "A dog being washed in the grooming area", "A dog watching a cup of treats"],
+    "Animal Particulier": ["A dachshund in a green dog bed", "A customer holding a small dog outside", "A dog travelling in a beige carrier"],
+    "Casa del Doggo": ["A dog enjoying a creamy treat outside the shop", "A dachshund wearing a red sweater on the sofa", "A dog enjoying a treat in the pink café"],
+    "Le Bone Appart": ["A dog dressed as a chef beside the café table", "A dog cuddling a colourful toy", "A dog at Le Bone Appart’s doorway"],
+    "Petsochic": ["A white dog on the boutique’s display table", "A black dog beneath the Petsochic sign", "A Shiba Inu on the boutique’s display table"],
+    "Parisien Tête de Chien": ["Colourful seating and accessories inside Parisien Tête de Chien", "A table set with brunch dishes", "A dog beside a pastry and café window"],
+    "CAYU Canidés Club": ["A dog wearing green knitwear from CAYU’s collection", "Colourful dog-walking accessories in CAYU’s pink window", "A patterned collar from CAYU’s collection"],
+
     "Simple Coffee": [
       "Pastry balanced on a Simple Coffee cup",
       "Open café window and pavement benches",
@@ -495,18 +471,27 @@
     ]
   };
 
+  // Focal points are reviewed in the same 4:5 frame at desktop and mobile sizes.
+  const photoPositions = {
+    'grave-cafe.jpg': '50% 72%',
+    'grave-regular-dogs.jpg': '50% 60%',
+    'barkers-brothers.jpg': '85% 50%',
+    'hoy-guest-room.jpg': '63% 50%',
+    'cayu-knitwear-dog.jpg': '90% 50%'
+  };
+
   cards.filter(card => card.dataset.gallery).forEach(card => {
     const thumb = card.querySelector('.place-thumb');
     const placeTitle = card.querySelector('h3')?.textContent?.trim() || 'Place';
     const images = card.dataset.gallery.split('|').map(value => value.trim()).filter(Boolean);
     if (!thumb || images.length < 2) return;
 
-    const subjects = document.body.classList.contains('paris-guide-page') && card.dataset.category === 'cafe'
-      ? cafePhotoSubjects[placeTitle] : null;
+    const subjects = document.body.classList.contains('paris-guide-page')
+      ? placePhotoSubjects[placeTitle] : null;
     const photograph = subjects ? document.createElement('img') : null;
     if (photograph) {
-      thumb.classList.add('cafe-photography');
-      photograph.className = 'cafe-photo';
+      thumb.classList.add('editorial-photography');
+      photograph.className = 'editorial-photo';
       photograph.decoding = 'auto';
       thumb.prepend(photograph);
     }
@@ -528,9 +513,7 @@
       if (photograph) {
         photograph.src = images[cardIndex];
         photograph.alt = `${placeTitle} — ${subjects[cardIndex]}`;
-        // Keep the dogs and the doorway together in the tall Grave originals.
-        photograph.style.objectPosition = images[cardIndex].endsWith('grave-cafe.jpg') ? '50% 72%'
-          : images[cardIndex].endsWith('grave-regular-dogs.jpg') ? '50% 60%' : '50% 50%';
+        photograph.style.objectPosition = photoPositions[images[cardIndex].split('/').pop()] || '50% 50%';
       }
       thumb.setAttribute('aria-label', `${placeTitle} — photo ${cardIndex + 1} of ${images.length}`);
       cardDots.forEach((dot, dotIndex) => dot.setAttribute('aria-pressed', String(dotIndex === cardIndex)));

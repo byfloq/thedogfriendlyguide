@@ -37,3 +37,16 @@ The approved third photographs for Mardi and WHITE Coffee were added after a des
 
 - `assets/places/mardi-interior-approved.jpg` — interior, published by [Architectural Digest](https://www.admagazine.com/articulos/paris-cafes-tres-chic-que-no-te-puedes-perder), credited “Cortesía Mardi”.
 - `assets/places/white-marais-coffee-selection.jpg` — coffee bags, from [WHITE Coffee’s official Marais gallery](https://cafes.white-coffee.com/en/restaurant-coffee-shop/rue-vieille-du-temple-paris-4/).
+
+## Restaurant, hotel and dog-shop photography
+
+On 2 October 2026, all 45 gallery slides across five restaurants, two hotels and eight dog shops were reviewed at 1280px desktop and 390px mobile widths. Paris cards share a native image element with a 4:5 cover frame and individually reviewed focal points. Each remaining place retains three photos. The catalogue contains 29 places; removed recommendations are also removed from route suggestions.
+
+Replacement photo sources:
+
+- `griffon-dining-room.jpg` and `griffon-interior-sign.jpg`: [Griffon official gallery](https://griffon.paris/), source files `DSC_0458-scaled-e1678733150410.jpg` and `Diapo-1.png`.
+- `cafe-charlot-vintage-sign.jpg`: [Café Charlot official website](https://www.lecharlot-paris.com/en/), `img_8894-550x550.jpg`.
+- `hoy-guest-room.jpg`: [HOY official room gallery](https://www.hoyparis.com/hotel), Sophia van den Hoek / @un_fold_ed (8).
+- `cayu-knitwear-dog.jpg`: [CAYU official journal](https://www.cayucanidesclub.com/blogs/infos/cayu-canides-club-le-dog-cafe-et-boutique-incontournable-de-paris-19e), `Home_495b58d0-67b9-4647-a51e-009bf756269d.jpg`.
+- `cayu-window-accessories.jpg` and `cayu-patterned-collar.jpg`: [CAYU official collection](https://www.cayucanidesclub.com/), `787E762F-CF9C-4E4E-B39E-88F381F15B0A.jpg` and `FullSizeRender_7be07d1b-419e-4afc-bbb1-3fee8b1d813a.jpg`.
+- `parisien-colourful-interior.jpg`: [Lump, Parisien Tête de Chien](https://www.lumpmedia.fr/lieux/parisien-tete-de-chien-tiers-lieu-dog-friendly-paris17), Canelle & Paupiette, `IMG_4231.jpg`.

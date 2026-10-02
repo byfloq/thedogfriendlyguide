@@ -14,9 +14,9 @@
       evening:{title:'An Early Evening in Le Marais',places:['Merlo Café','Place des Vosges','Le Bone Appart','Jaja Paris']}
     },
     leftbank:{
-      morning:{title:'A Left Bank Morning Together',places:['Niwa','Quiet streets around Vaneau','Petsochic','Season Paris']},
-      afternoon:{title:'An Unhurried Left Bank Afternoon',places:['Nami Coffee','Saint-Germain streets','Petsochic','Tekés']},
-      evening:{title:'A Golden Hour Along the Seine',places:['Nami Coffee','The riverside bookstalls','A slow Seine walk','Tekés']}
+      morning:{title:'A Left Bank Morning Together',places:['Niwa','Quiet streets around Vaneau','Petsochic']},
+      afternoon:{title:'An Unhurried Left Bank Afternoon',places:['Nami Coffee','Saint-Germain streets','Petsochic']},
+      evening:{title:'A Golden Hour Along the Seine',places:['Nami Coffee','The riverside bookstalls','A slow Seine walk']}
     }
   };
   const guideCards=[...anchor.querySelectorAll('.guide-preview-card')];

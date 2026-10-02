@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03",
+  "lastUpdated": "2026-10-02",
   "plans": [
     {
       "slug": "slow-morning-montmartre",
@@ -50,11 +50,9 @@
       "intro": "A gentle late-afternoon route along the Seine, moving through the Left Bank with time to pause before an early dinner.",
       "cover": "assets/guides/paris-day-dog.png",
       "tone": "olive",
-      "stopKeys": ["nami-coffee", "tekes-paris", "season-paris", "jaja-paris"],
+      "stopKeys": ["nami-coffee", "jaja-paris"],
       "stopNotes": [
         "Begin with something carefully made before walking towards the river.",
-        "Cross into the Left Bank and pause somewhere calm and design-led.",
-        "Let the longest part of the route follow the Seine at an easy pace.",
         "Finish with an early dinner as the light softens over Paris."
       ]
     },
@@ -69,11 +67,10 @@
       "intro": "A relaxed Sunday around Saint-Germain, designed for wandering slowly between coffee, quiet streets and a generous lunch.",
       "cover": "assets/guides/all-places-dog.png",
       "tone": "terracotta",
-      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "season-paris", "petsochic", "jaja-paris"],
+      "stopKeys": ["partisan-cafe", "broken-arm-cafeteria", "petsochic", "jaja-paris"],
       "stopNotes": [
         "Start slowly with coffee and something baked.",
         "Walk the quieter streets while the neighbourhood is still calm.",
-        "Pause somewhere comfortable for both of you.",
         "Browse one thoughtful stop chosen with your dog in mind.",
         "End with a long, easy lunch before heading home."
       ]
