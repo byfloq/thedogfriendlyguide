@@ -89,9 +89,9 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grave%20Cafe%20Le%20Marais%20Paris%20France",
       "coordinates": [2.3563574, 48.8639862],
       "images": [
-        "assets/places/grave-instagram-1.jpg",
-        "assets/places/grave-instagram-2.jpg",
-        "assets/places/grave-instagram-3.jpg"
+        "assets/places/grave-cafe.jpg",
+        "assets/places/grave-peach-cake-hq.jpg",
+        "assets/places/grave-regular-dogs.jpg"
       ]
     },
     {
@@ -108,7 +108,7 @@
       "images": [
         "assets/places/cuvee-exterior-new.jpg",
         "assets/places/cuvee-interior-new.jpg",
-        "assets/places/cuvee-instagram-new.jpg"
+        "assets/places/cuvee-drinks-hq.jpg"
       ]
     },
     {
@@ -125,7 +125,7 @@
       "images": [
         "assets/places/sevenly-interior-new.jpg",
         "assets/places/sevenly-cakes-new.jpg",
-        "assets/places/sevenly-instagram-new.jpg"
+        "assets/places/sevenly-space-hq.jpg"
       ]
     },
     {
@@ -157,8 +157,8 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clove%20Coffee%20Shop%2014%20Rue%20Chappe%2075018%20Paris",
       "coordinates": [2.3418277, 48.8846475],
       "images": [
-        "assets/places/clove-instagram-1.jpg",
-        "assets/places/clove-instagram-2.jpg",
+        "assets/places/clove-friends-hq.jpg",
+        "assets/places/clove-coffee-hq.jpg",
         "assets/places/clove-instagram-3.jpg"
       ]
     },
@@ -174,9 +174,8 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
       "coordinates": [2.3874972, 48.8762879],
       "images": [
-        "assets/places/mardi-instagram-2.jpg",
-        "assets/places/mardi-instagram-3.jpg",
-        "assets/places/mardi-instagram-1.jpg"
+        "assets/places/mardi-facade.jpg",
+        "assets/places/mardi-baked-goods-hq.jpg"
       ]
     },
     {
@@ -226,7 +225,7 @@
       "coordinates": [2.3674112, 48.8571488],
       "images": [
         "assets/places/foret-instagram-1.jpg",
-        "assets/places/foret-instagram-2.jpg",
+        "assets/places/foret-foret-dog-space.jpg",
         "assets/places/foret-instagram-3.jpg"
       ]
     },
@@ -467,7 +466,7 @@
       "instagram": "https://www.instagram.com/drink.white/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
       "coordinates": [2.3570133, 48.8567636],
-      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg", "assets/places/white-instagram-3.jpg"]
+      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg"]
     },
     {
       "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",

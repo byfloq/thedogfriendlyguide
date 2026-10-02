@@ -26,3 +26,9 @@ Repository: `https://github.com/byfloq/thedogfriendlyguide`
 Production catalogue: `https://thedogfriendlyguide.com/paris-places.json`
 
 Update the catalogue whenever a Paris recommendation is added, removed or edited so the website and app remain aligned.
+
+## Café photography
+
+Paris café galleries were visually reviewed on 2 October 2026 at 1280px desktop and 390px mobile widths. All 14 cafés and all 40 selected slides were checked, including carousel navigation.
+
+Use complete, clear photographs from the existing source collection rather than cropped social-media thumbnails. Review each image in the actual 4:5 card frame, including its focal point, before adding it. Do not add filler just to reach three slides. Keep the gallery arrays in `city-guide.js` and `paris-places.json` in sync, and update the descriptive alt text when replacing a photo.

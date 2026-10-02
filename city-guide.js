@@ -10,13 +10,13 @@
       title: 'Clove Coffee Shop', meta: 'Specialty coffee · Montmartre', area: 'montmartre', key: 'clove-coffee-shop', category: 'cafe',
       description: 'A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.',
       instagram: 'https://www.instagram.com/clovecoffeeshop/', maps: 'Clove Coffee Shop 14 Rue Chappe 75018 Paris',
-      images: ['assets/places/clove-instagram-1.jpg', 'assets/places/clove-instagram-2.jpg', 'assets/places/clove-instagram-3.jpg']
+      images: ['assets/places/clove-friends-hq.jpg', 'assets/places/clove-coffee-hq.jpg', 'assets/places/clove-instagram-3.jpg']
     },
     {
       title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-instagram-2.jpg', 'assets/places/mardi-instagram-3.jpg', 'assets/places/mardi-instagram-1.jpg']
+      images: ['assets/places/mardi-facade.jpg', 'assets/places/mardi-baked-goods-hq.jpg']
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
@@ -34,7 +34,7 @@
       title: 'Forêt Forêt', meta: 'Specialty coffee & tea · Le Marais', area: 'le-marais', key: 'foret-foret', category: 'cafe',
       description: 'A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.',
       instagram: 'https://www.instagram.com/foretforet_paris/', maps: 'Forêt Forêt 64 Rue des Tournelles 75003 Paris',
-      images: ['assets/places/foret-instagram-1.jpg', 'assets/places/foret-instagram-2.jpg', 'assets/places/foret-instagram-3.jpg']
+      images: ['assets/places/foret-instagram-1.jpg', 'assets/places/foret-foret-dog-space.jpg', 'assets/places/foret-instagram-3.jpg']
     },
     {
       title: 'Barkers + Brothers', meta: 'Dog shop & café · Montmartre', area: 'montmartre', key: 'barkers-brothers', category: 'shop',
@@ -107,7 +107,7 @@
     },
     {
       title: 'WHITE Coffee', meta: 'Specialty coffee & matcha · Le Marais', area: 'le-marais', key: 'white-coffee-marais', category: 'cafe',
-      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-2.jpg', 'assets/places/white-instagram-3.jpg']
+      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-2.jpg']
     },
     {
       title: 'NOIR Coffee Shop', meta: 'Coffee shop & roastery · Montmartre', area: 'montmartre', key: 'noir-montmartre', category: 'cafe',
@@ -341,9 +341,9 @@
   const editor = cards[0];
   const cardGalleries = {
     'Merlo Café': ['assets/places/merlo-storefront-hq.jpg', 'assets/places/merlo-coffee-cake-hq.jpg', 'assets/places/merlo-dog-snow-hq.jpg'],
-    'Grave Café': ['assets/places/grave-instagram-1.jpg', 'assets/places/grave-instagram-2.jpg', 'assets/places/grave-instagram-3.jpg'],
-    'Cuvée Noire': ['assets/places/cuvee-exterior-new.jpg', 'assets/places/cuvee-interior-new.jpg', 'assets/places/cuvee-instagram-new.jpg'],
-    'Sevenly Heart': ['assets/places/sevenly-interior-new.jpg', 'assets/places/sevenly-cakes-new.jpg', 'assets/places/sevenly-instagram-new.jpg'],
+    'Grave Café': ['assets/places/grave-cafe.jpg', 'assets/places/grave-peach-cake-hq.jpg', 'assets/places/grave-regular-dogs.jpg'],
+    'Cuvée Noire': ['assets/places/cuvee-exterior-new.jpg', 'assets/places/cuvee-interior-new.jpg', 'assets/places/cuvee-drinks-hq.jpg'],
+    'Sevenly Heart': ['assets/places/sevenly-interior-new.jpg', 'assets/places/sevenly-cakes-new.jpg', 'assets/places/sevenly-space-hq.jpg'],
     'Nami Coffee': ['assets/places/nami-facade-new.jpg', 'assets/places/nami-food-new.jpg', 'assets/places/nami-robie-new.jpg']
   };
   cards.forEach(card => {
@@ -421,14 +421,95 @@
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
 
+  // Reviewed originals: never use social-media thumbnail fragments in café cards.
+  const cafePhotoSubjects = {
+    "Simple Coffee": [
+      "Pastry balanced on a Simple Coffee cup",
+      "Open café window and pavement benches",
+      "The complete Simple Coffee corner storefront"
+    ],
+    "Merlo Café": [
+      "Merlo’s red storefront and pavement stools",
+      "Coffee and pastries on a pavement table",
+      "A dog beside a Merlo takeaway cup"
+    ],
+    "Grave Café": [
+      "Grave’s entrance with a dog resting on the terrace",
+      "Peach cake held outside the café",
+      "Two dogs visiting Grave Café"
+    ],
+    "Cuvée Noire": [
+      "Cuvée Noire’s entrance and blue shop sign",
+      "Marble tables and seating inside Cuvée Noire",
+      "Coffee and pastries on a café stool"
+    ],
+    "Sevenly Heart": [
+      "Sevenly Heart’s stone counter and coffee machine",
+      "Three cakes displayed on wooden boards",
+      "Flowers and drinks in a sculptural interior alcove"
+    ],
+    "Nami Coffee": [
+      "Nami’s storefront and pavement seating",
+      "Coffee and three plates of cake",
+      "A dog beside a Nami coffee cup"
+    ],
+    "Clove Coffee Shop": [
+      "Guests sharing a table inside Clove",
+      "A glass server and tasting cup with a coffee card",
+      "Pastries in Clove’s glass display"
+    ],
+    "Mardi": [
+      "Mardi’s entrance with flowers and outdoor guests",
+      "Two pastries served on ceramic plates"
+    ],
+    "Niwa": [
+      "Soft serve in a Niwa cup",
+      "Niwa’s entrance and pavement seating",
+      "A tray of glazed pastries"
+    ],
+    "Partisan Café": [
+      "A dachshund beneath an outdoor café table",
+      "Partisan’s full storefront and terrace",
+      "The coffee roaster and shelves inside Partisan"
+    ],
+    "Forêt Forêt": [
+      "Guests seated beneath the café’s geometric ceiling",
+      "The resident dog among plants inside the café",
+      "A wide view of the café’s seating and counter"
+    ],
+    "Mesa": [
+      "Two plant-based plates presented at Mesa",
+      "Coffee and pastries on a marble table",
+      "Mesa’s dining room and wooden chairs"
+    ],
+    "WHITE Coffee": [
+      "WHITE Coffee’s storefront",
+      "The espresso machine and shelves inside WHITE Coffee"
+    ],
+    "NOIR Coffee Shop": [
+      "NOIR’s corner storefront",
+      "The coffee counter inside NOIR",
+      "A cappuccino and cake on a tray"
+    ]
+  };
+
   cards.filter(card => card.dataset.gallery).forEach(card => {
     const thumb = card.querySelector('.place-thumb');
     const placeTitle = card.querySelector('h3')?.textContent?.trim() || 'Place';
     const images = card.dataset.gallery.split('|').map(value => value.trim()).filter(Boolean);
     if (!thumb || images.length < 2) return;
 
+    const subjects = document.body.classList.contains('paris-guide-page') && card.dataset.category === 'cafe'
+      ? cafePhotoSubjects[placeTitle] : null;
+    const photograph = subjects ? document.createElement('img') : null;
+    if (photograph) {
+      thumb.classList.add('cafe-photography');
+      photograph.className = 'cafe-photo';
+      photograph.decoding = 'auto';
+      thumb.prepend(photograph);
+    }
     thumb.classList.add('place-card-gallery');
-    thumb.setAttribute('role', 'img');
+    thumb.setAttribute('role', photograph ? 'group' : 'img');
     thumb.setAttribute('aria-label', `${placeTitle} — photo 1 of ${images.length}`);
     thumb.insertAdjacentHTML('beforeend', `
       <button class="card-gallery-arrow card-gallery-prev" type="button" aria-label="Previous ${placeTitle} photo">←</button>
@@ -442,6 +523,13 @@
     const showCardImage = index => {
       cardIndex = (index + images.length) % images.length;
       thumb.style.setProperty('--thumb', `url('${images[cardIndex].replace(/['"]/g, '')}')`);
+      if (photograph) {
+        photograph.src = images[cardIndex];
+        photograph.alt = `${placeTitle} — ${subjects[cardIndex]}`;
+        // Keep the dogs and the doorway together in the tall Grave originals.
+        photograph.style.objectPosition = images[cardIndex].endsWith('grave-cafe.jpg') ? '50% 72%'
+          : images[cardIndex].endsWith('grave-regular-dogs.jpg') ? '50% 60%' : '50% 50%';
+      }
       thumb.setAttribute('aria-label', `${placeTitle} — photo ${cardIndex + 1} of ${images.length}`);
       cardDots.forEach((dot, dotIndex) => dot.setAttribute('aria-pressed', String(dotIndex === cardIndex)));
     };
