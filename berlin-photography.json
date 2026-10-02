@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Soi & Co",
+    "image": "assets/places/berlin-soi-co-editorial.webp",
+    "alt": "Layered cakes and matcha desserts",
+    "source": "Embedded original from the existing Berlin guide"
+  },
+  {
+    "name": "Sofi Bakery",
+    "image": "assets/places/berlin-sofi-bakery-editorial.webp",
+    "alt": "Bakery tables and shelves of preserves",
+    "source": "https://slowness.com/app/uploads/2023/06/2020-12-Sofi-1091_Web-1000x1250.jpg"
+  },
+  {
+    "name": "Zacharias",
+    "image": "assets/places/berlin-zacharias-editorial.webp",
+    "alt": "Curved wooden coffee counter",
+    "source": "https://static.wixstatic.com/media/9bcf42_11be6424ae9244a0be02afbae8cc8f19~mv2.jpg/v1/fill/w_1280,h_904,al_c,q_88,usm_0.66_1.00_0.01,enc_avif,quality_auto/9bcf42_11be6424ae9244a0be02afbae8cc8f19~mv2.jpg"
+  },
+  {
+    "name": "Annelies",
+    "image": "assets/places/berlin-annelies-editorial.webp",
+    "alt": "Dining tables beneath a large blue painting",
+    "source": "https://selection-magazin.de/wp-content/uploads/2024/06/Annelies_511.jpg"
+  },
+  {
+    "name": "Two Trick Pony",
+    "image": "assets/places/berlin-two-trick-pony-editorial.webp",
+    "alt": "Breakfast bowls and coffee",
+    "source": "https://static.wixstatic.com/media/967498_f98873b2d63d43f789bc785802513510~mv2.jpg/v1/fill/w_1400,h_940,al_c,q_88,enc_avif,quality_auto/967498_f98873b2d63d43f789bc785802513510~mv2.jpg"
+  },
+  {
+    "name": "Open House",
+    "image": "assets/places/berlin-open-house-editorial.webp",
+    "alt": "Sunlit café interior",
+    "source": "https://cdn.coool.cafe/cafes/ChIJ9Q_mKTlPqEcR9WlokKY8gKQ/9.webp?width=1600"
+  },
+  {
+    "name": "Goodlyfe",
+    "image": "assets/places/berlin-goodlyfe-editorial.webp",
+    "alt": "Guests with drinks at the Goodlyfe entrance",
+    "source": "https://thegoodlyfe.de/assets/storefront-entry-CB3TXolt.jpg"
+  }
+]

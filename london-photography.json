@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Klear Labs",
+    "image": "assets/places/london-klear-labs-editorial.webp",
+    "alt": "Quiet café seating beside the window",
+    "source": "assets/places/klear-labs.webp"
+  },
+  {
+    "name": "% Arabica",
+    "image": "assets/places/london-arabica-editorial.webp",
+    "alt": "Two dogs visiting the coffee shop",
+    "source": "assets/places/arabica.webp"
+  },
+  {
+    "name": "Abuelo",
+    "image": "assets/places/london-abuelo-editorial.webp",
+    "alt": "Wood-panelled dining room and red chairs",
+    "source": "assets/places/abuelo.webp"
+  },
+  {
+    "name": "Workshop Coffee",
+    "image": "assets/places/london-workshop-coffee-editorial.webp",
+    "alt": "Coffee shop seating beside the window",
+    "source": "assets/places/workshop-coffee.webp"
+  }
+]

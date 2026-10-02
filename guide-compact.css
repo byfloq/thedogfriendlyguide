@@ -63,21 +63,21 @@
 .card-gallery-dots button[aria-pressed="true"]{background:#fff}
 
 /* Paris recommendations — photography-led editorial cards */
-:is(.paris-guide-page, .barcelona-guide-page) .place-grid{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-grid{
   grid-template-columns:repeat(2,minmax(0,1fr))!important;
   column-gap:clamp(28px,3vw,46px)!important;
   row-gap:clamp(48px,6vw,78px)!important;
   align-items:stretch;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-card{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card{
   display:flex!important;
   flex-direction:column;
   min-height:0!important;
   border:0;
   background:transparent;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-card.hidden{display:none!important}
-:is(.paris-guide-page, .barcelona-guide-page) .place-thumb{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card.hidden{display:none!important}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-thumb{
   width:100%;
   min-height:0!important;
   aspect-ratio:4/5;
@@ -86,18 +86,18 @@
   background-color:#e9e1d7;
   background-image:none!important;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-content{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-content{
   flex:1;
   display:flex;
   flex-direction:column;
   min-height:350px;
   padding:20px 0 0!important;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-content h3{font-size:clamp(27px,2.35vw,36px);margin-bottom:8px}
-:is(.paris-guide-page, .barcelona-guide-page) .place-category{margin-bottom:17px}
-:is(.paris-guide-page, .barcelona-guide-page) .place-content .desc{font-size:15px;line-height:1.55;margin-bottom:22px;-webkit-line-clamp:4;line-clamp:4}
-:is(.paris-guide-page, .barcelona-guide-page) .place-actions{gap:7px;margin-top:auto}
-:is(.paris-guide-page, .barcelona-guide-page) .place-actions a,:is(.paris-guide-page, .barcelona-guide-page) .place-actions button{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-content h3{font-size:clamp(27px,2.35vw,36px);margin-bottom:8px}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-category{margin-bottom:17px}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-content .desc{font-size:15px;line-height:1.55;margin-bottom:22px;-webkit-line-clamp:4;line-clamp:4}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-actions{gap:7px;margin-top:auto}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-actions a,:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-actions button{
   display:flex;
   align-items:center;
   justify-content:center;
@@ -110,9 +110,9 @@
   text-align:center;
   white-space:nowrap!important;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-card-gallery{isolation:isolate}
-:is(.paris-guide-page, .barcelona-guide-page) .place-card-gallery::before,
-:is(.paris-guide-page, .barcelona-guide-page) .place-card-gallery::after{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card-gallery{isolation:isolate}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card-gallery::before,
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card-gallery::after{
   content:"";
   position:absolute;
   inset:0;
@@ -122,21 +122,21 @@
   background-repeat:no-repeat;
   background-position:center;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-card-gallery::before{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card-gallery::before{
   inset:-18px;
   background-size:cover;
   filter:blur(16px);
   opacity:.2;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .place-card-gallery::after{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card-gallery::after{
   background-size:contain;
   box-shadow:inset 0 0 0 1px rgba(34,29,24,.05);
 }
 /* Paris originals are individually reviewed for this consistent editorial crop.
    No blurred duplicate, letterboxing, stretching or hover zoom. */
-:is(.paris-guide-page, .barcelona-guide-page) .editorial-photography::before,
-:is(.paris-guide-page, .barcelona-guide-page) .editorial-photography::after{content:none}
-:is(.paris-guide-page, .barcelona-guide-page) .editorial-photo{
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .editorial-photography::before,
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .editorial-photography::after{content:none}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .editorial-photo{
   display:block;
   position:absolute;
   inset:0;
@@ -146,14 +146,14 @@
   object-position:center;
   z-index:1;
 }
-:is(.paris-guide-page, .barcelona-guide-page) .card-gallery-arrow,:is(.paris-guide-page, .barcelona-guide-page) .card-gallery-dots{z-index:3}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .card-gallery-arrow,:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .card-gallery-dots{z-index:3}
 @media(max-width:720px){
-  :is(.paris-guide-page, .barcelona-guide-page) .place-grid{grid-template-columns:1fr!important;row-gap:52px!important}
-  :is(.paris-guide-page, .barcelona-guide-page) .place-card{grid-template-columns:1fr!important}
-  :is(.paris-guide-page, .barcelona-guide-page) .place-thumb{aspect-ratio:4/5!important;min-height:0!important}
-  :is(.paris-guide-page, .barcelona-guide-page) .place-content{min-height:0;padding:19px 0 0!important}
-  :is(.paris-guide-page, .barcelona-guide-page) .place-actions{grid-template-columns:1fr 1fr!important}
-  :is(.paris-guide-page, .barcelona-guide-page) .place-actions .favourite{grid-column:1/-1}
+  :is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-grid{grid-template-columns:1fr!important;row-gap:52px!important}
+  :is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-card{grid-template-columns:1fr!important}
+  :is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-thumb{aspect-ratio:4/5!important;min-height:0!important}
+  :is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-content{min-height:0;padding:19px 0 0!important}
+  :is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-actions{grid-template-columns:1fr 1fr!important}
+  :is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .place-actions .favourite{grid-column:1/-1}
 }
 
 .place-number{display:none!important}
@@ -224,7 +224,7 @@
 @media(max-width:700px){.city-guide-page .place-hours{margin-bottom:14px;font-size:9px}.city-guide-page .place-hours span{font-size:7px}}
 
 /* Paris MVP: two clear ways to browse, without a separate Editor's Pick layer. */
-:is(.paris-guide-page, .barcelona-guide-page) .guide-discovery{display:none!important}
+:is(.paris-guide-page, .barcelona-guide-page, .madrid-guide-page, .berlin-guide-page, .london-guide-page) .guide-discovery{display:none!important}
 .guide-view-switcher{position:sticky;top:0;z-index:12;display:flex;justify-content:center;gap:0;padding:18px 20px;background:rgba(238,228,215,.96);border-bottom:1px solid #d2c3b2;backdrop-filter:blur(12px)}
 .guide-view-switcher button{min-width:132px;padding:13px 24px;border:1px solid #bca58f;background:rgba(250,247,241,.72);color:#665b50;font:600 10px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.guide-view-switcher button:first-child{border-radius:999px 0 0 999px}.guide-view-switcher button:last-child{margin-left:-1px;border-radius:0 999px 999px 0}
 .guide-view-switcher button.active{position:relative;border-color:#a76344;background:#a76344;color:#fff;box-shadow:0 3px 10px rgba(92,55,38,.16)}

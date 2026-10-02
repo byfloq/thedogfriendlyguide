@@ -1,0 +1,11 @@
+.guide-submissions{max-width:1040px;margin:0 auto;padding:60px 0 70px;border-top:1px solid #d8cfc1;color:#34241d;display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center}
+.guide-submissions .submission-kicker{font:500 10px/1.4 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 18px}
+.guide-submissions h2{font:400 clamp(36px,4vw,54px)/1.05 'Italiana',Georgia,serif;margin:0 0 18px}
+.guide-submissions p{font:400 17px/1.6 'DM Sans',sans-serif;color:#756d64;margin:0;max-width:530px}
+.guide-submission-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.guide-submission-actions a{font:500 12px/1.5 'DM Sans',sans-serif;color:#34241d;text-decoration:none;min-height:44px;display:flex;align-items:center}
+.guide-submission-actions .submission-primary{background:#34241d;color:#fffdf8;padding:18px 28px;min-height:56px}
+.guide-submission-actions .submission-business{text-decoration:underline;text-underline-offset:5px}
+.guide-submission-actions a:focus-visible{outline:2px solid #a76344;outline-offset:5px}
+@media(max-width:1150px){.guide-submissions{margin-left:5vw;margin-right:5vw}}
+@media(max-width:700px){.guide-submissions{grid-template-columns:1fr;gap:28px;padding:42px 0 48px;margin-left:22px;margin-right:22px}.guide-submissions p{font-size:15px}.guide-submission-actions,.guide-submission-actions .submission-primary{width:100%}.guide-submission-actions .submission-primary{justify-content:center}}

@@ -58,3 +58,15 @@ Restored the eight existing Barcelona recommendations on 2 October 2026: Mono Ca
 `barcelona-places.json` records the selection, image paths, original source filenames and source pages. Keep it aligned with the static cards in `barcelona-guide.html` and the photo descriptions/positions in `city-guide.js`. Existing first photographs are retained for Mono, El Tribut, Les Filles, Hyatt and LOT. M.A.M.I.’s existing drinks and breakfast photos are retained; the DJ detail comes from its official carousel. Jaç uses the project designer’s gallery, Onis uses In & Out Barcelona’s venue feature, and the remaining additions use official venue websites or Instagram posts.
 
 All 24 slides were visually reviewed in desktop (1280px) and mobile (390px) layouts. Images are at most 1600px, never upscaled, and total approximately 3.3 MiB across all eight galleries. Checked category and area filters, carousel navigation and favourite persistence. Barcelona is available in the homepage city selector and indexed in the sitemap.
+
+## Madrid, London and Berlin restoration
+
+On 2 October 2026, restored the existing eight Madrid, four London and seven Berlin recommendations to the homepage city selector. These recovered collections have one existing principal photograph per venue. They do not pretend to have three-image galleries. All 19 originals are locally hosted WebP assets, reviewed at desktop and mobile sizes in the shared 4:5 frame. Sources and descriptive subjects are recorded in the city photography JSON files. Goodlyfe’s former generic Unsplash photo was replaced with the real storefront photograph from https://thegoodlyfe.de/assets/storefront-entry-CB3TXolt.jpg. Existing place selections and London’s district filters/map remain available.
+
+## Place recommendations and business introductions
+
+The footer section below each city’s recommendations mirrors the app’s `src/components/PlaceSuggestion.tsx`: visitor and business entry points, prefilled city, place name and Instagram, an optional note, plus website/contact email/dog policy for businesses. Both links lead to `submit.html`, with their mode and city in the query string.
+
+The website continues to use its existing email delivery channel (`byfloq@gmail.com`), without requiring an account. `place-submission.js` prepares an encoded email draft; the visitor must send it from their mail application. It does not claim the suggestion was received, insert into the app’s Supabase review queue, or send mail automatically. The shared app review queue remains a separate integration requiring a decision on web sign-in.
+
+Validation covers Instagram handles/profile links, required trimmed fields, business-only fields and email/URL formats. Verified both modes, city prefill, hidden-field exclusion and email payload encoding without sending any messages.

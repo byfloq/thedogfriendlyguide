@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Faraday",
+    "image": "assets/places/madrid-faraday-editorial.webp",
+    "alt": "Plant-filled café and record shop with a yellow wall",
+    "source": "assets/places/faraday.webp"
+  },
+  {
+    "name": "Hermanas Arce",
+    "image": "assets/places/madrid-hermanas-arce-editorial.webp",
+    "alt": "Table set for breakfast beside the window",
+    "source": "assets/places/hermanas-arce.webp"
+  },
+  {
+    "name": "Rosewood Villa Magna",
+    "image": "assets/places/madrid-rosewood-villa-magna-editorial.webp",
+    "alt": "Hotel lounge with a green sofa",
+    "source": "assets/places/rosewood-villa-magna.webp"
+  },
+  {
+    "name": "Loft",
+    "image": "assets/places/madrid-loft-editorial.webp",
+    "alt": "Sunny café terrace",
+    "source": "assets/places/loft.webp"
+  },
+  {
+    "name": "En Bruto",
+    "image": "assets/places/madrid-en-bruto-editorial.webp",
+    "alt": "Leather chairs beside a large window",
+    "source": "assets/places/en-bruto.webp"
+  },
+  {
+    "name": "Casa Victoria",
+    "image": "assets/places/madrid-casa-victoria-editorial.webp",
+    "alt": "Warm brown sofa in the café",
+    "source": "assets/places/casa-victoria.webp"
+  },
+  {
+    "name": "Yoyogi Coffee",
+    "image": "assets/places/madrid-yoyogi-coffee-editorial.webp",
+    "alt": "A dog beside a cup of coffee",
+    "source": "assets/places/yoyogi-coffee.webp"
+  },
+  {
+    "name": "La Casa Amande",
+    "image": "assets/places/madrid-la-casa-amande-editorial.webp",
+    "alt": "Leafy entrance to the café",
+    "source": "assets/places/la-casa-amande.webp"
+  }
+]

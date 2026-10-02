@@ -1,0 +1,12 @@
+.submission-modes{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 34px;padding:0;border:0}
+.submission-modes legend{font:500 10px/1.4 var(--sans);letter-spacing:.1em;margin-bottom:14px}
+.submission-modes label{display:flex;align-items:center;gap:9px;min-height:48px;padding:12px 16px;border:1px solid var(--rule);cursor:pointer;font-size:12px;letter-spacing:0;line-height:1.4}
+.submission-modes label:has(input:checked){background:var(--ink);color:var(--paper)}
+.submission-modes input{display:inline-block;width:16px;height:16px;margin:0;accent-color:#a76344}
+.business-fields{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:32px}.business-fields[hidden]{display:none}.business-fields label:last-child{grid-column:1/-1}
+.submission-heading{font:400 38px/1.1 var(--serif);margin:0 0 30px}
+.submit-page input,.submit-page textarea{font-family:var(--sans);font-size:16px;line-height:1.5}
+.submit-page label{line-height:1.5}.submit-page input:focus-visible,.submit-page textarea:focus-visible{outline:2px solid #a76344;outline-offset:5px}
+.submission-feedback{padding:18px 20px;background:#ede4d7;font:400 15px/1.6 var(--sans)!important}.submission-feedback:empty{display:none}
+.submission-review-note{font:400 13px/1.6 var(--sans)!important;color:var(--muted);margin-top:30px;max-width:630px}
+@media(max-width:600px){.business-fields{grid-template-columns:1fr}.submission-modes{flex-direction:column}.submission-modes label{width:100%}}

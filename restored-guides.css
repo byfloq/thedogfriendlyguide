@@ -1,0 +1,13 @@
+/* Reviewed single originals from the existing Madrid, London and Berlin selections. */
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .place-thumb{aspect-ratio:4/5!important;background-image:none!important}
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .editorial-photography::before,
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .editorial-photography::after{content:none!important}
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .place-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:none!important}
+.berlin-guide-page .place-card-featured{grid-column:auto!important}
+.berlin-guide-page .place-heading{display:block}.berlin-guide-page .place-status{display:none}
+.london-guide-page .place-card{display:flex!important;flex-direction:column!important}
+.london-guide-page .place-content h3{order:0}.london-guide-page .place-category{order:1}
+@media(max-width:760px){.london-guide-page .place-grid{grid-template-columns:1fr!important}}
+.berlin-guide-page .place-card .place-thumb{aspect-ratio:4/5!important;min-height:0!important}
+.berlin-guide-page .place-card{box-shadow:none!important;border-radius:0!important}
+.berlin-guide-page .place-card .place-thumb{border-radius:0!important}

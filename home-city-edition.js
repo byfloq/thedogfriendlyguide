@@ -1,136 +1,63 @@
 (() => {
+  const editions = {
+    paris: { name: 'Paris', count: 29 },
+    barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-mono-cafe-barcelona-1.webp', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },
+    madrid: { name: 'Madrid', count: 8, image: 'assets/places/madrid-faraday-editorial.webp', intro: 'Our Madrid edit brings together characterful cafés, thoughtful food and a considered city stay — from Salesas and Chueca to Chamberí.', copy: 'Coffee, records, leafy terraces and a quiet city stay. Discover eight places to enjoy Madrid together.' },
+    london: { name: 'London', count: 4, image: 'assets/places/london-abuelo-editorial.webp', intro: 'Our London edit starts with four considered coffee stops — from Golborne Road and Broadway Market to Covent Garden and Belgravia.', copy: 'Discover our four selected London cafés by district and neighbourhood, in a list or on the map.', map: 'assets/london-curated-map.png' },
+    berlin: { name: 'Berlin', count: 7, image: 'assets/places/berlin-sofi-bakery-editorial.webp', intro: 'Our Berlin edit brings together seven cafés, bakeries and brunch spots — from Mitte and Prenzlauer Berg to Kreuzberg and Friedrichshain.', copy: 'Slow breakfasts, thoughtful coffee and neighbourhood bakeries. Seven places to explore Berlin together.' }
+  };
   const applyCityEdition = () => {
-  const requested = new URLSearchParams(location.search).get('city');
-  const city = ['london', 'barcelona'].includes(requested) ? requested : 'paris';
-  document.body.dataset.homeCity = city;
-  const picker = document.querySelector('.guide-city-picker');
-  picker?.querySelectorAll('a').forEach((link) => {
-    const choice = ['barcelona', 'london'].find(name => link.textContent.toLowerCase().includes(name)) || 'paris';
-    link.href = `index.html?city=${choice}#cities`;
-    if (choice === city) link.setAttribute('aria-current', 'page');
-  });
-  const summary = picker?.querySelector('summary');
-  if (summary) summary.textContent = city[0].toUpperCase() + city.slice(1);
-  const section = document.querySelector('#cities');
-  if (!section) return;
-  const featuredCards = section.querySelector('.featured-city-cards');
-  const secondary = section.querySelector('.home-london-card');
-  featuredCards?.classList.add('is-single-city');
-  if (secondary) secondary.hidden = true;
-  if (city === 'barcelona') {
-    document.title = 'The Dog Friendly Guide · Barcelona';
+    const requested = new URLSearchParams(location.search).get('city');
+    const city = Object.hasOwn(editions, requested) ? requested : 'paris';
+    const edition = editions[city];
+    document.body.dataset.homeCity = city;
+    const picker = document.querySelector('.guide-city-picker');
+    picker?.querySelectorAll('a').forEach(link => {
+      const choice = Object.keys(editions).find(name => link.textContent.toLowerCase().includes(name));
+      if (!choice) return;
+      link.href = `index.html?city=${choice}#cities`;
+      if (choice === city) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+    const summary = picker?.querySelector('summary');
+    if (summary) summary.textContent = edition.name;
+    const section = document.querySelector('#cities');
+    if (!section) return;
+    section.querySelector('.featured-city-cards')?.classList.add('is-single-city');
+    const secondary = section.querySelector('.home-london-card');
+    if (secondary) secondary.hidden = true;
+    document.title = `The Dog Friendly Guide · ${edition.name}`;
     const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = 'Eight dog-friendly places in Barcelona: six cafés, a Mediterranean restaurant and a city hotel.';
+    if (description) description.content = `${edition.count} considered dog-friendly places in ${edition.name}.`;
     const intro = section.querySelector('.ecosystem-copy');
     if (intro) {
-      intro.querySelector('h2').textContent = 'Barcelona, thoughtfully shared.';
-      intro.querySelector('p:last-child').textContent = 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.';
+      intro.querySelector('h2').textContent = `${edition.name}, thoughtfully shared.`;
+      intro.querySelector('p:last-child').textContent = edition.intro || 'Our Paris edit brings together beautiful dog-friendly cafés, restaurants, hotels and shops — chosen arrondissement by arrondissement for how they feel and how genuinely they welcome you both.';
     }
+    if (city === 'paris') return;
     const primary = section.querySelector('.paris-launch-card');
     if (primary) {
-      primary.href = 'barcelona-guide.html';
+      primary.href = `${city}-guide.html`;
       const crop = primary.querySelector('.crop');
-      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = "background-image:url('assets/places/barcelona-mono-cafe-barcelona-1.webp');background-size:cover;background-position:center"; }
-      primary.querySelector('.launch-status').textContent = 'Curated places · Barcelona';
-      primary.querySelector('h3').innerHTML = '8 curated places.<br>One considered guide.';
-      primary.querySelector('p').textContent = 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.';
+      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = `background-image:url('${edition.image}');background-size:cover;background-position:center`; }
+      primary.querySelector('.launch-status').textContent = `Curated places · ${edition.name}`;
+      primary.querySelector('h3').innerHTML = `${edition.count} curated places.<br>One considered guide.`;
+      primary.querySelector('p').textContent = edition.copy;
       const preview = primary.querySelector('img');
-      if (preview) preview.remove();
-      primary.querySelector('.launch-link').textContent = 'Browse the Barcelona guide →';
+      if (preview && edition.map) { preview.src = edition.map; preview.alt = `Illustrated map of ${edition.name}`; }
+      else if (preview) preview.remove();
+      primary.querySelector('.launch-link').textContent = `Browse the ${edition.name} guide →`;
     }
     const pathway = section.querySelector('.guide-pathway-head');
     if (pathway) {
-      pathway.querySelector('h3').textContent = 'Discover our selected Barcelona places';
-      pathway.querySelector('p').textContent = 'Browse eight thoughtful dog-friendly addresses by neighbourhood and type.';
+      pathway.querySelector('h3').textContent = `Discover our selected ${edition.name} places`;
+      pathway.querySelector('p').textContent = `Browse ${edition.count} thoughtful dog-friendly addresses by neighbourhood and type.`;
     }
+    // Paris itineraries and quizzes are only relevant to the Paris edition.
     const play = section.querySelector('.guide-play-heading')?.parentElement;
     if (play) play.style.setProperty('display', 'none', 'important');
     const plans = section.querySelector('.home-plan-preview');
     if (plans) plans.hidden = true;
-    return;
-  }
-  if (city === 'paris') {
-    document.title = 'The Dog Friendly Guide · Paris';
-    const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = 'A curated guide to beautiful dog-friendly cafés, restaurants, hotels and shops in Paris.';
-    const intro = section.querySelector('.ecosystem-copy');
-    if (intro) {
-      intro.querySelector('h2').textContent = 'Paris, thoughtfully shared.';
-      intro.querySelector('p:last-child').textContent = 'Our Paris edit brings together beautiful dog-friendly cafés, restaurants, hotels and shops — chosen arrondissement by arrondissement for how they feel and how genuinely they welcome you both.';
-    }
-    return;
-  }
-  document.title = 'The Dog Friendly Guide · London';
-  const description = document.querySelector('meta[name="description"]');
-  if (description) description.content = 'A curated guide to beautiful dog-friendly cafés, restaurants, hotels and shops in London.';
-  const intro = section.querySelector('.ecosystem-copy');
-  if (intro) {
-    intro.querySelector('h2').textContent = 'London, thoughtfully shared.';
-    intro.querySelector('p:last-child').textContent = 'Our London edit brings together beautiful dog-friendly cafés, restaurants, hotels and shops — chosen neighbourhood by neighbourhood for how they feel and how genuinely they welcome you both.';
-  }
-  const primary = section.querySelector('.paris-launch-card');
-  if (primary) {
-    primary.href = 'london-guide.html';
-    const crop = primary.querySelector('.crop');
-    if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = "background-image:url('assets/floq-guide-editorial-london-v1.png');background-size:cover;background-position:center 54%"; }
-    primary.querySelector('.launch-status').textContent = 'Curated places · London';
-    primary.querySelector('h3').innerHTML = '4 curated places.<br>One considered guide.';
-    primary.querySelector('p').textContent = 'Find thoughtful dog-friendly addresses across London by district and neighbourhood.';
-    const preview = primary.querySelector('img');
-    if (preview) { preview.src = 'assets/london-curated-map.png'; preview.alt = 'Illustrated map of London with curated café, restaurant, hotel and dog-shop markers'; }
-    primary.querySelector('.launch-link').textContent = 'Browse the London guide →';
-  }
-  const kicker = section.querySelector('.guide-preview-kicker');
-  const guideIntro = section.querySelector('.guide-preview-intro');
-  const rail = section.querySelector('.guide-preview-rail');
-  if (kicker) kicker.textContent = 'Curated London guides';
-  if (guideIntro) guideIntro.textContent = 'Thoughtful London plans for the two of you.';
-  if (rail) rail.setAttribute('aria-label', 'Explore London guides and places');
-  const guides = [
-    ['A Slow Morning in Covent Garden','assets/places/abuelo.webp','A considered café in Covent Garden',['3 hours','4 stops','Central London','🐾 Relaxed']],
-    ['An Afternoon on Broadway Market','assets/places/arabica.webp','A dog-friendly stop near Broadway Market',['4 hours','4 stops','East London','🐾🐾 Moderate']],
-    ['A Sunday Along Golborne Road','assets/places/klear-labs.webp','A quiet London neighbourhood café',['3.5 hours','4 stops','West London','🐾 Relaxed']],
-    ['Build your own London plan','assets/city_london_hero.jpg','Plan a day in dog-friendly London',['Your time','Your area','Your mood']]
-  ];
-  section.querySelectorAll('.guide-preview-card').forEach((card, index) => {
-    const data = guides[index]; if (!data) return;
-    card.dataset.guideKey = `london-${index + 1}`;
-    const link = card.querySelector('.guide-card-link'); if (link) link.href = 'london-guide.html';
-    const image = card.querySelector('img'); if (image) { image.src = data[1]; image.alt = data[2]; }
-    const title = card.querySelector('h3'); if (title) title.textContent = data[0];
-    const tags = card.querySelector('.guide-preview-tags'); if (tags) tags.innerHTML = data[3].map((tag) => `<span>${tag}</span>`).join('');
-    const badge = card.querySelector('.guide-editorial-badge'); if (badge) badge.textContent = index === 0 ? 'Coco’s pick' : '';
-    const save = card.querySelector('.guide-save'); if (save) { save.dataset.saveGuide = `london-${index + 1}`; save.setAttribute('aria-label', `Save ${data[0]}`); }
-  });
-  const journal = document.querySelector('#journal');
-  if (journal) {
-    const lead = journal.querySelector('.journal-lead');
-    if (lead) lead.href = 'journal.html';
-    const leadTitle = journal.querySelector('.journal-lead h3');
-    if (leadTitle) leadTitle.textContent = 'A slow Sunday in London';
-    const leadMeta = journal.querySelector('.journal-lead p');
-    if (leadMeta) leadMeta.textContent = 'London · The city journal';
-    const firstStory = journal.querySelector('.journal-list a:first-child h3');
-    if (firstStory) firstStory.textContent = 'A quiet London café where dogs are always welcome';
-    const firstStoryLink = journal.querySelector('.journal-list a:first-child');
-    if (firstStoryLink) firstStoryLink.href = 'journal.html';
-  }
-  document.querySelectorAll('.polaroids .polaroid figcaption').forEach((caption, index) => {
-    caption.textContent = ['Day in London', 'Weekend in London', 'A quiet London morning'][index] || caption.textContent;
-  });
-  const londonCocoMoments = [
-    ['assets/coco/coco-london-cafe.png', 'Coco beside a café on a rainy London street'],
-    ['assets/coco/coco-london-townhouse.png', 'Coco on the steps of a Georgian London townhouse'],
-    ['assets/coco/coco-london-canal.png', 'Coco walking beside Regent’s Canal in London']
-  ];
-  document.querySelectorAll('.polaroids .polaroid img').forEach((image, index) => {
-    const moment = londonCocoMoments[index];
-    if (!moment) return;
-    image.src = moment[0];
-    image.alt = moment[1];
-  });
-  const circleCopy = document.querySelector('.circle-newsletter > div:nth-child(2) > p:not(.eyebrow)');
-  if (circleCopy) circleCopy.textContent = 'New London guides, thoughtful places and Better Together gatherings—sent occasionally, and always worth opening.';
   };
   window.applyHomeCityEdition = applyCityEdition;
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyCityEdition);
