@@ -29,6 +29,11 @@ Update the catalogue whenever a Paris recommendation is added, removed or edited
 
 ## Café photography
 
-Paris café galleries were visually reviewed on 2 October 2026 at 1280px desktop and 390px mobile widths. All 14 cafés and all 40 selected slides were checked, including carousel navigation.
+Paris café galleries were visually reviewed on 2 October 2026 at 1280px desktop and 390px mobile widths. All 14 cafés and all 42 selected slides were checked, including carousel navigation.
 
 Use complete, clear photographs from the existing source collection rather than cropped social-media thumbnails. Review each image in the actual 4:5 card frame, including its focal point, before adding it. Do not add filler just to reach three slides. Keep the gallery arrays in `city-guide.js` and `paris-places.json` in sync, and update the descriptive alt text when replacing a photo.
+
+The approved third photographs for Mardi and WHITE Coffee were added after a desktop/mobile card review:
+
+- `assets/places/mardi-interior-approved.jpg` — interior, published by [Architectural Digest](https://www.admagazine.com/articulos/paris-cafes-tres-chic-que-no-te-puedes-perder), credited “Cortesía Mardi”.
+- `assets/places/white-marais-coffee-selection.jpg` — coffee bags, from [WHITE Coffee’s official Marais gallery](https://cafes.white-coffee.com/en/restaurant-coffee-shop/rue-vieille-du-temple-paris-4/).

@@ -16,7 +16,7 @@
       title: 'Mardi', meta: 'Coffee & baked goods · Belleville', area: 'belleville', key: 'mardi-cafe', category: 'cafe',
       description: 'A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.',
       instagram: 'https://www.instagram.com/mardicafeparis/', maps: 'Mardi Cafe 29 Rue de la Villette Paris',
-      images: ['assets/places/mardi-facade.jpg', 'assets/places/mardi-baked-goods-hq.jpg']
+      images: ['assets/places/mardi-facade.jpg', 'assets/places/mardi-baked-goods-hq.jpg', 'assets/places/mardi-interior-approved.jpg']
     },
     {
       title: 'Niwa', meta: 'Bakery & café · Vaneau', area: 'vaneau', key: 'niwa-paris', category: 'cafe',
@@ -107,7 +107,7 @@
     },
     {
       title: 'WHITE Coffee', meta: 'Specialty coffee & matcha · Le Marais', area: 'le-marais', key: 'white-coffee-marais', category: 'cafe',
-      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-2.jpg']
+      description: 'A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.', instagram: 'https://www.instagram.com/drink.white/', maps: 'WHITE Coffee 16 Rue Vieille du Temple 75004 Paris', images: ['assets/places/white-instagram-1.jpg', 'assets/places/white-instagram-2.jpg', 'assets/places/white-marais-coffee-selection.jpg']
     },
     {
       title: 'NOIR Coffee Shop', meta: 'Coffee shop & roastery · Montmartre', area: 'montmartre', key: 'noir-montmartre', category: 'cafe',
@@ -460,7 +460,8 @@
     ],
     "Mardi": [
       "Mardi’s entrance with flowers and outdoor guests",
-      "Two pastries served on ceramic plates"
+      "Two pastries served on ceramic plates",
+      "Sunlight across Mardi’s wooden counter and espresso machine"
     ],
     "Niwa": [
       "Soft serve in a Niwa cup",
@@ -484,7 +485,8 @@
     ],
     "WHITE Coffee": [
       "WHITE Coffee’s storefront",
-      "The espresso machine and shelves inside WHITE Coffee"
+      "The espresso machine and shelves inside WHITE Coffee",
+      "Four WHITE coffee bags on the counter in the Marais café"
     ],
     "NOIR Coffee Shop": [
       "NOIR’s corner storefront",

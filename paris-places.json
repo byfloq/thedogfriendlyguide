@@ -175,7 +175,8 @@
       "coordinates": [2.3874972, 48.8762879],
       "images": [
         "assets/places/mardi-facade.jpg",
-        "assets/places/mardi-baked-goods-hq.jpg"
+        "assets/places/mardi-baked-goods-hq.jpg",
+        "assets/places/mardi-interior-approved.jpg"
       ]
     },
     {
@@ -466,7 +467,7 @@
       "instagram": "https://www.instagram.com/drink.white/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
       "coordinates": [2.3570133, 48.8567636],
-      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg"]
+      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg", "assets/places/white-marais-coffee-selection.jpg"]
     },
     {
       "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",
