@@ -1,23 +1,55 @@
 (() => {
   const applyCityEdition = () => {
   const requested = new URLSearchParams(location.search).get('city');
-  const city = requested === 'london' ? 'london' : 'paris';
+  const city = ['london', 'barcelona'].includes(requested) ? requested : 'paris';
   document.body.dataset.homeCity = city;
   const picker = document.querySelector('.guide-city-picker');
   picker?.querySelectorAll('a').forEach((link) => {
-    const choice = link.textContent.toLowerCase().includes('london') ? 'london' : 'paris';
+    const choice = ['barcelona', 'london'].find(name => link.textContent.toLowerCase().includes(name)) || 'paris';
     link.href = `index.html?city=${choice}#cities`;
     if (choice === city) link.setAttribute('aria-current', 'page');
   });
   const summary = picker?.querySelector('summary');
-  if (summary) summary.textContent = city === 'london' ? 'London' : 'Paris';
+  if (summary) summary.textContent = city[0].toUpperCase() + city.slice(1);
   const section = document.querySelector('#cities');
   if (!section) return;
   const featuredCards = section.querySelector('.featured-city-cards');
   const secondary = section.querySelector('.home-london-card');
   featuredCards?.classList.add('is-single-city');
   if (secondary) secondary.hidden = true;
-  if (city !== 'london') {
+  if (city === 'barcelona') {
+    document.title = 'The Dog Friendly Guide · Barcelona';
+    const description = document.querySelector('meta[name="description"]');
+    if (description) description.content = 'Eight dog-friendly places in Barcelona: six cafés, a Mediterranean restaurant and a city hotel.';
+    const intro = section.querySelector('.ecosystem-copy');
+    if (intro) {
+      intro.querySelector('h2').textContent = 'Barcelona, thoughtfully shared.';
+      intro.querySelector('p:last-child').textContent = 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.';
+    }
+    const primary = section.querySelector('.paris-launch-card');
+    if (primary) {
+      primary.href = 'barcelona-guide.html';
+      const crop = primary.querySelector('.crop');
+      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = "background-image:url('assets/places/barcelona-mono-cafe-barcelona-1.webp');background-size:cover;background-position:center"; }
+      primary.querySelector('.launch-status').textContent = 'Curated places · Barcelona';
+      primary.querySelector('h3').innerHTML = '8 curated places.<br>One considered guide.';
+      primary.querySelector('p').textContent = 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.';
+      const preview = primary.querySelector('img');
+      if (preview) preview.remove();
+      primary.querySelector('.launch-link').textContent = 'Browse the Barcelona guide →';
+    }
+    const pathway = section.querySelector('.guide-pathway-head');
+    if (pathway) {
+      pathway.querySelector('h3').textContent = 'Discover our selected Barcelona places';
+      pathway.querySelector('p').textContent = 'Browse eight thoughtful dog-friendly addresses by neighbourhood and type.';
+    }
+    const play = section.querySelector('.guide-play-heading')?.parentElement;
+    if (play) play.style.setProperty('display', 'none', 'important');
+    const plans = section.querySelector('.home-plan-preview');
+    if (plans) plans.hidden = true;
+    return;
+  }
+  if (city === 'paris') {
     document.title = 'The Dog Friendly Guide · Paris';
     const description = document.querySelector('meta[name="description"]');
     if (description) description.content = 'A curated guide to beautiful dog-friendly cafés, restaurants, hotels and shops in Paris.';

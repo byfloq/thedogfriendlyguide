@@ -381,8 +381,16 @@
   section.querySelector('.gallery-next')?.addEventListener('click', () => show(current + 1));
   dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
 
-  // Reviewed originals and descriptive subjects for every Paris gallery.
+  // Reviewed originals and descriptive subjects for Paris and Barcelona galleries.
   const placePhotoSubjects = {
+    "Mono Café": ["Bright white café interior", "Papaya and cucumber toast", "Coffee and matcha on a white table"],
+    "El Tribut": ["A dog visiting the restaurant", "Light-filled Mediterranean dining room", "Vegetable paella"],
+    "Les Filles": ["Leafy garden terrace", "Wooden tables and framed art in the dining room", "A bowl of fresh vegetables"],
+    "Jaç Hi-Fi Café": ["Walnut listening bar and seating", "Speaker and vinyl records", "Coffee counter beside the front window"],
+    "Grand Hyatt Barcelona": ["Hotel lobby", "Guest suite with a large bed", "Outdoor pool and garden"],
+    "Onis Coffee": ["Sunlit coffee counter", "Latte on the wooden counter", "Pastries in the display cabinet"],
+    "LOT Roasters": ["LOT storefront", "Roasted coffee beans", "Canelés on a light surface"],
+    "M.A.M.I. Café": ["Cold drinks ready to serve", "Yogurt with fruit and granola", "DJ mixer at the café"],
     "Pantoufle": ["Seasonal greens and grated cheese on a ceramic plate", "Noodles and green vegetables in a deep ceramic bowl", "Roasted red peppers on a white plate"],
     "Griffon": ["A seafood dish with cucumber on a dark ceramic plate", "Griffon’s dining room with chandeliers and colourful chairs", "Griffon’s illuminated sign and warm pendant lights"],
     "Coloré": ["Lunch and wine on Coloré’s pavement tables", "Two cream-filled pastries on a dark plate", "Coffee and drinks on a pavement table viewed through the window"],
@@ -473,6 +481,9 @@
 
   // Focal points are reviewed in the same 4:5 frame at desktop and mobile sizes.
   const photoPositions = {
+    'barcelona-mono-cafe-barcelona-2.webp': '50% 65%',
+    'barcelona-grand-hyatt-barcelona-2.webp': '60% 50%',
+    'barcelona-mami-cafe-barcelona-2.webp': '50% 0%',
     'grave-cafe.jpg': '50% 72%',
     'grave-regular-dogs.jpg': '50% 60%',
     'barkers-brothers.jpg': '85% 50%',
@@ -486,7 +497,7 @@
     const images = card.dataset.gallery.split('|').map(value => value.trim()).filter(Boolean);
     if (!thumb || images.length < 2) return;
 
-    const subjects = document.body.classList.contains('paris-guide-page')
+    const subjects = document.body.matches('.paris-guide-page, .barcelona-guide-page')
       ? placePhotoSubjects[placeTitle] : null;
     const photograph = subjects ? document.createElement('img') : null;
     if (photograph) {

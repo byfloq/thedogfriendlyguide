@@ -1,0 +1,260 @@
+[
+  {
+    "key": "mono-cafe-barcelona",
+    "name": "Mono Café",
+    "category": "cafe",
+    "area": "poblenou",
+    "images": [
+      "assets/places/barcelona-mono-cafe-barcelona-1.webp",
+      "assets/places/barcelona-mono-cafe-barcelona-2.webp",
+      "assets/places/barcelona-mono-cafe-barcelona-3.webp"
+    ],
+    "subjects": [
+      "Bright white café interior",
+      "Papaya and cucumber toast",
+      "Coffee and matcha on a white table"
+    ],
+    "sourceFiles": [
+      "mono-caf.webp",
+      "mono-toast0.jpg",
+      "mono-coffee0.jpg"
+    ],
+    "description": "A bright, minimal corner café for specialty coffee, Japanese matcha and a quiet pause close to the creative heart of Poblenou.",
+    "sources": [
+      "https://www.instagram.com/monocafe.ok/p/Db3eboUiL0V/",
+      "https://www.instagram.com/monocafe.ok/p/DcJjgnPCHxT/"
+    ],
+    "instagram": "https://www.instagram.com/monocafe.ok/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mono%20Cafe%20Carrer%20de%20Pujades%20134%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 65%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "el-tribut",
+    "name": "El Tribut",
+    "category": "restaurant",
+    "area": "vila-olimpica",
+    "images": [
+      "assets/places/barcelona-el-tribut-1.webp",
+      "assets/places/barcelona-el-tribut-2.webp",
+      "assets/places/barcelona-el-tribut-3.webp"
+    ],
+    "subjects": [
+      "A dog visiting the restaurant",
+      "Light-filled Mediterranean dining room",
+      "Vegetable paella"
+    ],
+    "sourceFiles": [
+      "el-tribut.webp",
+      "tribut9.jpg",
+      "tribut14.jpg"
+    ],
+    "description": "A polished waterfront restaurant with a warm bohemian interior, Mediterranean cooking and views across Port Olímpic.",
+    "sources": [
+      "https://eltribut.com/lang-spain/"
+    ],
+    "instagram": "https://www.instagram.com/eltribut/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Tribut%20Moll%20del%20Gregal%20Local%202%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 50%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "les-filles-barcelona",
+    "name": "Les Filles",
+    "category": "cafe",
+    "area": "gracia",
+    "images": [
+      "assets/places/barcelona-les-filles-barcelona-1.webp",
+      "assets/places/barcelona-les-filles-barcelona-2.webp",
+      "assets/places/barcelona-les-filles-barcelona-3.webp"
+    ],
+    "subjects": [
+      "Leafy garden terrace",
+      "Wooden tables and framed art in the dining room",
+      "A bowl of fresh vegetables"
+    ],
+    "sourceFiles": [
+      "les-filles.webp",
+      "filles4.jpg",
+      "filles6.jpg"
+    ],
+    "description": "A serene, light-filled café with an elegant garden atmosphere in Gràcia.",
+    "sources": [
+      "https://www.lesfillesbarcelona.com/"
+    ],
+    "instagram": "https://www.instagram.com/lesfillesbarcelona/?hl=es",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Filles%20Carrer%20de%20Minerva%202%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 50%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "jac-barcelona",
+    "name": "Jaç Hi-Fi Café",
+    "category": "cafe",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-jac-barcelona-1.webp",
+      "assets/places/barcelona-jac-barcelona-2.webp",
+      "assets/places/barcelona-jac-barcelona-3.webp"
+    ],
+    "subjects": [
+      "Walnut listening bar and seating",
+      "Speaker and vinyl records",
+      "Coffee counter beside the front window"
+    ],
+    "sourceFiles": [
+      "jac5.jpg",
+      "jac3.jpg",
+      "jac4.jpg"
+    ],
+    "description": "A refined listening café where specialty coffee, breakfast and carefully curated sound meet.",
+    "sources": [
+      "https://www.isernserra.com/en/projects/jac-hifi-cafe"
+    ],
+    "instagram": "https://www.instagram.com/jac.barcelona/?hl=es",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ja%C3%A7%20Hi-Fi%20Cafe%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 50%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "grand-hyatt-barcelona",
+    "name": "Grand Hyatt Barcelona",
+    "category": "hotel",
+    "area": "les-corts",
+    "images": [
+      "assets/places/barcelona-grand-hyatt-barcelona-1.webp",
+      "assets/places/barcelona-grand-hyatt-barcelona-2.webp",
+      "assets/places/barcelona-grand-hyatt-barcelona-3.webp"
+    ],
+    "subjects": [
+      "Hotel lobby",
+      "Guest suite with a large bed",
+      "Outdoor pool and garden"
+    ],
+    "sourceFiles": [
+      "grand-hyatt-barcelona.webp",
+      "hyatt-room.jpg",
+      "hyatt-pool.jpg"
+    ],
+    "description": "A polished city hotel that welcomes dogs with beds, bowls and treats.",
+    "sources": [
+      "https://www.hyatt.com/grand-hyatt/en-US/bcnub-grand-hyatt-barcelona"
+    ],
+    "instagram": "https://www.instagram.com/grandhyattbarcelona/?hl=es",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Hyatt%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "60% 50%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "onis-coffee-barcelona",
+    "name": "Onis Coffee",
+    "category": "cafe",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-onis-coffee-barcelona-1.webp",
+      "assets/places/barcelona-onis-coffee-barcelona-2.webp",
+      "assets/places/barcelona-onis-coffee-barcelona-3.webp"
+    ],
+    "subjects": [
+      "Sunlit coffee counter",
+      "Latte on the wooden counter",
+      "Pastries in the display cabinet"
+    ],
+    "sourceFiles": [
+      "onis6.jpg",
+      "onis4.jpg",
+      "onis5.jpg"
+    ],
+    "description": "A beautifully restrained neighbourhood coffee bar with excellent espresso and pastries.",
+    "sources": [
+      "https://inandoutbarcelona.net/onis-cafe-specialty-coffee/"
+    ],
+    "instagram": "https://www.instagram.com/oniscoffee/?hl=es",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Onis%20Coffee%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 50%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "lot-roasters-barcelona",
+    "name": "LOT Roasters",
+    "category": "cafe",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-lot-roasters-barcelona-1.webp",
+      "assets/places/barcelona-lot-roasters-barcelona-2.webp",
+      "assets/places/barcelona-lot-roasters-barcelona-3.webp"
+    ],
+    "subjects": [
+      "LOT storefront",
+      "Roasted coffee beans",
+      "Canelés on a light surface"
+    ],
+    "sourceFiles": [
+      "lot-roasters.webp",
+      "lot-beans0.jpg",
+      "lot-molds0.jpg"
+    ],
+    "description": "A bean-to-bar chocolate workshop and specialty coffee roastery focused on traceable Peruvian origins.",
+    "sources": [
+      "https://www.instagram.com/lotroasters/p/C-Sr_tPodxk/",
+      "https://www.instagram.com/lotroasters/p/C1b0aM4orKK/"
+    ],
+    "instagram": "https://www.instagram.com/lotroasters/?hl=es",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LOT%20Roasters%20Bailen%2043%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 50%",
+      "50% 50%"
+    ]
+  },
+  {
+    "key": "mami-cafe-barcelona",
+    "name": "M.A.M.I. Café",
+    "category": "cafe",
+    "area": "ciutat-vella",
+    "images": [
+      "assets/places/barcelona-mami-cafe-barcelona-1.webp",
+      "assets/places/barcelona-mami-cafe-barcelona-2.webp",
+      "assets/places/barcelona-mami-cafe-barcelona-3.webp"
+    ],
+    "subjects": [
+      "Cold drinks ready to serve",
+      "Yogurt with fruit and granola",
+      "DJ mixer at the café"
+    ],
+    "sourceFiles": [
+      "mami-cafe-drinks.jpg",
+      "mami-cafe-bowl.jpg",
+      "mami-detail1.jpg"
+    ],
+    "description": "An Italian-inspired specialty coffee bar in El Born, pairing coffee with DJ-set energy and a genuinely pet-friendly welcome - often led by Azul, the resident therapy Golden Retriever.",
+    "sources": [
+      "https://www.instagram.com/mamiitaliancafe/p/DdEZPFjDurM/"
+    ],
+    "instagram": "https://www.instagram.com/mamiitaliancafe/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=MAMI%20Cafe%20Carrer%20de%20les%20Basses%20de%20Sant%20Pere%2012%20Barcelona",
+    "photoPositions": [
+      "50% 50%",
+      "50% 0%",
+      "50% 50%"
+    ]
+  }
+]

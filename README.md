@@ -50,3 +50,11 @@ Replacement photo sources:
 - `cayu-knitwear-dog.jpg`: [CAYU official journal](https://www.cayucanidesclub.com/blogs/infos/cayu-canides-club-le-dog-cafe-et-boutique-incontournable-de-paris-19e), `Home_495b58d0-67b9-4647-a51e-009bf756269d.jpg`.
 - `cayu-window-accessories.jpg` and `cayu-patterned-collar.jpg`: [CAYU official collection](https://www.cayucanidesclub.com/), `787E762F-CF9C-4E4E-B39E-88F381F15B0A.jpg` and `FullSizeRender_7be07d1b-419e-4afc-bbb1-3fee8b1d813a.jpg`.
 - `parisien-colourful-interior.jpg`: [Lump, Parisien Tête de Chien](https://www.lumpmedia.fr/lieux/parisien-tete-de-chien-tiers-lieu-dog-friendly-paris17), Canelle & Paupiette, `IMG_4231.jpg`.
+
+## Barcelona restoration and photography
+
+Restored the eight existing Barcelona recommendations on 2 October 2026: Mono Café, El Tribut, Les Filles, Jaç Hi-Fi Café, Grand Hyatt Barcelona, Onis Coffee, LOT Roasters and M.A.M.I. Café. Each has three locally hosted WebP photographs, a consistent 4:5 frame, descriptive alt text and reviewed focal points. No venues were invented or added to the recovered selection.
+
+`barcelona-places.json` records the selection, image paths, original source filenames and source pages. Keep it aligned with the static cards in `barcelona-guide.html` and the photo descriptions/positions in `city-guide.js`. Existing first photographs are retained for Mono, El Tribut, Les Filles, Hyatt and LOT. M.A.M.I.’s existing drinks and breakfast photos are retained; the DJ detail comes from its official carousel. Jaç uses the project designer’s gallery, Onis uses In & Out Barcelona’s venue feature, and the remaining additions use official venue websites or Instagram posts.
+
+All 24 slides were visually reviewed in desktop (1280px) and mobile (390px) layouts. Images are at most 1600px, never upscaled, and total approximately 3.3 MiB across all eight galleries. Checked category and area filters, carousel navigation and favourite persistence. Barcelona is available in the homepage city selector and indexed in the sitemap.
