@@ -1,5 +1,25 @@
 // Existing guide selections; these are venue highlights, not itineraries.
 window.homeCityPlaces = {
+  "hamburg": [
+  {
+    "name": "Gotcha Matcha",
+    "image": "assets/places/hamburg-gotcha-matcha-editorial.webp",
+    "meta": "Eppendorf",
+    "href": "hamburg-guide.html#gotcha-matcha"
+  },
+  {
+    "name": "SCADI · living with dogs",
+    "image": "assets/places/hamburg-scadi-editorial.webp",
+    "meta": "Winterhude",
+    "href": "hamburg-guide.html#scadi"
+  },
+  {
+    "name": "Heimat Restaurant",
+    "image": "assets/places/hamburg-heimat-editorial.webp",
+    "meta": "HafenCity",
+    "href": "hamburg-guide.html#heimat"
+  }
+],
   "london": [
     {
       "name": "Abuelo",

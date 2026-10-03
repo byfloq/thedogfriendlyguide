@@ -1,8 +1,8 @@
 /* Reviewed single originals from the existing Madrid, London and Berlin selections. */
-:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .place-thumb{aspect-ratio:4/5!important;background-image:none!important}
-:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .editorial-photography::before,
-:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .editorial-photography::after{content:none!important}
-:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page) .place-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:none!important}
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page,.hamburg-guide-page) .place-thumb{aspect-ratio:4/5!important;background-image:none!important}
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page,.hamburg-guide-page) .editorial-photography::before,
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page,.hamburg-guide-page) .editorial-photography::after{content:none!important}
+:is(.madrid-guide-page,.berlin-guide-page,.london-guide-page,.hamburg-guide-page) .place-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:none!important}
 .berlin-guide-page .place-card-featured{grid-column:auto!important}
 .berlin-guide-page .place-heading{display:block}.berlin-guide-page .place-status{display:none}
 .london-guide-page .place-card{display:flex!important;flex-direction:column!important}

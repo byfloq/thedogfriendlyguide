@@ -9,7 +9,7 @@ const circle=document.querySelector('.newsletter');if(circle){circle.classList.a
 
 // Load the homepage plan-maker progressively, keeping the editorial page useful
 // even when JavaScript or the planner data is unavailable.
-if(document.querySelector('.home-plan-preview') && (!new URLSearchParams(location.search).has('city') || !['london','berlin','madrid','barcelona'].includes(new URLSearchParams(location.search).get('city')))){
+if(document.querySelector('.home-plan-preview') && (!new URLSearchParams(location.search).has('city') || !['london','berlin','madrid','barcelona','hamburg'].includes(new URLSearchParams(location.search).get('city')))){
   let cityEnhancementsLoaded=0;
   const reapplyCityEdition=()=>{
     cityEnhancementsLoaded+=1;

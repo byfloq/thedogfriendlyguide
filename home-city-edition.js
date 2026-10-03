@@ -1,5 +1,6 @@
 (() => {
   const editions = {
+    hamburg: { name: 'Hamburg', count: 5, image: 'assets/places/hamburg-gotcha-matcha-editorial.webp', intro: 'Our Hamburg edit brings together two cafés, two dog shops and a harbour-side restaurant — from Eppendorf and Winterhude to the old town and HafenCity.', copy: 'Matcha, slow breakfasts, considered dog shops and a welcoming table by the harbour. Five places to enjoy Hamburg together.' },
     paris: { name: 'Paris', count: 29 },
     barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-mono-cafe-barcelona-1.webp', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },
     madrid: { name: 'Madrid', count: 8, image: 'assets/places/madrid-hermanas-arce-editorial.webp', position: 'center 78%', intro: 'Our Madrid edit brings together characterful cafés, thoughtful food and a considered city stay — from Salesas and Chueca to Chamberí.', copy: 'Coffee, records, leafy terraces and a quiet city stay. Discover eight places to enjoy Madrid together.' },
