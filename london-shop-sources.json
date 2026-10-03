@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Bow Wow London",
+    "address": "36 Earlham Street, London WC2H 9LH",
+    "website": "https://www.bowwow.london/",
+    "instagram": "https://www.instagram.com/bowwowldn/",
+    "photo": "assets/places/london-bow-wow-editorial.webp",
+    "photoSource": "https://www.bowwow.london/",
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Love My Human",
+    "address": "308 King’s Road, London SW3 5UH",
+    "website": "https://www.lovemyhuman.co.uk/pages/find-us-love-my-human",
+    "instagram": "https://www.instagram.com/love.my.human/",
+    "photo": "assets/places/london-love-my-human-editorial.webp",
+    "photoSource": "https://www.lovemyhuman.co.uk/pages/love-my-human-wholesale",
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Dogeast",
+    "address": "13 Pennington Quay Walk, London E1W 2BT",
+    "website": "https://dogeast.co.uk/",
+    "instagram": "https://www.instagram.com/dogeastlondon/",
+    "photo": "assets/places/london-dogeast-editorial.webp",
+    "photoSource": "https://www.instagram.com/dogeastlondon/p/DdrmDZoIHsq/",
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Big City Dog",
+    "address": "212 Kensington High Street, London W8 7RG",
+    "website": "https://bigcitydog.co.uk/",
+    "instagram": "https://www.instagram.com/bigcitydog_ldn/",
+    "photo": "assets/places/london-big-city-dog-editorial.webp",
+    "photoSource": "https://www.instagram.com/bigcitydog_ldn/p/DTAtXJvjb2g/",
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Mello World",
+    "address": "19 Walton Street, London SW3 2HX",
+    "website": "https://melloworld.com/pages/visit-us-1",
+    "instagram": "https://www.instagram.com/melloworlduk/",
+    "photo": "assets/places/london-mello-world-editorial.webp",
+    "photoSource": "https://melloworld.com/pages/visit-us-1",
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "George’s Dog Boutique",
+    "address": "28 High Street, Wimbledon Village, London SW19 5BY",
+    "website": "https://www.georgesdogboutique.com/pages/the-boutique",
+    "instagram": "https://www.instagram.com/georgesdogboutique/",
+    "photo": "assets/places/london-georges-dog-boutique-editorial.webp",
+    "photoSource": "https://www.georgesdogboutique.com/pages/the-boutique",
+    "checked": "2026-10-03"
+  }
+]
