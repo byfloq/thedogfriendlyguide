@@ -39,7 +39,7 @@
     if (primary) {
       primary.href = `${city}-guide.html`;
       const crop = primary.querySelector('.crop');
-      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = `background-image:url('${edition.image}');background-size:cover;background-position:${edition.position || 'center'}`; }
+      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = `background-image:url('${edition.image}');background-size:cover;background-position:${edition.position || 'center'}`; if (edition.position) crop.style.setProperty('background-position', edition.position, 'important'); }
       primary.querySelector('.launch-status').textContent = `Curated places · ${edition.name}`;
       primary.querySelector('h3').innerHTML = `${edition.count} curated places.<br>One considered guide.`;
       primary.querySelector('p').textContent = edition.copy;
