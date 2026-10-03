@@ -2,7 +2,7 @@
   const editions = {
     paris: { name: 'Paris', count: 29 },
     barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-mono-cafe-barcelona-1.webp', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },
-    madrid: { name: 'Madrid', count: 8, image: 'assets/places/madrid-faraday-editorial.webp', intro: 'Our Madrid edit brings together characterful cafés, thoughtful food and a considered city stay — from Salesas and Chueca to Chamberí.', copy: 'Coffee, records, leafy terraces and a quiet city stay. Discover eight places to enjoy Madrid together.' },
+    madrid: { name: 'Madrid', count: 8, image: 'assets/places/madrid-hermanas-arce-editorial.webp', position: 'center 78%', intro: 'Our Madrid edit brings together characterful cafés, thoughtful food and a considered city stay — from Salesas and Chueca to Chamberí.', copy: 'Coffee, records, leafy terraces and a quiet city stay. Discover eight places to enjoy Madrid together.' },
     london: { name: 'London', count: 4, image: 'assets/places/london-abuelo-editorial.webp', intro: 'Our London edit starts with four considered coffee stops — from Golborne Road and Broadway Market to Covent Garden and Belgravia.', copy: 'Discover our four selected London cafés by district and neighbourhood, in a list or on the map.', map: 'assets/london-curated-map.png' },
     berlin: { name: 'Berlin', count: 7, image: 'assets/places/berlin-sofi-bakery-editorial.webp', intro: 'Our Berlin edit brings together seven cafés, bakeries and brunch spots — from Mitte and Prenzlauer Berg to Kreuzberg and Friedrichshain.', copy: 'Slow breakfasts, thoughtful coffee and neighbourhood bakeries. Seven places to explore Berlin together.' }
   };
@@ -39,7 +39,7 @@
     if (primary) {
       primary.href = `${city}-guide.html`;
       const crop = primary.querySelector('.crop');
-      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = `background-image:url('${edition.image}');background-size:cover;background-position:center`; }
+      if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = `background-image:url('${edition.image}');background-size:cover;background-position:${edition.position || 'center'}`; }
       primary.querySelector('.launch-status').textContent = `Curated places · ${edition.name}`;
       primary.querySelector('h3').innerHTML = `${edition.count} curated places.<br>One considered guide.`;
       primary.querySelector('p').textContent = edition.copy;
