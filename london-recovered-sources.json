@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "wolfox-savoy",
+    "name": "WOLFOX Savoy London",
+    "address": "2 Savoy Court, London WC2R 0EZ",
+    "website": "https://www.wolfoxsavoy.com/",
+    "dogPolicy": "Well-behaved dogs welcome.",
+    "dogPolicySource": "https://www.wolfoxsavoy.com/faqs",
+    "photoSource": "https://images.squarespace-cdn.com/content/v1/65420f939c3a3949396fc0a0/1a606573-5e3b-4ae9-8fa2-79bab9352d19/D5847413-F1FC-4793-AA2D-09917B7FA503.jpeg?format=1500w",
+    "image": "assets/places/london-wolfox-savoy-editorial.webp",
+    "objectPosition": "center",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "slug": "nagare",
+    "name": "Nagare Coffee",
+    "address": "40 Brushfield Street, London E1 6AG",
+    "website": "https://nagare.co.uk/",
+    "dogPolicy": "Hosts dog portrait sessions with Dogs by Jeff.",
+    "dogPolicySource": "https://dogsbyjeff.co.uk/blogs/pawtrait-day/july-august-2026",
+    "photoSource": "https://nagare.co.uk/wp-content/uploads/2023/01/B877DB24-05C0-44C2-86A3-F05ECF22BAEA.jpg",
+    "image": "assets/places/london-nagare-editorial.webp",
+    "objectPosition": "center top",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "slug": "ozone-shoreditch",
+    "name": "Ozone Coffee Roasters",
+    "address": "11 Leonard Street, London EC2A 4AQ",
+    "website": "https://ozonecoffee.co.uk/pages/locations-shoreditch",
+    "dogPolicy": "Well-behaved dogs welcome.",
+    "dogPolicySource": "https://ozonecoffee.co.uk/pages/locations",
+    "photoSource": "https://ozonecoffee.co.uk/cdn/shop/files/Ozone_leonard_St_exterior_1500x.jpg?v=1710942392",
+    "image": "assets/places/london-ozone-shoreditch-editorial.webp",
+    "objectPosition": "left center",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "slug": "greenwich-grind",
+    "name": "Greenwich Grind",
+    "address": "17–19 Nelson Road, London SE10 9JB",
+    "website": "https://grind.co.uk/pages/greenwich-grind",
+    "dogPolicy": "Dogs welcome in the lounge; request a suitable table when booking.",
+    "dogPolicySource": "https://grind.co.uk/pages/greenwich-grind",
+    "photoSource": "https://grind.co.uk/cdn/shop/files/biasol-greenwich-grind-41_2133a9d1-48a5-4434-bee3-54bff5ce9068_1800x.jpg?v=1756195639",
+    "image": "assets/places/london-greenwich-grind-editorial.webp",
+    "objectPosition": "center",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "slug": "watchhouse-fitzrovia",
+    "name": "WatchHouse Fitzrovia",
+    "address": "56 Wells Street, London W1T 3PT",
+    "website": "https://watchhouse.com/blogs/locations/fitzrovia",
+    "dogPolicy": "Dog-friendly, as listed by WatchHouse.",
+    "dogPolicySource": "https://watchhouse.com/blogs/locations/fitzrovia",
+    "photoSource": "https://watchhouse.com/cdn/shop/files/WatchHouse-Fitzrovia-Feature1.jpg?v=1776252647&width=1500",
+    "image": "assets/places/london-watchhouse-fitzrovia-editorial.webp",
+    "objectPosition": "center",
+    "checkedAt": "2026-10-03"
+  }
+]
