@@ -3,3 +3,5 @@
 
 .london-map-label{display:block;font:500 12px var(--sans);margin:0 0 10px}.guide-map-view select{display:block;width:min(100%,500px);padding:12px;background:var(--paper);border:1px solid var(--rule);font:400 16px var(--serif);margin-bottom:18px}.london-map-directions{display:inline-block;margin-top:16px;font:500 11px var(--sans)}.place-address{color:var(--muted);font:400 13px/1.5 var(--sans);order:2}.place-card[id]{scroll-margin-top:30px}
 .london-guide-page .guide-map-view{display:grid;grid-template-rows:auto auto minmax(320px,1fr) auto;gap:12px;padding:28px max(4vw,18px);height:min(760px,calc(100svh - 78px));min-height:580px}.london-guide-page .guide-map-view[hidden]{display:none!important}.london-guide-page .guide-map-view select,.london-guide-page .london-map-label,.london-guide-page .london-map-directions{margin:0}.london-guide-page .guide-map-view iframe{min-height:0;height:100%;background:var(--paper)}
+
+#map{scroll-margin-top:78px}
