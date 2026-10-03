@@ -4,7 +4,7 @@
     paris: { name: 'Paris', count: 29 },
     barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-mono-cafe-barcelona-1.webp', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },
     madrid: { name: 'Madrid', count: 8, image: 'assets/places/madrid-hermanas-arce-editorial.webp', position: 'center 78%', intro: 'Our Madrid edit brings together characterful cafés, thoughtful food and a considered city stay — from Salesas and Chueca to Chamberí.', copy: 'Coffee, records, leafy terraces and a quiet city stay. Discover eight places to enjoy Madrid together.' },
-    london: { name: 'London', count: 15, image: 'assets/places/london-abuelo-editorial.webp', intro: 'Our London edit brings together nine cafés and six dog shops — from Spitalfields and Greenwich to Covent Garden, Chelsea and Wimbledon Village.', copy: 'Discover fifteen selected London cafés and dog shops by district and neighbourhood, in a list or on the map.', map: 'assets/london-curated-map.png' },
+    london: { name: 'London', count: 15, image: 'assets/places/london-abuelo-dog-editorial.webp', position: 'center bottom', intro: 'Our London edit brings together nine cafés and six dog shops — from Soho and Greenwich to Covent Garden, Chelsea and Wimbledon Village.', copy: 'Discover fifteen selected London cafés and dog shops by district and neighbourhood, in a list or on the map.', map: 'assets/london-curated-map.png' },
     berlin: { name: 'Berlin', count: 7, image: 'assets/places/berlin-sofi-bakery-editorial.webp', intro: 'Our Berlin edit brings together seven cafés, bakeries and brunch spots — from Mitte and Prenzlauer Berg to Kreuzberg and Friedrichshain.', copy: 'Slow breakfasts, thoughtful coffee and neighbourhood bakeries. Seven places to explore Berlin together.' }
   };
   const applyCityEdition = () => {
@@ -37,10 +37,10 @@
     }
     // Apply the complete edition before the Paris-only enhancement scripts finish.
     const setText = (selector, value) => { const node = document.querySelector(selector); if (node) node.textContent = value; };
-    const photo = (node, src) => {
+    const photo = (node, src, position = 'center') => {
       if (!node) return;
       node.style.setProperty('background-image', `url('${src}')`, 'important');
-      node.style.setProperty('background-position', 'center', 'important');
+      node.style.setProperty('background-position', position, 'important');
       node.style.setProperty('background-size', 'cover', 'important');
     };
     const shots = window.homeCityPlaces?.[city] || [];
@@ -61,7 +61,7 @@
       lead.href = isBarcelona ? 'journal-barcelona-with-dog.html' : 'journal-how-we-curate.html';
       lead.querySelector('h3').textContent = isBarcelona ? 'Barcelona, with your dog' : 'How we curate places worth sharing';
       lead.querySelector('p').textContent = isBarcelona ? 'Barcelona · The city journal' : 'Our point of view · 5 min read';
-      photo(lead.querySelector('.crop'), edition.image);
+      photo(lead.querySelector('.crop'), edition.image, edition.position);
       journal.querySelector('.journal-list').hidden = true;
       journal.querySelector('.journal-grid').classList.add('city-journal-single');
       const more = journal.querySelector('.section-title > a');
@@ -75,11 +75,11 @@
       const more = document.querySelector('#coco .outline-button');
       more.href = `${city}-guide.html`; more.textContent = `Explore ${edition.name}`;
       document.querySelectorAll('#coco .polaroid').forEach((figure, i) => {
-        photo(figure.querySelector('.crop'), shots[i].image);
+        photo(figure.querySelector('.crop'), shots[i].image, shots[i].position);
         figure.querySelector('figcaption').textContent = shots[i].name;
       });
       document.querySelector('#coco .coco-logo-link').hidden = true;
-      photo(document.querySelector('.newsletter-photo'), shots[0].image);
+      photo(document.querySelector('.newsletter-photo'), shots[0].image, shots[0].position);
     } else {
       // These are brand moments; their photos do not establish a city visit.
       ['A quiet pause', 'Out together', 'Little rituals'].forEach((caption, i) => {
@@ -132,7 +132,7 @@
     const plans = section.querySelector('.home-plan-preview');
     if (plans && shots.length) {
       plans.hidden = false;
-      plans.innerHTML = `<p class="guide-preview-kicker">From the ${edition.name} guide</p><p class="guide-preview-intro">Places to keep close.</p><div class="guide-preview-rail city-place-highlights" aria-label="Selected ${edition.name} places">${shots.map(place => `<article class="guide-preview-card"><a class="guide-card-link" href="${place.href}"><img src="${place.image}" alt="${place.name}" loading="lazy"><h3>${place.name}</h3></a><p class="guide-preview-tags">${place.meta}</p></article>`).join('')}</div>`;
+      plans.innerHTML = `<p class="guide-preview-kicker">From the ${edition.name} guide</p><p class="guide-preview-intro">Places to keep close.</p><div class="guide-preview-rail city-place-highlights" aria-label="Selected ${edition.name} places">${shots.map(place => `<article class="guide-preview-card"><a class="guide-card-link" href="${place.href}"><img src="${place.image}" alt="${place.name}" style="object-position:${place.position || 'center'}" loading="lazy"><h3>${place.name}</h3></a><p class="guide-preview-tags">${place.meta}</p></article>`).join('')}</div>`;
     }
   };
   window.applyHomeCityEdition = applyCityEdition;

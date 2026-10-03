@@ -13,14 +13,14 @@
   },
   {
     "slug": "nagare",
-    "name": "Nagare Coffee",
-    "address": "40 Brushfield Street, London E1 6AG",
+    "name": "Nagare Coffee · Soho",
+    "address": "2 Newburgh Street, London W1F 7RD",
     "website": "https://nagare.co.uk/",
     "dogPolicy": "Hosts dog portrait sessions with Dogs by Jeff.",
-    "dogPolicySource": "https://dogsbyjeff.co.uk/blogs/pawtrait-day/july-august-2026",
-    "photoSource": "https://nagare.co.uk/wp-content/uploads/2023/01/B877DB24-05C0-44C2-86A3-F05ECF22BAEA.jpg",
-    "image": "assets/places/london-nagare-editorial.webp",
-    "objectPosition": "center top",
+    "dogPolicySource": "https://dogsbyjeff.co.uk/blogs/pawtrait-day/jan-feb-2026",
+    "photoSource": "https://www.instagram.com/p/DDRWuDVIFCL/",
+    "image": "assets/places/london-nagare-soho-editorial.webp",
+    "objectPosition": "center",
     "checkedAt": "2026-10-03"
   },
   {

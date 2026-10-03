@@ -13,9 +13,12 @@
   },
   {
     "name": "Abuelo",
-    "image": "assets/places/london-abuelo-editorial.webp",
-    "alt": "Wood-panelled dining room and red chairs",
-    "source": "assets/places/abuelo.webp"
+    "image": "assets/places/london-abuelo-dog-editorial.webp",
+    "alt": "A dog sitting outside Abuelo beneath the café sign",
+    "source": "https://www.instagram.com/p/BgEWGjplH_l/",
+    "objectPosition": "center bottom",
+    "selectedBy": "User",
+    "updatedAt": "2026-10-03"
   },
   {
     "name": "Workshop Coffee",

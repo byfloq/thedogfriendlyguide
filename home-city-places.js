@@ -23,7 +23,8 @@ window.homeCityPlaces = {
   "london": [
     {
       "name": "Abuelo",
-      "image": "assets/places/london-abuelo-editorial.webp",
+      "image": "assets/places/london-abuelo-dog-editorial.webp",
+      "position": "center bottom",
       "meta": "Café · Central London · Covent Garden",
       "href": "london-guide.html#abuelo"
     },
