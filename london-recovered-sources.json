@@ -36,18 +36,6 @@
     "checkedAt": "2026-10-03"
   },
   {
-    "slug": "greenwich-grind",
-    "name": "Greenwich Grind",
-    "address": "17–19 Nelson Road, London SE10 9JB",
-    "website": "https://grind.co.uk/pages/greenwich-grind",
-    "dogPolicy": "Dogs welcome in the lounge; request a suitable table when booking.",
-    "dogPolicySource": "https://grind.co.uk/pages/greenwich-grind",
-    "photoSource": "https://grind.co.uk/cdn/shop/files/biasol-greenwich-grind-41_2133a9d1-48a5-4434-bee3-54bff5ce9068_1800x.jpg?v=1756195639",
-    "image": "assets/places/london-greenwich-grind-editorial.webp",
-    "objectPosition": "center",
-    "checkedAt": "2026-10-03"
-  },
-  {
     "slug": "watchhouse-fitzrovia",
     "name": "WatchHouse Fitzrovia",
     "address": "56 Wells Street, London W1T 3PT",
@@ -58,5 +46,18 @@
     "image": "assets/places/london-watchhouse-fitzrovia-editorial.webp",
     "objectPosition": "center",
     "checkedAt": "2026-10-03"
+  },
+  {
+    "slug": "the-laslett",
+    "name": "The Laslett",
+    "address": "8 Pembridge Gardens, London W2 4DU",
+    "website": "https://www.living-rooms.co.uk/the-laslett/",
+    "dogPolicy": "Dogs welcome; contact hotel for applicable terms.",
+    "dogPolicySource": "https://www.living-rooms.co.uk/the-laslett/double-bedroom/",
+    "photoSource": "https://www.living-rooms.co.uk/media/benpxwuw/thelaslettterrace-1978.jpg?anchor=center&mode=crop&quality=70&width=800&height=950&rnd=133020136625070000",
+    "image": "assets/places/london-laslett-editorial.webp",
+    "objectPosition": "center",
+    "photoCredit": "The Laslett / @thelaslett",
+    "checkedAt": "2026-10-04"
   }
 ]
