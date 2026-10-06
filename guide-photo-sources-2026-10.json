@@ -1,0 +1,56 @@
+[
+  {
+    "place": "Yeni",
+    "image": "assets/places/london-yeni-editorial.webp",
+    "source": "https://yeni.london/",
+    "credit": "@yenisoho"
+  },
+  {
+    "place": "Granger & Co · Marylebone",
+    "image": "assets/places/london-granger-marylebone-editorial.webp",
+    "source": "https://www.grangerandco.com/locations/marylebone",
+    "credit": "@grangerandco"
+  },
+  {
+    "place": "Studio Coffee",
+    "image": "assets/places/london-studio-coffee-editorial.webp",
+    "source": "https://www.instagram.com/studiocoffee__/p/Dday5D-nPOd/",
+    "credit": "@studiocoffee__"
+  },
+  {
+    "place": "Paradox Design + Coffee",
+    "image": "assets/places/london-paradox-editorial.webp",
+    "source": "https://www.instagram.com/paradox_design_coffee/p/DbFyraDjUlo/",
+    "credit": "@paradox_design_coffee"
+  },
+  {
+    "place": "Leigh’s",
+    "image": "assets/places/london-leighs-editorial.webp",
+    "source": "https://www.instagram.com/leighslondon/p/DbED4S7jX7W/?img_index=2",
+    "credit": "@leighslondon"
+  },
+  {
+    "place": "Estate Office Coffee",
+    "image": "assets/places/london-estate-office-coffee-editorial.webp",
+    "source": "https://www.instagram.com/estateofficecoffee/p/Db-M7YktZ3T/",
+    "credit": "@estateofficecoffee"
+  },
+  {
+    "place": "Canteen",
+    "image": "assets/places/london-canteen-editorial.webp",
+    "source": "https://www.instagram.com/canteen.310/p/DeEWAr8DMBR/",
+    "credit": "@canteen.310"
+  },
+  {
+    "place": "EVE Kensington",
+    "image": "assets/places/london-eve-kensington-editorial.webp",
+    "source": "https://www.evekensington.com/cafe",
+    "credit": "@evekensington"
+  },
+  {
+    "place": "LOAFT Brighton",
+    "image": "assets/places/brighton-loaft-editorial.webp",
+    "source": "https://www.loaft.uk/brighton",
+    "credit": "@loaft.uk"
+  }
+]

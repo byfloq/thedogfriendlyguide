@@ -1,5 +1,6 @@
 // Existing guide selections; these are venue highlights, not itineraries.
 window.homeCityPlaces = {
+  "brighton": [{"name":"LOAFT Brighton","image":"assets/places/brighton-loaft-editorial.webp","meta":"Coffee & concept store · The Lanes","href":"brighton-guide.html#loaft"}],
   "hamburg": [
   {
     "name": "Gotcha Matcha",

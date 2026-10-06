@@ -1,10 +1,11 @@
 (() => {
   const editions = {
+    brighton: { name: 'Brighton', count: 1, image: 'assets/places/brighton-loaft-editorial.webp', intro: 'Our Brighton edit begins in the South Lanes, with a calm coffee and design stop to enjoy together.', copy: 'Discover LOAFT, our first Brighton address: Wolfox coffee, considered objects and a warm welcome for dogs.' },
     hamburg: { name: 'Hamburg', count: 5, image: 'assets/places/hamburg-gotcha-matcha-editorial.webp', intro: 'Our Hamburg edit brings together two cafés, two dog shops and a harbour-side restaurant — from Eppendorf and Winterhude to the old town and HafenCity.', copy: 'Matcha, slow breakfasts, considered dog shops and a welcoming table by the harbour. Five places to enjoy Hamburg together.' },
     paris: { name: 'Paris', count: 29 },
     barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-jac-barcelona-1.webp', position: 'center 65%', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },
     madrid: { name: 'Madrid', count: 8, image: 'assets/places/madrid-hermanas-arce-editorial.webp', position: 'center 78%', intro: 'Our Madrid edit brings together characterful cafés, thoughtful food and a considered city stay — from Salesas and Chueca to Chamberí.', copy: 'Coffee, records, leafy terraces and a quiet city stay. Discover eight places to enjoy Madrid together.' },
-    london: { name: 'London', count: 15, image: 'assets/places/london-abuelo-dog-editorial.webp', position: 'center bottom', intro: 'Our London edit brings together eight cafés, six dog shops and a Notting Hill hotel — from Soho and Covent Garden to Chelsea and Wimbledon Village.', copy: 'Discover fifteen selected London cafés, dog shops and a hotel by district and neighbourhood, in a list or on the map.', map: 'assets/london-curated-map.png' },
+    london: { name: 'London', count: 23, image: 'assets/places/london-abuelo-dog-editorial.webp', position: 'center bottom', intro: 'Our London edit brings together thirteen cafés, three restaurants, six dog shops and a Notting Hill hotel — from Soho and Covent Garden to Chelsea and Wimbledon Village.', copy: 'Discover twenty-three selected London cafés, restaurants, dog shops and a hotel by district and neighbourhood, in a list or on the map.', map: 'assets/london-curated-map.png' },
     berlin: { name: 'Berlin', count: 7, image: 'assets/places/berlin-sofi-bakery-editorial.webp', intro: 'Our Berlin edit brings together seven cafés, bakeries and brunch spots — from Mitte and Prenzlauer Berg to Kreuzberg and Friedrichshain.', copy: 'Slow breakfasts, thoughtful coffee and neighbourhood bakeries. Seven places to explore Berlin together.' }
   };
   const applyCityEdition = () => {
@@ -29,7 +30,7 @@
     if (secondary) secondary.hidden = true;
     document.title = `The Dog Friendly Guide · ${edition.name}`;
     const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = `${edition.count} considered dog-friendly places in ${edition.name}.`;
+    if (description) description.content = `${edition.count} considered dog-friendly ${edition.count === 1 ? 'place' : 'places'} in ${edition.name}.`;
     const intro = section.querySelector('.ecosystem-copy');
     if (intro) {
       intro.querySelector('h2').textContent = `${edition.name}, thoughtfully shared.`;
@@ -75,6 +76,7 @@
       const more = document.querySelector('#coco .outline-button');
       more.href = `${city}-guide.html`; more.textContent = `Explore ${edition.name}`;
       document.querySelectorAll('#coco .polaroid').forEach((figure, i) => {
+        if (!shots[i]) { figure.hidden = true; return; }
         photo(figure.querySelector('.crop'), shots[i].image, shots[i].position);
         figure.querySelector('figcaption').textContent = shots[i].name;
       });
@@ -114,7 +116,7 @@
       const crop = primary.querySelector('.crop');
       if (crop) { crop.classList.remove('city-paris'); crop.style.cssText = `background-image:url('${edition.image}');background-size:cover;background-position:${edition.position || 'center'}`; if (edition.position) crop.style.setProperty('background-position', edition.position, 'important'); }
       primary.querySelector('.launch-status').textContent = `Curated places · ${edition.name}`;
-      primary.querySelector('h3').innerHTML = `${edition.count} curated places.<br>One considered guide.`;
+      primary.querySelector('h3').innerHTML = `${edition.count === 1 ? 'One curated place.' : edition.count + ' curated places.'}<br>One considered guide.`;
       primary.querySelector('p').textContent = edition.copy;
       const preview = primary.querySelector('img');
       if (preview && edition.map) { preview.src = edition.map; preview.alt = `Illustrated map of ${edition.name}`; }
@@ -124,7 +126,7 @@
     const pathway = section.querySelector('.guide-pathway-head');
     if (pathway) {
       pathway.querySelector('h3').textContent = `Discover our selected ${edition.name} places`;
-      pathway.querySelector('p').textContent = `Browse ${edition.count} thoughtful dog-friendly addresses by neighbourhood and type.`;
+      pathway.querySelector('p').textContent = `Browse ${edition.count === 1 ? 'our first thoughtful dog-friendly address' : edition.count + ' thoughtful dog-friendly addresses'} by neighbourhood and type.`;
     }
     // Paris itineraries and quizzes are only relevant to the Paris edition.
     const play = section.querySelector('.guide-play-heading')?.parentElement;

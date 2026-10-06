@@ -1,0 +1,10 @@
+.brighton-guide-page .cg-hero{background-image:linear-gradient(90deg,rgba(30,28,24,.45),rgba(30,28,24,.12)),var(--hero);background-position:center 48%;min-height:440px}
+.brighton-guide-page .place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.brighton-guide-page .place-card{display:flex;flex-direction:column;border-radius:0;box-shadow:none;scroll-margin-top:90px}
+.brighton-guide-page .place-thumb{position:relative;overflow:hidden;border-radius:0;min-height:0;height:auto!important}
+.brighton-guide-page .place-details{margin:18px 0;color:#817a6f;font-size:14px}
+.brighton-guide-page .guide-discovery{display:none}
+.brighton-guide-page .guide-tags{padding-top:24px}
+@media(max-width:760px){.brighton-guide-page .place-grid{grid-template-columns:1fr}.brighton-guide-page .cg-hero{min-height:360px}}
+
+.brighton-guide-page .place-card{border:0;background:transparent}.brighton-guide-page .place-content{padding:24px 18px}
