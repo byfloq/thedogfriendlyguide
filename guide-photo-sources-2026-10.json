@@ -52,5 +52,29 @@
     "image": "assets/places/brighton-loaft-editorial.webp",
     "source": "https://www.loaft.uk/brighton",
     "credit": "@loaft.uk"
+  },
+  {
+    "place": "Scenery",
+    "image": "assets/places/london-scenery-editorial.webp",
+    "source": "https://scenery.coffee/pages/cafe",
+    "credit": "@scenerycoffeeroasters"
+  },
+  {
+    "place": "Paper & Cup",
+    "image": "assets/places/london-paper-and-cup-editorial.webp",
+    "source": "https://sct.org.uk/social-enterprises/paper-cup/",
+    "credit": "@paperandcupshoreditch"
+  },
+  {
+    "place": "Ozone Coffee · Shoreditch",
+    "image": "assets/places/london-ozone-shoreditch-editorial.webp",
+    "source": "https://ozonecoffee.co.uk/pages/locations-shoreditch",
+    "credit": "@ozonecoffeeuk"
+  },
+  {
+    "place": "Qima Café · Fitzrovia",
+    "image": "assets/places/london-qima-fitzrovia-editorial.webp",
+    "source": "https://qimacafe.com/pages/qima-cafe-exceptional-coffee-exceptional-pastry",
+    "credit": "@qima.cafe"
   }
 ]
