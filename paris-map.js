@@ -184,6 +184,8 @@
       if (!response.ok) throw new Error('Catalogue unavailable');
       const catalogue = await response.json();
       places = catalogue.places.filter(place => Array.isArray(place.coordinates)).map(place => ({ ...place, openingHours: catalogue.openingHours[place.key] }));
+      const allCount = document.querySelector('.category-filters [data-category="all"] span');
+      if (allCount) allCount.textContent = String(places.length);
       buildDistrictFilters();
       map = new maplibregl.Map({
         container: mapElement,

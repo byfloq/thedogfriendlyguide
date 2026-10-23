@@ -125,6 +125,8 @@
       const [catalogue] = await Promise.all([fetch('paris-places.json?v=11').then(response => response.json()), loadGoogle(key)]);
       defineHTMLMarker();
       places = catalogue.places.filter(place => Array.isArray(place.coordinates)).map(place => ({ ...place, openingHours: catalogue.openingHours[place.key] }));
+      const allCount = document.querySelector('.category-filters [data-category="all"] span');
+      if (allCount) allCount.textContent = String(places.length);
       buildDistrictFilters();
       map = new google.maps.Map(mapElement, { center: { lat: 48.8668, lng: 2.3505 }, zoom: 12, styles: neutralStyle, mapTypeControl: false, streetViewControl: false, fullscreenControl: true, gestureHandling: 'greedy' });
       parisBounds = await drawBoundary('paris-boundary.geojson');
