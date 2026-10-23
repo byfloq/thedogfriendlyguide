@@ -1,0 +1,2429 @@
+{
+  "schemaVersion": 1,
+  "revision": "local",
+  "generatedAt": "2026-10-23T14:26:56.458965+00:00",
+  "cities": [
+    {
+      "id": "barcelona",
+      "label": "Barcelona",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "berlin",
+      "label": "Berlin",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "brighton",
+      "label": "Brighton",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "copenhagen",
+      "label": "Copenhagen",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "hamburg",
+      "label": "Hamburg",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "london",
+      "label": "London",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "madrid",
+      "label": "Madrid",
+      "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "paris",
+      "label": "Paris",
+      "subtitle": "The Guide’s edit"
+    }
+  ],
+  "places": [
+    {
+      "id": "barcelona-mono-cafe-barcelona",
+      "name": "Mono Café",
+      "city": "barcelona",
+      "area": "Poblenou",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee · Poblenou",
+      "editorial": "A bright, minimal corner café for specialty coffee, Japanese matcha and a quiet pause close to the creative heart of Poblenou.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-mono-cafe-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-mono-cafe-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-mono-cafe-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-mono-cafe-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mono%20Cafe%20Carrer%20de%20Pujades%20134%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/monocafe.ok/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-el-tribut",
+      "name": "El Tribut",
+      "city": "barcelona",
+      "area": "Vila Olimpica",
+      "category": "Eat",
+      "shortDescription": "Mediterranean restaurant · Vila Olímpica",
+      "editorial": "A polished waterfront restaurant with a warm bohemian interior, Mediterranean cooking and views across Port Olímpic.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-el-tribut-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-el-tribut-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-el-tribut-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-el-tribut-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Tribut%20Moll%20del%20Gregal%20Local%202%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/eltribut/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-les-filles-barcelona",
+      "name": "Les Filles",
+      "city": "barcelona",
+      "area": "Gracia",
+      "category": "Drink",
+      "shortDescription": "CAFÉ · GRÀCIA",
+      "editorial": "A serene, light-filled café with an elegant garden atmosphere in Gràcia.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-les-filles-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-les-filles-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-les-filles-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-les-filles-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Filles%20Carrer%20de%20Minerva%202%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/lesfillesbarcelona/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-jac-barcelona",
+      "name": "Jaç Hi-Fi Café",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Drink",
+      "shortDescription": "HI-FI CAFÉ · EIXAMPLE",
+      "editorial": "A refined listening café where specialty coffee, breakfast and carefully curated sound meet.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-jac-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-jac-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-jac-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-jac-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ja%C3%A7%20Hi-Fi%20Cafe%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/jac.barcelona/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-grand-hyatt-barcelona",
+      "name": "Grand Hyatt Barcelona",
+      "city": "barcelona",
+      "area": "Les Corts",
+      "category": "Stay",
+      "shortDescription": "DOG-FRIENDLY HOTEL · LES CORTS",
+      "editorial": "A polished city hotel that welcomes dogs with beds, bowls and treats.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-grand-hyatt-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-grand-hyatt-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-grand-hyatt-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-grand-hyatt-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Hyatt%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/grandhyattbarcelona/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-onis-coffee-barcelona",
+      "name": "Onis Coffee",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Drink",
+      "shortDescription": "SPECIALTY COFFEE · EIXAMPLE",
+      "editorial": "A beautifully restrained neighbourhood coffee bar with excellent espresso and pastries.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-onis-coffee-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-onis-coffee-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-onis-coffee-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-onis-coffee-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Onis%20Coffee%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/oniscoffee/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-lot-roasters-barcelona",
+      "name": "LOT Roasters",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Drink",
+      "shortDescription": "COFFEE · CHOCOLATE · EIXAMPLE",
+      "editorial": "A bean-to-bar chocolate workshop and specialty coffee roastery focused on traceable Peruvian origins.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-lot-roasters-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-lot-roasters-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-lot-roasters-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-lot-roasters-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LOT%20Roasters%20Bailen%2043%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/lotroasters/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-mami-cafe-barcelona",
+      "name": "M.A.M.I. Café",
+      "city": "barcelona",
+      "area": "Ciutat Vella",
+      "category": "Drink",
+      "shortDescription": "SPECIALTY COFFEE · EL BORN",
+      "editorial": "An Italian-inspired specialty coffee bar in El Born, pairing coffee with DJ-set energy and a genuinely pet-friendly welcome - often led by Azul, the resident therapy Golden Retriever.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-mami-cafe-barcelona-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-mami-cafe-barcelona-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-mami-cafe-barcelona-2.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-mami-cafe-barcelona-3.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=MAMI%20Cafe%20Carrer%20de%20les%20Basses%20de%20Sant%20Pere%2012%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/mamiitaliancafe/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-soi-and-co",
+      "name": "Soi & Co",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Drink",
+      "shortDescription": "Café · Mitte",
+      "editorial": "A calm, design-led soy café for matcha, vegan desserts and slow afternoons together.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-soi-co-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-soi-co-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Soi%20%26%20Co%20Linienstra%C3%9Fe%20205%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/soiandco/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-sofi-bakery",
+      "name": "Sofi Bakery",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Drink",
+      "shortDescription": "Bakery · Mitte",
+      "editorial": "A low-intervention neighbourhood bakery devoted to organic grains, slow fermentation and beautifully made bread.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-sofi-bakery-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-sofi-bakery-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sofi%20Bakery%20Sophienstra%C3%9Fe%2021%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/sofithebakery/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-zacharias-kaffeebar",
+      "name": "Zacharias",
+      "city": "berlin",
+      "area": "Prenzlauer Berg",
+      "category": "Drink",
+      "shortDescription": "Coffee · Prenzlauer Berg",
+      "editorial": "An intentional specialty coffee bar with a nostalgic soul, precise pours and a calm, considered interior.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-zacharias-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-zacharias-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zacharias%20Kollwitzstra%C3%9Fe%2044%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/zacharias.kaffeebar/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-annelies",
+      "name": "Annelies",
+      "city": "berlin",
+      "area": "Kreuzberg",
+      "category": "Eat",
+      "shortDescription": "Brunch · Kreuzberg",
+      "editorial": "A bright neighbourhood breakfast spot known for creative seasonal plates, thoughtful coffee and relaxed mornings.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-annelies-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-annelies-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Annelies%20G%C3%B6rlitzer%20Stra%C3%9Fe%2068%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/anneliesberlin/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-two-trick-pony",
+      "name": "Two Trick Pony",
+      "city": "berlin",
+      "area": "Kreuzberg",
+      "category": "Eat",
+      "shortDescription": "Brunch · Kreuzberg",
+      "editorial": "A warm, easy-going brunch room serving generous breakfasts and coffee - with dogs explicitly welcome.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-two-trick-pony-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-two-trick-pony-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Trick%20Pony%20Bergmannstra%C3%9Fe%2052%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/twotrickponyberlin/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-open-house",
+      "name": "Open House",
+      "city": "berlin",
+      "area": "Prenzlauer Berg",
+      "category": "Drink",
+      "shortDescription": "Café · Prenzlauer Berg",
+      "editorial": "A neighbourhood café and community space for house-baked sourdough, sweets, full brunch and unhurried company.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-open-house-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-open-house-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Open%20House%20Christburger%20Stra%C3%9Fe%2013%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/openhouse.berlin/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-goodlyfe",
+      "name": "Goodlyfe",
+      "city": "berlin",
+      "area": "Friedrichshain",
+      "category": "Drink",
+      "shortDescription": "Café · Friedrichshain",
+      "editorial": "A relaxed riverside café by the East Side Gallery for specialty coffee, matcha, small bites and sunny outdoor pauses.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-goodlyfe-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-goodlyfe-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Goodlyfe%20M%C3%BChlenstra%C3%9Fe%2061%20Berlin",
+      "websiteUrl": "https://www.instagram.com/goodlyfe_de/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "brighton-loaft",
+      "name": "LOAFT Brighton",
+      "city": "brighton",
+      "area": "The Lanes",
+      "category": "Drink",
+      "shortDescription": "Café · The Lanes",
+      "editorial": "A calm concept store and Wolfox coffee bar in the South Lanes, bringing together ceramics, natural textures, coffee and freshly baked pastries. Dogs are welcome with no extra fee, subject to space and availability at busy times. Photography: @loaft.uk",
+      "image": "https://thedogfriendlyguide.com/assets/places/brighton-loaft-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/brighton-loaft-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LOAFT%20Brighton%2015c%20Prince%20Albert%20Street%2C%20Brighton",
+      "websiteUrl": "https://www.instagram.com/loaft.uk/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-riviera",
+      "name": "Riviera",
+      "city": "copenhagen",
+      "area": "Nansensgade",
+      "category": "Drink",
+      "shortDescription": "Café · Nansensgade",
+      "editorial": "A recommended Copenhagen stop from The Dog Friendly Guide collection.",
+      "image": "https://thedogfriendlyguide.com/assets/places/riviera.jpg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/riviera.jpg"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Riviera%20Nansensgade%20Copenhagen%20Denmark",
+      "websiteUrl": "https://www.instagram.com/riviera_cph/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-lokal",
+      "name": "Lokal",
+      "city": "copenhagen",
+      "area": "Vesterbro",
+      "category": "Drink",
+      "shortDescription": "Café · Vesterbro",
+      "editorial": "A recommended Copenhagen stop from The Dog Friendly Guide collection.",
+      "image": "https://thedogfriendlyguide.com/assets/places/lokal.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/lokal.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lokal%20Vesterbro%20Copenhagen%20Denmark",
+      "websiteUrl": "https://www.instagram.com/lokalcph/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "hamburg-gotcha-matcha",
+      "name": "Gotcha Matcha",
+      "city": "hamburg",
+      "area": "Eppendorf",
+      "category": "Drink",
+      "shortDescription": "Café · Eppendorf",
+      "editorial": "A soft-toned matcha café in Eppendorf, with curved seating, Japanese tea and room for a quiet pause together.",
+      "image": "https://thedogfriendlyguide.com/assets/places/hamburg-gotcha-matcha-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/hamburg-gotcha-matcha-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gotcha%20Matcha%20Hegestra%C3%9Fe%2048%2C%2020251%20Hamburg",
+      "websiteUrl": "https://www.instagram.com/gotchamatcha_de/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "hamburg-marshall-street-coffee",
+      "name": "Marshall Street Coffee",
+      "city": "hamburg",
+      "area": "Altstadt",
+      "category": "Drink",
+      "shortDescription": "Café · Altstadt",
+      "editorial": "An Australian-inspired café in the old town for specialty coffee, generous breakfasts and something freshly baked.",
+      "image": "https://thedogfriendlyguide.com/assets/places/hamburg-marshall-street-coffee-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/hamburg-marshall-street-coffee-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Marshall%20Street%20Coffee%20Schopenstehl%2030%2C%2020095%20Hamburg",
+      "websiteUrl": "https://www.instagram.com/marshall.street.coffee/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "hamburg-pet-shop-boyz",
+      "name": "Pet Shop Boyz",
+      "city": "hamburg",
+      "area": "Harvestehude",
+      "category": "Shop",
+      "shortDescription": "Dog shop · Harvestehude",
+      "editorial": "A dog concept store on Mittelweg bringing together thoughtful accessories, treats and everyday essentials for dogs and their people.",
+      "image": "https://thedogfriendlyguide.com/assets/places/hamburg-pet-shop-boyz-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/hamburg-pet-shop-boyz-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pet%20Shop%20Boyz%20Mittelweg%20126%2C%2020148%20Hamburg",
+      "websiteUrl": "https://www.instagram.com/pet.shop.boyz.dog/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "hamburg-scadi",
+      "name": "SCADI · living with dogs",
+      "city": "hamburg",
+      "area": "Winterhude",
+      "category": "Shop",
+      "shortDescription": "Dog shop · Winterhude",
+      "editorial": "A considered selection of beds, bowls and walking accessories in Winterhude, with an eye for pieces that feel at home in everyday life.",
+      "image": "https://thedogfriendlyguide.com/assets/places/hamburg-scadi-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/hamburg-scadi-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SCADI%20%C2%B7%20living%20with%20dogs%20Dorotheenstra%C3%9Fe%20133%2C%2022299%20Hamburg",
+      "websiteUrl": "https://www.instagram.com/scadi.livingwithdogs/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "hamburg-heimat",
+      "name": "Heimat Restaurant",
+      "city": "hamburg",
+      "area": "Hafencity",
+      "category": "Eat",
+      "shortDescription": "Restaurant · HafenCity",
+      "editorial": "The warm dining room at 25hours Hotel HafenCity, serving familiar dishes from Germany, Austria and Switzerland beside the harbour.",
+      "image": "https://thedogfriendlyguide.com/assets/places/hamburg-heimat-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/hamburg-heimat-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Heimat%20Restaurant%20%C3%9Cberseeallee%205%2C%2020457%20Hamburg",
+      "websiteUrl": "",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-klear-labs",
+      "name": "Klear Labs",
+      "city": "london",
+      "area": "Golborne Road",
+      "category": "Drink",
+      "shortDescription": "Bakery & specialty coffee · West London · Golborne Road",
+      "editorial": "A quiet neighbourhood bakery and coffee stop, selected for its considered interiors and easy pace.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-klear-labs-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-klear-labs-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Klear%20Labs%20Golborne%20Road%20London%20United%20Kingdom",
+      "websiteUrl": "https://www.instagram.com/klear.labs/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-arabica-broadway",
+      "name": "% Arabica",
+      "city": "london",
+      "area": "Broadway Market",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee · East London · Broadway Market",
+      "editorial": "A minimal Japanese coffee bar with beans roasted in-house and a small terrace at the heart of East London.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-arabica-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-arabica-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%25%20Arabica%2033%20Broadway%20Market%20London%20E8%204PH",
+      "websiteUrl": "https://www.instagram.com/arabica_unitedkingdom/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-abuelo",
+      "name": "Abuelo",
+      "city": "london",
+      "area": "Covent Garden",
+      "category": "Drink",
+      "shortDescription": "Café · Central London · Covent Garden",
+      "editorial": "A warm Australian–South American café for thoughtful coffee, colourful brunch plates and an unhurried city pause. Well-behaved dogs are welcome, with no other restrictions specified by the team. Photography: @abuelocafeuk",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-abuelo-dog-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-abuelo-dog-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Abuelo%2026%20Southampton%20Street%20London%20WC2E%207JA",
+      "websiteUrl": "https://www.instagram.com/abuelocafeuk/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-workshop-coffee",
+      "name": "Workshop Coffee",
+      "city": "london",
+      "area": "Belgravia",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee · Central London · Belgravia",
+      "editorial": "A light-filled café and coffee academy serving seasonal single origins, an all-day menu and evening aperitivo. Dogs are welcome. Photography: @workshopcoffee",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-workshop-coffee-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-workshop-coffee-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Workshop%20Coffee%2022%20Eccleston%20Street%20London%20SW1W%209LT",
+      "websiteUrl": "https://www.instagram.com/workshopcoffee/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-wolfox-savoy",
+      "name": "WOLFOX Savoy London",
+      "city": "london",
+      "area": "Covent Garden",
+      "category": "Drink",
+      "shortDescription": "Café · Central London · Covent Garden",
+      "editorial": "A grand café just off the Strand, with pale walls, generous windows and speciality coffee. Come for a slow breakfast before a walk along the river. Well-behaved dogs welcome. Photography: @wolfoxsavoylondon, used with permission.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-wolfox-savoy-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-wolfox-savoy-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WOLFOX%20Savoy%20London%202%20Savoy%20Court%2C%20London%20WC2R%200EZ",
+      "websiteUrl": "https://www.instagram.com/wolfoxsavoylondon/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-nagare",
+      "name": "Nagare Coffee · Soho",
+      "city": "london",
+      "area": "Soho",
+      "category": "Drink",
+      "shortDescription": "Café · Central London · Soho",
+      "editorial": "A quiet coffee stop on Newburgh Street, just off Carnaby, with a pale storefront, carefully chosen beans and a Japanese approach to brewing. Hosts dog portrait sessions with Dogs by Jeff.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-nagare-soho-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-nagare-soho-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nagare%20Coffee%20Carnaby%202%20Newburgh%20Street%20London%20W1F%207RD",
+      "websiteUrl": "",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-the-laslett",
+      "name": "The Laslett",
+      "city": "london",
+      "area": "Notting Hill",
+      "category": "Stay",
+      "shortDescription": "Hotel · West London · Notting Hill",
+      "editorial": "A quiet Notting Hill base across five Victorian townhouses, with art-filled rooms, books and a neighbourhood bar. A considered city stay moments from Notting Hill Gate. Dogs welcome. Contact the hotel before booking for the applicable pet terms. Photography: @thelaslett, used with permission.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-laslett-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-laslett-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Laslett%208%20Pembridge%20Gardens%20London%20W2%204DU",
+      "websiteUrl": "https://www.instagram.com/thelaslett/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-watchhouse-fitzrovia",
+      "name": "WatchHouse Fitzrovia",
+      "city": "london",
+      "area": "Fitzrovia",
+      "category": "Drink",
+      "shortDescription": "Café · Central London · Fitzrovia",
+      "editorial": "Dark oak booths, stainless steel counters and carefully made coffee in an understated Fitzrovia space, with brunch and fresh bakes. Dog-friendly, as listed by WatchHouse.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-watchhouse-fitzrovia-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-watchhouse-fitzrovia-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WatchHouse%20Fitzrovia%2056%20Wells%20Street%2C%20London%20W1T%203PT",
+      "websiteUrl": "",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-bow-wow",
+      "name": "Bow Wow London",
+      "city": "london",
+      "area": "Covent Garden",
+      "category": "Shop",
+      "shortDescription": "Dog shop · Central London · Covent Garden",
+      "editorial": "A Seven Dials boutique with considered accessories, toys and treats, alongside a dedicated grooming salon.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-bow-wow-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-bow-wow-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bow%20Wow%20London%2036%20Earlham%20Street%2C%20London%20WC2H%209LH",
+      "websiteUrl": "https://www.instagram.com/bowwowldn/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-love-my-human",
+      "name": "Love My Human",
+      "city": "london",
+      "area": "Chelsea",
+      "category": "Shop",
+      "shortDescription": "Dog shop · West London · Chelsea",
+      "editorial": "The King’s Road boutique brings together beautifully made dog accessories, beds, toys and grooming essentials.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-love-my-human-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-love-my-human-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Love%20My%20Human%20308%20King%E2%80%99s%20Road%2C%20London%20SW3%205UH",
+      "websiteUrl": "https://www.instagram.com/love.my.human/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-dogeast",
+      "name": "Dogeast",
+      "city": "london",
+      "area": "Wapping",
+      "category": "Shop",
+      "shortDescription": "Dog shop · East London · Wapping",
+      "editorial": "An independent pet shop and grooming studio in London Dock, with a curated selection of food, treats and toys.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-dogeast-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-dogeast-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dogeast%2013%20Pennington%20Quay%20Walk%2C%20London%20E1W%202BT",
+      "websiteUrl": "https://www.instagram.com/dogeastlondon/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-big-city-dog",
+      "name": "Big City Dog",
+      "city": "london",
+      "area": "Kensington",
+      "category": "Shop",
+      "shortDescription": "Dog shop · West London · Kensington",
+      "editorial": "A Kensington concept store combining dog accessories and treats with grooming, a self-wash station and an in-house matcha bar.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-big-city-dog-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-big-city-dog-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Big%20City%20Dog%20212%20Kensington%20High%20Street%2C%20London%20W8%207RG",
+      "websiteUrl": "https://www.instagram.com/bigcitydog_ldn/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-mello-world",
+      "name": "Mello World",
+      "city": "london",
+      "area": "Knightsbridge",
+      "category": "Shop",
+      "shortDescription": "Dog shop · West London · Knightsbridge",
+      "editorial": "A Walton Street boutique for dogs and their people, close to Knightsbridge and Chelsea.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-mello-world-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-mello-world-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mello%20World%2019%20Walton%20Street%2C%20London%20SW3%202HX",
+      "websiteUrl": "https://www.instagram.com/melloworlduk/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-georges-dog-boutique",
+      "name": "George’s Dog Boutique",
+      "city": "london",
+      "area": "Wimbledon Village",
+      "category": "Shop",
+      "shortDescription": "Dog shop · South London · Wimbledon Village",
+      "editorial": "A Wimbledon Village boutique for thoughtful walkwear, dog beds and accessories, with dogs welcome to try on their favourites.",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-georges-dog-boutique-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-georges-dog-boutique-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=George%E2%80%99s%20Dog%20Boutique%2028%20High%20Street%2C%20Wimbledon%20Village%2C%20London%20SW19%205BY",
+      "websiteUrl": "https://www.instagram.com/georgesdogboutique/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-yeni",
+      "name": "Yeni",
+      "city": "london",
+      "area": "Soho",
+      "category": "Eat",
+      "shortDescription": "Restaurant · Central London · Soho",
+      "editorial": "A seasonal Turkish restaurant on Beak Street, where chef Civan Er brings Anatolian flavours and open-fire cooking to Soho. Dogs are welcome. Photography: @yenisoho",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-yeni-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-yeni-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yeni%2055%20Beak%20Street%2C%20London%20W1F%209SH",
+      "websiteUrl": "https://www.instagram.com/yenisoho/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-granger-marylebone",
+      "name": "Granger & Co · Marylebone",
+      "city": "london",
+      "area": "Marylebone",
+      "category": "Eat",
+      "shortDescription": "Restaurant · Central London · Marylebone",
+      "editorial": "An Australian-inspired neighbourhood restaurant for breakfast, lunch and dinner, with a warm dining room on Marylebone High Street. Small, well-behaved dogs are welcome. Keep them on a lead, on the floor and close to you. Photography: @grangerandco",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-granger-marylebone-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-granger-marylebone-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Granger%20%26%20Co%20%C2%B7%20Marylebone%20105%20Marylebone%20High%20Street%2C%20London%20W1U%204RS",
+      "websiteUrl": "https://www.instagram.com/grangerandco/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-studio-coffee",
+      "name": "Studio Coffee",
+      "city": "london",
+      "area": "Covent Garden",
+      "category": "Drink",
+      "shortDescription": "Café · Central London · Covent Garden",
+      "editorial": "A vinyl-led coffee shop and cocktail bar on Bedford Street, pairing coffee and pastries with a soundtrack that invites you to stay awhile. Dogs are welcome. Photography: @studiocoffee__",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-studio-coffee-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-studio-coffee-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Studio%20Coffee%206%20Bedford%20Street%2C%20Covent%20Garden%2C%20London",
+      "websiteUrl": "https://www.instagram.com/studiocoffee__/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-paradox",
+      "name": "Paradox Design + Coffee",
+      "city": "london",
+      "area": "London Fields",
+      "category": "Drink",
+      "shortDescription": "Café · East London · London Fields",
+      "editorial": "A small coffee and design space in Netil Market, with a changing selection of beans and a personal, creative approach to the everyday coffee stop. Dogs are welcome. Photography: @paradox_design_coffee",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-paradox-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-paradox-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Paradox%20Design%20%2B%20Coffee%20Unit%20A%2C%20Netil%20Market%2C%2013%E2%80%9323%20Westgate%20Street%2C%20London%20E8%203RL",
+      "websiteUrl": "https://www.instagram.com/paradox_design_coffee/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-leighs",
+      "name": "Leigh’s",
+      "city": "london",
+      "area": "De Beauvoir",
+      "category": "Drink",
+      "shortDescription": "Café · North London · De Beauvoir",
+      "editorial": "A neighbourhood coffee stop in De Beauvoir for cakes, toasties and seasonal drinks, with a busy counter and a warm welcome for local dogs. Dogs are welcome. Please keep reactive dogs on a lead. Photography: @leighslondon",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-leighs-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-leighs-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Leigh%E2%80%99s%20Ardleigh%20Road%2C%20London%20N1%204HS",
+      "websiteUrl": "https://www.instagram.com/leighslondon/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-estate-office-coffee",
+      "name": "Estate Office Coffee",
+      "city": "london",
+      "area": "Streatham",
+      "category": "Drink",
+      "shortDescription": "Café · South London · Streatham",
+      "editorial": "A local coffee shop on Greyhound Lane for coffee and sourdough toasties, with a Polaroid wall celebrating its four-legged regulars. Dogs are welcome. Photography: @estateofficecoffee",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-estate-office-coffee-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-estate-office-coffee-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Estate%20Office%20Coffee%204%20Greyhound%20Lane%2C%20London%20SW16%205SD",
+      "websiteUrl": "https://www.instagram.com/estateofficecoffee/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-canteen",
+      "name": "Canteen",
+      "city": "london",
+      "area": "Notting Hill",
+      "category": "Eat",
+      "shortDescription": "Restaurant · West London · Notting Hill",
+      "editorial": "A walk-in neighbourhood restaurant on Portobello Road, with a changing menu and tables for a leisurely lunch or evening meal. Dogs are welcome. Photography: @canteen.310",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-canteen-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-canteen-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Canteen%20310%20Portobello%20Road%2C%20London%20W10%205TA",
+      "websiteUrl": "https://www.instagram.com/canteen.310/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-eve-kensington",
+      "name": "EVE Kensington",
+      "city": "london",
+      "area": "Kensington",
+      "category": "Drink",
+      "shortDescription": "Café · West London · Kensington",
+      "editorial": "A richly coloured café at Ember Locke, with pastries, coffee and a relaxed setting for a Kensington pause. Dogs are welcome. Photography: @evekensington",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-eve-kensington-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-eve-kensington-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=EVE%20Kensington%20Ember%20Locke%2C%20202%E2%80%93220%20Cromwell%20Road%2C%20London%20SW5%200SW",
+      "websiteUrl": "https://www.instagram.com/evekensington/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-scenery",
+      "name": "Scenery",
+      "city": "london",
+      "area": "Southwark",
+      "category": "Drink",
+      "shortDescription": "Café · South London · Southwark",
+      "editorial": "A coffee roastery and café at Jerwood Space, with a glass-roofed courtyard, coffee roasted on site and a kitchen serving breakfast, lunch and Saturday brunch. Dogs are welcome on a lead. Water bowls and complimentary dog treats are available. Photography: @scenerycoffeeroasters",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-scenery-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-scenery-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Scenery%20171%20Union%20Street%2C%20London%20SE1%200LN",
+      "websiteUrl": "https://www.instagram.com/scenerycoffeeroasters/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-paper-and-cup",
+      "name": "Paper & Cup",
+      "city": "london",
+      "area": "Shoreditch",
+      "category": "Drink",
+      "shortDescription": "Vintage & takeaway coffee · East London · Shoreditch",
+      "editorial": "A community-minded stop on Calvert Avenue, now focused on vintage and second-hand clothing, with specialty coffee to take away. Purchases support Spitalfields Crypt Trust. Dogs are welcome. Primarily a second-hand clothing shop with takeaway coffee. Photography: @paperandcupshoreditch",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-paper-and-cup-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-paper-and-cup-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Paper%20%26%20Cup%2018%20Calvert%20Avenue%2C%20London%20E2%207JP",
+      "websiteUrl": "https://www.instagram.com/paperandcupshoreditch/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-ozone-shoreditch",
+      "name": "Ozone Coffee · Shoreditch",
+      "city": "london",
+      "area": "Shoreditch",
+      "category": "Drink",
+      "shortDescription": "Café · East London · Shoreditch",
+      "editorial": "A Leonard Street coffee stop for espresso, rotating filter coffees and seasonal breakfast or lunch, just around the corner from Old Street. Dogs are welcome at all Ozone cafés. Photography: @ozonecoffeeuk",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-ozone-shoreditch-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-ozone-shoreditch-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ozone%20Coffee%20%C2%B7%20Shoreditch%2011%20Leonard%20Street%2C%20London%20EC2A%204AQ",
+      "websiteUrl": "https://www.instagram.com/ozonecoffeeuk/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "london-qima-fitzrovia",
+      "name": "Qima Café · Fitzrovia",
+      "city": "london",
+      "area": "Fitzrovia",
+      "category": "Drink",
+      "shortDescription": "Café · Central London · Fitzrovia",
+      "editorial": "A Fitzrovia café pairing carefully sourced coffee with pâtisserie and brunch. Its tree-to-cup approach connects the coffee served here with the farmers behind it. Dogs are welcome at both Qima cafés, with no restrictions or additional fees. Photography: @qima.cafe",
+      "image": "https://thedogfriendlyguide.com/assets/places/london-qima-fitzrovia-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/london-qima-fitzrovia-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Qima%20Caf%C3%A9%20%C2%B7%20Fitzrovia%2021%20Warren%20Street%2C%20London%20W1T%205LT",
+      "websiteUrl": "https://www.instagram.com/qima.cafe/",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-faraday",
+      "name": "Faraday",
+      "city": "madrid",
+      "area": "Chueca",
+      "category": "Drink",
+      "shortDescription": "CAFÉ · RECORDS · CHUECA",
+      "editorial": "A characterful café, record shop and design store made for slow afternoons.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-faraday-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-faraday-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Faraday%20Calle%20San%20Lucas%209%20Madrid",
+      "websiteUrl": "https://www.instagram.com/faradaymadrid/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-hermanas-arce",
+      "name": "Hermanas Arce",
+      "city": "madrid",
+      "area": "Salesas",
+      "category": "Drink",
+      "shortDescription": "CAFÉ · RESTAURANT · SALESAS",
+      "editorial": "An intimate all-day café with thoughtful cooking and a warm neighbourhood feel.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-hermanas-arce-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-hermanas-arce-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hermanas%20Arce%20Madrid",
+      "websiteUrl": "https://www.instagram.com/hermanasarce/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-rosewood-villa-magna",
+      "name": "Rosewood Villa Magna",
+      "city": "madrid",
+      "area": "Salamanca",
+      "category": "Stay",
+      "shortDescription": "HOTEL · SALAMANCA",
+      "editorial": "A refined urban retreat with garden calm in the heart of Madrid.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-rosewood-villa-magna-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-rosewood-villa-magna-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rosewood%20Villa%20Magna%20Madrid",
+      "websiteUrl": "https://www.instagram.com/rosewoodvillamagna/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-loft",
+      "name": "Loft",
+      "city": "madrid",
+      "area": "Tetuan",
+      "category": "Drink",
+      "shortDescription": "SPECIALTY COFFEE · BRUNCH · TETUÁN",
+      "editorial": "Specialty coffee and relaxed brunch in a light, contemporary setting.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-loft-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-loft-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loft%20Specialty%20Coffee%20Brunch%20Madrid",
+      "websiteUrl": "https://www.instagram.com/loft.__/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-en-bruto",
+      "name": "En Bruto",
+      "city": "madrid",
+      "area": "Salesas",
+      "category": "Drink",
+      "shortDescription": "CAFÉ · BAKERY · SALESAS",
+      "editorial": "A creative food space bringing together specialty coffee, an artisan bakery and fermentation lab.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-en-bruto-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-en-bruto-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=En%20Bruto%20Calle%20San%20Lucas%2013%20Madrid",
+      "websiteUrl": "https://www.instagram.com/enbruto__/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-casa-victoria",
+      "name": "Casa Victoria",
+      "city": "madrid",
+      "area": "Anton Martin",
+      "category": "Drink",
+      "shortDescription": "ALL-DAY CAFÉ · ANTÓN MARTÍN",
+      "editorial": "A characterful all-day café moving naturally from breakfast and coffee to dinner and wine.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-casa-victoria-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-casa-victoria-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Victoria%20Calle%20del%20Olmo%2020%20Madrid",
+      "websiteUrl": "https://www.instagram.com/casa____victoria/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-yoyogi-coffee",
+      "name": "Yoyogi Coffee",
+      "city": "madrid",
+      "area": "Chamberi",
+      "category": "Drink",
+      "shortDescription": "SPECIALTY COFFEE · MATCHA · CHAMBERÍ",
+      "editorial": "A calm, contemporary coffee bar known for specialty coffee, matcha and considered details.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-yoyogi-coffee-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-yoyogi-coffee-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yoyogi%20Coffee%20Fernandez%20de%20los%20Rios%2060%20Madrid",
+      "websiteUrl": "https://www.instagram.com/yoyogicoffee/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "madrid-la-casa-amande",
+      "name": "La Casa Amande",
+      "city": "madrid",
+      "area": "Chamberi",
+      "category": "Drink",
+      "shortDescription": "PLANT-BASED CAFÉ · CHAMBERÍ",
+      "editorial": "A serene plant-based café known for artisan granola and house-made almond and oat drinks.",
+      "image": "https://thedogfriendlyguide.com/assets/places/madrid-la-casa-amande-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/madrid-la-casa-amande-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Casa%20Amande%20Murillo%201%20Madrid",
+      "websiteUrl": "https://www.instagram.com/lacasa.amande/?hl=es",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "coordinatesVerified": false,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    }
+  ],
+  "paris": {
+    "schemaVersion": 1,
+    "city": "Paris",
+    "country": "France",
+    "sourcePage": "https://thedogfriendlyguide.com/paris-guide.html",
+    "lastUpdated": "2026-10-02",
+    "placeCount": 29,
+    "openingHours": {
+      "simple-coffee": "Mon, Wed-Fri 08:00-17:30 · Sat-Sun 09:00-17:30 · Tue closed",
+      "merlo-cafe": "Mon-Fri 09:15-16:45 · Sat-Sun 10:15-17:30",
+      "grave-cafe": "Mon-Fri 08:30-18:00 · Sat-Sun 09:30-18:00",
+      "cuvee-noire": "Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00",
+      "sevenly-heart": "Mon-Fri 09:30-20:00 · Sat-Sun 10:00-20:00",
+      "nami-coffee": "Mon-Fri 08:30-18:00 · Sat 10:00-19:00 · Sun 10:00-18:00",
+      "clove-coffee-shop": "Mon-Tue, Thu-Sun 09:00-16:00 · Wed closed",
+      "mardi-cafe": "Mon-Fri 08:30-17:00 · Sat-Sun 10:00-17:30",
+      "niwa-paris": "Mon-Fri 08:00-17:30 · Sat-Sun 08:30-17:30",
+      "partisan-cafe": "Mon-Fri 08:30-18:00 · Sat-Sun 09:00-18:30",
+      "foret-foret": "Mon-Fri 08:00-18:00 · Sat-Sun 10:00-18:00",
+      "barkers-brothers": "Tue-Sat 09:00-19:00 · Sun 10:00-16:00 · Mon closed",
+      "ginos-paris": "Mon-Sat 10:00-19:00 · Sun closed",
+      "animal-particulier": "Tue-Sat 11:00-19:00 · Sun-Mon closed",
+      "casa-del-doggo": "Wed-Sat 10:00-12:00 & 13:00-19:00 · Sun 10:00-16:00 · Mon-Tue closed",
+      "le-bone-appart": "Mon-Fri 08:00-18:00 · Sat-Sun 09:00-18:00",
+      "petsochic": "Tue-Fri 11:00-13:00 & 14:00-18:30 · Sat until 19:00 · Sun-Mon closed",
+      "pantoufle-paris": "Tue 17:30-00:00 · Wed-Sat 15:30-00:00 · Sun-Mon closed",
+      "griffon-paris": "Tue 17:00-00:00 · Wed-Sat 11:00-00:00 · Sun 11:00-18:00 · Mon closed",
+      "colore-paris": "Wed-Fri 10:00-14:15 & 19:00-22:00 · Sat 10:00-15:00 & 19:00-22:00 · Sun 10:00-17:00",
+      "mesa-paris": "Open daily for breakfast, lunch and dinner",
+      "white-coffee-marais": "Open daily",
+      "noir-montmartre": "Open daily",
+      "parisien-tete-de-chien": "Check Instagram for current hours",
+      "cayu-canides-club": "Wed-Sun · Check Instagram for daily hours",
+      "jaja-paris": "Open daily for lunch and dinner",
+      "cafe-charlot-paris": "Daily 07:00-02:00",
+      "hotel-suzie-blue": "Open 24 hours",
+      "hoy-paris": "Open 24 hours"
+    },
+    "places": [
+      {
+        "key": "simple-coffee",
+        "name": "Simple Coffee",
+        "arrondissement": 18,
+        "category": "cafes",
+        "area": "montmartre",
+        "meta": "Café · 78 Rue des Martyrs",
+        "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
+        "instagram": "https://www.instagram.com/simple.coffeeparis/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simple%20Coffee%2078%20Rue%20des%20Martyrs%20Paris%20France",
+        "coordinates": [
+          2.3397669,
+          48.8829473
+        ],
+        "images": [
+          "assets/places/simple-coffee-instagram-hq.jpg",
+          "assets/places/simple-coffee-2-hq.jpg",
+          "assets/places/simple-coffee-3-hq.jpg"
+        ]
+      },
+      {
+        "key": "merlo-cafe",
+        "name": "Merlo Café",
+        "arrondissement": 3,
+        "category": "cafes",
+        "area": "le-marais",
+        "meta": "Café · Le Marais",
+        "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
+        "instagram": "https://www.instagram.com/merlocafe_/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Merlo%20Cafe%20Le%20Marais%20Paris%20France",
+        "coordinates": [
+          2.3644081,
+          48.8588082
+        ],
+        "images": [
+          "assets/places/merlo-storefront-hq.jpg",
+          "assets/places/merlo-coffee-cake-hq.jpg",
+          "assets/places/merlo-dog-snow-hq.jpg"
+        ]
+      },
+      {
+        "key": "grave-cafe",
+        "name": "Grave Café",
+        "arrondissement": 3,
+        "category": "cafes",
+        "area": "le-marais",
+        "meta": "Café · Le Marais",
+        "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
+        "instagram": "https://www.instagram.com/grave.cafe/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grave%20Cafe%20Le%20Marais%20Paris%20France",
+        "coordinates": [
+          2.3563574,
+          48.8639862
+        ],
+        "images": [
+          "assets/places/grave-cafe.jpg",
+          "assets/places/grave-peach-cake-hq.jpg",
+          "assets/places/grave-regular-dogs.jpg"
+        ]
+      },
+      {
+        "key": "cuvee-noire",
+        "name": "Cuvée Noire",
+        "arrondissement": 9,
+        "category": "cafes",
+        "area": "saint-lazare",
+        "meta": "Specialty coffee · Saint-Lazare",
+        "description": "A compact Paris coffee station known for carefully sourced espresso, ceremonial matcha and playful signature drinks.",
+        "instagram": "https://www.instagram.com/cuveenoire/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cuvee%20Noire%2096%20Rue%20Saint-Lazare%2075009%20Paris",
+        "coordinates": [
+          2.3276727,
+          48.8757873
+        ],
+        "images": [
+          "assets/places/cuvee-exterior-new.jpg",
+          "assets/places/cuvee-interior-new.jpg",
+          "assets/places/cuvee-drinks-hq.jpg"
+        ]
+      },
+      {
+        "key": "sevenly-heart",
+        "name": "Sevenly Heart",
+        "arrondissement": 3,
+        "category": "cafes",
+        "area": "le-marais",
+        "meta": "Coffee & brunch · Le Marais",
+        "description": "A sculptural, design-led café spanning coffee, brunch and cocktails in the heart of the Marais.",
+        "instagram": "https://www.instagram.com/sevenlyheart/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sevenly%20Heart%2055%20Rue%20des%20Archives%2075003%20Paris",
+        "coordinates": [
+          2.3585344,
+          48.8615661
+        ],
+        "images": [
+          "assets/places/sevenly-interior-new.jpg",
+          "assets/places/sevenly-cakes-new.jpg",
+          "assets/places/sevenly-space-hq.jpg"
+        ]
+      },
+      {
+        "key": "nami-coffee",
+        "name": "Nami Coffee",
+        "arrondissement": 2,
+        "category": "cafe",
+        "area": "etienne-marcel",
+        "meta": "SPECIALTY COFFEE · BAKERY · ÉTIENNE MARCEL",
+        "description": "A warm two-level specialty coffee shop with house-made cakes and distinctive signature drinks.",
+        "instagram": "https://www.instagram.com/nami.coffee/?hl=es",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nami%20Coffee%20145%20rue%20Saint-Denis%20Paris",
+        "coordinates": [
+          2.3501144,
+          48.8646786
+        ],
+        "images": [
+          "assets/places/nami-facade-new.jpg",
+          "assets/places/nami-food-new.jpg",
+          "assets/places/nami-robie-new.jpg"
+        ]
+      },
+      {
+        "key": "clove-coffee-shop",
+        "name": "Clove Coffee Shop",
+        "arrondissement": 18,
+        "category": "cafe",
+        "area": "montmartre",
+        "meta": "Specialty coffee · Montmartre",
+        "description": "A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.",
+        "instagram": "https://www.instagram.com/clovecoffeeshop/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clove%20Coffee%20Shop%2014%20Rue%20Chappe%2075018%20Paris",
+        "coordinates": [
+          2.3418277,
+          48.8846475
+        ],
+        "images": [
+          "assets/places/clove-friends-hq.jpg",
+          "assets/places/clove-coffee-hq.jpg",
+          "assets/places/clove-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "mardi-cafe",
+        "name": "Mardi",
+        "arrondissement": 19,
+        "category": "cafe",
+        "area": "belleville",
+        "meta": "Coffee & baked goods · Belleville",
+        "description": "A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.",
+        "instagram": "https://www.instagram.com/mardicafeparis/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
+        "coordinates": [
+          2.3874972,
+          48.8762879
+        ],
+        "images": [
+          "assets/places/mardi-facade.jpg",
+          "assets/places/mardi-baked-goods-hq.jpg",
+          "assets/places/mardi-interior-approved.jpg"
+        ]
+      },
+      {
+        "key": "niwa-paris",
+        "name": "Niwa",
+        "arrondissement": 7,
+        "category": "cafe",
+        "area": "vaneau",
+        "meta": "Bakery & café · Vaneau",
+        "description": "A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates - and a warm welcome for dogs.",
+        "instagram": "https://www.instagram.com/niwa_paris_/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Niwa%2056%20Rue%20Vaneau%2075007%20Paris",
+        "coordinates": [
+          2.3194106,
+          48.8506591
+        ],
+        "images": [
+          "assets/places/niwa-instagram-1.jpg",
+          "assets/places/niwa-instagram-2.jpg",
+          "assets/places/niwa-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "partisan-cafe",
+        "name": "Partisan Café",
+        "arrondissement": 3,
+        "category": "cafe",
+        "area": "etienne-marcel",
+        "meta": "Café & roastery · Étienne Marcel",
+        "description": "A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.",
+        "instagram": "https://www.instagram.com/parispartisancafe/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Partisan%20Cafe%2036%20Rue%20de%20Turbigo%2075003%20Paris",
+        "coordinates": [
+          2.3530675,
+          48.8646471
+        ],
+        "images": [
+          "assets/places/partisan-instagram-2.jpg",
+          "assets/places/partisan-instagram-1.jpg",
+          "assets/places/partisan-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "foret-foret",
+        "name": "Forêt Forêt",
+        "arrondissement": 3,
+        "category": "cafe",
+        "area": "le-marais",
+        "meta": "Specialty coffee & tea · Le Marais",
+        "description": "A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.",
+        "instagram": "https://www.instagram.com/foretforet_paris/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=For%C3%AAt%20For%C3%AAt%2064%20Rue%20des%20Tournelles%2075003%20Paris",
+        "coordinates": [
+          2.3674112,
+          48.8571488
+        ],
+        "images": [
+          "assets/places/foret-instagram-1.jpg",
+          "assets/places/foret-foret-dog-space.jpg",
+          "assets/places/foret-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "barkers-brothers",
+        "name": "Barkers + Brothers",
+        "arrondissement": 18,
+        "category": "shop",
+        "area": "montmartre",
+        "meta": "Dog shop & café · Montmartre",
+        "description": "A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.",
+        "instagram": "https://www.instagram.com/barkersandbrothers/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barkers%20and%20Brothers%2046%20Rue%20Berthe%2075018%20Paris",
+        "coordinates": [
+          2.3386242,
+          48.8858484
+        ],
+        "images": [
+          "assets/places/barkers-brothers.jpg",
+          "assets/places/barkers-brothers-2.jpg",
+          "assets/places/barkers-brothers-3.jpg"
+        ]
+      },
+      {
+        "key": "ginos-paris",
+        "name": "Gino's Paris",
+        "arrondissement": 5,
+        "category": "shop",
+        "area": "latin-quarter",
+        "meta": "Boutique, grooming & daycare · Latin Quarter",
+        "description": "A polished canine concept store combining premium accessories, gentle grooming and daycare in the heart of the Latin Quarter.",
+        "instagram": "https://www.instagram.com/ginos.paris/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gino's%20Paris%207%20Rue%20de%20la%20Montagne%20Sainte-Genevi%C3%A8ve%2075005%20Paris",
+        "coordinates": [
+          2.3488655,
+          48.8492095
+        ],
+        "images": [
+          "assets/places/ginos-paris.jpg",
+          "assets/places/ginos-paris-2.jpg",
+          "assets/places/ginos-paris-3.jpg"
+        ]
+      },
+      {
+        "key": "animal-particulier",
+        "name": "Animal Particulier",
+        "arrondissement": 18,
+        "category": "shop",
+        "area": "montmartre",
+        "meta": "Independent pet shop · Montmartre",
+        "description": "An independent Montmartre address for distinctive accessories, clothing and small-batch finds for dogs and cats.",
+        "instagram": "https://www.instagram.com/animal_particulier/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Animal%20Particulier%2011%20Square%20de%20Clignancourt%2075018%20Paris",
+        "coordinates": [
+          2.346257,
+          48.8931712
+        ],
+        "images": [
+          "assets/places/animal-particulier.jpg",
+          "assets/places/animal-particulier-2.jpg",
+          "assets/places/animal-particulier-3.jpg"
+        ]
+      },
+      {
+        "key": "casa-del-doggo",
+        "name": "Casa del Doggo",
+        "arrondissement": 16,
+        "category": "shop",
+        "area": "auteuil",
+        "meta": "Dog bakery & concept store · Auteuil",
+        "description": "A joyful dog-first bakery with handmade treats, a colourful shop and a self-service dog wash designed for time together.",
+        "instagram": "https://www.instagram.com/casadeldoggobakery/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20del%20Doggo%2013%20Rue%20Pierre%20Gu%C3%A9rin%2075016%20Paris",
+        "coordinates": [
+          2.2664375,
+          48.848581
+        ],
+        "images": [
+          "assets/places/casa-del-doggo.jpg",
+          "assets/places/casa-del-doggo-2.jpg",
+          "assets/places/casa-del-doggo-3.jpg"
+        ]
+      },
+      {
+        "key": "le-bone-appart",
+        "name": "Le Bone Appart",
+        "arrondissement": 4,
+        "category": "shop",
+        "area": "le-marais",
+        "meta": "Dog café & boutique · Le Marais",
+        "description": "A dog café and boutique beside Place des Vosges, made for coffee, canine pâtisseries and playful Parisian accessories.",
+        "instagram": "https://www.instagram.com/leboneappart/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bone%20Appart%209%20Rue%20de%20Birague%2075004%20Paris",
+        "coordinates": [
+          2.3649913,
+          48.8545307
+        ],
+        "images": [
+          "assets/places/le-bone-appart.jpg",
+          "assets/places/le-bone-appart-2.jpg",
+          "assets/places/le-bone-appart-3.jpg"
+        ]
+      },
+      {
+        "key": "petsochic",
+        "name": "Petsochic",
+        "arrondissement": 6,
+        "category": "shop",
+        "area": "saint-germain",
+        "meta": "Boutique & spa · Saint-Germain",
+        "description": "A refined Left Bank boutique and grooming spa bringing together French-made accessories, personalisation and attentive care.",
+        "instagram": "https://www.instagram.com/petsochic/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Petsochic%2016%20Rue%20Dauphine%2075006%20Paris",
+        "coordinates": [
+          2.3399606,
+          48.8555611
+        ],
+        "images": [
+          "assets/places/petsochic.jpg",
+          "assets/places/petsochic-2.jpg",
+          "assets/places/petsochic-3.jpg"
+        ]
+      },
+      {
+        "key": "pantoufle-paris",
+        "name": "Pantoufle",
+        "arrondissement": 19,
+        "category": "restaurant",
+        "area": "buttes-chaumont",
+        "meta": "Restaurant & wine bar · Buttes-Chaumont",
+        "description": "A relaxed wine bar and restaurant hosting rotating chef residencies, with expressive seasonal plates and an intimate neighbourhood mood.",
+        "instagram": "https://www.instagram.com/pantoufle.paris/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pantoufle%205%20Rue%20de%20Chaumont%2075019%20Paris",
+        "coordinates": [
+          2.3720708,
+          48.8812908
+        ],
+        "images": [
+          "assets/places/pantoufle-paris.jpg",
+          "assets/places/pantoufle-paris-2.jpg",
+          "assets/places/pantoufle-paris-3.jpg"
+        ]
+      },
+      {
+        "key": "griffon-paris",
+        "name": "Griffon",
+        "arrondissement": 4,
+        "category": "restaurant",
+        "area": "le-marais",
+        "meta": "Café, restaurant & bar · Le Marais",
+        "description": "A characterful Marais hideaway for coffee, fresh food and natural wine, with collected interiors and a leafy secret terrace.",
+        "instagram": "https://www.instagram.com/griffon.paris/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Griffon%2055%20bis%20Rue%20des%20Francs-Bourgeois%2075004%20Paris",
+        "coordinates": [
+          2.3572985,
+          48.8596119
+        ],
+        "images": [
+          "assets/places/griffon-paris-2.jpg",
+          "assets/places/griffon-dining-room.jpg",
+          "assets/places/griffon-interior-sign.jpg"
+        ]
+      },
+      {
+        "key": "colore-paris",
+        "name": "Coloré",
+        "arrondissement": 18,
+        "category": "restaurant",
+        "area": "montmartre",
+        "meta": "French-Japanese restaurant · Montmartre",
+        "description": "A quietly creative Montmartre restaurant where seasonal French produce meets delicate Japanese influences and natural wine.",
+        "instagram": "https://www.instagram.com/colore.paris/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Color%C3%A9%2020%20Rue%20du%20Ruisseau%2075018%20Paris",
+        "coordinates": [
+          2.3401074,
+          48.8924114
+        ],
+        "images": [
+          "assets/places/colore-paris.jpg",
+          "assets/places/colore-paris-2.jpg",
+          "assets/places/colore-paris-3.jpg"
+        ]
+      },
+      {
+        "key": "mesa-paris",
+        "name": "Mesa",
+        "arrondissement": 9,
+        "category": "cafe",
+        "area": "montmartre",
+        "meta": "Plant-based café & restaurant · Rue des Martyrs",
+        "description": "A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.",
+        "instagram": "https://www.instagram.com/mesa.paris/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mesa%2068%20Rue%20des%20Martyrs%2075009%20Paris",
+        "coordinates": [
+          2.3401281,
+          48.8811485
+        ],
+        "images": [
+          "assets/places/mesa-instagram-1.jpg",
+          "assets/places/mesa-instagram-2.jpg",
+          "assets/places/mesa-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "white-coffee-marais",
+        "name": "WHITE Coffee",
+        "arrondissement": 4,
+        "category": "cafe",
+        "area": "le-marais",
+        "meta": "Specialty coffee & matcha · Le Marais",
+        "description": "A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.",
+        "instagram": "https://www.instagram.com/drink.white/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
+        "coordinates": [
+          2.3570133,
+          48.8567636
+        ],
+        "images": [
+          "assets/places/white-instagram-1.jpg",
+          "assets/places/white-instagram-2.jpg",
+          "assets/places/white-marais-coffee-selection.jpg"
+        ]
+      },
+      {
+        "key": "noir-montmartre",
+        "name": "NOIR Coffee Shop",
+        "arrondissement": 18,
+        "category": "cafe",
+        "area": "montmartre",
+        "meta": "Coffee shop & roastery · Montmartre",
+        "description": "One of NOIR's design-led Paris coffee shops, serving house-roasted beans from a compact address just below Sacré-Cœur.",
+        "instagram": "https://www.instagram.com/noir_coffeeshop/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NOIR%20Coffee%206%20Rue%20des%20Trois%20Freres%2075018%20Paris",
+        "coordinates": [
+          2.3415783,
+          48.8838812
+        ],
+        "images": [
+          "assets/places/noir-instagram-1.jpg",
+          "assets/places/noir-instagram-2.jpg",
+          "assets/places/noir-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "parisien-tete-de-chien",
+        "name": "Parisien Tête de Chien",
+        "arrondissement": 17,
+        "category": "shop",
+        "area": "batignolles",
+        "meta": "Dog-friendly café, shop & yoga studio · Batignolles",
+        "description": "A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.",
+        "instagram": "https://www.instagram.com/parisien_tete_de_chien/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parisien%20Tete%20de%20Chien%2019%20Rue%20des%20Moines%2075017%20Paris",
+        "coordinates": [
+          2.3190036,
+          48.8885334
+        ],
+        "images": [
+          "assets/places/parisien-colourful-interior.jpg",
+          "assets/places/parisien-tete-de-chien-2.jpg",
+          "assets/places/parisien-tete-de-chien-3.jpg"
+        ]
+      },
+      {
+        "key": "cayu-canides-club",
+        "name": "CAYU Canidés Club",
+        "arrondissement": 19,
+        "category": "shop",
+        "area": "buttes-chaumont",
+        "meta": "Independent dog shop · Buttes-Chaumont",
+        "description": "A Paris-designed dog shop on Rue Bouret, bringing together thoughtful accessories, an independent label and a community-minded club spirit.",
+        "instagram": "https://www.instagram.com/cayu.canidesclub/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CAYU%20Canides%20Club%2028%20Rue%20Bouret%2075019%20Paris",
+        "coordinates": [
+          2.3743721,
+          48.88157
+        ],
+        "images": [
+          "assets/places/cayu-knitwear-dog.jpg",
+          "assets/places/cayu-window-accessories.jpg",
+          "assets/places/cayu-patterned-collar.jpg"
+        ]
+      },
+      {
+        "key": "jaja-paris",
+        "name": "Jaja",
+        "arrondissement": 4,
+        "category": "restaurant",
+        "area": "le-marais",
+        "meta": "Restaurant & wine · Le Marais",
+        "description": "A hidden Marais courtyard restaurant serving convivial seasonal cooking and characterful wines from lunch through dinner every day.",
+        "instagram": "https://www.instagram.com/jaja.resto/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jaja%203%20Rue%20Sainte-Croix%20de%20la%20Bretonnerie%2075004%20Paris",
+        "coordinates": [
+          2.3573508,
+          48.8576496
+        ],
+        "images": [
+          "assets/places/jaja-1.jpg",
+          "assets/places/jaja-2.jpg",
+          "assets/places/jaja-3.jpg"
+        ]
+      },
+      {
+        "key": "cafe-charlot-paris",
+        "name": "Café Charlot",
+        "arrondissement": 3,
+        "category": "restaurant",
+        "area": "le-marais",
+        "meta": "Parisian bistro · Haut-Marais",
+        "description": "A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.",
+        "instagram": "https://www.instagram.com/cafecharlotparis/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Charlot%2038%20Rue%20de%20Bretagne%2075003%20Paris",
+        "coordinates": [
+          2.362468,
+          48.863056
+        ],
+        "images": [
+          "assets/places/cafe-charlot-1.jpg",
+          "assets/places/cafe-charlot-2.jpg",
+          "assets/places/cafe-charlot-vintage-sign.jpg"
+        ]
+      },
+      {
+        "key": "hotel-suzie-blue",
+        "name": "Hôtel Suzie Blue",
+        "arrondissement": 3,
+        "category": "hotel",
+        "area": "le-marais",
+        "meta": "Hotel & coffee shop · Le Marais",
+        "description": "A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.",
+        "instagram": "https://www.instagram.com/hotelsuzieblue/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suzie%20Blue%204%20Rue%20de%20Saintonge%2075003%20Paris",
+        "coordinates": [
+          2.3618319,
+          48.8608882
+        ],
+        "images": [
+          "assets/places/hotel-suzie-blue-instagram-1.jpg",
+          "assets/places/hotel-suzie-blue-instagram-2.jpg",
+          "assets/places/hotel-suzie-blue-instagram-3.jpg"
+        ]
+      },
+      {
+        "key": "hoy-paris",
+        "name": "HOY Paris",
+        "arrondissement": 9,
+        "category": "hotel",
+        "area": "montmartre",
+        "meta": "Wellness hotel · Rue des Martyrs",
+        "description": "A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.",
+        "instagram": "https://www.instagram.com/hoyparis/",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HOY%20Paris%2068%20Rue%20des%20Martyrs%2075009%20Paris",
+        "coordinates": [
+          2.3401281,
+          48.8811485
+        ],
+        "images": [
+          "assets/places/hoy-guest-room.jpg",
+          "assets/places/hoy-paris-instagram-2.jpg",
+          "assets/places/hoy-paris-instagram-3.jpg"
+        ]
+      }
+    ]
+  },
+  "plans": [
+    {
+      "slug": "slow-morning-montmartre",
+      "title": "A Slow Morning in Montmartre",
+      "shortTitle": "Montmartre Morning",
+      "duration": "3.5 hours",
+      "area": "18th arrondissement",
+      "bestTime": "Friday or Saturday · Start around 09:00",
+      "character": "Coffee, neighbourhood streets and a thoughtful stop for your dog.",
+      "intro": "A gentle Montmartre morning with time for good coffee, a neighbourhood wander and places chosen for both of you.",
+      "cover": "https://thedogfriendlyguide.com/assets/guides/montmartre-dog.png",
+      "tone": "terracotta",
+      "stopKeys": [
+        "clove-coffee-shop",
+        "simple-coffee",
+        "animal-particulier",
+        "colore-paris"
+      ],
+      "stopNotes": [
+        "Begin with coffee while the neighbourhood is still settling into the day.",
+        "Continue towards Rue des Martyrs for a second coffee or something baked.",
+        "Make a considered stop for your dog before walking north through Montmartre.",
+        "Finish with a relaxed late breakfast or lunch nearby."
+      ]
+    },
+    {
+      "slug": "afternoon-le-marais",
+      "title": "An Afternoon in Le Marais",
+      "shortTitle": "Le Marais Afternoon",
+      "duration": "4 hours",
+      "area": "3rd and 4th arrondissements",
+      "bestTime": "Tuesday to Saturday · Start around 14:00",
+      "character": "Specialty coffee, dog shops and an early evening table.",
+      "intro": "A compact route through the quieter edges of Le Marais, moving from coffee to dog-focused shops and an easy early dinner.",
+      "cover": "https://thedogfriendlyguide.com/assets/guides/le-marais-dog-v2.jpg",
+      "tone": "plum",
+      "stopKeys": [
+        "partisan-cafe",
+        "le-bone-appart",
+        "jaja-paris"
+      ],
+      "stopNotes": [
+        "Start with a carefully made coffee before heading east.",
+        "Continue to a dog café and boutique made around life together.",
+        "Close the afternoon with an early table in the heart of Le Marais."
+      ]
+    },
+    {
+      "slug": "golden-hour-seine",
+      "title": "A Golden Hour Along the Seine",
+      "shortTitle": "Golden Hour by the Seine",
+      "duration": "3 hours",
+      "area": "5th and 6th arrondissements",
+      "bestTime": "Thursday to Sunday · Start around 17:00",
+      "character": "A riverside walk, an unhurried pause and dinner as Paris turns golden.",
+      "intro": "A gentle late-afternoon route along the Seine, moving through the Left Bank with time to pause before an early dinner.",
+      "cover": "https://thedogfriendlyguide.com/assets/guides/paris-day-dog-v2.jpg",
+      "tone": "olive",
+      "stopKeys": [
+        "nami-coffee",
+        "jaja-paris"
+      ],
+      "stopNotes": [
+        "Begin with something carefully made before walking towards the river.",
+        "Finish with an early dinner as the light softens over Paris."
+      ]
+    },
+    {
+      "slug": "sunday-saint-germain",
+      "title": "A Sunday in Saint-Germain",
+      "shortTitle": "Saint-Germain Sunday",
+      "duration": "4.5 hours",
+      "area": "6th arrondissement",
+      "bestTime": "Sunday · Start around 10:30",
+      "character": "Coffee, old streets, a garden pause and a long lunch together.",
+      "intro": "A relaxed Sunday around Saint-Germain, designed for wandering slowly between coffee, quiet streets and a generous lunch.",
+      "cover": "https://thedogfriendlyguide.com/assets/guides/all-places-dog-v2.jpg",
+      "tone": "terracotta",
+      "stopKeys": [
+        "partisan-cafe",
+        "petsochic",
+        "jaja-paris"
+      ],
+      "stopNotes": [
+        "Start slowly with coffee and something baked.",
+        "Browse one thoughtful stop chosen with your dog in mind.",
+        "End with a long, easy lunch before heading home."
+      ]
+    }
+  ]
+}

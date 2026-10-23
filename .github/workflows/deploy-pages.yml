@@ -26,6 +26,11 @@ jobs:
       - name: Check out website
         uses: actions/checkout@v4
 
+      - name: Build shared mobile catalogue
+        env:
+          BUILD_ID: ${{ github.sha }}
+        run: python3 scripts/build-mobile-catalogue.py
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
