@@ -1,6 +1,5 @@
 (() => {
   const editions = {
-    brighton: { name: 'Brighton', count: 1, image: 'assets/places/brighton-loaft-editorial.webp', intro: 'Our Brighton edit begins in the South Lanes, with a calm coffee and design stop to enjoy together.', copy: 'Discover LOAFT, our first Brighton address: Wolfox coffee, considered objects and a warm welcome for dogs.' },
     hamburg: { name: 'Hamburg', count: 5, image: 'assets/places/hamburg-gotcha-matcha-editorial.webp', intro: 'Our Hamburg edit brings together two cafés, two dog shops and a harbour-side restaurant — from Eppendorf and Winterhude to the old town and HafenCity.', copy: 'Matcha, slow breakfasts, considered dog shops and a welcoming table by the harbour. Five places to enjoy Hamburg together.' },
     paris: { name: 'Paris', count: 29 },
     barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-jac-barcelona-1.webp', position: 'center 65%', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },

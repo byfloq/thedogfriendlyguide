@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "local",
-  "generatedAt": "2026-10-23T14:26:56.458965+00:00",
+  "revision": "destinations-20261023-2",
+  "generatedAt": "2026-10-23T17:48:09.653024+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -11,11 +11,6 @@
     {
       "id": "berlin",
       "label": "Berlin",
-      "subtitle": "The Guide’s edit"
-    },
-    {
-      "id": "brighton",
-      "label": "Brighton",
       "subtitle": "The Guide’s edit"
     },
     {
@@ -481,35 +476,6 @@
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Goodlyfe%20M%C3%BChlenstra%C3%9Fe%2061%20Berlin",
       "websiteUrl": "https://www.instagram.com/goodlyfe_de/",
-      "coordinates": {
-        "latitude": 0,
-        "longitude": 0
-      },
-      "coordinatesVerified": false,
-      "distanceKm": 0,
-      "source": "website",
-      "attributes": {
-        "dogsInside": false,
-        "dogsOutside": false,
-        "terrace": false,
-        "water": false,
-        "cocoWasThere": false
-      }
-    },
-    {
-      "id": "brighton-loaft",
-      "name": "LOAFT Brighton",
-      "city": "brighton",
-      "area": "The Lanes",
-      "category": "Drink",
-      "shortDescription": "Café · The Lanes",
-      "editorial": "A calm concept store and Wolfox coffee bar in the South Lanes, bringing together ceramics, natural textures, coffee and freshly baked pastries. Dogs are welcome with no extra fee, subject to space and availability at busy times. Photography: @loaft.uk",
-      "image": "https://thedogfriendlyguide.com/assets/places/brighton-loaft-editorial.webp",
-      "images": [
-        "https://thedogfriendlyguide.com/assets/places/brighton-loaft-editorial.webp"
-      ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LOAFT%20Brighton%2015c%20Prince%20Albert%20Street%2C%20Brighton",
-      "websiteUrl": "https://www.instagram.com/loaft.uk/",
       "coordinates": {
         "latitude": 0,
         "longitude": 0
