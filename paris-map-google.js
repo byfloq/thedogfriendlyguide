@@ -53,6 +53,7 @@
   let districtShapes = [];
   let parisBounds = null;
   let scrollTimer;
+  let appMap = null;
 
   const normaliseCategory = category => category === 'cafes' ? 'cafe' : category;
   const escapeHTML = value => String(value || '').replace(/[&<>'"]/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
@@ -107,11 +108,18 @@
     return bounds;
   };
   const fitVisiblePlaces = () => { if (!visiblePlaces.length) return; const bounds = new google.maps.LatLngBounds(); visiblePlaces.forEach(place => bounds.extend({ lat: place.coordinates[1], lng: place.coordinates[0] })); map.fitBounds(bounds, window.innerWidth <= 700 ? 55 : 85); };
-  const fitParisBoundary = () => { if (!parisBounds) return fitVisiblePlaces(); map.fitBounds(parisBounds, window.innerWidth <= 700 ? { top: 150, right: 34, bottom: 52, left: 34 } : { top: 122, right: 72, bottom: 68, left: 72 }); };
-  const clearSelection = () => { selectedKey = null; rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => marker.element.classList.remove('active', 'is-muted')); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } };
-  const selectPlace = async (key, options = {}) => { const place = visiblePlaces.find(item => item.key === key); if (!place) return; selectedKey = key; rail.classList.add('has-selection'); document.querySelector('.map-results').classList.add('has-selection'); markers.forEach((marker, markerKey) => { marker.element.classList.toggle('active', markerKey === key); marker.element.classList.toggle('is-muted', markerKey !== key); }); rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key)); if (activeDistrict === 'all') { const districtBounds = await drawBoundary(`paris-arrondissements/arr-${String(place.arrondissement).padStart(2, '0')}.geojson`, true); if (options.pan !== false && selectedKey === key) map.fitBounds(districtBounds, { top: 145, right: 95, bottom: 245, left: 95 }); } else if (options.pan !== false) { map.panTo({ lat: place.coordinates[1], lng: place.coordinates[0] }); } };
+  const fitParisBoundary = () => { if (!parisBounds) return fitVisiblePlaces(); map.fitBounds(parisBounds, appMap ? appMap.cameraPadding() : window.innerWidth <= 700 ? { top: 150, right: 34, bottom: 52, left: 34 } : { top: 122, right: 72, bottom: 68, left: 72 }); };
+  const clearSelection = () => { selectedKey = null; rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => marker.element.classList.remove('active', 'is-muted')); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } appMap?.update(); };
+  const selectPlace = async (key, options = {}) => { const place = visiblePlaces.find(item => item.key === key); if (!place) return; selectedKey = key; rail.classList.add('has-selection'); document.querySelector('.map-results').classList.add('has-selection'); markers.forEach((marker, markerKey) => { marker.element.classList.toggle('active', markerKey === key); marker.element.classList.toggle('is-muted', markerKey !== key); }); rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key)); appMap?.update(); if (appMap) {
+    const padding = appMap.cameraPadding();
+    map.setZoom(Math.max(15, map.getZoom() || 15));
+    map.setCenter({lat:place.coordinates[1], lng:place.coordinates[0]});
+    const targetY = (padding.top + mapElement.clientHeight - padding.bottom) / 2;
+    map.panBy(0, mapElement.clientHeight / 2 - targetY);
+    return;
+  } if (activeDistrict === 'all') { const districtBounds = await drawBoundary(`paris-arrondissements/arr-${String(place.arrondissement).padStart(2, '0')}.geojson`, true); if (options.pan !== false && selectedKey === key) map.fitBounds(districtBounds, { top: 145, right: 95, bottom: 245, left: 95 }); } else if (options.pan !== false) { map.panTo({ lat: place.coordinates[1], lng: place.coordinates[0] }); } };
   const updateDistrict = async () => { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; if (activeDistrict === 'all') return null; return drawBoundary(`paris-arrondissements/arr-${String(activeDistrict).padStart(2, '0')}.geojson`, true); };
-  const render = async (options = {}) => { visiblePlaces = places.filter(place => (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(place.arrondissement) === activeDistrict) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitAll) fitParisBoundary(); };
+  const render = async (options = {}) => { visiblePlaces = places.filter(place => (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(place.arrondissement) === activeDistrict) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); appMap?.update(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, appMap ? appMap.cameraPadding() : { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitAll) fitParisBoundary(); };
   const buildDistrictFilters = () => { const container = document.getElementById('district-filters'); const districts = [...new Set(places.map(place => place.arrondissement))].sort((a, b) => a - b); container.innerHTML = `<button class="active" data-district="all" aria-pressed="true">All districts</button>${districts.map(number => `<button data-district="${number}" aria-pressed="false">${ordinal(number)} arr.</button>`).join('')}`; container.querySelectorAll('button').forEach(button => button.addEventListener('click', () => { activeDistrict = button.dataset.district; container.querySelectorAll('button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render({ fitDistrict: activeDistrict !== 'all', fitAll: activeDistrict === 'all' }); })); };
   const loadGoogle = key => new Promise((resolve, reject) => { window.initTdfgGoogleMap = resolve; const script = document.createElement('script'); script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=initTdfgGoogleMap&v=weekly`; script.async = true; script.onerror = reject; document.head.append(script); });
   const initialise = async () => {
@@ -129,6 +137,23 @@
       if (allCount) allCount.textContent = String(places.length);
       buildDistrictFilters();
       map = new google.maps.Map(mapElement, { center: { lat: 48.8668, lng: 2.3505 }, zoom: 12, styles: neutralStyle, mapTypeControl: false, streetViewControl: false, fullscreenControl: true, gestureHandling: 'greedy' });
+      appMap = window.TdfgAppMap?.install({
+        state: () => ({ places:visiblePlaces, selectedKey, district:activeDistrict, category:activeCategory, nearby:nearMeActive }),
+        selectPlace, clearSelection,
+        chooseDistrict: value => document.querySelector(`[data-district="${value}"]`).click(),
+        chooseCategory: value => document.querySelector(`.category-filters [data-category="${value}"]`).click(),
+        resetFilters: () => {
+          activeDistrict = activeCategory = activeIntent = 'all'; nearMeActive = false;
+          nearPanel.classList.remove('active');
+          if (walkingCircle) walkingCircle.setMap(null);
+          if (userMarker) userMarker.setMap(null);
+          document.querySelectorAll('[data-district],.category-filters [data-category]').forEach(button => {
+            const active = (button.dataset.district || button.dataset.category) === 'all';
+            button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active));
+          });
+          render({ fitAll:true });
+        }
+      });
       parisBounds = await drawBoundary('paris-boundary.geojson');
       landmarks.forEach(landmark => new LandmarkMarker(landmark).setMap(map));
       map.addListener('click', clearSelection);
@@ -138,12 +163,12 @@
         if(userMarker)userMarker.setMap(null);if(walkingCircle)walkingCircle.setMap(null);
         userMarker=new google.maps.Marker({map,position:{lat:userLocation[1],lng:userLocation[0]},title:'You are here',icon:{path:google.maps.SymbolPath.CIRCLE,scale:7,fillColor:'#a76344',fillOpacity:1,strokeColor:'#fff',strokeWeight:3}});
         walkingCircle=new google.maps.Circle({map,center:{lat:userLocation[1],lng:userLocation[0]},radius:1200,clickable:false,fillColor:'#a76344',fillOpacity:.06,strokeColor:'#a76344',strokeOpacity:.45,strokeWeight:1});
-        nearPanel.classList.add('active');render();showStatus('Showing Flōq places within about a 15-minute walk.');
-      },()=>showStatus('Share your location to see thoughtful places within a 15-minute walk.'),{enableHighAccuracy:true,timeout:10000});
+        nearPanel.classList.add('active');render();showStatus(appMap ? `${visiblePlaces.length} places within 1.2 km.` : 'Showing Flōq places within about a 15-minute walk.');
+      },()=>showStatus(appMap ? 'Location unavailable. You can still choose an area above.' : 'Share your location to see thoughtful places within a 15-minute walk.'),{enableHighAccuracy:true,timeout:10000});
       nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>{if(!nearMeActive)activateNearby();else{nearMeActive=false;activeIntent='all';nearPanel.classList.remove('active');nearPanel.querySelectorAll('[data-intent]').forEach(item=>item.classList.toggle('active',item.dataset.intent==='all'));if(walkingCircle)walkingCircle.setMap(null);if(userMarker)userMarker.setMap(null);render({fitAll:true})}});
       nearPanel.querySelectorAll('[data-intent]').forEach(button=>button.addEventListener('click',()=>{activeIntent=button.dataset.intent;nearPanel.querySelectorAll('[data-intent]').forEach(item=>item.classList.toggle('active',item===button));if(!nearMeActive){activateNearby();return}render();showStatus(visiblePlaces.length?`${visiblePlaces.length} nearby ${activeIntent==='all'?'places':activeIntent==='walk'?'ideas for your walk':activeIntent+' options'} found.`:'No exact matches nearby. Try another intention.')}));
       document.querySelectorAll('.category-filters button').forEach(button => button.addEventListener('click', () => { activeCategory = button.dataset.category; document.querySelectorAll('.category-filters button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render(); }));
-      document.querySelector('.locate-button').addEventListener('click', activateNearby);
+      document.querySelector('.locate-button').addEventListener('click', () => { if (appMap && nearMeActive) nearPanel.querySelector('.near-now__toggle').click(); else activateNearby(); });
       document.getElementById('invite-map').addEventListener('click', inviteFriend);
       document.getElementById('share-map').addEventListener('click', copyMapLink);
     } catch (error) { console.error('Google comparison map failed', error); setup.hidden = false; setup.querySelector('span').textContent = 'The Google Maps preview could not load. Check the API key and its domain restrictions.'; }
