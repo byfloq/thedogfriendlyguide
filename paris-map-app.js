@@ -2,6 +2,7 @@
 window.TdfgAppMap = {
   install({ state, selectPlace, clearSelection, chooseDistrict, chooseCategory, resetFilters }) {
     if (!document.body.classList.contains('embed-mode')) return null;
+    const t=window.TdfgMapText||((key)=>key);
     const shell = document.querySelector('.map-shell');
     const results = document.querySelector('.map-results');
     const rail = document.getElementById('place-rail');
@@ -9,9 +10,9 @@ window.TdfgAppMap = {
     filters.className = 'app-map-filters';
     const makeSelect = (name, choices, choose) => {
       const label = document.createElement('label');
-      label.textContent = name;
+      label.textContent = t(name);
       const select = document.createElement('select');
-      choices.forEach(({ value, text }) => select.add(new Option(text, value)));
+      choices.forEach(({ value, text }) => select.add(new Option(t(text), value)));
       select.addEventListener('change', () => choose(select.value));
       label.append(select);
       filters.append(label);
@@ -49,25 +50,25 @@ window.TdfgAppMap = {
       const next = current.places[index + step];
       if (next) selectPlace(next.key);
     };
-    const previous = action('Previous place', '‹', () => move(-1));
-    const next = action('Next place', '›', () => move(1));
-    const reset = action('Reset map filters', 'Reset filters', resetFilters);
+    const previous = action(t("Previous place"), '‹', () => move(-1));
+    const next = action(t("Next place"), '›', () => move(1));
+    const reset = action(t("Reset map filters"), t("Reset filters"), resetFilters);
     reset.classList.add('app-map-reset');
-    const close = action('Close place card', '×', clearSelection);
+    const close = action(t("Close place card"), '×', clearSelection);
     rail.removeAttribute('tabindex');
     function update() {
       const current = state();
       district.value = current.district; category.value = current.category;
       locateButton.setAttribute('aria-pressed', String(current.nearby));
-      locateButton.setAttribute('aria-label', current.nearby ? 'Clear nearby filter' : 'Show my current location');
-      locateButton.lastChild.textContent = current.nearby ? ' Nearby ×' : ' Near me';
+      locateButton.setAttribute('aria-label', current.nearby ? t("Clear nearby filter") : t("Show my current location"));
+      locateButton.lastChild.textContent = ' '+t(current.nearby?'Nearby ×':'Near me');
       const total = current.places.length;
       const index = current.places.findIndex(p => p.key === current.selectedKey);
-      count.textContent = `${total} ${total === 1 ? 'place' : 'places'}${current.nearby ? ' within 1.2 km' : ''} · Tap a pin`;
+      count.textContent = t(current.nearby?'{count} places within 1.2 km · Tap a pin':'{count} places · Tap a pin',{count:total});
       count.hidden = index >= 0 || total === 0;
       results.hidden = index < 0 && total > 0;
       results.classList.toggle('has-selection', index >= 0 || total === 0);
-      position.textContent = total === 0 ? 'No matches' : `${index + 1} of ${total} places`;
+      position.textContent = total === 0 ? t("No matches") : t('{index} of {total} places',{index:index+1,total});
       previous.hidden = next.hidden = close.hidden = total === 0;
       reset.hidden = total > 0;
       previous.disabled = index <= 0; next.disabled = index === total - 1;
@@ -78,9 +79,9 @@ window.TdfgAppMap = {
         if (new URLSearchParams(location.search).get('app') === '1' && !card.querySelector('.app-map-open')) {
           const instagram = card.querySelector('.map-card-actions a:not(.primary)');
           const open = document.createElement('button');
-          open.type = 'button'; open.className = 'app-map-open'; open.textContent = 'View place';
+          open.type = 'button'; open.className = 'app-map-open'; open.textContent = t("View place");
           const place = current.places.find(p => p.key === card.dataset.key);
-          open.setAttribute('aria-label', `View ${place.name}`);
+          open.setAttribute('aria-label', t('View place')+': '+place.name);
           open.addEventListener('click', () => {
             const message = { type:'tdfg:open-place', key:place.key };
             if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(message));
@@ -91,7 +92,7 @@ window.TdfgAppMap = {
       });
       if (!total) {
         const empty = document.createElement('p'); empty.className = 'app-map-empty';
-        empty.textContent = 'No places match these filters. Try another area or reset your filters.';
+        empty.textContent = t("No places match these filters. Try another area or reset your filters.");
         rail.replaceChildren(empty);
       }
     }
