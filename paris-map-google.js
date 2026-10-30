@@ -206,7 +206,7 @@
         if(event.source!==window.parent&&!window.ReactNativeWebView)return;
         let data=event.data;try{if(typeof data==='string')data=JSON.parse(data);}catch{return;}
         if(data?.type==='tdfg:location'){
-          if(data.error){showStatus('Location unavailable. You can still choose an area above.');return;}
+          if(data.error){if(userMarker)userMarker.setMap(null);userLocation=null;showStatus('Location unavailable. You can still choose an area above.');return;}
           showLocation(data.coordinates,!!data.center);
         }
       });
