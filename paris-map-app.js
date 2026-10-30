@@ -69,7 +69,7 @@ window.TdfgAppMap = {
       locateButton.setAttribute('aria-label',t('Show my current location'));locateButton.lastChild.textContent='';locateButton.title=t('Show my current location');
       const total = current.places.length;
       const index = current.places.findIndex(p => p.key === current.selectedKey);
-      count.textContent = t(current.nearby?'{count} places within 1.2 km · Tap a pin':'{count} places · Tap a photo',{count:total});
+      count.textContent = t(current.nearby?'{count} places within 1.2 km · Tap a pin':'{count} places · Tap an icon',{count:total});
       count.hidden = index >= 0 || total === 0;
       results.hidden = index < 0 && total > 0;
       results.classList.toggle('has-selection', index >= 0 || total === 0);shell.classList.toggle('has-place-selection',index>=0);shell.style.setProperty('--place-sheet-height',results.hidden?'0px':results.getBoundingClientRect().height+'px');

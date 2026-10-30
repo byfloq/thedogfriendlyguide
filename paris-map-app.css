@@ -73,3 +73,8 @@
 .embed-mode .google-marker.active .google-marker-label{display:block;max-width:130px;overflow:hidden;text-overflow:ellipsis;color:var(--ink);background:#FAF7F1;padding:3px 7px;border-radius:5px;font:400 12px var(--serif)}
 .embed-mode .google-marker.is-muted{opacity:.78}.embed-mode .google-marker:not(.active) .google-marker-label{display:none}
 @media(max-height:540px){.embed-mode .place-rail .map-card.active{min-height:120px}.embed-mode .map-card-image{width:64px;height:64px;min-height:64px}.embed-mode .place-rail .map-card.active{grid-template-columns:64px minmax(0,1fr)}.embed-mode .map-card h2{font-size:21px}.embed-mode .app-map-filters{inset:5px 10px auto}.embed-mode .app-map-search{min-height:40px}}
+
+/* Every curated place uses a photographic category object; photos stay in its sheet. */
+.embed-mode .landmark-marker{display:none}
+.embed-mode .google-marker.app-object-pin .marker-shape{width:36px;height:40px;transition:transform .18s ease}
+.embed-mode .google-marker.active.app-object-pin .marker-shape{transform:scale(1.18);filter:drop-shadow(0 2px 3px #26221d55)}
