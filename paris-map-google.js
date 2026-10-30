@@ -114,8 +114,20 @@
     return bounds;
   };
   const fitVisiblePlaces = () => { if (!visiblePlaces.length) return; const bounds = new google.maps.LatLngBounds(); visiblePlaces.forEach(place => bounds.extend({ lat: place.coordinates[1], lng: place.coordinates[0] })); map.fitBounds(bounds, window.innerWidth <= 700 ? 55 : 85); };
-  const fitParisBoundary = () => { if (!parisBounds) return fitVisiblePlaces(); map.fitBounds(parisBounds, appMap ? appMap.cameraPadding() : window.innerWidth <= 700 ? { top: 150, right: 34, bottom: 52, left: 34 } : { top: 122, right: 72, bottom: 68, left: 72 }); };
-  const clearSelection = () => { selectedKey = null; rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => marker.element.classList.remove('active', 'is-muted')); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } appMap?.update(); };
+  const fitParisBoundary = () => {
+    if(appMap){
+      // The municipal boundary includes both woods. Fitting that full width on
+      // a phone collapses every central venue into one untappable stack.
+      const padding=appMap.cameraPadding();
+      map.setCenter({lat:48.8655,lng:2.3505});map.setZoom(13);
+      const targetY=(padding.top+mapElement.clientHeight-padding.bottom)/2;
+      map.panBy(0,mapElement.clientHeight/2-targetY);
+      return;
+    }
+    if (!parisBounds) return fitVisiblePlaces();
+    map.fitBounds(parisBounds, window.innerWidth <= 700 ? { top: 150, right: 34, bottom: 52, left: 34 } : { top: 122, right: 72, bottom: 68, left: 72 });
+  };
+  const clearSelection = () => { selectedKey = null; rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => {marker.element.classList.remove('active', 'is-muted');marker.draw();}); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } appMap?.update(); };
   const selectPlace = async (key, options = {}) => { const place = visiblePlaces.find(item => item.key === key); if (!place) return; selectedKey = key; rail.classList.add('has-selection'); document.querySelector('.map-results').classList.add('has-selection'); markers.forEach((marker, markerKey) => { marker.draw();marker.element.classList.toggle('active', markerKey === key); marker.element.classList.toggle('is-muted', markerKey !== key); }); rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key)); appMap?.update(); if (appMap) {
     const padding = appMap.cameraPadding();
     map.setZoom(Math.max(15, map.getZoom() || 15));
