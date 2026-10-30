@@ -110,7 +110,7 @@ window.TdfgAppMap = {
         rail.replaceChildren(empty);
       }
     }
-    update();
+    results.hidden=true;count.hidden=true;
     return {
       update,
       cameraPadding() {
