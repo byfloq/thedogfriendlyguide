@@ -1,5 +1,11 @@
 (() => {
   const t=window.TdfgMapText||((key)=>key);
+  const reportFailure=()=>{const message={type:'tdfg:map-error'};if(window.ReactNativeWebView)window.ReactNativeWebView.postMessage(JSON.stringify(message));else if(window.parent!==window)window.parent.postMessage(message,'*');};
+  window.addEventListener('error',event=>{if(event.error)reportFailure();});
+  const cityId = new URLSearchParams(location.search).get('city') || 'paris';
+  const cityConfig = window.TdfgCityMap.cities[cityId];
+  const isParis = cityId === 'paris';
+  const cityLabel = cityConfig?.label || cityId;
   const mapElement = document.getElementById('paris-map');
   const rail = document.getElementById('place-rail');
   const count = document.getElementById('visible-count');
@@ -65,9 +71,9 @@
   const escapeHTML = value => String(value || '').replace(/[&<>'"]/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
   const ordinal = number => `${number}${number === 1 ? 'st' : number === 2 ? 'nd' : number === 3 ? 'rd' : 'th'}`;
   const showStatus = message => { status.textContent = t(message); status.classList.add('show'); window.setTimeout(() => status.classList.remove('show'), 3000); };
-  const mapShareUrl = () => `${window.location.origin}/paris-map-google-v2.html`;
+  const mapShareUrl = () => `${window.location.origin}/paris-map-google-v2.html?city=${encodeURIComponent(cityId)}`;
   const copyMapLink = async () => { try { await navigator.clipboard.writeText(mapShareUrl()); showStatus('Map link copied.'); } catch (error) { showStatus('Copy this page address to share the map.'); } };
-  const inviteFriend = async () => { const shareData = { title: 'The Dog Friendly Guide - Paris', text: 'Explore our favourite dog-friendly places in Paris with me.', url: mapShareUrl() }; if (navigator.share) { try { await navigator.share(shareData); } catch (error) { if (error.name !== 'AbortError') await copyMapLink(); } } else { await copyMapLink(); } };
+  const inviteFriend = async () => { const shareData = { title: 'The Dog Friendly Guide - '+cityLabel, text: 'Explore our favourite dog-friendly places in '+cityLabel+' with me.', url: mapShareUrl() }; if (navigator.share) { try { await navigator.share(shareData); } catch (error) { if (error.name !== 'AbortError') await copyMapLink(); } } else { await copyMapLink(); } };
   const distanceBetween = (a, b) => { const r = degrees => degrees * Math.PI / 180; const dLat = r(b[1] - a[1]); const dLng = r(b[0] - a[0]); const x = Math.sin(dLat / 2) ** 2 + Math.cos(r(a[1])) * Math.cos(r(b[1])) * Math.sin(dLng / 2) ** 2; return 6371 * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x)); };
   const intentMatches = place => {
     const category = normaliseCategory(place.category);
@@ -79,7 +85,7 @@
     return true;
   };
   const formatDistance = km => km < 1 ? `${Math.round(km * 1000)} m away` : `${km.toFixed(1)} km away`;
-  const cardFor = place => { const category = normaliseCategory(place.category); const distance = userLocation ? `<span class="card-distance">${formatDistance(distanceBetween(userLocation, place.coordinates))}</span>` : ''; const image = (appMap ? place.preview : null) || place.images?.[0] || 'assets/places/photo-coming-soon-cafe.svg'; return `<article class="map-card" data-key="${escapeHTML(place.key)}" data-category="${category}" tabindex="0" aria-label="Show ${escapeHTML(place.name)} on the map"><img class="map-card-image" loading="lazy" decoding="async" src="${escapeHTML(image)}" onerror="this.onerror=null;this.src='assets/places/photo-coming-soon-cafe.svg'" alt="${escapeHTML(place.name)} in Paris"><div class="map-card-copy"><p class="map-card-kicker"><i class="dot ${category}"></i>${t(categoryNames[category])} ${distance}</p><h2>${escapeHTML(place.name)}</h2><p class="map-card-meta">${escapeHTML(place.meta)}</p><p class="map-card-hours">${escapeHTML(place.openingHours || '')}</p><div class="map-card-actions"><a class="primary" href="${escapeHTML(place.mapsUrl)}" target="_blank" rel="noopener">${t('Directions')}</a><a href="${escapeHTML(place.instagram)}" target="_blank" rel="noopener">Instagram</a></div></div></article>`; };
+  const cardFor = place => { const category = normaliseCategory(place.category); const distance = userLocation ? `<span class="card-distance">${formatDistance(distanceBetween(userLocation, place.coordinates))}</span>` : ''; const image = (appMap ? place.preview : null) || place.images?.[0] || 'assets/places/photo-coming-soon-cafe.svg'; return `<article class="map-card" data-key="${escapeHTML(place.key)}" data-category="${category}" tabindex="0" aria-label="${escapeHTML(t('Show place'))}: ${escapeHTML(place.name)}"><img class="map-card-image" loading="lazy" decoding="async" src="${escapeHTML(image)}" onerror="this.onerror=null;this.src='assets/places/photo-coming-soon-cafe.svg'" alt="${escapeHTML(place.name)} in ${escapeHTML(cityLabel)}"><div class="map-card-copy"><p class="map-card-kicker"><i class="dot ${category}"></i>${t(categoryNames[category])} ${distance}</p><h2>${escapeHTML(place.name)}</h2><p class="map-card-meta">${escapeHTML(place.meta)}</p><p class="map-card-hours">${escapeHTML(place.openingHours || '')}</p><div class="map-card-actions"><a class="primary" href="${escapeHTML(place.mapsUrl)}" target="_blank" rel="noopener">${t('Directions')}</a><a href="${escapeHTML(place.instagram)}" target="_blank" rel="noopener">Instagram</a></div></div></article>`; };
 
   let HTMLMarker;
   let LandmarkMarker;
@@ -113,8 +119,9 @@
     });
     return bounds;
   };
-  const fitVisiblePlaces = () => { if (!visiblePlaces.length) return; const bounds = new google.maps.LatLngBounds(); visiblePlaces.forEach(place => bounds.extend({ lat: place.coordinates[1], lng: place.coordinates[0] })); map.fitBounds(bounds, window.innerWidth <= 700 ? 55 : 85); };
+  const fitVisiblePlaces = () => { if (!visiblePlaces.length) return; const bounds = new google.maps.LatLngBounds(); visiblePlaces.forEach(place => bounds.extend({ lat: place.coordinates[1], lng: place.coordinates[0] })); map.fitBounds(bounds, appMap ? appMap.cameraPadding() : window.innerWidth <= 700 ? 55 : 85); google.maps.event.addListenerOnce(map,'idle',()=>{if(map.getZoom()>16)map.setZoom(16);}); };
   const fitParisBoundary = () => {
+    if(!isParis){fitVisiblePlaces();return;}
     if(appMap){
       // The municipal boundary includes both woods. Fitting that full width on
       // a phone collapses every central venue into one untappable stack.
@@ -135,32 +142,49 @@
     const targetY = (padding.top + mapElement.clientHeight - padding.bottom) / 2;
     map.panBy(0, mapElement.clientHeight / 2 - targetY);
     return;
-  } if (activeDistrict === 'all') { const districtBounds = await drawBoundary(`paris-arrondissements/arr-${String(place.arrondissement).padStart(2, '0')}.geojson`, true); if (options.pan !== false && selectedKey === key) map.fitBounds(districtBounds, { top: 145, right: 95, bottom: 245, left: 95 }); } else if (options.pan !== false) { map.panTo({ lat: place.coordinates[1], lng: place.coordinates[0] }); } };
-  const updateDistrict = async () => { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; if (activeDistrict === 'all') return null; return drawBoundary(`paris-arrondissements/arr-${String(activeDistrict).padStart(2, '0')}.geojson`, true); };
-  const render = async (options = {}) => { visiblePlaces = places.filter(place => (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(place.arrondissement) === activeDistrict) && (!activeSearch || `${place.name} ${place.meta} ${place.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(activeSearch)) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); appMap?.update(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, appMap ? appMap.cameraPadding() : { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitAll) fitParisBoundary(); };
-  const buildDistrictFilters = () => { const container = document.getElementById('district-filters'); const districts = [...new Set(places.map(place => place.arrondissement))].sort((a, b) => a - b); container.innerHTML = `<button class="active" data-district="all" aria-pressed="true">All districts</button>${districts.map(number => `<button data-district="${number}" aria-pressed="false">${ordinal(number)} arr.</button>`).join('')}`; container.querySelectorAll('button').forEach(button => button.addEventListener('click', () => { activeDistrict = button.dataset.district; container.querySelectorAll('button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render({ fitDistrict: activeDistrict !== 'all', fitAll: activeDistrict === 'all' }); })); };
-  const loadGoogle = key => new Promise((resolve, reject) => { window.initTdfgGoogleMap = resolve; const script = document.createElement('script'); script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=initTdfgGoogleMap&v=weekly&language=${window.TdfgMapLanguage||'en'}`; script.async = true; script.onerror = reject; document.head.append(script); });
+  } if (isParis && activeDistrict === 'all') { const districtBounds = await drawBoundary(`paris-arrondissements/arr-${String(place.arrondissement).padStart(2, '0')}.geojson`, true); if (options.pan !== false && selectedKey === key) map.fitBounds(districtBounds, { top: 145, right: 95, bottom: 245, left: 95 }); } else if (options.pan !== false) { map.panTo({ lat: place.coordinates[1], lng: place.coordinates[0] }); } };
+  const updateDistrict = async () => { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; if (!isParis || activeDistrict === 'all') return null; return drawBoundary(`paris-arrondissements/arr-${String(activeDistrict).padStart(2, '0')}.geojson`, true); };
+  const render = async (options = {}) => { visiblePlaces = places.filter(place => (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(isParis?place.arrondissement:place.area) === activeDistrict) && (!activeSearch || `${place.name} ${place.meta} ${place.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(activeSearch)) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); appMap?.update(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, appMap ? appMap.cameraPadding() : { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitDistrict&&!isParis)fitVisiblePlaces();else if (options.fitAll) fitParisBoundary(); };
+  const buildDistrictFilters = () => { const container = document.getElementById('district-filters'); const districts = [...new Set(places.map(place => isParis?place.arrondissement:place.area))].filter(Boolean).sort((a,b)=>isParis?a-b:String(a).localeCompare(String(b))); container.innerHTML = `<button class="active" data-district="all" aria-pressed="true">All districts</button>${districts.map(number => `<button data-district="${escapeHTML(number)}" aria-pressed="false">${isParis?ordinal(number)+' arr.':escapeHTML(number)}</button>`).join('')}`; container.querySelectorAll('button').forEach(button => button.addEventListener('click', () => { activeDistrict = button.dataset.district; container.querySelectorAll('button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render({ fitDistrict: activeDistrict !== 'all', fitAll: activeDistrict === 'all' }); })); };
+  const loadGoogle = key => new Promise((resolve, reject) => {
+    const timeout=setTimeout(()=>reject(new Error('Map loading timed out')),20000);
+    window.gm_authFailure=()=>{clearTimeout(timeout);reportFailure();reject(new Error('Map authorization failed'));};
+    window.initTdfgGoogleMap=()=>{clearTimeout(timeout);resolve();};
+    const script=document.createElement('script');script.src=`https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=initTdfgGoogleMap&v=weekly&language=${window.TdfgMapLanguage||'en'}`;script.async=true;script.onerror=()=>{clearTimeout(timeout);reject(new Error('Map script unavailable'));};document.head.append(script);
+  });
   const initialise = async () => {
     const nearPanel=document.createElement('section');
     nearPanel.className='near-now';
     nearPanel.innerHTML=`<button class="near-now__toggle" type="button" aria-expanded="true"><span>◎</span><b>Near me now</b><small>Within a 15-minute walk</small></button><div class="near-now__choices"><button class="active" type="button" data-intent="all">Anything lovely</button><button type="button" data-intent="coffee">Coffee now</button><button type="button" data-intent="quiet">Somewhere quiet</button><button type="button" data-intent="dinner">Dinner together</button><button type="button" data-intent="walk">A walk nearby</button></div>`;
     document.querySelector('.map-top-panel').insertAdjacentElement('beforebegin',nearPanel);
+    document.title=cityLabel+' Map · The Dog Friendly Guide';
+    document.querySelector('.map-title strong').textContent=cityLabel;
+    document.querySelector('.map-results').setAttribute('aria-label',t('Places')+' · '+cityLabel);
+    mapElement.setAttribute('aria-label',t('Map of curated places in {city}',{city:cityLabel}));
     const key = window.TDFG_GOOGLE_MAPS_API_KEY;
-    if (!key) { setup.hidden = false; mapElement.classList.add('google-map-disabled'); nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>showStatus('The live map needs to finish loading before we can find places near you.')); return; }
+    if (!key) { reportFailure(); setup.hidden = false; mapElement.classList.add('google-map-disabled'); nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>showStatus('The live map needs to finish loading before we can find places near you.')); return; }
     try {
-      const [catalogue,previews,boundary] = await Promise.all([fetch('paris-places.json?v=11').then(response=>response.json()),fetch('app-map-photos.v1.json?v=1').then(response=>response.json()).catch(()=>({})),fetch('paris-boundary.geojson').then(response=>response.json()).catch(()=>null),loadGoogle(key)]);photoPreviews=previews;cityBoundary=boundary;
+      if(!cityConfig)throw new Error('Unsupported city');
+      const readJson = async url => {const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);try{const response=await fetch(url,{signal:controller.signal});if(!response.ok)throw new Error('Map catalogue unavailable');return await response.json();}finally{clearTimeout(timeout);}};
+      const [catalogue,previews,boundary,overrides] = await Promise.all([
+        readJson(isParis?'paris-places.json?v=11':'mobile-catalogue.v1.json?map=20261101'),
+        isParis?readJson('app-map-photos.v1.json?v=1').catch(()=>({})):Promise.resolve({}),
+        isParis?readJson('paris-boundary.geojson').catch(()=>null):Promise.resolve(null),
+        isParis?Promise.resolve({}):readJson('verified-venue-coordinates.v1.json?v=1'),
+        loadGoogle(key)
+      ]);photoPreviews=previews;cityBoundary=boundary;
       defineHTMLMarker();
-      places = catalogue.places.filter(place=>Array.isArray(place.coordinates)&&place.coordinates.every(Number.isFinite)).map((place,index)=>{const cover=place.key==='foret-foret'?(place.images.find(uri=>uri.includes('foret-foret-dog-space'))||place.images[0]):place.images[0];const preview=photoPreviews[place.key];return {...place,photoFeatured:index%4===0,preview:preview?.source===new URL(cover,location.href).href?preview.preview:cover,openingHours:catalogue.openingHours[place.key]};});
-      if(document.body.classList.contains('embed-mode')&&new URLSearchParams(location.search).has('only')){const keys=new Set((new URLSearchParams(location.search).get('only')||'').split(','));places=places.filter(place=>keys.has(place.key));}
+      places = isParis ? catalogue.places.filter(place=>Array.isArray(place.coordinates)&&place.coordinates.every(Number.isFinite)).map((place,index)=>{const cover=place.key==='foret-foret'?(place.images.find(uri=>uri.includes('foret-foret-dog-space'))||place.images[0]):place.images[0];const preview=photoPreviews[place.key];return {...place,photoFeatured:index%4===0,preview:preview?.source===new URL(cover,location.href).href?preview.preview:cover,openingHours:catalogue.openingHours[place.key]};}) : window.TdfgCityMap.placesFor(cityId,catalogue,overrides);
+      if(document.body.classList.contains('embed-mode')&&new URLSearchParams(location.search).has('only')){const keys=new Set((new URLSearchParams(location.search).get('only')||'').split(','));places=places.filter(place=>keys.has(place.key)||keys.has('paris-'+place.key));}
       const allCount = document.querySelector('.category-filters [data-category="all"] span');
       if (allCount) allCount.textContent = String(places.length);
       buildDistrictFilters();
-      map = new google.maps.Map(mapElement, { center: { lat: 48.8668, lng: 2.3505 }, zoom: 12, styles: neutralStyle, mapTypeControl: false, streetViewControl: false, fullscreenControl: true, gestureHandling: 'greedy' });
+      map = new google.maps.Map(mapElement, { center: { lat: cityConfig.center[1], lng: cityConfig.center[0] }, zoom: cityConfig.zoom, styles: neutralStyle, mapTypeControl: false, streetViewControl: false, fullscreenControl: true, gestureHandling: 'greedy' });
       appMap = window.TdfgAppMap?.install({
         state: () => ({ places:visiblePlaces, selectedKey, district:activeDistrict, category:activeCategory, nearby:nearMeActive }),
         selectPlace, clearSelection,
         searchPlaces: value=>{activeSearch=value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();render();},
-        chooseDistrict: value => document.querySelector(`[data-district="${value}"]`).click(),
+        chooseDistrict: value => [...document.querySelectorAll('[data-district]')].find(button=>button.dataset.district===value)?.click(),
         chooseCategory: value => document.querySelector(`.category-filters [data-category="${value}"]`).click(),
         resetFilters: () => {
           activeDistrict = activeCategory = activeIntent = 'all'; activeSearch=''; nearMeActive = false;
@@ -174,15 +198,15 @@
           render({ fitAll:true });
         }
       });
-      parisBounds = await drawBoundary('paris-boundary.geojson');
-      landmarks.forEach(landmark => new LandmarkMarker(landmark).setMap(map));
+      if(isParis){parisBounds = await drawBoundary('paris-boundary.geojson');
+      landmarks.forEach(landmark => new LandmarkMarker(landmark).setMap(map));}
       map.addListener('click', clearSelection);
       map.addListener('zoom_changed',()=>markers.forEach(marker=>marker.draw()));
       render({ fitAll: true });
       const showLocation=(coordinates,center=false)=>{
-        if(!window.TdfgMapLocation?.withinCity(coordinates,cityBoundary)){
+        if(!(isParis?window.TdfgMapLocation?.withinCity(coordinates,cityBoundary):window.TdfgCityMap.withinCity(coordinates,cityId))){
           if(userMarker)userMarker.setMap(null);userLocation=null;nearMeActive=false;
-          if(center)showStatus('You are outside Paris. Explore the city’s places here.');
+          if(center)showStatus(t('You are outside {city}. Explore its places here.',{city:cityLabel}));
           return;
         }
         userLocation=coordinates;
@@ -220,7 +244,7 @@
       document.querySelector('.locate-button').addEventListener('click', activateNearby);
       document.getElementById('invite-map').addEventListener('click', inviteFriend);
       document.getElementById('share-map').addEventListener('click', copyMapLink);
-    } catch (error) { console.error('Google comparison map failed', error); setup.hidden = false; setup.querySelector('span').textContent = 'The Google Maps preview could not load. Check the API key and its domain restrictions.'; }
+    } catch (error) { reportFailure(); console.error('Guide city map failed', error); setup.hidden = false; setup.querySelector('span').textContent = 'The Google Maps preview could not load. Check the API key and its domain restrictions.'; }
   };
   initialise();
 })();

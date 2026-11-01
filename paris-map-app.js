@@ -80,7 +80,7 @@ window.TdfgAppMap = {
       rail.querySelectorAll('.map-card').forEach(card => {
         const placeData=current.places.find(place=>place.key===card.dataset.key);
         if(placeData){
-          const area=({'le-marais':'Le Marais','saint-lazare':'Saint-Lazare','etienne-marcel':'Étienne Marcel','latin-quarter':'Quartier Latin','saint-germain':'Saint-Germain','buttes-chaumont':'Buttes-Chaumont'})[placeData.area]||placeData.area.split('-').map(word=>word[0]?.toUpperCase()+word.slice(1)).join(' ');
+          const area=({'le-marais':'Le Marais','saint-lazare':'Saint-Lazare','etienne-marcel':'Étienne Marcel','latin-quarter':'Quartier Latin','saint-germain':'Saint-Germain','buttes-chaumont':'Buttes-Chaumont'})[placeData.area]||(new URLSearchParams(location.search).get('city')&&new URLSearchParams(location.search).get('city')!=='paris'?placeData.area:placeData.area.split('-').map(word=>word[0]?.toUpperCase()+word.slice(1)).join(' '));
           const category=({cafes:'Café',cafe:'Café',restaurant:'Restaurant',shop:'Dog shop',hotel:'Hotel'})[placeData.category]||'';
           card.querySelector('.map-card-kicker').textContent=t(category)+' · '+area;
           let policy=card.querySelector('.app-map-policy');if(!policy){policy=document.createElement('p');policy.className='app-map-policy';card.querySelector('.map-card-copy').insertBefore(policy,card.querySelector('.map-card-actions'));}
