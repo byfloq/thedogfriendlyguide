@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "revision": "local",
-  "generatedAt": "2026-11-01T11:39:38.499604+00:00",
+  "generatedAt": "2026-11-01T11:52:11.968542+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -392,6 +392,35 @@
       "coordinates": {
         "latitude": 41.3977401,
         "longitude": 2.1523249
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-morreig",
+      "name": "Morreig",
+      "city": "barcelona",
+      "area": "Gracia",
+      "category": "Drink",
+      "shortDescription": "Pastry & ice cream · Gràcia",
+      "editorial": "Artisan pastries and house-made ice cream on Carrer de Verdi. French baking meets a playful take on dessert, from vanilla flan to brioche filled with ice cream. Photo: Morreig",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-1.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morreig%20Carrer%20de%20Verdi%2025%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/morre_ig/",
+      "coordinates": {
+        "latitude": 41.4037032,
+        "longitude": 2.156947
       },
       "coordinatesVerified": true,
       "distanceKm": 0,
