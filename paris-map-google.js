@@ -94,7 +94,7 @@
   let LandmarkMarker;
   const defineHTMLMarker = () => {
     HTMLMarker = class extends google.maps.OverlayView {
-      constructor(place) { super(); this.place = place; this.position = new google.maps.LatLng(place.coordinates[1], place.coordinates[0]); this.element = document.createElement('button'); this.element.className = 'google-marker'; this.element.dataset.category = normaliseCategory(place.category); this.element.dataset.key = place.key; this.element.type = 'button'; this.element.setAttribute('aria-label', t('Show place')+': '+place.name); this.element.innerHTML = `<span class="marker-shape"><span>${categoryIcons[normaliseCategory(place.category)]}</span></span><span class="google-marker-label">${escapeHTML(place.name)}</span>`; if(document.body.classList.contains('embed-mode')&&edition20&&normaliseCategory(place.category)==='hotel'){this.element.classList.add('app-key-pin');}else if(document.body.classList.contains('embed-mode')) { this.element.classList.add('app-object-pin');const object=document.createElement('img');object.className='app-pin-object';object.alt='';object.src='assets/app-map/'+(normaliseCategory(place.category)==='cafe'?'coffee':normaliseCategory(place.category)==='shop'?'dog':normaliseCategory(place.category)==='restaurant'?'ramen':'hotel')+'.png';this.element.querySelector('.marker-shape').append(object); } this.element.addEventListener('click', event => { event.stopPropagation(); selectPlace(place.key); }); }
+      constructor(place) { super(); this.place = place; this.position = new google.maps.LatLng(place.coordinates[1], place.coordinates[0]); this.element = document.createElement('button'); this.element.className = 'google-marker'; this.element.dataset.category = normaliseCategory(place.category); this.element.dataset.key = place.key; this.element.type = 'button'; this.element.setAttribute('aria-label', t('Show place')+': '+place.name); this.element.innerHTML = `<span class="marker-shape"><span>${categoryIcons[normaliseCategory(place.category)]}</span></span><span class="google-marker-label">${escapeHTML(place.name)}</span>`; if(document.body.classList.contains('embed-mode')) { this.element.classList.add('app-object-pin');const object=document.createElement('img');object.className='app-pin-object';object.alt='';object.src='assets/app-map/'+(normaliseCategory(place.category)==='cafe'?'coffee':normaliseCategory(place.category)==='shop'?'dog':normaliseCategory(place.category)==='restaurant'?'ramen':edition20?'key':'hotel')+'.png';this.element.querySelector('.marker-shape').append(object); } this.element.addEventListener('click', event => { event.stopPropagation(); selectPlace(place.key); }); }
       onAdd() { this.getPanes().overlayMouseTarget.appendChild(this.element); google.maps.OverlayView.preventMapHitsAndGesturesFrom(this.element); }
       draw() { const projection=this.getProjection(); if(!projection)return; const point = projection.fromLatLngToDivPixel(this.position); if (point) { if(appMap){const zoom=map.getZoom()||12;this.element.classList.toggle('app-photo-pin',false);this.element.classList.toggle('app-object-pin',true);} this.element.style.left = `${point.x}px`; this.element.style.top = `${point.y}px`; } }
       onRemove() { this.element.remove(); }
@@ -170,14 +170,14 @@
     try {
       if(!cityConfig)throw new Error('Unsupported city');
       const readJson = async url => {const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);try{const response=await fetch(url,{signal:controller.signal});if(!response.ok)throw new Error('Map catalogue unavailable');return await response.json();}finally{clearTimeout(timeout);}};
-      const [catalogue,previews,boundary,overrides,boundaries20] = await Promise.all([
+      const previewPromise=isParis?readJson('app-map-photos.v1.json?v=1').catch(()=>({})):Promise.resolve({});
+      const [catalogue,boundary,overrides,boundaries20] = await Promise.all([
         readJson(isParis?'paris-places.json?v=11':'mobile-catalogue.v1.json?map=20261101'),
-        isParis?readJson('app-map-photos.v1.json?v=1').catch(()=>({})):Promise.resolve({}),
-        isParis?readJson('paris-boundary.geojson').catch(()=>null):Promise.resolve(null),
+        isParis&&!edition20?readJson('paris-boundary.geojson').catch(()=>null):Promise.resolve(null),
         isParis?Promise.resolve({}):readJson('verified-venue-coordinates.v1.json?v=1'),
         edition20?readJson('city-boundaries.v20.json').then(v=>v[cityId]):Promise.resolve(null),
         loadGoogle(key)
-      ]);photoPreviews=previews;cityBoundary=boundary;activeCityBoundary20=boundaries20;
+      ]);cityBoundary=boundary;activeCityBoundary20=boundaries20;
       defineHTMLMarker();
       places = isParis ? catalogue.places.filter(place=>Array.isArray(place.coordinates)&&place.coordinates.every(Number.isFinite)).map((place,index)=>{const cover=place.key==='foret-foret'?(place.images.find(uri=>uri.includes('foret-foret-dog-space'))||place.images[0]):place.images[0];const preview=photoPreviews[place.key];return {...place,photoFeatured:index%4===0,preview:preview?.source===new URL(cover,location.href).href?preview.preview:cover,openingHours:catalogue.openingHours[place.key]};}) : window.TdfgCityMap.placesFor(cityId,catalogue,overrides);
       if(document.body.classList.contains('embed-mode')&&new URLSearchParams(location.search).has('only')){const keys=new Set((new URLSearchParams(location.search).get('only')||'').split(','));places=places.filter(place=>keys.has(place.key)||keys.has('paris-'+place.key));}
@@ -244,11 +244,14 @@
       window.addEventListener('message',event=>{
         if(event.source!==window.parent&&!window.ReactNativeWebView)return;
         let data=event.data;try{if(typeof data==='string')data=JSON.parse(data);}catch{return;}
+        if(data?.type==='tdfg:map-active'){if(data.active)requestAnimationFrame(()=>google.maps.event.trigger(map,'resize'));return;}
         if(data?.type==='tdfg:location'){
           if(data.error){if(userMarker)userMarker.setMap(null);userLocation=null;showStatus('Location unavailable. You can still choose an area above.');return;}
           showLocation(data.coordinates,!!data.center);
         }
       });
+      // Preview images never delay Google Maps or its ready signal.
+      void previewPromise.then(previews=>{photoPreviews=previews;places.forEach(place=>{const preview=previews[place.key];if(!preview)return;const cover=place.key==='foret-foret'?(place.images.find(uri=>uri.includes('foret-foret-dog-space'))||place.images[0]):place.images[0];if(preview.source!==new URL(cover,location.href).href)return;place.preview=preview.preview;const card=[...rail.querySelectorAll('.map-card')].find(v=>v.dataset.key===place.key),img=card?.querySelector('img');if(img)img.src=preview.preview;});});
       if(pendingLocation)showLocation(pendingLocation);
       const ready={type:'tdfg:map-ready'};
       if(window.ReactNativeWebView)window.ReactNativeWebView.postMessage(JSON.stringify(ready));else window.parent.postMessage(ready,'*');
