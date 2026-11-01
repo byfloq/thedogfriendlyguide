@@ -1,0 +1,31 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "LSMDPU6T96.com.thedogfriendlyguide.app"
+        ],
+        "components": [
+          {
+            "/": "/paseos/*/cartel*",
+            "exclude": true
+          },
+          {
+            "/": "/paseos/*/qr*",
+            "exclude": true
+          },
+          {
+            "/": "/paseos/*",
+            "?": {
+              "poster": "1"
+            },
+            "exclude": true
+          },
+          {
+            "/": "/paseos/*"
+          }
+        ]
+      }
+    ]
+  }
+}

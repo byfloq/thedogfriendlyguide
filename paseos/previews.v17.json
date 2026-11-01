@@ -1,0 +1,474 @@
+{
+  "demo": true,
+  "events": [
+    {
+      "id": "paris-walk-preview",
+      "slug": "paris-walk-preview",
+      "city": "paris",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Paris"
+    },
+    {
+      "id": "paris-brunch-preview",
+      "slug": "paris-brunch-preview",
+      "city": "paris",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Paris"
+    },
+    {
+      "id": "paris-photos-preview",
+      "slug": "paris-photos-preview",
+      "city": "paris",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Paris"
+    },
+    {
+      "id": "paris-workshop-preview",
+      "slug": "paris-workshop-preview",
+      "city": "paris",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Paris"
+    },
+    {
+      "id": "london-walk-preview",
+      "slug": "london-walk-preview",
+      "city": "london",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "London"
+    },
+    {
+      "id": "london-brunch-preview",
+      "slug": "london-brunch-preview",
+      "city": "london",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "London"
+    },
+    {
+      "id": "london-photos-preview",
+      "slug": "london-photos-preview",
+      "city": "london",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "London"
+    },
+    {
+      "id": "london-workshop-preview",
+      "slug": "london-workshop-preview",
+      "city": "london",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "London"
+    },
+    {
+      "id": "barcelona-walk-preview",
+      "slug": "barcelona-walk-preview",
+      "city": "barcelona",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Barcelona"
+    },
+    {
+      "id": "barcelona-brunch-preview",
+      "slug": "barcelona-brunch-preview",
+      "city": "barcelona",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Barcelona"
+    },
+    {
+      "id": "barcelona-photos-preview",
+      "slug": "barcelona-photos-preview",
+      "city": "barcelona",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Barcelona"
+    },
+    {
+      "id": "barcelona-workshop-preview",
+      "slug": "barcelona-workshop-preview",
+      "city": "barcelona",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Barcelona"
+    },
+    {
+      "id": "berlin-walk-preview",
+      "slug": "berlin-walk-preview",
+      "city": "berlin",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Berlin"
+    },
+    {
+      "id": "berlin-brunch-preview",
+      "slug": "berlin-brunch-preview",
+      "city": "berlin",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Berlin"
+    },
+    {
+      "id": "berlin-photos-preview",
+      "slug": "berlin-photos-preview",
+      "city": "berlin",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Berlin"
+    },
+    {
+      "id": "berlin-workshop-preview",
+      "slug": "berlin-workshop-preview",
+      "city": "berlin",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Berlin"
+    },
+    {
+      "id": "hamburg-walk-preview",
+      "slug": "hamburg-walk-preview",
+      "city": "hamburg",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Hamburg"
+    },
+    {
+      "id": "hamburg-brunch-preview",
+      "slug": "hamburg-brunch-preview",
+      "city": "hamburg",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Hamburg"
+    },
+    {
+      "id": "hamburg-photos-preview",
+      "slug": "hamburg-photos-preview",
+      "city": "hamburg",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Hamburg"
+    },
+    {
+      "id": "hamburg-workshop-preview",
+      "slug": "hamburg-workshop-preview",
+      "city": "hamburg",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Hamburg"
+    },
+    {
+      "id": "copenhagen-walk-preview",
+      "slug": "copenhagen-walk-preview",
+      "city": "copenhagen",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Copenhagen"
+    },
+    {
+      "id": "copenhagen-brunch-preview",
+      "slug": "copenhagen-brunch-preview",
+      "city": "copenhagen",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Copenhagen"
+    },
+    {
+      "id": "copenhagen-photos-preview",
+      "slug": "copenhagen-photos-preview",
+      "city": "copenhagen",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Copenhagen"
+    },
+    {
+      "id": "copenhagen-workshop-preview",
+      "slug": "copenhagen-workshop-preview",
+      "city": "copenhagen",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Copenhagen"
+    },
+    {
+      "id": "madrid-walk-preview",
+      "slug": "madrid-walk-preview",
+      "city": "madrid",
+      "type": "walk",
+      "title": "A Sunday walk.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "active",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Madrid"
+    },
+    {
+      "id": "madrid-brunch-preview",
+      "slug": "madrid-brunch-preview",
+      "city": "madrid",
+      "type": "brunch",
+      "title": "A slow brunch.",
+      "full": true,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "calm",
+      "sociable": true,
+      "demo": true,
+      "cityLabel": "Madrid"
+    },
+    {
+      "id": "madrid-photos-preview",
+      "slug": "madrid-photos-preview",
+      "city": "madrid",
+      "type": "photos",
+      "title": "A moment in pictures.",
+      "full": false,
+      "size": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Madrid"
+    },
+    {
+      "id": "madrid-workshop-preview",
+      "slug": "madrid-workshop-preview",
+      "city": "madrid",
+      "type": "workshop",
+      "title": "A little time to learn.",
+      "full": false,
+      "size": [
+        "small",
+        "medium"
+      ],
+      "pace": "any",
+      "sociable": false,
+      "demo": true,
+      "cityLabel": "Madrid"
+    }
+  ]
+}
