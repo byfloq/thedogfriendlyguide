@@ -5,6 +5,8 @@
   const cityId = new URLSearchParams(location.search).get('city') || 'paris';
   const cityConfig = window.TdfgCityMap.cities[cityId];
   const isParis = cityId === 'paris';
+  const edition20 = new URLSearchParams(location.search).get('edition') === '20';
+  let activeCityBoundary20 = null, fullCityBounds20 = null;
   const cityLabel = cityConfig?.label || cityId;
   const mapElement = document.getElementById('paris-map');
   const rail = document.getElementById('place-rail');
@@ -18,6 +20,7 @@
     shop: '<svg class="paw-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="8.4" r="2"/><circle cx="10.2" cy="5.7" r="2"/><circle cx="14.2" cy="5.7" r="2"/><circle cx="17.7" cy="8.6" r="2"/><path d="M12.1 10.4c-3.2 0-6.1 3.1-6.1 5.9 0 2 1.5 3.2 3.4 3.2 1 0 1.8-.5 2.7-.5.9 0 1.7.5 2.7.5 1.9 0 3.4-1.2 3.4-3.2 0-2.8-2.9-5.9-6.1-5.9Z"/></svg>',
     hotel: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5h14v16M3 21h18M8 9h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/></svg>'
   };
+  if(edition20)categoryIcons.hotel='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 21 21m-3-3 3-3m-6 0 3-3"/></svg>';
   const landmarks = [
     { name: 'Eiffel Tower', coordinates: [2.2945, 48.8584], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path d="M14.7 2h2.6l.5 3h-1l1.5 7.1h2.1v2.4h-1.6l1.2 5.2h2.5v2.4h-2l3.8 7.9h-5.1l-1.1-3.2h-4.2L12.8 30H7.7l3.8-7.9h-2v-2.4H12l1.2-5.2h-1.6v-2.4h2.1L15.2 5h-1l.5-3Zm.1 20.1-.4 2h3.2l-.4-2h-2.4Zm.6-7.6-.5 5.2h2.2l-.5-5.2h-1.2Z"/></svg>' },
     { name: 'Arc de Triomphe', coordinates: [2.2950, 48.8738], icon: '<svg class="landmark-solid" viewBox="0 0 32 32"><path fill-rule="evenodd" d="M5 5h22v25h-7.2V19.2a3.8 3.8 0 0 0-7.6 0V30H5V5Zm2.2-3h17.6v2H7.2V2ZM3 30h26v2H3v-2Zm5-21h16v2H8V9Zm1.2 4.5h3v2h-3v-2Zm10.6 0h3v2h-3v-2Z"/></svg>' },
@@ -91,7 +94,7 @@
   let LandmarkMarker;
   const defineHTMLMarker = () => {
     HTMLMarker = class extends google.maps.OverlayView {
-      constructor(place) { super(); this.place = place; this.position = new google.maps.LatLng(place.coordinates[1], place.coordinates[0]); this.element = document.createElement('button'); this.element.className = 'google-marker'; this.element.dataset.category = normaliseCategory(place.category); this.element.dataset.key = place.key; this.element.type = 'button'; this.element.setAttribute('aria-label', t('Show place')+': '+place.name); this.element.innerHTML = `<span class="marker-shape"><span>${categoryIcons[normaliseCategory(place.category)]}</span></span><span class="google-marker-label">${escapeHTML(place.name)}</span>`; if(document.body.classList.contains('embed-mode')) { this.element.classList.add('app-object-pin');const object=document.createElement('img');object.className='app-pin-object';object.alt='';object.src='assets/app-map/'+(normaliseCategory(place.category)==='cafe'?'coffee':normaliseCategory(place.category)==='shop'?'dog':normaliseCategory(place.category)==='restaurant'?'ramen':'hotel')+'.png';this.element.querySelector('.marker-shape').append(object); } this.element.addEventListener('click', event => { event.stopPropagation(); selectPlace(place.key); }); }
+      constructor(place) { super(); this.place = place; this.position = new google.maps.LatLng(place.coordinates[1], place.coordinates[0]); this.element = document.createElement('button'); this.element.className = 'google-marker'; this.element.dataset.category = normaliseCategory(place.category); this.element.dataset.key = place.key; this.element.type = 'button'; this.element.setAttribute('aria-label', t('Show place')+': '+place.name); this.element.innerHTML = `<span class="marker-shape"><span>${categoryIcons[normaliseCategory(place.category)]}</span></span><span class="google-marker-label">${escapeHTML(place.name)}</span>`; if(document.body.classList.contains('embed-mode')&&edition20&&normaliseCategory(place.category)==='hotel'){this.element.classList.add('app-key-pin');}else if(document.body.classList.contains('embed-mode')) { this.element.classList.add('app-object-pin');const object=document.createElement('img');object.className='app-pin-object';object.alt='';object.src='assets/app-map/'+(normaliseCategory(place.category)==='cafe'?'coffee':normaliseCategory(place.category)==='shop'?'dog':normaliseCategory(place.category)==='restaurant'?'ramen':'hotel')+'.png';this.element.querySelector('.marker-shape').append(object); } this.element.addEventListener('click', event => { event.stopPropagation(); selectPlace(place.key); }); }
       onAdd() { this.getPanes().overlayMouseTarget.appendChild(this.element); google.maps.OverlayView.preventMapHitsAndGesturesFrom(this.element); }
       draw() { const projection=this.getProjection(); if(!projection)return; const point = projection.fromLatLngToDivPixel(this.position); if (point) { if(appMap){const zoom=map.getZoom()||12;this.element.classList.toggle('app-photo-pin',false);this.element.classList.toggle('app-object-pin',true);} this.element.style.left = `${point.x}px`; this.element.style.top = `${point.y}px`; } }
       onRemove() { this.element.remove(); }
@@ -121,6 +124,7 @@
   };
   const fitVisiblePlaces = () => { if (!visiblePlaces.length) return; const bounds = new google.maps.LatLngBounds(); visiblePlaces.forEach(place => bounds.extend({ lat: place.coordinates[1], lng: place.coordinates[0] })); map.fitBounds(bounds, appMap ? appMap.cameraPadding() : window.innerWidth <= 700 ? 55 : 85); google.maps.event.addListenerOnce(map,'idle',()=>{if(map.getZoom()>16)map.setZoom(16);}); };
   const fitParisBoundary = () => {
+    if(edition20&&fullCityBounds20){map.fitBounds(fullCityBounds20,appMap?appMap.cameraPadding():45);return;}
     if(!isParis){fitVisiblePlaces();return;}
     if(appMap){
       // The municipal boundary includes both woods. Fitting that full width on
@@ -166,13 +170,14 @@
     try {
       if(!cityConfig)throw new Error('Unsupported city');
       const readJson = async url => {const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);try{const response=await fetch(url,{signal:controller.signal});if(!response.ok)throw new Error('Map catalogue unavailable');return await response.json();}finally{clearTimeout(timeout);}};
-      const [catalogue,previews,boundary,overrides] = await Promise.all([
+      const [catalogue,previews,boundary,overrides,boundaries20] = await Promise.all([
         readJson(isParis?'paris-places.json?v=11':'mobile-catalogue.v1.json?map=20261101'),
         isParis?readJson('app-map-photos.v1.json?v=1').catch(()=>({})):Promise.resolve({}),
         isParis?readJson('paris-boundary.geojson').catch(()=>null):Promise.resolve(null),
         isParis?Promise.resolve({}):readJson('verified-venue-coordinates.v1.json?v=1'),
+        edition20?readJson('city-boundaries.v20.json').then(v=>v[cityId]):Promise.resolve(null),
         loadGoogle(key)
-      ]);photoPreviews=previews;cityBoundary=boundary;
+      ]);photoPreviews=previews;cityBoundary=boundary;activeCityBoundary20=boundaries20;
       defineHTMLMarker();
       places = isParis ? catalogue.places.filter(place=>Array.isArray(place.coordinates)&&place.coordinates.every(Number.isFinite)).map((place,index)=>{const cover=place.key==='foret-foret'?(place.images.find(uri=>uri.includes('foret-foret-dog-space'))||place.images[0]):place.images[0];const preview=photoPreviews[place.key];return {...place,photoFeatured:index%4===0,preview:preview?.source===new URL(cover,location.href).href?preview.preview:cover,openingHours:catalogue.openingHours[place.key]};}) : window.TdfgCityMap.placesFor(cityId,catalogue,overrides);
       if(document.body.classList.contains('embed-mode')&&new URLSearchParams(location.search).has('only')){const keys=new Set((new URLSearchParams(location.search).get('only')||'').split(','));places=places.filter(place=>keys.has(place.key)||keys.has('paris-'+place.key));}
@@ -198,13 +203,22 @@
           render({ fitAll:true });
         }
       });
-      if(isParis){parisBounds = await drawBoundary('paris-boundary.geojson');
+      if(edition20&&activeCityBoundary20){
+        const attribution=document.createElement('a');attribution.href='https://www.openstreetmap.org/copyright';attribution.textContent='Boundary © OpenStreetMap contributors';attribution.target='_blank';attribution.rel='noopener';attribution.style.cssText='font-size:9px;color:#6d6256;background:#faf7f1d9;padding:2px 5px;';map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(attribution);
+        fullCityBounds20=new google.maps.LatLngBounds();
+        polygonPaths(activeCityBoundary20).forEach(ring=>{const path=ring.map(([lng,lat])=>({lat,lng}));path.forEach(point=>fullCityBounds20.extend(point));cityShapes.push(new google.maps.Polyline({map,path,strokeOpacity:0,icons:[{icon:{path:google.maps.SymbolPath.CIRCLE,fillColor:'#8A5A2B',fillOpacity:1,strokeOpacity:0,scale:1.2},offset:'0',repeat:'8px'}],clickable:false}));});
+        // Hamburg includes the distant island Neuwerk; fit the mainland while retaining the complete official outline.
+        if(cityId==='hamburg'){fullCityBounds20=new google.maps.LatLngBounds();polygonPaths(activeCityBoundary20).forEach(ring=>ring.forEach(([lng,lat])=>{if(lng>9)fullCityBounds20.extend({lat,lng});}));}
+        new google.maps.Marker({map,position:{lat:cityConfig.center[1],lng:cityConfig.center[0]},icon:{path:google.maps.SymbolPath.CIRCLE,scale:0},label:{text:cityLabel.toUpperCase(),color:'#8A5A2B',fontSize:'11px',fontWeight:'400'},clickable:false,zIndex:0});
+        cityBoundary=activeCityBoundary20;
+      }
+      if(isParis){if(!edition20)parisBounds = await drawBoundary('paris-boundary.geojson');
       landmarks.forEach(landmark => new LandmarkMarker(landmark).setMap(map));}
       map.addListener('click', clearSelection);
       map.addListener('zoom_changed',()=>markers.forEach(marker=>marker.draw()));
       render({ fitAll: true });
       const showLocation=(coordinates,center=false)=>{
-        if(!(isParis?window.TdfgMapLocation?.withinCity(coordinates,cityBoundary):window.TdfgCityMap.withinCity(coordinates,cityId))){
+        if(!((isParis||edition20)?window.TdfgMapLocation?.withinCity(coordinates,cityBoundary):window.TdfgCityMap.withinCity(coordinates,cityId))){
           if(userMarker)userMarker.setMap(null);userLocation=null;nearMeActive=false;
           if(center)showStatus(t('You are outside {city}. Explore its places here.',{city:cityLabel}));
           return;

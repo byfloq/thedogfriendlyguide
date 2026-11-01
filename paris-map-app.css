@@ -78,3 +78,9 @@
 .embed-mode .landmark-marker{display:none}
 .embed-mode .google-marker.app-object-pin .marker-shape{width:36px;height:40px;transition:transform .18s ease}
 .embed-mode .google-marker.active.app-object-pin .marker-shape{transform:scale(1.18);filter:drop-shadow(0 2px 3px #26221d55)}
+
+/* Edition 2.0: hotel key shares the same quiet scale as the photographic pins. */
+.embed-mode .google-marker.app-key-pin .marker-shape{width:32px;height:36px;background:transparent!important;border:0;box-shadow:none;transform:none}
+.embed-mode .google-marker.app-key-pin .marker-shape:after{display:none}
+.embed-mode .google-marker.app-key-pin .marker-shape>span{display:block;width:30px;height:30px;transform:none}
+.embed-mode .google-marker.app-key-pin svg{width:30px;height:30px;fill:none;stroke:#5A4840;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
