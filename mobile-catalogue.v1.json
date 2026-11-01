@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "destinations-20261023-2",
-  "generatedAt": "2026-10-23T17:48:09.653024+00:00",
+  "revision": "local",
+  "generatedAt": "2026-11-01T11:39:38.499604+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -57,10 +57,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mono%20Cafe%20Carrer%20de%20Pujades%20134%20Barcelona",
       "websiteUrl": "https://www.instagram.com/monocafe.ok/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3990217,
+        "longitude": 2.197467
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -88,10 +88,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Tribut%20Moll%20del%20Gregal%20Local%202%20Barcelona",
       "websiteUrl": "https://www.instagram.com/eltribut/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3886392,
+        "longitude": 2.2011813
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -119,10 +119,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Filles%20Carrer%20de%20Minerva%202%20Barcelona",
       "websiteUrl": "https://www.instagram.com/lesfillesbarcelona/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3962991,
+        "longitude": 2.1567395
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -150,10 +150,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ja%C3%A7%20Hi-Fi%20Cafe%20Barcelona",
       "websiteUrl": "https://www.instagram.com/jac.barcelona/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3984688,
+        "longitude": 2.1682385
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -181,10 +181,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Hyatt%20Barcelona",
       "websiteUrl": "https://www.instagram.com/grandhyattbarcelona/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3860909,
+        "longitude": 2.1231601
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -212,10 +212,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Onis%20Coffee%20Barcelona",
       "websiteUrl": "https://www.instagram.com/oniscoffee/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3950292,
+        "longitude": 2.1660524
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -243,10 +243,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LOT%20Roasters%20Bailen%2043%20Barcelona",
       "websiteUrl": "https://www.instagram.com/lotroasters/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3935604,
+        "longitude": 2.1747006
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -274,10 +274,126 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=MAMI%20Cafe%20Carrer%20de%20les%20Basses%20de%20Sant%20Pere%2012%20Barcelona",
       "websiteUrl": "https://www.instagram.com/mamiitaliancafe/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.3886861,
+        "longitude": 2.1799515
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-nokko",
+      "name": "NOKKO",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee & artisan pastry · Eixample",
+      "editorial": "Specialty coffee, handmade pastries and rotating art on Enric Granados. A thoughtful little pause in the Eixample. Photo: NOKKO",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-nokko-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-nokko-1.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NOKKO%20Enric%20Granados%20145%2C%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/nokko.bcn/",
+      "coordinates": {
+        "latitude": 41.3941983,
+        "longitude": 2.1536306
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-gresca",
+      "name": "Gresca",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Eat",
+      "shortDescription": "Seasonal plates & wine · Eixample",
+      "editorial": "Seasonal small plates and a considered wine list on Provença, with an open kitchen and a quietly lively bar. Photo: Macarfi / This is Barcelona",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-gresca-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-gresca-1.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gresca%20Proven%C3%A7a%20230%2C%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/restaurantgresca/",
+      "coordinates": {
+        "latitude": 41.3913245,
+        "longitude": 2.1571759
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-soma",
+      "name": "SOMA",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Eat",
+      "shortDescription": "Mediterranean kitchen · Eixample",
+      "editorial": "Mediterranean cooking with an Italian accent, seasonal dishes to share and a warm neighbourhood setting on Provença. Photo: SOMA Restaurant",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-soma-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-soma-1.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SOMA%20Proven%C3%A7a%20179%2C%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/somabcn_/",
+      "coordinates": {
+        "latitude": 41.3909973,
+        "longitude": 2.1562707
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-barbocata",
+      "name": "BarBocata · Travessera",
+      "city": "barcelona",
+      "area": "Sant Gervasi",
+      "category": "Eat",
+      "shortDescription": "Bocatas & wine · Sant Gervasi",
+      "editorial": "The original BarBocata on Travessera de Gràcia: generous sandwiches, tortilla and a relaxed bar for a long lunch. Photo: BarBocata",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-barbocata-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-barbocata-1.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BarBocata%20%C2%B7%20Travessera%20Travessera%20de%20Gr%C3%A0cia%2086%2C%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/barbocata_/",
+      "coordinates": {
+        "latitude": 41.3977401,
+        "longitude": 2.1523249
+      },
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -303,10 +419,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Soi%20%26%20Co%20Linienstra%C3%9Fe%20205%20Berlin%20Germany",
       "websiteUrl": "https://www.instagram.com/soiandco/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.5289026,
+        "longitude": 13.4024449
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -332,10 +448,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sofi%20Bakery%20Sophienstra%C3%9Fe%2021%20Berlin%20Germany",
       "websiteUrl": "https://www.instagram.com/sofithebakery/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.5261751,
+        "longitude": 13.4008492
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -361,10 +477,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zacharias%20Kollwitzstra%C3%9Fe%2044%20Berlin%20Germany",
       "websiteUrl": "https://www.instagram.com/zacharias.kaffeebar/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.5341225,
+        "longitude": 13.4159606
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -390,10 +506,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Annelies%20G%C3%B6rlitzer%20Stra%C3%9Fe%2068%20Berlin%20Germany",
       "websiteUrl": "https://www.instagram.com/anneliesberlin/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.4985073,
+        "longitude": 13.434937
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -419,10 +535,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two%20Trick%20Pony%20Bergmannstra%C3%9Fe%2052%20Berlin%20Germany",
       "websiteUrl": "https://www.instagram.com/twotrickponyberlin/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.4889161,
+        "longitude": 13.4049368
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -448,10 +564,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Open%20House%20Christburger%20Stra%C3%9Fe%2013%20Berlin%20Germany",
       "websiteUrl": "https://www.instagram.com/openhouse.berlin/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.5353486,
+        "longitude": 13.4279457
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -477,10 +593,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Goodlyfe%20M%C3%BChlenstra%C3%9Fe%2061%20Berlin",
       "websiteUrl": "https://www.instagram.com/goodlyfe_de/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 52.5055825,
+        "longitude": 13.4381323
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -506,10 +622,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Riviera%20Nansensgade%20Copenhagen%20Denmark",
       "websiteUrl": "https://www.instagram.com/riviera_cph/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 55.683614,
+        "longitude": 12.565461
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -535,10 +651,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lokal%20Vesterbro%20Copenhagen%20Denmark",
       "websiteUrl": "https://www.instagram.com/lokalcph/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 55.666015,
+        "longitude": 12.551937
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -564,10 +680,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gotcha%20Matcha%20Hegestra%C3%9Fe%2048%2C%2020251%20Hamburg",
       "websiteUrl": "https://www.instagram.com/gotchamatcha_de/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 53.5835231,
+        "longitude": 9.982527
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -593,10 +709,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Marshall%20Street%20Coffee%20Schopenstehl%2030%2C%2020095%20Hamburg",
       "websiteUrl": "https://www.instagram.com/marshall.street.coffee/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 53.548652,
+        "longitude": 9.9981124
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -622,10 +738,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pet%20Shop%20Boyz%20Mittelweg%20126%2C%2020148%20Hamburg",
       "websiteUrl": "https://www.instagram.com/pet.shop.boyz.dog/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 53.5713758,
+        "longitude": 9.9951862
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -651,10 +767,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SCADI%20%C2%B7%20living%20with%20dogs%20Dorotheenstra%C3%9Fe%20133%2C%2022299%20Hamburg",
       "websiteUrl": "https://www.instagram.com/scadi.livingwithdogs/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 53.5897166,
+        "longitude": 10.002876
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -680,10 +796,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Heimat%20Restaurant%20%C3%9Cberseeallee%205%2C%2020457%20Hamburg",
       "websiteUrl": "",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 53.5414446,
+        "longitude": 9.9992017
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -709,10 +825,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Klear%20Labs%20Golborne%20Road%20London%20United%20Kingdom",
       "websiteUrl": "https://www.instagram.com/klear.labs/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5214848,
+        "longitude": -0.208803
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -738,10 +854,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%25%20Arabica%2033%20Broadway%20Market%20London%20E8%204PH",
       "websiteUrl": "https://www.instagram.com/arabica_unitedkingdom/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5365017,
+        "longitude": -0.062015
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -767,10 +883,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Abuelo%2026%20Southampton%20Street%20London%20WC2E%207JA",
       "websiteUrl": "https://www.instagram.com/abuelocafeuk/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5112307,
+        "longitude": -0.1224736
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -796,10 +912,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Workshop%20Coffee%2022%20Eccleston%20Street%20London%20SW1W%209LT",
       "websiteUrl": "https://www.instagram.com/workshopcoffee/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4947937,
+        "longitude": -0.1482265
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -825,10 +941,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WOLFOX%20Savoy%20London%202%20Savoy%20Court%2C%20London%20WC2R%200EZ",
       "websiteUrl": "https://www.instagram.com/wolfoxsavoylondon/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5104021,
+        "longitude": -0.1210371
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -854,10 +970,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nagare%20Coffee%20Carnaby%202%20Newburgh%20Street%20London%20W1F%207RD",
       "websiteUrl": "",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5134434,
+        "longitude": -0.1384517
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -883,10 +999,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Laslett%208%20Pembridge%20Gardens%20London%20W2%204DU",
       "websiteUrl": "https://www.instagram.com/thelaslett/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5098077,
+        "longitude": -0.1968308
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -912,10 +1028,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WatchHouse%20Fitzrovia%2056%20Wells%20Street%2C%20London%20W1T%203PT",
       "websiteUrl": "",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5178902,
+        "longitude": -0.1390999
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -941,10 +1057,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bow%20Wow%20London%2036%20Earlham%20Street%2C%20London%20WC2H%209LH",
       "websiteUrl": "https://www.instagram.com/bowwowldn/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5137306,
+        "longitude": -0.1263243
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -970,10 +1086,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Love%20My%20Human%20308%20King%E2%80%99s%20Road%2C%20London%20SW3%205UH",
       "websiteUrl": "https://www.instagram.com/love.my.human/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4857352,
+        "longitude": -0.1735627
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -999,10 +1115,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dogeast%2013%20Pennington%20Quay%20Walk%2C%20London%20E1W%202BT",
       "websiteUrl": "https://www.instagram.com/dogeastlondon/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5083,
+        "longitude": -0.0638
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1028,10 +1144,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Big%20City%20Dog%20212%20Kensington%20High%20Street%2C%20London%20W8%207RG",
       "websiteUrl": "https://www.instagram.com/bigcitydog_ldn/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4994505,
+        "longitude": -0.1979622
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1057,10 +1173,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mello%20World%2019%20Walton%20Street%2C%20London%20SW3%202HX",
       "websiteUrl": "https://www.instagram.com/melloworlduk/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4955907,
+        "longitude": -0.1654735
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1086,10 +1202,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=George%E2%80%99s%20Dog%20Boutique%2028%20High%20Street%2C%20Wimbledon%20Village%2C%20London%20SW19%205BY",
       "websiteUrl": "https://www.instagram.com/georgesdogboutique/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4252611,
+        "longitude": -0.2186983
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1115,10 +1231,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yeni%2055%20Beak%20Street%2C%20London%20W1F%209SH",
       "websiteUrl": "https://www.instagram.com/yenisoho/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5126679,
+        "longitude": -0.1371324
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1144,10 +1260,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Granger%20%26%20Co%20%C2%B7%20Marylebone%20105%20Marylebone%20High%20Street%2C%20London%20W1U%204RS",
       "websiteUrl": "https://www.instagram.com/grangerandco/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5191041,
+        "longitude": -0.151918
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1173,10 +1289,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Studio%20Coffee%206%20Bedford%20Street%2C%20Covent%20Garden%2C%20London",
       "websiteUrl": "https://www.instagram.com/studiocoffee__/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5102361,
+        "longitude": -0.1241161
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1202,10 +1318,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Paradox%20Design%20%2B%20Coffee%20Unit%20A%2C%20Netil%20Market%2C%2013%E2%80%9323%20Westgate%20Street%2C%20London%20E8%203RL",
       "websiteUrl": "https://www.instagram.com/paradox_design_coffee/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5375752,
+        "longitude": -0.0586164
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1231,10 +1347,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Leigh%E2%80%99s%20Ardleigh%20Road%2C%20London%20N1%204HS",
       "websiteUrl": "https://www.instagram.com/leighslondon/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5431905,
+        "longitude": -0.0819424
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1260,10 +1376,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Estate%20Office%20Coffee%204%20Greyhound%20Lane%2C%20London%20SW16%205SD",
       "websiteUrl": "https://www.instagram.com/estateofficecoffee/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4185485839844,
+        "longitude": -0.134290993213654
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1289,10 +1405,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Canteen%20310%20Portobello%20Road%2C%20London%20W10%205TA",
       "websiteUrl": "https://www.instagram.com/canteen.310/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5210056,
+        "longitude": -0.2093297
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1318,10 +1434,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=EVE%20Kensington%20Ember%20Locke%2C%20202%E2%80%93220%20Cromwell%20Road%2C%20London%20SW5%200SW",
       "websiteUrl": "https://www.instagram.com/evekensington/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.4949804,
+        "longitude": -0.1945158
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1347,10 +1463,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Scenery%20171%20Union%20Street%2C%20London%20SE1%200LN",
       "websiteUrl": "https://www.instagram.com/scenerycoffeeroasters/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5036357,
+        "longitude": -0.0992896
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1376,10 +1492,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Paper%20%26%20Cup%2018%20Calvert%20Avenue%2C%20London%20E2%207JP",
       "websiteUrl": "https://www.instagram.com/paperandcupshoreditch/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5262152,
+        "longitude": -0.0768401
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1405,10 +1521,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ozone%20Coffee%20%C2%B7%20Shoreditch%2011%20Leonard%20Street%2C%20London%20EC2A%204AQ",
       "websiteUrl": "https://www.instagram.com/ozonecoffeeuk/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5247047,
+        "longitude": -0.0867384
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1434,10 +1550,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Qima%20Caf%C3%A9%20%C2%B7%20Fitzrovia%2021%20Warren%20Street%2C%20London%20W1T%205LT",
       "websiteUrl": "https://www.instagram.com/qima.cafe/",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 51.5239378,
+        "longitude": -0.1398742
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1463,10 +1579,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Faraday%20Calle%20San%20Lucas%209%20Madrid",
       "websiteUrl": "https://www.instagram.com/faradaymadrid/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4237516,
+        "longitude": -3.6962735
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1492,10 +1608,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hermanas%20Arce%20Madrid",
       "websiteUrl": "https://www.instagram.com/hermanasarce/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4229908,
+        "longitude": -3.6936524
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1521,10 +1637,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rosewood%20Villa%20Magna%20Madrid",
       "websiteUrl": "https://www.instagram.com/rosewoodvillamagna/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4299367,
+        "longitude": -3.6881649
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1550,10 +1666,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loft%20Specialty%20Coffee%20Brunch%20Madrid",
       "websiteUrl": "https://www.instagram.com/loft.__/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.45323,
+        "longitude": -3.69754
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1579,10 +1695,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=En%20Bruto%20Calle%20San%20Lucas%2013%20Madrid",
       "websiteUrl": "https://www.instagram.com/enbruto__/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4237341,
+        "longitude": -3.695996
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1608,10 +1724,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Victoria%20Calle%20del%20Olmo%2020%20Madrid",
       "websiteUrl": "https://www.instagram.com/casa____victoria/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4115175,
+        "longitude": -3.6999993
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1637,10 +1753,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yoyogi%20Coffee%20Fernandez%20de%20los%20Rios%2060%20Madrid",
       "websiteUrl": "https://www.instagram.com/yoyogicoffee/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4353393,
+        "longitude": -3.7116324
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {
@@ -1666,10 +1782,10 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Casa%20Amande%20Murillo%201%20Madrid",
       "websiteUrl": "https://www.instagram.com/lacasa.amande/?hl=es",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 40.4332949,
+        "longitude": -3.7007557
       },
-      "coordinatesVerified": false,
+      "coordinatesVerified": true,
       "distanceKm": 0,
       "source": "website",
       "attributes": {

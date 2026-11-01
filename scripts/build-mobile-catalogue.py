@@ -65,6 +65,13 @@ for plan in plans:
  plan['stopKeys']=[key for key,note in pairs]
  plan['stopNotes']=[note for key,note in pairs]
  assert pairs, 'A plan must have at least one currently listed stop'
+verified=json.loads((ROOT/'verified-venue-coordinates.v1.json').read_text())
+for place in places:
+ point=verified.get(place['id'])
+ if point and all(point.get(key)==place[key] for key in ['name','city','mapsUrl']):
+  assert -90<=point['latitude']<=90 and -180<=point['longitude']<=180
+  place['coordinates']=dict(latitude=point['latitude'],longitude=point['longitude'])
+  place['coordinatesVerified']=True
 ids=[p['id'] for p in places]
 assert len(ids)==len(set(ids)), 'Duplicate place IDs'
 result=dict(schemaVersion=1,revision=os.environ.get('BUILD_ID','local'),generatedAt=datetime.now(timezone.utc).isoformat(),cities=cities,places=places,paris=paris,plans=plans)
