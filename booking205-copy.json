@@ -1,0 +1,236 @@
+{
+  "Reserve a place": {
+    "en": "Reserve a place",
+    "de": "Platz reservieren",
+    "fr": "Réserver une place",
+    "es": "Reservar una plaza"
+  },
+  "Join the waiting list": {
+    "en": "Join the waiting list",
+    "de": "Auf die Warteliste",
+    "fr": "Rejoindre la liste d’attente",
+    "es": "Apuntarme a la lista de espera"
+  },
+  "Email": {
+    "en": "Email",
+    "de": "E-Mail",
+    "fr": "E-mail",
+    "es": "Email"
+  },
+  "I agree to the terms and privacy notice.": {
+    "en": "I agree to the terms and privacy notice.",
+    "de": "Ich akzeptiere die Bedingungen und den Datenschutzhinweis.",
+    "fr": "J’accepte les conditions et la politique de confidentialité.",
+    "es": "Acepto las condiciones y la política de privacidad."
+  },
+  "Terms": {
+    "en": "Terms",
+    "de": "Bedingungen",
+    "fr": "Conditions",
+    "es": "Condiciones"
+  },
+  "Privacy": {
+    "en": "Privacy",
+    "de": "Datenschutz",
+    "fr": "Confidentialité",
+    "es": "Privacidad"
+  },
+  "Send a sign-in code": {
+    "en": "Send a sign-in code",
+    "de": "Anmeldecode senden",
+    "fr": "Recevoir un code",
+    "es": "Recibir código de acceso"
+  },
+  "Email code": {
+    "en": "Email code",
+    "de": "Code aus der E-Mail",
+    "fr": "Code reçu par e-mail",
+    "es": "Código del email"
+  },
+  "Continue": {
+    "en": "Continue",
+    "de": "Weiter",
+    "fr": "Continuer",
+    "es": "Continuar"
+  },
+  "Dog’s name": {
+    "en": "Dog’s name",
+    "de": "Name deines Hundes",
+    "fr": "Nom de ton chien",
+    "es": "Nombre de tu perro"
+  },
+  "Weight range": {
+    "en": "Weight range",
+    "de": "Gewichtsklasse",
+    "fr": "Tranche de poids",
+    "es": "Rango de peso"
+  },
+  "Choose a weight range": {
+    "en": "Choose a weight range",
+    "de": "Gewichtsklasse wählen",
+    "fr": "Choisir une tranche de poids",
+    "es": "Elige un rango de peso"
+  },
+  "Mini · up to 3 kg": {
+    "en": "Mini · up to 3 kg",
+    "de": "Mini · bis 3 kg",
+    "fr": "Mini · jusqu’à 3 kg",
+    "es": "Mini · hasta 3 kg"
+  },
+  "Small · 3–5 kg": {
+    "en": "Small · 3–5 kg",
+    "de": "Klein · 3–5 kg",
+    "fr": "Petit · 3–5 kg",
+    "es": "Pequeño · 3–5 kg"
+  },
+  "Medium · 5–7 kg": {
+    "en": "Medium · 5–7 kg",
+    "de": "Mittel · 5–7 kg",
+    "fr": "Moyen · 5–7 kg",
+    "es": "Mediano · 5–7 kg"
+  },
+  "More than 7 kg": {
+    "en": "More than 7 kg",
+    "de": "Mehr als 7 kg",
+    "fr": "Plus de 7 kg",
+    "es": "Más de 7 kg"
+  },
+  "I’m happy to appear in event photos.": {
+    "en": "I’m happy to appear in event photos.",
+    "de": "Ich bin damit einverstanden, auf Veranstaltungsfotos zu erscheinen.",
+    "fr": "J’accepte d’apparaître sur les photos de l’événement.",
+    "es": "Puedo salir en las fotos del evento."
+  },
+  "Confirm reservation": {
+    "en": "Confirm reservation",
+    "de": "Reservierung bestätigen",
+    "fr": "Confirmer la réservation",
+    "es": "Confirmar reserva"
+  },
+  "This event is for a different weight range.": {
+    "en": "This event is for a different weight range.",
+    "de": "Diese Veranstaltung ist für eine andere Gewichtsklasse.",
+    "fr": "Cet événement est destiné à une autre tranche de poids.",
+    "es": "Este evento es para otro rango de peso."
+  },
+  "This event is full. You can join the waiting list.": {
+    "en": "This event is full. You can join the waiting list.",
+    "de": "Diese Veranstaltung ist voll. Du kannst dich auf die Warteliste setzen.",
+    "fr": "Cet événement est complet. Tu peux rejoindre la liste d’attente.",
+    "es": "El evento está completo. Puedes apuntarte a la lista de espera."
+  },
+  "Please wait before trying again.": {
+    "en": "Please wait before trying again.",
+    "de": "Bitte warte vor einem neuen Versuch.",
+    "fr": "Patiente un peu avant de réessayer.",
+    "es": "Espera un poco antes de volver a intentarlo."
+  },
+  "We couldn’t complete that. Please try again.": {
+    "en": "We couldn’t complete that. Please try again.",
+    "de": "Das hat nicht geklappt. Bitte versuche es erneut.",
+    "fr": "Cela n’a pas fonctionné. Réessaie.",
+    "es": "No hemos podido completarlo. Inténtalo de nuevo."
+  },
+  "Check your email for a sign-in code.": {
+    "en": "Check your email for a sign-in code.",
+    "de": "Den Anmeldecode findest du in deiner E-Mail.",
+    "fr": "Tu trouveras le code dans tes e-mails.",
+    "es": "Busca el código de acceso en tu email."
+  },
+  "A few details for your dog.": {
+    "en": "A few details for your dog.",
+    "de": "Ein paar Angaben zu deinem Hund.",
+    "fr": "Quelques détails sur ton chien.",
+    "es": "Unos datos sobre tu perro."
+  },
+  "Add your dog’s name and weight range.": {
+    "en": "Add your dog’s name and weight range.",
+    "de": "Gib den Namen und die Gewichtsklasse deines Hundes an.",
+    "fr": "Ajoute le nom et la tranche de poids de ton chien.",
+    "es": "Añade el nombre y el rango de peso de tu perro."
+  },
+  "You’re on the waiting list.": {
+    "en": "You’re on the waiting list.",
+    "de": "Du stehst auf der Warteliste.",
+    "fr": "Tu es sur la liste d’attente.",
+    "es": "Estás en la lista de espera."
+  },
+  "Your place is confirmed.": {
+    "en": "Your place is confirmed.",
+    "de": "Dein Platz ist bestätigt.",
+    "fr": "Ta place est confirmée.",
+    "es": "Tu plaza está confirmada."
+  },
+  "Open your ticket in the app": {
+    "en": "Open your ticket in the app",
+    "de": "Ticket in der App öffnen",
+    "fr": "Ouvrir ton billet dans l’app",
+    "es": "Abrir tu entrada en la app"
+  },
+  "Cancellation closes 24 hours before the event.": {
+    "en": "Cancellation closes 24 hours before the event.",
+    "de": "Stornierungen sind bis 24 Stunden vor der Veranstaltung möglich.",
+    "fr": "Les annulations sont possibles jusqu’à 24 heures avant l’événement.",
+    "es": "Puedes cancelar hasta 24 horas antes del evento."
+  },
+  "Toy poodle": {
+    "en": "Toy poodle",
+    "de": "Toypudel",
+    "fr": "Caniche toy",
+    "es": "Caniche toy"
+  },
+  "Italian greyhound": {
+    "en": "Italian greyhound",
+    "de": "Italienisches Windspiel",
+    "fr": "Petit lévrier italien",
+    "es": "Galgo italiano"
+  },
+  "Chihuahua": {
+    "en": "Chihuahua",
+    "de": "Chihuahua",
+    "fr": "Chihuahua",
+    "es": "Chihuahua"
+  },
+  "Pomeranian": {
+    "en": "Pomeranian",
+    "de": "Zwergspitz",
+    "fr": "Spitz nain",
+    "es": "Pomerania"
+  },
+  "Yorkshire terrier": {
+    "en": "Yorkshire terrier",
+    "de": "Yorkshire Terrier",
+    "fr": "Yorkshire terrier",
+    "es": "Yorkshire terrier"
+  },
+  "Another breed": {
+    "en": "Another breed",
+    "de": "Eine andere Rasse",
+    "fr": "Une autre race",
+    "es": "Otra raza"
+  },
+  "Choose your dog’s breed before booking.": {
+    "en": "Choose your dog’s breed before booking.",
+    "de": "Wähle vor der Reservierung die Rasse deines Hundes.",
+    "fr": "Choisis la race de ton chien avant de réserver.",
+    "es": "Elige la raza de tu perro antes de reservar."
+  },
+  "This meetup is for the club’s selected breeds.": {
+    "en": "This meetup is for the club’s selected breeds.",
+    "de": "Dieses Treffen ist für die ausgewählten Rassen des Clubs.",
+    "fr": "Cette rencontre est réservée aux races du club.",
+    "es": "Esta quedada es para las razas del club."
+  },
+  "Breed": {
+    "en": "Breed",
+    "de": "Rasse",
+    "fr": "Race",
+    "es": "Raza"
+  },
+  "Choose a breed": {
+    "en": "Choose a breed",
+    "de": "Rasse wählen",
+    "fr": "Choisir une race",
+    "es": "Elige una raza"
+  }
+}
