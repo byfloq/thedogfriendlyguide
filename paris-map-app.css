@@ -84,3 +84,9 @@
 .embed-mode .google-marker.app-key-pin .marker-shape:after{display:none}
 .embed-mode .google-marker.app-key-pin .marker-shape>span{display:block;width:30px;height:30px;transform:none}
 .embed-mode .google-marker.app-key-pin svg{width:30px;height:30px;fill:none;stroke:#5A4840;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* 2.0.10: one native search sheet; keep photographic pins and place cards. */
+.embed-mode.search-ui210 .app-map-filters,.embed-mode.search-ui210 .app-map-count {display:none!important;}
+.embed-mode.search-ui210 .app-map-locate {top:auto;bottom:calc(var(--place-sheet-height,0px) + 42px);right:18px;transition:bottom .18s ease;}
+.embed-mode.search-ui210 .app-map-locate .locate-button {width:46px;height:46px;padding:0;border-radius:50%;display:grid;place-items:center;}
+@media (prefers-reduced-motion:reduce){.embed-mode.search-ui210 .app-map-locate{transition:none;}}

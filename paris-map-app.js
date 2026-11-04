@@ -2,6 +2,8 @@
 window.TdfgAppMap = {
   install({ state, selectPlace, clearSelection, chooseDistrict, chooseCategory, resetFilters, searchPlaces }) {
     if (!document.body.classList.contains('embed-mode')) return null;
+    const searchUI210=new URLSearchParams(location.search).get('app')==='1'&&new URLSearchParams(location.search).get('searchUI')==='210';
+    if(searchUI210)document.body.classList.add('search-ui210');
     const t=window.TdfgMapText||((key)=>key);
     const shell = document.querySelector('.map-shell');
     const results = document.querySelector('.map-results');
@@ -54,7 +56,7 @@ window.TdfgAppMap = {
     };
     const previous = action(t("Previous place"), '‹', () => move(-1));
     const next = action(t("Next place"), '›', () => move(1));
-    const reset = action(t("Reset map filters"), t("Reset filters"), ()=>{search.value='';resetFilters();});
+    const reset = action(t("Reset map filters"), t("Reset filters"), ()=>{search.value='';if(searchUI210){const payload={type:'tdfg:reset-filters210'};if(window.ReactNativeWebView)window.ReactNativeWebView.postMessage(JSON.stringify(payload));else window.parent.postMessage(payload,'*');}else resetFilters();});
     reset.classList.add('app-map-reset');
     const close = action(t("Close place card"), '×', clearSelection);
     rail.removeAttribute('tabindex');results.append(head);
@@ -70,7 +72,7 @@ window.TdfgAppMap = {
       const total = current.places.length;
       const index = current.places.findIndex(p => p.key === current.selectedKey);
       count.textContent = t(current.nearby?'{count} places within 1.2 km · Tap a pin':'{count} places · Tap an icon',{count:total});
-      count.hidden = index >= 0 || total === 0;
+      count.hidden = searchUI210 || index >= 0 || total === 0;
       results.hidden = index < 0 && total > 0;
       results.classList.toggle('has-selection', index >= 0 || total === 0);shell.classList.toggle('has-place-selection',index>=0);shell.style.setProperty('--place-sheet-height',results.hidden?'0px':results.getBoundingClientRect().height+'px');
       position.textContent = total === 0 ? t("No matches") : t('{index} of {total} places',{index:index+1,total});
@@ -114,7 +116,7 @@ window.TdfgAppMap = {
     return {
       update,
       cameraPadding() {
-        return { top:filters.offsetTop + filters.offsetHeight + 52, bottom:results.hidden ? 52 : results.offsetHeight + 44, left:32, right:32 };
+        return { top:searchUI210?115:filters.offsetTop + filters.offsetHeight + 52, bottom:results.hidden ? 52 : results.offsetHeight + 44, left:32, right:32 };
       }
     };
   }
