@@ -1,0 +1,51 @@
+{
+  "copenhagen-apotek-57": {
+    "image": "assets/places/copenhagen-apotek-57-editorial.webp",
+    "credit": "FRAMA",
+    "sourcePage": "https://framacph.com/blogs/stores/apotek-57",
+    "sourceImage": "https://framacph.com/cdn/shop/files/Apotek-57-Interior-2024-11_1200x.jpg?v=1711559483",
+    "subject": "Wooden tables, shelves and leafy plants inside Apotek 57"
+  },
+  "copenhagen-la-cabra-nordhavn": {
+    "image": "assets/places/copenhagen-la-cabra-nordhavn-editorial.webp",
+    "credit": "La Cabra",
+    "sourcePage": "https://lacabra.com/pages/nordhavn",
+    "sourceImage": "https://cdn.accentuate.io/133429461309/-1706777453750/Opening_La_Cabra-Nordhavn_October_2025_14-v1760424476161.jpg?900x1103",
+    "subject": "Red brick and a round table inside La Cabra Nordhavn"
+  },
+  "copenhagen-the-roe-bar": {
+    "image": "assets/places/copenhagen-the-roe-bar-editorial.webp",
+    "credit": "LOUISE ROE",
+    "sourcePage": "https://louise-roe.com/pages/the-roe-bar-1",
+    "sourceImage": "https://louise-roe.com/cdn/shop/files/250624_LR4837_1800x.jpg?v=1783589600",
+    "subject": "Round tables and the stone coffee counter inside The Roe Bar"
+  },
+  "copenhagen-lille-fugl": {
+    "image": "assets/places/copenhagen-lille-fugl-editorial.webp",
+    "credit": "Flere Fugle",
+    "sourcePage": "https://www.flerefugle.dk/lille-fugl",
+    "sourceImage": "https://cdn.sanity.io/images/uov2y1es/production/8a90482c85d98b7006f5f92b3d8e4ac4cae628ac-2000x2500.jpg?w=1080&fit=max&auto=format",
+    "subject": "Sunlight on the small tables and pendant lights inside Lille Fugl"
+  },
+  "copenhagen-amator": {
+    "image": "assets/places/copenhagen-amator-editorial.webp",
+    "credit": "Paolo Galgani",
+    "sourcePage": "https://www.archdaily.com/1025798/amator-cph-restaurant-wiercinski-studio",
+    "sourceImage": "https://images.adsttc.com/media/images/6788/0516/4cac/9901/87d6/65d3/large_jpg/amator-cph-restaurant-wiercinski-studio_3.jpg?1736967465",
+    "subject": "Oak seating and an open kitchen inside Amator in Østerbro"
+  },
+  "copenhagen-bottega-barlie": {
+    "image": "assets/places/copenhagen-bottega-barlie-editorial.webp",
+    "credit": "Bottega Barlie",
+    "sourcePage": "https://www.visitcopenhagen.com/copenhagen/planning/bottega-barlie-gdk1148457",
+    "sourceImage": "https://files.guidedanmark.org/files/382/329884_Bottega_Barlie.jpg",
+    "subject": "Set tables and shelves of wine inside Bottega Barlie"
+  },
+  "copenhagen-zoku-copenhagen": {
+    "image": "assets/places/copenhagen-zoku-copenhagen-editorial.webp",
+    "credit": "Zoku Copenhagen",
+    "sourcePage": "https://livezoku.com/copenhagen/stay/zoku-loft/",
+    "sourceImage": "https://livezoku.com/copenhagen/wp-content/uploads/sites/2/2024/03/Zoku-CPH-088-copy-scaled.jpg",
+    "subject": "A timber sleeping loft, staircase and living area at Zoku Copenhagen"
+  }
+}

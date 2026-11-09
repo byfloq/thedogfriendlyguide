@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "revision": "local",
-  "generatedAt": "2026-11-01T11:57:24.761659+00:00",
+  "generatedAt": "2026-11-09T15:40:54.493838+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -671,8 +671,8 @@
       "city": "copenhagen",
       "area": "Vesterbro",
       "category": "Drink",
-      "shortDescription": "Café · Vesterbro",
-      "editorial": "A recommended Copenhagen stop from The Dog Friendly Guide collection.",
+      "shortDescription": "Café, art & vintage · Vesterbro",
+      "editorial": "A Vesterbro coffee stop on Sønder Boulevard, with art and vintage design alongside the espresso. An easy pause on a walk through the neighbourhood. Dogs are welcome inside.",
       "image": "https://thedogfriendlyguide.com/assets/places/lokal.webp",
       "images": [
         "https://thedogfriendlyguide.com/assets/places/lokal.webp"
@@ -682,6 +682,209 @@
       "coordinates": {
         "latitude": 55.666015,
         "longitude": 12.551937
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-apotek-57",
+      "name": "Apotek 57",
+      "city": "copenhagen",
+      "area": "Nyboder",
+      "category": "Drink",
+      "shortDescription": "Café & bakery · Nyboder",
+      "editorial": "In the former pharmacy that houses the FRAMA Studio Store, this Nyboder café pairs seasonal plates and pastries with warm timber and shelves of ceramics. Dogs are welcome. Ask the café about seating if you plan to stay. Photography: FRAMA",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-apotek-57-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-apotek-57-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apotek%2057%20Fredericiagade%2057%2C%201310%20K%C3%B8benhavn%20K%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/apotek_57/",
+      "coordinates": {
+        "latitude": 55.686945,
+        "longitude": 12.585826
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-la-cabra-nordhavn",
+      "name": "La Cabra · Nordhavn",
+      "city": "copenhagen",
+      "area": "Nordhavn",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee & roastery · Nordhavn",
+      "editorial": "La Cabra’s harbour-side roastery and café pairs carefully brewed coffee with a brick-lined room. Make it a stop on a walk through Nordhavn’s old port streets. Dogs are welcome at this Nordhavn location. Ask the café about seating. Photography: La Cabra",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-la-cabra-nordhavn-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-la-cabra-nordhavn-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Cabra%20%C2%B7%20Nordhavn%20%C3%85rhusgade%20118X%2C%202150%20Nordhavn%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/lacabracoffee/",
+      "coordinates": {
+        "latitude": 55.707163,
+        "longitude": 12.592055
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-the-roe-bar",
+      "name": "The Roe Bar",
+      "city": "copenhagen",
+      "area": "Indre By",
+      "category": "Drink",
+      "shortDescription": "Gallery café & brunch · Indre By",
+      "editorial": "The café inside Louise Roe Gallery pairs breakfast and seasonal lunch with coffee and pastries. Its sculptural tables and long counter make it an inviting pause in the city centre. Dogs are welcome inside. Photography: LOUISE ROE",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-the-roe-bar-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-the-roe-bar-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Roe%20Bar%20Vognmagergade%209%2C%201120%20K%C3%B8benhavn%20K%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/theroebar/",
+      "coordinates": {
+        "latitude": 55.682476,
+        "longitude": 12.578146
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-lille-fugl",
+      "name": "Lille Fugl",
+      "city": "copenhagen",
+      "area": "Indre By",
+      "category": "Drink",
+      "shortDescription": "Bakery café & wine bar · Indre By",
+      "editorial": "Tucked beneath the Gammel Strand art centre, this little café from the Flere Fugle team is a stop for baked goods, breakfast and a glass of wine later in the day. Dogs are welcome at Lille Fugl. Ask the café about seating. Photography: Flere Fugle",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-lille-fugl-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-lille-fugl-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lille%20Fugl%20L%C3%A6derstr%C3%A6de%209%2C%201201%20K%C3%B8benhavn%20K%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/lillefugl_kbh/",
+      "coordinates": {
+        "latitude": 55.678115,
+        "longitude": 12.578263
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-amator",
+      "name": "Amator",
+      "city": "copenhagen",
+      "area": "Østerbro",
+      "category": "Eat",
+      "shortDescription": "Breakfast & lunch restaurant · Østerbro",
+      "editorial": "An intimate Østerbro restaurant where omelettes take centre stage. Long oak tables and a compact open kitchen give breakfast or lunch the feel of a meal at someone’s home. Dogs are welcome. Ask the restaurant about seating. Photography: Paolo Galgani",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-amator-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-amator-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Amator%20Nordre%20Frihavnsgade%207%2C%202100%20K%C3%B8benhavn%20%C3%98%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/amatorcph/",
+      "coordinates": {
+        "latitude": 55.700195,
+        "longitude": 12.57839
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-bottega-barlie",
+      "name": "Bottega Barlie",
+      "city": "copenhagen",
+      "area": "Nyboder",
+      "category": "Eat",
+      "shortDescription": "Restaurant & wine bar · Nyboder",
+      "editorial": "A neighbourhood restaurant on Fredericiagade, equally suited to a slow breakfast or a seasonal dinner and a glass of wine. The menu shifts with what is in season. Dogs are welcome. Ask the restaurant about seating. Photography: Bottega Barlie",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-bottega-barlie-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-bottega-barlie-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bottega%20Barlie%20Fredericiagade%2078%2C%201310%20K%C3%B8benhavn%20K%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/bottegabarlie/",
+      "coordinates": {
+        "latitude": 55.687231,
+        "longitude": 12.585504
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-zoku-copenhagen",
+      "name": "Zoku Copenhagen",
+      "city": "copenhagen",
+      "area": "Amager",
+      "category": "Stay",
+      "shortDescription": "Apartment hotel · Amager",
+      "editorial": "An Amager aparthotel with compact lofts, full kitchens and rooftop social spaces. A practical base for a longer stay or a weekend with your dog. One dog up to 20 kg per loft. A cleaning fee applies. Dogs can join you in most social spaces, with the Living Kitchen restaurant excluded. Hotel pet policy Photography: Zoku Copenhagen",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-zoku-copenhagen-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-zoku-copenhagen-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zoku%20Copenhagen%20Amagerf%C3%A6lledvej%20108%2C%202300%20K%C3%B8benhavn%20S%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/zokucopenhagen/",
+      "coordinates": {
+        "latitude": 55.65672,
+        "longitude": 12.591758
       },
       "coordinatesVerified": true,
       "distanceKm": 0,

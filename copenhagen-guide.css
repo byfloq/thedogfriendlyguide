@@ -1,0 +1,24 @@
+.copenhagen-guide-page .editorial-photography {
+  position: relative;
+  overflow: hidden;
+  background: #e9e1d7;
+}
+
+.copenhagen-guide-page .editorial-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.copenhagen-guide-page .place-details {
+  margin: 12px 0;
+  color: var(--muted);
+  font: 400 13px/1.5 var(--sans);
+}
+
+.copenhagen-guide-page .place-dog-policy a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
