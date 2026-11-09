@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "revision": "local",
-  "generatedAt": "2026-11-09T15:40:54.493838+00:00",
+  "generatedAt": "2026-11-09T21:24:03.362205+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -798,6 +798,64 @@
       "coordinates": {
         "latitude": 55.678115,
         "longitude": 12.578263
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-beau-marche",
+      "name": "Beau Marché",
+      "city": "copenhagen",
+      "area": "Indre By",
+      "category": "Drink",
+      "shortDescription": "French café & wine bar · Indre By",
+      "editorial": "Past the design shop on Ny Østergade, this French café and wine bar serves classics such as croque monsieur and omelettes. The little courtyard is a quiet place to pause in the city centre. Dogs are welcome. Ask the café whether indoor seating is available. Photography: VisitCopenhagen",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-beau-marche-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-beau-marche-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Beau%20March%C3%A9%20Ny%20%C3%98stergade%2032%2C%201101%20K%C3%B8benhavn%20K%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/beaumarchecph/",
+      "coordinates": {
+        "latitude": 55.682078,
+        "longitude": 12.581396
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "copenhagen-prolog-coffee-papiroen",
+      "name": "Prolog Coffee · Paper Island",
+      "city": "copenhagen",
+      "area": "Christianshavn",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee bar · Christianshavn",
+      "editorial": "Prolog’s Paper Island coffee bar sits on the harbour in Christianshavn. Stop for espresso or filter coffee from the Copenhagen roaster before a walk along the waterfront. Dogs are welcome inside at Paper Island and at all Prolog coffee bars. Photography: Prolog Coffee",
+      "image": "https://thedogfriendlyguide.com/assets/places/copenhagen-prolog-coffee-papiroen-editorial.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/copenhagen-prolog-coffee-papiroen-editorial.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Prolog%20Coffee%20%C2%B7%20Paper%20Island%20Papir%C3%B8en%2087%2C%201436%20K%C3%B8benhavn%20K%2C%20Denmark",
+      "websiteUrl": "https://www.instagram.com/prologcoffee.cph/",
+      "coordinates": {
+        "latitude": 55.678374,
+        "longitude": 12.598739
       },
       "coordinatesVerified": true,
       "distanceKm": 0,

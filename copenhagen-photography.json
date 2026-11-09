@@ -47,5 +47,19 @@
     "sourcePage": "https://livezoku.com/copenhagen/stay/zoku-loft/",
     "sourceImage": "https://livezoku.com/copenhagen/wp-content/uploads/sites/2/2024/03/Zoku-CPH-088-copy-scaled.jpg",
     "subject": "A timber sleeping loft, staircase and living area at Zoku Copenhagen"
+  },
+  "copenhagen-beau-marche": {
+    "image": "assets/places/copenhagen-beau-marche-editorial.webp",
+    "credit": "VisitCopenhagen",
+    "sourcePage": "https://www.visitcopenhagen.com/copenhagen/planning/beau-marche-gdk1144246",
+    "sourceImage": "https://files.guidedanmark.org/files/382/317667_Beau_March.jpg",
+    "subject": "Wicker café chairs and round tables outside Beau Marché"
+  },
+  "copenhagen-prolog-coffee-papiroen": {
+    "image": "assets/places/copenhagen-prolog-coffee-papiroen-editorial.webp",
+    "credit": "Prolog Coffee",
+    "sourcePage": "https://www.prologcoffee.com/pages/prolog-coffee-bars",
+    "sourceImage": "https://cdn.shopify.com/s/files/1/0052/3599/8790/files/Untitled-1.png?v=1773134191",
+    "subject": "Prolog Coffee’s brick storefront and wooden benches on Paper Island"
   }
 }
