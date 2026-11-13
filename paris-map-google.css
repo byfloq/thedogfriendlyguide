@@ -28,3 +28,6 @@
 @media(max-width:700px){.google-marker.active .google-marker-label{display:none}}
 @media(max-width:700px){.near-now{left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));transform:none;width:auto;min-height:62px;border-radius:15px}.near-now__toggle{padding:10px 12px;grid-template-columns:32px auto}.near-now__toggle small{display:none}.near-now__choices{padding:10px}.near-now__choices button{min-height:32px;padding:0 10px}.map-results{bottom:88px}}
 @media(max-width:700px){.map-filter-stack{max-width:100%}.filter-step{flex-basis:48px}.map-actions{position:absolute;left:0;right:0;top:92px;gap:5px;overflow-x:auto;justify-content:flex-start;padding:0 2px 5px;scrollbar-width:none}.map-actions::-webkit-scrollbar{display:none}.map-action-button,.map-actions .locate-button{position:static;flex:0 0 auto;padding:9px 10px;font-size:7px}.map-action-button svg{width:12px;height:12px}.map-actions .locate-button{margin-left:0}.map-actions .locate-button span{font-size:13px}}
+
+/* Dog park category */
+.dot.walk{background:#776d62}.google-marker[data-category="walk"] .marker-shape{background:#776d62}

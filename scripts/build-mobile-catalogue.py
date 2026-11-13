@@ -74,6 +74,24 @@ for place in places:
   place['coordinatesVerified']=True
 ids=[p['id'] for p in places]
 assert len(ids)==len(set(ids)), 'Duplicate place IDs'
+park_catalogue=ROOT/'parks-catalogue.v1.json'
+if park_catalogue.exists():
+ imported=json.loads(park_catalogue.read_text())
+ assert imported.get('schemaVersion')==1 and isinstance(imported.get('parks'),list)
+ published_city_ids={city['id'] for city in cities}
+ for park in imported['parks']:
+  if park.get('guideCity') not in published_city_ids or not park.get('coordinates'): continue
+  assert park['id'] not in ids, 'Duplicate park ID'
+  enclosure='Fenced' if park['fenced'] else 'Unfenced'
+  address=' '.join(part for part in [park['address'],park.get('postalCode'),park['locality'],park['country']] if part)
+  details=[f"Dog park in {park['locality']}. {enclosure} area.",address+'.']
+  if park.get('referenceRating') is not None:
+   rating=f"Reference rating {park['referenceRating']:g}/5"
+   if park.get('referenceReviewCount') is not None: rating+=f" ({park['referenceReviewCount']} reviews)"
+   details.append(rating+'.')
+  image=BASE+'assets/places/park-placeholder.png'
+  places.append(dict(id=park['id'],name=park['name'],city=park['guideCity'],area=park['locality'],category='Walk',shortDescription=f'Dog park · {enclosure.lower()}',editorial=' '.join(details),image=image,images=[image],mapsUrl=park['mapsUrl'],websiteUrl=BASE+'parks.html?park='+park['id'],coordinates=park['coordinates'],coordinatesVerified=True,distanceKm=0,source='website',attributes=dict(dogsInside=False,dogsOutside=True,terrace=False,water=False,cocoWasThere=False),parkDetails=park))
+  ids.append(park['id'])
 result=dict(schemaVersion=1,revision=os.environ.get('BUILD_ID','local'),generatedAt=datetime.now(timezone.utc).isoformat(),cities=cities,places=places,paris=paris,plans=plans)
 (ROOT/'mobile-catalogue.v1.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print(f'Mobile catalogue: {len(places)+len(paris["places"])} places in {len(cities)} cities; {len(plans)} website plans')

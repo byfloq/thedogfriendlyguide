@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dog parks · The Dog Friendly Guide</title>
+  <meta name="description" content="Find dog parks in Denmark, Germany, the United Kingdom, Sweden and France. Browse addresses, fenced areas and directions.">
+  <link rel="canonical" href="https://thedogfriendlyguide.com/parks.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="parks.css?v=20261113">
+  <script defer src="parks.js?v=20261113"></script>
+</head>
+<body>
+  <header class="parks-header">
+    <a class="brand" href="/" aria-label="The Dog Friendly Guide home">THE DOG<br>FRIENDLY GUIDE<small>BY FLŌQ</small></a>
+    <nav aria-label="Main navigation"><a href="/#cities">The Guide</a><a href="parks.html" aria-current="page">Parks</a></nav>
+  </header>
+  <main>
+    <section class="parks-intro" aria-labelledby="parks-heading">
+      <p class="eyebrow">OUT TOGETHER</p>
+      <h1 id="parks-heading">A little room to roam.</h1>
+      <p>Dog parks, dog forests and open-air places for your next walk together.</p>
+    </section>
+    <form class="parks-filters" role="search" aria-label="Find a dog park">
+      <label class="search-label">Find a park<input type="search" id="park-search" placeholder="Park name, city or address" autocomplete="off"></label>
+      <label>Country<select id="park-country"><option value="">All countries</option><option value="DK">Denmark</option><option value="DE">Germany</option><option value="GB">United Kingdom</option><option value="SE">Sweden</option><option value="FR">France</option></select></label>
+      <label>City or area<select id="park-locality" disabled><option value="">Choose a country first</option></select></label>
+      <label>Enclosure<select id="park-fenced"><option value="">All parks</option><option value="yes">Fenced</option><option value="no">Unfenced</option></select></label>
+    </form>
+    <div class="parks-results-heading"><p id="park-count" role="status" aria-live="polite">Loading parks…</p><button id="park-reset" type="button">Clear filters</button></div>
+    <div id="park-error" role="alert" hidden><p>We couldn't load the parks. Please try again.</p><button type="button" id="park-retry">Try again</button></div>
+    <div class="parks-grid" id="park-results"></div>
+    <p class="parks-empty" id="park-empty" hidden>No parks match these filters. Try another place or clear the filters.</p>
+    <button class="parks-more" id="park-more" type="button" hidden>Show more parks</button>
+    <noscript><p>Enable JavaScript to search the directory, or <a href="parks-catalogue.v1.json">open the complete park catalogue</a>.</p></noscript>
+    <p class="parks-note">Check the signs at each park for current access and lead rules. Details are from the supplied park listings. Reference ratings are separate from the Guide's community activity.</p>
+  </main>
+  <footer><a href="/">The Dog Friendly Guide</a><nav aria-label="Footer"><a href="about.html">About</a><a href="submit.html">Suggest a place</a><a href="terms.html">Terms</a></nav></footer>
+</body>
+</html>
