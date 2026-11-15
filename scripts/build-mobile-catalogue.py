@@ -45,7 +45,10 @@ for page in sorted(ROOT.glob('*-guide.html')):
   if not category: raise ValueError('Unsupported category: '+name)
   policy=paragraph(card,'place-dog-policy')
   # Amenities are not inferred from a general welcome; the actual policy is in the editorial text.
-  city_places.append(dict(id=key if key.startswith(city+'-') else city+'-'+key, name=name, city=city, area=attr(tag,'data-area').replace('-',' ').title(), category=category, shortDescription=paragraph(card,'place-category'),editorial=' '.join(x for x in [paragraph(card,'desc'),policy,paragraph(card,'photo-credit')] if x), image=images[0], images=images, mapsUrl=https(maps), websiteUrl=next((link for link in links if 'instagram.com' in link),''), coordinates=dict(latitude=0,longitude=0), coordinatesVerified=False,distanceKm=0,source='website',attributes=dict(dogsInside=False,dogsOutside=False,terrace=False,water=False,cocoWasThere=False)))
+  city_places.append(dict(id=key if key.startswith(city+'-') else city+'-'+key, name=name, city=city, area=attr(tag,'data-area-label') or attr(tag,'data-area').replace('-',' ').title(), category=category, shortDescription=paragraph(card,'place-category'),editorial=' '.join(x for x in [paragraph(card,'desc'),policy,paragraph(card,'photo-credit')] if x), image=images[0], images=images, mapsUrl=https(maps), websiteUrl=next((link for link in links if 'instagram.com' in link),''), coordinates=dict(latitude=0,longitude=0), coordinatesVerified=False,distanceKm=0,source='website',attributes=dict(dogsInside=False,dogsOutside=False,terrace=False,water=False,cocoWasThere=False)))
+  if attr(tag,'data-opening-hours'):
+   city_places[-1]['openingHours']=attr(tag,'data-opening-hours')
+   city_places[-1]['openingHoursSourceUrl']=attr(tag,'data-opening-hours-source')
  if city_places:
   cities.append(dict(id=city,label=city.replace('-',' ').title(),subtitle='The Guide’s edit'))
   places.extend(city_places)

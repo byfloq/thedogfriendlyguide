@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "parks-20261113",
-  "generatedAt": "2026-11-13T19:47:28.473043+00:00",
+  "revision": "barcelona-20261115-226",
+  "generatedAt": "2026-11-15T22:12:20.060373+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -421,6 +421,452 @@
       "coordinates": {
         "latitude": 41.4037032,
         "longitude": 2.156947
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-barbara-bakery",
+      "name": "Bárbara Bakery",
+      "city": "barcelona",
+      "area": "Poblenou",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Poblenou",
+      "editorial": "Seasonal baking in Poblenou, from sourdough loaves and medialunas to lemon-and-cardamom babka. A good stop for something freshly baked after a neighbourhood walk. Photography: Bárbara Bakery.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-barbara-bakery-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-barbara-bakery-1-226.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-barbara-bakery-2-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%A1rbara%20Bakery%20Pla%C3%A7a%20de%20Julio%20Gonz%C3%A1lez%203%E2%80%935%2C%2008005%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/barbara_bakerybcn/",
+      "coordinates": {
+        "latitude": 41.4013135,
+        "longitude": 2.2070373
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon–Sun 09:00–18:00",
+      "openingHoursSourceUrl": "https://barbarabakery.com/"
+    },
+    {
+      "id": "barcelona-origo-bakery-gracia",
+      "name": "Origo Bakery · Gràcia",
+      "city": "barcelona",
+      "area": "Gràcia",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Gràcia",
+      "editorial": "Origo’s first bakery pairs organic sourdough and handmade pastries with specialty coffee. Its bread-led approach starts with regenerative farming. Photography: Origo Bakery · Gràcia.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-origo-bakery-gracia-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-origo-bakery-gracia-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Origo%20Bakery%20%C2%B7%20Gr%C3%A0cia%20Carrer%20de%20Mil%C3%A0%20i%20Fontanals%209%2C%2008012%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/origobakery/",
+      "coordinates": {
+        "latitude": 41.4004592,
+        "longitude": 2.1632511
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon–Fri 08:00–20:30; Sat–Sun 08:00–19:00",
+      "openingHoursSourceUrl": "https://www.origobakery.com/en/pages/contact"
+    },
+    {
+      "id": "barcelona-la-papa-aribau",
+      "name": "La Papa · Aribau",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Eixample",
+      "editorial": "Fresh daytime cooking and specialty coffee in a warm, design-led Eixample café. The handmade ceramics are part of La Papa’s own collection. Photography: La Papa · Aribau.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-la-papa-aribau-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-la-papa-aribau-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Papa%20%C2%B7%20Aribau%20Carrer%20d%E2%80%99Aribau%2092%2C%2008036%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/lapapa______/",
+      "coordinates": {
+        "latitude": 41.3898631,
+        "longitude": 2.1577026
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-wanna-place",
+      "name": "Wanna Place",
+      "city": "barcelona",
+      "area": "Sant Gervasi",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Sant Gervasi",
+      "editorial": "A small Sant Gervasi café for specialty coffee and a pastry break, tucked into a neighbourhood corner close to Plaça de Sant Joaquim. Photography: Vannelle Canille / Vannelle Walks.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-wanna-place-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-wanna-place-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wanna%20Place%20Carrer%20de%20Sant%20Hermenegild%202%2C%2008006%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/wanna.bcn/",
+      "coordinates": {
+        "latitude": 41.4042848,
+        "longitude": 2.1456163
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-otsu",
+      "name": "Otsu",
+      "city": "barcelona",
+      "area": "Poblenou",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Poblenou",
+      "editorial": "A Japanese-inspired Poblenou café for egg sandos, seasonal breakfasts and lunch. Coffee and pastries continue after the kitchen closes. Photography: Paulina Rodriguez / Otsu.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-1-226.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-2-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Otsu%20Carrer%20de%20la%20Ciutat%20de%20Granada%2020%2C%2008005%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/otsu.bcn/",
+      "coordinates": {
+        "latitude": 41.397068,
+        "longitude": 2.1999832
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon–Fri 08:00–17:00; Sat–Sun 09:00–17:00",
+      "openingHoursSourceUrl": "https://www.otsu.es/"
+    },
+    {
+      "id": "barcelona-cafe-schallert",
+      "name": "Café Schallert",
+      "city": "barcelona",
+      "area": "Poble-sec",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Poble-sec",
+      "editorial": "Austrian baking at Hotel Brummell: house-made strudel, Sachertorte and Three Marks coffee. Stay for a slow breakfast in the plant-filled atrium. Photography: Žiga Mihelčič / Café Schallert.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schallert%20Carrer%20Nou%20de%20la%20Rambla%20174%2C%2008004%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/cafeschallert.barcelona/",
+      "coordinates": {
+        "latitude": 41.3716484,
+        "longitude": 2.1664571
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon–Fri 08:00–14:00; Sat–Sun 08:00–16:00",
+      "openingHoursSourceUrl": "https://cafeschallert.brummellprojects.com/"
+    },
+    {
+      "id": "barcelona-berbena",
+      "name": "Berbena",
+      "city": "barcelona",
+      "area": "Gràcia",
+      "category": "Eat",
+      "shortDescription": "Restaurant · Gràcia",
+      "editorial": "A compact restaurant on Carrer de Minerva, built around seasonal plates, house-made sourdough and a thoughtful wine list. An intimate stop for a longer meal. Photography: Berbena.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-berbena-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-berbena-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Berbena%20Carrer%20de%20Minerva%206%2C%2008006%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/berbenabcn/",
+      "coordinates": {
+        "latitude": 41.3964584,
+        "longitude": 2.1565147
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-joncake-coffee",
+      "name": "Jon Cake & Coffee",
+      "city": "barcelona",
+      "area": "El Born",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · El Born",
+      "editorial": "Jon García’s cheese-led cakes meet specialty coffee in the Born. Choose a slice of the signature cheesecake or one of the changing varieties. Photography: b-guided Barcelona.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jon%20Cake%20%26%20Coffee%20Carrer%20de%20Sant%20Pere%20M%C3%A9s%20Baix%2036%2C%2008003%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/joncake.es/",
+      "coordinates": {
+        "latitude": 41.3872417,
+        "longitude": 2.1776681
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-casa-camper",
+      "name": "Casa Camper Barcelona",
+      "city": "barcelona",
+      "area": "El Raval",
+      "category": "Stay",
+      "shortDescription": "Hotel · El Raval",
+      "editorial": "A design hotel in the Raval, close to the MACBA, with relaxed shared spaces and a rooftop terrace. A central base for exploring the old city. Contact the hotel before booking to confirm current pet-stay conditions and any fees. Photography: Casa Camper Barcelona.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-1-226.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-2-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Camper%20Barcelona%20Carrer%20d%E2%80%99Elisabets%2011%2C%2008001%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/casacamper/",
+      "coordinates": {
+        "latitude": 41.3832414,
+        "longitude": 2.1685298
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-casa-bonay",
+      "name": "Casa Bonay",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Stay",
+      "shortDescription": "Hotel · Eixample",
+      "editorial": "A restored 19th-century house on Gran Via with tiled floors, courtyard rooms and lively food-and-drink spaces. A characterful Eixample base for a city stay. Pet-friendly stays are available. Confirm the room arrangements with the hotel before booking. Photography: Casa Bonay.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-casa-bonay-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-bonay-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Bonay%20Gran%20Via%20de%20les%20Corts%20Catalanes%20700%2C%2008010%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/casabonay/",
+      "coordinates": {
+        "latitude": 41.3936055,
+        "longitude": 2.1742871
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-bodega-bonay",
+      "name": "Bodega Bonay",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Eat",
+      "shortDescription": "Restaurant · Eixample",
+      "editorial": "Seasonal Mediterranean plates and a considered wine list inside Casa Bonay. A low-key place to settle into an unhurried meal on Gran Via. Dogs are welcome; confirm the seating arrangements with the team. Photography: Bodega Bonay.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-bodega-bonay-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-bodega-bonay-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodega%20Bonay%20Gran%20Via%20de%20les%20Corts%20Catalanes%20700%2C%2008010%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/bodegabonay/",
+      "coordinates": {
+        "latitude": 41.3936055,
+        "longitude": 2.1742871
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-bar-la-camila",
+      "name": "Bar La Camila",
+      "city": "barcelona",
+      "area": "Gràcia",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Gràcia",
+      "editorial": "An old-style Gràcia neighbourhood bar with specialty coffee, tortilla and small plates. Come for breakfast or linger over a vermouth later in the day. Dogs are welcome; confirm the seating arrangements with the team. Photography: Andreu Font / In and Out Barcelona.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-bar-la-camila-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-bar-la-camila-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bar%20La%20Camila%20Carrer%20de%20Banyoles%2011%2C%2008012%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/barlacamila/",
+      "coordinates": {
+        "latitude": 41.4018317,
+        "longitude": 2.1626196
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-benzina",
+      "name": "Benzina",
+      "city": "barcelona",
+      "area": "Sant Antoni",
+      "category": "Eat",
+      "shortDescription": "Restaurant · Sant Antoni",
+      "editorial": "Italian cooking and cocktails on Passatge de Pere Calders. Come for pasta, including its signature carbonara, in a relaxed Sant Antoni setting. Photography: Benzina.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-benzina-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-benzina-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Benzina%20Passatge%20de%20Pere%20Calders%206%2C%2008015%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/benzinabcn/",
+      "coordinates": {
+        "latitude": 41.3761861,
+        "longitude": 2.1627583
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-balzac",
+      "name": "Balzac Barcelona",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Drink",
+      "shortDescription": "Coffee & daytime food · Eixample",
+      "editorial": "A specialty-coffee stop on Passeig de Sant Joan, pairing carefully made coffee with pastries. A simple pause along one of the city’s best walking streets. Dogs are welcome inside. Photography: Time Out Barcelona.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-balzac-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-balzac-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balzac%20Barcelona%20Passeig%20de%20Sant%20Joan%20127%2C%2008037%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/balzacbarcelona/",
+      "coordinates": {
+        "latitude": 41.4006336,
+        "longitude": 2.1674579
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-honest-greens-pedralbes",
+      "name": "Honest Greens · Pedralbes Centre",
+      "city": "barcelona",
+      "area": "Les Corts",
+      "category": "Eat",
+      "shortDescription": "Restaurant · Les Corts",
+      "editorial": "Vegetable-led market plates and seasonal salads at Pedralbes Centre. An easy, informal stop for a fresh lunch in Les Corts. Dogs are welcome; confirm the seating arrangements with the team. Photography: Honest Greens · Pedralbes Centre.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-honest-greens-pedralbes-1-226.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-honest-greens-pedralbes-1-226.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Honest%20Greens%20%C2%B7%20Pedralbes%20Centre%20Carrer%20de%20Joan%20G%C3%BCell%20236%2C%2008028%20Barcelona",
+      "websiteUrl": "https://www.instagram.com/honestgreens/",
+      "coordinates": {
+        "latitude": 41.3879341,
+        "longitude": 2.1288223
       },
       "coordinatesVerified": true,
       "distanceKm": 0,

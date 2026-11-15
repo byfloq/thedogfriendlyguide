@@ -256,5 +256,368 @@
       "50% 0%",
       "50% 50%"
     ]
+  },
+  {
+    "key": "nokko",
+    "name": "NOKKO",
+    "category": "cafe",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-nokko-1.webp"
+    ],
+    "description": "Specialty coffee, handmade pastries and rotating art on Enric Granados. A thoughtful little pause in the Eixample.",
+    "instagram": "https://www.instagram.com/nokko.bcn/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NOKKO%20Enric%20Granados%20145%2C%20Barcelona"
+  },
+  {
+    "key": "gresca",
+    "name": "Gresca",
+    "category": "restaurant",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-gresca-1.webp"
+    ],
+    "description": "Seasonal small plates and a considered wine list on Provença, with an open kitchen and a quietly lively bar.",
+    "instagram": "https://www.instagram.com/restaurantgresca/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gresca%20Proven%C3%A7a%20230%2C%20Barcelona"
+  },
+  {
+    "key": "soma",
+    "name": "SOMA",
+    "category": "restaurant",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-soma-1.webp"
+    ],
+    "description": "Mediterranean cooking with an Italian accent, seasonal dishes to share and a warm neighbourhood setting on Provença.",
+    "instagram": "https://www.instagram.com/somabcn_/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SOMA%20Proven%C3%A7a%20179%2C%20Barcelona"
+  },
+  {
+    "key": "barbocata",
+    "name": "BarBocata · Travessera",
+    "category": "restaurant",
+    "area": "sant-gervasi",
+    "images": [
+      "assets/places/barcelona-barbocata-1.webp"
+    ],
+    "description": "The original BarBocata on Travessera de Gràcia: generous sandwiches, tortilla and a relaxed bar for a long lunch.",
+    "instagram": "https://www.instagram.com/barbocata_/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BarBocata%20%C2%B7%20Travessera%20Travessera%20de%20Gr%C3%A0cia%2086%2C%20Barcelona"
+  },
+  {
+    "key": "morreig",
+    "name": "Morreig",
+    "category": "cafe",
+    "area": "gracia",
+    "images": [
+      "assets/places/barcelona-morreig-1.webp"
+    ],
+    "description": "Artisan pastries and house-made ice cream on Carrer de Verdi. French baking meets a playful take on dessert, from vanilla flan to brioche filled with ice cream.",
+    "instagram": "https://www.instagram.com/morre_ig/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morreig%20Carrer%20de%20Verdi%2025%20Barcelona"
+  },
+  {
+    "key": "barbara-bakery",
+    "name": "Bárbara Bakery",
+    "category": "cafe",
+    "area": "poblenou",
+    "images": [
+      "assets/places/barcelona-barbara-bakery-1-226.webp",
+      "assets/places/barcelona-barbara-bakery-2-226.webp"
+    ],
+    "description": "Seasonal baking in Poblenou, from sourdough loaves and medialunas to lemon-and-cardamom babka. A good stop for something freshly baked after a neighbourhood walk.",
+    "instagram": "https://www.instagram.com/barbara_bakerybcn/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%A1rbara%20Bakery%20Pla%C3%A7a%20de%20Julio%20Gonz%C3%A1lez%203%E2%80%935%2C%2008005%20Barcelona",
+    "address": "Plaça de Julio González 3–5, 08005 Barcelona",
+    "coordinates": {
+      "latitude": 41.4013135,
+      "longitude": 2.2070373
+    },
+    "sourceUrl": "https://barbarabakery.com/",
+    "photoSourceUrl": "https://barbarabakery.com/",
+    "photoCredit": "Bárbara Bakery"
+  },
+  {
+    "key": "origo-bakery-gracia",
+    "name": "Origo Bakery · Gràcia",
+    "category": "cafe",
+    "area": "gracia",
+    "images": [
+      "assets/places/barcelona-origo-bakery-gracia-1-226.webp"
+    ],
+    "description": "Origo’s first bakery pairs organic sourdough and handmade pastries with specialty coffee. Its bread-led approach starts with regenerative farming.",
+    "instagram": "https://www.instagram.com/origobakery/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Origo%20Bakery%20%C2%B7%20Gr%C3%A0cia%20Carrer%20de%20Mil%C3%A0%20i%20Fontanals%209%2C%2008012%20Barcelona",
+    "address": "Carrer de Milà i Fontanals 9, 08012 Barcelona",
+    "coordinates": {
+      "latitude": 41.4004592,
+      "longitude": 2.1632511
+    },
+    "sourceUrl": "https://www.origobakery.com/en/pages/contact",
+    "photoSourceUrl": "https://www.origobakery.com/en/pages/contact",
+    "photoCredit": "Origo Bakery · Gràcia"
+  },
+  {
+    "key": "la-papa-aribau",
+    "name": "La Papa · Aribau",
+    "category": "cafe",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-la-papa-aribau-1-226.webp"
+    ],
+    "description": "Fresh daytime cooking and specialty coffee in a warm, design-led Eixample café. The handmade ceramics are part of La Papa’s own collection.",
+    "instagram": "https://www.instagram.com/lapapa______/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Papa%20%C2%B7%20Aribau%20Carrer%20d%E2%80%99Aribau%2092%2C%2008036%20Barcelona",
+    "address": "Carrer d’Aribau 92, 08036 Barcelona",
+    "coordinates": {
+      "latitude": 41.3898631,
+      "longitude": 2.1577026
+    },
+    "sourceUrl": "https://lapapa.es/",
+    "photoSourceUrl": "https://lapapa.es/",
+    "photoCredit": "La Papa · Aribau"
+  },
+  {
+    "key": "wanna-place",
+    "name": "Wanna Place",
+    "category": "cafe",
+    "area": "sant-gervasi",
+    "images": [
+      "assets/places/barcelona-wanna-place-1-226.webp"
+    ],
+    "description": "A small Sant Gervasi café for specialty coffee and a pastry break, tucked into a neighbourhood corner close to Plaça de Sant Joaquim.",
+    "instagram": "https://www.instagram.com/wanna.bcn/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wanna%20Place%20Carrer%20de%20Sant%20Hermenegild%202%2C%2008006%20Barcelona",
+    "address": "Carrer de Sant Hermenegild 2, 08006 Barcelona",
+    "coordinates": {
+      "latitude": 41.4042848,
+      "longitude": 2.1456163
+    },
+    "sourceUrl": "https://www.instagram.com/wanna.bcn/",
+    "photoSourceUrl": "https://vannellewalks.com/journal/best-bakeries-cafes-barcelona/",
+    "photoCredit": "Vannelle Canille / Vannelle Walks"
+  },
+  {
+    "key": "otsu",
+    "name": "Otsu",
+    "category": "cafe",
+    "area": "poblenou",
+    "images": [
+      "assets/places/barcelona-otsu-1-226.webp",
+      "assets/places/barcelona-otsu-2-226.webp"
+    ],
+    "description": "A Japanese-inspired Poblenou café for egg sandos, seasonal breakfasts and lunch. Coffee and pastries continue after the kitchen closes.",
+    "instagram": "https://www.instagram.com/otsu.bcn/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Otsu%20Carrer%20de%20la%20Ciutat%20de%20Granada%2020%2C%2008005%20Barcelona",
+    "address": "Carrer de la Ciutat de Granada 20, 08005 Barcelona",
+    "coordinates": {
+      "latitude": 41.397068,
+      "longitude": 2.1999832
+    },
+    "sourceUrl": "https://www.otsu.es/",
+    "photoSourceUrl": "https://www.otsu.es/",
+    "photoCredit": "Paulina Rodriguez / Otsu"
+  },
+  {
+    "key": "cafe-schallert",
+    "name": "Café Schallert",
+    "category": "cafe",
+    "area": "poble-sec",
+    "images": [
+      "assets/places/barcelona-cafe-schallert-1-226.webp"
+    ],
+    "description": "Austrian baking at Hotel Brummell: house-made strudel, Sachertorte and Three Marks coffee. Stay for a slow breakfast in the plant-filled atrium.",
+    "instagram": "https://www.instagram.com/cafeschallert.barcelona/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schallert%20Carrer%20Nou%20de%20la%20Rambla%20174%2C%2008004%20Barcelona",
+    "address": "Carrer Nou de la Rambla 174, 08004 Barcelona",
+    "coordinates": {
+      "latitude": 41.3716484,
+      "longitude": 2.1664571
+    },
+    "sourceUrl": "https://cafeschallert.brummellprojects.com/",
+    "photoSourceUrl": "https://cafeschallert.brummellprojects.com/",
+    "photoCredit": "Žiga Mihelčič / Café Schallert"
+  },
+  {
+    "key": "berbena",
+    "name": "Berbena",
+    "category": "restaurant",
+    "area": "gracia",
+    "images": [
+      "assets/places/barcelona-berbena-1-226.webp"
+    ],
+    "description": "A compact restaurant on Carrer de Minerva, built around seasonal plates, house-made sourdough and a thoughtful wine list. An intimate stop for a longer meal.",
+    "instagram": "https://www.instagram.com/berbenabcn/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Berbena%20Carrer%20de%20Minerva%206%2C%2008006%20Barcelona",
+    "address": "Carrer de Minerva 6, 08006 Barcelona",
+    "coordinates": {
+      "latitude": 41.3964584,
+      "longitude": 2.1565147
+    },
+    "sourceUrl": "https://berbenabcn.com/",
+    "photoSourceUrl": "https://berbenabcn.com/",
+    "photoCredit": "Berbena"
+  },
+  {
+    "key": "joncake-coffee",
+    "name": "Jon Cake & Coffee",
+    "category": "cafe",
+    "area": "el-born",
+    "images": [
+      "assets/places/barcelona-joncake-coffee-1-226.webp"
+    ],
+    "description": "Jon García’s cheese-led cakes meet specialty coffee in the Born. Choose a slice of the signature cheesecake or one of the changing varieties.",
+    "instagram": "https://www.instagram.com/joncake.es/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jon%20Cake%20%26%20Coffee%20Carrer%20de%20Sant%20Pere%20M%C3%A9s%20Baix%2036%2C%2008003%20Barcelona",
+    "address": "Carrer de Sant Pere Més Baix 36, 08003 Barcelona",
+    "coordinates": {
+      "latitude": 41.3872417,
+      "longitude": 2.1776681
+    },
+    "sourceUrl": "https://joncake.es/",
+    "photoSourceUrl": "https://barcelona.b-guided.com/en/noticias/b-served/cheesecake-like-it-should-be-jon-cake-1275.html",
+    "photoCredit": "b-guided Barcelona"
+  },
+  {
+    "key": "casa-camper",
+    "name": "Casa Camper Barcelona",
+    "category": "hotel",
+    "area": "el-raval",
+    "images": [
+      "assets/places/barcelona-casa-camper-1-226.webp",
+      "assets/places/barcelona-casa-camper-2-226.webp"
+    ],
+    "description": "A design hotel in the Raval, close to the MACBA, with relaxed shared spaces and a rooftop terrace. A central base for exploring the old city.",
+    "instagram": "https://www.instagram.com/casacamper/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Camper%20Barcelona%20Carrer%20d%E2%80%99Elisabets%2011%2C%2008001%20Barcelona",
+    "address": "Carrer d’Elisabets 11, 08001 Barcelona",
+    "coordinates": {
+      "latitude": 41.3832414,
+      "longitude": 2.1685298
+    },
+    "sourceUrl": "https://www.casacamper.com/en/barcelona/",
+    "photoSourceUrl": "https://www.casacamper.com/en/barcelona/",
+    "photoCredit": "Casa Camper Barcelona"
+  },
+  {
+    "key": "casa-bonay",
+    "name": "Casa Bonay",
+    "category": "hotel",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-casa-bonay-1-226.webp"
+    ],
+    "description": "A restored 19th-century house on Gran Via with tiled floors, courtyard rooms and lively food-and-drink spaces. A characterful Eixample base for a city stay.",
+    "instagram": "https://www.instagram.com/casabonay/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Bonay%20Gran%20Via%20de%20les%20Corts%20Catalanes%20700%2C%2008010%20Barcelona",
+    "address": "Gran Via de les Corts Catalanes 700, 08010 Barcelona",
+    "coordinates": {
+      "latitude": 41.3936055,
+      "longitude": 2.1742871
+    },
+    "sourceUrl": "https://casabonay.com/rooms/courtyard-medium/",
+    "photoSourceUrl": "https://casabonay.com/rooms/courtyard-medium/",
+    "photoCredit": "Casa Bonay"
+  },
+  {
+    "key": "bodega-bonay",
+    "name": "Bodega Bonay",
+    "category": "restaurant",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-bodega-bonay-1-226.webp"
+    ],
+    "description": "Seasonal Mediterranean plates and a considered wine list inside Casa Bonay. A low-key place to settle into an unhurried meal on Gran Via.",
+    "instagram": "https://www.instagram.com/bodegabonay/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodega%20Bonay%20Gran%20Via%20de%20les%20Corts%20Catalanes%20700%2C%2008010%20Barcelona",
+    "address": "Gran Via de les Corts Catalanes 700, 08010 Barcelona",
+    "coordinates": {
+      "latitude": 41.3936055,
+      "longitude": 2.1742871
+    },
+    "sourceUrl": "https://casabonay.com/dining-drinks/bodega-bonay/",
+    "photoSourceUrl": "https://casabonay.com/dining-drinks/bodega-bonay/",
+    "photoCredit": "Bodega Bonay"
+  },
+  {
+    "key": "bar-la-camila",
+    "name": "Bar La Camila",
+    "category": "cafe",
+    "area": "gracia",
+    "images": [
+      "assets/places/barcelona-bar-la-camila-1-226.webp"
+    ],
+    "description": "An old-style Gràcia neighbourhood bar with specialty coffee, tortilla and small plates. Come for breakfast or linger over a vermouth later in the day.",
+    "instagram": "https://www.instagram.com/barlacamila/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bar%20La%20Camila%20Carrer%20de%20Banyoles%2011%2C%2008012%20Barcelona",
+    "address": "Carrer de Banyoles 11, 08012 Barcelona",
+    "coordinates": {
+      "latitude": 41.4018317,
+      "longitude": 2.1626196
+    },
+    "sourceUrl": "https://www.instagram.com/barlacamila/",
+    "photoSourceUrl": "https://inandoutbarcelona.net/bar-la-camila/",
+    "photoCredit": "Andreu Font / In and Out Barcelona"
+  },
+  {
+    "key": "benzina",
+    "name": "Benzina",
+    "category": "restaurant",
+    "area": "sant-antoni",
+    "images": [
+      "assets/places/barcelona-benzina-1-226.webp"
+    ],
+    "description": "Italian cooking and cocktails on Passatge de Pere Calders. Come for pasta, including its signature carbonara, in a relaxed Sant Antoni setting.",
+    "instagram": "https://www.instagram.com/benzinabcn/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Benzina%20Passatge%20de%20Pere%20Calders%206%2C%2008015%20Barcelona",
+    "address": "Passatge de Pere Calders 6, 08015 Barcelona",
+    "coordinates": {
+      "latitude": 41.3761861,
+      "longitude": 2.1627583
+    },
+    "sourceUrl": "https://www.benzina.es/",
+    "photoSourceUrl": "https://www.benzina.es/",
+    "photoCredit": "Benzina"
+  },
+  {
+    "key": "balzac",
+    "name": "Balzac Barcelona",
+    "category": "cafe",
+    "area": "eixample",
+    "images": [
+      "assets/places/barcelona-balzac-1-226.webp"
+    ],
+    "description": "A specialty-coffee stop on Passeig de Sant Joan, pairing carefully made coffee with pastries. A simple pause along one of the city’s best walking streets.",
+    "instagram": "https://www.instagram.com/balzacbarcelona/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balzac%20Barcelona%20Passeig%20de%20Sant%20Joan%20127%2C%2008037%20Barcelona",
+    "address": "Passeig de Sant Joan 127, 08037 Barcelona",
+    "coordinates": {
+      "latitude": 41.4006336,
+      "longitude": 2.1674579
+    },
+    "sourceUrl": "https://www.instagram.com/balzacbarcelona/",
+    "photoSourceUrl": "https://www.timeout.cat/barcelona/ca/bars-i-pubs/balzac-cafe",
+    "photoCredit": "Time Out Barcelona"
+  },
+  {
+    "key": "honest-greens-pedralbes",
+    "name": "Honest Greens · Pedralbes Centre",
+    "category": "restaurant",
+    "area": "les-corts",
+    "images": [
+      "assets/places/barcelona-honest-greens-pedralbes-1-226.webp"
+    ],
+    "description": "Vegetable-led market plates and seasonal salads at Pedralbes Centre. An easy, informal stop for a fresh lunch in Les Corts.",
+    "instagram": "https://www.instagram.com/honestgreens/",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Honest%20Greens%20%C2%B7%20Pedralbes%20Centre%20Carrer%20de%20Joan%20G%C3%BCell%20236%2C%2008028%20Barcelona",
+    "address": "Carrer de Joan Güell 236, 08028 Barcelona",
+    "coordinates": {
+      "latitude": 41.3879341,
+      "longitude": 2.1288223
+    },
+    "sourceUrl": "https://www.honestgreens.com/en/restaurants/pedralbescentre-en/",
+    "photoSourceUrl": "https://www.honestgreens.com/en/restaurants/pedralbescentre-en/",
+    "photoCredit": "Honest Greens · Pedralbes Centre"
   }
 ]
