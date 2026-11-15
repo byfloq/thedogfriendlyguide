@@ -100,15 +100,17 @@
   const defineHTMLMarker = () => {
     HTMLMarker = class extends google.maps.OverlayView {
       constructor(place) { super(); this.place = place; this.position = new google.maps.LatLng(place.coordinates[1], place.coordinates[0]); this.element = document.createElement('button'); this.element.className = 'google-marker'; this.element.dataset.category = normaliseCategory(place.category); this.element.dataset.markerKind = markerKind(place); this.element.dataset.key = place.key; this.element.type = 'button'; this.element.setAttribute('aria-label', t('Show place')+': '+place.name); this.element.innerHTML = `<span class="marker-shape"><span>${categoryIcons[markerKind(place)]}</span></span><span class="google-marker-label">${escapeHTML(place.name)}</span>`; if(document.body.classList.contains('embed-mode')) {
-        if(window.TdfgMapMarkers.icons[markerKind(place)])this.element.classList.add('app-glyph-pin');
-        else {
-          this.element.classList.add('app-object-pin');
-          const object=document.createElement('img');object.className='app-pin-object';object.alt='';
-          object.src='assets/app-map/'+(normaliseCategory(place.category)==='cafe'?'coffee':normaliseCategory(place.category)==='shop'?'dog':edition20?'key':'hotel')+'.png';
-          // Retain the inline category icon if an object illustration cannot load.
+        const kind=markerKind(place);
+        const file=window.TdfgMapMarkers.objectFiles[kind]||({cafe:'coffee.png',shop:'dog.png',hotel:edition20?'key.png':'hotel.png'})[kind];
+        if(file){
+          // Keep a legible glyph until the small, cached transparent object is ready.
+          if(window.TdfgMapMarkers.icons[kind])this.element.classList.add('app-glyph-pin');
+          const object=document.createElement('img');object.className='app-pin-object';object.alt='';object.decoding='async';
+          object.addEventListener('load',()=>{this.element.classList.remove('app-glyph-pin');this.element.classList.add('app-object-pin');},{once:true});
           object.addEventListener('error',()=>{this.element.classList.remove('app-object-pin');this.element.classList.add('app-glyph-pin');object.remove();},{once:true});
+          object.src='assets/app-map/'+file;
           this.element.querySelector('.marker-shape').append(object);
-        }
+        }else this.element.classList.add('app-glyph-pin');
       } this.element.addEventListener('click', event => { event.stopPropagation(); selectPlace(place.key); }); }
       onAdd() { this.getPanes().overlayMouseTarget.appendChild(this.element); google.maps.OverlayView.preventMapHitsAndGesturesFrom(this.element); }
       draw() { const projection=this.getProjection(); if(!projection)return; const point = projection.fromLatLngToDivPixel(this.position); if (point) { if(appMap){const zoom=map.getZoom()||12;this.element.classList.toggle('app-photo-pin',false);} this.element.style.left = `${point.x}px`; this.element.style.top = `${point.y}px`; } }
