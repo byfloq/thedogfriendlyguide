@@ -28,7 +28,7 @@
   const category={Drink:'cafe',Eat:'restaurant',Stay:'hotel',Shop:'shop',Walk:'walk'};
   return catalogue.places.filter(p=>p.city===city).flatMap(p=>{
    const point=coordinatesFor(p,overrides);if(!point||typeof p.id!=='string'||typeof p.name!=='string'||typeof p.area!=='string'||!https(p.mapsUrl)||!https(p.image)||!Array.isArray(p.images)||!p.images.length||!p.images.every(https))return [];
-   return [{key:p.id,name:p.name,area:p.area,category:category[p.category]||'cafe',coordinates:[point.longitude,point.latitude],images:p.images,preview:p.image,meta:p.area,description:p.editorial||p.shortDescription||'',mapsUrl:p.mapsUrl,instagram:https(p.websiteUrl)?p.websiteUrl:p.mapsUrl,openingHours:p.openingHours||''}];
+   return [{key:p.id,name:p.name,area:p.area,category:category[p.category]||'cafe',coordinates:[point.longitude,point.latitude],images:p.images,preview:p.image,meta:p.shortDescription||p.area,description:p.editorial||p.shortDescription||'',mapsUrl:p.mapsUrl,instagram:https(p.websiteUrl)?p.websiteUrl:p.mapsUrl,openingHours:p.openingHours||''}];
   });
  }
  return {cities,valid,withinCity,coordinatesFor,placesFor};

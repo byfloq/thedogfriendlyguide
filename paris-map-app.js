@@ -83,7 +83,7 @@ window.TdfgAppMap = {
         const placeData=current.places.find(place=>place.key===card.dataset.key);
         if(placeData){
           const area=({'le-marais':'Le Marais','saint-lazare':'Saint-Lazare','etienne-marcel':'Étienne Marcel','latin-quarter':'Quartier Latin','saint-germain':'Saint-Germain','buttes-chaumont':'Buttes-Chaumont'})[placeData.area]||(new URLSearchParams(location.search).get('city')&&new URLSearchParams(location.search).get('city')!=='paris'?placeData.area:placeData.area.split('-').map(word=>word[0]?.toUpperCase()+word.slice(1)).join(' '));
-          const category=({cafes:'Café',cafe:'Café',restaurant:'Restaurant',shop:'Dog shop',hotel:'Hotel'})[placeData.category]||'';
+          const category=window.TdfgMapMarkers?.kind(placeData)==='grooming'?'Dog grooming':({cafes:'Café',cafe:'Café',restaurant:'Restaurant',shop:'Dog shop',hotel:'Hotel',walk:'Park'})[placeData.category]||'';
           card.querySelector('.map-card-kicker').textContent=t(category)+' · '+area;
           let policy=card.querySelector('.app-map-policy');if(!policy){policy=document.createElement('p');policy.className='app-map-policy';card.querySelector('.map-card-copy').insertBefore(policy,card.querySelector('.map-card-actions'));}
           policy.textContent=t(/sociable dogs are welcome/i.test(placeData.description)?'Sociable dogs welcome':/dogs are welcome inside/i.test(placeData.description)?'Dogs welcome inside':'Dog policy: confirm with venue');
@@ -98,11 +98,30 @@ window.TdfgAppMap = {
           open.type = 'button'; open.className = 'app-map-open'; open.textContent = t("View place");
           const place = current.places.find(p => p.key === card.dataset.key);
           open.setAttribute('aria-label', t('View place')+': '+place.name);
-          open.addEventListener('click', () => {
+          const openPlace = () => {
             const message = { type:'tdfg:open-place', key:place.key };
             if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(message));
             else window.parent.postMessage(message, '*');
-          });
+          };
+          open.addEventListener('click', openPlace);
+          // Separate native buttons avoid nesting Directions or the card pager
+          // inside another action. Photo, heading and CTA open the same place.
+          const image=card.querySelector('.map-card-image');
+          if(image){
+            const photoButton=document.createElement('button');
+            photoButton.type='button';photoButton.className='map-card-image app-map-photo-open';
+            photoButton.setAttribute('aria-label',t('View place')+': '+place.name);
+            image.replaceWith(photoButton);image.className='app-map-photo';
+            image.alt='';photoButton.append(image);photoButton.addEventListener('click',openPlace);
+          }
+          const heading=card.querySelector('h2');
+          if(heading){
+            const nameButton=document.createElement('button');
+            nameButton.type='button';nameButton.className='app-map-name-open';
+            nameButton.textContent=place.name;
+            nameButton.setAttribute('aria-label',t('View place')+': '+place.name);
+            nameButton.addEventListener('click',openPlace);heading.replaceChildren(nameButton);
+          }
           instagram.replaceWith(open);
         }
       });

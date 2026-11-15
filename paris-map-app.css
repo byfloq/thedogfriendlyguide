@@ -72,6 +72,17 @@
 .embed-mode .google-marker.active.app-photo-pin .marker-shape{width:58px;height:60px;border-color:var(--dark)}
 .embed-mode .google-marker.active .google-marker-label{display:block;max-width:130px;overflow:hidden;text-overflow:ellipsis;color:var(--ink);background:#FAF7F1;padding:3px 7px;border-radius:5px;font:400 12px var(--serif)}
 .embed-mode .google-marker.is-muted{opacity:.78}.embed-mode .google-marker:not(.active) .google-marker-label{display:none}
+.embed-mode .app-map-photo-open{appearance:none;border:0;padding:0;overflow:hidden;background:transparent;cursor:pointer}
+.embed-mode .app-map-photo{display:block;width:100%;height:100%;object-fit:cover}
+.embed-mode .app-map-name-open{appearance:none;display:block;width:100%;min-height:44px;padding:0;border:0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.embed-mode .app-map-photo-open:focus-visible,.embed-mode .app-map-name-open:focus-visible,.embed-mode .app-map-open:focus-visible{outline:2px solid #B7684E;outline-offset:3px;border-radius:9px}
+/* No remote bitmap request for restaurants, parks or dog grooming. */
+.embed-mode .google-marker.app-glyph-pin .marker-shape{width:38px;height:42px;border:1.5px solid #715744;border-radius:19px 19px 19px 6px;background:#F5F0E7;box-shadow:0 2px 6px #26221d22;transform:none;color:#715744}
+.embed-mode .google-marker.app-glyph-pin .marker-shape>span{display:grid;width:28px;height:30px}
+.embed-mode .google-marker.app-glyph-pin svg{display:block;width:28px;height:30px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
+.embed-mode .google-marker.app-glyph-pin[data-marker-kind="walk"] .marker-shape,.embed-mode .google-marker.app-glyph-pin[data-marker-kind="grooming"] .marker-shape{background:#DDE5D6;border-color:#405641;color:#405641}
+.embed-mode .google-marker.app-glyph-pin .foam{fill:#FAF7F1}
+.embed-mode .google-marker.active.app-glyph-pin .marker-shape{box-shadow:0 0 0 3px #FAF7F1,0 0 0 4.5px currentColor,0 3px 8px #26221d22}
 @media(max-height:540px){.embed-mode .place-rail .map-card.active{min-height:120px}.embed-mode .map-card-image{width:64px;height:64px;min-height:64px}.embed-mode .place-rail .map-card.active{grid-template-columns:64px minmax(0,1fr)}.embed-mode .map-card h2{font-size:21px}.embed-mode .app-map-filters{inset:5px 10px auto}.embed-mode .app-map-search{min-height:40px}}
 
 /* Every curated place uses a photographic category object; photos stay in its sheet. */

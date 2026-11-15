@@ -31,3 +31,4 @@
 
 /* Dog park category */
 .dot.walk{background:#776d62}.google-marker[data-category="walk"] .marker-shape{background:#776d62}
+.google-marker[data-marker-kind="grooming"]{color:#405641}.google-marker .foam{fill:#FAF7F1}
