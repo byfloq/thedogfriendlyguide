@@ -6,6 +6,8 @@
   const cityConfig = window.TdfgCityMap.cities[cityId];
   const isParis = cityId === 'paris';
   const searchUI210 = new URLSearchParams(location.search).get('app')==='1' && new URLSearchParams(location.search).get('searchUI')==='210';
+  const densityMap239 = document.body.classList.contains('embed-mode') && new URLSearchParams(location.search).get('markers')==='239';
+  if(densityMap239)document.body.classList.add('map-density239');
   let filterKeys210 = null;
   const edition20 = new URLSearchParams(location.search).get('edition') === '20';
   let activeCityBoundary20 = null, fullCityBounds20 = null;
@@ -97,6 +99,7 @@
 
   let HTMLMarker;
   let LandmarkMarker;
+  let ParkCluster239;
   const defineHTMLMarker = () => {
     HTMLMarker = class extends google.maps.OverlayView {
       constructor(place) { super(); this.place = place; this.position = new google.maps.LatLng(place.coordinates[1], place.coordinates[0]); this.element = document.createElement('button'); this.element.className = 'google-marker'; this.element.dataset.category = normaliseCategory(place.category); this.element.dataset.markerKind = markerKind(place); this.element.dataset.key = place.key; this.element.type = 'button'; this.element.setAttribute('aria-label', t('Show place')+': '+place.name); this.element.innerHTML = `<span class="marker-shape"><span>${categoryIcons[markerKind(place)]}</span></span><span class="google-marker-label">${escapeHTML(place.name)}</span>`; if(document.body.classList.contains('embed-mode')) {
@@ -122,6 +125,39 @@
       draw() { const projection=this.getProjection(); if(!projection)return; const point = projection.fromLatLngToDivPixel(this.position); if (point) { this.element.style.left = `${point.x}px`; this.element.style.top = `${point.y}px`; } }
       onRemove() { this.element.remove(); }
     };
+    ParkCluster239 = class extends google.maps.OverlayView {
+      constructor(entry){
+        super();this.position=new google.maps.LatLng(entry.coordinates[1],entry.coordinates[0]);
+        this.element=document.createElement('button');this.element.type='button';this.element.className='google-marker park-cluster239';
+        this.element.setAttribute('aria-label',t('{count} parks · Zoom in',{count:entry.places.length}));
+        this.element.innerHTML=`${categoryIcons.walk}<strong>${entry.places.length}</strong>`;
+        this.element.addEventListener('click',event=>{
+          event.stopPropagation();clearSelection();
+          const previous=map.getZoom()||12,bounds=new google.maps.LatLngBounds();
+          entry.places.forEach(place=>bounds.extend({lat:place.coordinates[1],lng:place.coordinates[0]}));
+          map.fitBounds(bounds,appMap?appMap.cameraPadding():55);
+          google.maps.event.addListenerOnce(map,'idle',()=>{const zoom=map.getZoom()||previous;if(zoom<=previous)map.setZoom(Math.min(18,previous+2));else if(zoom>18)map.setZoom(18);});
+        });
+      }
+      onAdd(){this.getPanes().overlayMouseTarget.appendChild(this.element);google.maps.OverlayView.preventMapHitsAndGesturesFrom(this.element);}
+      draw(){const projection=this.getProjection();if(!projection)return;const p=projection.fromLatLngToDivPixel(this.position);if(p){this.element.style.left=p.x+'px';this.element.style.top=p.y+'px';}}
+      onRemove(){this.element.remove();}
+    };
+  };
+
+  const refreshMarkers239 = () => {
+    const bounds=map.getBounds();
+    const candidates=densityMap239&&bounds?visiblePlaces.filter(place=>place.key===selectedKey||bounds.contains({lat:place.coordinates[1],lng:place.coordinates[0]})):visiblePlaces;
+    const entries=densityMap239?window.TdfgParkClusters239.group(candidates,map.getZoom()||12,selectedKey):candidates.map(place=>({key:place.key,places:[place]}));
+    const keys=new Set(entries.map(entry=>entry.key));
+    markers.forEach((marker,key)=>{if(!keys.has(key)){marker.setMap(null);markers.delete(key);}});
+    entries.forEach(entry=>{
+      let marker=markers.get(entry.key);
+      if(!marker){marker=entry.places.length>1?new ParkCluster239(entry):new HTMLMarker(entry.places[0]);marker.setMap(map);markers.set(entry.key,marker);}
+      marker.element.classList.toggle('active',entry.key===selectedKey);
+      marker.element.classList.toggle('is-muted',!!selectedKey&&entry.key!==selectedKey);
+      marker.draw();
+    });
   };
 
   const polygonPaths = feature => feature.geometry.type === 'Polygon' ? feature.geometry.coordinates : feature.geometry.coordinates.flat();
@@ -141,6 +177,12 @@
   };
   const fitVisiblePlaces = () => { if (!visiblePlaces.length) return; const bounds = new google.maps.LatLngBounds(); visiblePlaces.forEach(place => bounds.extend({ lat: place.coordinates[1], lng: place.coordinates[0] })); map.fitBounds(bounds, appMap ? appMap.cameraPadding() : window.innerWidth <= 700 ? 55 : 85); google.maps.event.addListenerOnce(map,'idle',()=>{if(map.getZoom()>16)map.setZoom(16);}); };
   const fitParisBoundary = () => {
+    if(densityMap239){
+      const padding=appMap?appMap.cameraPadding():{top:0,bottom:0};
+      map.setCenter({lat:cityConfig.center[1],lng:cityConfig.center[0]});map.setZoom(13);
+      const targetY=(padding.top+mapElement.clientHeight-padding.bottom)/2;
+      map.panBy(0,mapElement.clientHeight/2-targetY);return;
+    }
     if(edition20&&fullCityBounds20){map.fitBounds(fullCityBounds20,appMap?appMap.cameraPadding():45);return;}
     if(!isParis){fitVisiblePlaces();return;}
     if(appMap){
@@ -155,17 +197,17 @@
     if (!parisBounds) return fitVisiblePlaces();
     map.fitBounds(parisBounds, window.innerWidth <= 700 ? { top: 150, right: 34, bottom: 52, left: 34 } : { top: 122, right: 72, bottom: 68, left: 72 });
   };
-  const clearSelection = () => { selectedKey = null; rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => {marker.element.classList.remove('active', 'is-muted');marker.draw();}); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } appMap?.update(); };
-  const selectPlace = async (key, options = {}) => { const place = visiblePlaces.find(item => item.key === key); if (!place) return; selectedKey = key; rail.classList.add('has-selection'); document.querySelector('.map-results').classList.add('has-selection'); markers.forEach((marker, markerKey) => { marker.draw();marker.element.classList.toggle('active', markerKey === key); marker.element.classList.toggle('is-muted', markerKey !== key); }); rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key)); appMap?.update(); if (appMap) {
+  const clearSelection = () => { selectedKey = null; refreshMarkers239(); rail.classList.remove('has-selection'); document.querySelector('.map-results').classList.remove('has-selection'); markers.forEach(marker => {marker.element.classList.remove('active', 'is-muted');marker.draw();}); rail.querySelectorAll('.map-card').forEach(card => card.classList.remove('active')); if (activeDistrict === 'all') { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; } appMap?.update(); };
+  const selectPlace = async (key, options = {}) => { const place = visiblePlaces.find(item => item.key === key); if (!place) return; selectedKey = key; refreshMarkers239(); rail.classList.add('has-selection'); document.querySelector('.map-results').classList.add('has-selection'); markers.forEach((marker, markerKey) => { marker.draw();marker.element.classList.toggle('active', markerKey === key); marker.element.classList.toggle('is-muted', markerKey !== key); }); rail.querySelectorAll('.map-card').forEach(card => card.classList.toggle('active', card.dataset.key === key)); appMap?.update(); if (appMap) {
     const padding = appMap.cameraPadding();
-    map.setZoom(Math.max(15, map.getZoom() || 15));
+    map.setZoom(Math.max(densityMap239&&markerKind(place)==='walk'?17:15, map.getZoom() || 15));
     map.setCenter({lat:place.coordinates[1], lng:place.coordinates[0]});
     const targetY = (padding.top + mapElement.clientHeight - padding.bottom) / 2;
     map.panBy(0, mapElement.clientHeight / 2 - targetY);
     return;
   } if (isParis && activeDistrict === 'all') { const districtBounds = await drawBoundary(`paris-arrondissements/arr-${String(place.arrondissement).padStart(2, '0')}.geojson`, true); if (options.pan !== false && selectedKey === key) map.fitBounds(districtBounds, { top: 145, right: 95, bottom: 245, left: 95 }); } else if (options.pan !== false) { map.panTo({ lat: place.coordinates[1], lng: place.coordinates[0] }); } };
   const updateDistrict = async () => { districtShapes.forEach(shape => shape.setMap(null)); districtShapes = []; if (!isParis || activeDistrict === 'all') return null; return drawBoundary(`paris-arrondissements/arr-${String(activeDistrict).padStart(2, '0')}.geojson`, true); };
-  const render = async (options = {}) => { visiblePlaces = places.filter(place => (!filterKeys210 || filterKeys210.has(place.key) || (isParis && filterKeys210.has('paris-'+place.key))) && (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(isParis?place.arrondissement:place.area) === activeDistrict) && (!activeSearch || `${place.name} ${place.meta} ${place.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(activeSearch)) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; visiblePlaces.forEach(place => { const marker = new HTMLMarker(place); marker.setMap(map); markers.set(place.key, marker); }); clearSelection(); const districtBounds = await updateDistrict(); appMap?.update(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, appMap ? appMap.cameraPadding() : { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitDistrict&&!isParis)fitVisiblePlaces();else if (options.fitAll) fitParisBoundary(); };
+  const render = async (options = {}) => { visiblePlaces = places.filter(place => (!filterKeys210 || filterKeys210.has(place.key) || (isParis && filterKeys210.has('paris-'+place.key))) && (activeCategory === 'all' || normaliseCategory(place.category) === activeCategory) && (activeDistrict === 'all' || String(isParis?place.arrondissement:place.area) === activeDistrict) && (!activeSearch || `${place.name} ${place.meta} ${place.area}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(activeSearch)) && intentMatches(place) && (!nearMeActive || (userLocation && distanceBetween(userLocation, place.coordinates) <= 1.2))).sort((a,b)=>userLocation?distanceBetween(userLocation,a.coordinates)-distanceBetween(userLocation,b.coordinates):0); markers.forEach(marker => marker.setMap(null)); markers.clear(); rail.innerHTML = visiblePlaces.map(cardFor).join(''); count.textContent = visiblePlaces.length; clearSelection(); const districtBounds = await updateDistrict(); appMap?.update(); if (nearMeActive && userLocation) { map.setCenter({lat:userLocation[1],lng:userLocation[0]}); map.setZoom(15); } else if (options.fitDistrict && districtBounds) map.fitBounds(districtBounds, appMap ? appMap.cameraPadding() : { top: 150, right: 90, bottom: 100, left: 90 }); else if (options.fitDistrict&&!isParis)fitVisiblePlaces();else if (options.fitAll) fitParisBoundary(); };
   const buildDistrictFilters = () => { const container = document.getElementById('district-filters'); const districts = [...new Set(places.map(place => isParis?place.arrondissement:place.area))].filter(Boolean).sort((a,b)=>isParis?a-b:String(a).localeCompare(String(b))); container.innerHTML = `<button class="active" data-district="all" aria-pressed="true">All districts</button>${districts.map(number => `<button data-district="${escapeHTML(number)}" aria-pressed="false">${isParis?ordinal(number)+' arr.':escapeHTML(number)}</button>`).join('')}`; container.querySelectorAll('button').forEach(button => button.addEventListener('click', () => { activeDistrict = button.dataset.district; container.querySelectorAll('button').forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', item === button ? 'true' : 'false'); }); render({ fitDistrict: activeDistrict !== 'all', fitAll: activeDistrict === 'all' }); })); };
   const loadGoogle = key => new Promise((resolve, reject) => {
     const timeout=setTimeout(()=>reject(new Error('Map loading timed out')),20000);
@@ -233,6 +275,7 @@
       landmarks.forEach(landmark => new LandmarkMarker(landmark).setMap(map));}
       map.addListener('click', clearSelection);
       map.addListener('zoom_changed',()=>markers.forEach(marker=>marker.draw()));
+      if(densityMap239)map.addListener('idle',refreshMarkers239);
       render({ fitAll: true });
       const showLocation=(coordinates,center=false)=>{
         if(!((isParis||edition20)?window.TdfgMapLocation?.withinCity(coordinates,cityBoundary):window.TdfgCityMap.withinCity(coordinates,cityId))){

@@ -101,3 +101,14 @@
 .embed-mode.search-ui210 .app-map-locate {top:auto;bottom:calc(var(--place-sheet-height,0px) + 42px);right:18px;transition:bottom .18s ease;}
 .embed-mode.search-ui210 .app-map-locate .locate-button {width:46px;height:46px;padding:0;border-radius:50%;display:grid;place-items:center;}
 @media (prefers-reduced-motion:reduce){.embed-mode.search-ui210 .app-map-locate{transition:none;}}
+
+/* 56: bounded artwork, generous touch targets and quiet park groups. */
+.embed-mode.map-density239 .google-marker{width:44px;height:44px;display:grid;place-items:center;}
+.embed-mode.map-density239 .google-marker.app-object-pin .marker-shape{position:relative;display:block;min-width:0;min-height:0;width:32px;height:36px;}
+.embed-mode.map-density239 .google-marker.app-object-pin .app-pin-object{position:absolute;inset:0;display:block;width:32px;height:36px;min-width:0;min-height:0;max-width:32px;max-height:36px;object-fit:contain;}
+.embed-mode.map-density239 .google-marker.app-object-pin[data-marker-kind="walk"] .marker-shape,.embed-mode.map-density239 .google-marker.app-object-pin[data-marker-kind="walk"] .app-pin-object{width:28px;height:32px;max-width:28px;max-height:32px;}
+.embed-mode.map-density239 .park-cluster239{display:flex;align-items:center;justify-content:center;gap:3px;border:1px solid #9EAF98;border-radius:22px;background:#DDE5D6;color:#405641;box-shadow:0 2px 5px #26221D1A;font:600 13px/1 var(--sans);z-index:2;}
+.embed-mode.map-density239 .park-cluster239 svg{width:17px;height:19px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;}
+.embed-mode.map-density239 .park-cluster239 strong{font:inherit;}
+.embed-mode.map-density239 .park-cluster239:focus-visible{outline:2px solid #405641;outline-offset:2px;}
+.embed-mode.map-density239 .google-marker.active .google-marker-label{left:48px;top:10px;}
