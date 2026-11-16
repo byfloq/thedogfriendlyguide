@@ -933,5 +933,49 @@
     "sourceUrl": "https://www.google.com/maps/place/Honest+Greens+Pedralbes+Centre/@41.3879341,2.1288223,17z/data=!3m1!4b1!4m6!3m5!1s0x12a499e5dd4b4e35:0x780c796f3c00aa86!8m2!3d41.3879341!4d2.1288223",
     "precision": "venue",
     "evidence": "Visible business listing matched Carrer de Joan Güell 236 and Pedralbes Centre name."
+  },
+  "barcelona-corgi-cafe-arc-de-triomf": {
+    "name": "Corgi Café · Arc de Triomf",
+    "city": "barcelona",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Corgi%20Caf%C3%A9%20%C2%B7%20Arc%20de%20Triomf%20Carrer%20del%20Comer%C3%A7%2C%201%E2%80%933%2C%20Barcelona",
+    "latitude": 41.3886058,
+    "longitude": 2.181614,
+    "checkedAt": "2026-11-16",
+    "precision": "building",
+    "sourceUrl": "https://www.openstreetmap.org/node/1948912981",
+    "evidence": "Corgi Cafe, 1-3, Carrer del Comerç, Santa Caterina, Sant Pere, Santa Caterina i la Ribera, Ciutat Vella, Barcelona, Barcelonès, Barcelona, Catalunya, 08003, España"
+  },
+  "barcelona-koke": {
+    "name": "Koke",
+    "city": "barcelona",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Koke%20Carrer%20de%20la%20Ciutat%20de%20Granada%2C%20159%2C%20Barcelona",
+    "latitude": 41.4037712,
+    "longitude": 2.1908177,
+    "checkedAt": "2026-11-16",
+    "precision": "building",
+    "sourceUrl": "https://www.openstreetmap.org/node/11958898912",
+    "evidence": "159-161, Carrer de la Ciutat de Granada, el Parc i la Llacuna del Poblenou, Sant Martí, Barcelona, Barcelonès, Barcelona, Catalunya, 08018, España"
+  },
+  "barcelona-fochiko": {
+    "name": "Fochiko",
+    "city": "barcelona",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fochiko%20Carrer%20de%20Bori%20i%20Fontest%C3%A0%2C%207%2C%20Barcelona",
+    "latitude": 41.3935848,
+    "longitude": 2.1413215,
+    "checkedAt": "2026-11-16",
+    "precision": "building",
+    "sourceUrl": "https://www.openstreetmap.org/node/12081783534",
+    "evidence": "7, Carrer de Bori i Fontestà, Galvany, Sant Gervasi - Galvany, Sarrià - Sant Gervasi, Barcelona, Barcelonès, Barcelona, Catalunya, 08021, España"
+  },
+  "barcelona-breto": {
+    "name": "Breto",
+    "city": "barcelona",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breto%20Carrer%20de%20Badajoz%2C%2065%2C%20Local%202%2C%20Barcelona",
+    "latitude": 41.3975055,
+    "longitude": 2.1967403,
+    "checkedAt": "2026-11-16",
+    "precision": "building",
+    "sourceUrl": "https://www.openstreetmap.org/node/6123559917",
+    "evidence": "65, Carrer de Badajoz, la Plata, el Poblenou, Sant Martí, Barcelona, Barcelonès, Barcelona, Catalunya, 08005, España"
   }
 }

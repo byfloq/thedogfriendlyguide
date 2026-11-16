@@ -85,15 +85,18 @@ if park_catalogue.exists():
  for park in imported['parks']:
   if park.get('guideCity') not in published_city_ids or not park.get('coordinates'): continue
   assert park['id'] not in ids, 'Duplicate park ID'
-  enclosure='Fenced' if park['fenced'] else 'Unfenced'
+  enclosure='Fenced' if park.get('fenced') is True else 'Unfenced' if park.get('fenced') is False else 'Fencing not confirmed'
   address=' '.join(part for part in [park['address'],park.get('postalCode'),park['locality'],park['country']] if part)
-  details=[f"Dog park in {park['locality']}. {enclosure} area.",address+'.']
+  details=[f"Dog area in {park['locality']}.",address+'.']
+  if park.get('kind')=='shared-hours': details.append(park['policyNote'])
+  if park.get('offLeashHours'): details.append(park['offLeashHours'])
+  if park.get('sourceName'): details.append('Source: '+park['sourceName']+'.')
   if park.get('referenceRating') is not None:
    rating=f"Reference rating {park['referenceRating']:g}/5"
    if park.get('referenceReviewCount') is not None: rating+=f" ({park['referenceReviewCount']} reviews)"
    details.append(rating+'.')
   image=BASE+'assets/places/park-placeholder.png'
-  places.append(dict(id=park['id'],name=park['name'],city=park['guideCity'],area=park['locality'],category='Walk',shortDescription=f'Dog park · {enclosure.lower()}',editorial=' '.join(details),image=image,images=[image],mapsUrl=park['mapsUrl'],websiteUrl=BASE+'parks.html?park='+park['id'],coordinates=park['coordinates'],coordinatesVerified=True,distanceKm=0,source='website',attributes=dict(dogsInside=False,dogsOutside=True,terrace=False,water=False,cocoWasThere=False),parkDetails=park))
+  places.append(dict(id=park['id'],name=park['name'],city=park['guideCity'],area=park['locality'],category='Walk',shortDescription='Off-leash at set times' if park.get('kind')=='shared-hours' else f'Dog area · {enclosure.lower()}',editorial=' '.join(details),image=image,images=[image],mapsUrl=park['mapsUrl'],websiteUrl=BASE+'parks.html?park='+park['id'],coordinates=park['coordinates'],coordinatesVerified=True,distanceKm=0,source='website',attributes=dict(dogsInside=False,dogsOutside=True,terrace=False,water=False,cocoWasThere=False),parkDetails=park))
   ids.append(park['id'])
 result=dict(schemaVersion=1,revision=os.environ.get('BUILD_ID','local'),generatedAt=datetime.now(timezone.utc).isoformat(),cities=cities,places=places,paris=paris,plans=plans)
 (ROOT/'mobile-catalogue.v1.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
