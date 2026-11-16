@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "barcelona-20261115-226",
+  "revision": "20261116-editorial232",
   "generatedAt": "2026-11-15T22:12:20.060373+00:00",
   "cities": [
     {
@@ -354,9 +354,10 @@
       "category": "Eat",
       "shortDescription": "Mediterranean kitchen · Eixample",
       "editorial": "Mediterranean cooking with an Italian accent, seasonal dishes to share and a warm neighbourhood setting on Provença. Photo: SOMA Restaurant",
-      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-soma-1.webp",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-soma-cover232.webp",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/barcelona-soma-1.webp"
+        "https://thedogfriendlyguide.com/assets/places/barcelona-soma-cover232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-soma-gallery-2232.webp"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SOMA%20Proven%C3%A7a%20179%2C%20Barcelona",
       "websiteUrl": "https://www.instagram.com/somabcn_/",
@@ -411,10 +412,11 @@
       "area": "Gracia",
       "category": "Drink",
       "shortDescription": "Pastry & ice cream · Gràcia",
-      "editorial": "Artisan pastries and house-made ice cream on Carrer de Verdi. French baking meets a playful take on dessert, from vanilla flan to brioche filled with ice cream. Photo: Morreig",
-      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-1.webp",
+      "editorial": "Artisan pastries and house-made ice cream on Carrer de Verdi. French baking meets a playful take on dessert, from vanilla flan to brioche filled with ice cream. Images: Studio Ingrid Picanyol / Morreig.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-cover232.webp",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-1.webp"
+        "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-cover232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-morreig-gallery-2232.webp"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morreig%20Carrer%20de%20Verdi%2025%20Barcelona",
       "websiteUrl": "https://www.instagram.com/morre_ig/",
@@ -562,10 +564,10 @@
       "category": "Drink",
       "shortDescription": "Coffee & daytime food · Poblenou",
       "editorial": "A Japanese-inspired Poblenou café for egg sandos, seasonal breakfasts and lunch. Coffee and pastries continue after the kitchen closes. Photography: Paulina Rodriguez / Otsu.",
-      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-1-226.webp",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-cover232.webp",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-1-226.webp",
-        "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-2-226.webp"
+        "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-cover232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-otsu-gallery-2232.webp"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Otsu%20Carrer%20de%20la%20Ciutat%20de%20Granada%2020%2C%2008005%20Barcelona",
       "websiteUrl": "https://www.instagram.com/otsu.bcn/",
@@ -593,10 +595,11 @@
       "area": "Poble-sec",
       "category": "Drink",
       "shortDescription": "Coffee & daytime food · Poble-sec",
-      "editorial": "Austrian baking at Hotel Brummell: house-made strudel, Sachertorte and Three Marks coffee. Stay for a slow breakfast in the plant-filled atrium. Photography: Žiga Mihelčič / Café Schallert.",
-      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-1-226.webp",
+      "editorial": "Austrian baking at Hotel Brummell: house-made strudel, Sachertorte and Three Marks coffee. Stay for a slow breakfast in the plant-filled atrium. Photography: Žiga Mihelčič and Maria Astrand / Café Schallert.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-cover232.webp",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-1-226.webp"
+        "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-cover232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-cafe-schallert-gallery-2232.webp"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Schallert%20Carrer%20Nou%20de%20la%20Rambla%20174%2C%2008004%20Barcelona",
       "websiteUrl": "https://www.instagram.com/cafeschallert.barcelona/",
@@ -653,10 +656,11 @@
       "area": "El Born",
       "category": "Drink",
       "shortDescription": "Coffee & daytime food · El Born",
-      "editorial": "Jon García’s cheese-led cakes meet specialty coffee in the Born. Choose a slice of the signature cheesecake or one of the changing varieties. Photography: b-guided Barcelona.",
-      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-1-226.webp",
+      "editorial": "Jon García’s cheese-led cakes meet specialty coffee in the Born. Choose a slice of the signature cheesecake or one of the changing varieties. Photography: Jon Cake & Coffee.",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-cover232.webp",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-1-226.webp"
+        "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-cover232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-joncake-coffee-gallery-2232.webp"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jon%20Cake%20%26%20Coffee%20Carrer%20de%20Sant%20Pere%20M%C3%A9s%20Baix%2036%2C%2008003%20Barcelona",
       "websiteUrl": "https://www.instagram.com/joncake.es/",
@@ -683,10 +687,11 @@
       "category": "Stay",
       "shortDescription": "Hotel · El Raval",
       "editorial": "A design hotel in the Raval, close to the MACBA, with relaxed shared spaces and a rooftop terrace. A central base for exploring the old city. Contact the hotel before booking to confirm current pet-stay conditions and any fees. Photography: Casa Camper Barcelona.",
-      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-1-226.webp",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-cover232.webp",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-1-226.webp",
-        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-2-226.webp"
+        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-cover232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-gallery-2232.webp",
+        "https://thedogfriendlyguide.com/assets/places/barcelona-casa-camper-gallery-3232.webp"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Camper%20Barcelona%20Carrer%20d%E2%80%99Elisabets%2011%2C%2008001%20Barcelona",
       "websiteUrl": "https://www.instagram.com/casacamper/",

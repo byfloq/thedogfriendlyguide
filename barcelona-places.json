@@ -287,11 +287,20 @@
     "category": "restaurant",
     "area": "eixample",
     "images": [
-      "assets/places/barcelona-soma-1.webp"
+      "assets/places/barcelona-soma-cover232.webp",
+      "assets/places/barcelona-soma-gallery-2232.webp"
     ],
     "description": "Mediterranean cooking with an Italian accent, seasonal dishes to share and a warm neighbourhood setting on Provença.",
     "instagram": "https://www.instagram.com/somabcn_/",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SOMA%20Proven%C3%A7a%20179%2C%20Barcelona"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SOMA%20Proven%C3%A7a%20179%2C%20Barcelona",
+    "subjects": [
+      "A warm, lived-in view of the bar and dining room.",
+      "A plate from the restaurant kitchen."
+    ],
+    "sourceFiles": [
+      "barcelona-soma-cover232.webp",
+      "barcelona-soma-gallery-2232.webp"
+    ]
   },
   {
     "key": "barbocata",
@@ -311,11 +320,22 @@
     "category": "cafe",
     "area": "gracia",
     "images": [
-      "assets/places/barcelona-morreig-1.webp"
+      "assets/places/barcelona-morreig-cover232.webp",
+      "assets/places/barcelona-morreig-gallery-2232.webp"
     ],
     "description": "Artisan pastries and house-made ice cream on Carrer de Verdi. French baking meets a playful take on dessert, from vanilla flan to brioche filled with ice cream.",
     "instagram": "https://www.instagram.com/morre_ig/",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morreig%20Carrer%20de%20Verdi%2025%20Barcelona"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morreig%20Carrer%20de%20Verdi%2025%20Barcelona",
+    "subjects": [
+      "The pastry counter, green pendant lights and warm bakery interior.",
+      "An artisan croissant from Morreig."
+    ],
+    "sourceFiles": [
+      "barcelona-morreig-cover232.webp",
+      "barcelona-morreig-gallery-2232.webp"
+    ],
+    "photoSourceUrl": "https://www.behance.net/gallery/173676729/For-the-Love-of-Sweet-Things",
+    "photoCredit": "Studio Ingrid Picanyol / Morreig"
   },
   {
     "key": "barbara-bakery",
@@ -404,8 +424,8 @@
     "category": "cafe",
     "area": "poblenou",
     "images": [
-      "assets/places/barcelona-otsu-1-226.webp",
-      "assets/places/barcelona-otsu-2-226.webp"
+      "assets/places/barcelona-otsu-cover232.webp",
+      "assets/places/barcelona-otsu-gallery-2232.webp"
     ],
     "description": "A Japanese-inspired Poblenou café for egg sandos, seasonal breakfasts and lunch. Coffee and pastries continue after the kitchen closes.",
     "instagram": "https://www.instagram.com/otsu.bcn/",
@@ -417,7 +437,15 @@
     },
     "sourceUrl": "https://www.otsu.es/",
     "photoSourceUrl": "https://www.otsu.es/",
-    "photoCredit": "Paulina Rodriguez / Otsu"
+    "photoCredit": "Paulina Rodriguez / Otsu",
+    "subjects": [
+      "Ceramics and greenery against natural stone inside Otsu.",
+      "The light-filled timber window seat."
+    ],
+    "sourceFiles": [
+      "barcelona-otsu-cover232.webp",
+      "barcelona-otsu-gallery-2232.webp"
+    ]
   },
   {
     "key": "cafe-schallert",
@@ -425,7 +453,8 @@
     "category": "cafe",
     "area": "poble-sec",
     "images": [
-      "assets/places/barcelona-cafe-schallert-1-226.webp"
+      "assets/places/barcelona-cafe-schallert-cover232.webp",
+      "assets/places/barcelona-cafe-schallert-gallery-2232.webp"
     ],
     "description": "Austrian baking at Hotel Brummell: house-made strudel, Sachertorte and Three Marks coffee. Stay for a slow breakfast in the plant-filled atrium.",
     "instagram": "https://www.instagram.com/cafeschallert.barcelona/",
@@ -437,7 +466,15 @@
     },
     "sourceUrl": "https://cafeschallert.brummellprojects.com/",
     "photoSourceUrl": "https://cafeschallert.brummellprojects.com/",
-    "photoCredit": "Žiga Mihelčič / Café Schallert"
+    "photoCredit": "Žiga Mihelčič and Maria Astrand / Café Schallert",
+    "subjects": [
+      "The sunlit atrium tables at Café Schallert.",
+      "Coffee and pastry on a marble table."
+    ],
+    "sourceFiles": [
+      "barcelona-cafe-schallert-cover232.webp",
+      "barcelona-cafe-schallert-gallery-2232.webp"
+    ]
   },
   {
     "key": "berbena",
@@ -465,7 +502,8 @@
     "category": "cafe",
     "area": "el-born",
     "images": [
-      "assets/places/barcelona-joncake-coffee-1-226.webp"
+      "assets/places/barcelona-joncake-coffee-cover232.webp",
+      "assets/places/barcelona-joncake-coffee-gallery-2232.webp"
     ],
     "description": "Jon García’s cheese-led cakes meet specialty coffee in the Born. Choose a slice of the signature cheesecake or one of the changing varieties.",
     "instagram": "https://www.instagram.com/joncake.es/",
@@ -476,8 +514,16 @@
       "longitude": 2.1776681
     },
     "sourceUrl": "https://joncake.es/",
-    "photoSourceUrl": "https://barcelona.b-guided.com/en/noticias/b-served/cheesecake-like-it-should-be-jon-cake-1275.html",
-    "photoCredit": "b-guided Barcelona"
+    "photoSourceUrl": "https://www.directoalpaladar.com/viajes/jon-cake-desembarca-otra-vez-barcelona-fiebre-cheesecake-continua-variaciones",
+    "photoCredit": "Jon Cake & Coffee",
+    "subjects": [
+      "The pastry window at Jon Cake & Coffee, Sant Pere Més Baix.",
+      "A whole cheesecake on its glass stand."
+    ],
+    "sourceFiles": [
+      "barcelona-joncake-coffee-cover232.webp",
+      "barcelona-joncake-coffee-gallery-2232.webp"
+    ]
   },
   {
     "key": "casa-camper",
@@ -485,8 +531,9 @@
     "category": "hotel",
     "area": "el-raval",
     "images": [
-      "assets/places/barcelona-casa-camper-1-226.webp",
-      "assets/places/barcelona-casa-camper-2-226.webp"
+      "assets/places/barcelona-casa-camper-cover232.webp",
+      "assets/places/barcelona-casa-camper-gallery-2232.webp",
+      "assets/places/barcelona-casa-camper-gallery-3232.webp"
     ],
     "description": "A design hotel in the Raval, close to the MACBA, with relaxed shared spaces and a rooftop terrace. A central base for exploring the old city.",
     "instagram": "https://www.instagram.com/casacamper/",
@@ -498,7 +545,17 @@
     },
     "sourceUrl": "https://www.casacamper.com/en/barcelona/",
     "photoSourceUrl": "https://www.casacamper.com/en/barcelona/",
-    "photoCredit": "Casa Camper Barcelona"
+    "photoCredit": "Casa Camper Barcelona",
+    "subjects": [
+      "The planted rooftop terrace at Casa Camper Barcelona.",
+      "A warm, uncluttered guest room.",
+      "The hotel’s warm timber common area."
+    ],
+    "sourceFiles": [
+      "barcelona-casa-camper-cover232.webp",
+      "barcelona-casa-camper-gallery-2232.webp",
+      "barcelona-casa-camper-gallery-3232.webp"
+    ]
   },
   {
     "key": "casa-bonay",
