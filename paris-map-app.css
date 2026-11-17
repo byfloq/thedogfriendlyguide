@@ -112,3 +112,15 @@
 .embed-mode.map-density239 .park-cluster239 strong{font:inherit;}
 .embed-mode.map-density239 .park-cluster239:focus-visible{outline:2px solid #405641;outline-offset:2px;}
 .embed-mode.map-density239 .google-marker.active .google-marker-label{left:48px;top:10px;}
+
+/* 57: transparent park groves; the 44px tap target does not paint a disc. */
+.embed-mode.map-park-objects240 .park-cluster239{display:block;position:absolute;width:44px;height:44px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible;}
+.embed-mode.map-park-objects240 .park-grove240{position:absolute;left:2px;top:4px;width:34px;height:34px;pointer-events:none;}
+.embed-mode.map-park-objects240 .park-tree240{position:absolute;display:block;width:21px;height:27px;color:#405641;}
+.embed-mode.map-park-objects240 .park-tree240-0{left:0;top:0;}
+.embed-mode.map-park-objects240 .park-tree240-1{left:14px;top:1px;}
+.embed-mode.map-park-objects240 .park-tree240-2{left:6px;top:7px;width:24px;height:29px;}
+.embed-mode.map-park-objects240 .park-tree240 img,.embed-mode.map-park-objects240 .park-tree240 svg{position:absolute;inset:0;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;}
+.embed-mode.map-park-objects240 .park-tree-loaded240 svg{visibility:hidden;}
+.embed-mode.map-park-objects240 .park-cluster239 strong{position:absolute;right:0;bottom:2px;min-width:12px;color:#405641;font:600 12px/14px var(--sans);text-align:center;text-shadow:-1px -1px 0 #FAF7F1,1px -1px 0 #FAF7F1,-1px 1px 0 #FAF7F1,1px 1px 0 #FAF7F1;pointer-events:none;}
+.embed-mode.map-park-objects240 .park-cluster239:focus-visible{outline:2px solid #405641;outline-offset:1px;border-radius:6px;}

@@ -6,8 +6,10 @@
   const cityConfig = window.TdfgCityMap.cities[cityId];
   const isParis = cityId === 'paris';
   const searchUI210 = new URLSearchParams(location.search).get('app')==='1' && new URLSearchParams(location.search).get('searchUI')==='210';
-  const densityMap239 = document.body.classList.contains('embed-mode') && new URLSearchParams(location.search).get('markers')==='239';
+  const parkObjects240 = document.body.classList.contains('embed-mode') && new URLSearchParams(location.search).get('markers')==='240';
+  const densityMap239 = document.body.classList.contains('embed-mode') && (parkObjects240 || new URLSearchParams(location.search).get('markers')==='239');
   if(densityMap239)document.body.classList.add('map-density239');
+  if(parkObjects240)document.body.classList.add('map-park-objects240');
   let filterKeys210 = null;
   const edition20 = new URLSearchParams(location.search).get('edition') === '20';
   let activeCityBoundary20 = null, fullCityBounds20 = null;
@@ -130,7 +132,18 @@
         super();this.position=new google.maps.LatLng(entry.coordinates[1],entry.coordinates[0]);
         this.element=document.createElement('button');this.element.type='button';this.element.className='google-marker park-cluster239';
         this.element.setAttribute('aria-label',t('{count} parks · Zoom in',{count:entry.places.length}));
-        this.element.innerHTML=`${categoryIcons.walk}<strong>${entry.places.length}</strong>`;
+        if(parkObjects240){
+          // Reuse the single-park artwork. Two or three trees signal a group;
+          // the small unboxed number gives the exact count, not the tree count.
+          const treeCount=Math.min(3,entry.places.length);
+          this.element.innerHTML=`<span class="park-grove240" aria-hidden="true">${Array.from({length:treeCount},(_,i)=>`<span class="park-tree240 park-tree240-${i}">${categoryIcons.walk}<img alt="" decoding="async"></span>`).join('')}</span><strong aria-hidden="true">${entry.places.length}</strong>`;
+          this.element.querySelectorAll('.park-tree240').forEach(tree=>{
+            const image=tree.querySelector('img');
+            image.addEventListener('load',()=>tree.classList.add('park-tree-loaded240'),{once:true});
+            image.addEventListener('error',()=>image.remove(),{once:true});
+            image.src='assets/app-map/'+window.TdfgMapMarkers.objectFiles.walk;
+          });
+        }else this.element.innerHTML=`${categoryIcons.walk}<strong>${entry.places.length}</strong>`;
         this.element.addEventListener('click',event=>{
           event.stopPropagation();clearSelection();
           const previous=map.getZoom()||12,bounds=new google.maps.LatLngBounds();
