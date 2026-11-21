@@ -1,0 +1,12 @@
+/* Shared selection cards use the existing responsive gallery and filter styles. */
+[data-catalogue-aligned] .place-thumb{position:relative;overflow:hidden}
+[data-catalogue-aligned] .editorial-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+[data-catalogue-aligned] .place-card.hidden{display:none!important}
+[data-catalogue-aligned] .place-actions{flex-wrap:wrap}
+[data-catalogue-aligned] .place-content{min-width:0}
+[data-catalogue-aligned] .place-content h3{overflow-wrap:anywhere}
+[data-catalogue-aligned] .guide-map-view iframe{width:100%;height:75vh;border:0}
+[data-catalogue-aligned].map-view-active .cg-main{display:none}
+[data-catalogue-aligned] .area-filters{flex-wrap:nowrap!important;overflow-x:auto!important;justify-content:flex-start!important;height:auto!important;min-height:64px;max-height:90px}
+[data-catalogue-aligned] .area-filters button,[data-catalogue-aligned] .area-filters .filter-label{flex-shrink:0}
+[data-catalogue-aligned] .area-filters .filter-label{flex:0 0 auto!important;margin:0 16px 0 2px!important}

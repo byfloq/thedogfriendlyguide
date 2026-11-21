@@ -1,5 +1,5 @@
 (() => {
-  const editions = {
+  const editions = window.guideCityEditions || {
     hamburg: { name: 'Hamburg', count: 5, image: 'assets/places/hamburg-gotcha-matcha-editorial.webp', intro: 'Our Hamburg edit brings together two cafés, two dog shops and a harbour-side restaurant — from Eppendorf and Winterhude to the old town and HafenCity.', copy: 'Matcha, slow breakfasts, considered dog shops and a welcoming table by the harbour. Five places to enjoy Hamburg together.' },
     paris: { name: 'Paris', count: 29 },
     barcelona: { name: 'Barcelona', count: 8, image: 'assets/places/barcelona-jac-barcelona-1.webp', position: 'center 65%', intro: 'Our Barcelona edit brings together six cafés, a Mediterranean restaurant and a considered city stay — from Poblenou to El Born and Eixample.', copy: 'From a quiet coffee in Poblenou to a Mediterranean lunch by the water. Explore our considered Barcelona addresses.' },
@@ -108,7 +108,13 @@
     document.querySelector('meta[property="og:title"]')?.setAttribute('content', document.title);
     document.querySelector('meta[property="og:description"]')?.setAttribute('content', description.content);
     document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical.href);
-    if (city === 'paris') return;
+    if (city === 'paris') {
+      const title = section.querySelector('.paris-launch-card h3');
+      if (title) title.innerHTML = `${edition.count} curated places.<br>One considered guide.`;
+      const pathwayCopy = section.querySelector('.guide-pathway-head p');
+      if (pathwayCopy) pathwayCopy.textContent = `Browse ${edition.count} thoughtful dog-friendly addresses in the list, on the map or near you.`;
+      return;
+    }
     const primary = section.querySelector('.paris-launch-card');
     if (primary) {
       primary.href = `${city}-guide.html`;

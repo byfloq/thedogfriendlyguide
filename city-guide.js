@@ -2,6 +2,7 @@
   // Canonical cross-project catalogue: paris-places.json.
   // Keep it aligned whenever a Paris recommendation changes so the Flōq app
   // and the website consume the same complete list.
+  if (document.body.dataset.catalogueAligned === 'true') return;
   const grid = document.querySelector('.place-grid');
   if (!grid || !document.body.classList.contains('city-guide-page') || !location.pathname.endsWith('paris-guide.html')) return;
 
@@ -242,7 +243,7 @@
   };
   const categoryLabels = [
     ['cafe', 'Cafés'], ['restaurant', 'Restaurants'], ['hotel', 'Hotels'],
-    ['grooming', 'Dog Grooming'], ['shop', 'Dog Shops']
+    ['grooming', 'Dog Grooming'], ['shop', 'Dog Shops'], ['walk', 'Parks & walks']
   ];
 
   cards.forEach(card => {
@@ -252,7 +253,7 @@
   const typeFilters = document.createElement('nav');
   typeFilters.className = 'cg-filters type-filters';
   typeFilters.setAttribute('aria-label', 'Filter places by type');
-  const cafesFirst = location.pathname.endsWith('paris-guide.html');
+  const cafesFirst = document.body.dataset.catalogueAligned !== 'true' && location.pathname.endsWith('paris-guide.html');
   typeFilters.innerHTML = `<span class="filter-label">Type of place</span>
     <button class="${cafesFirst ? '' : 'active'}" data-filter="all" aria-pressed="${cafesFirst ? 'false' : 'true'}">All</button>
     ${categoryLabels.filter(([value]) => available.has(value)).map(([value, label]) =>

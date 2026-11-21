@@ -12,9 +12,10 @@
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    history.replaceState(null, '', isMap ? '#map' : '#list');
+    if (isMap || location.hash === '#map' || location.hash === '#list') history.replaceState(null, '', isMap ? '#map' : '#list');
   };
 
   buttons.forEach(button => button.addEventListener('click', () => show(button.dataset.guideView)));
+  document.querySelector('[data-footer-map]')?.addEventListener('click', event => { event.preventDefault(); show('map'); });
   show(location.hash === '#map' ? 'map' : 'list');
 })();

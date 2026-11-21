@@ -70,3 +70,21 @@ The footer section below each city’s recommendations mirrors the app’s `src/
 The website continues to use its existing email delivery channel (`byfloq@gmail.com`), without requiring an account. `place-submission.js` prepares an encoded email draft; the visitor must send it from their mail application. It does not claim the suggestion was received, insert into the app’s Supabase review queue, or send mail automatically. The shared app review queue remains a separate integration requiring a decision on web sign-in.
 
 Validation covers Instagram handles/profile links, required trimmed fields, business-only fields and email/URL formats. Verified both modes, city prefill, hidden-field exclusion and email payload encoding without sending any messages.
+
+## Shared app and website selection
+
+`mobile-catalogue.v1.json` is now the editorial source of truth for both clients.
+Edit its selection explicitly when approving places. Publication validates it,
+then `scripts/align-website-catalogue.py _site` renders every city guide, homepage
+city count/highlight and the public park directory from that exact selection.
+`check-catalogue-alignment.py _site` blocks publication on a place-ID mismatch.
+
+The full 1,503-record `parks-catalogue.v1.json` and legacy guide HTML remain in
+this source repository for recovery and future curation. Only selected parks
+are copied into the published park JSON. Additional legacy cards are not rendered.
+`scripts/import-legacy-website-catalogue.py` preserves the former importer for
+reference; it is not part of publication. Do not run it to approve new places.
+
+Local QA: copy this repository into a separate preview directory, then run the
+alignment and check scripts with that directory as their argument. Never run
+alignment against the source checkout: it deliberately refuses that operation.

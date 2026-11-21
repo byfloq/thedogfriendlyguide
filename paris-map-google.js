@@ -241,7 +241,7 @@
     if (!key) { reportFailure(); setup.hidden = false; mapElement.classList.add('google-map-disabled'); nearPanel.querySelector('.near-now__toggle').addEventListener('click',()=>showStatus('The live map needs to finish loading before we can find places near you.')); return; }
     try {
       if(!cityConfig)throw new Error('Unsupported city');
-      const readJson = async url => {const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);try{const response=await fetch(url,{signal:controller.signal});if(!response.ok)throw new Error('Map catalogue unavailable');return await response.json();}finally{clearTimeout(timeout);}};
+      const readJson = async url => {const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);try{const response=await fetch(url,{signal:controller.signal,cache:'no-cache'});if(!response.ok)throw new Error('Map catalogue unavailable');return await response.json();}finally{clearTimeout(timeout);}};
       const previewPromise=isParis?readJson('app-map-photos.v1.json?v=1').catch(()=>({})):Promise.resolve({});
       const [catalogue,boundary,overrides,boundaries20] = await Promise.all([
         readJson(isParis?'paris-places.json?v=11':'mobile-catalogue.v1.json?map=20261101'),
