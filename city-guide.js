@@ -500,7 +500,7 @@
 
     const subjects = document.body.matches('.paris-guide-page, .barcelona-guide-page')
       ? placePhotoSubjects[placeTitle] : null;
-    const photograph = subjects ? document.createElement('img') : null;
+    const photograph = thumb.querySelector('img.editorial-photo') || (subjects ? document.createElement('img') : null);
     if (photograph) {
       thumb.classList.add('editorial-photography');
       photograph.className = 'editorial-photo';
@@ -524,7 +524,7 @@
       thumb.style.setProperty('--thumb', `url('${images[cardIndex].replace(/['"]/g, '')}')`);
       if (photograph) {
         photograph.src = images[cardIndex];
-        photograph.alt = `${placeTitle} — ${subjects[cardIndex]}`;
+        photograph.alt = `${placeTitle} — ${subjects?.[cardIndex] || 'photo '+(cardIndex + 1)}`;
         photograph.style.objectPosition = photoPositions[images[cardIndex].split('/').pop()] || '50% 50%';
       }
       thumb.setAttribute('aria-label', `${placeTitle} — photo ${cardIndex + 1} of ${images.length}`);
