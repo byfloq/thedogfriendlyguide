@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "munich-20261122-three-cafes",
-  "generatedAt": "2026-11-22T09:17:45.563772+00:00",
+  "revision": "munich-20261122-four-places",
+  "generatedAt": "2026-11-22T09:27:29.759718+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -19827,7 +19827,7 @@
       "area": "Schwabing",
       "category": "Drink",
       "shortDescription": "Specialty coffee & matcha · Schwabing",
-      "editorial": "A neighbourhood coffee and matcha bar on Hohenzollernstraße, with beans from European roasteries and carefully sourced teas. Stop for an espresso or a slow filter coffee in Schwabing. Confirm current dog access directly with the café before visiting. Photography: The Spirited Goat.",
+      "editorial": "A neighbourhood coffee and matcha bar on Hohenzollernstraße, with beans from European roasteries and carefully sourced teas. Stop for an espresso or a slow filter coffee in Schwabing. Dogs are welcome, confirmed directly by the café. Photography: The Spirited Goat.",
       "image": "https://thedogfriendlyguide.com/assets/places/munich-the-spirited-goat-2.jpg",
       "images": [
         "https://thedogfriendlyguide.com/assets/places/munich-the-spirited-goat-2.jpg",
@@ -19851,6 +19851,38 @@
       },
       "openingHours": "Mon–Fri 07:00–15:30 · Sat 07:30–14:00 · Sun 09:00–13:30",
       "openingHoursSourceUrl": "https://thespiritedgoat.de/find-us-2/",
+      "openingHoursCheckedAt": "2026-11-22"
+    },
+    {
+      "id": "munich-schwarzreiter-tagesbar",
+      "name": "Schwarzreiter Tagesbar",
+      "city": "munich",
+      "area": "Altstadt-Lehel",
+      "category": "Eat",
+      "shortDescription": "Bavarian à la carte restaurant · Altstadt-Lehel",
+      "editorial": "The relaxed à la carte dining room at Hotel Vier Jahreszeiten Kempinski on Maximilianstraße, serving seasonal Bavarian cooking from lunch into the evening. Dogs are welcome in the Tagesbar, confirmed directly by the team. The separate Schwarzreiter fine-dining restaurant does not admit dogs. Photography: Hotel Vier Jahreszeiten Kempinski Munich.",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-schwarzreiter-tagesbar-1.jpg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-schwarzreiter-tagesbar-1.jpg"
+      ],
+      "websiteUrl": "https://www.instagram.com/schwarzreiter.muenchen/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Schwarzreiter%20Tagesbar%20Maximilianstra%C3%9Fe%2017%2080539%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1389,
+        "longitude": 11.5815
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Sun–Thu 12:00–23:00 · Fri–Sat 12:00–00:00",
+      "openingHoursSourceUrl": "https://schwarzreiter-muenchen.de/home-en/",
       "openingHoursCheckedAt": "2026-11-22"
     }
   ],
