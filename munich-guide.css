@@ -1,0 +1,10 @@
+.munich-guide-page .place-thumb{position:relative;overflow:hidden;aspect-ratio:4/5;background-image:none!important}
+.munich-guide-page .editorial-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.munich-view-switch{display:flex;justify-content:center;gap:8px;padding:16px;border-bottom:1px solid var(--rule)}
+.munich-view-switch button{padding:12px 28px;border:1px solid var(--rule);background:transparent;color:var(--ink);font:500 11px var(--sans);cursor:pointer}
+.munich-view-switch button.active{background:var(--ink);color:var(--paper)}
+.munich-guide-page .guide-map-view iframe{width:100%;height:75vh;border:0}
+.munich-guide-page.map-view-active .cg-main{display:none}
+.munich-guide-page .company-identity{flex-basis:100%;font:400 12px/1.6 Arial,sans-serif;padding-top:16px}
+.munich-guide-page .cg-footer{flex-wrap:wrap}
+.munich-guide-page .guide-discovery{display:none!important}

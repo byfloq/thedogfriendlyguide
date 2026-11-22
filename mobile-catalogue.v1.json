@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "release53-editorial",
-  "generatedAt": "2026-11-16T12:19:05.127332+00:00",
+  "revision": "munich-20261122-three-cafes",
+  "generatedAt": "2026-11-22T09:17:45.563772+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -32,6 +32,11 @@
       "id": "madrid",
       "label": "Madrid",
       "subtitle": "The Guide’s edit"
+    },
+    {
+      "id": "munich",
+      "label": "Munich",
+      "subtitle": "Courtyard coffee and neighbourhood rituals"
     },
     {
       "id": "paris",
@@ -19752,6 +19757,101 @@
         "offLeashHours": "Horari d'hivern (de novembre a març) Cada dia de 19.00 h a 10.00 h\nHorari d'estiu (d'abril a octubre) Cada dia de 20.00 h a 10.00 h",
         "policyNote": "Shared public space: dogs may be off-leash only during the permitted hours. Keep a lead on at other times."
       }
+    },
+    {
+      "id": "munich-kanso-coffee-lab",
+      "name": "Kanso Coffee Lab",
+      "city": "munich",
+      "area": "Altstadt-Lehel",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee · Altstadt-Lehel",
+      "editorial": "A quiet courtyard coffee lab in the Residenzpassage, with a pared-back interior and a considered approach to espresso and filter coffee. Confirm current dog access directly with the café before visiting. Photography: Kanso Coffee Lab.",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-kanso-coffee-lab-1.jpg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-kanso-coffee-lab-1.jpg",
+        "https://thedogfriendlyguide.com/assets/places/munich-kanso-coffee-lab-2.jpg"
+      ],
+      "websiteUrl": "https://www.instagram.com/kansocoffeelab/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kanso%20Coffee%20Lab%20Theatinerstra%C3%9Fe%2035%20Residenzpassage%20Innenhof%2080333%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1404041,
+        "longitude": 11.5766584
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "munich-man-versus-machine",
+      "name": "Man Versus Machine · Glockenbach",
+      "city": "munich",
+      "area": "Glockenbachviertel",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee · Glockenbachviertel",
+      "editorial": "The original Man Versus Machine coffee shop on Müllerstraße, serving specialty espresso, filter coffee, matcha and Franzbrötchen in the heart of Glockenbachviertel. Confirm current dog access directly with the café before visiting. Photography: Man Versus Machine.",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-man-versus-machine-1.jpg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-man-versus-machine-1.jpg"
+      ],
+      "websiteUrl": "https://www.instagram.com/manversusmachine/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Man%20Versus%20Machine%20M%C3%BCllerstra%C3%9Fe%2023%2080469%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1309884,
+        "longitude": 11.5711081
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon–Fri 08:00–19:00 · Sat–Sun 09:00–19:00",
+      "openingHoursSourceUrl": "https://mvsm.coffee/pages/mvsm-locations",
+      "openingHoursCheckedAt": "2026-11-21"
+    },
+    {
+      "id": "munich-the-spirited-goat",
+      "name": "The Spirited Goat",
+      "city": "munich",
+      "area": "Schwabing",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee & matcha · Schwabing",
+      "editorial": "A neighbourhood coffee and matcha bar on Hohenzollernstraße, with beans from European roasteries and carefully sourced teas. Stop for an espresso or a slow filter coffee in Schwabing. Confirm current dog access directly with the café before visiting. Photography: The Spirited Goat.",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-the-spirited-goat-2.jpg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-the-spirited-goat-2.jpg",
+        "https://thedogfriendlyguide.com/assets/places/munich-the-spirited-goat-1.jpg"
+      ],
+      "websiteUrl": "https://www.instagram.com/the_spirited_goat_munich/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Spirited%20Goat%20Hohenzollernstra%C3%9Fe%2059%2080796%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1603544,
+        "longitude": 11.5741097
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon–Fri 07:00–15:30 · Sat 07:30–14:00 · Sun 09:00–13:30",
+      "openingHoursSourceUrl": "https://thespiritedgoat.de/find-us-2/",
+      "openingHoursCheckedAt": "2026-11-22"
     }
   ],
   "paris": {

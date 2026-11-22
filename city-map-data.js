@@ -1,6 +1,7 @@
 /* Shared app/web map catalogue rules. Public venue data only; never user location. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.TdfgCityMap=api;})(typeof window==='undefined'?globalThis:window,function(){
  const cities={
+  munich:{label:'Munich',center:[11.5754,48.1371],radiusKm:25,zoom:13},
   paris:{label:'Paris',center:[2.3505,48.8655],radiusKm:16,zoom:13},
   london:{label:'London',center:[-0.1276,51.5072],radiusKm:40,zoom:12},
   barcelona:{label:'Barcelona',center:[2.1734,41.3851],radiusKm:20,zoom:13},

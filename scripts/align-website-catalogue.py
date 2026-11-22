@@ -58,7 +58,7 @@ def build(target):
     for c in data['cities']:
         venues = [p for p in places if p['city']==c['id'] and p['category']!='Walk']
         highlights[c['id']] = [dict(name=p['name'],image=p['image'],meta=p['shortDescription'],href=c['id']+'-guide.html#'+p['id'].removeprefix(c['id']+'-')) for p in venues[:3]]
-        editions[c['id']] = dict(name=c['label'],count=counts[c['id']],image=venues[0]['image'],intro=f"Explore {counts[c['id']]} dog-friendly places in {c['label']}: cafés, food, stays, shops and places to walk together.",copy=f"Discover the Guide’s {counts[c['id']]} selected places in {c['label']}, in the list or on the map.")
+        editions[c['id']] = dict(name=c['label'],count=counts[c['id']],image=venues[0]['image'],intro=f"Explore {counts[c['id']]} selected places in {c['label']}, for neighbourhood discoveries and time well spent together.",copy=f"Discover the Guide’s {counts[c['id']]} selected places in {c['label']}, in the list or on the map.")
     (target/'home-city-places.js').write_text('window.homeCityPlaces = '+json.dumps(highlights,ensure_ascii=False)+';\nwindow.guideCityEditions = '+json.dumps(editions,ensure_ascii=False)+';\n')
     for path in [target/'index.html', *[target/l/'index.html' for l in ['de','fr','es']]]:
         text = path.read_text()
