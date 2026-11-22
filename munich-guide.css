@@ -8,3 +8,4 @@
 .munich-guide-page .company-identity{flex-basis:100%;font:400 12px/1.6 Arial,sans-serif;padding-top:16px}
 .munich-guide-page .cg-footer{flex-wrap:wrap}
 .munich-guide-page .guide-discovery{display:none!important}
+.munich-guide-page .place-card .place-content .desc{display:block!important;overflow:visible!important;-webkit-line-clamp:unset;line-clamp:unset}
