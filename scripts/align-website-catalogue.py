@@ -90,7 +90,7 @@ def build(target):
     # future selection updates without a hardcoded browser cache key.
     for path in [target/'index.html', *[target/l/'index.html' for l in ['de','fr','es']], *target.glob('*-guide.html')]:
         text = path.read_text()
-        for asset in ['city-guide.js', 'home-city-places.js', 'home-city-edition.js', 'paris-guide-view.js', 'catalogue-alignment.css']:
+        for asset in ['city-guide.js', 'home-city-places.js', 'home-city-edition.js', 'paris-guide-view.js', 'catalogue-alignment.css', 'munich-guide.css']:
             text = re.sub(re.escape(asset)+r'(?:\?[^"\x27]*)?', asset+'?selection='+data['revision'][:12], text)
         path.write_text(text)
     # Cache tags cover changed scripts on every guide, in every viewport.
