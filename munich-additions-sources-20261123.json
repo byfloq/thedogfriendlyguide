@@ -1,0 +1,41 @@
+[
+  {
+    "id": "munich-das-metta",
+    "address": "Barer Straße 48, 80799 München",
+    "checkedAt": "2026-11-23",
+    "detailsSource": "https://www.instagram.com/das.metta/",
+    "instagram": "https://www.instagram.com/das.metta/",
+    "photoSource": "https://www.instagram.com/das.metta/reel/DeQ_xEiNLUg/",
+    "coordinateSource": "https://www.openstreetmap.org/node/7939122554",
+    "coordinatePrecision": "venue",
+    "coordinateEvidence": "Metta, 48, Barer Straße, Kunstareal, Maxvorstadt, München, Bayern, 80799, Deutschland",
+    "dogPolicy": "User requested inclusion; current access to be confirmed with café. No interior, water or terrace claim.",
+    "additionalSource": null
+  },
+  {
+    "id": "munich-filou-coffee",
+    "address": "Augustenstraße 95, 80798 München",
+    "checkedAt": "2026-11-23",
+    "detailsSource": "https://www.filoucoffee.com/en/locations",
+    "instagram": "https://www.instagram.com/filoucoffee/",
+    "photoSource": "https://www.filoucoffee.com/en/locations",
+    "coordinateSource": "https://www.openstreetmap.org/way/105234657",
+    "coordinatePrecision": "building",
+    "coordinateEvidence": "95, Augustenstraße, Kunstareal, St. Benno-Viertel, Maxvorstadt, München, Bayern, 80798, Deutschland",
+    "dogPolicy": "User requested inclusion; current access to be confirmed with café. No interior, water or terrace claim.",
+    "additionalSource": "https://www.filoucoffee.com/de/community"
+  },
+  {
+    "id": "munich-schwan-locke",
+    "address": "Landwehrstraße 75, 80336 München",
+    "checkedAt": "2026-11-23",
+    "detailsSource": "https://www.lockeliving.com/en/munich/schwan-locke",
+    "instagram": "https://www.instagram.com/lockehotels/",
+    "photoSource": "https://www.lockeliving.com/en/munich/schwan-locke",
+    "coordinateSource": "https://www.openstreetmap.org/node/13096980377",
+    "coordinatePrecision": "venue",
+    "coordinateEvidence": "Schwan Locke, 75, Landwehrstraße, Klinikviertel, Ludwigsvorstadt, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80336, Deutschland",
+    "dogPolicy": "Dog-friendly accommodation listed by hotel; booking conditions apply.",
+    "additionalSource": null
+  }
+]

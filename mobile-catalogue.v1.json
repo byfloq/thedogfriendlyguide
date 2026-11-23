@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "munich-20261122-four-places",
-  "generatedAt": "2026-11-22T09:27:29.759718+00:00",
+  "revision": "munich-20261123-seven-places",
+  "generatedAt": "2026-11-23T00:03:52.712759+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -19884,6 +19884,101 @@
       "openingHours": "Sun–Thu 12:00–23:00 · Fri–Sat 12:00–00:00",
       "openingHoursSourceUrl": "https://schwarzreiter-muenchen.de/home-en/",
       "openingHoursCheckedAt": "2026-11-22"
+    },
+    {
+      "name": "Das METTA",
+      "area": "Maxvorstadt",
+      "category": "Drink",
+      "shortDescription": "Vegan bakery & coffee · Maxvorstadt",
+      "editorial": "A plant-filled café and organic bakery on Barer Straße, with vegan, gluten-free bakes and coffee in a relaxed community space. Make it a pastry stop while exploring Maxvorstadt. Confirm current dog access with the café before visiting. Photography: Das METTA.",
+      "websiteUrl": "https://www.instagram.com/das.metta/",
+      "id": "munich-das-metta",
+      "city": "munich",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-das-metta-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-das-metta-1.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Das%20METTA%20Barer%20Stra%C3%9Fe%2048%2C%2080799%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1497156,
+        "longitude": 11.5726003
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon-Fri 08:30-18:00 · Sat-Sun 10:00-17:00",
+      "openingHoursSourceUrl": "https://www.instagram.com/das.metta/",
+      "openingHoursCheckedAt": "2026-11-23"
+    },
+    {
+      "name": "Filou Coffee",
+      "area": "Maxvorstadt",
+      "category": "Drink",
+      "shortDescription": "Coffee roastery & matcha · Maxvorstadt",
+      "editorial": "Coffee from Filou’s own roastery, ceremonial matcha and a changing selection of breakfast bites on Augustenstraße. The café also brings local dog people together for coffee walks. Confirm current dog access with the team before visiting. Photography: Filou Coffee.",
+      "websiteUrl": "https://www.filoucoffee.com/en/locations",
+      "id": "munich-filou-coffee",
+      "city": "munich",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-filou-coffee-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-filou-coffee-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/munich-filou-coffee-2.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Filou%20Coffee%20Augustenstra%C3%9Fe%2095%2C%2080798%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1521446,
+        "longitude": 11.5646687
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      },
+      "openingHours": "Mon-Tue closed · Wed-Fri 08:00-16:30 · Sat-Sun 09:00-16:30",
+      "openingHoursSourceUrl": "https://www.filoucoffee.com/en/locations",
+      "openingHoursCheckedAt": "2026-11-23"
+    },
+    {
+      "name": "Schwan Locke",
+      "area": "Ludwigsvorstadt",
+      "category": "Stay",
+      "shortDescription": "Design aparthotel · Ludwigsvorstadt",
+      "editorial": "Colourful studios with kitchens, a leafy courtyard and shared spaces for settling into Munich at your own pace. Theresienwiese is a short walk away. The hotel welcomes dogs; check pet-room availability and the current conditions when booking. Photography: Locke.",
+      "websiteUrl": "https://www.lockeliving.com/en/munich/schwan-locke",
+      "id": "munich-schwan-locke",
+      "city": "munich",
+      "image": "https://thedogfriendlyguide.com/assets/places/munich-schwan-locke-1.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/munich-schwan-locke-1.webp",
+        "https://thedogfriendlyguide.com/assets/places/munich-schwan-locke-2.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Schwan%20Locke%20Landwehrstra%C3%9Fe%2075%2C%2080336%20M%C3%BCnchen",
+      "coordinates": {
+        "latitude": 48.1362854,
+        "longitude": 11.5548562
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
     }
   ],
   "paris": {
