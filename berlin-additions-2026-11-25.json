@@ -1,0 +1,734 @@
+{
+  "date": "2026-11-25",
+  "newEntries": 17,
+  "selection": "User-selected venues; open Berlin branches recorded separately. Studio Natura Alte Schönhauser remains coming soon and is not included. 25hours supplied twice and included once. Existing Zacharias Kaffeebar retained separately from Tagesbar.",
+  "places": [
+    {
+      "id": "berlin-calli-the-coffee-club",
+      "name": "Calli. the coffee club",
+      "address": "Littenstraße 106, 10179 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.instagram.com/calli.thecoffeeclub/",
+      "coordinates": {
+        "latitude": 52.5161761,
+        "longitude": 13.4146146
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Calli. The coffee club",
+          "house_number": "106",
+          "road": "Littenstraße",
+          "neighbourhood": "Klosterviertel",
+          "quarter": "Spandauer Vorstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10179",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Calli. The coffee club",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-calli-the-coffee-club-20261125.webp",
+        "alt": "Calli’s window with its coffee-club sign and painted details",
+        "sourcePage": "https://www.instagram.com/calli.thecoffeeclub/p/DfnAXh7Dn9I/",
+        "sourceImage": "https://instagram.fbcn16-1.fna.fbcdn.net/v/t51.82787-15/886032629_17891823663618649_4662534104915398425_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAyODE4OTQ2NTc5MjkwNzQ0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNzIwLnNkci52aWRlb19maXJzdF9mcmFtZV90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=rNmQRCxNDr4Q7kNvwH3x6bd&_nc_oc=Adp236wL6oYd0CORwhjdrFrIzFODnUOATN-2_0_uOTWLoVfO8PUlmaHXfUf8hdDRka8&_nc_zt=23&_nc_ht=instagram.fbcn16-1.fna&_nc_gid=1C8nwTrErPxI3CXo5KIHhw&_nc_ss=7b7a8&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQpoMF2bhTunhlo87DyWtRdDgGTLS7FUwaAHoSAjCXeaw&oe=6B0C8752",
+        "credit": "Calli. the coffee club official website / Instagram",
+        "bytes": 33810,
+        "dimensions": [
+          720,
+          539
+        ],
+        "sha256": "adea79078ce6c26ec46bd2dfae58e81f0918ed0277bcf7e9129a0d6dd74a6af4"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-kissabo",
+      "name": "Kissabō",
+      "address": "Kopenhagener Straße 16, 10437 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://kissabo.com/",
+      "coordinates": {
+        "latitude": 52.5491878,
+        "longitude": 13.4082136
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "house_number": "16",
+          "road": "Kopenhagener Straße",
+          "neighbourhood": "Bremer Höhe",
+          "quarter": "Gleimviertel",
+          "suburb": "Prenzlauer Berg",
+          "borough": "Pankow",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10437",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-kissabo-20261125.webp",
+        "alt": "Wooden tea counter and stools inside Kissabō",
+        "sourcePage": "https://kissabo.com/",
+        "sourceImage": "https://kissabo.com/Kissabo_Clemens_Poloczek-12.jpg",
+        "credit": "Clemens Poloczek / Kissabō",
+        "bytes": 57370,
+        "dimensions": [
+          1400,
+          1050
+        ],
+        "sha256": "7629a14f097b77a048901de7d9988a746b487a593f0431dc71b9c8862144b030"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-studio-natura-mitte",
+      "name": "Studio Natura · Mitte",
+      "address": "Ackerstraße 165, 10115 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://de.linkedin.com/company/studionatura",
+      "coordinates": {
+        "latitude": 52.5301828,
+        "longitude": 13.3969589
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "house_number": "165",
+          "road": "Ackerstraße",
+          "quarter": "Spandauer Vorstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10115",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-studio-natura-mitte-20261125.webp",
+        "alt": "Tables beside the windows at Studio Natura Mitte",
+        "sourcePage": "https://studionatura.de/our-locations/",
+        "sourceImage": "https://studionatura.de/wp-content/uploads/2024/03/V9A3802-683x1024.jpg",
+        "credit": "Studio Natura · Mitte official website / Instagram",
+        "bytes": 30676,
+        "dimensions": [
+          683,
+          1024
+        ],
+        "sha256": "85752298ecd38ec3f2390eea281367be9a7c2190a5720af23d91556ade17ae08"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-studio-natura-gendarmenmarkt",
+      "name": "Studio Natura · Gendarmenmarkt",
+      "address": "Anton-Wilhelm-Amo-Straße 50, 10117 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://studionatura.de/our-locations/",
+      "coordinates": {
+        "latitude": 52.5123998,
+        "longitude": 13.3908216
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "leisure": "Holmes Place",
+          "house_number": "50",
+          "road": "Anton-Wilhelm-Amo-Straße",
+          "neighbourhood": "Friedrichswerder",
+          "quarter": "Friedrichstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10117",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Holmes Place",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-studio-natura-gendarmenmarkt-20261125.webp",
+        "alt": "Light-filled seating at Studio Natura Gendarmenmarkt",
+        "sourcePage": "https://studionatura.de/our-locations/",
+        "sourceImage": "https://studionatura.de/wp-content/uploads/2025/04/V9A6299-e1782738515300-818x1024.jpg",
+        "credit": "Studio Natura · Gendarmenmarkt official website / Instagram",
+        "bytes": 30108,
+        "dimensions": [
+          818,
+          1024
+        ],
+        "sha256": "70a34a30d0d0487265c01557c8818fff959329f4a52b8bdc5cd99c6ff3e6c5d6"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-studio-natura-west",
+      "name": "Studio Natura · West",
+      "address": "Schlüterstraße 37, 10629 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://de.linkedin.com/company/studionatura",
+      "coordinates": {
+        "latitude": 52.5022872,
+        "longitude": 13.3167049
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "house_number": "37",
+          "road": "Schlüterstraße",
+          "suburb": "Charlottenburg",
+          "borough": "Charlottenburg-Wilmersdorf",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10629",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-studio-natura-west-20261125.webp",
+        "alt": "Coffee counter and stools at Studio Natura West",
+        "sourcePage": "https://studionatura.de/our-locations/",
+        "sourceImage": "https://studionatura.de/wp-content/uploads/2026/04/V9A7978-768x1024.jpg",
+        "credit": "Studio Natura · West official website / Instagram",
+        "bytes": 30114,
+        "dimensions": [
+          768,
+          1024
+        ],
+        "sha256": "1bd305dd07fcbde88358bb748e5f17f28d9686c5d1441c07f3949ae9ba2bc8a2"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-cafe-tiergarten",
+      "name": "Café Tiergarten",
+      "address": "Altonaer Straße 3, 10557 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://cafetiergarten.berlin/",
+      "coordinates": {
+        "latitude": 52.516817,
+        "longitude": 13.3439562
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Café Tiergarten",
+          "house_number": "3",
+          "road": "Altonaer Straße",
+          "suburb": "Hansaviertel",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10557",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Café Tiergarten",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-cafe-tiergarten-20261125.webp",
+        "alt": "Yellow ceiling and wooden seating inside Café Tiergarten",
+        "sourcePage": "https://cafetiergarten.berlin/",
+        "sourceImage": "https://cafetiergarten.berlin/cdn/shop/files/2025_08_18_Cafe_Tiergarten_0109.jpg?v=1762257354&width=2750",
+        "credit": "Café Tiergarten official website / Instagram",
+        "bytes": 91576,
+        "dimensions": [
+          1400,
+          933
+        ],
+        "sha256": "9f45996a191aa70c3b87e53627b585adae0c6a14405352a8b5aedadb7e7b6439"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-zacharias-tagesbar",
+      "name": "Zacharias Tagesbar",
+      "address": "Oderberger Straße 7, 10435 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.zacharias-berlin.com/tagesbar",
+      "coordinates": {
+        "latitude": 52.5386321,
+        "longitude": 13.4100465
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Zacharias Cafe",
+          "house_number": "7",
+          "road": "Oderberger Straße",
+          "quarter": "Kollwitzkiez",
+          "suburb": "Prenzlauer Berg",
+          "borough": "Pankow",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10435",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Zacharias Cafe",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-zacharias-tagesbar-20261125.webp",
+        "alt": "Coffee and a croissant on the terrace at Zacharias Tagesbar",
+        "sourcePage": "https://www.zacharias-berlin.com/tagesbar",
+        "sourceImage": "https://static.wixstatic.com/media/9bcf42_d10866091012482d8e919dee8d293819~mv2.jpg",
+        "credit": "Zacharias Tagesbar official website / Instagram",
+        "bytes": 48740,
+        "dimensions": [
+          1050,
+          1400
+        ],
+        "sha256": "07d5db2c527582bf4f3625cbd7d4d2db335da2c87074952ec946c934603867b4"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-kolo-coffee",
+      "name": "Kolo Coffee",
+      "address": "Brunnenstraße 158, 10115 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.instagram.com/kolo.coffeeshop/",
+      "coordinates": {
+        "latitude": 52.5352483,
+        "longitude": 13.3976274
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Kolo Coffee",
+          "house_number": "158",
+          "road": "Brunnenstraße",
+          "quarter": "Arkonakiez",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10115",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Kolo Coffee",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-kolo-coffee-20261125.webp",
+        "alt": "Visitors gathered around Kolo Coffee’s counter",
+        "sourcePage": "https://www.instagram.com/kolo.coffeeshop/p/DObF7vYDK6_/",
+        "sourceImage": "https://instagram.fbcn15-1.fna.fbcdn.net/v/t51.82787-15/543676977_17878525581397608_6389669355590802279_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=MzcxODU5MjAwNTUwMTg5NDkyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA2MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fWdzm5dKMs8Q7kNvwHKIcQi&_nc_oc=AdrnyHWEY1_4gReMpu-ZmtUQbst7mbU7jtwoezo8HdGlaghGcWr-2eJO1973OyMBDrg&_nc_zt=23&_nc_ht=instagram.fbcn15-1.fna&_nc_gid=UUaz3RziqDdoGzBTbLKTfw&_nc_ss=7b7a8&_nc_ct=RQosPBUIFQIlBAAAAA&oh=00_AQRZqThitnYVpWFVvdYsP601kSA1p_T8FMZK9FXBeK5zwA&oe=6B0CA609",
+        "credit": "Kolo Coffee official website / Instagram",
+        "bytes": 149506,
+        "dimensions": [
+          1050,
+          1400
+        ],
+        "sha256": "62c9195d6f4d9729414e204255a324b042752ed3d7b77527d40b5dd6f87d1d82"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-bullys-bakery",
+      "name": "Bully’s Bakery",
+      "address": "Friedelstraße 7, 12047 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.instagram.com/bullysbakery/",
+      "coordinates": {
+        "latitude": 52.4882335,
+        "longitude": 13.4281088
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Bullys Bakery",
+          "house_number": "7",
+          "road": "Friedelstraße",
+          "quarter": "Reuterkiez",
+          "suburb": "Neukölln",
+          "borough": "Neukölln",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "12047",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Bullys Bakery",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-bullys-bakery-20261125.webp",
+        "alt": "Chocolate cake with a thick layer of cream at Bully’s Bakery",
+        "sourcePage": "https://www.instagram.com/bullysbakery/p/DZFH0MNiaeO/",
+        "sourceImage": "https://instagram.fbcn15-1.fna.fbcdn.net/v/t51.82787-15/711149371_18443409199188961_9134027206079000379_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=MzkxMDU2NjIyNDI5MTUzODgzMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzA3Mi5oZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Y9gw4r836r4Q7kNvwGehFz_&_nc_oc=Adp-7rYzmDPMZxU8ec5Qpk4ad5jbrfuR3UvsrQHkbXC_ohtOO1-jzJ2mIiInHSv6lUw&_nc_zt=23&_nc_ht=instagram.fbcn15-1.fna&_nc_gid=mVg4DOU1Gg7th3sIKPXuuQ&_nc_ss=7b7a8&_nc_ct=RQosPBUIFQIlAgAAAA&oh=00_AQQjCS3dgGha1gLWfr3XNWwOKlFAIthZ5ZFIzZhRyF0ISw&oe=6B0C95B7",
+        "credit": "Bully’s Bakery official website / Instagram",
+        "bytes": 73294,
+        "dimensions": [
+          1050,
+          1400
+        ],
+        "sha256": "357dbdfea05832d8c557dccff5d9f751a7025e51f9bc148d30c9fb25fe474875"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-lucys-torstrasse",
+      "name": "Lucy’s The Deli · Torstraße",
+      "address": "Torstraße 116, 10119 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.lucys.berlin/location-torstrase/",
+      "coordinates": {
+        "latitude": 52.5295508,
+        "longitude": 13.4023026
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Lucy's The Deli",
+          "house_number": "116",
+          "road": "Torstraße",
+          "quarter": "Rosenthaler Vorstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10119",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Lucy's The Deli",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-lucys-torstrasse-20261125.webp",
+        "alt": "A wooden table and soft pink details at Lucy’s Torstraße",
+        "sourcePage": "https://www.lucys.berlin/location-torstrase/",
+        "sourceImage": "https://www.lucys.berlin/wp-content/uploads/2024/02/Lucys_Berlin-5.jpg",
+        "credit": "Lucy’s The Deli · Torstraße official website / Instagram",
+        "bytes": 93764,
+        "dimensions": [
+          933,
+          1400
+        ],
+        "sha256": "35a318a4bdcf149e86331707b40a121e1d0e91fa22bd78c1031495218ed7c172"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-lucys-brunnenstrasse",
+      "name": "Lucy’s The Deli · Brunnenstraße",
+      "address": "Brunnenstraße 24, 10119 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.lucys.berlin/location-brunnenstrase/",
+      "coordinates": {
+        "latitude": 52.5334592,
+        "longitude": 13.3988575
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "amenity": "Lucy's",
+          "house_number": "24",
+          "road": "Brunnenstraße",
+          "quarter": "Rosenthaler Vorstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10119",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Lucy's",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-lucys-brunnenstrasse-20261125.webp",
+        "alt": "Pink coffee counter and pastry display at Lucy’s Brunnenstraße",
+        "sourcePage": "https://www.lucys.berlin/location-brunnenstrase/",
+        "sourceImage": "https://www.lucys.berlin/wp-content/uploads/2024/02/Lucys_Berlin-41.jpg",
+        "credit": "Lucy’s The Deli · Brunnenstraße official website / Instagram",
+        "bytes": 172102,
+        "dimensions": [
+          934,
+          1400
+        ],
+        "sha256": "b3b4984342e9e8708c4388301f8db0d9dd63d9d5bb1eb9f2db2f898e5e54fa68"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-westberlin",
+      "name": "westberlin",
+      "address": "Alexandrinenstraße 118, 10969 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.westberlin-bar-shop.de/index.html",
+      "coordinates": {
+        "latitude": 52.5007422,
+        "longitude": 13.4009105
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "tourism": "König Galerie",
+          "house_number": "118",
+          "road": "Alexandrinenstraße",
+          "neighbourhood": "Ritterkiez",
+          "quarter": "Luisenstadt",
+          "suburb": "Kreuzberg",
+          "borough": "Friedrichshain-Kreuzberg",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10969",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "König Galerie",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-westberlin-20261125.webp",
+        "alt": "Pale blue counter and sunlit window at westberlin",
+        "sourcePage": "https://www.westberlin-bar-shop.de/index.html",
+        "sourceImage": "https://cdn.prod.website-files.com/66caf0f7dde493cf811fbeb2/66cb4a471238deea1b6e0847_wb3.jpg",
+        "credit": "westberlin official website / Instagram",
+        "bytes": 134808,
+        "dimensions": [
+          1120,
+          1400
+        ],
+        "sha256": "adb59b4001a726b229ac902c51cc765923b8ddbf930031f8d7cca5a361162883"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-acid-mitte",
+      "name": "ACID · Mitte",
+      "address": "Rosenthaler Straße 9, 10119 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.acidcafe.es/en/stores",
+      "coordinates": {
+        "latitude": 52.5279759,
+        "longitude": 13.4025418
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "shop": "Acid Mitte",
+          "house_number": "9",
+          "road": "Rosenthaler Straße",
+          "quarter": "Rosenthaler Vorstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10119",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "Acid Mitte",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-acid-mitte-20261125.webp",
+        "alt": "Pastry display and orange shelving inside ACID Mitte",
+        "sourcePage": "https://www.acidcafe.es/en/stores",
+        "sourceImage": "https://www.acidcafe.es/images/stores/berlin/berlin-mitte.webp",
+        "credit": "ACID · Mitte official website / Instagram",
+        "bytes": 115452,
+        "dimensions": [
+          1050,
+          1400
+        ],
+        "sha256": "44b9c108c41f759b086ec4718bcce3fb2bb9044b0d9dafedd22a1c08174c4873"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-acid-prenzlauer-berg",
+      "name": "ACID · Prenzlauer Berg",
+      "address": "Christinenstraße 19A, 10119 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.acidcafe.es/en/stores",
+      "coordinates": {
+        "latitude": 52.5322749,
+        "longitude": 13.4101693
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "house_number": "19a",
+          "road": "Christinenstraße",
+          "quarter": "Kollwitzkiez",
+          "suburb": "Prenzlauer Berg",
+          "borough": "Pankow",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10119",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-acid-prenzlauer-berg-20261125.webp",
+        "alt": "Oak coffee counter and pendant lights at ACID Prenzlauer Berg",
+        "sourcePage": "https://www.acidcafe.es/en/stores",
+        "sourceImage": "https://www.acidcafe.es/images/stores/berlin/berlin-pberg.webp",
+        "credit": "ACID · Prenzlauer Berg official website / Instagram",
+        "bytes": 108558,
+        "dimensions": [
+          934,
+          1400
+        ],
+        "sha256": "8cdd2eca084cb2695ea84c17518f28a397b3e8c664bbb737f76234d41b726971"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-gorki-apartments",
+      "name": "Gorki Apartments",
+      "address": "Weinbergsweg 25, 10119 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.gorkiapartments.com/en/faq",
+      "coordinates": {
+        "latitude": 52.5306082,
+        "longitude": 13.4017311
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "house_number": "25",
+          "road": "Weinbergsweg",
+          "quarter": "Rosenthaler Vorstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10119",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-gorki-apartments-20261125.webp",
+        "alt": "Gorki Apartments’ entrance on Weinbergsweg",
+        "sourcePage": "https://www.gorkiapartments.com/en/faq",
+        "sourceImage": "https://cdn1.site-media.eu/images/1920/11962846/GorkiApartmentsExterior001.jpg",
+        "credit": "Gorki Apartments official website / Instagram",
+        "bytes": 152622,
+        "dimensions": [
+          934,
+          1400
+        ],
+        "sha256": "d43a3c7dd054f14e1e51140f83880a3d2127246345c7385210f4eaa267327b04"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-the-frame-cafe-garden",
+      "name": "The Frame Café & Garden",
+      "address": "Waldemarstraße 17, 10179 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://www.theframe-studio.de/studio-berlin",
+      "coordinates": {
+        "latitude": 52.5044415,
+        "longitude": 13.4166273
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "house_number": "17",
+          "road": "Waldemarstraße",
+          "quarter": "Reichenberger kiez",
+          "suburb": "Mitte",
+          "borough": "Friedrichshain-Kreuzberg",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10179",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-the-frame-cafe-garden-20261125.webp",
+        "alt": "Garden seating beneath a tree at The Frame in Berlin",
+        "sourcePage": "https://www.theframe-studio.de/studio-berlin",
+        "sourceImage": "https://static.wixstatic.com/media/833574_97c0719ae26341238039d556d972c94c~mv2.jpg",
+        "credit": "The Frame Café & Garden official website / Instagram",
+        "bytes": 204972,
+        "dimensions": [
+          900,
+          1200
+        ],
+        "sha256": "b36523599b56e309c898bd921f0d9939ba5dd5d284f30cf53f50ca6d5c3c9e8c"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    },
+    {
+      "id": "berlin-25hours-bikini-berlin",
+      "name": "25hours Hotel Bikini Berlin",
+      "address": "Budapester Straße 40, 10787 Berlin",
+      "verificationDate": "2026-11-25",
+      "venueSource": "https://25hours-hotels.com/berlin/bikini-berlin/faq/",
+      "coordinates": {
+        "latitude": 52.5056319,
+        "longitude": 13.3378992
+      },
+      "coordinateEvidence": {
+        "provider": "OpenStreetMap Nominatim",
+        "address": {
+          "tourism": "25hours Hotel Bikini Berlin",
+          "house_number": "40",
+          "road": "Budapester Straße",
+          "neighbourhood": "City West",
+          "suburb": "Charlottenburg",
+          "borough": "Charlottenburg-Wilmersdorf",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10787",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "matchedName": "25hours Hotel Bikini Berlin",
+        "verification": "Street, house number, postcode and Berlin neighbourhood matched; business identity checked against venue source"
+      },
+      "photo": {
+        "file": "assets/places/berlin-25hours-bikini-berlin-20261125.webp",
+        "alt": "Colourful guest room and hammock at 25hours Hotel Bikini Berlin",
+        "sourcePage": "https://25hours-hotels.com/berlin/bikini-berlin/",
+        "sourceImage": "https://25hours-hotels.com/wp-content/uploads/sites/39/2024/08/25h_bikiniberlin_hotelpage_header_1.jpg",
+        "credit": "25hours Hotel Bikini Berlin official website / Instagram",
+        "bytes": 109060,
+        "dimensions": [
+          1400,
+          788
+        ],
+        "sha256": "fb219ef43f8743a5d53d528e9259a37522d11395b0c55802e58b609dfcc4a318"
+      },
+      "dogAmenities": "Only explicit confirmations are marked; unspecified amenities remain unconfirmed. Coco visit not claimed."
+    }
+  ]
+}

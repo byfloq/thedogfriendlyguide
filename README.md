@@ -88,3 +88,20 @@ reference; it is not part of publication. Do not run it to approve new places.
 Local QA: copy this repository into a separate preview directory, then run the
 alignment and check scripts with that directory as their argument. Never run
 alignment against the source checkout: it deliberately refuses that operation.
+
+## Berlin additions — 25 November 2026
+
+Added 17 physical-location entries from the requested Berlin selection, including
+separate active branches of Studio Natura, Lucy’s and ACID. Zacharias Tagesbar
+is distinct from the existing Kaffeebar. The duplicate 25hours link produces one
+hotel entry. Studio Natura’s announced Alte Schönhauser branch is not published
+while it remains marked coming soon.
+
+The shared catalogue supplies the app, website and map. Existing place IDs,
+records, park selection and other cities are preserved. Each new location has
+an address-matched OpenStreetMap pin and one visually reviewed, locally hosted
+WebP photograph. No additional images are added to imply a larger gallery.
+Photo subjects, original source pages, credits and coordinate evidence are in
+`berlin-additions-2026-11-25.json`. The catalogue’s optional `imageAlt` provides
+descriptive alternative text in generated city cards. Specific dog amenities
+are marked only where confirmed; no visit by Coco is implied.

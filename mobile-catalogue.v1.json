@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "munich-20261123-seven-places",
-  "generatedAt": "2026-11-23T00:03:52.712759+00:00",
+  "revision": "berlin-20261125-additions",
+  "generatedAt": "2026-11-25T11:57:31.678699+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -1214,6 +1214,533 @@
       "source": "website",
       "attributes": {
         "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-calli-the-coffee-club",
+      "name": "Calli. the coffee club",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Drink",
+      "shortDescription": "Café · Mitte",
+      "editorial": "A welcoming Mitte coffee stop pairing specialty espresso and matcha with freshly made New York-style bagels, just a short walk from the Spree.",
+      "address": "Littenstraße 106, 10179 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-calli-the-coffee-club-20261125.webp",
+      "imageAlt": "Calli’s window with its coffee-club sign and painted details",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-calli-the-coffee-club-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Calli.%20the%20coffee%20club%20Littenstra%C3%9Fe%20106%2C%2010179%20Berlin",
+      "websiteUrl": "https://www.instagram.com/calli.thecoffeeclub/",
+      "coordinates": {
+        "latitude": 52.5161761,
+        "longitude": 13.4146146
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-kissabo",
+      "name": "Kissabō",
+      "city": "berlin",
+      "area": "Prenzlauer Berg",
+      "category": "Drink",
+      "shortDescription": "Café · Prenzlauer Berg",
+      "editorial": "A small Japanese tea room with an oak counter, handmade ceramics and seasonal sweets. Settle in for matcha, gyokuro or a slowly steeped pot of tea.",
+      "address": "Kopenhagener Straße 16, 10437 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-kissabo-20261125.webp",
+      "imageAlt": "Wooden tea counter and stools inside Kissabō",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-kissabo-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kissab%C5%8D%20Kopenhagener%20Stra%C3%9Fe%2016%2C%2010437%20Berlin",
+      "websiteUrl": "https://kissabo.com/",
+      "coordinates": {
+        "latitude": 52.5491878,
+        "longitude": 13.4082136
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-studio-natura-mitte",
+      "name": "Studio Natura · Mitte",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Eat",
+      "shortDescription": "Breakfast & lunch · Mitte",
+      "editorial": "Studio Natura’s original Ackerstraße address brings together made-to-order bowls, sandwiches and specialty coffee in a thoughtfully designed neighbourhood space.",
+      "address": "Ackerstraße 165, 10115 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-studio-natura-mitte-20261125.webp",
+      "imageAlt": "Tables beside the windows at Studio Natura Mitte",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-studio-natura-mitte-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Studio%20Natura%20%C2%B7%20Mitte%20Ackerstra%C3%9Fe%20165%2C%2010115%20Berlin",
+      "websiteUrl": "https://studionatura.de/our-locations/",
+      "coordinates": {
+        "latitude": 52.5301828,
+        "longitude": 13.3969589
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-studio-natura-gendarmenmarkt",
+      "name": "Studio Natura · Gendarmenmarkt",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Eat",
+      "shortDescription": "Breakfast & lunch · Mitte",
+      "editorial": "A light-filled stop by Gendarmenmarkt for colourful breakfast bowls, freshly prepared sandwiches and good coffee, with the square’s architecture close by.",
+      "address": "Anton-Wilhelm-Amo-Straße 50, 10117 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-studio-natura-gendarmenmarkt-20261125.webp",
+      "imageAlt": "Light-filled seating at Studio Natura Gendarmenmarkt",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-studio-natura-gendarmenmarkt-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Studio%20Natura%20%C2%B7%20Gendarmenmarkt%20Anton-Wilhelm-Amo-Stra%C3%9Fe%2050%2C%2010117%20Berlin",
+      "websiteUrl": "https://studionatura.de/our-locations/",
+      "coordinates": {
+        "latitude": 52.5123998,
+        "longitude": 13.3908216
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-studio-natura-west",
+      "name": "Studio Natura · West",
+      "city": "berlin",
+      "area": "Charlottenburg",
+      "category": "Eat",
+      "shortDescription": "Breakfast & lunch · Charlottenburg",
+      "editorial": "Studio Natura’s Charlottenburg studio serves its fresh bowls, sandwiches and coffee on Schlüterstraße, making an easy pause while exploring the neighbourhood.",
+      "address": "Schlüterstraße 37, 10629 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-studio-natura-west-20261125.webp",
+      "imageAlt": "Coffee counter and stools at Studio Natura West",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-studio-natura-west-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Studio%20Natura%20%C2%B7%20West%20Schl%C3%BCterstra%C3%9Fe%2037%2C%2010629%20Berlin",
+      "websiteUrl": "https://studionatura.de/our-locations/",
+      "coordinates": {
+        "latitude": 52.5022872,
+        "longitude": 13.3167049
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-cafe-tiergarten",
+      "name": "Café Tiergarten",
+      "city": "berlin",
+      "area": "Hansaviertel",
+      "category": "Drink",
+      "shortDescription": "Café · Hansaviertel",
+      "editorial": "A restored café in Hansaviertel’s landmark Schwedenhaus, with thoughtful 1950s design, seasonal food, house-made cakes and coffee close to the Tiergarten’s leafy paths. Dogs are welcome.",
+      "address": "Altonaer Straße 3, 10557 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-cafe-tiergarten-20261125.webp",
+      "imageAlt": "Yellow ceiling and wooden seating inside Café Tiergarten",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-cafe-tiergarten-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Tiergarten%20Altonaer%20Stra%C3%9Fe%203%2C%2010557%20Berlin",
+      "websiteUrl": "https://cafetiergarten.berlin/",
+      "coordinates": {
+        "latitude": 52.516817,
+        "longitude": 13.3439562
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-zacharias-tagesbar",
+      "name": "Zacharias Tagesbar",
+      "city": "berlin",
+      "area": "Prenzlauer Berg",
+      "category": "Drink",
+      "shortDescription": "Café · Prenzlauer Berg",
+      "editorial": "An Italian-spirited Tagesbar near Mauerpark, moving from specialty coffee and all-day breakfast to wine and aperitivo. Dogs are welcome, with water bowls available.",
+      "address": "Oderberger Straße 7, 10435 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-zacharias-tagesbar-20261125.webp",
+      "imageAlt": "Coffee and a croissant on the terrace at Zacharias Tagesbar",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-zacharias-tagesbar-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zacharias%20Tagesbar%20Oderberger%20Stra%C3%9Fe%207%2C%2010435%20Berlin",
+      "websiteUrl": "https://www.zacharias-berlin.com/tagesbar",
+      "coordinates": {
+        "latitude": 52.5386321,
+        "longitude": 13.4100465
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": true,
+        "water": true,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-kolo-coffee",
+      "name": "Kolo Coffee",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Drink",
+      "shortDescription": "Café · Mitte",
+      "editorial": "A compact specialty-coffee address on Brunnenstraße, known for its orange accents and carefully selected beans. Come for espresso, filter coffee and a conversation about what is brewing.",
+      "address": "Brunnenstraße 158, 10115 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-kolo-coffee-20261125.webp",
+      "imageAlt": "Visitors gathered around Kolo Coffee’s counter",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-kolo-coffee-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kolo%20Coffee%20Brunnenstra%C3%9Fe%20158%2C%2010115%20Berlin",
+      "websiteUrl": "https://www.instagram.com/kolo.coffeeshop/",
+      "coordinates": {
+        "latitude": 52.5352483,
+        "longitude": 13.3976274
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-bullys-bakery",
+      "name": "Bully’s Bakery",
+      "city": "berlin",
+      "area": "Neukölln",
+      "category": "Drink",
+      "shortDescription": "Café · Neukölln",
+      "editorial": "A relaxed Neukölln neighbourhood café on Friedelstraße, with coffee, cakes and savoury breakfast plates. A cosy pause between canal walks and exploring the surrounding streets.",
+      "address": "Friedelstraße 7, 12047 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-bullys-bakery-20261125.webp",
+      "imageAlt": "Chocolate cake with a thick layer of cream at Bully’s Bakery",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-bullys-bakery-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bully%E2%80%99s%20Bakery%20Friedelstra%C3%9Fe%207%2C%2012047%20Berlin",
+      "websiteUrl": "https://www.instagram.com/bullysbakery/",
+      "coordinates": {
+        "latitude": 52.4882335,
+        "longitude": 13.4281088
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-lucys-torstrasse",
+      "name": "Lucy’s The Deli · Torstraße",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Eat",
+      "shortDescription": "Breakfast & lunch · Mitte",
+      "editorial": "Lucy’s larger deli offers all-day breakfast, colourful bowls and nourishing lunch plates, alongside specialty coffee and matcha. There is a quiet garden behind the lively Torstraße frontage.",
+      "address": "Torstraße 116, 10119 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-lucys-torstrasse-20261125.webp",
+      "imageAlt": "A wooden table and soft pink details at Lucy’s Torstraße",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-lucys-torstrasse-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucy%E2%80%99s%20The%20Deli%20%C2%B7%20Torstra%C3%9Fe%20Torstra%C3%9Fe%20116%2C%2010119%20Berlin",
+      "websiteUrl": "https://www.lucys.berlin/location-torstrase/",
+      "coordinates": {
+        "latitude": 52.5295508,
+        "longitude": 13.4023026
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": true,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-lucys-brunnenstrasse",
+      "name": "Lucy’s The Deli · Brunnenstraße",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Eat",
+      "shortDescription": "Breakfast & lunch · Mitte",
+      "editorial": "The original Lucy’s deli is a small neighbourhood stop for breakfast bowls, avocado on sourdough, smoothies and satisfying lunch dishes made with a focus on natural ingredients.",
+      "address": "Brunnenstraße 24, 10119 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-lucys-brunnenstrasse-20261125.webp",
+      "imageAlt": "Pink coffee counter and pastry display at Lucy’s Brunnenstraße",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-lucys-brunnenstrasse-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucy%E2%80%99s%20The%20Deli%20%C2%B7%20Brunnenstra%C3%9Fe%20Brunnenstra%C3%9Fe%2024%2C%2010119%20Berlin",
+      "websiteUrl": "https://www.lucys.berlin/location-brunnenstrase/",
+      "coordinates": {
+        "latitude": 52.5334592,
+        "longitude": 13.3988575
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-westberlin",
+      "name": "westberlin",
+      "city": "berlin",
+      "area": "Kreuzberg",
+      "category": "Drink",
+      "shortDescription": "Café · Kreuzberg",
+      "editorial": "Specialty coffee, books and magazines in the striking St. Agnes complex. Find a seat inside or pause in the leafy courtyard after a wander through Kreuzberg.",
+      "address": "Alexandrinenstraße 118, 10969 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-westberlin-20261125.webp",
+      "imageAlt": "Pale blue counter and sunlit window at westberlin",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-westberlin-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=westberlin%20Alexandrinenstra%C3%9Fe%20118%2C%2010969%20Berlin",
+      "websiteUrl": "https://www.westberlin-bar-shop.de/index.html",
+      "coordinates": {
+        "latitude": 52.5007422,
+        "longitude": 13.4009105
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": true,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-acid-mitte",
+      "name": "ACID · Mitte",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Drink",
+      "shortDescription": "Café · Mitte",
+      "editorial": "ACID’s first Berlin café brings specialty coffee and its bakery sensibility to Rosenthaler Straße, with warm earth tones, textured surfaces and a calm place to pause.",
+      "address": "Rosenthaler Straße 9, 10119 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-acid-mitte-20261125.webp",
+      "imageAlt": "Pastry display and orange shelving inside ACID Mitte",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-acid-mitte-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ACID%20%C2%B7%20Mitte%20Rosenthaler%20Stra%C3%9Fe%209%2C%2010119%20Berlin",
+      "websiteUrl": "https://www.acidcafe.es/en/stores",
+      "coordinates": {
+        "latitude": 52.5279759,
+        "longitude": 13.4025418
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-acid-prenzlauer-berg",
+      "name": "ACID · Prenzlauer Berg",
+      "city": "berlin",
+      "area": "Prenzlauer Berg",
+      "category": "Drink",
+      "shortDescription": "Café · Prenzlauer Berg",
+      "editorial": "Opposite the Tchoban Foundation, ACID’s second Berlin café pairs coffee and baked treats with a quiet, carefully designed space for an unhurried neighbourhood break.",
+      "address": "Christinenstraße 19A, 10119 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-acid-prenzlauer-berg-20261125.webp",
+      "imageAlt": "Oak coffee counter and pendant lights at ACID Prenzlauer Berg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-acid-prenzlauer-berg-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ACID%20%C2%B7%20Prenzlauer%20Berg%20Christinenstra%C3%9Fe%2019A%2C%2010119%20Berlin",
+      "websiteUrl": "https://www.acidcafe.es/en/stores",
+      "coordinates": {
+        "latitude": 52.5322749,
+        "longitude": 13.4101693
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-gorki-apartments",
+      "name": "Gorki Apartments",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Stay",
+      "shortDescription": "Stay · Mitte",
+      "editorial": "Individually styled apartments in a historic Mitte building, with the privacy of a home and the comforts of a boutique hotel. Dogs are welcome by advance arrangement; check the current pet fee when booking.",
+      "address": "Weinbergsweg 25, 10119 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-gorki-apartments-20261125.webp",
+      "imageAlt": "Gorki Apartments’ entrance on Weinbergsweg",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-gorki-apartments-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gorki%20Apartments%20Weinbergsweg%2025%2C%2010119%20Berlin",
+      "websiteUrl": "https://www.gorkiapartments.com/en",
+      "coordinates": {
+        "latitude": 52.5306082,
+        "longitude": 13.4017311
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": true,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-the-frame-cafe-garden",
+      "name": "The Frame Café & Garden",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Drink",
+      "shortDescription": "Café · Mitte",
+      "editorial": "A café and garden alongside The Frame’s Berlin reformer studio, with coffee, matcha and a peaceful outdoor space. Check with the café about indoor dog access before visiting.",
+      "address": "Waldemarstraße 17, 10179 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-the-frame-cafe-garden-20261125.webp",
+      "imageAlt": "Garden seating beneath a tree at The Frame in Berlin",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-the-frame-cafe-garden-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Frame%20Caf%C3%A9%20%26%20Garden%20Waldemarstra%C3%9Fe%2017%2C%2010179%20Berlin",
+      "websiteUrl": "https://www.theframe-studio.de/studio-berlin",
+      "coordinates": {
+        "latitude": 52.5044415,
+        "longitude": 13.4166273
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": true,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-25hours-bikini-berlin",
+      "name": "25hours Hotel Bikini Berlin",
+      "city": "berlin",
+      "area": "Charlottenburg",
+      "category": "Stay",
+      "shortDescription": "Stay · Charlottenburg",
+      "editorial": "A playful, design-led hotel beside the zoo and Bikini Berlin, with urban and jungle-inspired rooms. Dogs are welcome; add the dog package when booking and confirm the hotel’s current charges.",
+      "address": "Budapester Straße 40, 10787 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-25hours-bikini-berlin-20261125.webp",
+      "imageAlt": "Colourful guest room and hammock at 25hours Hotel Bikini Berlin",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-25hours-bikini-berlin-20261125.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=25hours%20Hotel%20Bikini%20Berlin%20Budapester%20Stra%C3%9Fe%2040%2C%2010787%20Berlin",
+      "websiteUrl": "https://25hours-hotels.com/berlin/bikini-berlin/",
+      "coordinates": {
+        "latitude": 52.5056319,
+        "longitude": 13.3378992
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
         "dogsOutside": false,
         "terrace": false,
         "water": false,
