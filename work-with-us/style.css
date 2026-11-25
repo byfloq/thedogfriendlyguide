@@ -71,3 +71,21 @@ dd { margin: .2rem 0 0; color: var(--muted); }
   .example:first-child, .example + .example { padding-inline: 0; }
   .example + .example { border-left: 0; border-top: 1px solid var(--rule); }
 }
+
+.films { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2rem); max-width: 48rem; margin: 0 auto clamp(2.5rem, 6vw, 5rem); }
+.film, .photo-grid figure { min-width: 0; margin: 0; }
+.film video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: contain; background: #24211d; }
+.film video:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+.film figcaption { display: grid; gap: .35rem; padding-block: .85rem; border-bottom: 1px solid var(--rule); }
+.film h3 { font-size: clamp(1.9rem, 4vw, 3.15rem); }
+.film figcaption p, .photo-grid figcaption { margin: 0; color: var(--muted); font-size: .94rem; }
+.photo-edit { border-top: 1px solid var(--rule); padding-block: clamp(2.75rem, 6vw, 5rem); }
+.photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.75rem, 2.2vw, 1.75rem); }
+.photo-grid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.photo-grid figcaption { padding-top: .45rem; }
+@media (max-width: 34rem) {
+  .films { grid-template-columns: minmax(0, 1fr); max-width: 23rem; gap: 1.65rem; }
+  .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .photo-grid figure:last-child { grid-column: 1 / -1; }
+  .photo-grid figure:last-child img { aspect-ratio: 5 / 4; }
+}
