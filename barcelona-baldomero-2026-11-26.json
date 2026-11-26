@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-26",
+  "placeId": "barcelona-baldomero",
+  "requestedInstagram": "https://www.instagram.com/baldomerobcn/",
+  "venueSources": [
+    "https://casabaldomero.com/",
+    "https://casabaldomero.com/contacto/"
+  ],
+  "address": "Passatge de Mercader, 16, 08008 Barcelona",
+  "coordinateEvidence": {
+    "provider": "OpenStreetMap Nominatim",
+    "osmId": 12020131836,
+    "query": "Passatge de Mercader 16, 08008 Barcelona",
+    "matchedAddress": {
+      "house_number": "16",
+      "road": "Passatge de Mercader",
+      "quarter": "la Dreta de l'Eixample",
+      "suburb": "l'Eixample",
+      "city": "Barcelona",
+      "county": "Barcelonès",
+      "province": "Barcelona",
+      "ISO3166-2-lvl6": "ES-B",
+      "state": "Catalunya",
+      "ISO3166-2-lvl4": "ES-CT",
+      "postcode": "08008",
+      "country": "España",
+      "country_code": "es"
+    },
+    "coordinates": {
+      "latitude": 41.3924178,
+      "longitude": 2.1598951
+    },
+    "verification": "House number, street, postcode and city match the official venue contact page."
+  },
+  "photo": {
+    "sourcePage": "https://casabaldomero.com/",
+    "sourceImage": "https://casabaldomero.com/wp-content/uploads/2025/08/mesa-comunal-cafeteria-luz-calida-preparada.webp",
+    "sourceAlt": "Mesa comunal de madera en cafetería iluminada con luz cálida, preparada con vasos, cubiertos y servilletas.",
+    "bytes": 12900,
+    "sha256": "6d5ad484ba1f09a97d40fe6c9c4fa42cfe05545acb63f142a49721615bf85cf1",
+    "width": 451,
+    "height": 628,
+    "credit": "Casa Baldomero official website",
+    "file": "assets/places/barcelona-baldomero-20261126.webp",
+    "imageAlt": "Wooden communal table set with glasses and cutlery inside Baldomero’s warm dining room",
+    "processing": "Original already-optimized official WebP copied byte-for-byte; no generated image or creative alteration."
+  },
+  "dogPolicy": "User requested inclusion. No specific dog-access policy, water provision, size restriction or visit by Coco verified; no such affirmative claims are marked. Visible copy advises confirming indoor dog access.",
+  "publication": "Shared catalogue for desktop web, mobile web and existing native app; no binary or executable app code changes."
+}

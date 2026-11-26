@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "berlin-20261125-additions",
-  "generatedAt": "2026-11-25T11:57:31.678699+00:00",
+  "revision": "barcelona-baldomero-20261126",
+  "generatedAt": "2026-11-26T12:40:33.890300+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -1013,6 +1013,40 @@
         "dogsInside": false,
         "dogsOutside": false,
         "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "barcelona-baldomero",
+      "name": "Baldomero",
+      "city": "barcelona",
+      "area": "Eixample",
+      "category": "Eat",
+      "shortDescription": "Seasonal cooking & brunch · Eixample",
+      "editorial": "A country-house-inspired restaurant on Passatge de Mercader, with a warm, rustic dining room, a terrace and vegetable-led seasonal cooking. Come for breakfast or lunch during the week, or brunch at weekends. Check with the team about indoor access for dogs before visiting.",
+      "address": "Passatge de Mercader, 16, 08008 Barcelona",
+      "image": "https://thedogfriendlyguide.com/assets/places/barcelona-baldomero-20261126.webp",
+      "imageAlt": "Wooden communal table set with glasses and cutlery inside Baldomero’s warm dining room",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/barcelona-baldomero-20261126.webp"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Baldomero%20Passatge%20de%20Mercader%2016%2008008%20Barcelona",
+      "websiteUrl": "https://casabaldomero.com/",
+      "openingHours": "Mon-Fri 10:00-21:00; Sat-Sun and public holidays 10:00-17:00",
+      "openingHoursSourceUrl": "https://casabaldomero.com/contacto/",
+      "openingHoursCheckedAt": "2026-11-26",
+      "coordinates": {
+        "latitude": 41.3924178,
+        "longitude": 2.1598951
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": true,
         "water": false,
         "cocoWasThere": false
       }
