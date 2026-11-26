@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-26",
+  "scope": "Five missing dog-friendly stays in the shared desktop web, mobile web and app catalogue. Existing Gorki Apartments and 25hours Bikini Berlin retained without duplication.",
+  "places": [
+    {
+      "placeId": "berlin-chateau-royal",
+      "website": "https://www.chateauroyalberlin.com/",
+      "dogPolicySources": [],
+      "dogPolicyEvidence": "Direct dog-welcome confirmation from hotel reviewed 2026-11-26; fees and room conditions must be confirmed when booking.",
+      "coordinates": {
+        "provider": "OpenStreetMap Nominatim",
+        "query": "Neustädtische Kirchstraße 3, 10117 Berlin",
+        "osmId": 11083167663,
+        "matchedAddress": {
+          "amenity": "Château Royale",
+          "house_number": "3",
+          "road": "Neustädtische Kirchstraße",
+          "quarter": "Dorotheenstadt",
+          "suburb": "Mitte",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10117",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "latitude": 52.5177289,
+        "longitude": 13.385895,
+        "verification": "Street, house number, postcode and city match the official address (first house number for a range)."
+      },
+      "photo": {
+        "url": "https://www.chateauroyalberlin.com/media/pages/home/modules/lead-image/487133c378-1695654424/2022-09-chateau-royal-interior-3066-800x450-crop-50-50.jpg",
+        "bytes": 50244,
+        "sha256": "8f31a89b95ed4daa03be39752d750c23bd7838ed41d7ef18ebfec66aa48939ad",
+        "contentType": "image/jpeg",
+        "file": "assets/places/berlin-chateau-royal-20261126.jpg",
+        "imageAlt": "Guest room at Château Royal with a blue wall, framed artwork and double bed",
+        "sourcePage": "https://www.chateauroyalberlin.com/",
+        "processing": "Official website image copied byte-for-byte; no generated photo or creative alteration."
+      }
+    },
+    {
+      "placeId": "berlin-michelberger-hotel",
+      "website": "https://www.michelbergerhotel.com/en/",
+      "dogPolicySources": [
+        "https://help.michelbergerhotel.com/hc/de-de/articles/37387104756626-Ist-das-Hotel-haustierfreundlich"
+      ],
+      "dogPolicyEvidence": "Official hotel policy checked 2026-11-26.",
+      "coordinates": {
+        "provider": "OpenStreetMap Nominatim",
+        "query": "Warschauer Straße 39, 10243 Berlin",
+        "osmId": 2830768819,
+        "matchedAddress": {
+          "house_number": "39",
+          "road": "Warschauer Straße",
+          "quarter": "Mediaspree",
+          "suburb": "Friedrichshain",
+          "borough": "Friedrichshain-Kreuzberg",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10243",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "latitude": 52.5047048,
+        "longitude": 13.4480422,
+        "verification": "Street, house number, postcode and city match the official address (first house number for a range)."
+      },
+      "photo": {
+        "url": "https://www.datocms-assets.com/5494/1761640487-cosy-room-michelberger-hotel-berlin-friedrichshain-bed.jpg?auto=format&w=768",
+        "bytes": 54167,
+        "sha256": "134e5d7d8abdbf9a5fd7deaf2f25e9e6914da02cef60da6e1db6656956f9a5c3",
+        "contentType": "image/jpeg",
+        "file": "assets/places/berlin-michelberger-hotel-20261126.jpg",
+        "imageAlt": "Official Michelberger Hotel photograph of a guest reading on a bed in a Cosy room",
+        "sourcePage": "https://www.michelbergerhotel.com/en/rooms/",
+        "processing": "Official website image copied byte-for-byte; no generated photo or creative alteration."
+      }
+    },
+    {
+      "placeId": "berlin-grand-hyatt-berlin",
+      "website": "https://www.hyatt.com/grand-hyatt/en-US/bergh-grand-hyatt-berlin",
+      "dogPolicySources": [
+        "https://www.hyatt.com/grand-hyatt/en-US/bergh-grand-hyatt-berlin"
+      ],
+      "dogPolicyEvidence": "Official hotel policy checked 2026-11-26.",
+      "coordinates": {
+        "provider": "OpenStreetMap Nominatim",
+        "query": "Marlene-Dietrich-Platz 2, 10785 Berlin",
+        "osmId": 3957483632,
+        "matchedAddress": {
+          "amenity": "Vox im Grand Hyatt",
+          "house_number": "2",
+          "road": "Marlene-Dietrich-Platz",
+          "suburb": "Tiergarten",
+          "borough": "Mitte",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10785",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "latitude": 52.5080655,
+        "longitude": 13.3729827,
+        "verification": "Street, house number, postcode and city match the official address (first house number for a range)."
+      },
+      "photo": {
+        "url": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2025/09/04/0658/BERGH-P2124-Standard-Room-King-Bedroom.jpg/BERGH-P2124-Standard-Room-King-Bedroom.16x9.jpg?imwidth=960",
+        "bytes": 71562,
+        "sha256": "807652ceb3b137b37756174838af428360fa62e724d823b1b0329c0469e4e918",
+        "contentType": "image/jpeg",
+        "file": "assets/places/berlin-grand-hyatt-berlin-20261126.jpg",
+        "imageAlt": "King bedroom with large windows at Grand Hyatt Berlin",
+        "sourcePage": "https://www.hyatt.com/grand-hyatt/en-US/bergh-grand-hyatt-berlin",
+        "processing": "Official website image copied byte-for-byte; no generated photo or creative alteration."
+      }
+    },
+    {
+      "placeId": "berlin-locke-east-side-gallery",
+      "website": "https://www.lockeliving.com/en/berlin/locke-at-east-side-gallery",
+      "dogPolicySources": [
+        "https://www.lockeliving.com/en/berlin/locke-at-east-side-gallery"
+      ],
+      "dogPolicyEvidence": "Official hotel policy checked 2026-11-26.",
+      "coordinates": {
+        "provider": "OpenStreetMap Nominatim",
+        "query": "Mühlenstraße 61, 10243 Berlin",
+        "osmId": 11949873069,
+        "matchedAddress": {
+          "amenity": "Anima",
+          "house_number": "61",
+          "road": "Mühlenstraße",
+          "quarter": "Mediaspree",
+          "suburb": "Friedrichshain",
+          "borough": "Friedrichshain-Kreuzberg",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10243",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "latitude": 52.5053691,
+        "longitude": 13.4386108,
+        "verification": "Street, house number, postcode and city match the official address (first house number for a range)."
+      },
+      "photo": {
+        "url": "https://www.lockeliving.com/media/images/property/east%20side%20gallery/living/apartment_images/penthouse_suite/apartment/1_lk_esg_1bed_highres_jpeg_130823-(4).jpg?width=800&height=450&mode=crop&format=jpeg&quality=70",
+        "bytes": 42556,
+        "sha256": "ad2f5f888923cfa57981d38dbe59bc180bd2fb54a2bd604e2f9e6ec40799b78a",
+        "contentType": "image/jpeg",
+        "file": "assets/places/berlin-locke-east-side-gallery-20261126.jpg",
+        "imageAlt": "Light-filled apartment lounge and balcony at Locke at East Side Gallery",
+        "sourcePage": "https://www.lockeliving.com/en/berlin/locke-at-east-side-gallery",
+        "processing": "Official website image copied byte-for-byte; no generated photo or creative alteration."
+      }
+    },
+    {
+      "placeId": "berlin-sly-berlin",
+      "website": "https://www.sly-berlin.com/en/",
+      "dogPolicySources": [
+        "https://www.sly-berlin.com/en/faqs"
+      ],
+      "dogPolicyEvidence": "Official hotel policy checked 2026-11-26.",
+      "coordinates": {
+        "provider": "OpenStreetMap Nominatim",
+        "query": "Petersburger Straße 16, 10249 Berlin",
+        "osmId": 2844490311,
+        "matchedAddress": {
+          "tourism": "sly Berlin",
+          "house_number": "16",
+          "road": "Petersburger Straße",
+          "quarter": "Richard-Sorge-Viertel",
+          "suburb": "Friedrichshain",
+          "borough": "Friedrichshain-Kreuzberg",
+          "city": "Berlin",
+          "ISO3166-2-lvl4": "DE-BE",
+          "postcode": "10249",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "latitude": 52.5249401,
+        "longitude": 13.448131,
+        "verification": "Street, house number, postcode and city match the official address (first house number for a range)."
+      },
+      "photo": {
+        "url": "https://www.east-hamburg.de//assets/SlyBerlin2022roomM9458_28105dc6a535225866d9aa1b.jpg",
+        "bytes": 101015,
+        "sha256": "1ba0652591a38b1fa385b1caac58f1e8e167dabc8a7d0a6e9d39c9b159434fab",
+        "contentType": "image/jpeg; charset=binary",
+        "file": "assets/places/berlin-sly-berlin-20261126.jpg",
+        "imageAlt": "Guest room at sly Berlin with a grey bed, black table and ochre chair",
+        "sourcePage": "https://www.sly-berlin.com/en/",
+        "processing": "Official website image copied byte-for-byte; no generated photo or creative alteration."
+      }
+    }
+  ]
+}

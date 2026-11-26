@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "barcelona-baldomero-20261126",
-  "generatedAt": "2026-11-26T12:40:33.890300+00:00",
+  "revision": "berlin-confirmed-hotels-20261126",
+  "generatedAt": "2026-11-26T12:53:43.877695+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -20529,6 +20529,161 @@
       "coordinates": {
         "latitude": 48.1362854,
         "longitude": 11.5548562
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-chateau-royal",
+      "name": "Château Royal",
+      "city": "berlin",
+      "area": "Mitte",
+      "category": "Stay",
+      "shortDescription": "Stay · Mitte",
+      "editorial": "An art-filled boutique hotel in a historic Mitte building, close to Unter den Linden. The hotel has directly confirmed that dogs are welcome. Tell the team about your dog before booking and confirm the current pet fee and room conditions.",
+      "address": "Neustädtische Kirchstraße 3, 10117 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-chateau-royal-20261126.jpg",
+      "imageAlt": "Guest room at Château Royal with a blue wall, framed artwork and double bed",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-chateau-royal-20261126.jpg"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20Royal%20Neust%C3%A4dtische%20Kirchstra%C3%9Fe%203%2C%2010117%20Berlin",
+      "websiteUrl": "https://www.chateauroyalberlin.com/",
+      "coordinates": {
+        "latitude": 52.5177289,
+        "longitude": 13.385895
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-michelberger-hotel",
+      "name": "Michelberger Hotel",
+      "city": "berlin",
+      "area": "Friedrichshain",
+      "category": "Stay",
+      "shortDescription": "Stay · Friedrichshain",
+      "editorial": "An independent hotel on Warschauer Straße with individually designed rooms and a lively café and restaurant. Well-behaved dogs are welcome in public areas, but some room types exclude pets: arrange a dog-friendly room and confirm the pet fee before booking.",
+      "address": "Warschauer Straße 39–40, 10243 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-michelberger-hotel-20261126.jpg",
+      "imageAlt": "Official Michelberger Hotel photograph of a guest reading on a bed in a Cosy room",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-michelberger-hotel-20261126.jpg"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Michelberger%20Hotel%20Warschauer%20Stra%C3%9Fe%2039%E2%80%9340%2C%2010243%20Berlin",
+      "websiteUrl": "https://www.michelbergerhotel.com/en/",
+      "coordinates": {
+        "latitude": 52.5047048,
+        "longitude": 13.4480422
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-grand-hyatt-berlin",
+      "name": "Grand Hyatt Berlin",
+      "city": "berlin",
+      "area": "Tiergarten",
+      "category": "Stay",
+      "shortDescription": "Stay · Tiergarten",
+      "editorial": "A contemporary hotel at Potsdamer Platz, within walking distance of Tiergarten. Dogs are welcome through its Very Important Dog service, with a dog bed, bowls and treats. A nightly pet fee applies; confirm the current charge and access rules when booking.",
+      "address": "Marlene-Dietrich-Platz 2, 10785 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-grand-hyatt-berlin-20261126.jpg",
+      "imageAlt": "King bedroom with large windows at Grand Hyatt Berlin",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-grand-hyatt-berlin-20261126.jpg"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Hyatt%20Berlin%20Marlene-Dietrich-Platz%202%2C%2010785%20Berlin",
+      "websiteUrl": "https://www.hyatt.com/grand-hyatt/en-US/bergh-grand-hyatt-berlin",
+      "coordinates": {
+        "latitude": 52.5080655,
+        "longitude": 13.3729827
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": true,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-locke-east-side-gallery",
+      "name": "Locke at East Side Gallery",
+      "city": "berlin",
+      "area": "Friedrichshain",
+      "category": "Stay",
+      "shortDescription": "Stay · Friedrichshain",
+      "editorial": "Design apartments beside the River Spree and East Side Gallery, with kitchens for a more independent stay. One dog up to 30 kg is welcome per apartment, with a one-off cleaning fee. Add the Dog Companion Charge when booking; the hotel requires a pet waiver and up-to-date vaccinations.",
+      "address": "Mühlenstraße 61–63, 10243 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-locke-east-side-gallery-20261126.jpg",
+      "imageAlt": "Light-filled apartment lounge and balcony at Locke at East Side Gallery",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-locke-east-side-gallery-20261126.jpg"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Locke%20at%20East%20Side%20Gallery%20M%C3%BChlenstra%C3%9Fe%2061%E2%80%9363%2C%2010243%20Berlin",
+      "websiteUrl": "https://www.lockeliving.com/en/berlin/locke-at-east-side-gallery",
+      "coordinates": {
+        "latitude": 52.5053691,
+        "longitude": 13.4386108
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-sly-berlin",
+      "name": "sly Berlin",
+      "city": "berlin",
+      "area": "Friedrichshain",
+      "category": "Stay",
+      "shortDescription": "Stay · Friedrichshain",
+      "editorial": "A design hotel in Friedrichshain with individually planned rooms and a greenhouse restaurant and bar. Dogs are welcome, with a dog bed and treats included in the daily pet charge. Confirm the current fee and any restrictions on shared spaces before booking.",
+      "address": "Petersburger Straße 16, 10249 Berlin",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-sly-berlin-20261126.jpg",
+      "imageAlt": "Guest room at sly Berlin with a grey bed, black table and ochre chair",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-sly-berlin-20261126.jpg"
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=sly%20Berlin%20Petersburger%20Stra%C3%9Fe%2016%2C%2010249%20Berlin",
+      "websiteUrl": "https://www.sly-berlin.com/en/",
+      "coordinates": {
+        "latitude": 52.5249401,
+        "longitude": 13.448131
       },
       "coordinatesVerified": true,
       "distanceKm": 0,
