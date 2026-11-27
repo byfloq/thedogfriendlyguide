@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "preserve-park-catalogue-20261127",
-  "generatedAt": "2026-11-27T07:40:31.993195+00:00",
+  "revision": "berlin-symple-20261127",
+  "generatedAt": "2026-11-27T18:43:42.044604+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -20725,6 +20725,39 @@
         "dogsInside": false,
         "dogsOutside": false,
         "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
+    },
+    {
+      "id": "berlin-symple-coffee-roasters",
+      "name": "Symple Coffee Roasters",
+      "city": "berlin",
+      "area": "Prenzlauer Berg",
+      "category": "Drink",
+      "shortDescription": "Specialty coffee · Prenzlauer Berg",
+      "editorial": "A quiet, minimalist café near Kollwitzplatz, with specialty espresso, rotating filter coffees and a few tables outside. Dogs are welcome; stop by for a coffee before a neighbourhood stroll.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-symple-coffee-roasters-20261127.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-symple-coffee-roasters-20261127.webp"
+      ],
+      "imageAlt": "Cream façade and outdoor coffee tables at Symple Coffee Roasters in Prenzlauer Berg, Berlin",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Symple%20Coffee%20Roasters%20Sredzkistra%C3%9Fe%2045%2010435%20Berlin%20Germany",
+      "websiteUrl": "https://symplecoffeeroasters.com/pages/symple-cafe",
+      "openingHours": "Mon–Fri 08:00–18:00 · Sat–Sun 09:00–18:00",
+      "openingHoursSourceUrl": "https://symplecoffeeroasters.com/pages/symple-cafe",
+      "openingHoursCheckedAt": "2026-11-27",
+      "coordinates": {
+        "latitude": 52.5383781,
+        "longitude": 13.4192581
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": true,
         "water": false,
         "cocoWasThere": false
       }

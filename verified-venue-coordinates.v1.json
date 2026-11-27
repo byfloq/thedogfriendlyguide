@@ -977,5 +977,16 @@
     "precision": "building",
     "sourceUrl": "https://www.openstreetmap.org/node/6123559917",
     "evidence": "65, Carrer de Badajoz, la Plata, el Poblenou, Sant Martí, Barcelona, Barcelonès, Barcelona, Catalunya, 08005, España"
+  },
+  "berlin-symple-coffee-roasters": {
+    "name": "Symple Coffee Roasters",
+    "city": "berlin",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Symple%20Coffee%20Roasters%20Sredzkistra%C3%9Fe%2045%2010435%20Berlin%20Germany",
+    "latitude": 52.5383781,
+    "longitude": 13.4192581,
+    "precision": "venue",
+    "sourceUrl": "https://www.openstreetmap.org/node/11892812624",
+    "checkedAt": "2026-11-27",
+    "evidence": "Named Symple café node at Sredzkistraße45,10435Berlin; website and hours match the official café page."
   }
 }

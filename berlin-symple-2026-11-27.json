@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-27",
+  "placeId": "berlin-symple-coffee-roasters",
+  "requestedInstagram": "https://www.instagram.com/symplecoffeeroasters/",
+  "officialCafe": "https://symplecoffeeroasters.com/pages/symple-cafe",
+  "address": "Sredzkistraße45,10435Berlin",
+  "hours": "Mon–Fri 08:00–18:00 · Sat–Sun 09:00–18:00",
+  "hoursSource": "https://symplecoffeeroasters.com/pages/symple-cafe",
+  "dogPolicy": {
+    "source": "https://europeancoffeetrip.com/cafe/symple-berlin/",
+    "evidence": "Verified merchant café profile lists DogFriendly and OutdoorSeating. Generic dog-friendly copy and terrace are supported; no indoor/outdoor-specific dog-access flags, water or Coco visit are asserted."
+  },
+  "coordinates": {
+    "name": "Symple Coffee Roasters",
+    "city": "berlin",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Symple%20Coffee%20Roasters%20Sredzkistra%C3%9Fe%2045%2010435%20Berlin%20Germany",
+    "latitude": 52.5383781,
+    "longitude": 13.4192581,
+    "precision": "venue",
+    "sourceUrl": "https://www.openstreetmap.org/node/11892812624",
+    "checkedAt": "2026-11-27",
+    "evidence": "Named Symple café node at Sredzkistraße45,10435Berlin; website and hours match the official café page."
+  },
+  "photo": {
+    "sourcePage": "https://symplecoffeeroasters.com/pages/symple-cafe",
+    "sourceUrl": "https://symplecoffeeroasters.com/cdn/shop/files/e55289d4-a5d3-4fac-babd-3f84b37d9dd2.jpg?v=1740654458&width=1200",
+    "credit": "Symple Coffee Roasters official café photography",
+    "sourceSha256": "c1a279cb13e52ca60c85bedac671dd40a8a3332792c81ea5954ba12c6b20cc70",
+    "asset": "assets/places/berlin-symple-coffee-roasters-20261127.webp",
+    "width": 844,
+    "height": 1500,
+    "bytes": 249518,
+    "sha256": "07818f03b488af64b9b92ed91f8d2d6c55851d17e800f051a904fb7f6497b946",
+    "processing": "Optimized WebP and exact-URL offline JPEG; no generated imagery.",
+    "nativeCover": "assets/home/covers/2a0bb4216a310399.jpg"
+  },
+  "scope": "One verified public café in Prenzlauer Berg, not the production roastery or other locations. Shared live catalogue and pending offline app snapshot; frozen71 unchanged."
+}
