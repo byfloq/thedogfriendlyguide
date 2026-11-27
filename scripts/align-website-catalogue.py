@@ -9,17 +9,26 @@ from importlib.machinery import SourceFileLoader
 ROOT = Path(__file__).resolve().parents[1]
 validate = SourceFileLoader('shared_catalogue', str(ROOT / 'scripts/build-mobile-catalogue.py')).load_module().validate
 BASE = 'https://thedogfriendlyguide.com/'
+PARK_PHOTOS = json.loads((ROOT/'park-area-photos.v1.json').read_text())['photos']
 CATEGORIES = {'Drink':'cafe', 'Eat':'restaurant', 'Stay':'hotel', 'Shop':'shop', 'Walk':'walk', 'cafe':'cafe', 'restaurant':'restaurant', 'hotel':'hotel', 'shop':'shop', 'walk':'walk', 'cafes':'cafe', 'restaurants':'restaurant', 'hotels':'hotel', 'shops':'shop'}
 def esc(value): return html.escape(str(value or ''), quote=True)
 def slug(value): return re.sub(r'[^a-z0-9]+', '-', str(value).lower()).strip('-')
 def normalized(data):
-    return data['places'] + [dict(p, id='paris-'+p['key'], city='paris', image=urljoin(BASE,p['images'][0]), images=[urljoin(BASE,i) for i in p['images']], editorial=p['description'], shortDescription=p['meta'], websiteUrl=p.get('instagram'), openingHours=data['paris'].get('openingHours',{}).get(p['key'])) for p in data['paris']['places']]
+    places = data['places'] + [dict(p, id='paris-'+p['key'], city='paris', image=urljoin(BASE,p['images'][0]), images=[urljoin(BASE,i) for i in p['images']], editorial=p['description'], shortDescription=p['meta'], websiteUrl=p.get('instagram'), openingHours=data['paris'].get('openingHours',{}).get(p['key'])) for p in data['paris']['places']]
+    # The requested Paris lead remains first, ahead of newly added park entries.
+    return sorted(places, key=lambda p: 0 if p['id']=='paris-barkers-brothers' else 1)
 def card(p):
     key = p['id'].removeprefix(p['city']+'-')
     area = 'arr-'+str(p['arrondissement']) if p['city']=='paris' and p.get('arrondissement') else slug(p['area'])
     # Keep original gallery behavior; explicit IDs allow set equality checks.
     images = p['images']
-    return f'''<article id="{esc(key)}" class="place-card" data-catalogue-id="{esc(p['id'])}" data-category="{CATEGORIES[p['category']]}" data-area="{esc(area)}" data-gallery="{esc('|'.join(images))}"><div class="place-thumb editorial-photography"><img class="editorial-photo" src="{esc(p['image'])}" alt="{esc(p.get('imageAlt') or p['name'])}" loading="lazy" decoding="async"></div><div class="place-content"><h3>{esc(p['name'])}</h3><p class="place-category">{esc(p['shortDescription'])}</p><p class="desc">{esc(p['editorial'])}</p>{'<p class="place-hours">'+esc(p['openingHours'])+'</p>' if p.get('openingHours') else ''}<div class="place-actions"><a class="primary" href="{esc(p['mapsUrl'])}" target="_blank" rel="noopener">Get directions</a>{'<a href="'+esc(p['websiteUrl'])+'" target="_blank" rel="noopener">'+('Park details' if p['category']=='Walk' else 'Website')+'</a>' if p.get('websiteUrl') else ''}<button class="favourite" data-place="{esc(key)}" type="button">♡ Add to Favourites</button></div></div></article>'''
+    photo = p['image']; alt = p.get('imageAlt') or p['name']; photo_note = ''
+    representative = PARK_PHOTOS.get(p['id']) if p['category']=='Walk' and 'placeholder' in photo else None
+    if representative:
+        photo = representative['image']; images = [photo]
+        alt = 'Representative outdoor view of '+representative['areaName']+': '+representative['subject']
+        photo_note = '<span class="park-area-view">Area view</span><details class="park-photo-credit"><summary>Photo credits</summary><span>'+esc(representative['subject'])+' · '+esc(representative['artist'])+' · <a href="'+esc(representative['licenseUrl'])+'" target="_blank" rel="noopener">'+esc(representative['license'])+'</a> · <a href="'+esc(representative['page'])+'" target="_blank" rel="noopener">Source</a>. '+esc(representative['changes'])+'</span></details>'
+    return f'''<article id="{esc(key)}" class="place-card" data-catalogue-id="{esc(p['id'])}" data-category="{CATEGORIES[p['category']]}" data-area="{esc(area)}" data-gallery="{esc('|'.join(images))}"><div class="place-thumb editorial-photography"><img class="editorial-photo" src="{esc(photo)}" alt="{esc(alt)}" loading="lazy" decoding="async">{photo_note}</div><div class="place-content"><h3>{esc(p['name'])}</h3><p class="place-category">{esc(p['shortDescription'])}</p><p class="desc">{esc(p['editorial'])}</p>{'<p class="place-hours">'+esc(p['openingHours'])+'</p>' if p.get('openingHours') else ''}<div class="place-actions"><a class="primary" href="{esc(p['mapsUrl'])}" target="_blank" rel="noopener">Get directions</a>{'<a href="'+esc(p['websiteUrl'])+'" target="_blank" rel="noopener">'+('Park details' if p['category']=='Walk' else 'Website')+'</a>' if p.get('websiteUrl') else ''}<button class="favourite" data-place="{esc(key)}" type="button">♡ Add to Favourites</button></div></div></article>'''
 def build(target):
     data = validate(json.loads((ROOT/'mobile-catalogue.v1.json').read_text()))
     places = normalized(data)

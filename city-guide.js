@@ -402,7 +402,7 @@
     "Barkers + Brothers": ["A white dog resting inside Barkers + Brothers", "A dog relaxing beside the café’s seating", "Barkers + Brothers’ open storefront"],
     "Gino's Paris": ["Dog accessories and beds inside Gino’s boutique", "A dog being washed in the grooming area", "A dog watching a cup of treats"],
     "Animal Particulier": ["A dachshund in a green dog bed", "A customer holding a small dog outside", "A dog travelling in a beige carrier"],
-    "Casa del Doggo": ["A dog enjoying a creamy treat outside the shop", "A dachshund wearing a red sweater on the sofa", "A dog enjoying a treat in the pink café"],
+    "Casa del Doggo": ["Guests and their dog inside the Casa del Doggo café", "A dachshund wearing a red sweater on the sofa", "A dog enjoying a treat in the pink café"],
     "Le Bone Appart": ["A dog dressed as a chef beside the café table", "A dog cuddling a colourful toy", "A dog at Le Bone Appart’s doorway"],
     "Petsochic": ["A white dog on the boutique’s display table", "A black dog beneath the Petsochic sign", "A Shiba Inu on the boutique’s display table"],
     "Parisien Tête de Chien": ["Colourful seating and accessories inside Parisien Tête de Chien", "A table set with brunch dishes", "A dog beside a pastry and café window"],

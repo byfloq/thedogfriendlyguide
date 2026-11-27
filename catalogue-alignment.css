@@ -10,3 +10,9 @@
 [data-catalogue-aligned] .area-filters{flex-wrap:nowrap!important;overflow-x:auto!important;justify-content:flex-start!important;height:auto!important;min-height:64px;max-height:90px}
 [data-catalogue-aligned] .area-filters button,[data-catalogue-aligned] .area-filters .filter-label{flex-shrink:0}
 [data-catalogue-aligned] .area-filters .filter-label{flex:0 0 auto!important;margin:0 16px 0 2px!important}
+
+[data-catalogue-aligned] .park-area-view{position:absolute;top:12px;left:12px;background:#fffaf2eb;color:#5e5346;border-radius:16px;padding:6px 10px;font:600 10px/1.2 system-ui;text-transform:uppercase;letter-spacing:.06em;pointer-events:none;z-index:2}
+[data-catalogue-aligned] .park-photo-credit{position:absolute;right:10px;bottom:10px;max-width:calc(100% - 20px);font:12px/1.4 system-ui;color:#2b251f;z-index:2}
+[data-catalogue-aligned] .park-photo-credit summary{cursor:pointer;padding:7px 10px;background:#fffaf2eb;border-radius:16px;list-style:none}
+[data-catalogue-aligned] .park-photo-credit>span{display:block;background:#fffaf2f7;padding:10px;border-radius:10px;max-width:300px;max-height:160px;overflow:auto}
+[data-catalogue-aligned] .park-photo-credit a{color:inherit;text-decoration:underline}

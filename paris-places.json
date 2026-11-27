@@ -38,6 +38,26 @@
   },
   "places": [
     {
+      "key": "barkers-brothers",
+      "name": "Barkers + Brothers",
+      "arrondissement": 18,
+      "category": "shop",
+      "area": "montmartre",
+      "meta": "Dog shop & café · Montmartre",
+      "description": "A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.",
+      "instagram": "https://www.instagram.com/barkersandbrothers/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barkers%20and%20Brothers%2046%20Rue%20Berthe%2075018%20Paris",
+      "coordinates": [
+        2.3386242,
+        48.8858484
+      ],
+      "images": [
+        "assets/places/barkers-brothers.jpg",
+        "assets/places/barkers-brothers-2.jpg",
+        "assets/places/barkers-brothers-3.jpg"
+      ]
+    },
+    {
       "key": "simple-coffee",
       "name": "Simple Coffee",
       "arrondissement": 18,
@@ -47,7 +67,10 @@
       "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
       "instagram": "https://www.instagram.com/simple.coffeeparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simple%20Coffee%2078%20Rue%20des%20Martyrs%20Paris%20France",
-      "coordinates": [2.3397669, 48.8829473],
+      "coordinates": [
+        2.3397669,
+        48.8829473
+      ],
       "images": [
         "assets/places/simple-coffee-instagram-hq.jpg",
         "assets/places/simple-coffee-2-hq.jpg",
@@ -64,7 +87,10 @@
       "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
       "instagram": "https://www.instagram.com/merlocafe_/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Merlo%20Cafe%20Le%20Marais%20Paris%20France",
-      "coordinates": [2.3644081, 48.8588082],
+      "coordinates": [
+        2.3644081,
+        48.8588082
+      ],
       "images": [
         "assets/places/merlo-storefront-hq.jpg",
         "assets/places/merlo-coffee-cake-hq.jpg",
@@ -81,7 +107,10 @@
       "description": "A recommended Paris stop from The Dog Friendly Guide collection.",
       "instagram": "https://www.instagram.com/grave.cafe/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grave%20Cafe%20Le%20Marais%20Paris%20France",
-      "coordinates": [2.3563574, 48.8639862],
+      "coordinates": [
+        2.3563574,
+        48.8639862
+      ],
       "images": [
         "assets/places/grave-cafe.jpg",
         "assets/places/grave-peach-cake-hq.jpg",
@@ -98,7 +127,10 @@
       "description": "A compact Paris coffee station known for carefully sourced espresso, ceremonial matcha and playful signature drinks.",
       "instagram": "https://www.instagram.com/cuveenoire/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cuvee%20Noire%2096%20Rue%20Saint-Lazare%2075009%20Paris",
-      "coordinates": [2.3276727, 48.8757873],
+      "coordinates": [
+        2.3276727,
+        48.8757873
+      ],
       "images": [
         "assets/places/cuvee-exterior-new.jpg",
         "assets/places/cuvee-interior-new.jpg",
@@ -115,7 +147,10 @@
       "description": "A sculptural, design-led café spanning coffee, brunch and cocktails in the heart of the Marais.",
       "instagram": "https://www.instagram.com/sevenlyheart/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sevenly%20Heart%2055%20Rue%20des%20Archives%2075003%20Paris",
-      "coordinates": [2.3585344, 48.8615661],
+      "coordinates": [
+        2.3585344,
+        48.8615661
+      ],
       "images": [
         "assets/places/sevenly-interior-new.jpg",
         "assets/places/sevenly-cakes-new.jpg",
@@ -132,7 +167,10 @@
       "description": "A warm two-level specialty coffee shop with house-made cakes and distinctive signature drinks.",
       "instagram": "https://www.instagram.com/nami.coffee/?hl=es",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nami%20Coffee%20145%20rue%20Saint-Denis%20Paris",
-      "coordinates": [2.3501144, 48.8646786],
+      "coordinates": [
+        2.3501144,
+        48.8646786
+      ],
       "images": [
         "assets/places/nami-facade-new.jpg",
         "assets/places/nami-food-new.jpg",
@@ -149,7 +187,10 @@
       "description": "A Montmartre multiroaster where rotating specialty coffees meet a small ceramics collection, with dogs warmly welcomed by the resident café family.",
       "instagram": "https://www.instagram.com/clovecoffeeshop/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clove%20Coffee%20Shop%2014%20Rue%20Chappe%2075018%20Paris",
-      "coordinates": [2.3418277, 48.8846475],
+      "coordinates": [
+        2.3418277,
+        48.8846475
+      ],
       "images": [
         "assets/places/clove-friends-hq.jpg",
         "assets/places/clove-coffee-hq.jpg",
@@ -166,7 +207,10 @@
       "description": "A neighbourhood café on Rue de la Villette serving fresh coffee and baked goods every day, with an easygoing, dog-friendly welcome.",
       "instagram": "https://www.instagram.com/mardicafeparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mardi%20Cafe%2029%20Rue%20de%20la%20Villette%20Paris",
-      "coordinates": [2.3874972, 48.8762879],
+      "coordinates": [
+        2.3874972,
+        48.8762879
+      ],
       "images": [
         "assets/places/mardi-facade.jpg",
         "assets/places/mardi-baked-goods-hq.jpg",
@@ -183,7 +227,10 @@
       "description": "A serene maison de pétrissage on Rue Vaneau, pairing Japanese sensibility with breads and vegetable-led plates - and a warm welcome for dogs.",
       "instagram": "https://www.instagram.com/niwa_paris_/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Niwa%2056%20Rue%20Vaneau%2075007%20Paris",
-      "coordinates": [2.3194106, 48.8506591],
+      "coordinates": [
+        2.3194106,
+        48.8506591
+      ],
       "images": [
         "assets/places/niwa-instagram-1.jpg",
         "assets/places/niwa-instagram-2.jpg",
@@ -200,7 +247,10 @@
       "description": "A spacious Rue de Turbigo café and working roastery devoted to specialty coffee, where dogs are welcome inside.",
       "instagram": "https://www.instagram.com/parispartisancafe/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Partisan%20Cafe%2036%20Rue%20de%20Turbigo%2075003%20Paris",
-      "coordinates": [2.3530675, 48.8646471],
+      "coordinates": [
+        2.3530675,
+        48.8646471
+      ],
       "images": [
         "assets/places/partisan-instagram-2.jpg",
         "assets/places/partisan-instagram-1.jpg",
@@ -217,28 +267,14 @@
       "description": "A calm, laptop-free coffee and tea stop near Place des Vosges where sociable dogs are welcome alongside Serge, the resident American Shepherd.",
       "instagram": "https://www.instagram.com/foretforet_paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=For%C3%AAt%20For%C3%AAt%2064%20Rue%20des%20Tournelles%2075003%20Paris",
-      "coordinates": [2.3674112, 48.8571488],
+      "coordinates": [
+        2.3674112,
+        48.8571488
+      ],
       "images": [
         "assets/places/foret-instagram-1.jpg",
         "assets/places/foret-foret-dog-space.jpg",
         "assets/places/foret-instagram-3.jpg"
-      ]
-    },
-    {
-      "key": "barkers-brothers",
-      "name": "Barkers + Brothers",
-      "arrondissement": 18,
-      "category": "shop",
-      "area": "montmartre",
-      "meta": "Dog shop & café · Montmartre",
-      "description": "A warm Montmartre concept store pairing thoughtfully chosen dog goods with coffee, treats and an easy neighbourhood feel.",
-      "instagram": "https://www.instagram.com/barkersandbrothers/",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barkers%20and%20Brothers%2046%20Rue%20Berthe%2075018%20Paris",
-      "coordinates": [2.3386242, 48.8858484],
-      "images": [
-        "assets/places/barkers-brothers.jpg",
-        "assets/places/barkers-brothers-2.jpg",
-        "assets/places/barkers-brothers-3.jpg"
       ]
     },
     {
@@ -251,7 +287,10 @@
       "description": "A polished canine concept store combining premium accessories, gentle grooming and daycare in the heart of the Latin Quarter.",
       "instagram": "https://www.instagram.com/ginos.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gino's%20Paris%207%20Rue%20de%20la%20Montagne%20Sainte-Genevi%C3%A8ve%2075005%20Paris",
-      "coordinates": [2.3488655, 48.8492095],
+      "coordinates": [
+        2.3488655,
+        48.8492095
+      ],
       "images": [
         "assets/places/ginos-paris.jpg",
         "assets/places/ginos-paris-2.jpg",
@@ -268,7 +307,10 @@
       "description": "An independent Montmartre address for distinctive accessories, clothing and small-batch finds for dogs and cats.",
       "instagram": "https://www.instagram.com/animal_particulier/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Animal%20Particulier%2011%20Square%20de%20Clignancourt%2075018%20Paris",
-      "coordinates": [2.346257, 48.8931712],
+      "coordinates": [
+        2.346257,
+        48.8931712
+      ],
       "images": [
         "assets/places/animal-particulier.jpg",
         "assets/places/animal-particulier-2.jpg",
@@ -285,10 +327,12 @@
       "description": "A joyful dog-first bakery with handmade treats, a colourful shop and a self-service dog wash designed for time together.",
       "instagram": "https://www.instagram.com/casadeldoggobakery/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20del%20Doggo%2013%20Rue%20Pierre%20Gu%C3%A9rin%2075016%20Paris",
-      "coordinates": [2.2664375, 48.848581],
+      "coordinates": [
+        2.2664375,
+        48.848581
+      ],
       "images": [
-        "assets/places/casa-del-doggo.jpg",
-        "assets/places/casa-del-doggo-2.jpg",
+        "assets/places/casa-del-doggo-editorial-20261127.jpg",
         "assets/places/casa-del-doggo-3.jpg"
       ]
     },
@@ -302,7 +346,10 @@
       "description": "A dog café and boutique beside Place des Vosges, made for coffee, canine pâtisseries and playful Parisian accessories.",
       "instagram": "https://www.instagram.com/leboneappart/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bone%20Appart%209%20Rue%20de%20Birague%2075004%20Paris",
-      "coordinates": [2.3649913, 48.8545307],
+      "coordinates": [
+        2.3649913,
+        48.8545307
+      ],
       "images": [
         "assets/places/le-bone-appart.jpg",
         "assets/places/le-bone-appart-2.jpg",
@@ -319,7 +366,10 @@
       "description": "A refined Left Bank boutique and grooming spa bringing together French-made accessories, personalisation and attentive care.",
       "instagram": "https://www.instagram.com/petsochic/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Petsochic%2016%20Rue%20Dauphine%2075006%20Paris",
-      "coordinates": [2.3399606, 48.8555611],
+      "coordinates": [
+        2.3399606,
+        48.8555611
+      ],
       "images": [
         "assets/places/petsochic.jpg",
         "assets/places/petsochic-2.jpg",
@@ -336,7 +386,10 @@
       "description": "A relaxed wine bar and restaurant hosting rotating chef residencies, with expressive seasonal plates and an intimate neighbourhood mood.",
       "instagram": "https://www.instagram.com/pantoufle.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pantoufle%205%20Rue%20de%20Chaumont%2075019%20Paris",
-      "coordinates": [2.3720708, 48.8812908],
+      "coordinates": [
+        2.3720708,
+        48.8812908
+      ],
       "images": [
         "assets/places/pantoufle-paris.jpg",
         "assets/places/pantoufle-paris-2.jpg",
@@ -353,7 +406,10 @@
       "description": "A characterful Marais hideaway for coffee, fresh food and natural wine, with collected interiors and a leafy secret terrace.",
       "instagram": "https://www.instagram.com/griffon.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Griffon%2055%20bis%20Rue%20des%20Francs-Bourgeois%2075004%20Paris",
-      "coordinates": [2.3572985, 48.8596119],
+      "coordinates": [
+        2.3572985,
+        48.8596119
+      ],
       "images": [
         "assets/places/griffon-paris-2.jpg",
         "assets/places/griffon-dining-room.jpg",
@@ -370,7 +426,10 @@
       "description": "A quietly creative Montmartre restaurant where seasonal French produce meets delicate Japanese influences and natural wine.",
       "instagram": "https://www.instagram.com/colore.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Color%C3%A9%2020%20Rue%20du%20Ruisseau%2075018%20Paris",
-      "coordinates": [2.3401074, 48.8924114],
+      "coordinates": [
+        2.3401074,
+        48.8924114
+      ],
       "images": [
         "assets/places/colore-paris.jpg",
         "assets/places/colore-paris-2.jpg",
@@ -378,85 +437,184 @@
       ]
     },
     {
-      "key": "mesa-paris", "name": "Mesa", "arrondissement": 9, "category": "cafe", "area": "montmartre",
+      "key": "mesa-paris",
+      "name": "Mesa",
+      "arrondissement": 9,
+      "category": "cafe",
+      "area": "montmartre",
       "meta": "Plant-based café & restaurant · Rue des Martyrs",
       "description": "A plant-based table inside HOY Paris, moving from breakfast and specialty coffee to colourful plates and evening dining.",
       "instagram": "https://www.instagram.com/mesa.paris/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mesa%2068%20Rue%20des%20Martyrs%2075009%20Paris",
-      "coordinates": [2.3401281, 48.8811485],
-      "images": ["assets/places/mesa-instagram-1.jpg", "assets/places/mesa-instagram-2.jpg", "assets/places/mesa-instagram-3.jpg"]
+      "coordinates": [
+        2.3401281,
+        48.8811485
+      ],
+      "images": [
+        "assets/places/mesa-instagram-1.jpg",
+        "assets/places/mesa-instagram-2.jpg",
+        "assets/places/mesa-instagram-3.jpg"
+      ]
     },
     {
-      "key": "white-coffee-marais", "name": "WHITE Coffee", "arrondissement": 4, "category": "cafe", "area": "le-marais",
+      "key": "white-coffee-marais",
+      "name": "WHITE Coffee",
+      "arrondissement": 4,
+      "category": "cafe",
+      "area": "le-marais",
       "meta": "Specialty coffee & matcha · Le Marais",
       "description": "A bright Marais stop devoted to specialty coffee, matcha, pastries and freshly pressed juices, open throughout the week.",
       "instagram": "https://www.instagram.com/drink.white/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=WHITE%20Coffee%2016%20Rue%20Vieille%20du%20Temple%2075004%20Paris",
-      "coordinates": [2.3570133, 48.8567636],
-      "images": ["assets/places/white-instagram-1.jpg", "assets/places/white-instagram-2.jpg", "assets/places/white-marais-coffee-selection.jpg"]
+      "coordinates": [
+        2.3570133,
+        48.8567636
+      ],
+      "images": [
+        "assets/places/white-instagram-1.jpg",
+        "assets/places/white-instagram-2.jpg",
+        "assets/places/white-marais-coffee-selection.jpg"
+      ]
     },
     {
-      "key": "noir-montmartre", "name": "NOIR Coffee Shop", "arrondissement": 18, "category": "cafe", "area": "montmartre",
+      "key": "noir-montmartre",
+      "name": "NOIR Coffee Shop",
+      "arrondissement": 18,
+      "category": "cafe",
+      "area": "montmartre",
       "meta": "Coffee shop & roastery · Montmartre",
       "description": "One of NOIR's design-led Paris coffee shops, serving house-roasted beans from a compact address just below Sacré-Cœur.",
       "instagram": "https://www.instagram.com/noir_coffeeshop/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NOIR%20Coffee%206%20Rue%20des%20Trois%20Freres%2075018%20Paris",
-      "coordinates": [2.3415783, 48.8838812],
-      "images": ["assets/places/noir-instagram-1.jpg", "assets/places/noir-instagram-2.jpg", "assets/places/noir-instagram-3.jpg"]
+      "coordinates": [
+        2.3415783,
+        48.8838812
+      ],
+      "images": [
+        "assets/places/noir-instagram-1.jpg",
+        "assets/places/noir-instagram-2.jpg",
+        "assets/places/noir-instagram-3.jpg"
+      ]
     },
     {
-      "key": "parisien-tete-de-chien", "name": "Parisien Tête de Chien", "arrondissement": 17, "category": "shop", "area": "batignolles",
+      "key": "parisien-tete-de-chien",
+      "name": "Parisien Tête de Chien",
+      "arrondissement": 17,
+      "category": "shop",
+      "area": "batignolles",
       "meta": "Dog-friendly café, shop & yoga studio · Batignolles",
       "description": "A colourful Batignolles meeting place combining specialty coffee, brunch, a lifestyle boutique and yoga with an explicitly dog-friendly welcome.",
       "instagram": "https://www.instagram.com/parisien_tete_de_chien/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parisien%20Tete%20de%20Chien%2019%20Rue%20des%20Moines%2075017%20Paris",
-      "coordinates": [2.3190036, 48.8885334],
-      "images": ["assets/places/parisien-colourful-interior.jpg", "assets/places/parisien-tete-de-chien-2.jpg", "assets/places/parisien-tete-de-chien-3.jpg"]
+      "coordinates": [
+        2.3190036,
+        48.8885334
+      ],
+      "images": [
+        "assets/places/parisien-colourful-interior.jpg",
+        "assets/places/parisien-tete-de-chien-2.jpg",
+        "assets/places/parisien-tete-de-chien-3.jpg"
+      ]
     },
     {
-      "key": "cayu-canides-club", "name": "CAYU Canidés Club", "arrondissement": 19, "category": "shop", "area": "buttes-chaumont",
+      "key": "cayu-canides-club",
+      "name": "CAYU Canidés Club",
+      "arrondissement": 19,
+      "category": "shop",
+      "area": "buttes-chaumont",
       "meta": "Independent dog shop · Buttes-Chaumont",
       "description": "A Paris-designed dog shop on Rue Bouret, bringing together thoughtful accessories, an independent label and a community-minded club spirit.",
       "instagram": "https://www.instagram.com/cayu.canidesclub/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CAYU%20Canides%20Club%2028%20Rue%20Bouret%2075019%20Paris",
-      "coordinates": [2.3743721, 48.88157],
-      "images": ["assets/places/cayu-knitwear-dog.jpg", "assets/places/cayu-window-accessories.jpg", "assets/places/cayu-patterned-collar.jpg"]
+      "coordinates": [
+        2.3743721,
+        48.88157
+      ],
+      "images": [
+        "assets/places/cayu-knitwear-dog.jpg",
+        "assets/places/cayu-window-accessories.jpg",
+        "assets/places/cayu-patterned-collar.jpg"
+      ]
     },
     {
-      "key": "jaja-paris", "name": "Jaja", "arrondissement": 4, "category": "restaurant", "area": "le-marais",
+      "key": "jaja-paris",
+      "name": "Jaja",
+      "arrondissement": 4,
+      "category": "restaurant",
+      "area": "le-marais",
       "meta": "Restaurant & wine · Le Marais",
       "description": "A hidden Marais courtyard restaurant serving convivial seasonal cooking and characterful wines from lunch through dinner every day.",
       "instagram": "https://www.instagram.com/jaja.resto/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jaja%203%20Rue%20Sainte-Croix%20de%20la%20Bretonnerie%2075004%20Paris",
-      "coordinates": [2.3573508, 48.8576496],
-      "images": ["assets/places/jaja-1.jpg", "assets/places/jaja-2.jpg", "assets/places/jaja-3.jpg"]
+      "coordinates": [
+        2.3573508,
+        48.8576496
+      ],
+      "images": [
+        "assets/places/jaja-1.jpg",
+        "assets/places/jaja-2.jpg",
+        "assets/places/jaja-3.jpg"
+      ]
     },
     {
-      "key": "cafe-charlot-paris", "name": "Café Charlot", "arrondissement": 3, "category": "restaurant", "area": "le-marais",
+      "key": "cafe-charlot-paris",
+      "name": "Café Charlot",
+      "arrondissement": 3,
+      "category": "restaurant",
+      "area": "le-marais",
       "meta": "Parisian bistro · Haut-Marais",
       "description": "A classic Haut-Marais bistro opposite Marché des Enfants Rouges, serving French favourites from morning coffee to late-night drinks.",
       "instagram": "https://www.instagram.com/cafecharlotparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Charlot%2038%20Rue%20de%20Bretagne%2075003%20Paris",
-      "coordinates": [2.362468, 48.863056],
-      "images": ["assets/places/cafe-charlot-1.jpg", "assets/places/cafe-charlot-2.jpg", "assets/places/cafe-charlot-vintage-sign.jpg"]
+      "coordinates": [
+        2.362468,
+        48.863056
+      ],
+      "images": [
+        "assets/places/cafe-charlot-1.jpg",
+        "assets/places/cafe-charlot-2.jpg",
+        "assets/places/cafe-charlot-vintage-sign.jpg"
+      ]
     },
     {
-      "key": "hotel-suzie-blue", "name": "Hôtel Suzie Blue", "arrondissement": 3, "category": "hotel", "area": "le-marais",
+      "key": "hotel-suzie-blue",
+      "name": "Hôtel Suzie Blue",
+      "arrondissement": 3,
+      "category": "hotel",
+      "area": "le-marais",
       "meta": "Hotel & coffee shop · Le Marais",
       "description": "A vibrant Marais hotel with its own everyday coffee shop, blending playful rooms with an easy base for brunch and neighbourhood walks.",
       "instagram": "https://www.instagram.com/hotelsuzieblue/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suzie%20Blue%204%20Rue%20de%20Saintonge%2075003%20Paris",
-      "coordinates": [2.3618319, 48.8608882],
-      "images": ["assets/places/hotel-suzie-blue-instagram-1.jpg", "assets/places/hotel-suzie-blue-instagram-2.jpg", "assets/places/hotel-suzie-blue-instagram-3.jpg"]
+      "coordinates": [
+        2.3618319,
+        48.8608882
+      ],
+      "images": [
+        "assets/places/hotel-suzie-blue-instagram-1.jpg",
+        "assets/places/hotel-suzie-blue-instagram-2.jpg",
+        "assets/places/hotel-suzie-blue-instagram-3.jpg"
+      ]
     },
     {
-      "key": "hoy-paris", "name": "HOY Paris", "arrondissement": 9, "category": "hotel", "area": "montmartre",
+      "key": "hoy-paris",
+      "name": "HOY Paris",
+      "arrondissement": 9,
+      "category": "hotel",
+      "area": "montmartre",
       "meta": "Wellness hotel · Rue des Martyrs",
       "description": "A holistic Rue des Martyrs stay bringing together serene rooms, yoga, treatments and the plant-based Mesa restaurant under one roof.",
       "instagram": "https://www.instagram.com/hoyparis/",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HOY%20Paris%2068%20Rue%20des%20Martyrs%2075009%20Paris",
-      "coordinates": [2.3401281, 48.8811485],
-      "images": ["assets/places/hoy-guest-room.jpg", "assets/places/hoy-paris-instagram-2.jpg", "assets/places/hoy-paris-instagram-3.jpg"]
+      "coordinates": [
+        2.3401281,
+        48.8811485
+      ],
+      "images": [
+        "assets/places/hoy-guest-room.jpg",
+        "assets/places/hoy-paris-instagram-2.jpg",
+        "assets/places/hoy-paris-instagram-3.jpg"
+      ]
     }
   ]
 }

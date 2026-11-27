@@ -52,6 +52,7 @@ jobs:
         run: |
           python3 scripts/align-website-catalogue.py _site
           python3 scripts/check-catalogue-alignment.py _site
+          python3 scripts/check-park-photography.py _site
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
