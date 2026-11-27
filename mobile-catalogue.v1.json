@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "berlin-symple-20261127",
-  "generatedAt": "2026-11-27T18:43:42.044604+00:00",
+  "revision": "berlin-park-and-hotel-photos-20261127",
+  "generatedAt": "2026-11-27T20:30:28.944741+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -6359,9 +6359,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · unfenced",
       "editorial": "Dog area in Berlin. Straße nach Arkenberge 16567 Berlin Germany. Reference rating 4.8/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-35956880f25d6353.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-35956880f25d6353.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.633059838320975%2C13.421215005218983",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-35956880f25d6353",
@@ -6397,6 +6397,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.633059838320975%2C13.421215005218983"
+      },
+      "imageAlt": "Wooded landscape in the Arkenberge reserve",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Wooded landscape in the Arkenberge reserve",
+        "artist": "Kvikk",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Berlin_Blankenfelde_Landschaftsschutzgebiet_Arkenberge.JPG",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6407,9 +6417,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Charlottenburg-Wilmersdorf. Heckerdamm 274, 13627 Berlin, Germany 13627 Bezirk Charlottenburg-Wilmersdorf Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-122c1b34580319ba.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-122c1b34580319ba.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.54253259999999%2C13.2879689",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-122c1b34580319ba",
@@ -6445,6 +6455,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.54253259999999%2C13.2879689"
+      },
+      "imageAlt": "The lake and wooded shore in Volkspark Jungfernheide",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "The lake and wooded shore in Volkspark Jungfernheide",
+        "artist": "Matti Blume",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkspark_Jungfernheide,_Berlin_(20150503-DSC_0002).jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6455,9 +6475,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Charlottenburg-Wilmersdorf. Hundeplatz Volkspark Wilmersdorf, Bundesallee 164, 10715 Berlin, Germany 10715 Bezirk Charlottenburg-Wilmersdorf Germany. Reference rating 3/5 (1 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-3443d50def98c395.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-3443d50def98c395.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4825603%2C13.3317469",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-3443d50def98c395",
@@ -6493,6 +6513,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4825603%2C13.3317469"
+      },
+      "imageAlt": "A green seating area in Volkspark Wilmersdorf",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "A green seating area in Volkspark Wilmersdorf",
+        "artist": "Fridolin freudenfett",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Wilmersdorf_Volkspark_Wilmersdorf-001.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6503,9 +6533,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Friedrichshain-Kreuzberg. Waterloobrücke, Alexandrinenstraße, 10969 Berlin, Germany 10969 Bezirk Friedrichshain-Kreuzberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-820a3001cb9db1c9.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-820a3001cb9db1c9.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4969353%2C13.3990872",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-820a3001cb9db1c9",
@@ -6541,6 +6571,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4969353%2C13.3990872"
+      },
+      "imageAlt": "Trees on the Landwehr Canal at Waterloobrücke, near the Brachvogel dog run",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Trees on the Landwehr Canal at Waterloobrücke, near the Brachvogel dog run",
+        "artist": "Lienhard Schulz",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Waterloobr%C3%BCcke_1_Berlin.JPG",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6551,9 +6591,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Friedrichshain-Kreuzberg. Hundeauslauf im Park am Gleisdreieck, Luckenwalder Str. 5, 10963 Berlin, Germany 10963 Bezirk Friedrichshain-Kreuzberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-f609de26d76522ed.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-f609de26d76522ed.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4968699%2C13.3724932",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-f609de26d76522ed",
@@ -6589,6 +6629,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4968699%2C13.3724932"
+      },
+      "imageAlt": "Meadow and rail bridge in Park am Gleisdreieck",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "Meadow and rail bridge in Park am Gleisdreieck",
+        "artist": "Burkhard Mücke",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Park_am_Gleisdreieck_Berlin_28.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6599,9 +6649,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Friedrichshain-Kreuzberg. Revaler Str. 17, 10245 Berlin, Germany 10245 Bezirk Friedrichshain-Kreuzberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-93423257bab1e478.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-93423257bab1e478.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5072424%2C13.457892",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-93423257bab1e478",
@@ -6637,6 +6687,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5072424%2C13.457892"
+      },
+      "imageAlt": "Autumn vines by Revaler Straße, near the dog run",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Autumn vines by Revaler Straße, near the dog run",
+        "artist": "Tony Webster from Portland, Oregon, United States",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Revaler_Stra%C3%9Fe_Vines_(15308177223).jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6647,9 +6707,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Friedrichshain-Kreuzberg. Virchowstraße 7, 10249 Berlin, Germany 10249 Bezirk Friedrichshain-Kreuzberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-46f068cd65a005bc.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-46f068cd65a005bc.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5267774%2C13.441054",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-46f068cd65a005bc",
@@ -6685,6 +6745,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5267774%2C13.441054"
+      },
+      "imageAlt": "The fountain at Kleiner Teich in Volkspark Friedrichshain",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "The fountain at Kleiner Teich in Volkspark Friedrichshain",
+        "artist": "Fridolin freudenfett",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkspark_Friedrichshain_Kleiner_Teich.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6695,9 +6765,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Friedrichshain-Kreuzberg. Görlitzer Ufer 37, 10999 Berlin, Germany 10999 Bezirk Friedrichshain-Kreuzberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-1b8474333a082352.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-1b8474333a082352.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4938583%2C13.4429181",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-1b8474333a082352",
@@ -6733,6 +6803,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4938583%2C13.4429181"
+      },
+      "imageAlt": "Tree-lined Görlitzer Ufer near the Wiener Straße dog run",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Tree-lined Görlitzer Ufer near the Wiener Straße dog run",
+        "artist": "Assenmacher",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Berlin-Kreuzberg_G%C3%B6rlitzer_Ufer.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6743,9 +6823,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Friedrichshain-Kreuzberg. Hundeplatz Wriezener Park, Helsingforser Str. 39, 10243 Berlin, Germany 10243 Bezirk Friedrichshain-Kreuzberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-b88cc4b2d334017f.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-b88cc4b2d334017f.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5080788%2C13.4479703",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-b88cc4b2d334017f",
@@ -6781,6 +6861,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5080788%2C13.4479703"
+      },
+      "imageAlt": "A wooded path in the Wriezener Freiraum-Labor in 2011",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "A wooded path in the Wriezener Freiraum-Labor in 2011",
+        "artist": "GeorgDerReisende",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Wriezener_Freiraum-Labor,_12,_Friedrichshain,_Berlin.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6791,9 +6881,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Lichtenberg. Hönower Weg 24, 10319 Berlin, Germany 10319 Bezirk Lichtenberg Germany.",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-a76c0a3c2080cf19.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-a76c0a3c2080cf19.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4931336%2C13.5031525",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-a76c0a3c2080cf19",
@@ -6829,6 +6919,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4931336%2C13.5031525"
+      },
+      "imageAlt": "A leafy path in the Rummelsburg dog run",
+      "photoCredit": {
+        "scope": "dog-area",
+        "subject": "A leafy path in the Rummelsburg dog run",
+        "artist": "Elgaard",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Hundeplatz_Lichtenberg_2.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6839,9 +6939,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Neukölln. Hasenheide 82, 10967 Berlin, Germany 10967 Bezirk Neukölln Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-5948c87553205cc0.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-5948c87553205cc0.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4867451%2C13.4140247",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-5948c87553205cc0",
@@ -6877,6 +6977,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.4867451%2C13.4140247"
+      },
+      "imageAlt": "Morning light in Volkspark Hasenheide",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "Morning light in Volkspark Hasenheide",
+        "artist": "Lukas Beck",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkspark_Hasenheide.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6887,9 +6997,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Neukölln. FCG8+H2 Hundewiese I Tempelhofer Feld, 12049 Berlin, Germany 12049 Bezirk Neukölln Germany. Reference rating 3/5 (1 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-19574ab6884ee28a.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-19574ab6884ee28a.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.47640089999999%2C13.4150084",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-19574ab6884ee28a",
@@ -6925,6 +7035,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.47640089999999%2C13.4150084"
+      },
+      "imageAlt": "Windskaters on the former Tempelhof airfield",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "Windskaters on the former Tempelhof airfield",
+        "artist": "Peter Maiwald",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Windskaten_auf_dem_Tempelhofer_Feld.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6935,9 +7055,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Pankow. Kniprodestraße 27, 10407 Berlin, Germany 10407 Bezirk Pankow Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-27c6c5f378efa04a.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-27c6c5f378efa04a.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5360275%2C13.4466345",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-27c6c5f378efa04a",
@@ -6973,6 +7093,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5360275%2C13.4466345"
+      },
+      "imageAlt": "Wooded path by the Kniprodestraße entrance to Anton-Saefkow-Park",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "Wooded path by the Kniprodestraße entrance to Anton-Saefkow-Park",
+        "artist": "Boonekamp",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:PrenzlBerg-AntonSaefkowPark(7).JPG",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -6983,9 +7113,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Pankow. Dog Area Mauerpark, Eberswalder Str. 2, 10437 Berlin, Germany 10437 Bezirk Pankow Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-8689cad49b536f3d.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-8689cad49b536f3d.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5415583%2C13.4046349",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-8689cad49b536f3d",
@@ -7021,6 +7151,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5415583%2C13.4046349"
+      },
+      "imageAlt": "The Hundewiese entrance and fence in Mauerpark",
+      "photoCredit": {
+        "scope": "dog-area",
+        "subject": "The Hundewiese entrance and fence in Mauerpark",
+        "artist": "G.Elser",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mauerpark_-_Hundewiese_-_panoramio.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7031,9 +7171,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · unfenced",
       "editorial": "Dog area in Bezirk Reinickendorf. Hundeauslaufgebiet Frohnau, Welfenallee/Forstweg, Welfenallee, 13465 Berlin, Germany 13465 Bezirk Reinickendorf Germany.",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-c0672f720911c8e7.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-c0672f720911c8e7.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.62308944927271%2C13.281700406223536",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-c0672f720911c8e7",
@@ -7069,6 +7209,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.62308944927271%2C13.281700406223536"
+      },
+      "imageAlt": "Woodland along Welfenallee in Frohnau",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Woodland along Welfenallee in Frohnau",
+        "artist": "Fridolin freudenfett",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Frohnau_Welfenallee.JPG",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7079,9 +7229,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · unfenced",
       "editorial": "Dog area in Bezirk Reinickendorf. Hundeparcours, Werdohler Weg 61, 13507 Berlin, Germany 13507 Bezirk Reinickendorf Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-4452bd3961af00a6.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-4452bd3961af00a6.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.569589%2C13.2747785",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-4452bd3961af00a6",
@@ -7117,6 +7267,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.569589%2C13.2747785"
+      },
+      "imageAlt": "The wooded path at Werdohler Weg, near the Tegel dog agility area",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "The wooded path at Werdohler Weg, near the Tegel dog agility area",
+        "artist": "Fridolin freudenfett",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tegel_Werdohler_Weg.JPG",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7127,9 +7287,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Reinickendorf. Am Packereigraben 3, 13437 Berlin, Germany 13437 Bezirk Reinickendorf Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-c77f1c4182f6c89b.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-c77f1c4182f6c89b.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.596963%2C13.3136842",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-c77f1c4182f6c89b",
@@ -7165,6 +7325,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.596963%2C13.3136842"
+      },
+      "imageAlt": "Steinbergsee and its wooded shore in Steinbergpark",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "Steinbergsee and its wooded shore in Steinbergpark",
+        "artist": "Leonhard Lenz",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "page": "https://commons.wikimedia.org/wiki/File:Steinbergsee_Steinbergpark_Berlin_2025-06-21_01.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7175,9 +7345,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Spandau. Askanierring 106A, 13587 Berlin, Germany 13587 Bezirk Spandau Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-5b1fa5cf661d470b.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-5b1fa5cf661d470b.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5539965%2C13.201966",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-5b1fa5cf661d470b",
@@ -7213,6 +7383,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5539965%2C13.201966"
+      },
+      "imageAlt": "Klinkeplatz in Hakenfelde, near the Askanierring dog run",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Klinkeplatz in Hakenfelde, near the Askanierring dog run",
+        "artist": "Der wahre Jakob",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Klinkeplatz_Hakenfelde_2013-04-21.JPG",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7223,9 +7403,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · unfenced",
       "editorial": "Dog area in Bezirk Spandau. Dog walking area on Stoessensee Spandau, Siemenswerderweg 65, 13595 Berlin, Germany 13595 Bezirk Spandau Germany. Reference rating 3/5 (1 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-9013a0bd45263679.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-9013a0bd45263679.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5051242%2C13.2050256",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-9013a0bd45263679",
@@ -7261,6 +7441,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5051242%2C13.2050256"
+      },
+      "imageAlt": "A woodland path on Pichelswerder near Stößensee",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "A woodland path on Pichelswerder near Stößensee",
+        "artist": "Leonhard Lenz",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "page": "https://commons.wikimedia.org/wiki/File:Pichelswerder_Berlin_2024-05-11_02.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7271,9 +7461,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · unfenced",
       "editorial": "Dog area in Bezirk Steglitz-Zehlendorf. Off-Leash Dog Area Düppel, Königsweg, 14129 Berlin, Germany 14129 Bezirk Steglitz-Zehlendorf Germany. Reference rating 4.8/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-3f272b4fba9e1902.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-3f272b4fba9e1902.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.41824638012909%2C13.208978846669197",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-3f272b4fba9e1902",
@@ -7309,6 +7499,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.41824638012909%2C13.208978846669197"
+      },
+      "imageAlt": "Beech woods beside Königsweg in Düppeler Forst",
+      "photoCredit": {
+        "scope": "nearby",
+        "subject": "Beech woods beside Königsweg in Düppeler Forst",
+        "artist": "Colin Smith on geo.hlipp.de",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Zehlendorf_-_Wald_Beim_Koenigsweg_(Woodland_Beside_Koenigsweg)_-_geo.hlipp.de_-_30522.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7319,9 +7519,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Bezirk Tempelhof-Schöneberg. Hundewiese III Tempelhofer Feld, Tempelhofer Damm, 12101 Berlin, Germany 12101 Bezirk Tempelhof-Schöneberg Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-24a14ecca9cc5498.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-24a14ecca9cc5498.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.47027920000001%2C13.3908284",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-24a14ecca9cc5498",
@@ -7357,6 +7557,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.47027920000001%2C13.3908284"
+      },
+      "imageAlt": "The open grassland of Tempelhofer Feld framed by spring foliage",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "The open grassland of Tempelhofer Feld framed by spring foliage",
+        "artist": "Coooohen",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tempelhofer_Feld_May_2021.jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -7991,9 +8201,9 @@
       "category": "Walk",
       "shortDescription": "Dog area · fenced",
       "editorial": "Dog area in Mitte. Gustav-Meyer-Allee 6, 13355 Berlin, Germany 13355 Mitte Germany. Reference rating 3/5 (12 reviews).",
-      "image": "https://thedogfriendlyguide.com/assets/places/park-placeholder.png",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-be8878200db7e7b1.jpg",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/park-placeholder.png"
+        "https://thedogfriendlyguide.com/assets/places/berlin-parks/park-de-be8878200db7e7b1.jpg"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5438565%2C13.3876368",
       "websiteUrl": "https://thedogfriendlyguide.com/parks.html?park=park-de-be8878200db7e7b1",
@@ -8029,6 +8239,16 @@
         "detailsStatus": "imported",
         "guideCity": "berlin",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52.5438565%2C13.3876368"
+      },
+      "imageAlt": "A view from the wooded hillside in Volkspark Humboldthain",
+      "photoCredit": {
+        "scope": "park",
+        "subject": "A view from the wooded hillside in Volkspark Humboldthain",
+        "artist": "Thomas Angermann from Copenhagen, Denmark",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Volkspark_Humboldthain_(5951332270).jpg",
+        "changes": "Optimized for the guide. Display may crop the image to fit."
       }
     },
     {
@@ -20581,10 +20801,10 @@
       "shortDescription": "Stay · Friedrichshain",
       "editorial": "An independent hotel on Warschauer Straße with individually designed rooms and a lively café and restaurant. Well-behaved dogs are welcome in public areas, but some room types exclude pets: arrange a dog-friendly room and confirm the pet fee before booking.",
       "address": "Warschauer Straße 39–40, 10243 Berlin",
-      "image": "https://thedogfriendlyguide.com/assets/places/berlin-michelberger-hotel-20261126.jpg",
-      "imageAlt": "Official Michelberger Hotel photograph of a guest reading on a bed in a Cosy room",
+      "image": "https://www.datocms-assets.com/5494/1762950452-light-filled-overlook-suite-at-michelberger-hotel-berlin-kreuzberg.jpg?auto=format&w=1200",
+      "imageAlt": "Michelberger Hotel’s Overlook room with a pale green desk and orange flowers",
       "images": [
-        "https://thedogfriendlyguide.com/assets/places/berlin-michelberger-hotel-20261126.jpg"
+        "https://www.datocms-assets.com/5494/1762950452-light-filled-overlook-suite-at-michelberger-hotel-berlin-kreuzberg.jpg?auto=format&w=1200"
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Michelberger%20Hotel%20Warschauer%20Stra%C3%9Fe%2039%E2%80%9340%2C%2010243%20Berlin",
       "websiteUrl": "https://www.michelbergerhotel.com/en/",
@@ -20601,6 +20821,11 @@
         "terrace": false,
         "water": false,
         "cocoWasThere": false
+      },
+      "photoCredit": {
+        "subject": "Michelberger Hotel’s Overlook room with a pale green desk and orange flowers",
+        "artist": "Michelberger Hotel",
+        "page": "https://www.michelbergerhotel.com/en/rooms/overlook/"
       }
     },
     {

@@ -17,17 +17,32 @@ def normalized(data):
     places = data['places'] + [dict(p, id='paris-'+p['key'], city='paris', image=urljoin(BASE,p['images'][0]), images=[urljoin(BASE,i) for i in p['images']], editorial=p['description'], shortDescription=p['meta'], websiteUrl=p.get('instagram'), openingHours=data['paris'].get('openingHours',{}).get(p['key'])) for p in data['paris']['places']]
     # The requested Paris lead remains first, ahead of newly added park entries.
     return sorted(places, key=lambda p: 0 if p['id']=='paris-barkers-brothers' else 1)
+def photo_credit(credit, label=''):
+    if not credit:
+        return ''
+    badge = f'<span class="park-area-view">{esc(label)}</span>' if label else ''
+    license_link = ''
+    if credit.get('license'):
+        license_link = f' · <a href="{esc(credit["licenseUrl"])}" target="_blank" rel="noopener">{esc(credit["license"])}</a>'
+    return (f'{badge}<details class="park-photo-credit"><summary>Photo credits</summary>'
+            f'<span>{esc(credit["subject"])} · {esc(credit["artist"])}{license_link}'
+            f' · <a href="{esc(credit["page"])}" target="_blank" rel="noopener">Source</a>. '
+            f'{esc(credit.get("changes"))}</span></details>')
+
 def card(p):
     key = p['id'].removeprefix(p['city']+'-')
     area = 'arr-'+str(p['arrondissement']) if p['city']=='paris' and p.get('arrondissement') else slug(p['area'])
     # Keep original gallery behavior; explicit IDs allow set equality checks.
     images = p['images']
-    photo = p['image']; alt = p.get('imageAlt') or p['name']; photo_note = ''
+    photo = p['image']; alt = p.get('imageAlt') or p['name']
+    credit = p.get('photoCredit')
+    label = {'park': 'Park view', 'nearby': 'Nearby view'}.get((credit or {}).get('scope'), '')
     representative = PARK_PHOTOS.get(p['id']) if p['category']=='Walk' and 'placeholder' in photo else None
     if representative:
         photo = representative['image']; images = [photo]
         alt = 'Representative outdoor view of '+representative['areaName']+': '+representative['subject']
-        photo_note = '<span class="park-area-view">Area view</span><details class="park-photo-credit"><summary>Photo credits</summary><span>'+esc(representative['subject'])+' · '+esc(representative['artist'])+' · <a href="'+esc(representative['licenseUrl'])+'" target="_blank" rel="noopener">'+esc(representative['license'])+'</a> · <a href="'+esc(representative['page'])+'" target="_blank" rel="noopener">Source</a>. '+esc(representative['changes'])+'</span></details>'
+        credit, label = representative, 'Area view'
+    photo_note = photo_credit(credit, label)
     return f'''<article id="{esc(key)}" class="place-card" data-catalogue-id="{esc(p['id'])}" data-category="{CATEGORIES[p['category']]}" data-area="{esc(area)}" data-gallery="{esc('|'.join(images))}"><div class="place-thumb editorial-photography"><img class="editorial-photo" src="{esc(photo)}" alt="{esc(alt)}" loading="lazy" decoding="async">{photo_note}</div><div class="place-content"><h3>{esc(p['name'])}</h3><p class="place-category">{esc(p['shortDescription'])}</p><p class="desc">{esc(p['editorial'])}</p>{'<p class="place-hours">'+esc(p['openingHours'])+'</p>' if p.get('openingHours') else ''}<div class="place-actions"><a class="primary" href="{esc(p['mapsUrl'])}" target="_blank" rel="noopener">Get directions</a>{'<a href="'+esc(p['websiteUrl'])+'" target="_blank" rel="noopener">'+('Park details' if p['category']=='Walk' else 'Website')+'</a>' if p.get('websiteUrl') else ''}<button class="favourite" data-place="{esc(key)}" type="button">♡ Add to Favourites</button></div></div></article>'''
 def build(target):
     data = validate(json.loads((ROOT/'mobile-catalogue.v1.json').read_text()))
@@ -58,7 +73,14 @@ def build(target):
     # Public park browsing is restricted to the exact parks in the app. The full
     # inventory stays in the source repository, never deleted or auto-published.
     archive = json.loads((ROOT/'parks-catalogue.v1.json').read_text())
-    archive['parks'] = [p['parkDetails'] for p in places if p['category']=='Walk']
+    archive['parks'] = []
+    for p in places:
+        if p['category'] != 'Walk':
+            continue
+        park = dict(p['parkDetails'])
+        if p.get('photoCredit'):
+            park['guidePhoto'] = dict(src=p['image'], alt=p['imageAlt'], credit=p['photoCredit'])
+        archive['parks'].append(park)
     (target/'parks-catalogue.v1.json').write_text(json.dumps(archive,ensure_ascii=False,indent=2)+'\n')
     (target/'paris-places.json').write_text(json.dumps(data['paris'],ensure_ascii=False,indent=2)+'\n')
     # Homepage highlights and edition counts also come from the same selection.
@@ -97,9 +119,9 @@ def build(target):
         path.write_text(text)
     # The publication revision invalidates all changed shared assets, including
     # future selection updates without a hardcoded browser cache key.
-    for path in [target/'index.html', *[target/l/'index.html' for l in ['de','fr','es']], *target.glob('*-guide.html')]:
+    for path in [target/'index.html', target/'parks.html', *[target/l/'index.html' for l in ['de','fr','es']], *target.glob('*-guide.html')]:
         text = path.read_text()
-        for asset in ['city-guide.js', 'home-city-places.js', 'home-city-edition.js', 'paris-guide-view.js', 'catalogue-alignment.css', 'munich-guide.css']:
+        for asset in ['city-guide.js', 'home-city-places.js', 'home-city-edition.js', 'paris-guide-view.js', 'catalogue-alignment.css', 'munich-guide.css', 'parks.js', 'parks.css']:
             text = re.sub(re.escape(asset)+r'(?:\?[^"\x27]*)?', asset+'?selection='+data['revision'][:12], text)
         path.write_text(text)
     # Cache tags cover changed scripts on every guide, in every viewport.

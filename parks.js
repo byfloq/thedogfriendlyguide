@@ -29,12 +29,26 @@
     if ([...locality.options].some(option => option.value === selected)) locality.value = selected;
   }
 
+  function parkPhoto(photo) {
+    if (!photo) return '';
+    const {src, alt, credit} = photo;
+    const label = {'park': 'Park view', 'nearby': 'Nearby view'}[credit.scope];
+    return `<figure class="park-guide-photo">
+      <img src="${escape(src)}" alt="${escape(alt)}" loading="lazy" decoding="async">
+      <figcaption>${label ? `<span>${label}</span>` : ''}
+        <details><summary>Photo credits</summary><p>${escape(credit.subject)} · ${escape(credit.artist)} ·
+          <a href="${escape(credit.licenseUrl)}" target="_blank" rel="noopener">${escape(credit.license)}</a> ·
+          <a href="${escape(credit.page)}" target="_blank" rel="noopener">Source</a>. ${escape(credit.changes)}</p></details>
+      </figcaption>
+    </figure>`;
+  }
+
   function parkCard(park) {
     const coordinates = park.coordinates;
     const rating = park.referenceRating == null ? 'Not listed' : `${park.referenceRating} / 5`;
     const reviews = park.referenceReviewCount == null ? 'Not listed' : park.referenceReviewCount.toLocaleString('en-GB');
     const share = `parks.html?park=${encodeURIComponent(park.id)}`;
-    return `<article class="park-card" id="${escape(park.id)}"><p class="park-location">${escape(park.locality)} · ${escape(park.country)}</p><h2>${escape(park.name)}</h2><p class="park-address">${escape(park.address.toLowerCase() === 'unknown' ? 'Address not listed' : park.address)}${park.postalCode && !park.address.includes(park.postalCode) ? `<br>${escape(park.postalCode)}` : ''}</p><div class="park-actions"><span class="park-enclosure">${park.kind==='shared-hours'?'Off-leash at set times':park.fenced===true?'Fenced':park.fenced===false?'Unfenced':'Check local rules'}</span><a class="park-directions" href="${escape(park.mapsUrl)}" target="_blank" rel="noopener">Directions ↗</a></div><details class="park-details" ${params.get('park') === park.id ? 'open' : ''}><summary>Park details</summary><dl><dt>Country</dt><dd>${escape(park.country)}</dd><dt>City or area</dt><dd>${escape(park.locality)}</dd><dt>Postal code</dt><dd>${escape(park.postalCode || 'Not listed')}</dd><dt>Latitude</dt><dd>${coordinates ? coordinates.latitude.toFixed(6) : 'Not listed'}</dd><dt>Longitude</dt><dd>${coordinates ? coordinates.longitude.toFixed(6) : 'Not listed'}</dd>${park.referenceRating!=null?`<dt>Reference rating</dt><dd>${escape(rating)}</dd><dt>Review count</dt><dd>${escape(reviews)}</dd>`:''}${park.kind==='shared-hours'?`<dt>Off-leash rules</dt><dd>${escape(park.policyNote)}</dd>`:''}${park.offLeashHours?`<dt>Permitted hours</dt><dd>${escape(park.offLeashHours)}</dd>`:''}${park.sourceUrl?`<dt>Source</dt><dd><a href="${escape(park.sourceUrl)}" target="_blank" rel="noopener">${escape(park.sourceName)}</a></dd>`:''}</dl><a class="park-share" href="${share}">Link to this park</a></details></article>`;
+    return `<article class="park-card" id="${escape(park.id)}">${parkPhoto(park.guidePhoto)}<p class="park-location">${escape(park.locality)} · ${escape(park.country)}</p><h2>${escape(park.name)}</h2><p class="park-address">${escape(park.address.toLowerCase() === 'unknown' ? 'Address not listed' : park.address)}${park.postalCode && !park.address.includes(park.postalCode) ? `<br>${escape(park.postalCode)}` : ''}</p><div class="park-actions"><span class="park-enclosure">${park.kind==='shared-hours'?'Off-leash at set times':park.fenced===true?'Fenced':park.fenced===false?'Unfenced':'Check local rules'}</span><a class="park-directions" href="${escape(park.mapsUrl)}" target="_blank" rel="noopener">Directions ↗</a></div><details class="park-details" ${params.get('park') === park.id ? 'open' : ''}><summary>Park details</summary><dl><dt>Country</dt><dd>${escape(park.country)}</dd><dt>City or area</dt><dd>${escape(park.locality)}</dd><dt>Postal code</dt><dd>${escape(park.postalCode || 'Not listed')}</dd><dt>Latitude</dt><dd>${coordinates ? coordinates.latitude.toFixed(6) : 'Not listed'}</dd><dt>Longitude</dt><dd>${coordinates ? coordinates.longitude.toFixed(6) : 'Not listed'}</dd>${park.referenceRating!=null?`<dt>Reference rating</dt><dd>${escape(rating)}</dd><dt>Review count</dt><dd>${escape(reviews)}</dd>`:''}${park.kind==='shared-hours'?`<dt>Off-leash rules</dt><dd>${escape(park.policyNote)}</dd>`:''}${park.offLeashHours?`<dt>Permitted hours</dt><dd>${escape(park.offLeashHours)}</dd>`:''}${park.sourceUrl?`<dt>Source</dt><dd><a href="${escape(park.sourceUrl)}" target="_blank" rel="noopener">${escape(park.sourceName)}</a></dd>`:''}</dl><a class="park-share" href="${share}">Link to this park</a></details></article>`;
   }
 
   function render() {
