@@ -226,26 +226,6 @@ Resized and JPEG compressed; displayed cropped to fit the card.
 King Edward VII Park, Wembley — Des Blenkinsopp. [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0). [Original source](https://commons.wikimedia.org/wiki/File:House_in_the_Park_-_geograph.org.uk_-_4896655.jpg).
 Resized and JPEG compressed; displayed cropped to fit the card.
 
-## paris:12th arrondissement
-Bois de Vincennes — Albert Bergonzo. [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). [Original source](https://commons.wikimedia.org/wiki/File:Lake_Daumesnil_Bois_De_Vincennes_Paris_France_(133700127).jpeg).
-Resized and JPEG compressed; displayed cropped to fit the card.
-
-## paris:16th arrondissement
-Bois de Boulogne — BikerNormand from Morsan, Eure, France. [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0). [Original source](https://commons.wikimedia.org/wiki/File:Lac_Inf%C3%A9rieur_du_Bois_de_Boulogne,_Paris_26_August_2015.jpg).
-Resized and JPEG compressed; displayed cropped to fit the card.
-
-## madrid:retiro
-El Retiro — Benjaminkhas07. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). [Original source](https://commons.wikimedia.org/wiki/File:Monument_to_Alfonso_XII_and_the_Estanque_Grande_in_Retiro_Park,_Madrid,_with_Toledo_Cathedral_in_the_background.jpg).
-Resized and JPEG compressed; displayed cropped to fit the card.
-
-## madrid:barajas
-Parque Juan Carlos I — Håkan Svensson Xauxa. [CC BY 2.5](https://creativecommons.org/licenses/by/2.5). [Original source](https://commons.wikimedia.org/wiki/File:Parque_Juan_Carlos_I_view03.jpg).
-Resized and JPEG compressed; displayed cropped to fit the card.
-
-## munich:schwabing
-Englischer Garten — Dietmar Rabich. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). [Original source](https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Monopteros_(im_Englischen_Garten)_--_2011_--_1132.jpg).
-Resized and JPEG compressed; displayed cropped to fit the card.
-
 ## barcelona:sant marti
 Parc de Sant Martí — Enric. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). [Original source](https://commons.wikimedia.org/wiki/File:751_Parc_de_Sant_Mart%C3%AD_(Barcelona).jpg).
 Wikimedia thumbnail; cropped to fit the card at display time.

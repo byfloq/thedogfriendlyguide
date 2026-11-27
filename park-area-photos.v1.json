@@ -3740,61 +3740,6 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "changes": "Wikimedia thumbnail; cropped to fit the card at display time."
-    },
-    "park-paris-bois-de-vincennes": {
-      "areaId": "paris:12th arrondissement",
-      "areaName": "12th arrondissement",
-      "image": "https://thedogfriendlyguide.com/assets/park-areas251/paris-eec6dfc10ef9d7fc.jpg",
-      "subject": "Bois de Vincennes",
-      "artist": "Albert Bergonzo",
-      "page": "https://commons.wikimedia.org/wiki/File:Lake_Daumesnil_Bois_De_Vincennes_Paris_France_(133700127).jpeg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "changes": "Resized and JPEG compressed; displayed cropped to fit the card."
-    },
-    "park-paris-bois-de-boulogne": {
-      "areaId": "paris:16th arrondissement",
-      "areaName": "16th arrondissement",
-      "image": "https://thedogfriendlyguide.com/assets/park-areas251/paris-ece74ceeb223b1ce.jpg",
-      "subject": "Bois de Boulogne",
-      "artist": "BikerNormand from Morsan, Eure, France",
-      "page": "https://commons.wikimedia.org/wiki/File:Lac_Inf%C3%A9rieur_du_Bois_de_Boulogne,_Paris_26_August_2015.jpg",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "changes": "Resized and JPEG compressed; displayed cropped to fit the card."
-    },
-    "park-madrid-el-retiro": {
-      "areaId": "madrid:retiro",
-      "areaName": "Retiro",
-      "image": "https://thedogfriendlyguide.com/assets/park-areas251/madrid-0bb5ef0839a233db.jpg",
-      "subject": "El Retiro",
-      "artist": "Benjaminkhas07",
-      "page": "https://commons.wikimedia.org/wiki/File:Monument_to_Alfonso_XII_and_the_Estanque_Grande_in_Retiro_Park,_Madrid,_with_Toledo_Cathedral_in_the_background.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "changes": "Resized and JPEG compressed; displayed cropped to fit the card."
-    },
-    "park-madrid-juan-carlos-i": {
-      "areaId": "madrid:barajas",
-      "areaName": "Barajas",
-      "image": "https://thedogfriendlyguide.com/assets/park-areas251/madrid-363ffadf4e666ed9.jpg",
-      "subject": "Parque Juan Carlos I",
-      "artist": "Håkan Svensson Xauxa",
-      "page": "https://commons.wikimedia.org/wiki/File:Parque_Juan_Carlos_I_view03.jpg",
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "changes": "Resized and JPEG compressed; displayed cropped to fit the card."
-    },
-    "park-munich-englischer-garten": {
-      "areaId": "munich:schwabing",
-      "areaName": "Schwabing",
-      "image": "https://thedogfriendlyguide.com/assets/park-areas251/munich-f203a6520a1de48e.jpg",
-      "subject": "Englischer Garten",
-      "artist": "Dietmar Rabich",
-      "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Monopteros_(im_Englischen_Garten)_--_2011_--_1132.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "changes": "Resized and JPEG compressed; displayed cropped to fit the card."
     }
   }
 }
