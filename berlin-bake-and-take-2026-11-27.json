@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-27",
+  "placeId": "berlin-bake-and-take",
+  "requestedInstagram": "https://www.instagram.com/bakeandtakebakery/",
+  "officialProfile": "https://www.instagram.com/bakeandtakebakery/",
+  "officialPost": "https://www.instagram.com/bakeandtakebakery/p/DdLRAx1I0a_/",
+  "address": "Proskauer Straße 29, 10247 Berlin",
+  "hours": "Tue–Fri 08:00–15:00 · Sat–Sun 09:00–15:00 · Mon closed",
+  "hoursEvidence": "Official Instagram profile bio reviewed on 2026-11-27",
+  "coordinateEvidence": {
+    "provider": "OpenStreetMap Nominatim",
+    "osmId": 760699733,
+    "osmType": "node",
+    "sourceUrl": "https://www.openstreetmap.org/node/760699733",
+    "coordinates": {
+      "latitude": 52.5174005,
+      "longitude": 13.4609685
+    },
+    "matchedAddress": {
+      "house_number": "29",
+      "road": "Proskauer Straße",
+      "quarter": "Samariterviertel",
+      "suburb": "Friedrichshain",
+      "borough": "Friedrichshain-Kreuzberg",
+      "city": "Berlin",
+      "ISO3166-2-lvl4": "DE-BE",
+      "postcode": "10247",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "precision": "address",
+    "verification": "Address node matches official profile house number, street, postcode and city; not the unrelated Artylux business POI at the same address."
+  },
+  "photo": {
+    "sourcePage": "https://www.instagram.com/bakeandtakebakery/p/DdLRAx1I0a_/",
+    "credit": "Bake and Take official Instagram photography",
+    "sourceSha256": "8a4ebfe340142b52db2e2a477b37c66d7e9f670f6fe39780e07fc32dfd7174ea",
+    "asset": "assets/places/berlin-bake-and-take-20261127.webp",
+    "bytes": 143284,
+    "width": 1080,
+    "height": 1361,
+    "sha256": "b97bf80a30eb0e734b15ae5e0c97a26d2b159af77ea7fcc1fca50e6e8cd9dbda",
+    "processing": "Converted to optimized WebP for website; exact-URL JPEG cover bundled in app. No generated imagery or creative alterations.",
+    "nativeCover": "assets/home/covers/58e1f3290cdd84b6.jpg"
+  },
+  "dogPolicy": "User requested inclusion. No specific indoor access, water, dog-size policy or Coco visit has been verified; no affirmative amenity flags are marked. Visible copy advises asking about indoor access.",
+  "editorialContextSource": "https://ceecee.cc/en/croissants-cruffins-buns-in-allen-variationen-bake-and-take-im-samariterviertel/",
+  "publication": "Shared catalogue for desktop web, mobile web and existing app catalogue refresh; pending app snapshot also updated."
+}

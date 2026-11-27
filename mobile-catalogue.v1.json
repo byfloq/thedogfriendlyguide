@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "guide-photo-polish-20261127",
-  "generatedAt": "2026-11-26T12:53:43.877695+00:00",
+  "revision": "berlin-bake-and-take-20261127",
+  "generatedAt": "2026-11-27T07:40:31.993195+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -20942,6 +20942,39 @@
         "country": "Germany",
         "detailsStatus": "verified",
         "offLeash": false
+      }
+    },
+    {
+      "id": "berlin-bake-and-take",
+      "name": "Bake and Take",
+      "city": "berlin",
+      "area": "Friedrichshain",
+      "category": "Drink",
+      "shortDescription": "Bakery & café · Friedrichshain",
+      "editorial": "A small Samariterviertel bakery for handmade croissants, buns and specialty coffee. Pick up something warm for a neighbourhood walk; ask the team about indoor dog access.",
+      "image": "https://thedogfriendlyguide.com/assets/places/berlin-bake-and-take-20261127.webp",
+      "images": [
+        "https://thedogfriendlyguide.com/assets/places/berlin-bake-and-take-20261127.webp"
+      ],
+      "imageAlt": "Fresh croissants and pastries displayed on glass stands inside Bake and Take bakery in Berlin",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bake%20and%20Take%20Proskauer%20Stra%C3%9Fe%2029%2010247%20Berlin%20Germany",
+      "websiteUrl": "https://www.instagram.com/bakeandtakebakery/",
+      "openingHours": "Tue–Fri 08:00–15:00 · Sat–Sun 09:00–15:00 · Mon closed",
+      "openingHoursSourceUrl": "https://www.instagram.com/bakeandtakebakery/",
+      "openingHoursCheckedAt": "2026-11-27",
+      "coordinates": {
+        "latitude": 52.5174005,
+        "longitude": 13.4609685
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": false,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
       }
     }
   ],
