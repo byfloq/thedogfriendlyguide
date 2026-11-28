@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": "berlin-park-and-hotel-photos-20261127",
-  "generatedAt": "2026-11-27T20:30:28.944741+00:00",
+  "revision": "barcelona-nudes-el-born-20261128",
+  "generatedAt": "2026-11-28T18:31:12.095532+00:00",
   "cities": [
     {
       "id": "barcelona",
@@ -921,6 +921,44 @@
       },
       "openingHours": "Mo-Su 09:00-17:00",
       "openingHoursSourceUrl": "https://corgicafe.es/"
+    },
+    {
+      "id": "barcelona-nudes-el-born",
+      "name": "NUDES · El Born",
+      "city": "barcelona",
+      "area": "El Born",
+      "category": "Drink",
+      "shortDescription": "Coffee & açaí · El Born",
+      "editorial": "A stop on Carrer del Rec, 10 for espresso, açaí bowls and smoothies before a walk to Parc de la Ciutadella. Dogs are welcome.",
+      "image": "https://www.eatnudes.com/assets/stores/born-carrer-del-rec.jpg",
+      "images": [
+        "https://www.eatnudes.com/assets/stores/born-carrer-del-rec.jpg"
+      ],
+      "imageAlt": "NUDES storefront on Carrer del Rec in El Born, Barcelona",
+      "photoCredit": {
+        "subject": "NUDES storefront on Carrer del Rec in El Born, Barcelona",
+        "artist": "NUDES",
+        "page": "https://www.eatnudes.com/info.html"
+      },
+      "mapsUrl": "https://www.google.com/maps/place/NUDES/data=!4m6!3m5!1s0x12a4a3f5b63a2399:0x70de0076fe6d2a28!8m2!3d41.3860704!4d2.182043!16s%2Fg%2F11t4bgdqy7",
+      "websiteUrl": "https://www.eatnudes.com/info.html",
+      "openingHours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
+      "openingHoursSourceUrl": "https://www.eatnudes.com/info.html",
+      "openingHoursCheckedAt": "2026-11-28",
+      "coordinates": {
+        "latitude": 41.3860704,
+        "longitude": 2.182043
+      },
+      "coordinatesVerified": true,
+      "distanceKm": 0,
+      "source": "website",
+      "attributes": {
+        "dogsInside": true,
+        "dogsOutside": false,
+        "terrace": false,
+        "water": false,
+        "cocoWasThere": false
+      }
     },
     {
       "id": "barcelona-koke",
